@@ -15,12 +15,9 @@ The REST API documentation can be found on [docs.julep.ai](https://docs.julep.ai
 ## Installation
 
 ```sh
-# install from the production repo
-pip install git+ssh://git@github.com/julep-ai/python-sdk.git
+# install from PyPI
+pip install --pre julep
 ```
-
-> [!NOTE]
-> Once this package is [published to PyPI](https://app.stainlessapi.com/docs/guides/publish), this will become: `pip install --pre julep`
 
 ## Usage
 
