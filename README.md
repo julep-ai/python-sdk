@@ -16,7 +16,7 @@ The REST API documentation can be found on [docs.julep.ai](https://docs.julep.ai
 
 ```sh
 # install from PyPI
-pip install --pre julep
+pip install julep
 ```
 
 ## Usage
