@@ -15,25 +15,19 @@ __all__ = [
     "ContentUnionMember0ContentModelImageURL",
     "ContentTool",
     "ContentToolFunction",
-    "ContentChosenFunctionCall",
-    "ContentChosenFunctionCallFunction",
-    "ContentChosenIntegrationCall",
-    "ContentChosenSystemCall",
-    "ContentChosenAPICall",
+    "ContentChosenToolCall",
+    "ContentChosenToolCallFunction",
     "ContentToolResponse",
-    "ContentUnionMember8",
-    "ContentUnionMember8UnionMember0",
-    "ContentUnionMember8UnionMember0Content",
-    "ContentUnionMember8UnionMember0ContentModel",
-    "ContentUnionMember8UnionMember0ContentModelImageURL",
-    "ContentUnionMember8Tool",
-    "ContentUnionMember8ToolFunction",
-    "ContentUnionMember8ChosenFunctionCall",
-    "ContentUnionMember8ChosenFunctionCallFunction",
-    "ContentUnionMember8ChosenIntegrationCall",
-    "ContentUnionMember8ChosenSystemCall",
-    "ContentUnionMember8ChosenAPICall",
-    "ContentUnionMember8ToolResponse",
+    "ContentUnionMember5",
+    "ContentUnionMember5UnionMember0",
+    "ContentUnionMember5UnionMember0Content",
+    "ContentUnionMember5UnionMember0ContentModel",
+    "ContentUnionMember5UnionMember0ContentModelImageURL",
+    "ContentUnionMember5Tool",
+    "ContentUnionMember5ToolFunction",
+    "ContentUnionMember5ChosenToolCall",
+    "ContentUnionMember5ChosenToolCallFunction",
+    "ContentUnionMember5ToolResponse",
 ]
 
 
@@ -88,40 +82,22 @@ class ContentTool(BaseModel):
     type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
-class ContentChosenFunctionCallFunction(BaseModel):
+class ContentChosenToolCallFunction(BaseModel):
     name: str
 
 
-class ContentChosenFunctionCall(BaseModel):
+class ContentChosenToolCall(BaseModel):
     id: str
 
-    function: ContentChosenFunctionCallFunction
+    type: Literal["function", "integration", "system", "api_call"]
 
-    type: Optional[Literal["function"]] = None
+    api_call: Optional[object] = None
 
+    function: Optional[ContentChosenToolCallFunction] = None
 
-class ContentChosenIntegrationCall(BaseModel):
-    id: str
+    integration: Optional[object] = None
 
-    integration: object
-
-    type: Optional[Literal["integration"]] = None
-
-
-class ContentChosenSystemCall(BaseModel):
-    id: str
-
-    system: object
-
-    type: Optional[Literal["system"]] = None
-
-
-class ContentChosenAPICall(BaseModel):
-    id: str
-
-    api_call: object
-
-    type: Optional[Literal["api_call"]] = None
+    system: Optional[object] = None
 
 
 class ContentToolResponse(BaseModel):
@@ -130,31 +106,31 @@ class ContentToolResponse(BaseModel):
     output: object
 
 
-class ContentUnionMember8UnionMember0Content(BaseModel):
+class ContentUnionMember5UnionMember0Content(BaseModel):
     text: str
 
     type: Optional[Literal["text"]] = None
 
 
-class ContentUnionMember8UnionMember0ContentModelImageURL(BaseModel):
+class ContentUnionMember5UnionMember0ContentModelImageURL(BaseModel):
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
 
 
-class ContentUnionMember8UnionMember0ContentModel(BaseModel):
-    image_url: ContentUnionMember8UnionMember0ContentModelImageURL
+class ContentUnionMember5UnionMember0ContentModel(BaseModel):
+    image_url: ContentUnionMember5UnionMember0ContentModelImageURL
     """The image URL"""
 
     type: Optional[Literal["image_url"]] = None
 
 
-ContentUnionMember8UnionMember0: TypeAlias = Union[
-    ContentUnionMember8UnionMember0Content, ContentUnionMember8UnionMember0ContentModel
+ContentUnionMember5UnionMember0: TypeAlias = Union[
+    ContentUnionMember5UnionMember0Content, ContentUnionMember5UnionMember0ContentModel
 ]
 
 
-class ContentUnionMember8ToolFunction(BaseModel):
+class ContentUnionMember5ToolFunction(BaseModel):
     description: Optional[str] = None
 
     name: Optional[object] = None
@@ -162,12 +138,12 @@ class ContentUnionMember8ToolFunction(BaseModel):
     parameters: Optional[object] = None
 
 
-class ContentUnionMember8Tool(BaseModel):
+class ContentUnionMember5Tool(BaseModel):
     id: str
 
     created_at: datetime
 
-    function: ContentUnionMember8ToolFunction
+    function: ContentUnionMember5ToolFunction
     """Function definition"""
 
     name: str
@@ -183,69 +159,40 @@ class ContentUnionMember8Tool(BaseModel):
     type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
-class ContentUnionMember8ChosenFunctionCallFunction(BaseModel):
+class ContentUnionMember5ChosenToolCallFunction(BaseModel):
     name: str
 
 
-class ContentUnionMember8ChosenFunctionCall(BaseModel):
+class ContentUnionMember5ChosenToolCall(BaseModel):
     id: str
 
-    function: ContentUnionMember8ChosenFunctionCallFunction
+    type: Literal["function", "integration", "system", "api_call"]
 
-    type: Optional[Literal["function"]] = None
+    api_call: Optional[object] = None
 
+    function: Optional[ContentUnionMember5ChosenToolCallFunction] = None
 
-class ContentUnionMember8ChosenIntegrationCall(BaseModel):
-    id: str
+    integration: Optional[object] = None
 
-    integration: object
-
-    type: Optional[Literal["integration"]] = None
+    system: Optional[object] = None
 
 
-class ContentUnionMember8ChosenSystemCall(BaseModel):
-    id: str
-
-    system: object
-
-    type: Optional[Literal["system"]] = None
-
-
-class ContentUnionMember8ChosenAPICall(BaseModel):
-    id: str
-
-    api_call: object
-
-    type: Optional[Literal["api_call"]] = None
-
-
-class ContentUnionMember8ToolResponse(BaseModel):
+class ContentUnionMember5ToolResponse(BaseModel):
     id: str
 
     output: object
 
 
-ContentUnionMember8: TypeAlias = Union[
-    List[ContentUnionMember8UnionMember0],
-    ContentUnionMember8Tool,
-    ContentUnionMember8ChosenFunctionCall,
-    ContentUnionMember8ChosenIntegrationCall,
-    ContentUnionMember8ChosenSystemCall,
-    ContentUnionMember8ChosenAPICall,
+ContentUnionMember5: TypeAlias = Union[
+    List[ContentUnionMember5UnionMember0],
+    ContentUnionMember5Tool,
+    ContentUnionMember5ChosenToolCall,
     str,
-    ContentUnionMember8ToolResponse,
+    ContentUnionMember5ToolResponse,
 ]
 
 Content: TypeAlias = Union[
-    List[ContentUnionMember0],
-    ContentTool,
-    ContentChosenFunctionCall,
-    ContentChosenIntegrationCall,
-    ContentChosenSystemCall,
-    ContentChosenAPICall,
-    str,
-    ContentToolResponse,
-    List[ContentUnionMember8],
+    List[ContentUnionMember0], ContentTool, ContentChosenToolCall, str, ContentToolResponse, List[ContentUnionMember5]
 ]
 
 
@@ -253,6 +200,7 @@ class Entry(BaseModel):
     id: str
 
     content: Content
+    """The response tool value generated by the model"""
 
     created_at: datetime
 

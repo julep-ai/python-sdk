@@ -17,11 +17,7 @@ __all__ = [
     "ChoiceSingleChatOutputMessageContentUnionMember2ContentModel",
     "ChoiceSingleChatOutputMessageContentUnionMember2ContentModelImageURL",
     "ChoiceSingleChatOutputMessageToolCall",
-    "ChoiceSingleChatOutputMessageToolCallChosenFunctionCall",
-    "ChoiceSingleChatOutputMessageToolCallChosenFunctionCallFunction",
-    "ChoiceSingleChatOutputMessageToolCallChosenIntegrationCall",
-    "ChoiceSingleChatOutputMessageToolCallChosenSystemCall",
-    "ChoiceSingleChatOutputMessageToolCallChosenAPICall",
+    "ChoiceSingleChatOutputMessageToolCallFunction",
     "ChoiceSingleChatOutputLogprobs",
     "ChoiceSingleChatOutputLogprobsContent",
     "ChoiceSingleChatOutputLogprobsContentTopLogprob",
@@ -32,11 +28,7 @@ __all__ = [
     "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel",
     "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModelImageURL",
     "ChoiceMultipleChatOutputMessageToolCall",
-    "ChoiceMultipleChatOutputMessageToolCallChosenFunctionCall",
-    "ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallFunction",
-    "ChoiceMultipleChatOutputMessageToolCallChosenIntegrationCall",
-    "ChoiceMultipleChatOutputMessageToolCallChosenSystemCall",
-    "ChoiceMultipleChatOutputMessageToolCallChosenAPICall",
+    "ChoiceMultipleChatOutputMessageToolCallFunction",
     "ChoiceMultipleChatOutputLogprobs",
     "ChoiceMultipleChatOutputLogprobsContent",
     "ChoiceMultipleChatOutputLogprobsContentTopLogprob",
@@ -71,48 +63,22 @@ ChoiceSingleChatOutputMessageContentUnionMember2: TypeAlias = Union[
 ]
 
 
-class ChoiceSingleChatOutputMessageToolCallChosenFunctionCallFunction(BaseModel):
+class ChoiceSingleChatOutputMessageToolCallFunction(BaseModel):
     name: str
 
 
-class ChoiceSingleChatOutputMessageToolCallChosenFunctionCall(BaseModel):
+class ChoiceSingleChatOutputMessageToolCall(BaseModel):
     id: str
 
-    function: ChoiceSingleChatOutputMessageToolCallChosenFunctionCallFunction
+    type: Literal["function", "integration", "system", "api_call"]
 
-    type: Optional[Literal["function"]] = None
+    api_call: Optional[object] = None
 
+    function: Optional[ChoiceSingleChatOutputMessageToolCallFunction] = None
 
-class ChoiceSingleChatOutputMessageToolCallChosenIntegrationCall(BaseModel):
-    id: str
+    integration: Optional[object] = None
 
-    integration: object
-
-    type: Optional[Literal["integration"]] = None
-
-
-class ChoiceSingleChatOutputMessageToolCallChosenSystemCall(BaseModel):
-    id: str
-
-    system: object
-
-    type: Optional[Literal["system"]] = None
-
-
-class ChoiceSingleChatOutputMessageToolCallChosenAPICall(BaseModel):
-    id: str
-
-    api_call: object
-
-    type: Optional[Literal["api_call"]] = None
-
-
-ChoiceSingleChatOutputMessageToolCall: TypeAlias = Union[
-    ChoiceSingleChatOutputMessageToolCallChosenFunctionCall,
-    ChoiceSingleChatOutputMessageToolCallChosenIntegrationCall,
-    ChoiceSingleChatOutputMessageToolCallChosenSystemCall,
-    ChoiceSingleChatOutputMessageToolCallChosenAPICall,
-]
+    system: Optional[object] = None
 
 
 class ChoiceSingleChatOutputMessage(BaseModel):
@@ -186,48 +152,22 @@ ChoiceMultipleChatOutputMessageContentUnionMember2: TypeAlias = Union[
 ]
 
 
-class ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallFunction(BaseModel):
+class ChoiceMultipleChatOutputMessageToolCallFunction(BaseModel):
     name: str
 
 
-class ChoiceMultipleChatOutputMessageToolCallChosenFunctionCall(BaseModel):
+class ChoiceMultipleChatOutputMessageToolCall(BaseModel):
     id: str
 
-    function: ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallFunction
+    type: Literal["function", "integration", "system", "api_call"]
 
-    type: Optional[Literal["function"]] = None
+    api_call: Optional[object] = None
 
+    function: Optional[ChoiceMultipleChatOutputMessageToolCallFunction] = None
 
-class ChoiceMultipleChatOutputMessageToolCallChosenIntegrationCall(BaseModel):
-    id: str
+    integration: Optional[object] = None
 
-    integration: object
-
-    type: Optional[Literal["integration"]] = None
-
-
-class ChoiceMultipleChatOutputMessageToolCallChosenSystemCall(BaseModel):
-    id: str
-
-    system: object
-
-    type: Optional[Literal["system"]] = None
-
-
-class ChoiceMultipleChatOutputMessageToolCallChosenAPICall(BaseModel):
-    id: str
-
-    api_call: object
-
-    type: Optional[Literal["api_call"]] = None
-
-
-ChoiceMultipleChatOutputMessageToolCall: TypeAlias = Union[
-    ChoiceMultipleChatOutputMessageToolCallChosenFunctionCall,
-    ChoiceMultipleChatOutputMessageToolCallChosenIntegrationCall,
-    ChoiceMultipleChatOutputMessageToolCallChosenSystemCall,
-    ChoiceMultipleChatOutputMessageToolCallChosenAPICall,
-]
+    system: Optional[object] = None
 
 
 class ChoiceMultipleChatOutputMessage(BaseModel):

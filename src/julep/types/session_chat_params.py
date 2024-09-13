@@ -13,11 +13,8 @@ __all__ = [
     "ResponseFormatSimpleCompletionResponseFormat",
     "ResponseFormatSchemaCompletionResponseFormat",
     "ToolChoice",
-    "ToolChoiceNamedFunctionChoice",
-    "ToolChoiceNamedFunctionChoiceFunction",
-    "ToolChoiceNamedIntegrationChoice",
-    "ToolChoiceNamedSystemChoice",
-    "ToolChoiceNamedAPICallChoice",
+    "ToolChoiceNamedToolChoice",
+    "ToolChoiceNamedToolChoiceFunction",
     "Tool",
     "ToolFunction",
 ]
@@ -80,33 +77,23 @@ ResponseFormat: TypeAlias = Union[
 ]
 
 
-class ToolChoiceNamedFunctionChoiceFunction(TypedDict, total=False):
+class ToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
     name: Required[str]
 
 
-class ToolChoiceNamedFunctionChoice(TypedDict, total=False):
-    function: Required[ToolChoiceNamedFunctionChoiceFunction]
+class ToolChoiceNamedToolChoice(TypedDict, total=False):
+    type: Required[Literal["function", "integration", "system", "api_call"]]
 
+    api_call: Optional[object]
 
-class ToolChoiceNamedIntegrationChoice(TypedDict, total=False):
+    function: Optional[ToolChoiceNamedToolChoiceFunction]
+
     integration: Optional[object]
 
-
-class ToolChoiceNamedSystemChoice(TypedDict, total=False):
     system: Optional[object]
 
 
-class ToolChoiceNamedAPICallChoice(TypedDict, total=False):
-    api_call: Optional[object]
-
-
-ToolChoice: TypeAlias = Union[
-    Literal["auto", "none"],
-    ToolChoiceNamedFunctionChoice,
-    ToolChoiceNamedIntegrationChoice,
-    ToolChoiceNamedSystemChoice,
-    ToolChoiceNamedAPICallChoice,
-]
+ToolChoice: TypeAlias = Union[Literal["auto", "none"], ToolChoiceNamedToolChoice]
 
 
 class ToolFunction(TypedDict, total=False):
