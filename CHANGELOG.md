@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 (2024-09-19)
+
+Full Changelog: [v1.1.0...v1.2.0](https://github.com/julep-ai/python-sdk/compare/v1.1.0...v1.2.0)
+
+### Features
+
+* **api:** add custom api key; change uuid4 to uuid ([#8](https://github.com/julep-ai/python-sdk/issues/8)) ([7b2488e](https://github.com/julep-ai/python-sdk/commit/7b2488e990dea41628541cb9311a802d5f7ba884))
+
 ## 1.1.0 (2024-09-13)
 
 Full Changelog: [v1.0.1...v1.1.0](https://github.com/julep-ai/python-sdk/compare/v1.0.1...v1.1.0)
