@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 from typing import Dict, List, Union, Iterable, Optional
-from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from .._utils import PropertyInfo
 from .message_param import MessageParam
 
 __all__ = [
@@ -60,6 +61,8 @@ class SessionChatParams(TypedDict, total=False):
     tools: Iterable[Tool]
 
     top_p: Optional[float]
+
+    x_custom_api_key: Annotated[str, PropertyInfo(alias="X-Custom-Api-Key")]
 
 
 class ResponseFormatSimpleCompletionResponseFormat(TypedDict, total=False):

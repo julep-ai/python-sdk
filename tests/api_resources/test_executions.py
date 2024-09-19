@@ -24,7 +24,7 @@ class TestExecutions:
     @parametrize
     def test_method_create(self, client: Julep) -> None:
         execution = client.executions.create(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
         )
         assert_matches_type(ResourceCreated, execution, path=["response"])
@@ -32,7 +32,7 @@ class TestExecutions:
     @parametrize
     def test_method_create_with_all_params(self, client: Julep) -> None:
         execution = client.executions.create(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
             error="error",
             metadata={},
@@ -43,7 +43,7 @@ class TestExecutions:
     @parametrize
     def test_raw_response_create(self, client: Julep) -> None:
         response = client.executions.with_raw_response.create(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
         )
 
@@ -55,7 +55,7 @@ class TestExecutions:
     @parametrize
     def test_streaming_response_create(self, client: Julep) -> None:
         with client.executions.with_streaming_response.create(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
         ) as response:
             assert not response.is_closed
@@ -77,14 +77,14 @@ class TestExecutions:
     @parametrize
     def test_method_list(self, client: Julep) -> None:
         execution = client.executions.list(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(SyncOffsetPagination[Execution], execution, path=["response"])
 
     @parametrize
     def test_method_list_with_all_params(self, client: Julep) -> None:
         execution = client.executions.list(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             direction="asc",
             limit=0,
             offset=0,
@@ -95,7 +95,7 @@ class TestExecutions:
     @parametrize
     def test_raw_response_list(self, client: Julep) -> None:
         response = client.executions.with_raw_response.list(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -106,7 +106,7 @@ class TestExecutions:
     @parametrize
     def test_streaming_response_list(self, client: Julep) -> None:
         with client.executions.with_streaming_response.list(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -126,14 +126,14 @@ class TestExecutions:
     @parametrize
     def test_method_change_status_overload_1(self, client: Julep) -> None:
         execution = client.executions.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(object, execution, path=["response"])
 
     @parametrize
     def test_method_change_status_with_all_params_overload_1(self, client: Julep) -> None:
         execution = client.executions.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
             status="running",
         )
@@ -142,7 +142,7 @@ class TestExecutions:
     @parametrize
     def test_raw_response_change_status_overload_1(self, client: Julep) -> None:
         response = client.executions.with_raw_response.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -153,7 +153,7 @@ class TestExecutions:
     @parametrize
     def test_streaming_response_change_status_overload_1(self, client: Julep) -> None:
         with client.executions.with_streaming_response.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -173,14 +173,14 @@ class TestExecutions:
     @parametrize
     def test_method_change_status_overload_2(self, client: Julep) -> None:
         execution = client.executions.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(object, execution, path=["response"])
 
     @parametrize
     def test_method_change_status_with_all_params_overload_2(self, client: Julep) -> None:
         execution = client.executions.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             reason="reason",
             status="cancelled",
         )
@@ -189,7 +189,7 @@ class TestExecutions:
     @parametrize
     def test_raw_response_change_status_overload_2(self, client: Julep) -> None:
         response = client.executions.with_raw_response.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -200,7 +200,7 @@ class TestExecutions:
     @parametrize
     def test_streaming_response_change_status_overload_2(self, client: Julep) -> None:
         with client.executions.with_streaming_response.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -220,14 +220,14 @@ class TestExecutions:
     @parametrize
     def test_method_get(self, client: Julep) -> None:
         execution = client.executions.get(
-            "execution_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(Execution, execution, path=["response"])
 
     @parametrize
     def test_raw_response_get(self, client: Julep) -> None:
         response = client.executions.with_raw_response.get(
-            "execution_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -238,7 +238,7 @@ class TestExecutions:
     @parametrize
     def test_streaming_response_get(self, client: Julep) -> None:
         with client.executions.with_streaming_response.get(
-            "execution_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -258,8 +258,8 @@ class TestExecutions:
     @parametrize
     def test_method_patch(self, client: Julep) -> None:
         execution = client.executions.patch(
-            execution_id="execution_id",
-            task_id="task_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             status="queued",
         )
         assert_matches_type(ResourceUpdated, execution, path=["response"])
@@ -267,8 +267,8 @@ class TestExecutions:
     @parametrize
     def test_raw_response_patch(self, client: Julep) -> None:
         response = client.executions.with_raw_response.patch(
-            execution_id="execution_id",
-            task_id="task_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             status="queued",
         )
 
@@ -280,8 +280,8 @@ class TestExecutions:
     @parametrize
     def test_streaming_response_patch(self, client: Julep) -> None:
         with client.executions.with_streaming_response.patch(
-            execution_id="execution_id",
-            task_id="task_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             status="queued",
         ) as response:
             assert not response.is_closed
@@ -296,7 +296,7 @@ class TestExecutions:
     def test_path_params_patch(self, client: Julep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `task_id` but received ''"):
             client.executions.with_raw_response.patch(
-                execution_id="execution_id",
+                execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 task_id="",
                 status="queued",
             )
@@ -304,7 +304,7 @@ class TestExecutions:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `execution_id` but received ''"):
             client.executions.with_raw_response.patch(
                 execution_id="",
-                task_id="task_id",
+                task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 status="queued",
             )
 
@@ -315,7 +315,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_method_create(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.create(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
         )
         assert_matches_type(ResourceCreated, execution, path=["response"])
@@ -323,7 +323,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.create(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
             error="error",
             metadata={},
@@ -334,7 +334,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
         response = await async_client.executions.with_raw_response.create(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
         )
 
@@ -346,7 +346,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
         async with async_client.executions.with_streaming_response.create(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
         ) as response:
             assert not response.is_closed
@@ -368,14 +368,14 @@ class TestAsyncExecutions:
     @parametrize
     async def test_method_list(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.list(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(AsyncOffsetPagination[Execution], execution, path=["response"])
 
     @parametrize
     async def test_method_list_with_all_params(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.list(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             direction="asc",
             limit=0,
             offset=0,
@@ -386,7 +386,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_raw_response_list(self, async_client: AsyncJulep) -> None:
         response = await async_client.executions.with_raw_response.list(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -397,7 +397,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_streaming_response_list(self, async_client: AsyncJulep) -> None:
         async with async_client.executions.with_streaming_response.list(
-            task_id="task_id",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -417,14 +417,14 @@ class TestAsyncExecutions:
     @parametrize
     async def test_method_change_status_overload_1(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(object, execution, path=["response"])
 
     @parametrize
     async def test_method_change_status_with_all_params_overload_1(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
             status="running",
         )
@@ -433,7 +433,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_raw_response_change_status_overload_1(self, async_client: AsyncJulep) -> None:
         response = await async_client.executions.with_raw_response.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -444,7 +444,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_streaming_response_change_status_overload_1(self, async_client: AsyncJulep) -> None:
         async with async_client.executions.with_streaming_response.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -464,14 +464,14 @@ class TestAsyncExecutions:
     @parametrize
     async def test_method_change_status_overload_2(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(object, execution, path=["response"])
 
     @parametrize
     async def test_method_change_status_with_all_params_overload_2(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             reason="reason",
             status="cancelled",
         )
@@ -480,7 +480,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_raw_response_change_status_overload_2(self, async_client: AsyncJulep) -> None:
         response = await async_client.executions.with_raw_response.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -491,7 +491,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_streaming_response_change_status_overload_2(self, async_client: AsyncJulep) -> None:
         async with async_client.executions.with_streaming_response.change_status(
-            execution_id="execution_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -511,14 +511,14 @@ class TestAsyncExecutions:
     @parametrize
     async def test_method_get(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.get(
-            "execution_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(Execution, execution, path=["response"])
 
     @parametrize
     async def test_raw_response_get(self, async_client: AsyncJulep) -> None:
         response = await async_client.executions.with_raw_response.get(
-            "execution_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -529,7 +529,7 @@ class TestAsyncExecutions:
     @parametrize
     async def test_streaming_response_get(self, async_client: AsyncJulep) -> None:
         async with async_client.executions.with_streaming_response.get(
-            "execution_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -549,8 +549,8 @@ class TestAsyncExecutions:
     @parametrize
     async def test_method_patch(self, async_client: AsyncJulep) -> None:
         execution = await async_client.executions.patch(
-            execution_id="execution_id",
-            task_id="task_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             status="queued",
         )
         assert_matches_type(ResourceUpdated, execution, path=["response"])
@@ -558,8 +558,8 @@ class TestAsyncExecutions:
     @parametrize
     async def test_raw_response_patch(self, async_client: AsyncJulep) -> None:
         response = await async_client.executions.with_raw_response.patch(
-            execution_id="execution_id",
-            task_id="task_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             status="queued",
         )
 
@@ -571,8 +571,8 @@ class TestAsyncExecutions:
     @parametrize
     async def test_streaming_response_patch(self, async_client: AsyncJulep) -> None:
         async with async_client.executions.with_streaming_response.patch(
-            execution_id="execution_id",
-            task_id="task_id",
+            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             status="queued",
         ) as response:
             assert not response.is_closed
@@ -587,7 +587,7 @@ class TestAsyncExecutions:
     async def test_path_params_patch(self, async_client: AsyncJulep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `task_id` but received ''"):
             await async_client.executions.with_raw_response.patch(
-                execution_id="execution_id",
+                execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 task_id="",
                 status="queued",
             )
@@ -595,6 +595,6 @@ class TestAsyncExecutions:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `execution_id` but received ''"):
             await async_client.executions.with_raw_response.patch(
                 execution_id="",
-                task_id="task_id",
+                task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 status="queued",
             )
