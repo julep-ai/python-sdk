@@ -58,14 +58,14 @@ class TestUsers:
     @parametrize
     def test_method_update(self, client: Julep) -> None:
         user = client.users.update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
     def test_method_update_with_all_params(self, client: Julep) -> None:
         user = client.users.update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
             name="name",
@@ -75,7 +75,7 @@ class TestUsers:
     @parametrize
     def test_raw_response_update(self, client: Julep) -> None:
         response = client.users.with_raw_response.update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -86,7 +86,7 @@ class TestUsers:
     @parametrize
     def test_streaming_response_update(self, client: Julep) -> None:
         with client.users.with_streaming_response.update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -142,14 +142,14 @@ class TestUsers:
     @parametrize
     def test_method_delete(self, client: Julep) -> None:
         user = client.users.delete(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceDeleted, user, path=["response"])
 
     @parametrize
     def test_raw_response_delete(self, client: Julep) -> None:
         response = client.users.with_raw_response.delete(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -160,7 +160,7 @@ class TestUsers:
     @parametrize
     def test_streaming_response_delete(self, client: Julep) -> None:
         with client.users.with_streaming_response.delete(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -180,14 +180,14 @@ class TestUsers:
     @parametrize
     def test_method_create_or_update(self, client: Julep) -> None:
         user = client.users.create_or_update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceCreated, user, path=["response"])
 
     @parametrize
     def test_method_create_or_update_with_all_params(self, client: Julep) -> None:
         user = client.users.create_or_update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
             name="name",
@@ -197,7 +197,7 @@ class TestUsers:
     @parametrize
     def test_raw_response_create_or_update(self, client: Julep) -> None:
         response = client.users.with_raw_response.create_or_update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -208,7 +208,7 @@ class TestUsers:
     @parametrize
     def test_streaming_response_create_or_update(self, client: Julep) -> None:
         with client.users.with_streaming_response.create_or_update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -228,14 +228,14 @@ class TestUsers:
     @parametrize
     def test_method_get(self, client: Julep) -> None:
         user = client.users.get(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_raw_response_get(self, client: Julep) -> None:
         response = client.users.with_raw_response.get(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -246,7 +246,7 @@ class TestUsers:
     @parametrize
     def test_streaming_response_get(self, client: Julep) -> None:
         with client.users.with_streaming_response.get(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -266,14 +266,14 @@ class TestUsers:
     @parametrize
     def test_method_patch(self, client: Julep) -> None:
         user = client.users.patch(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
     def test_method_patch_with_all_params(self, client: Julep) -> None:
         user = client.users.patch(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
             name="name",
@@ -283,7 +283,7 @@ class TestUsers:
     @parametrize
     def test_raw_response_patch(self, client: Julep) -> None:
         response = client.users.with_raw_response.patch(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -294,7 +294,7 @@ class TestUsers:
     @parametrize
     def test_streaming_response_patch(self, client: Julep) -> None:
         with client.users.with_streaming_response.patch(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -352,14 +352,14 @@ class TestAsyncUsers:
     @parametrize
     async def test_method_update(self, async_client: AsyncJulep) -> None:
         user = await async_client.users.update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
     async def test_method_update_with_all_params(self, async_client: AsyncJulep) -> None:
         user = await async_client.users.update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
             name="name",
@@ -369,7 +369,7 @@ class TestAsyncUsers:
     @parametrize
     async def test_raw_response_update(self, async_client: AsyncJulep) -> None:
         response = await async_client.users.with_raw_response.update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -380,7 +380,7 @@ class TestAsyncUsers:
     @parametrize
     async def test_streaming_response_update(self, async_client: AsyncJulep) -> None:
         async with async_client.users.with_streaming_response.update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -436,14 +436,14 @@ class TestAsyncUsers:
     @parametrize
     async def test_method_delete(self, async_client: AsyncJulep) -> None:
         user = await async_client.users.delete(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceDeleted, user, path=["response"])
 
     @parametrize
     async def test_raw_response_delete(self, async_client: AsyncJulep) -> None:
         response = await async_client.users.with_raw_response.delete(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -454,7 +454,7 @@ class TestAsyncUsers:
     @parametrize
     async def test_streaming_response_delete(self, async_client: AsyncJulep) -> None:
         async with async_client.users.with_streaming_response.delete(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -474,14 +474,14 @@ class TestAsyncUsers:
     @parametrize
     async def test_method_create_or_update(self, async_client: AsyncJulep) -> None:
         user = await async_client.users.create_or_update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceCreated, user, path=["response"])
 
     @parametrize
     async def test_method_create_or_update_with_all_params(self, async_client: AsyncJulep) -> None:
         user = await async_client.users.create_or_update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
             name="name",
@@ -491,7 +491,7 @@ class TestAsyncUsers:
     @parametrize
     async def test_raw_response_create_or_update(self, async_client: AsyncJulep) -> None:
         response = await async_client.users.with_raw_response.create_or_update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -502,7 +502,7 @@ class TestAsyncUsers:
     @parametrize
     async def test_streaming_response_create_or_update(self, async_client: AsyncJulep) -> None:
         async with async_client.users.with_streaming_response.create_or_update(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -522,14 +522,14 @@ class TestAsyncUsers:
     @parametrize
     async def test_method_get(self, async_client: AsyncJulep) -> None:
         user = await async_client.users.get(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_raw_response_get(self, async_client: AsyncJulep) -> None:
         response = await async_client.users.with_raw_response.get(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -540,7 +540,7 @@ class TestAsyncUsers:
     @parametrize
     async def test_streaming_response_get(self, async_client: AsyncJulep) -> None:
         async with async_client.users.with_streaming_response.get(
-            "user_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -560,14 +560,14 @@ class TestAsyncUsers:
     @parametrize
     async def test_method_patch(self, async_client: AsyncJulep) -> None:
         user = await async_client.users.patch(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
     async def test_method_patch_with_all_params(self, async_client: AsyncJulep) -> None:
         user = await async_client.users.patch(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
             name="name",
@@ -577,7 +577,7 @@ class TestAsyncUsers:
     @parametrize
     async def test_raw_response_patch(self, async_client: AsyncJulep) -> None:
         response = await async_client.users.with_raw_response.patch(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -588,7 +588,7 @@ class TestAsyncUsers:
     @parametrize
     async def test_streaming_response_patch(self, async_client: AsyncJulep) -> None:
         async with async_client.users.with_streaming_response.patch(
-            user_id="user_id",
+            user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
