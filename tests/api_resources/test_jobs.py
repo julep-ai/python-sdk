@@ -20,14 +20,14 @@ class TestJobs:
     @parametrize
     def test_method_get(self, client: Julep) -> None:
         job = client.jobs.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "job_id",
         )
         assert_matches_type(JobStatus, job, path=["response"])
 
     @parametrize
     def test_raw_response_get(self, client: Julep) -> None:
         response = client.jobs.with_raw_response.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "job_id",
         )
 
         assert response.is_closed is True
@@ -38,7 +38,7 @@ class TestJobs:
     @parametrize
     def test_streaming_response_get(self, client: Julep) -> None:
         with client.jobs.with_streaming_response.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "job_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -62,14 +62,14 @@ class TestAsyncJobs:
     @parametrize
     async def test_method_get(self, async_client: AsyncJulep) -> None:
         job = await async_client.jobs.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "job_id",
         )
         assert_matches_type(JobStatus, job, path=["response"])
 
     @parametrize
     async def test_raw_response_get(self, async_client: AsyncJulep) -> None:
         response = await async_client.jobs.with_raw_response.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "job_id",
         )
 
         assert response.is_closed is True
@@ -80,7 +80,7 @@ class TestAsyncJobs:
     @parametrize
     async def test_streaming_response_get(self, async_client: AsyncJulep) -> None:
         async with async_client.jobs.with_streaming_response.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "job_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"

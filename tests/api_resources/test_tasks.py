@@ -22,7 +22,7 @@ class TestTasks:
     @parametrize
     def test_method_create(self, client: Julep) -> None:
         task = client.tasks.create(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         )
@@ -31,7 +31,7 @@ class TestTasks:
     @parametrize
     def test_method_create_with_all_params(self, client: Julep) -> None:
         task = client.tasks.create(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
             description="description",
@@ -82,7 +82,7 @@ class TestTasks:
     @parametrize
     def test_raw_response_create(self, client: Julep) -> None:
         response = client.tasks.with_raw_response.create(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         )
@@ -95,7 +95,7 @@ class TestTasks:
     @parametrize
     def test_streaming_response_create(self, client: Julep) -> None:
         with client.tasks.with_streaming_response.create(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         ) as response:
@@ -119,14 +119,14 @@ class TestTasks:
     @parametrize
     def test_method_list(self, client: Julep) -> None:
         task = client.tasks.list(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
         )
         assert_matches_type(SyncOffsetPagination[Task], task, path=["response"])
 
     @parametrize
     def test_method_list_with_all_params(self, client: Julep) -> None:
         task = client.tasks.list(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             direction="asc",
             limit=0,
             offset=0,
@@ -137,7 +137,7 @@ class TestTasks:
     @parametrize
     def test_raw_response_list(self, client: Julep) -> None:
         response = client.tasks.with_raw_response.list(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
         )
 
         assert response.is_closed is True
@@ -148,7 +148,7 @@ class TestTasks:
     @parametrize
     def test_streaming_response_list(self, client: Julep) -> None:
         with client.tasks.with_streaming_response.list(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -168,8 +168,8 @@ class TestTasks:
     @parametrize
     def test_method_create_or_update(self, client: Julep) -> None:
         task = client.tasks.create_or_update(
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="task_id",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         )
@@ -178,8 +178,8 @@ class TestTasks:
     @parametrize
     def test_method_create_or_update_with_all_params(self, client: Julep) -> None:
         task = client.tasks.create_or_update(
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="task_id",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
             description="description",
@@ -230,8 +230,8 @@ class TestTasks:
     @parametrize
     def test_raw_response_create_or_update(self, client: Julep) -> None:
         response = client.tasks.with_raw_response.create_or_update(
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="task_id",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         )
@@ -244,8 +244,8 @@ class TestTasks:
     @parametrize
     def test_streaming_response_create_or_update(self, client: Julep) -> None:
         with client.tasks.with_streaming_response.create_or_update(
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="task_id",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         ) as response:
@@ -261,7 +261,7 @@ class TestTasks:
     def test_path_params_create_or_update(self, client: Julep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
             client.tasks.with_raw_response.create_or_update(
-                task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                task_id="task_id",
                 agent_id="",
                 main=[{"evaluate": {"foo": "string"}}],
                 name="name",
@@ -270,7 +270,7 @@ class TestTasks:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `task_id` but received ''"):
             client.tasks.with_raw_response.create_or_update(
                 task_id="",
-                agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                agent_id="agent_id",
                 main=[{"evaluate": {"foo": "string"}}],
                 name="name",
             )
@@ -278,14 +278,14 @@ class TestTasks:
     @parametrize
     def test_method_get(self, client: Julep) -> None:
         task = client.tasks.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "task_id",
         )
         assert_matches_type(Task, task, path=["response"])
 
     @parametrize
     def test_raw_response_get(self, client: Julep) -> None:
         response = client.tasks.with_raw_response.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "task_id",
         )
 
         assert response.is_closed is True
@@ -296,7 +296,7 @@ class TestTasks:
     @parametrize
     def test_streaming_response_get(self, client: Julep) -> None:
         with client.tasks.with_streaming_response.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "task_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -320,7 +320,7 @@ class TestAsyncTasks:
     @parametrize
     async def test_method_create(self, async_client: AsyncJulep) -> None:
         task = await async_client.tasks.create(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         )
@@ -329,7 +329,7 @@ class TestAsyncTasks:
     @parametrize
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
         task = await async_client.tasks.create(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
             description="description",
@@ -380,7 +380,7 @@ class TestAsyncTasks:
     @parametrize
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
         response = await async_client.tasks.with_raw_response.create(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         )
@@ -393,7 +393,7 @@ class TestAsyncTasks:
     @parametrize
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
         async with async_client.tasks.with_streaming_response.create(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         ) as response:
@@ -417,14 +417,14 @@ class TestAsyncTasks:
     @parametrize
     async def test_method_list(self, async_client: AsyncJulep) -> None:
         task = await async_client.tasks.list(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
         )
         assert_matches_type(AsyncOffsetPagination[Task], task, path=["response"])
 
     @parametrize
     async def test_method_list_with_all_params(self, async_client: AsyncJulep) -> None:
         task = await async_client.tasks.list(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
             direction="asc",
             limit=0,
             offset=0,
@@ -435,7 +435,7 @@ class TestAsyncTasks:
     @parametrize
     async def test_raw_response_list(self, async_client: AsyncJulep) -> None:
         response = await async_client.tasks.with_raw_response.list(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
         )
 
         assert response.is_closed is True
@@ -446,7 +446,7 @@ class TestAsyncTasks:
     @parametrize
     async def test_streaming_response_list(self, async_client: AsyncJulep) -> None:
         async with async_client.tasks.with_streaming_response.list(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            agent_id="agent_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -466,8 +466,8 @@ class TestAsyncTasks:
     @parametrize
     async def test_method_create_or_update(self, async_client: AsyncJulep) -> None:
         task = await async_client.tasks.create_or_update(
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="task_id",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         )
@@ -476,8 +476,8 @@ class TestAsyncTasks:
     @parametrize
     async def test_method_create_or_update_with_all_params(self, async_client: AsyncJulep) -> None:
         task = await async_client.tasks.create_or_update(
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="task_id",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
             description="description",
@@ -528,8 +528,8 @@ class TestAsyncTasks:
     @parametrize
     async def test_raw_response_create_or_update(self, async_client: AsyncJulep) -> None:
         response = await async_client.tasks.with_raw_response.create_or_update(
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="task_id",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         )
@@ -542,8 +542,8 @@ class TestAsyncTasks:
     @parametrize
     async def test_streaming_response_create_or_update(self, async_client: AsyncJulep) -> None:
         async with async_client.tasks.with_streaming_response.create_or_update(
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            task_id="task_id",
+            agent_id="agent_id",
             main=[{"evaluate": {"foo": "string"}}],
             name="name",
         ) as response:
@@ -559,7 +559,7 @@ class TestAsyncTasks:
     async def test_path_params_create_or_update(self, async_client: AsyncJulep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
             await async_client.tasks.with_raw_response.create_or_update(
-                task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                task_id="task_id",
                 agent_id="",
                 main=[{"evaluate": {"foo": "string"}}],
                 name="name",
@@ -568,7 +568,7 @@ class TestAsyncTasks:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `task_id` but received ''"):
             await async_client.tasks.with_raw_response.create_or_update(
                 task_id="",
-                agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                agent_id="agent_id",
                 main=[{"evaluate": {"foo": "string"}}],
                 name="name",
             )
@@ -576,14 +576,14 @@ class TestAsyncTasks:
     @parametrize
     async def test_method_get(self, async_client: AsyncJulep) -> None:
         task = await async_client.tasks.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "task_id",
         )
         assert_matches_type(Task, task, path=["response"])
 
     @parametrize
     async def test_raw_response_get(self, async_client: AsyncJulep) -> None:
         response = await async_client.tasks.with_raw_response.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "task_id",
         )
 
         assert response.is_closed is True
@@ -594,7 +594,7 @@ class TestAsyncTasks:
     @parametrize
     async def test_streaming_response_get(self, async_client: AsyncJulep) -> None:
         async with async_client.tasks.with_streaming_response.get(
-            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            "task_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"

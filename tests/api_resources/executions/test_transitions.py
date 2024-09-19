@@ -21,14 +21,14 @@ class TestTransitions:
     @parametrize
     def test_method_list(self, client: Julep) -> None:
         transition = client.executions.transitions.list(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         )
         assert_matches_type(SyncOffsetPagination[Transition], transition, path=["response"])
 
     @parametrize
     def test_method_list_with_all_params(self, client: Julep) -> None:
         transition = client.executions.transitions.list(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
             direction="asc",
             limit=0,
             offset=0,
@@ -39,7 +39,7 @@ class TestTransitions:
     @parametrize
     def test_raw_response_list(self, client: Julep) -> None:
         response = client.executions.transitions.with_raw_response.list(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         )
 
         assert response.is_closed is True
@@ -50,7 +50,7 @@ class TestTransitions:
     @parametrize
     def test_streaming_response_list(self, client: Julep) -> None:
         with client.executions.transitions.with_streaming_response.list(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -70,14 +70,14 @@ class TestTransitions:
     @parametrize
     def test_method_stream(self, client: Julep) -> None:
         transition = client.executions.transitions.stream(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         )
         assert_matches_type(object, transition, path=["response"])
 
     @parametrize
     def test_method_stream_with_all_params(self, client: Julep) -> None:
         transition = client.executions.transitions.stream(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
             next_page_token="next_page_token",
         )
         assert_matches_type(object, transition, path=["response"])
@@ -85,7 +85,7 @@ class TestTransitions:
     @parametrize
     def test_raw_response_stream(self, client: Julep) -> None:
         response = client.executions.transitions.with_raw_response.stream(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         )
 
         assert response.is_closed is True
@@ -96,7 +96,7 @@ class TestTransitions:
     @parametrize
     def test_streaming_response_stream(self, client: Julep) -> None:
         with client.executions.transitions.with_streaming_response.stream(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -120,14 +120,14 @@ class TestAsyncTransitions:
     @parametrize
     async def test_method_list(self, async_client: AsyncJulep) -> None:
         transition = await async_client.executions.transitions.list(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         )
         assert_matches_type(AsyncOffsetPagination[Transition], transition, path=["response"])
 
     @parametrize
     async def test_method_list_with_all_params(self, async_client: AsyncJulep) -> None:
         transition = await async_client.executions.transitions.list(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
             direction="asc",
             limit=0,
             offset=0,
@@ -138,7 +138,7 @@ class TestAsyncTransitions:
     @parametrize
     async def test_raw_response_list(self, async_client: AsyncJulep) -> None:
         response = await async_client.executions.transitions.with_raw_response.list(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         )
 
         assert response.is_closed is True
@@ -149,7 +149,7 @@ class TestAsyncTransitions:
     @parametrize
     async def test_streaming_response_list(self, async_client: AsyncJulep) -> None:
         async with async_client.executions.transitions.with_streaming_response.list(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -169,14 +169,14 @@ class TestAsyncTransitions:
     @parametrize
     async def test_method_stream(self, async_client: AsyncJulep) -> None:
         transition = await async_client.executions.transitions.stream(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         )
         assert_matches_type(object, transition, path=["response"])
 
     @parametrize
     async def test_method_stream_with_all_params(self, async_client: AsyncJulep) -> None:
         transition = await async_client.executions.transitions.stream(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
             next_page_token="next_page_token",
         )
         assert_matches_type(object, transition, path=["response"])
@@ -184,7 +184,7 @@ class TestAsyncTransitions:
     @parametrize
     async def test_raw_response_stream(self, async_client: AsyncJulep) -> None:
         response = await async_client.executions.transitions.with_raw_response.stream(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         )
 
         assert response.is_closed is True
@@ -195,7 +195,7 @@ class TestAsyncTransitions:
     @parametrize
     async def test_streaming_response_stream(self, async_client: AsyncJulep) -> None:
         async with async_client.executions.transitions.with_streaming_response.stream(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            execution_id="execution_id",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
