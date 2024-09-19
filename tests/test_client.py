@@ -756,6 +756,7 @@ class TestJulep:
         response = client.agents.with_raw_response.create_or_update(agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e")
 
         assert response.retries_taken == failures_before_success
+        assert int(response.http_request.headers.get("x-stainless-retry-count")) == failures_before_success
 
 
 class TestAsyncJulep:
@@ -1490,3 +1491,4 @@ class TestAsyncJulep:
         )
 
         assert response.retries_taken == failures_before_success
+        assert int(response.http_request.headers.get("x-stainless-retry-count")) == failures_before_success
