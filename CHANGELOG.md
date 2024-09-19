@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.2.1 (2024-09-19)
+
+Full Changelog: [v1.2.0...v1.2.1](https://github.com/julep-ai/python-sdk/compare/v1.2.0...v1.2.1)
+
+### Bug Fixes
+
+* **client:** handle domains with underscores ([#15](https://github.com/julep-ai/python-sdk/issues/15)) ([f00026b](https://github.com/julep-ai/python-sdk/commit/f00026bf6cd9360eab7620d145add2616b4d3702))
+
+
+### Chores
+
+* **internal:** bump pyright / mypy version ([#14](https://github.com/julep-ai/python-sdk/issues/14)) ([73a4b15](https://github.com/julep-ai/python-sdk/commit/73a4b151a593dfa38523586d3511ee5ebfc663f1))
+* **internal:** codegen related update ([#12](https://github.com/julep-ai/python-sdk/issues/12)) ([4309b50](https://github.com/julep-ai/python-sdk/commit/4309b50db10f755f0d57a8638b97356058e4d93e))
+
 ## 1.2.0 (2024-09-19)
 
 Full Changelog: [v1.1.0...v1.2.0](https://github.com/julep-ai/python-sdk/compare/v1.1.0...v1.2.0)
