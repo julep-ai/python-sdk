@@ -69,14 +69,14 @@ class TestAgents:
     @parametrize
     def test_method_update(self, client: Julep) -> None:
         agent = client.agents.update(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
     def test_method_update_with_all_params(self, client: Julep) -> None:
         agent = client.agents.update(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             default_settings={
                 "frequency_penalty": -2,
@@ -97,7 +97,7 @@ class TestAgents:
     @parametrize
     def test_raw_response_update(self, client: Julep) -> None:
         response = client.agents.with_raw_response.update(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -108,7 +108,7 @@ class TestAgents:
     @parametrize
     def test_streaming_response_update(self, client: Julep) -> None:
         with client.agents.with_streaming_response.update(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -164,14 +164,14 @@ class TestAgents:
     @parametrize
     def test_method_delete(self, client: Julep) -> None:
         agent = client.agents.delete(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceDeleted, agent, path=["response"])
 
     @parametrize
     def test_raw_response_delete(self, client: Julep) -> None:
         response = client.agents.with_raw_response.delete(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -182,7 +182,7 @@ class TestAgents:
     @parametrize
     def test_streaming_response_delete(self, client: Julep) -> None:
         with client.agents.with_streaming_response.delete(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -261,14 +261,14 @@ class TestAgents:
     @parametrize
     def test_method_get(self, client: Julep) -> None:
         agent = client.agents.get(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_raw_response_get(self, client: Julep) -> None:
         response = client.agents.with_raw_response.get(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -279,7 +279,7 @@ class TestAgents:
     @parametrize
     def test_streaming_response_get(self, client: Julep) -> None:
         with client.agents.with_streaming_response.get(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -299,14 +299,14 @@ class TestAgents:
     @parametrize
     def test_method_patch(self, client: Julep) -> None:
         agent = client.agents.patch(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
     def test_method_patch_with_all_params(self, client: Julep) -> None:
         agent = client.agents.patch(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             default_settings={
                 "frequency_penalty": -2,
@@ -327,7 +327,7 @@ class TestAgents:
     @parametrize
     def test_raw_response_patch(self, client: Julep) -> None:
         response = client.agents.with_raw_response.patch(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -338,7 +338,7 @@ class TestAgents:
     @parametrize
     def test_streaming_response_patch(self, client: Julep) -> None:
         with client.agents.with_streaming_response.patch(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -407,14 +407,14 @@ class TestAsyncAgents:
     @parametrize
     async def test_method_update(self, async_client: AsyncJulep) -> None:
         agent = await async_client.agents.update(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
     async def test_method_update_with_all_params(self, async_client: AsyncJulep) -> None:
         agent = await async_client.agents.update(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             default_settings={
                 "frequency_penalty": -2,
@@ -435,7 +435,7 @@ class TestAsyncAgents:
     @parametrize
     async def test_raw_response_update(self, async_client: AsyncJulep) -> None:
         response = await async_client.agents.with_raw_response.update(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -446,7 +446,7 @@ class TestAsyncAgents:
     @parametrize
     async def test_streaming_response_update(self, async_client: AsyncJulep) -> None:
         async with async_client.agents.with_streaming_response.update(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -502,14 +502,14 @@ class TestAsyncAgents:
     @parametrize
     async def test_method_delete(self, async_client: AsyncJulep) -> None:
         agent = await async_client.agents.delete(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceDeleted, agent, path=["response"])
 
     @parametrize
     async def test_raw_response_delete(self, async_client: AsyncJulep) -> None:
         response = await async_client.agents.with_raw_response.delete(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -520,7 +520,7 @@ class TestAsyncAgents:
     @parametrize
     async def test_streaming_response_delete(self, async_client: AsyncJulep) -> None:
         async with async_client.agents.with_streaming_response.delete(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -599,14 +599,14 @@ class TestAsyncAgents:
     @parametrize
     async def test_method_get(self, async_client: AsyncJulep) -> None:
         agent = await async_client.agents.get(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_raw_response_get(self, async_client: AsyncJulep) -> None:
         response = await async_client.agents.with_raw_response.get(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -617,7 +617,7 @@ class TestAsyncAgents:
     @parametrize
     async def test_streaming_response_get(self, async_client: AsyncJulep) -> None:
         async with async_client.agents.with_streaming_response.get(
-            "agent_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -637,14 +637,14 @@ class TestAsyncAgents:
     @parametrize
     async def test_method_patch(self, async_client: AsyncJulep) -> None:
         agent = await async_client.agents.patch(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
     async def test_method_patch_with_all_params(self, async_client: AsyncJulep) -> None:
         agent = await async_client.agents.patch(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             default_settings={
                 "frequency_penalty": -2,
@@ -665,7 +665,7 @@ class TestAsyncAgents:
     @parametrize
     async def test_raw_response_patch(self, async_client: AsyncJulep) -> None:
         response = await async_client.agents.with_raw_response.patch(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -676,7 +676,7 @@ class TestAsyncAgents:
     @parametrize
     async def test_streaming_response_patch(self, async_client: AsyncJulep) -> None:
         async with async_client.agents.with_streaming_response.patch(
-            agent_id="agent_id",
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"

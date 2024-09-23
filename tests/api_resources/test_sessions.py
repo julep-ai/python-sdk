@@ -74,14 +74,14 @@ class TestSessions:
     @parametrize
     def test_method_update(self, client: Julep) -> None:
         session = client.sessions.update(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     def test_method_update_with_all_params(self, client: Julep) -> None:
         session = client.sessions.update(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             context_overflow="truncate",
             metadata={},
             render_templates=True,
@@ -93,7 +93,7 @@ class TestSessions:
     @parametrize
     def test_raw_response_update(self, client: Julep) -> None:
         response = client.sessions.with_raw_response.update(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -104,7 +104,7 @@ class TestSessions:
     @parametrize
     def test_streaming_response_update(self, client: Julep) -> None:
         with client.sessions.with_streaming_response.update(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -160,14 +160,14 @@ class TestSessions:
     @parametrize
     def test_method_delete(self, client: Julep) -> None:
         session = client.sessions.delete(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceDeleted, session, path=["response"])
 
     @parametrize
     def test_raw_response_delete(self, client: Julep) -> None:
         response = client.sessions.with_raw_response.delete(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -178,7 +178,7 @@ class TestSessions:
     @parametrize
     def test_streaming_response_delete(self, client: Julep) -> None:
         with client.sessions.with_streaming_response.delete(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -276,6 +276,7 @@ class TestSessions:
                 },
             ],
             top_p=0,
+            x_custom_api_key="X-Custom-Api-Key",
         )
         assert_matches_type(SessionChatResponse, session, path=["response"])
 
@@ -333,7 +334,7 @@ class TestSessions:
         session = client.sessions.create_or_update(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceCreated, session, path=["response"])
+        assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     def test_method_create_or_update_with_all_params(self, client: Julep) -> None:
@@ -357,7 +358,7 @@ class TestSessions:
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             ],
         )
-        assert_matches_type(ResourceCreated, session, path=["response"])
+        assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     def test_raw_response_create_or_update(self, client: Julep) -> None:
@@ -368,7 +369,7 @@ class TestSessions:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         session = response.parse()
-        assert_matches_type(ResourceCreated, session, path=["response"])
+        assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     def test_streaming_response_create_or_update(self, client: Julep) -> None:
@@ -379,7 +380,7 @@ class TestSessions:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             session = response.parse()
-            assert_matches_type(ResourceCreated, session, path=["response"])
+            assert_matches_type(ResourceUpdated, session, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -393,14 +394,14 @@ class TestSessions:
     @parametrize
     def test_method_get(self, client: Julep) -> None:
         session = client.sessions.get(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(Session, session, path=["response"])
 
     @parametrize
     def test_raw_response_get(self, client: Julep) -> None:
         response = client.sessions.with_raw_response.get(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -411,7 +412,7 @@ class TestSessions:
     @parametrize
     def test_streaming_response_get(self, client: Julep) -> None:
         with client.sessions.with_streaming_response.get(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -431,14 +432,14 @@ class TestSessions:
     @parametrize
     def test_method_history(self, client: Julep) -> None:
         session = client.sessions.history(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(History, session, path=["response"])
 
     @parametrize
     def test_raw_response_history(self, client: Julep) -> None:
         response = client.sessions.with_raw_response.history(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -449,7 +450,7 @@ class TestSessions:
     @parametrize
     def test_streaming_response_history(self, client: Julep) -> None:
         with client.sessions.with_streaming_response.history(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -469,14 +470,14 @@ class TestSessions:
     @parametrize
     def test_method_patch(self, client: Julep) -> None:
         session = client.sessions.patch(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     def test_method_patch_with_all_params(self, client: Julep) -> None:
         session = client.sessions.patch(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             context_overflow="truncate",
             metadata={},
             render_templates=True,
@@ -488,7 +489,7 @@ class TestSessions:
     @parametrize
     def test_raw_response_patch(self, client: Julep) -> None:
         response = client.sessions.with_raw_response.patch(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -499,7 +500,7 @@ class TestSessions:
     @parametrize
     def test_streaming_response_patch(self, client: Julep) -> None:
         with client.sessions.with_streaming_response.patch(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -571,14 +572,14 @@ class TestAsyncSessions:
     @parametrize
     async def test_method_update(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.update(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     async def test_method_update_with_all_params(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.update(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             context_overflow="truncate",
             metadata={},
             render_templates=True,
@@ -590,7 +591,7 @@ class TestAsyncSessions:
     @parametrize
     async def test_raw_response_update(self, async_client: AsyncJulep) -> None:
         response = await async_client.sessions.with_raw_response.update(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -601,7 +602,7 @@ class TestAsyncSessions:
     @parametrize
     async def test_streaming_response_update(self, async_client: AsyncJulep) -> None:
         async with async_client.sessions.with_streaming_response.update(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -657,14 +658,14 @@ class TestAsyncSessions:
     @parametrize
     async def test_method_delete(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.delete(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceDeleted, session, path=["response"])
 
     @parametrize
     async def test_raw_response_delete(self, async_client: AsyncJulep) -> None:
         response = await async_client.sessions.with_raw_response.delete(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -675,7 +676,7 @@ class TestAsyncSessions:
     @parametrize
     async def test_streaming_response_delete(self, async_client: AsyncJulep) -> None:
         async with async_client.sessions.with_streaming_response.delete(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -773,6 +774,7 @@ class TestAsyncSessions:
                 },
             ],
             top_p=0,
+            x_custom_api_key="X-Custom-Api-Key",
         )
         assert_matches_type(SessionChatResponse, session, path=["response"])
 
@@ -830,7 +832,7 @@ class TestAsyncSessions:
         session = await async_client.sessions.create_or_update(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceCreated, session, path=["response"])
+        assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     async def test_method_create_or_update_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -854,7 +856,7 @@ class TestAsyncSessions:
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             ],
         )
-        assert_matches_type(ResourceCreated, session, path=["response"])
+        assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     async def test_raw_response_create_or_update(self, async_client: AsyncJulep) -> None:
@@ -865,7 +867,7 @@ class TestAsyncSessions:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         session = await response.parse()
-        assert_matches_type(ResourceCreated, session, path=["response"])
+        assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     async def test_streaming_response_create_or_update(self, async_client: AsyncJulep) -> None:
@@ -876,7 +878,7 @@ class TestAsyncSessions:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             session = await response.parse()
-            assert_matches_type(ResourceCreated, session, path=["response"])
+            assert_matches_type(ResourceUpdated, session, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -890,14 +892,14 @@ class TestAsyncSessions:
     @parametrize
     async def test_method_get(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.get(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(Session, session, path=["response"])
 
     @parametrize
     async def test_raw_response_get(self, async_client: AsyncJulep) -> None:
         response = await async_client.sessions.with_raw_response.get(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -908,7 +910,7 @@ class TestAsyncSessions:
     @parametrize
     async def test_streaming_response_get(self, async_client: AsyncJulep) -> None:
         async with async_client.sessions.with_streaming_response.get(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -928,14 +930,14 @@ class TestAsyncSessions:
     @parametrize
     async def test_method_history(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.history(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(History, session, path=["response"])
 
     @parametrize
     async def test_raw_response_history(self, async_client: AsyncJulep) -> None:
         response = await async_client.sessions.with_raw_response.history(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -946,7 +948,7 @@ class TestAsyncSessions:
     @parametrize
     async def test_streaming_response_history(self, async_client: AsyncJulep) -> None:
         async with async_client.sessions.with_streaming_response.history(
-            "session_id",
+            "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -966,14 +968,14 @@ class TestAsyncSessions:
     @parametrize
     async def test_method_patch(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.patch(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
     async def test_method_patch_with_all_params(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.patch(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             context_overflow="truncate",
             metadata={},
             render_templates=True,
@@ -985,7 +987,7 @@ class TestAsyncSessions:
     @parametrize
     async def test_raw_response_patch(self, async_client: AsyncJulep) -> None:
         response = await async_client.sessions.with_raw_response.patch(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
         assert response.is_closed is True
@@ -996,7 +998,7 @@ class TestAsyncSessions:
     @parametrize
     async def test_streaming_response_patch(self, async_client: AsyncJulep) -> None:
         async with async_client.sessions.with_streaming_response.patch(
-            session_id="session_id",
+            session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"

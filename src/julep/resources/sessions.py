@@ -18,6 +18,7 @@ from ..types import (
 from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven
 from .._utils import (
     maybe_transform,
+    strip_not_given,
     async_maybe_transform,
 )
 from .._compat import cached_property
@@ -268,6 +269,7 @@ class SessionsResource(SyncAPIResource):
         tool_choice: Optional[session_chat_params.ToolChoice] | NotGiven = NOT_GIVEN,
         tools: Iterable[session_chat_params.Tool] | NotGiven = NOT_GIVEN,
         top_p: Optional[float] | NotGiven = NOT_GIVEN,
+        x_custom_api_key: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -289,6 +291,7 @@ class SessionsResource(SyncAPIResource):
         """
         if not session_id:
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
+        extra_headers = {**strip_not_given({"X-Custom-Api-Key": x_custom_api_key}), **(extra_headers or {})}
         return cast(
             SessionChatResponse,
             self._post(
@@ -346,7 +349,7 @@ class SessionsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> ResourceUpdated:
         """
         Create Or Update Session
 
@@ -380,7 +383,7 @@ class SessionsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=ResourceUpdated,
         )
 
     def get(
@@ -725,6 +728,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         tool_choice: Optional[session_chat_params.ToolChoice] | NotGiven = NOT_GIVEN,
         tools: Iterable[session_chat_params.Tool] | NotGiven = NOT_GIVEN,
         top_p: Optional[float] | NotGiven = NOT_GIVEN,
+        x_custom_api_key: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -746,6 +750,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         """
         if not session_id:
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
+        extra_headers = {**strip_not_given({"X-Custom-Api-Key": x_custom_api_key}), **(extra_headers or {})}
         return cast(
             SessionChatResponse,
             await self._post(
@@ -803,7 +808,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> ResourceUpdated:
         """
         Create Or Update Session
 
@@ -837,7 +842,7 @@ class AsyncSessionsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=ResourceUpdated,
         )
 
     async def get(
