@@ -41,7 +41,7 @@ class Integration(TypedDict, total=False):
     method: Optional[str]
 
     provider: Optional[
-        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
     ]
 
     setup: Optional[object]

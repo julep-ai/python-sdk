@@ -18,9 +18,7 @@ class Function(BaseModel):
 
 
 class Integration(BaseModel):
-    provider: Literal[
-        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
-    ]
+    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
 
     arguments: Optional[object] = None
 

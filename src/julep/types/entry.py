@@ -66,9 +66,7 @@ class ContentToolFunction(BaseModel):
 
 
 class ContentToolIntegration(BaseModel):
-    provider: Literal[
-        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
-    ]
+    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
 
     arguments: Optional[object] = None
 
@@ -159,9 +157,7 @@ class ContentUnionMember5ToolFunction(BaseModel):
 
 
 class ContentUnionMember5ToolIntegration(BaseModel):
-    provider: Literal[
-        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
-    ]
+    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
 
     arguments: Optional[object] = None
 

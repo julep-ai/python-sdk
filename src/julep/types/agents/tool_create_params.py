@@ -33,7 +33,7 @@ class Function(TypedDict, total=False):
 
 class Integration(TypedDict, total=False):
     provider: Required[
-        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
     ]
 
     arguments: Optional[object]
