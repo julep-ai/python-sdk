@@ -105,7 +105,7 @@ class ToolFunction(TypedDict, total=False):
 
 class ToolIntegration(TypedDict, total=False):
     provider: Required[
-        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
     ]
 
     arguments: Optional[object]
