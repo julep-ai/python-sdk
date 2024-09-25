@@ -25,7 +25,6 @@ class TestTools:
     def test_method_create(self, client: Julep) -> None:
         tool = client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -34,15 +33,24 @@ class TestTools:
     def test_method_create_with_all_params(self, client: Julep) -> None:
         tool = client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
             function={
                 "description": "description",
                 "name": {},
                 "parameters": {},
             },
-            name="name",
-            api_call={},
-            integration={},
-            system={},
+            integration={
+                "provider": "dummy",
+                "arguments": {},
+                "description": "description",
+                "method": "method",
+                "setup": {},
+            },
+            system={
+                "call": "call",
+                "arguments": {},
+                "description": "description",
+            },
             type="function",
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -51,7 +59,6 @@ class TestTools:
     def test_raw_response_create(self, client: Julep) -> None:
         response = client.agents.tools.with_raw_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         )
 
@@ -64,7 +71,6 @@ class TestTools:
     def test_streaming_response_create(self, client: Julep) -> None:
         with client.agents.tools.with_streaming_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         ) as response:
             assert not response.is_closed
@@ -80,7 +86,6 @@ class TestTools:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
             client.agents.tools.with_raw_response.create(
                 agent_id="",
-                function={},
                 name="name",
             )
 
@@ -89,7 +94,6 @@ class TestTools:
         tool = client.agents.tools.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -99,15 +103,24 @@ class TestTools:
         tool = client.agents.tools.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
             function={
                 "description": "description",
                 "name": {},
                 "parameters": {},
             },
-            name="name",
-            api_call={},
-            integration={},
-            system={},
+            integration={
+                "provider": "dummy",
+                "arguments": {},
+                "description": "description",
+                "method": "method",
+                "setup": {},
+            },
+            system={
+                "call": "call",
+                "arguments": {},
+                "description": "description",
+            },
             type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -117,7 +130,6 @@ class TestTools:
         response = client.agents.tools.with_raw_response.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         )
 
@@ -131,7 +143,6 @@ class TestTools:
         with client.agents.tools.with_streaming_response.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         ) as response:
             assert not response.is_closed
@@ -148,7 +159,6 @@ class TestTools:
             client.agents.tools.with_raw_response.update(
                 tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
-                function={},
                 name="name",
             )
 
@@ -156,7 +166,6 @@ class TestTools:
             client.agents.tools.with_raw_response.update(
                 tool_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                function={},
                 name="name",
             )
 
@@ -270,15 +279,24 @@ class TestTools:
         tool = client.agents.tools.patch(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            api_call={},
             function={
                 "description": "description",
                 "name": {},
                 "parameters": {},
             },
-            integration={},
+            integration={
+                "arguments": {},
+                "description": "description",
+                "method": "method",
+                "provider": "dummy",
+                "setup": {},
+            },
             name="name",
-            system={},
+            system={
+                "arguments": {},
+                "call": "call",
+                "description": "description",
+            },
             type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -331,7 +349,6 @@ class TestAsyncTools:
     async def test_method_create(self, async_client: AsyncJulep) -> None:
         tool = await async_client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -340,15 +357,24 @@ class TestAsyncTools:
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
         tool = await async_client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
             function={
                 "description": "description",
                 "name": {},
                 "parameters": {},
             },
-            name="name",
-            api_call={},
-            integration={},
-            system={},
+            integration={
+                "provider": "dummy",
+                "arguments": {},
+                "description": "description",
+                "method": "method",
+                "setup": {},
+            },
+            system={
+                "call": "call",
+                "arguments": {},
+                "description": "description",
+            },
             type="function",
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -357,7 +383,6 @@ class TestAsyncTools:
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
         response = await async_client.agents.tools.with_raw_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         )
 
@@ -370,7 +395,6 @@ class TestAsyncTools:
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
         async with async_client.agents.tools.with_streaming_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         ) as response:
             assert not response.is_closed
@@ -386,7 +410,6 @@ class TestAsyncTools:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
             await async_client.agents.tools.with_raw_response.create(
                 agent_id="",
-                function={},
                 name="name",
             )
 
@@ -395,7 +418,6 @@ class TestAsyncTools:
         tool = await async_client.agents.tools.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -405,15 +427,24 @@ class TestAsyncTools:
         tool = await async_client.agents.tools.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
             function={
                 "description": "description",
                 "name": {},
                 "parameters": {},
             },
-            name="name",
-            api_call={},
-            integration={},
-            system={},
+            integration={
+                "provider": "dummy",
+                "arguments": {},
+                "description": "description",
+                "method": "method",
+                "setup": {},
+            },
+            system={
+                "call": "call",
+                "arguments": {},
+                "description": "description",
+            },
             type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -423,7 +454,6 @@ class TestAsyncTools:
         response = await async_client.agents.tools.with_raw_response.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         )
 
@@ -437,7 +467,6 @@ class TestAsyncTools:
         async with async_client.agents.tools.with_streaming_response.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            function={},
             name="name",
         ) as response:
             assert not response.is_closed
@@ -454,7 +483,6 @@ class TestAsyncTools:
             await async_client.agents.tools.with_raw_response.update(
                 tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
-                function={},
                 name="name",
             )
 
@@ -462,7 +490,6 @@ class TestAsyncTools:
             await async_client.agents.tools.with_raw_response.update(
                 tool_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                function={},
                 name="name",
             )
 
@@ -576,15 +603,24 @@ class TestAsyncTools:
         tool = await async_client.agents.tools.patch(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            api_call={},
             function={
                 "description": "description",
                 "name": {},
                 "parameters": {},
             },
-            integration={},
+            integration={
+                "arguments": {},
+                "description": "description",
+                "method": "method",
+                "provider": "dummy",
+                "setup": {},
+            },
             name="name",
-            system={},
+            system={
+                "arguments": {},
+                "call": "call",
+                "description": "description",
+            },
             type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])

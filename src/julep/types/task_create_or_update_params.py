@@ -19,6 +19,18 @@ __all__ = [
     "MainPromptStepInputPromptUnionMember0ContentUnionMember1Content",
     "MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainPromptStepInputToolChoice",
+    "MainPromptStepInputToolChoiceNamedToolChoice",
+    "MainPromptStepInputToolChoiceNamedToolChoiceFunction",
+    "MainPromptStepInputToolsUnionMember1",
+    "MainPromptStepInputToolsUnionMember1ToolRef",
+    "MainPromptStepInputToolsUnionMember1ToolRefRef",
+    "MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestFunction",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestSystem",
     "MainGetStep",
     "MainSetStep",
     "MainLogStep",
@@ -46,6 +58,18 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1Content",
     "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolChoice",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolChoiceNamedToolChoice",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolChoiceNamedToolChoiceFunction",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestFunction",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestSystem",
     "MainIfElseWorkflowStepInputThenGetStep",
     "MainIfElseWorkflowStepInputThenSetStep",
     "MainIfElseWorkflowStepInputThenLogStep",
@@ -72,6 +96,18 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1Content",
     "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolChoice",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolChoiceNamedToolChoice",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolChoiceNamedToolChoiceFunction",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestFunction",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestIntegration",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestSystem",
     "MainIfElseWorkflowStepInputElseGetStep",
     "MainIfElseWorkflowStepInputElseSetStep",
     "MainIfElseWorkflowStepInputElseLogStep",
@@ -100,6 +136,18 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1Content",
     "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolChoice",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolChoiceNamedToolChoice",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolChoiceNamedToolChoiceFunction",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestFunction",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestSystem",
     "MainSwitchStepInputSwitchThenGetStep",
     "MainSwitchStepInputSwitchThenSetStep",
     "MainSwitchStepInputSwitchThenLogStep",
@@ -128,6 +176,18 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1Content",
     "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainForeachStepInputForeachDoPromptStepInputToolChoice",
+    "MainForeachStepInputForeachDoPromptStepInputToolChoiceNamedToolChoice",
+    "MainForeachStepInputForeachDoPromptStepInputToolChoiceNamedToolChoiceFunction",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestFunction",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestSystem",
     "MainForeachStepInputForeachDoGetStep",
     "MainForeachStepInputForeachDoSetStep",
     "MainForeachStepInputForeachDoLogStep",
@@ -148,6 +208,18 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1Content",
     "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainParallelStepInputParallelPromptStepInputToolChoice",
+    "MainParallelStepInputParallelPromptStepInputToolChoiceNamedToolChoice",
+    "MainParallelStepInputParallelPromptStepInputToolChoiceNamedToolChoiceFunction",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestFunction",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestSystem",
     "MainParallelStepInputParallelGetStep",
     "MainParallelStepInputParallelSetStep",
     "MainParallelStepInputParallelLogStep",
@@ -168,6 +240,18 @@ __all__ = [
     "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1Content",
     "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainMainInputMapPromptStepInputToolChoice",
+    "MainMainInputMapPromptStepInputToolChoiceNamedToolChoice",
+    "MainMainInputMapPromptStepInputToolChoiceNamedToolChoiceFunction",
+    "MainMainInputMapPromptStepInputToolsUnionMember1",
+    "MainMainInputMapPromptStepInputToolsUnionMember1ToolRef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestFunction",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestSystem",
     "MainMainInputMapGetStep",
     "MainMainInputMapSetStep",
     "MainMainInputMapLogStep",
@@ -250,10 +334,100 @@ class MainPromptStepInputPromptUnionMember0(_MainPromptStepInputPromptUnionMembe
     name: Optional[str]
 
 
+class MainPromptStepInputToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
+    name: Required[str]
+
+
+class MainPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
+    type: Required[Literal["function", "integration", "system", "api_call"]]
+
+    function: Optional[MainPromptStepInputToolChoiceNamedToolChoiceFunction]
+
+
+MainPromptStepInputToolChoice: TypeAlias = Union[Literal["auto", "none"], MainPromptStepInputToolChoiceNamedToolChoice]
+
+
+class MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByID(TypedDict, total=False):
+    id: Optional[str]
+
+
+class MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByName(TypedDict, total=False):
+    name: Optional[str]
+
+
+MainPromptStepInputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByID,
+    MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=False):
+    ref: Required[MainPromptStepInputToolsUnionMember1ToolRefRef]
+    """Reference to a tool by id"""
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
+    description: Optional[str]
+
+    name: Optional[object]
+
+    parameters: Optional[object]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
+    provider: Required[
+        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+    ]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+    method: Optional[str]
+
+    setup: Optional[object]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
+    call: Required[str]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
+    name: Required[str]
+
+    function: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestFunction]
+    """Function definition"""
+
+    integration: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestIntegration]
+    """Integration definition"""
+
+    system: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestSystem]
+    """System definition"""
+
+    type: Literal["function", "integration", "system", "api_call"]
+
+
+MainPromptStepInputToolsUnionMember1: TypeAlias = Union[
+    MainPromptStepInputToolsUnionMember1ToolRef, MainPromptStepInputToolsUnionMember1CreateToolRequest
+]
+
+
 class MainPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainPromptStepInputPromptUnionMember0], str]]
 
+    forward_tool_results: Optional[bool]
+
     settings: Optional[ChatSettingsParam]
+
+    tool_choice: Optional[MainPromptStepInputToolChoice]
+
+    tools: Union[Literal["all"], Iterable[MainPromptStepInputToolsUnionMember1]]
+
+    unwrap: bool
 
 
 class MainGetStep(TypedDict, total=False):
@@ -431,10 +605,105 @@ class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0(
     name: Optional[str]
 
 
+class MainIfElseWorkflowStepInputThenPromptStepInputToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
+    name: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
+    type: Required[Literal["function", "integration", "system", "api_call"]]
+
+    function: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolChoiceNamedToolChoiceFunction]
+
+
+MainIfElseWorkflowStepInputThenPromptStepInputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainIfElseWorkflowStepInputThenPromptStepInputToolChoiceNamedToolChoice
+]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByID(TypedDict, total=False):
+    id: Optional[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName(TypedDict, total=False):
+    name: Optional[str]
+
+
+MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByID,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=False):
+    ref: Required[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRef]
+    """Reference to a tool by id"""
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
+    description: Optional[str]
+
+    name: Optional[object]
+
+    parameters: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration(
+    TypedDict, total=False
+):
+    provider: Required[
+        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+    ]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+    method: Optional[str]
+
+    setup: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
+    call: Required[str]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
+    name: Required[str]
+
+    function: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestFunction]
+    """Function definition"""
+
+    integration: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration]
+    """Integration definition"""
+
+    system: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestSystem]
+    """System definition"""
+
+    type: Literal["function", "integration", "system", "api_call"]
+
+
+MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1: TypeAlias = Union[
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainIfElseWorkflowStepInputThenPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0], str]]
 
+    forward_tool_results: Optional[bool]
+
     settings: Optional[ChatSettingsParam]
+
+    tool_choice: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolChoice]
+
+    tools: Union[Literal["all"], Iterable[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1]]
+
+    unwrap: bool
 
 
 class MainIfElseWorkflowStepInputThenGetStep(TypedDict, total=False):
@@ -631,10 +900,105 @@ class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0(
     name: Optional[str]
 
 
+class MainIfElseWorkflowStepInputElsePromptStepInputToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
+    name: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
+    type: Required[Literal["function", "integration", "system", "api_call"]]
+
+    function: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolChoiceNamedToolChoiceFunction]
+
+
+MainIfElseWorkflowStepInputElsePromptStepInputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainIfElseWorkflowStepInputElsePromptStepInputToolChoiceNamedToolChoice
+]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByID(TypedDict, total=False):
+    id: Optional[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByName(TypedDict, total=False):
+    name: Optional[str]
+
+
+MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByID,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRef(TypedDict, total=False):
+    ref: Required[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRef]
+    """Reference to a tool by id"""
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
+    description: Optional[str]
+
+    name: Optional[object]
+
+    parameters: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestIntegration(
+    TypedDict, total=False
+):
+    provider: Required[
+        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+    ]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+    method: Optional[str]
+
+    setup: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
+    call: Required[str]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
+    name: Required[str]
+
+    function: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestFunction]
+    """Function definition"""
+
+    integration: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestIntegration]
+    """Integration definition"""
+
+    system: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestSystem]
+    """System definition"""
+
+    type: Literal["function", "integration", "system", "api_call"]
+
+
+MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1: TypeAlias = Union[
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainIfElseWorkflowStepInputElsePromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0], str]]
 
+    forward_tool_results: Optional[bool]
+
     settings: Optional[ChatSettingsParam]
+
+    tool_choice: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolChoice]
+
+    tools: Union[Literal["all"], Iterable[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1]]
+
+    unwrap: bool
 
 
 class MainIfElseWorkflowStepInputElseGetStep(TypedDict, total=False):
@@ -840,10 +1204,103 @@ class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0(
     name: Optional[str]
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
+    name: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
+    type: Required[Literal["function", "integration", "system", "api_call"]]
+
+    function: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolChoiceNamedToolChoiceFunction]
+
+
+MainSwitchStepInputSwitchThenPromptStepInputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainSwitchStepInputSwitchThenPromptStepInputToolChoiceNamedToolChoice
+]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByID(TypedDict, total=False):
+    id: Optional[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName(TypedDict, total=False):
+    name: Optional[str]
+
+
+MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByID,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=False):
+    ref: Required[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRef]
+    """Reference to a tool by id"""
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
+    description: Optional[str]
+
+    name: Optional[object]
+
+    parameters: Optional[object]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
+    provider: Required[
+        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+    ]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+    method: Optional[str]
+
+    setup: Optional[object]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
+    call: Required[str]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
+    name: Required[str]
+
+    function: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestFunction]
+    """Function definition"""
+
+    integration: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration]
+    """Integration definition"""
+
+    system: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestSystem]
+    """System definition"""
+
+    type: Literal["function", "integration", "system", "api_call"]
+
+
+MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1: TypeAlias = Union[
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainSwitchStepInputSwitchThenPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0], str]]
 
+    forward_tool_results: Optional[bool]
+
     settings: Optional[ChatSettingsParam]
+
+    tool_choice: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolChoice]
+
+    tools: Union[Literal["all"], Iterable[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1]]
+
+    unwrap: bool
 
 
 class MainSwitchStepInputSwitchThenGetStep(TypedDict, total=False):
@@ -1044,10 +1501,103 @@ class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0(
     name: Optional[str]
 
 
+class MainForeachStepInputForeachDoPromptStepInputToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
+    name: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
+    type: Required[Literal["function", "integration", "system", "api_call"]]
+
+    function: Optional[MainForeachStepInputForeachDoPromptStepInputToolChoiceNamedToolChoiceFunction]
+
+
+MainForeachStepInputForeachDoPromptStepInputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainForeachStepInputForeachDoPromptStepInputToolChoiceNamedToolChoice
+]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByID(TypedDict, total=False):
+    id: Optional[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByName(TypedDict, total=False):
+    name: Optional[str]
+
+
+MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByID,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=False):
+    ref: Required[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRef]
+    """Reference to a tool by id"""
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
+    description: Optional[str]
+
+    name: Optional[object]
+
+    parameters: Optional[object]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
+    provider: Required[
+        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+    ]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+    method: Optional[str]
+
+    setup: Optional[object]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
+    call: Required[str]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
+    name: Required[str]
+
+    function: Optional[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestFunction]
+    """Function definition"""
+
+    integration: Optional[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestIntegration]
+    """Integration definition"""
+
+    system: Optional[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestSystem]
+    """System definition"""
+
+    type: Literal["function", "integration", "system", "api_call"]
+
+
+MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1: TypeAlias = Union[
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainForeachStepInputForeachDoPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0], str]]
 
+    forward_tool_results: Optional[bool]
+
     settings: Optional[ChatSettingsParam]
+
+    tool_choice: Optional[MainForeachStepInputForeachDoPromptStepInputToolChoice]
+
+    tools: Union[Literal["all"], Iterable[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1]]
+
+    unwrap: bool
 
 
 class MainForeachStepInputForeachDoGetStep(TypedDict, total=False):
@@ -1204,10 +1754,103 @@ class MainParallelStepInputParallelPromptStepInputPromptUnionMember0(
     name: Optional[str]
 
 
+class MainParallelStepInputParallelPromptStepInputToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
+    name: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
+    type: Required[Literal["function", "integration", "system", "api_call"]]
+
+    function: Optional[MainParallelStepInputParallelPromptStepInputToolChoiceNamedToolChoiceFunction]
+
+
+MainParallelStepInputParallelPromptStepInputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainParallelStepInputParallelPromptStepInputToolChoiceNamedToolChoice
+]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByID(TypedDict, total=False):
+    id: Optional[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByName(TypedDict, total=False):
+    name: Optional[str]
+
+
+MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByID,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=False):
+    ref: Required[MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRef]
+    """Reference to a tool by id"""
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
+    description: Optional[str]
+
+    name: Optional[object]
+
+    parameters: Optional[object]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
+    provider: Required[
+        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+    ]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+    method: Optional[str]
+
+    setup: Optional[object]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
+    call: Required[str]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
+    name: Required[str]
+
+    function: Optional[MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestFunction]
+    """Function definition"""
+
+    integration: Optional[MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestIntegration]
+    """Integration definition"""
+
+    system: Optional[MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestSystem]
+    """System definition"""
+
+    type: Literal["function", "integration", "system", "api_call"]
+
+
+MainParallelStepInputParallelPromptStepInputToolsUnionMember1: TypeAlias = Union[
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainParallelStepInputParallelPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainParallelStepInputParallelPromptStepInputPromptUnionMember0], str]]
 
+    forward_tool_results: Optional[bool]
+
     settings: Optional[ChatSettingsParam]
+
+    tool_choice: Optional[MainParallelStepInputParallelPromptStepInputToolChoice]
+
+    tools: Union[Literal["all"], Iterable[MainParallelStepInputParallelPromptStepInputToolsUnionMember1]]
+
+    unwrap: bool
 
 
 class MainParallelStepInputParallelGetStep(TypedDict, total=False):
@@ -1344,10 +1987,103 @@ class MainMainInputMapPromptStepInputPromptUnionMember0(
     name: Optional[str]
 
 
+class MainMainInputMapPromptStepInputToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
+    name: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
+    type: Required[Literal["function", "integration", "system", "api_call"]]
+
+    function: Optional[MainMainInputMapPromptStepInputToolChoiceNamedToolChoiceFunction]
+
+
+MainMainInputMapPromptStepInputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainMainInputMapPromptStepInputToolChoiceNamedToolChoice
+]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByID(TypedDict, total=False):
+    id: Optional[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByName(TypedDict, total=False):
+    name: Optional[str]
+
+
+MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByID,
+    MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=False):
+    ref: Required[MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRef]
+    """Reference to a tool by id"""
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
+    description: Optional[str]
+
+    name: Optional[object]
+
+    parameters: Optional[object]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
+    provider: Required[
+        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+    ]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+    method: Optional[str]
+
+    setup: Optional[object]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
+    call: Required[str]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
+    name: Required[str]
+
+    function: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestFunction]
+    """Function definition"""
+
+    integration: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestIntegration]
+    """Integration definition"""
+
+    system: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestSystem]
+    """System definition"""
+
+    type: Literal["function", "integration", "system", "api_call"]
+
+
+MainMainInputMapPromptStepInputToolsUnionMember1: TypeAlias = Union[
+    MainMainInputMapPromptStepInputToolsUnionMember1ToolRef,
+    MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainMainInputMapPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainMainInputMapPromptStepInputPromptUnionMember0], str]]
 
+    forward_tool_results: Optional[bool]
+
     settings: Optional[ChatSettingsParam]
+
+    tool_choice: Optional[MainMainInputMapPromptStepInputToolChoice]
+
+    tools: Union[Literal["all"], Iterable[MainMainInputMapPromptStepInputToolsUnionMember1]]
+
+    unwrap: bool
 
 
 class MainMainInputMapGetStep(TypedDict, total=False):

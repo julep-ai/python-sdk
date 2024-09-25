@@ -5,7 +5,7 @@ from typing_extensions import Literal
 
 from .._models import BaseModel
 
-__all__ = ["Tool", "Function"]
+__all__ = ["Tool", "Function", "Integration", "System"]
 
 
 class Function(BaseModel):
@@ -16,18 +16,40 @@ class Function(BaseModel):
     parameters: Optional[object] = None
 
 
-class Tool(BaseModel):
-    function: Function
-    """Function definition"""
+class Integration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
 
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class System(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
+class Tool(BaseModel):
     name: str
 
-    api_call: Optional[object] = None
+    function: Optional[Function] = None
+    """Function definition"""
 
     inherited: Optional[bool] = None
 
-    integration: Optional[object] = None
+    integration: Optional[Integration] = None
+    """Integration definition"""
 
-    system: Optional[object] = None
+    system: Optional[System] = None
+    """System definition"""
 
     type: Optional[Literal["function", "integration", "system", "api_call"]] = None
