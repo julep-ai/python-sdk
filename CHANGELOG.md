@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.0 (2024-09-25)
+
+Full Changelog: [v1.4.0...v1.5.0](https://github.com/julep-ai/python-sdk/compare/v1.4.0...v1.5.0)
+
+### Features
+
+* **api:** OpenAPI spec update via Stainless API ([#32](https://github.com/julep-ai/python-sdk/issues/32)) ([f359535](https://github.com/julep-ai/python-sdk/commit/f3595355079ad286913b6ac8516f98220c6cb8a4))
+
 ## 1.4.0 (2024-09-25)
 
 Full Changelog: [v1.3.2...v1.4.0](https://github.com/julep-ai/python-sdk/compare/v1.3.2...v1.4.0)
