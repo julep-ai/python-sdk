@@ -72,13 +72,7 @@ class ChoiceSingleChatOutputMessageToolCall(BaseModel):
 
     type: Literal["function", "integration", "system", "api_call"]
 
-    api_call: Optional[object] = None
-
     function: Optional[ChoiceSingleChatOutputMessageToolCallFunction] = None
-
-    integration: Optional[object] = None
-
-    system: Optional[object] = None
 
 
 class ChoiceSingleChatOutputMessage(BaseModel):
@@ -161,13 +155,7 @@ class ChoiceMultipleChatOutputMessageToolCall(BaseModel):
 
     type: Literal["function", "integration", "system", "api_call"]
 
-    api_call: Optional[object] = None
-
     function: Optional[ChoiceMultipleChatOutputMessageToolCallFunction] = None
-
-    integration: Optional[object] = None
-
-    system: Optional[object] = None
 
 
 class ChoiceMultipleChatOutputMessage(BaseModel):

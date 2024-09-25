@@ -21,6 +21,18 @@ __all__ = [
     "MainPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainPromptStepOutputToolChoice",
+    "MainPromptStepOutputToolChoiceNamedToolChoice",
+    "MainPromptStepOutputToolChoiceNamedToolChoiceFunction",
+    "MainPromptStepOutputToolsUnionMember1",
+    "MainPromptStepOutputToolsUnionMember1ToolRef",
+    "MainPromptStepOutputToolsUnionMember1ToolRefRef",
+    "MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
     "MainGetStep",
     "MainSetStep",
     "MainLogStep",
@@ -48,6 +60,18 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoice",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoice",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoiceFunction",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
     "MainIfElseWorkflowStepOutputThenGetStep",
     "MainIfElseWorkflowStepOutputThenSetStep",
     "MainIfElseWorkflowStepOutputThenLogStep",
@@ -74,6 +98,18 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoice",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoice",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoiceFunction",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestSystem",
     "MainIfElseWorkflowStepOutputElseGetStep",
     "MainIfElseWorkflowStepOutputElseSetStep",
     "MainIfElseWorkflowStepOutputElseLogStep",
@@ -102,6 +138,18 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolChoice",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoice",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoiceFunction",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
     "MainSwitchStepOutputSwitchThenGetStep",
     "MainSwitchStepOutputSwitchThenSetStep",
     "MainSwitchStepOutputSwitchThenLogStep",
@@ -130,6 +178,18 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolChoice",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoice",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoiceFunction",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
     "MainForeachStepOutputForeachDoGetStep",
     "MainForeachStepOutputForeachDoSetStep",
     "MainForeachStepOutputForeachDoLogStep",
@@ -150,6 +210,18 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainParallelStepOutputParallelPromptStepOutputToolChoice",
+    "MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoice",
+    "MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoiceFunction",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
     "MainParallelStepOutputParallelGetStep",
     "MainParallelStepOutputParallelSetStep",
     "MainParallelStepOutputParallelLogStep",
@@ -170,6 +242,18 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainMainOutputMapPromptStepOutputToolChoice",
+    "MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoice",
+    "MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoiceFunction",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
     "MainMainOutputMapGetStep",
     "MainMainOutputMapSetStep",
     "MainMainOutputMapLogStep",
@@ -232,12 +316,104 @@ class MainPromptStepOutputPromptUnionMember0(BaseModel):
     name: Optional[str] = None
 
 
+class MainPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
+    name: str
+
+
+class MainPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
+    type: Literal["function", "integration", "system", "api_call"]
+
+    function: Optional[MainPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
+
+
+MainPromptStepOutputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainPromptStepOutputToolChoiceNamedToolChoice, None
+]
+
+
+class MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID(BaseModel):
+    id: Optional[str] = None
+
+
+class MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName(BaseModel):
+    name: Optional[str] = None
+
+
+MainPromptStepOutputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID,
+    MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
+    ref: MainPromptStepOutputToolsUnionMember1ToolRefRef
+    """Reference to a tool by id"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+    description: Optional[str] = None
+
+    name: Optional[object] = None
+
+    parameters: Optional[object] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+    name: str
+
+    function: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    """Function definition"""
+
+    integration: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration] = None
+    """Integration definition"""
+
+    system: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    """System definition"""
+
+    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
+
+
+MainPromptStepOutputToolsUnionMember1: TypeAlias = Union[
+    MainPromptStepOutputToolsUnionMember1ToolRef, MainPromptStepOutputToolsUnionMember1CreateToolRequest
+]
+
+
 class MainPromptStepOutput(BaseModel):
     prompt: Union[List[MainPromptStepOutputPromptUnionMember0], str]
+
+    forward_tool_results: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
     settings: Optional[ChatSettings] = None
+
+    tool_choice: Optional[MainPromptStepOutputToolChoice] = None
+
+    tools: Union[Literal["all"], List[MainPromptStepOutputToolsUnionMember1], None] = None
+
+    unwrap: Optional[bool] = None
 
 
 class MainGetStep(BaseModel):
@@ -412,12 +588,109 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0(BaseMod
     name: Optional[str] = None
 
 
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
+    name: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
+    type: Literal["function", "integration", "system", "api_call"]
+
+    function: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
+
+
+MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoice, None
+]
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID(BaseModel):
+    id: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName(BaseModel):
+    name: Optional[str] = None
+
+
+MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
+    ref: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRef
+    """Reference to a tool by id"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+    description: Optional[str] = None
+
+    name: Optional[object] = None
+
+    parameters: Optional[object] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+    name: str
+
+    function: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = (
+        None
+    )
+    """Function definition"""
+
+    integration: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+    ] = None
+    """Integration definition"""
+
+    system: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    """System definition"""
+
+    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
+
+
+MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1: TypeAlias = Union[
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainIfElseWorkflowStepOutputThenPromptStepOutput(BaseModel):
     prompt: Union[List[MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0], str]
+
+    forward_tool_results: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
     settings: Optional[ChatSettings] = None
+
+    tool_choice: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoice] = None
+
+    tools: Union[Literal["all"], List[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1], None] = None
+
+    unwrap: Optional[bool] = None
 
 
 class MainIfElseWorkflowStepOutputThenGetStep(BaseModel):
@@ -609,12 +882,109 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0(BaseMod
     name: Optional[str] = None
 
 
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
+    name: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoice(BaseModel):
+    type: Literal["function", "integration", "system", "api_call"]
+
+    function: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoiceFunction] = None
+
+
+MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoice, None
+]
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByID(BaseModel):
+    id: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByName(BaseModel):
+    name: Optional[str] = None
+
+
+MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByID,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRef(BaseModel):
+    ref: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRef
+    """Reference to a tool by id"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+    description: Optional[str] = None
+
+    name: Optional[object] = None
+
+    parameters: Optional[object] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+    name: str
+
+    function: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction] = (
+        None
+    )
+    """Function definition"""
+
+    integration: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+    ] = None
+    """Integration definition"""
+
+    system: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    """System definition"""
+
+    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
+
+
+MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1: TypeAlias = Union[
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainIfElseWorkflowStepOutputElsePromptStepOutput(BaseModel):
     prompt: Union[List[MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0], str]
+
+    forward_tool_results: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
     settings: Optional[ChatSettings] = None
+
+    tool_choice: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoice] = None
+
+    tools: Union[Literal["all"], List[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1], None] = None
+
+    unwrap: Optional[bool] = None
 
 
 class MainIfElseWorkflowStepOutputElseGetStep(BaseModel):
@@ -817,12 +1187,107 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0(BaseModel
     name: Optional[str] = None
 
 
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
+    name: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
+    type: Literal["function", "integration", "system", "api_call"]
+
+    function: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
+
+
+MainSwitchStepOutputSwitchThenPromptStepOutputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoice, None
+]
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID(BaseModel):
+    id: Optional[str] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName(BaseModel):
+    name: Optional[str] = None
+
+
+MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
+    ref: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRef
+    """Reference to a tool by id"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+    description: Optional[str] = None
+
+    name: Optional[object] = None
+
+    parameters: Optional[object] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+    name: str
+
+    function: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    """Function definition"""
+
+    integration: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+    ] = None
+    """Integration definition"""
+
+    system: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    """System definition"""
+
+    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
+
+
+MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1: TypeAlias = Union[
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainSwitchStepOutputSwitchThenPromptStepOutput(BaseModel):
     prompt: Union[List[MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0], str]
+
+    forward_tool_results: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
     settings: Optional[ChatSettings] = None
+
+    tool_choice: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolChoice] = None
+
+    tools: Union[Literal["all"], List[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1], None] = None
+
+    unwrap: Optional[bool] = None
 
 
 class MainSwitchStepOutputSwitchThenGetStep(BaseModel):
@@ -1026,12 +1491,107 @@ class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0(BaseModel
     name: Optional[str] = None
 
 
+class MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
+    name: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
+    type: Literal["function", "integration", "system", "api_call"]
+
+    function: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
+
+
+MainForeachStepOutputForeachDoPromptStepOutputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoice, None
+]
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID(BaseModel):
+    id: Optional[str] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName(BaseModel):
+    name: Optional[str] = None
+
+
+MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
+    ref: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRef
+    """Reference to a tool by id"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+    description: Optional[str] = None
+
+    name: Optional[object] = None
+
+    parameters: Optional[object] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+    name: str
+
+    function: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    """Function definition"""
+
+    integration: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+    ] = None
+    """Integration definition"""
+
+    system: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    """System definition"""
+
+    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
+
+
+MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1: TypeAlias = Union[
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainForeachStepOutputForeachDoPromptStepOutput(BaseModel):
     prompt: Union[List[MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0], str]
+
+    forward_tool_results: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
     settings: Optional[ChatSettings] = None
+
+    tool_choice: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolChoice] = None
+
+    tools: Union[Literal["all"], List[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1], None] = None
+
+    unwrap: Optional[bool] = None
 
 
 class MainForeachStepOutputForeachDoGetStep(BaseModel):
@@ -1184,12 +1744,107 @@ class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0(BaseModel
     name: Optional[str] = None
 
 
+class MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
+    name: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
+    type: Literal["function", "integration", "system", "api_call"]
+
+    function: Optional[MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
+
+
+MainParallelStepOutputParallelPromptStepOutputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoice, None
+]
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID(BaseModel):
+    id: Optional[str] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName(BaseModel):
+    name: Optional[str] = None
+
+
+MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
+    ref: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRef
+    """Reference to a tool by id"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+    description: Optional[str] = None
+
+    name: Optional[object] = None
+
+    parameters: Optional[object] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+    name: str
+
+    function: Optional[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    """Function definition"""
+
+    integration: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+    ] = None
+    """Integration definition"""
+
+    system: Optional[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    """System definition"""
+
+    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
+
+
+MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1: TypeAlias = Union[
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainParallelStepOutputParallelPromptStepOutput(BaseModel):
     prompt: Union[List[MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0], str]
+
+    forward_tool_results: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
     settings: Optional[ChatSettings] = None
+
+    tool_choice: Optional[MainParallelStepOutputParallelPromptStepOutputToolChoice] = None
+
+    tools: Union[Literal["all"], List[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1], None] = None
+
+    unwrap: Optional[bool] = None
 
 
 class MainParallelStepOutputParallelGetStep(BaseModel):
@@ -1332,12 +1987,105 @@ class MainMainOutputMapPromptStepOutputPromptUnionMember0(BaseModel):
     name: Optional[str] = None
 
 
+class MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
+    name: str
+
+
+class MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
+    type: Literal["function", "integration", "system", "api_call"]
+
+    function: Optional[MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
+
+
+MainMainOutputMapPromptStepOutputToolChoice: TypeAlias = Union[
+    Literal["auto", "none"], MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoice, None
+]
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID(BaseModel):
+    id: Optional[str] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName(BaseModel):
+    name: Optional[str] = None
+
+
+MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRef: TypeAlias = Union[
+    MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName,
+]
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
+    ref: MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRef
+    """Reference to a tool by id"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+    description: Optional[str] = None
+
+    name: Optional[object] = None
+
+    parameters: Optional[object] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+    name: str
+
+    function: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    """Function definition"""
+
+    integration: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegration] = None
+    """Integration definition"""
+
+    system: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    """System definition"""
+
+    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
+
+
+MainMainOutputMapPromptStepOutputToolsUnionMember1: TypeAlias = Union[
+    MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest,
+]
+
+
 class MainMainOutputMapPromptStepOutput(BaseModel):
     prompt: Union[List[MainMainOutputMapPromptStepOutputPromptUnionMember0], str]
+
+    forward_tool_results: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
     settings: Optional[ChatSettings] = None
+
+    tool_choice: Optional[MainMainOutputMapPromptStepOutputToolChoice] = None
+
+    tools: Union[Literal["all"], List[MainMainOutputMapPromptStepOutputToolsUnionMember1], None] = None
+
+    unwrap: Optional[bool] = None
 
 
 class MainMainOutputMapGetStep(BaseModel):

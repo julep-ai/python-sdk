@@ -55,11 +55,10 @@ class ToolsResource(SyncAPIResource):
         self,
         agent_id: str,
         *,
-        function: tool_create_params.Function,
         name: str,
-        api_call: Optional[object] | NotGiven = NOT_GIVEN,
-        integration: Optional[object] | NotGiven = NOT_GIVEN,
-        system: Optional[object] | NotGiven = NOT_GIVEN,
+        function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
+        integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
+        system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
         type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -73,6 +72,10 @@ class ToolsResource(SyncAPIResource):
 
         Args:
           function: Function definition
+
+          integration: Integration definition
+
+          system: System definition
 
           extra_headers: Send extra headers
 
@@ -88,9 +91,8 @@ class ToolsResource(SyncAPIResource):
             f"/agents/{agent_id}/tools",
             body=maybe_transform(
                 {
-                    "function": function,
                     "name": name,
-                    "api_call": api_call,
+                    "function": function,
                     "integration": integration,
                     "system": system,
                     "type": type,
@@ -108,11 +110,10 @@ class ToolsResource(SyncAPIResource):
         tool_id: str,
         *,
         agent_id: str,
-        function: tool_update_params.Function,
         name: str,
-        api_call: Optional[object] | NotGiven = NOT_GIVEN,
-        integration: Optional[object] | NotGiven = NOT_GIVEN,
-        system: Optional[object] | NotGiven = NOT_GIVEN,
+        function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
+        integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
+        system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
         type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -126,6 +127,10 @@ class ToolsResource(SyncAPIResource):
 
         Args:
           function: Function definition
+
+          integration: Integration definition
+
+          system: System definition
 
           extra_headers: Send extra headers
 
@@ -143,9 +148,8 @@ class ToolsResource(SyncAPIResource):
             f"/agents/{agent_id}/tools/{tool_id}",
             body=maybe_transform(
                 {
-                    "function": function,
                     "name": name,
-                    "api_call": api_call,
+                    "function": function,
                     "integration": integration,
                     "system": system,
                     "type": type,
@@ -249,11 +253,10 @@ class ToolsResource(SyncAPIResource):
         tool_id: str,
         *,
         agent_id: str,
-        api_call: Optional[object] | NotGiven = NOT_GIVEN,
         function: Optional[tool_patch_params.Function] | NotGiven = NOT_GIVEN,
-        integration: Optional[object] | NotGiven = NOT_GIVEN,
+        integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
-        system: Optional[object] | NotGiven = NOT_GIVEN,
+        system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
         type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -267,6 +270,10 @@ class ToolsResource(SyncAPIResource):
 
         Args:
           function: Function definition
+
+          integration: Integration definition
+
+          system: System definition
 
           extra_headers: Send extra headers
 
@@ -284,7 +291,6 @@ class ToolsResource(SyncAPIResource):
             f"/agents/{agent_id}/tools/{tool_id}",
             body=maybe_transform(
                 {
-                    "api_call": api_call,
                     "function": function,
                     "integration": integration,
                     "name": name,
@@ -324,11 +330,10 @@ class AsyncToolsResource(AsyncAPIResource):
         self,
         agent_id: str,
         *,
-        function: tool_create_params.Function,
         name: str,
-        api_call: Optional[object] | NotGiven = NOT_GIVEN,
-        integration: Optional[object] | NotGiven = NOT_GIVEN,
-        system: Optional[object] | NotGiven = NOT_GIVEN,
+        function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
+        integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
+        system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
         type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -342,6 +347,10 @@ class AsyncToolsResource(AsyncAPIResource):
 
         Args:
           function: Function definition
+
+          integration: Integration definition
+
+          system: System definition
 
           extra_headers: Send extra headers
 
@@ -357,9 +366,8 @@ class AsyncToolsResource(AsyncAPIResource):
             f"/agents/{agent_id}/tools",
             body=await async_maybe_transform(
                 {
-                    "function": function,
                     "name": name,
-                    "api_call": api_call,
+                    "function": function,
                     "integration": integration,
                     "system": system,
                     "type": type,
@@ -377,11 +385,10 @@ class AsyncToolsResource(AsyncAPIResource):
         tool_id: str,
         *,
         agent_id: str,
-        function: tool_update_params.Function,
         name: str,
-        api_call: Optional[object] | NotGiven = NOT_GIVEN,
-        integration: Optional[object] | NotGiven = NOT_GIVEN,
-        system: Optional[object] | NotGiven = NOT_GIVEN,
+        function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
+        integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
+        system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
         type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -395,6 +402,10 @@ class AsyncToolsResource(AsyncAPIResource):
 
         Args:
           function: Function definition
+
+          integration: Integration definition
+
+          system: System definition
 
           extra_headers: Send extra headers
 
@@ -412,9 +423,8 @@ class AsyncToolsResource(AsyncAPIResource):
             f"/agents/{agent_id}/tools/{tool_id}",
             body=await async_maybe_transform(
                 {
-                    "function": function,
                     "name": name,
-                    "api_call": api_call,
+                    "function": function,
                     "integration": integration,
                     "system": system,
                     "type": type,
@@ -518,11 +528,10 @@ class AsyncToolsResource(AsyncAPIResource):
         tool_id: str,
         *,
         agent_id: str,
-        api_call: Optional[object] | NotGiven = NOT_GIVEN,
         function: Optional[tool_patch_params.Function] | NotGiven = NOT_GIVEN,
-        integration: Optional[object] | NotGiven = NOT_GIVEN,
+        integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
-        system: Optional[object] | NotGiven = NOT_GIVEN,
+        system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
         type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -536,6 +545,10 @@ class AsyncToolsResource(AsyncAPIResource):
 
         Args:
           function: Function definition
+
+          integration: Integration definition
+
+          system: System definition
 
           extra_headers: Send extra headers
 
@@ -553,7 +566,6 @@ class AsyncToolsResource(AsyncAPIResource):
             f"/agents/{agent_id}/tools/{tool_id}",
             body=await async_maybe_transform(
                 {
-                    "api_call": api_call,
                     "function": function,
                     "integration": integration,
                     "name": name,

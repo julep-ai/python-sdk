@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import Optional
 from typing_extensions import Literal, Required, TypedDict
 
-__all__ = ["ToolParam", "Function"]
+__all__ = ["ToolParam", "Function", "Integration", "System"]
 
 
 class Function(TypedDict, total=False):
@@ -16,16 +16,38 @@ class Function(TypedDict, total=False):
     parameters: Optional[object]
 
 
-class ToolParam(TypedDict, total=False):
-    function: Required[Function]
-    """Function definition"""
+class Integration(TypedDict, total=False):
+    provider: Required[
+        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+    ]
 
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+    method: Optional[str]
+
+    setup: Optional[object]
+
+
+class System(TypedDict, total=False):
+    call: Required[str]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+
+class ToolParam(TypedDict, total=False):
     name: Required[str]
 
-    api_call: Optional[object]
+    function: Optional[Function]
+    """Function definition"""
 
-    integration: Optional[object]
+    integration: Optional[Integration]
+    """Integration definition"""
 
-    system: Optional[object]
+    system: Optional[System]
+    """System definition"""
 
     type: Literal["function", "integration", "system", "api_call"]

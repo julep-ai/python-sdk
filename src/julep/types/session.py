@@ -18,6 +18,8 @@ class Session(BaseModel):
 
     context_overflow: Optional[Literal["truncate", "adaptive"]] = None
 
+    forward_tool_results: Optional[bool] = None
+
     kind: Optional[str] = None
 
     metadata: Optional[object] = None

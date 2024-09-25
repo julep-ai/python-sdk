@@ -15,6 +15,8 @@ __all__ = [
     "ContentUnionMember0ContentModelImageURL",
     "ContentTool",
     "ContentToolFunction",
+    "ContentToolIntegration",
+    "ContentToolSystem",
     "ContentChosenToolCall",
     "ContentChosenToolCallFunction",
     "ContentToolResponse",
@@ -25,6 +27,8 @@ __all__ = [
     "ContentUnionMember5UnionMember0ContentModelImageURL",
     "ContentUnionMember5Tool",
     "ContentUnionMember5ToolFunction",
+    "ContentUnionMember5ToolIntegration",
+    "ContentUnionMember5ToolSystem",
     "ContentUnionMember5ChosenToolCall",
     "ContentUnionMember5ChosenToolCallFunction",
     "ContentUnionMember5ToolResponse",
@@ -61,23 +65,45 @@ class ContentToolFunction(BaseModel):
     parameters: Optional[object] = None
 
 
+class ContentToolIntegration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class ContentToolSystem(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
 class ContentTool(BaseModel):
     id: str
 
     created_at: datetime
 
-    function: ContentToolFunction
-    """Function definition"""
-
     name: str
 
     updated_at: datetime
 
-    api_call: Optional[object] = None
+    function: Optional[ContentToolFunction] = None
+    """Function definition"""
 
-    integration: Optional[object] = None
+    integration: Optional[ContentToolIntegration] = None
+    """Integration definition"""
 
-    system: Optional[object] = None
+    system: Optional[ContentToolSystem] = None
+    """System definition"""
 
     type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
@@ -91,13 +117,7 @@ class ContentChosenToolCall(BaseModel):
 
     type: Literal["function", "integration", "system", "api_call"]
 
-    api_call: Optional[object] = None
-
     function: Optional[ContentChosenToolCallFunction] = None
-
-    integration: Optional[object] = None
-
-    system: Optional[object] = None
 
 
 class ContentToolResponse(BaseModel):
@@ -138,23 +158,45 @@ class ContentUnionMember5ToolFunction(BaseModel):
     parameters: Optional[object] = None
 
 
+class ContentUnionMember5ToolIntegration(BaseModel):
+    provider: Literal[
+        "dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"
+    ]
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+    method: Optional[str] = None
+
+    setup: Optional[object] = None
+
+
+class ContentUnionMember5ToolSystem(BaseModel):
+    call: str
+
+    arguments: Optional[object] = None
+
+    description: Optional[str] = None
+
+
 class ContentUnionMember5Tool(BaseModel):
     id: str
 
     created_at: datetime
 
-    function: ContentUnionMember5ToolFunction
-    """Function definition"""
-
     name: str
 
     updated_at: datetime
 
-    api_call: Optional[object] = None
+    function: Optional[ContentUnionMember5ToolFunction] = None
+    """Function definition"""
 
-    integration: Optional[object] = None
+    integration: Optional[ContentUnionMember5ToolIntegration] = None
+    """Integration definition"""
 
-    system: Optional[object] = None
+    system: Optional[ContentUnionMember5ToolSystem] = None
+    """System definition"""
 
     type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
@@ -168,13 +210,7 @@ class ContentUnionMember5ChosenToolCall(BaseModel):
 
     type: Literal["function", "integration", "system", "api_call"]
 
-    api_call: Optional[object] = None
-
     function: Optional[ContentUnionMember5ChosenToolCallFunction] = None
-
-    integration: Optional[object] = None
-
-    system: Optional[object] = None
 
 
 class ContentUnionMember5ToolResponse(BaseModel):

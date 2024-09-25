@@ -18,6 +18,8 @@ __all__ = [
     "ToolChoiceNamedToolChoiceFunction",
     "Tool",
     "ToolFunction",
+    "ToolIntegration",
+    "ToolSystem",
 ]
 
 
@@ -87,13 +89,7 @@ class ToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
 class ToolChoiceNamedToolChoice(TypedDict, total=False):
     type: Required[Literal["function", "integration", "system", "api_call"]]
 
-    api_call: Optional[object]
-
     function: Optional[ToolChoiceNamedToolChoiceFunction]
-
-    integration: Optional[object]
-
-    system: Optional[object]
 
 
 ToolChoice: TypeAlias = Union[Literal["auto", "none"], ToolChoiceNamedToolChoice]
@@ -107,16 +103,38 @@ class ToolFunction(TypedDict, total=False):
     parameters: Optional[object]
 
 
-class Tool(TypedDict, total=False):
-    function: Required[ToolFunction]
-    """Function definition"""
+class ToolIntegration(TypedDict, total=False):
+    provider: Required[
+        Literal["dummy", "dall-e", "duckduckgo", "hackernews", "weather", "wikipedia", "twitter", "webpage", "requests"]
+    ]
 
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+    method: Optional[str]
+
+    setup: Optional[object]
+
+
+class ToolSystem(TypedDict, total=False):
+    call: Required[str]
+
+    arguments: Optional[object]
+
+    description: Optional[str]
+
+
+class Tool(TypedDict, total=False):
     name: Required[str]
 
-    api_call: Optional[object]
+    function: Optional[ToolFunction]
+    """Function definition"""
 
-    integration: Optional[object]
+    integration: Optional[ToolIntegration]
+    """Integration definition"""
 
-    system: Optional[object]
+    system: Optional[ToolSystem]
+    """System definition"""
 
     type: Literal["function", "integration", "system", "api_call"]

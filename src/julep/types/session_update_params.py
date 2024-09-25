@@ -11,6 +11,8 @@ __all__ = ["SessionUpdateParams"]
 class SessionUpdateParams(TypedDict, total=False):
     context_overflow: Optional[Literal["truncate", "adaptive"]]
 
+    forward_tool_results: Optional[bool]
+
     metadata: Optional[object]
 
     render_templates: bool
