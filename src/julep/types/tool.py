@@ -1,6 +1,6 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import Optional
+from typing import Union, Optional
 from typing_extensions import Literal
 
 from .._models import BaseModel
@@ -17,7 +17,7 @@ class Function(BaseModel):
 
 
 class Integration(BaseModel):
-    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
 
     arguments: Optional[object] = None
 

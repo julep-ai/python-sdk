@@ -105,7 +105,7 @@ class ToolFunction(TypedDict, total=False):
 
 class ToolIntegration(TypedDict, total=False):
     provider: Required[
-        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
     ]
 
     arguments: Optional[object]

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Optional
+from typing import Union, Optional
 from typing_extensions import Literal, Required, TypedDict
 
 __all__ = ["ToolCreateParams", "Function", "Integration", "System"]
@@ -33,7 +33,7 @@ class Function(TypedDict, total=False):
 
 class Integration(TypedDict, total=False):
     provider: Required[
-        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
     ]
 
     arguments: Optional[object]

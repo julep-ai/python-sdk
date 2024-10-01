@@ -376,7 +376,7 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, t
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
     ]
 
     arguments: Optional[object]
@@ -651,7 +651,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
     TypedDict, total=False
 ):
     provider: Required[
-        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
     ]
 
     arguments: Optional[object]
@@ -946,7 +946,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
     TypedDict, total=False
 ):
     provider: Required[
-        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
     ]
 
     arguments: Optional[object]
@@ -1248,7 +1248,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
     ]
 
     arguments: Optional[object]
@@ -1545,7 +1545,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
     ]
 
     arguments: Optional[object]
@@ -1798,7 +1798,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
     ]
 
     arguments: Optional[object]
@@ -2031,7 +2031,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestFunction(
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
     ]
 
     arguments: Optional[object]

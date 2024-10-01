@@ -359,7 +359,7 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
 
     arguments: Optional[object] = None
 
@@ -629,7 +629,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
 
     arguments: Optional[object] = None
 
@@ -921,7 +921,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
 
     arguments: Optional[object] = None
 
@@ -1224,7 +1224,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
 
     arguments: Optional[object] = None
 
@@ -1526,7 +1526,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
 
     arguments: Optional[object] = None
 
@@ -1777,7 +1777,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
 
     arguments: Optional[object] = None
 
@@ -2018,7 +2018,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunctio
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Literal["dummy", "dalle_image_generator", "duckduckgo_search", "hacker_news", "weather", "wikipedia"]
+    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
 
     arguments: Optional[object] = None
 
