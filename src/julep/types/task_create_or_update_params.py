@@ -41,11 +41,11 @@ __all__ = [
     "MainSearchStepSearchVectorDocSearchRequest",
     "MainSearchStepSearchTextOnlyDocSearchRequest",
     "MainSearchStepSearchHybridDocSearchRequest",
+    "MainYieldStep",
     "MainReturnStep",
     "MainSleepStep",
     "MainSleepStepSleep",
     "MainErrorWorkflowStep",
-    "MainYieldStep",
     "MainWaitForInputStep",
     "MainWaitForInputStepWaitForInput",
     "MainIfElseWorkflowStepInput",
@@ -80,11 +80,11 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenSearchStepSearchVectorDocSearchRequest",
     "MainIfElseWorkflowStepInputThenSearchStepSearchTextOnlyDocSearchRequest",
     "MainIfElseWorkflowStepInputThenSearchStepSearchHybridDocSearchRequest",
+    "MainIfElseWorkflowStepInputThenYieldStep",
     "MainIfElseWorkflowStepInputThenReturnStep",
     "MainIfElseWorkflowStepInputThenSleepStep",
     "MainIfElseWorkflowStepInputThenSleepStepSleep",
     "MainIfElseWorkflowStepInputThenErrorWorkflowStep",
-    "MainIfElseWorkflowStepInputThenYieldStep",
     "MainIfElseWorkflowStepInputThenWaitForInputStep",
     "MainIfElseWorkflowStepInputThenWaitForInputStepWaitForInput",
     "MainIfElseWorkflowStepInputElse",
@@ -118,11 +118,11 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseSearchStepSearchVectorDocSearchRequest",
     "MainIfElseWorkflowStepInputElseSearchStepSearchTextOnlyDocSearchRequest",
     "MainIfElseWorkflowStepInputElseSearchStepSearchHybridDocSearchRequest",
+    "MainIfElseWorkflowStepInputElseYieldStep",
     "MainIfElseWorkflowStepInputElseReturnStep",
     "MainIfElseWorkflowStepInputElseSleepStep",
     "MainIfElseWorkflowStepInputElseSleepStepSleep",
     "MainIfElseWorkflowStepInputElseErrorWorkflowStep",
-    "MainIfElseWorkflowStepInputElseYieldStep",
     "MainIfElseWorkflowStepInputElseWaitForInputStep",
     "MainIfElseWorkflowStepInputElseWaitForInputStepWaitForInput",
     "MainSwitchStepInput",
@@ -158,11 +158,11 @@ __all__ = [
     "MainSwitchStepInputSwitchThenSearchStepSearchVectorDocSearchRequest",
     "MainSwitchStepInputSwitchThenSearchStepSearchTextOnlyDocSearchRequest",
     "MainSwitchStepInputSwitchThenSearchStepSearchHybridDocSearchRequest",
+    "MainSwitchStepInputSwitchThenYieldStep",
     "MainSwitchStepInputSwitchThenReturnStep",
     "MainSwitchStepInputSwitchThenSleepStep",
     "MainSwitchStepInputSwitchThenSleepStepSleep",
     "MainSwitchStepInputSwitchThenErrorWorkflowStep",
-    "MainSwitchStepInputSwitchThenYieldStep",
     "MainSwitchStepInputSwitchThenWaitForInputStep",
     "MainSwitchStepInputSwitchThenWaitForInputStepWaitForInput",
     "MainForeachStepInput",
@@ -198,6 +198,7 @@ __all__ = [
     "MainForeachStepInputForeachDoSearchStepSearchVectorDocSearchRequest",
     "MainForeachStepInputForeachDoSearchStepSearchTextOnlyDocSearchRequest",
     "MainForeachStepInputForeachDoSearchStepSearchHybridDocSearchRequest",
+    "MainForeachStepInputForeachDoYieldStep",
     "MainParallelStepInput",
     "MainParallelStepInputParallel",
     "MainParallelStepInputParallelEvaluateStep",
@@ -230,6 +231,7 @@ __all__ = [
     "MainParallelStepInputParallelSearchStepSearchVectorDocSearchRequest",
     "MainParallelStepInputParallelSearchStepSearchTextOnlyDocSearchRequest",
     "MainParallelStepInputParallelSearchStepSearchHybridDocSearchRequest",
+    "MainParallelStepInputParallelYieldStep",
     "MainMainInput",
     "MainMainInputMap",
     "MainMainInputMapEvaluateStep",
@@ -262,6 +264,7 @@ __all__ = [
     "MainMainInputMapSearchStepSearchVectorDocSearchRequest",
     "MainMainInputMapSearchStepSearchTextOnlyDocSearchRequest",
     "MainMainInputMapSearchStepSearchHybridDocSearchRequest",
+    "MainMainInputMapYieldStep",
 ]
 
 
@@ -493,6 +496,12 @@ class MainSearchStep(TypedDict, total=False):
     search: Required[MainSearchStepSearch]
 
 
+class MainYieldStep(TypedDict, total=False):
+    workflow: Required[str]
+
+    arguments: Union[Dict[str, str], Literal["_"]]
+
+
 _MainReturnStepReservedKeywords = TypedDict(
     "_MainReturnStepReservedKeywords",
     {
@@ -522,12 +531,6 @@ class MainSleepStep(TypedDict, total=False):
 
 class MainErrorWorkflowStep(TypedDict, total=False):
     error: Required[str]
-
-
-class MainYieldStep(TypedDict, total=False):
-    workflow: Required[str]
-
-    arguments: Union[Dict[str, str], Literal["_"]]
 
 
 class MainWaitForInputStepWaitForInput(TypedDict, total=False):
@@ -769,6 +772,12 @@ class MainIfElseWorkflowStepInputThenSearchStep(TypedDict, total=False):
     search: Required[MainIfElseWorkflowStepInputThenSearchStepSearch]
 
 
+class MainIfElseWorkflowStepInputThenYieldStep(TypedDict, total=False):
+    workflow: Required[str]
+
+    arguments: Union[Dict[str, str], Literal["_"]]
+
+
 _MainIfElseWorkflowStepInputThenReturnStepReservedKeywords = TypedDict(
     "_MainIfElseWorkflowStepInputThenReturnStepReservedKeywords",
     {
@@ -802,12 +811,6 @@ class MainIfElseWorkflowStepInputThenErrorWorkflowStep(TypedDict, total=False):
     error: Required[str]
 
 
-class MainIfElseWorkflowStepInputThenYieldStep(TypedDict, total=False):
-    workflow: Required[str]
-
-    arguments: Union[Dict[str, str], Literal["_"]]
-
-
 class MainIfElseWorkflowStepInputThenWaitForInputStepWaitForInput(TypedDict, total=False):
     info: Required[Dict[str, str]]
 
@@ -825,10 +828,10 @@ MainIfElseWorkflowStepInputThen: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenLogStep,
     MainIfElseWorkflowStepInputThenEmbedStep,
     MainIfElseWorkflowStepInputThenSearchStep,
+    MainIfElseWorkflowStepInputThenYieldStep,
     MainIfElseWorkflowStepInputThenReturnStep,
     MainIfElseWorkflowStepInputThenSleepStep,
     MainIfElseWorkflowStepInputThenErrorWorkflowStep,
-    MainIfElseWorkflowStepInputThenYieldStep,
     MainIfElseWorkflowStepInputThenWaitForInputStep,
 ]
 
@@ -1064,6 +1067,12 @@ class MainIfElseWorkflowStepInputElseSearchStep(TypedDict, total=False):
     search: Required[MainIfElseWorkflowStepInputElseSearchStepSearch]
 
 
+class MainIfElseWorkflowStepInputElseYieldStep(TypedDict, total=False):
+    workflow: Required[str]
+
+    arguments: Union[Dict[str, str], Literal["_"]]
+
+
 _MainIfElseWorkflowStepInputElseReturnStepReservedKeywords = TypedDict(
     "_MainIfElseWorkflowStepInputElseReturnStepReservedKeywords",
     {
@@ -1097,12 +1106,6 @@ class MainIfElseWorkflowStepInputElseErrorWorkflowStep(TypedDict, total=False):
     error: Required[str]
 
 
-class MainIfElseWorkflowStepInputElseYieldStep(TypedDict, total=False):
-    workflow: Required[str]
-
-    arguments: Union[Dict[str, str], Literal["_"]]
-
-
 class MainIfElseWorkflowStepInputElseWaitForInputStepWaitForInput(TypedDict, total=False):
     info: Required[Dict[str, str]]
 
@@ -1120,10 +1123,10 @@ MainIfElseWorkflowStepInputElse: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseLogStep,
     MainIfElseWorkflowStepInputElseEmbedStep,
     MainIfElseWorkflowStepInputElseSearchStep,
+    MainIfElseWorkflowStepInputElseYieldStep,
     MainIfElseWorkflowStepInputElseReturnStep,
     MainIfElseWorkflowStepInputElseSleepStep,
     MainIfElseWorkflowStepInputElseErrorWorkflowStep,
-    MainIfElseWorkflowStepInputElseYieldStep,
     MainIfElseWorkflowStepInputElseWaitForInputStep,
 ]
 
@@ -1366,6 +1369,12 @@ class MainSwitchStepInputSwitchThenSearchStep(TypedDict, total=False):
     search: Required[MainSwitchStepInputSwitchThenSearchStepSearch]
 
 
+class MainSwitchStepInputSwitchThenYieldStep(TypedDict, total=False):
+    workflow: Required[str]
+
+    arguments: Union[Dict[str, str], Literal["_"]]
+
+
 _MainSwitchStepInputSwitchThenReturnStepReservedKeywords = TypedDict(
     "_MainSwitchStepInputSwitchThenReturnStepReservedKeywords",
     {
@@ -1397,12 +1406,6 @@ class MainSwitchStepInputSwitchThenErrorWorkflowStep(TypedDict, total=False):
     error: Required[str]
 
 
-class MainSwitchStepInputSwitchThenYieldStep(TypedDict, total=False):
-    workflow: Required[str]
-
-    arguments: Union[Dict[str, str], Literal["_"]]
-
-
 class MainSwitchStepInputSwitchThenWaitForInputStepWaitForInput(TypedDict, total=False):
     info: Required[Dict[str, str]]
 
@@ -1420,10 +1423,10 @@ MainSwitchStepInputSwitchThen: TypeAlias = Union[
     MainSwitchStepInputSwitchThenLogStep,
     MainSwitchStepInputSwitchThenEmbedStep,
     MainSwitchStepInputSwitchThenSearchStep,
+    MainSwitchStepInputSwitchThenYieldStep,
     MainSwitchStepInputSwitchThenReturnStep,
     MainSwitchStepInputSwitchThenSleepStep,
     MainSwitchStepInputSwitchThenErrorWorkflowStep,
-    MainSwitchStepInputSwitchThenYieldStep,
     MainSwitchStepInputSwitchThenWaitForInputStep,
 ]
 
@@ -1663,6 +1666,12 @@ class MainForeachStepInputForeachDoSearchStep(TypedDict, total=False):
     search: Required[MainForeachStepInputForeachDoSearchStepSearch]
 
 
+class MainForeachStepInputForeachDoYieldStep(TypedDict, total=False):
+    workflow: Required[str]
+
+    arguments: Union[Dict[str, str], Literal["_"]]
+
+
 MainForeachStepInputForeachDo: TypeAlias = Union[
     MainForeachStepInputForeachDoEvaluateStep,
     MainForeachStepInputForeachDoToolCallStep,
@@ -1672,6 +1681,7 @@ MainForeachStepInputForeachDo: TypeAlias = Union[
     MainForeachStepInputForeachDoLogStep,
     MainForeachStepInputForeachDoEmbedStep,
     MainForeachStepInputForeachDoSearchStep,
+    MainForeachStepInputForeachDoYieldStep,
 ]
 
 _MainForeachStepInputForeachReservedKeywords = TypedDict(
@@ -1916,6 +1926,12 @@ class MainParallelStepInputParallelSearchStep(TypedDict, total=False):
     search: Required[MainParallelStepInputParallelSearchStepSearch]
 
 
+class MainParallelStepInputParallelYieldStep(TypedDict, total=False):
+    workflow: Required[str]
+
+    arguments: Union[Dict[str, str], Literal["_"]]
+
+
 MainParallelStepInputParallel: TypeAlias = Union[
     MainParallelStepInputParallelEvaluateStep,
     MainParallelStepInputParallelToolCallStep,
@@ -1925,6 +1941,7 @@ MainParallelStepInputParallel: TypeAlias = Union[
     MainParallelStepInputParallelLogStep,
     MainParallelStepInputParallelEmbedStep,
     MainParallelStepInputParallelSearchStep,
+    MainParallelStepInputParallelYieldStep,
 ]
 
 
@@ -2149,6 +2166,12 @@ class MainMainInputMapSearchStep(TypedDict, total=False):
     search: Required[MainMainInputMapSearchStepSearch]
 
 
+class MainMainInputMapYieldStep(TypedDict, total=False):
+    workflow: Required[str]
+
+    arguments: Union[Dict[str, str], Literal["_"]]
+
+
 MainMainInputMap: TypeAlias = Union[
     MainMainInputMapEvaluateStep,
     MainMainInputMapToolCallStep,
@@ -2158,6 +2181,7 @@ MainMainInputMap: TypeAlias = Union[
     MainMainInputMapLogStep,
     MainMainInputMapEmbedStep,
     MainMainInputMapSearchStep,
+    MainMainInputMapYieldStep,
 ]
 
 
@@ -2182,10 +2206,10 @@ Main: TypeAlias = Union[
     MainLogStep,
     MainEmbedStep,
     MainSearchStep,
+    MainYieldStep,
     MainReturnStep,
     MainSleepStep,
     MainErrorWorkflowStep,
-    MainYieldStep,
     MainWaitForInputStep,
     MainIfElseWorkflowStepInput,
     MainSwitchStepInput,

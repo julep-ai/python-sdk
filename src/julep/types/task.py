@@ -43,11 +43,11 @@ __all__ = [
     "MainSearchStepSearchVectorDocSearchRequest",
     "MainSearchStepSearchTextOnlyDocSearchRequest",
     "MainSearchStepSearchHybridDocSearchRequest",
+    "MainYieldStep",
     "MainReturnStep",
     "MainSleepStep",
     "MainSleepStepSleep",
     "MainErrorWorkflowStep",
-    "MainYieldStep",
     "MainWaitForInputStep",
     "MainWaitForInputStepWaitForInput",
     "MainIfElseWorkflowStepOutput",
@@ -82,11 +82,11 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenSearchStepSearchVectorDocSearchRequest",
     "MainIfElseWorkflowStepOutputThenSearchStepSearchTextOnlyDocSearchRequest",
     "MainIfElseWorkflowStepOutputThenSearchStepSearchHybridDocSearchRequest",
+    "MainIfElseWorkflowStepOutputThenYieldStep",
     "MainIfElseWorkflowStepOutputThenReturnStep",
     "MainIfElseWorkflowStepOutputThenSleepStep",
     "MainIfElseWorkflowStepOutputThenSleepStepSleep",
     "MainIfElseWorkflowStepOutputThenErrorWorkflowStep",
-    "MainIfElseWorkflowStepOutputThenYieldStep",
     "MainIfElseWorkflowStepOutputThenWaitForInputStep",
     "MainIfElseWorkflowStepOutputThenWaitForInputStepWaitForInput",
     "MainIfElseWorkflowStepOutputElse",
@@ -120,11 +120,11 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseSearchStepSearchVectorDocSearchRequest",
     "MainIfElseWorkflowStepOutputElseSearchStepSearchTextOnlyDocSearchRequest",
     "MainIfElseWorkflowStepOutputElseSearchStepSearchHybridDocSearchRequest",
+    "MainIfElseWorkflowStepOutputElseYieldStep",
     "MainIfElseWorkflowStepOutputElseReturnStep",
     "MainIfElseWorkflowStepOutputElseSleepStep",
     "MainIfElseWorkflowStepOutputElseSleepStepSleep",
     "MainIfElseWorkflowStepOutputElseErrorWorkflowStep",
-    "MainIfElseWorkflowStepOutputElseYieldStep",
     "MainIfElseWorkflowStepOutputElseWaitForInputStep",
     "MainIfElseWorkflowStepOutputElseWaitForInputStepWaitForInput",
     "MainSwitchStepOutput",
@@ -160,11 +160,11 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenSearchStepSearchVectorDocSearchRequest",
     "MainSwitchStepOutputSwitchThenSearchStepSearchTextOnlyDocSearchRequest",
     "MainSwitchStepOutputSwitchThenSearchStepSearchHybridDocSearchRequest",
+    "MainSwitchStepOutputSwitchThenYieldStep",
     "MainSwitchStepOutputSwitchThenReturnStep",
     "MainSwitchStepOutputSwitchThenSleepStep",
     "MainSwitchStepOutputSwitchThenSleepStepSleep",
     "MainSwitchStepOutputSwitchThenErrorWorkflowStep",
-    "MainSwitchStepOutputSwitchThenYieldStep",
     "MainSwitchStepOutputSwitchThenWaitForInputStep",
     "MainSwitchStepOutputSwitchThenWaitForInputStepWaitForInput",
     "MainForeachStepOutput",
@@ -200,6 +200,7 @@ __all__ = [
     "MainForeachStepOutputForeachDoSearchStepSearchVectorDocSearchRequest",
     "MainForeachStepOutputForeachDoSearchStepSearchTextOnlyDocSearchRequest",
     "MainForeachStepOutputForeachDoSearchStepSearchHybridDocSearchRequest",
+    "MainForeachStepOutputForeachDoYieldStep",
     "MainParallelStepOutput",
     "MainParallelStepOutputParallel",
     "MainParallelStepOutputParallelEvaluateStep",
@@ -232,6 +233,7 @@ __all__ = [
     "MainParallelStepOutputParallelSearchStepSearchVectorDocSearchRequest",
     "MainParallelStepOutputParallelSearchStepSearchTextOnlyDocSearchRequest",
     "MainParallelStepOutputParallelSearchStepSearchHybridDocSearchRequest",
+    "MainParallelStepOutputParallelYieldStep",
     "MainMainOutput",
     "MainMainOutputMap",
     "MainMainOutputMapEvaluateStep",
@@ -264,6 +266,7 @@ __all__ = [
     "MainMainOutputMapSearchStepSearchVectorDocSearchRequest",
     "MainMainOutputMapSearchStepSearchTextOnlyDocSearchRequest",
     "MainMainOutputMapSearchStepSearchHybridDocSearchRequest",
+    "MainMainOutputMapYieldStep",
 ]
 
 
@@ -487,6 +490,14 @@ class MainSearchStep(BaseModel):
     kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
 
 
+class MainYieldStep(BaseModel):
+    workflow: str
+
+    arguments: Union[Dict[str, str], Literal["_"], None] = None
+
+    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+
 class MainReturnStep(BaseModel):
     return_: Dict[str, str] = FieldInfo(alias="return")
 
@@ -513,14 +524,6 @@ class MainErrorWorkflowStep(BaseModel):
     error: str
 
     kind: Optional[Literal["error"]] = FieldInfo(alias="kind_", default=None)
-
-
-class MainYieldStep(BaseModel):
-    workflow: str
-
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
-
-    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
 
 class MainWaitForInputStepWaitForInput(BaseModel):
@@ -762,6 +765,14 @@ class MainIfElseWorkflowStepOutputThenSearchStep(BaseModel):
     kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
 
 
+class MainIfElseWorkflowStepOutputThenYieldStep(BaseModel):
+    workflow: str
+
+    arguments: Union[Dict[str, str], Literal["_"], None] = None
+
+    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+
 class MainIfElseWorkflowStepOutputThenReturnStep(BaseModel):
     return_: Dict[str, str] = FieldInfo(alias="return")
 
@@ -790,14 +801,6 @@ class MainIfElseWorkflowStepOutputThenErrorWorkflowStep(BaseModel):
     kind: Optional[Literal["error"]] = FieldInfo(alias="kind_", default=None)
 
 
-class MainIfElseWorkflowStepOutputThenYieldStep(BaseModel):
-    workflow: str
-
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
-
-    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
-
-
 class MainIfElseWorkflowStepOutputThenWaitForInputStepWaitForInput(BaseModel):
     info: Dict[str, str]
 
@@ -817,10 +820,10 @@ MainIfElseWorkflowStepOutputThen: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenLogStep,
     MainIfElseWorkflowStepOutputThenEmbedStep,
     MainIfElseWorkflowStepOutputThenSearchStep,
+    MainIfElseWorkflowStepOutputThenYieldStep,
     MainIfElseWorkflowStepOutputThenReturnStep,
     MainIfElseWorkflowStepOutputThenSleepStep,
     MainIfElseWorkflowStepOutputThenErrorWorkflowStep,
-    MainIfElseWorkflowStepOutputThenYieldStep,
     MainIfElseWorkflowStepOutputThenWaitForInputStep,
 ]
 
@@ -1054,6 +1057,14 @@ class MainIfElseWorkflowStepOutputElseSearchStep(BaseModel):
     kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
 
 
+class MainIfElseWorkflowStepOutputElseYieldStep(BaseModel):
+    workflow: str
+
+    arguments: Union[Dict[str, str], Literal["_"], None] = None
+
+    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+
 class MainIfElseWorkflowStepOutputElseReturnStep(BaseModel):
     return_: Dict[str, str] = FieldInfo(alias="return")
 
@@ -1082,14 +1093,6 @@ class MainIfElseWorkflowStepOutputElseErrorWorkflowStep(BaseModel):
     kind: Optional[Literal["error"]] = FieldInfo(alias="kind_", default=None)
 
 
-class MainIfElseWorkflowStepOutputElseYieldStep(BaseModel):
-    workflow: str
-
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
-
-    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
-
-
 class MainIfElseWorkflowStepOutputElseWaitForInputStepWaitForInput(BaseModel):
     info: Dict[str, str]
 
@@ -1109,10 +1112,10 @@ MainIfElseWorkflowStepOutputElse: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElseLogStep,
     MainIfElseWorkflowStepOutputElseEmbedStep,
     MainIfElseWorkflowStepOutputElseSearchStep,
+    MainIfElseWorkflowStepOutputElseYieldStep,
     MainIfElseWorkflowStepOutputElseReturnStep,
     MainIfElseWorkflowStepOutputElseSleepStep,
     MainIfElseWorkflowStepOutputElseErrorWorkflowStep,
-    MainIfElseWorkflowStepOutputElseYieldStep,
     MainIfElseWorkflowStepOutputElseWaitForInputStep,
     None,
 ]
@@ -1355,6 +1358,14 @@ class MainSwitchStepOutputSwitchThenSearchStep(BaseModel):
     kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
 
 
+class MainSwitchStepOutputSwitchThenYieldStep(BaseModel):
+    workflow: str
+
+    arguments: Union[Dict[str, str], Literal["_"], None] = None
+
+    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+
 class MainSwitchStepOutputSwitchThenReturnStep(BaseModel):
     return_: Dict[str, str] = FieldInfo(alias="return")
 
@@ -1383,14 +1394,6 @@ class MainSwitchStepOutputSwitchThenErrorWorkflowStep(BaseModel):
     kind: Optional[Literal["error"]] = FieldInfo(alias="kind_", default=None)
 
 
-class MainSwitchStepOutputSwitchThenYieldStep(BaseModel):
-    workflow: str
-
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
-
-    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
-
-
 class MainSwitchStepOutputSwitchThenWaitForInputStepWaitForInput(BaseModel):
     info: Dict[str, str]
 
@@ -1410,10 +1413,10 @@ MainSwitchStepOutputSwitchThen: TypeAlias = Union[
     MainSwitchStepOutputSwitchThenLogStep,
     MainSwitchStepOutputSwitchThenEmbedStep,
     MainSwitchStepOutputSwitchThenSearchStep,
+    MainSwitchStepOutputSwitchThenYieldStep,
     MainSwitchStepOutputSwitchThenReturnStep,
     MainSwitchStepOutputSwitchThenSleepStep,
     MainSwitchStepOutputSwitchThenErrorWorkflowStep,
-    MainSwitchStepOutputSwitchThenYieldStep,
     MainSwitchStepOutputSwitchThenWaitForInputStep,
 ]
 
@@ -1657,6 +1660,14 @@ class MainForeachStepOutputForeachDoSearchStep(BaseModel):
     kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
 
 
+class MainForeachStepOutputForeachDoYieldStep(BaseModel):
+    workflow: str
+
+    arguments: Union[Dict[str, str], Literal["_"], None] = None
+
+    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+
 MainForeachStepOutputForeachDo: TypeAlias = Union[
     MainForeachStepOutputForeachDoEvaluateStep,
     MainForeachStepOutputForeachDoToolCallStep,
@@ -1666,6 +1677,7 @@ MainForeachStepOutputForeachDo: TypeAlias = Union[
     MainForeachStepOutputForeachDoLogStep,
     MainForeachStepOutputForeachDoEmbedStep,
     MainForeachStepOutputForeachDoSearchStep,
+    MainForeachStepOutputForeachDoYieldStep,
 ]
 
 
@@ -1908,6 +1920,14 @@ class MainParallelStepOutputParallelSearchStep(BaseModel):
     kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
 
 
+class MainParallelStepOutputParallelYieldStep(BaseModel):
+    workflow: str
+
+    arguments: Union[Dict[str, str], Literal["_"], None] = None
+
+    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+
 MainParallelStepOutputParallel: TypeAlias = Union[
     MainParallelStepOutputParallelEvaluateStep,
     MainParallelStepOutputParallelToolCallStep,
@@ -1917,6 +1937,7 @@ MainParallelStepOutputParallel: TypeAlias = Union[
     MainParallelStepOutputParallelLogStep,
     MainParallelStepOutputParallelEmbedStep,
     MainParallelStepOutputParallelSearchStep,
+    MainParallelStepOutputParallelYieldStep,
 ]
 
 
@@ -2147,6 +2168,14 @@ class MainMainOutputMapSearchStep(BaseModel):
     kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
 
 
+class MainMainOutputMapYieldStep(BaseModel):
+    workflow: str
+
+    arguments: Union[Dict[str, str], Literal["_"], None] = None
+
+    kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+
 MainMainOutputMap: TypeAlias = Union[
     MainMainOutputMapEvaluateStep,
     MainMainOutputMapToolCallStep,
@@ -2156,6 +2185,7 @@ MainMainOutputMap: TypeAlias = Union[
     MainMainOutputMapLogStep,
     MainMainOutputMapEmbedStep,
     MainMainOutputMapSearchStep,
+    MainMainOutputMapYieldStep,
 ]
 
 
@@ -2182,10 +2212,10 @@ Main: TypeAlias = Union[
     MainLogStep,
     MainEmbedStep,
     MainSearchStep,
+    MainYieldStep,
     MainReturnStep,
     MainSleepStep,
     MainErrorWorkflowStep,
-    MainYieldStep,
     MainWaitForInputStep,
     MainIfElseWorkflowStepOutput,
     MainSwitchStepOutput,
