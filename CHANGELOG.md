@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.7.0 (2024-10-02)
+
+Full Changelog: [v1.6.0...v1.7.0](https://github.com/julep-ai/python-sdk/compare/v1.6.0...v1.7.0)
+
+### Features
+
+* **api:** OpenAPI spec update via Stainless API ([#41](https://github.com/julep-ai/python-sdk/issues/41)) ([917f242](https://github.com/julep-ai/python-sdk/commit/917f2426867ce8596f3e95803434c554c7da6cca))
+
+
+### Chores
+
+* **internal:** codegen related update ([#38](https://github.com/julep-ai/python-sdk/issues/38)) ([09aee2a](https://github.com/julep-ai/python-sdk/commit/09aee2a3e59cbbb932cfe459bda1cb28614d9803))
+* **internal:** codegen related update ([#40](https://github.com/julep-ai/python-sdk/issues/40)) ([4d768b7](https://github.com/julep-ai/python-sdk/commit/4d768b75e0361f8a8a0edd690511f8c4410b88f7))
+
 ## 1.6.0 (2024-10-01)
 
 Full Changelog: [v1.5.0...v1.6.0](https://github.com/julep-ai/python-sdk/compare/v1.5.0...v1.6.0)
