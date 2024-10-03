@@ -17,4 +17,6 @@ class Doc(BaseModel):
 
     title: str
 
+    embeddings: Union[List[float], List[List[float]], None] = None
+
     metadata: Optional[object] = None
