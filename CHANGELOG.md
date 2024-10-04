@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.11.0 (2024-10-04)
+
+Full Changelog: [v1.10.0...v1.11.0](https://github.com/julep-ai/python-sdk/compare/v1.10.0...v1.11.0)
+
+### Features
+
+* **api:** manual change nested_format-&gt;dots and array_format->repeat in query settings ([#52](https://github.com/julep-ai/python-sdk/issues/52)) ([51c5ad8](https://github.com/julep-ai/python-sdk/commit/51c5ad8fa7a9a31e3d1d5ace3b7e052c1f22b589))
+
 ## 1.10.0 (2024-10-04)
 
 Full Changelog: [v1.9.0...v1.10.0](https://github.com/julep-ai/python-sdk/compare/v1.9.0...v1.10.0)
