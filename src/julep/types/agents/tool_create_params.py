@@ -2,14 +2,19 @@
 
 from __future__ import annotations
 
-from typing import Union, Optional
+from typing import Dict, Union, Optional
 from typing_extensions import Literal, Required, TypedDict
 
-__all__ = ["ToolCreateParams", "Function", "Integration", "System"]
+__all__ = ["ToolCreateParams", "APICall", "Function", "Integration", "System"]
 
 
 class ToolCreateParams(TypedDict, total=False):
     name: Required[str]
+
+    api_call: Optional[APICall]
+    """API call definition"""
+
+    description: Optional[str]
 
     function: Optional[Function]
     """Function definition"""
@@ -19,6 +24,26 @@ class ToolCreateParams(TypedDict, total=False):
 
     system: Optional[System]
     """System definition"""
+
+
+class APICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[Dict[str, str]]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
 
 
 class Function(TypedDict, total=False):
@@ -36,8 +61,6 @@ class Integration(TypedDict, total=False):
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
     method: Optional[str]
 
     setup: Optional[object]
@@ -47,5 +70,3 @@ class System(TypedDict, total=False):
     call: Required[str]
 
     arguments: Optional[object]
-
-    description: Optional[str]

@@ -28,6 +28,7 @@ __all__ = [
     "MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
     "MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestAPICall",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestFunction",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestSystem",
@@ -67,6 +68,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestAPICall",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestFunction",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestSystem",
@@ -105,6 +107,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestAPICall",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestFunction",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestIntegration",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestSystem",
@@ -145,6 +148,7 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestAPICall",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestFunction",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestSystem",
@@ -185,6 +189,7 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestAPICall",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestFunction",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestSystem",
@@ -218,6 +223,7 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestAPICall",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestFunction",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestSystem",
@@ -251,6 +257,7 @@ __all__ = [
     "MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByID",
     "MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequest",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestAPICall",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestFunction",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestIntegration",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestSystem",
@@ -291,7 +298,7 @@ class MainEvaluateStep(TypedDict, total=False):
 class MainToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
 
 
 class MainPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -365,6 +372,26 @@ class MainPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=False):
     """Reference to a tool by id"""
 
 
+class MainPromptStepInputToolsUnionMember1CreateToolRequestAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[Dict[str, str]]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+
 class MainPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
     description: Optional[str]
 
@@ -380,8 +407,6 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
     method: Optional[str]
 
     setup: Optional[object]
@@ -392,11 +417,14 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, tot
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
     name: Required[str]
+
+    api_call: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestAPICall]
+    """API call definition"""
+
+    description: Optional[str]
 
     function: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestFunction]
     """Function definition"""
@@ -542,7 +570,7 @@ class MainIfElseWorkflowStepInputThenEvaluateStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1Content(
@@ -634,6 +662,26 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRef(Typ
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[Dict[str, str]]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
     description: Optional[str]
 
@@ -651,8 +699,6 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
     method: Optional[str]
 
     setup: Optional[object]
@@ -663,11 +709,14 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
     name: Required[str]
+
+    api_call: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestAPICall]
+    """API call definition"""
+
+    description: Optional[str]
 
     function: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestFunction]
     """Function definition"""
@@ -833,7 +882,7 @@ class MainIfElseWorkflowStepInputElseEvaluateStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputElseToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1Content(
@@ -925,6 +974,26 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRef(Typ
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[Dict[str, str]]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
     description: Optional[str]
 
@@ -942,8 +1011,6 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
     method: Optional[str]
 
     setup: Optional[object]
@@ -954,11 +1021,14 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
     name: Required[str]
+
+    api_call: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestAPICall]
+    """API call definition"""
+
+    description: Optional[str]
 
     function: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestFunction]
     """Function definition"""
@@ -1137,7 +1207,7 @@ class MainSwitchStepInputSwitchThenEvaluateStep(TypedDict, total=False):
 class MainSwitchStepInputSwitchThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -1225,6 +1295,26 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRef(Typed
     """Reference to a tool by id"""
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[Dict[str, str]]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
     description: Optional[str]
 
@@ -1240,8 +1330,6 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
     method: Optional[str]
 
     setup: Optional[object]
@@ -1252,11 +1340,14 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
     name: Required[str]
+
+    api_call: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestAPICall]
+    """API call definition"""
+
+    description: Optional[str]
 
     function: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestFunction]
     """Function definition"""
@@ -1430,7 +1521,7 @@ class MainForeachStepInputForeachDoEvaluateStep(TypedDict, total=False):
 class MainForeachStepInputForeachDoToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
 
 
 class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -1518,6 +1609,26 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRef(Typed
     """Reference to a tool by id"""
 
 
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[Dict[str, str]]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
     description: Optional[str]
 
@@ -1533,8 +1644,6 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
     method: Optional[str]
 
     setup: Optional[object]
@@ -1545,11 +1654,14 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
     name: Required[str]
+
+    api_call: Optional[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestAPICall]
+    """API call definition"""
+
+    description: Optional[str]
 
     function: Optional[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestFunction]
     """Function definition"""
@@ -1686,7 +1798,7 @@ class MainParallelStepInputParallelEvaluateStep(TypedDict, total=False):
 class MainParallelStepInputParallelToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
 
 
 class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -1774,6 +1886,26 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRef(Typed
     """Reference to a tool by id"""
 
 
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[Dict[str, str]]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
     description: Optional[str]
 
@@ -1789,8 +1921,6 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
     method: Optional[str]
 
     setup: Optional[object]
@@ -1801,11 +1931,14 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
     name: Required[str]
+
+    api_call: Optional[MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestAPICall]
+    """API call definition"""
+
+    description: Optional[str]
 
     function: Optional[MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestFunction]
     """Function definition"""
@@ -1930,7 +2063,7 @@ class MainMainInputMapEvaluateStep(TypedDict, total=False):
 class MainMainInputMapToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
 
 
 class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -2010,6 +2143,26 @@ class MainMainInputMapPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=F
     """Reference to a tool by id"""
 
 
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[Dict[str, str]]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
     description: Optional[str]
 
@@ -2025,8 +2178,6 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestIntegrati
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
     method: Optional[str]
 
     setup: Optional[object]
@@ -2037,11 +2188,14 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestSystem(Ty
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
     name: Required[str]
+
+    api_call: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestAPICall]
+    """API call definition"""
+
+    description: Optional[str]
 
     function: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestFunction]
     """Function definition"""

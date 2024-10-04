@@ -41,6 +41,18 @@ class TestTasks:
             tools=[
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -49,18 +61,28 @@ class TestTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -69,18 +91,28 @@ class TestTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -89,14 +121,12 @@ class TestTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
             ],
@@ -213,6 +243,18 @@ class TestTasks:
             tools=[
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -221,18 +263,28 @@ class TestTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -241,18 +293,28 @@ class TestTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -261,14 +323,12 @@ class TestTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
             ],
@@ -387,6 +447,18 @@ class TestAsyncTasks:
             tools=[
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -395,18 +467,28 @@ class TestAsyncTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -415,18 +497,28 @@ class TestAsyncTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -435,14 +527,12 @@ class TestAsyncTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
             ],
@@ -559,6 +649,18 @@ class TestAsyncTasks:
             tools=[
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -567,18 +669,28 @@ class TestAsyncTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -587,18 +699,28 @@ class TestAsyncTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -607,14 +729,12 @@ class TestAsyncTasks:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
             ],

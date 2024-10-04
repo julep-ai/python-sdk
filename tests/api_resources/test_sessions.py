@@ -242,6 +242,18 @@ class TestSessions:
             tools=[
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -250,18 +262,28 @@ class TestSessions:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -270,18 +292,28 @@ class TestSessions:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -290,14 +322,12 @@ class TestSessions:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
             ],
@@ -768,6 +798,18 @@ class TestAsyncSessions:
             tools=[
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -776,18 +818,28 @@ class TestAsyncSessions:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -796,18 +848,28 @@ class TestAsyncSessions:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
                 {
                     "name": "name",
+                    "api_call": {
+                        "method": "GET",
+                        "url": "https://example.com",
+                        "content": "content",
+                        "cookies": {"foo": "string"},
+                        "data": {"foo": "string"},
+                        "follow_redirects": True,
+                        "headers": {"foo": "string"},
+                        "json": {},
+                        "params": "string",
+                    },
+                    "description": "description",
                     "function": {
                         "description": "description",
                         "name": {},
@@ -816,14 +878,12 @@ class TestAsyncSessions:
                     "integration": {
                         "provider": "dummy",
                         "arguments": {},
-                        "description": "description",
                         "method": "method",
                         "setup": {},
                     },
                     "system": {
                         "call": "call",
                         "arguments": {},
-                        "description": "description",
                     },
                 },
             ],

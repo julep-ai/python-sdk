@@ -34,6 +34,18 @@ class TestTools:
         tool = client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            api_call={
+                "method": "GET",
+                "url": "https://example.com",
+                "content": "content",
+                "cookies": {"foo": "string"},
+                "data": {"foo": "string"},
+                "follow_redirects": True,
+                "headers": {"foo": "string"},
+                "json": {},
+                "params": "string",
+            },
+            description="description",
             function={
                 "description": "description",
                 "name": {},
@@ -42,14 +54,12 @@ class TestTools:
             integration={
                 "provider": "dummy",
                 "arguments": {},
-                "description": "description",
                 "method": "method",
                 "setup": {},
             },
             system={
                 "call": "call",
                 "arguments": {},
-                "description": "description",
             },
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -103,6 +113,18 @@ class TestTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            api_call={
+                "method": "GET",
+                "url": "https://example.com",
+                "content": "content",
+                "cookies": {"foo": "string"},
+                "data": {"foo": "string"},
+                "follow_redirects": True,
+                "headers": {"foo": "string"},
+                "json": {},
+                "params": "string",
+            },
+            description="description",
             function={
                 "description": "description",
                 "name": {},
@@ -111,14 +133,12 @@ class TestTools:
             integration={
                 "provider": "dummy",
                 "arguments": {},
-                "description": "description",
                 "method": "method",
                 "setup": {},
             },
             system={
                 "call": "call",
                 "arguments": {},
-                "description": "description",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -277,6 +297,18 @@ class TestTools:
         tool = client.agents.tools.patch(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            api_call={
+                "content": "content",
+                "cookies": {"foo": "string"},
+                "data": {"foo": "string"},
+                "follow_redirects": True,
+                "headers": {"foo": "string"},
+                "json": {},
+                "method": "GET",
+                "params": "string",
+                "url": "https://example.com",
+            },
+            description="description",
             function={
                 "description": "description",
                 "name": {},
@@ -284,7 +316,6 @@ class TestTools:
             },
             integration={
                 "arguments": {},
-                "description": "description",
                 "method": "method",
                 "provider": "dummy",
                 "setup": {},
@@ -293,7 +324,6 @@ class TestTools:
             system={
                 "arguments": {},
                 "call": "call",
-                "description": "description",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -355,6 +385,18 @@ class TestAsyncTools:
         tool = await async_client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            api_call={
+                "method": "GET",
+                "url": "https://example.com",
+                "content": "content",
+                "cookies": {"foo": "string"},
+                "data": {"foo": "string"},
+                "follow_redirects": True,
+                "headers": {"foo": "string"},
+                "json": {},
+                "params": "string",
+            },
+            description="description",
             function={
                 "description": "description",
                 "name": {},
@@ -363,14 +405,12 @@ class TestAsyncTools:
             integration={
                 "provider": "dummy",
                 "arguments": {},
-                "description": "description",
                 "method": "method",
                 "setup": {},
             },
             system={
                 "call": "call",
                 "arguments": {},
-                "description": "description",
             },
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -424,6 +464,18 @@ class TestAsyncTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            api_call={
+                "method": "GET",
+                "url": "https://example.com",
+                "content": "content",
+                "cookies": {"foo": "string"},
+                "data": {"foo": "string"},
+                "follow_redirects": True,
+                "headers": {"foo": "string"},
+                "json": {},
+                "params": "string",
+            },
+            description="description",
             function={
                 "description": "description",
                 "name": {},
@@ -432,14 +484,12 @@ class TestAsyncTools:
             integration={
                 "provider": "dummy",
                 "arguments": {},
-                "description": "description",
                 "method": "method",
                 "setup": {},
             },
             system={
                 "call": "call",
                 "arguments": {},
-                "description": "description",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -598,6 +648,18 @@ class TestAsyncTools:
         tool = await async_client.agents.tools.patch(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            api_call={
+                "content": "content",
+                "cookies": {"foo": "string"},
+                "data": {"foo": "string"},
+                "follow_redirects": True,
+                "headers": {"foo": "string"},
+                "json": {},
+                "method": "GET",
+                "params": "string",
+                "url": "https://example.com",
+            },
+            description="description",
             function={
                 "description": "description",
                 "name": {},
@@ -605,7 +667,6 @@ class TestAsyncTools:
             },
             integration={
                 "arguments": {},
-                "description": "description",
                 "method": "method",
                 "provider": "dummy",
                 "setup": {},
@@ -614,7 +675,6 @@ class TestAsyncTools:
             system={
                 "arguments": {},
                 "call": "call",
-                "description": "description",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])

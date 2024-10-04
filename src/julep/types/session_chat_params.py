@@ -17,6 +17,7 @@ __all__ = [
     "ToolChoiceNamedToolChoice",
     "ToolChoiceNamedToolChoiceFunction",
     "Tool",
+    "ToolAPICall",
     "ToolFunction",
     "ToolIntegration",
     "ToolSystem",
@@ -93,6 +94,26 @@ class ToolChoiceNamedToolChoice(TypedDict, total=False):
 ToolChoice: TypeAlias = Union[Literal["auto", "none"], ToolChoiceNamedToolChoice]
 
 
+class ToolAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[Dict[str, str]]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+
 class ToolFunction(TypedDict, total=False):
     description: Optional[str]
 
@@ -108,8 +129,6 @@ class ToolIntegration(TypedDict, total=False):
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
     method: Optional[str]
 
     setup: Optional[object]
@@ -120,11 +139,14 @@ class ToolSystem(TypedDict, total=False):
 
     arguments: Optional[object]
 
-    description: Optional[str]
-
 
 class Tool(TypedDict, total=False):
     name: Required[str]
+
+    api_call: Optional[ToolAPICall]
+    """API call definition"""
+
+    description: Optional[str]
 
     function: Optional[ToolFunction]
     """Function definition"""
