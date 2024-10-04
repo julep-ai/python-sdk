@@ -59,7 +59,6 @@ class ToolsResource(SyncAPIResource):
         function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
-        type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -95,7 +94,6 @@ class ToolsResource(SyncAPIResource):
                     "function": function,
                     "integration": integration,
                     "system": system,
-                    "type": type,
                 },
                 tool_create_params.ToolCreateParams,
             ),
@@ -114,7 +112,6 @@ class ToolsResource(SyncAPIResource):
         function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
-        type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -152,7 +149,6 @@ class ToolsResource(SyncAPIResource):
                     "function": function,
                     "integration": integration,
                     "system": system,
-                    "type": type,
                 },
                 tool_update_params.ToolUpdateParams,
             ),
@@ -257,7 +253,6 @@ class ToolsResource(SyncAPIResource):
         integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
-        type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -295,7 +290,6 @@ class ToolsResource(SyncAPIResource):
                     "integration": integration,
                     "name": name,
                     "system": system,
-                    "type": type,
                 },
                 tool_patch_params.ToolPatchParams,
             ),
@@ -334,7 +328,6 @@ class AsyncToolsResource(AsyncAPIResource):
         function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
-        type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -370,7 +363,6 @@ class AsyncToolsResource(AsyncAPIResource):
                     "function": function,
                     "integration": integration,
                     "system": system,
-                    "type": type,
                 },
                 tool_create_params.ToolCreateParams,
             ),
@@ -389,7 +381,6 @@ class AsyncToolsResource(AsyncAPIResource):
         function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
-        type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -427,7 +418,6 @@ class AsyncToolsResource(AsyncAPIResource):
                     "function": function,
                     "integration": integration,
                     "system": system,
-                    "type": type,
                 },
                 tool_update_params.ToolUpdateParams,
             ),
@@ -532,7 +522,6 @@ class AsyncToolsResource(AsyncAPIResource):
         integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
-        type: Literal["function", "integration", "system", "api_call"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -570,7 +559,6 @@ class AsyncToolsResource(AsyncAPIResource):
                     "integration": integration,
                     "name": name,
                     "system": system,
-                    "type": type,
                 },
                 tool_patch_params.ToolPatchParams,
             ),

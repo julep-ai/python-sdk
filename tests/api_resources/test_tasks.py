@@ -58,7 +58,6 @@ class TestTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -79,7 +78,6 @@ class TestTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -100,7 +98,6 @@ class TestTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
             ],
         )
@@ -233,7 +230,6 @@ class TestTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -254,7 +250,6 @@ class TestTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -275,7 +270,6 @@ class TestTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
             ],
         )
@@ -410,7 +404,6 @@ class TestAsyncTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -431,7 +424,6 @@ class TestAsyncTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -452,7 +444,6 @@ class TestAsyncTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
             ],
         )
@@ -585,7 +576,6 @@ class TestAsyncTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -606,7 +596,6 @@ class TestAsyncTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -627,7 +616,6 @@ class TestAsyncTasks:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
             ],
         )

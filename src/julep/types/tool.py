@@ -49,5 +49,3 @@ class Tool(BaseModel):
 
     system: Optional[System] = None
     """System definition"""
-
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None

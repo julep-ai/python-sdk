@@ -340,8 +340,6 @@ class MainPromptStepInputToolChoiceNamedToolChoiceFunction(TypedDict, total=Fals
 
 
 class MainPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
-    type: Required[Literal["function", "integration", "system", "api_call"]]
-
     function: Optional[MainPromptStepInputToolChoiceNamedToolChoiceFunction]
 
 
@@ -408,8 +406,6 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=Fal
 
     system: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestSystem]
     """System definition"""
-
-    type: Literal["function", "integration", "system", "api_call"]
 
 
 MainPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -611,8 +607,6 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolChoiceNamedToolChoiceFun
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
-    type: Required[Literal["function", "integration", "system", "api_call"]]
-
     function: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolChoiceNamedToolChoiceFunction]
 
 
@@ -683,8 +677,6 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
     system: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestSystem]
     """System definition"""
-
-    type: Literal["function", "integration", "system", "api_call"]
 
 
 MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -906,8 +898,6 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolChoiceNamedToolChoiceFun
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
-    type: Required[Literal["function", "integration", "system", "api_call"]]
-
     function: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolChoiceNamedToolChoiceFunction]
 
 
@@ -978,8 +968,6 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
     system: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestSystem]
     """System definition"""
-
-    type: Literal["function", "integration", "system", "api_call"]
 
 
 MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -1210,8 +1198,6 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolChoiceNamedToolChoiceFunct
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
-    type: Required[Literal["function", "integration", "system", "api_call"]]
-
     function: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolChoiceNamedToolChoiceFunction]
 
 
@@ -1280,8 +1266,6 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
     system: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestSystem]
     """System definition"""
-
-    type: Literal["function", "integration", "system", "api_call"]
 
 
 MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -1507,8 +1491,6 @@ class MainForeachStepInputForeachDoPromptStepInputToolChoiceNamedToolChoiceFunct
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
-    type: Required[Literal["function", "integration", "system", "api_call"]]
-
     function: Optional[MainForeachStepInputForeachDoPromptStepInputToolChoiceNamedToolChoiceFunction]
 
 
@@ -1577,8 +1559,6 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
     system: Optional[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestSystem]
     """System definition"""
-
-    type: Literal["function", "integration", "system", "api_call"]
 
 
 MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -1767,8 +1747,6 @@ class MainParallelStepInputParallelPromptStepInputToolChoiceNamedToolChoiceFunct
 
 
 class MainParallelStepInputParallelPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
-    type: Required[Literal["function", "integration", "system", "api_call"]]
-
     function: Optional[MainParallelStepInputParallelPromptStepInputToolChoiceNamedToolChoiceFunction]
 
 
@@ -1837,8 +1815,6 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
     system: Optional[MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestSystem]
     """System definition"""
-
-    type: Literal["function", "integration", "system", "api_call"]
 
 
 MainParallelStepInputParallelPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -2007,8 +1983,6 @@ class MainMainInputMapPromptStepInputToolChoiceNamedToolChoiceFunction(TypedDict
 
 
 class MainMainInputMapPromptStepInputToolChoiceNamedToolChoice(TypedDict, total=False):
-    type: Required[Literal["function", "integration", "system", "api_call"]]
-
     function: Optional[MainMainInputMapPromptStepInputToolChoiceNamedToolChoiceFunction]
 
 
@@ -2077,8 +2051,6 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequest(TypedDic
 
     system: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestSystem]
     """System definition"""
-
-    type: Literal["function", "integration", "system", "api_call"]
 
 
 MainMainInputMapPromptStepInputToolsUnionMember1: TypeAlias = Union[

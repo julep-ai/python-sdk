@@ -87,8 +87,6 @@ class ToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
 
 
 class ToolChoiceNamedToolChoice(TypedDict, total=False):
-    type: Required[Literal["function", "integration", "system", "api_call"]]
-
     function: Optional[ToolChoiceNamedToolChoiceFunction]
 
 
@@ -136,5 +134,3 @@ class Tool(TypedDict, total=False):
 
     system: Optional[ToolSystem]
     """System definition"""
-
-    type: Literal["function", "integration", "system", "api_call"]

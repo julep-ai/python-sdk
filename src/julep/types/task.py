@@ -324,8 +324,6 @@ class MainPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
 
 
 class MainPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
-    type: Literal["function", "integration", "system", "api_call"]
-
     function: Optional[MainPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
 
 
@@ -392,8 +390,6 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
 
     system: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
     """System definition"""
-
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
 MainPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -594,8 +590,6 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoiceF
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
-    type: Literal["function", "integration", "system", "api_call"]
-
     function: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
 
 
@@ -666,8 +660,6 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
     system: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
     """System definition"""
-
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
 MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -886,8 +878,6 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoiceF
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoice(BaseModel):
-    type: Literal["function", "integration", "system", "api_call"]
-
     function: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoiceFunction] = None
 
 
@@ -958,8 +948,6 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
     system: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
     """System definition"""
-
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
 MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -1189,8 +1177,6 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoiceFun
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
-    type: Literal["function", "integration", "system", "api_call"]
-
     function: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
 
 
@@ -1259,8 +1245,6 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
     system: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
     """System definition"""
-
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
 MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -1491,8 +1475,6 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoiceFun
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
-    type: Literal["function", "integration", "system", "api_call"]
-
     function: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
 
 
@@ -1561,8 +1543,6 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
     system: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
     """System definition"""
-
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
 MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -1751,8 +1731,6 @@ class MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoiceFun
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
-    type: Literal["function", "integration", "system", "api_call"]
-
     function: Optional[MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
 
 
@@ -1821,8 +1799,6 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
     system: Optional[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
     """System definition"""
-
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
 MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -2001,8 +1977,6 @@ class MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseMod
 
 
 class MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
-    type: Literal["function", "integration", "system", "api_call"]
-
     function: Optional[MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoiceFunction] = None
 
 
@@ -2069,8 +2043,6 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest(BaseMo
 
     system: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
     """System definition"""
-
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
 MainMainOutputMapPromptStepOutputToolsUnionMember1: TypeAlias = Union[

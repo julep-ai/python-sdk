@@ -259,7 +259,6 @@ class TestSessions:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -280,7 +279,6 @@ class TestSessions:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -301,7 +299,6 @@ class TestSessions:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
             ],
             top_p=0,
@@ -788,7 +785,6 @@ class TestAsyncSessions:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -809,7 +805,6 @@ class TestAsyncSessions:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
                 {
                     "name": "name",
@@ -830,7 +825,6 @@ class TestAsyncSessions:
                         "arguments": {},
                         "description": "description",
                     },
-                    "type": "function",
                 },
             ],
             top_p=0,

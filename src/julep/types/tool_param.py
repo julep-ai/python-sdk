@@ -49,5 +49,3 @@ class ToolParam(TypedDict, total=False):
 
     system: Optional[System]
     """System definition"""
-
-    type: Literal["function", "integration", "system", "api_call"]
