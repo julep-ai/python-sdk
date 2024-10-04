@@ -20,8 +20,6 @@ class ToolCreateParams(TypedDict, total=False):
     system: Optional[System]
     """System definition"""
 
-    type: Literal["function", "integration", "system", "api_call"]
-
 
 class Function(TypedDict, total=False):
     description: Optional[str]

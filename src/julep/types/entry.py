@@ -103,8 +103,6 @@ class ContentTool(BaseModel):
     system: Optional[ContentToolSystem] = None
     """System definition"""
 
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
-
 
 class ContentChosenToolCallFunction(BaseModel):
     name: str
@@ -193,8 +191,6 @@ class ContentUnionMember5Tool(BaseModel):
 
     system: Optional[ContentUnionMember5ToolSystem] = None
     """System definition"""
-
-    type: Optional[Literal["function", "integration", "system", "api_call"]] = None
 
 
 class ContentUnionMember5ChosenToolCallFunction(BaseModel):

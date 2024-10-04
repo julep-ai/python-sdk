@@ -51,7 +51,6 @@ class TestTools:
                 "arguments": {},
                 "description": "description",
             },
-            type="function",
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
 
@@ -121,7 +120,6 @@ class TestTools:
                 "arguments": {},
                 "description": "description",
             },
-            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -297,7 +295,6 @@ class TestTools:
                 "call": "call",
                 "description": "description",
             },
-            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -375,7 +372,6 @@ class TestAsyncTools:
                 "arguments": {},
                 "description": "description",
             },
-            type="function",
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
 
@@ -445,7 +441,6 @@ class TestAsyncTools:
                 "arguments": {},
                 "description": "description",
             },
-            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -621,7 +616,6 @@ class TestAsyncTools:
                 "call": "call",
                 "description": "description",
             },
-            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
