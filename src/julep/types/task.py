@@ -30,6 +30,7 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
@@ -69,6 +70,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
@@ -107,6 +109,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestSystem",
@@ -147,6 +150,7 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
@@ -187,6 +191,7 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
@@ -220,6 +225,7 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
@@ -253,6 +259,7 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
@@ -279,7 +286,7 @@ class MainEvaluateStep(BaseModel):
 class MainToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -351,6 +358,26 @@ class MainPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
     """Reference to a tool by id"""
 
 
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
     description: Optional[str] = None
 
@@ -364,8 +391,6 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseMode
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -376,11 +401,14 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
     name: str
+
+    api_call: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
     """Function definition"""
@@ -541,7 +569,7 @@ class MainIfElseWorkflowStepOutputThenEvaluateStep(BaseModel):
 class MainIfElseWorkflowStepOutputThenToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -617,6 +645,26 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRef(B
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
     description: Optional[str] = None
 
@@ -630,8 +678,6 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -642,11 +688,14 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
     name: str
+
+    api_call: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = (
         None
@@ -829,7 +878,7 @@ class MainIfElseWorkflowStepOutputElseEvaluateStep(BaseModel):
 class MainIfElseWorkflowStepOutputElseToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -905,6 +954,26 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRef(B
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
     description: Optional[str] = None
 
@@ -918,8 +987,6 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -930,11 +997,14 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
     name: str
+
+    api_call: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction] = (
         None
@@ -1128,7 +1198,7 @@ class MainSwitchStepOutputSwitchThenEvaluateStep(BaseModel):
 class MainSwitchStepOutputSwitchThenToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1204,6 +1274,26 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRef(Bas
     """Reference to a tool by id"""
 
 
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
     description: Optional[str] = None
 
@@ -1217,8 +1307,6 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -1229,11 +1317,14 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
     name: str
+
+    api_call: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
     """Function definition"""
@@ -1426,7 +1517,7 @@ class MainForeachStepOutputForeachDoEvaluateStep(BaseModel):
 class MainForeachStepOutputForeachDoToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1502,6 +1593,26 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRef(Bas
     """Reference to a tool by id"""
 
 
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
     description: Optional[str] = None
 
@@ -1515,8 +1626,6 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -1527,11 +1636,14 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
     name: str
+
+    api_call: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
     """Function definition"""
@@ -1682,7 +1794,7 @@ class MainParallelStepOutputParallelEvaluateStep(BaseModel):
 class MainParallelStepOutputParallelToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1758,6 +1870,26 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRef(Bas
     """Reference to a tool by id"""
 
 
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
     description: Optional[str] = None
 
@@ -1771,8 +1903,6 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -1783,11 +1913,14 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
     name: str
+
+    api_call: Optional[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
     """Function definition"""
@@ -1932,7 +2065,7 @@ class MainMainOutputMapEvaluateStep(BaseModel):
 class MainMainOutputMapToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2004,6 +2137,26 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
     """Reference to a tool by id"""
 
 
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
     description: Optional[str] = None
 
@@ -2017,8 +2170,6 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegra
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -2029,11 +2180,14 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem(
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
     name: str
+
+    api_call: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
     """Function definition"""

@@ -56,6 +56,8 @@ class ToolsResource(SyncAPIResource):
         agent_id: str,
         *,
         name: str,
+        api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
@@ -70,6 +72,8 @@ class ToolsResource(SyncAPIResource):
         Create Agent Tool
 
         Args:
+          api_call: API call definition
+
           function: Function definition
 
           integration: Integration definition
@@ -91,6 +95,8 @@ class ToolsResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "name": name,
+                    "api_call": api_call,
+                    "description": description,
                     "function": function,
                     "integration": integration,
                     "system": system,
@@ -109,6 +115,8 @@ class ToolsResource(SyncAPIResource):
         *,
         agent_id: str,
         name: str,
+        api_call: Optional[tool_update_params.APICall] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
@@ -123,6 +131,8 @@ class ToolsResource(SyncAPIResource):
         Update Agent Tool
 
         Args:
+          api_call: API call definition
+
           function: Function definition
 
           integration: Integration definition
@@ -146,6 +156,8 @@ class ToolsResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "name": name,
+                    "api_call": api_call,
+                    "description": description,
                     "function": function,
                     "integration": integration,
                     "system": system,
@@ -249,6 +261,8 @@ class ToolsResource(SyncAPIResource):
         tool_id: str,
         *,
         agent_id: str,
+        api_call: Optional[tool_patch_params.APICall] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_patch_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
@@ -264,6 +278,8 @@ class ToolsResource(SyncAPIResource):
         Patch Agent Tool
 
         Args:
+          api_call: API call definition
+
           function: Function definition
 
           integration: Integration definition
@@ -286,6 +302,8 @@ class ToolsResource(SyncAPIResource):
             f"/agents/{agent_id}/tools/{tool_id}",
             body=maybe_transform(
                 {
+                    "api_call": api_call,
+                    "description": description,
                     "function": function,
                     "integration": integration,
                     "name": name,
@@ -325,6 +343,8 @@ class AsyncToolsResource(AsyncAPIResource):
         agent_id: str,
         *,
         name: str,
+        api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
@@ -339,6 +359,8 @@ class AsyncToolsResource(AsyncAPIResource):
         Create Agent Tool
 
         Args:
+          api_call: API call definition
+
           function: Function definition
 
           integration: Integration definition
@@ -360,6 +382,8 @@ class AsyncToolsResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "name": name,
+                    "api_call": api_call,
+                    "description": description,
                     "function": function,
                     "integration": integration,
                     "system": system,
@@ -378,6 +402,8 @@ class AsyncToolsResource(AsyncAPIResource):
         *,
         agent_id: str,
         name: str,
+        api_call: Optional[tool_update_params.APICall] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
@@ -392,6 +418,8 @@ class AsyncToolsResource(AsyncAPIResource):
         Update Agent Tool
 
         Args:
+          api_call: API call definition
+
           function: Function definition
 
           integration: Integration definition
@@ -415,6 +443,8 @@ class AsyncToolsResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "name": name,
+                    "api_call": api_call,
+                    "description": description,
                     "function": function,
                     "integration": integration,
                     "system": system,
@@ -518,6 +548,8 @@ class AsyncToolsResource(AsyncAPIResource):
         tool_id: str,
         *,
         agent_id: str,
+        api_call: Optional[tool_patch_params.APICall] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_patch_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
@@ -533,6 +565,8 @@ class AsyncToolsResource(AsyncAPIResource):
         Patch Agent Tool
 
         Args:
+          api_call: API call definition
+
           function: Function definition
 
           integration: Integration definition
@@ -555,6 +589,8 @@ class AsyncToolsResource(AsyncAPIResource):
             f"/agents/{agent_id}/tools/{tool_id}",
             body=await async_maybe_transform(
                 {
+                    "api_call": api_call,
+                    "description": description,
                     "function": function,
                     "integration": integration,
                     "name": name,

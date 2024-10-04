@@ -1,12 +1,34 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import Union, Optional
+from typing import Dict, Union, Optional
 from datetime import datetime
 from typing_extensions import Literal
 
+from pydantic import Field as FieldInfo
+
 from ..._models import BaseModel
 
-__all__ = ["ToolListResponse", "Function", "Integration", "System"]
+__all__ = ["ToolListResponse", "APICall", "Function", "Integration", "System"]
+
+
+class APICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
 
 
 class Function(BaseModel):
@@ -22,8 +44,6 @@ class Integration(BaseModel):
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -34,8 +54,6 @@ class System(BaseModel):
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class ToolListResponse(BaseModel):
     id: str
@@ -45,6 +63,11 @@ class ToolListResponse(BaseModel):
     name: str
 
     updated_at: datetime
+
+    api_call: Optional[APICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[Function] = None
     """Function definition"""

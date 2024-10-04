@@ -1,8 +1,10 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import List, Union, Optional
+from typing import Dict, List, Union, Optional
 from datetime import datetime
 from typing_extensions import Literal, TypeAlias
+
+from pydantic import Field as FieldInfo
 
 from .._models import BaseModel
 
@@ -14,6 +16,7 @@ __all__ = [
     "ContentUnionMember0ContentModel",
     "ContentUnionMember0ContentModelImageURL",
     "ContentTool",
+    "ContentToolAPICall",
     "ContentToolFunction",
     "ContentToolIntegration",
     "ContentToolSystem",
@@ -26,6 +29,7 @@ __all__ = [
     "ContentUnionMember5UnionMember0ContentModel",
     "ContentUnionMember5UnionMember0ContentModelImageURL",
     "ContentUnionMember5Tool",
+    "ContentUnionMember5ToolAPICall",
     "ContentUnionMember5ToolFunction",
     "ContentUnionMember5ToolIntegration",
     "ContentUnionMember5ToolSystem",
@@ -57,6 +61,26 @@ class ContentUnionMember0ContentModel(BaseModel):
 ContentUnionMember0: TypeAlias = Union[ContentUnionMember0Content, ContentUnionMember0ContentModel]
 
 
+class ContentToolAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+
 class ContentToolFunction(BaseModel):
     description: Optional[str] = None
 
@@ -70,8 +94,6 @@ class ContentToolIntegration(BaseModel):
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -82,8 +104,6 @@ class ContentToolSystem(BaseModel):
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class ContentTool(BaseModel):
     id: str
@@ -93,6 +113,11 @@ class ContentTool(BaseModel):
     name: str
 
     updated_at: datetime
+
+    api_call: Optional[ContentToolAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[ContentToolFunction] = None
     """Function definition"""
@@ -146,6 +171,26 @@ ContentUnionMember5UnionMember0: TypeAlias = Union[
 ]
 
 
+class ContentUnionMember5ToolAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[Dict[str, str]] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+
 class ContentUnionMember5ToolFunction(BaseModel):
     description: Optional[str] = None
 
@@ -159,8 +204,6 @@ class ContentUnionMember5ToolIntegration(BaseModel):
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
     method: Optional[str] = None
 
     setup: Optional[object] = None
@@ -171,8 +214,6 @@ class ContentUnionMember5ToolSystem(BaseModel):
 
     arguments: Optional[object] = None
 
-    description: Optional[str] = None
-
 
 class ContentUnionMember5Tool(BaseModel):
     id: str
@@ -182,6 +223,11 @@ class ContentUnionMember5Tool(BaseModel):
     name: str
 
     updated_at: datetime
+
+    api_call: Optional[ContentUnionMember5ToolAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
 
     function: Optional[ContentUnionMember5ToolFunction] = None
     """Function definition"""
