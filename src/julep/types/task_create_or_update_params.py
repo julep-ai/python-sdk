@@ -383,7 +383,7 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestAPICall(TypedDict, to
 
     cookies: Optional[Dict[str, str]]
 
-    data: Optional[Dict[str, str]]
+    data: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -393,9 +393,11 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestAPICall(TypedDict, to
 
     params: Union[str, object, None]
 
+    timeout: Optional[int]
+
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
-    description: Optional[str]
+    description: Optional[object]
 
     name: Optional[object]
 
@@ -415,9 +417,30 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
-    call: Required[str]
+    operation: Required[
+        Literal[
+            "create",
+            "update",
+            "patch",
+            "create_or_update",
+            "embed",
+            "change_status",
+            "search",
+            "chat",
+            "history",
+            "delete",
+            "get",
+            "list",
+        ]
+    ]
+
+    resource: Required[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
 
     arguments: Optional[object]
+
+    resource_id: Optional[str]
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
@@ -673,7 +696,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
     cookies: Optional[Dict[str, str]]
 
-    data: Optional[Dict[str, str]]
+    data: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -683,9 +706,11 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
     params: Union[str, object, None]
 
+    timeout: Optional[int]
+
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
-    description: Optional[str]
+    description: Optional[object]
 
     name: Optional[object]
 
@@ -707,9 +732,30 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
-    call: Required[str]
+    operation: Required[
+        Literal[
+            "create",
+            "update",
+            "patch",
+            "create_or_update",
+            "embed",
+            "change_status",
+            "search",
+            "chat",
+            "history",
+            "delete",
+            "get",
+            "list",
+        ]
+    ]
+
+    resource: Required[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
 
     arguments: Optional[object]
+
+    resource_id: Optional[str]
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
@@ -985,7 +1031,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
     cookies: Optional[Dict[str, str]]
 
-    data: Optional[Dict[str, str]]
+    data: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -995,9 +1041,11 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
     params: Union[str, object, None]
 
+    timeout: Optional[int]
+
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
-    description: Optional[str]
+    description: Optional[object]
 
     name: Optional[object]
 
@@ -1019,9 +1067,30 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
-    call: Required[str]
+    operation: Required[
+        Literal[
+            "create",
+            "update",
+            "patch",
+            "create_or_update",
+            "embed",
+            "change_status",
+            "search",
+            "chat",
+            "history",
+            "delete",
+            "get",
+            "list",
+        ]
+    ]
+
+    resource: Required[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
 
     arguments: Optional[object]
+
+    resource_id: Optional[str]
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
@@ -1306,7 +1375,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
     cookies: Optional[Dict[str, str]]
 
-    data: Optional[Dict[str, str]]
+    data: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -1316,9 +1385,11 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
     params: Union[str, object, None]
 
+    timeout: Optional[int]
+
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
-    description: Optional[str]
+    description: Optional[object]
 
     name: Optional[object]
 
@@ -1338,9 +1409,30 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
-    call: Required[str]
+    operation: Required[
+        Literal[
+            "create",
+            "update",
+            "patch",
+            "create_or_update",
+            "embed",
+            "change_status",
+            "search",
+            "chat",
+            "history",
+            "delete",
+            "get",
+            "list",
+        ]
+    ]
+
+    resource: Required[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
 
     arguments: Optional[object]
+
+    resource_id: Optional[str]
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
@@ -1620,7 +1712,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
     cookies: Optional[Dict[str, str]]
 
-    data: Optional[Dict[str, str]]
+    data: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -1630,9 +1722,11 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
     params: Union[str, object, None]
 
+    timeout: Optional[int]
+
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
-    description: Optional[str]
+    description: Optional[object]
 
     name: Optional[object]
 
@@ -1652,9 +1746,30 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
-    call: Required[str]
+    operation: Required[
+        Literal[
+            "create",
+            "update",
+            "patch",
+            "create_or_update",
+            "embed",
+            "change_status",
+            "search",
+            "chat",
+            "history",
+            "delete",
+            "get",
+            "list",
+        ]
+    ]
+
+    resource: Required[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
 
     arguments: Optional[object]
+
+    resource_id: Optional[str]
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
@@ -1897,7 +2012,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
     cookies: Optional[Dict[str, str]]
 
-    data: Optional[Dict[str, str]]
+    data: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -1907,9 +2022,11 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
     params: Union[str, object, None]
 
+    timeout: Optional[int]
+
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
-    description: Optional[str]
+    description: Optional[object]
 
     name: Optional[object]
 
@@ -1929,9 +2046,30 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
-    call: Required[str]
+    operation: Required[
+        Literal[
+            "create",
+            "update",
+            "patch",
+            "create_or_update",
+            "embed",
+            "change_status",
+            "search",
+            "chat",
+            "history",
+            "delete",
+            "get",
+            "list",
+        ]
+    ]
+
+    resource: Required[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
 
     arguments: Optional[object]
+
+    resource_id: Optional[str]
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):
@@ -2154,7 +2292,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestAPICall(T
 
     cookies: Optional[Dict[str, str]]
 
-    data: Optional[Dict[str, str]]
+    data: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -2164,9 +2302,11 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestAPICall(T
 
     params: Union[str, object, None]
 
+    timeout: Optional[int]
+
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, total=False):
-    description: Optional[str]
+    description: Optional[object]
 
     name: Optional[object]
 
@@ -2186,9 +2326,30 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestIntegrati
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestSystem(TypedDict, total=False):
-    call: Required[str]
+    operation: Required[
+        Literal[
+            "create",
+            "update",
+            "patch",
+            "create_or_update",
+            "embed",
+            "change_status",
+            "search",
+            "chat",
+            "history",
+            "delete",
+            "get",
+            "list",
+        ]
+    ]
+
+    resource: Required[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
 
     arguments: Optional[object]
+
+    resource_id: Optional[str]
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequest(TypedDict, total=False):

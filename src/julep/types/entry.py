@@ -70,7 +70,7 @@ class ContentToolAPICall(BaseModel):
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -80,9 +80,11 @@ class ContentToolAPICall(BaseModel):
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class ContentToolFunction(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -100,9 +102,28 @@ class ContentToolIntegration(BaseModel):
 
 
 class ContentToolSystem(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class ContentTool(BaseModel):
@@ -180,7 +201,7 @@ class ContentUnionMember5ToolAPICall(BaseModel):
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -190,9 +211,11 @@ class ContentUnionMember5ToolAPICall(BaseModel):
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class ContentUnionMember5ToolFunction(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -210,9 +233,28 @@ class ContentUnionMember5ToolIntegration(BaseModel):
 
 
 class ContentUnionMember5ToolSystem(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class ContentUnionMember5Tool(BaseModel):

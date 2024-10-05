@@ -35,7 +35,7 @@ class APICall(TypedDict, total=False):
 
     cookies: Optional[Dict[str, str]]
 
-    data: Optional[Dict[str, str]]
+    data: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -45,9 +45,11 @@ class APICall(TypedDict, total=False):
 
     params: Union[str, object, None]
 
+    timeout: Optional[int]
+
 
 class Function(TypedDict, total=False):
-    description: Optional[str]
+    description: Optional[object]
 
     name: Optional[object]
 
@@ -67,6 +69,27 @@ class Integration(TypedDict, total=False):
 
 
 class System(TypedDict, total=False):
-    call: Required[str]
+    operation: Required[
+        Literal[
+            "create",
+            "update",
+            "patch",
+            "create_or_update",
+            "embed",
+            "change_status",
+            "search",
+            "chat",
+            "history",
+            "delete",
+            "get",
+            "list",
+        ]
+    ]
+
+    resource: Required[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
 
     arguments: Optional[object]
+
+    resource_id: Optional[str]
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
