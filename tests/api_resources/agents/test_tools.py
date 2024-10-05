@@ -39,15 +39,16 @@ class TestTools:
                 "url": "https://example.com",
                 "content": "content",
                 "cookies": {"foo": "string"},
-                "data": {"foo": "string"},
+                "data": {},
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
                 "params": "string",
+                "timeout": 0,
             },
             description="description",
             function={
-                "description": "description",
+                "description": {},
                 "name": {},
                 "parameters": {},
             },
@@ -58,8 +59,11 @@ class TestTools:
                 "setup": {},
             },
             system={
-                "call": "call",
+                "operation": "create",
+                "resource": "agent",
                 "arguments": {},
+                "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                "subresource": "tool",
             },
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -118,15 +122,16 @@ class TestTools:
                 "url": "https://example.com",
                 "content": "content",
                 "cookies": {"foo": "string"},
-                "data": {"foo": "string"},
+                "data": {},
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
                 "params": "string",
+                "timeout": 0,
             },
             description="description",
             function={
-                "description": "description",
+                "description": {},
                 "name": {},
                 "parameters": {},
             },
@@ -137,8 +142,11 @@ class TestTools:
                 "setup": {},
             },
             system={
-                "call": "call",
+                "operation": "create",
+                "resource": "agent",
                 "arguments": {},
+                "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                "subresource": "tool",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -300,17 +308,18 @@ class TestTools:
             api_call={
                 "content": "content",
                 "cookies": {"foo": "string"},
-                "data": {"foo": "string"},
+                "data": {},
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
                 "method": "GET",
                 "params": "string",
+                "timeout": 0,
                 "url": "https://example.com",
             },
             description="description",
             function={
-                "description": "description",
+                "description": {},
                 "name": {},
                 "parameters": {},
             },
@@ -323,7 +332,10 @@ class TestTools:
             name="name",
             system={
                 "arguments": {},
-                "call": "call",
+                "operation": "create",
+                "resource": "agent",
+                "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                "subresource": "tool",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -390,15 +402,16 @@ class TestAsyncTools:
                 "url": "https://example.com",
                 "content": "content",
                 "cookies": {"foo": "string"},
-                "data": {"foo": "string"},
+                "data": {},
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
                 "params": "string",
+                "timeout": 0,
             },
             description="description",
             function={
-                "description": "description",
+                "description": {},
                 "name": {},
                 "parameters": {},
             },
@@ -409,8 +422,11 @@ class TestAsyncTools:
                 "setup": {},
             },
             system={
-                "call": "call",
+                "operation": "create",
+                "resource": "agent",
                 "arguments": {},
+                "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                "subresource": "tool",
             },
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -469,15 +485,16 @@ class TestAsyncTools:
                 "url": "https://example.com",
                 "content": "content",
                 "cookies": {"foo": "string"},
-                "data": {"foo": "string"},
+                "data": {},
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
                 "params": "string",
+                "timeout": 0,
             },
             description="description",
             function={
-                "description": "description",
+                "description": {},
                 "name": {},
                 "parameters": {},
             },
@@ -488,8 +505,11 @@ class TestAsyncTools:
                 "setup": {},
             },
             system={
-                "call": "call",
+                "operation": "create",
+                "resource": "agent",
                 "arguments": {},
+                "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                "subresource": "tool",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -651,17 +671,18 @@ class TestAsyncTools:
             api_call={
                 "content": "content",
                 "cookies": {"foo": "string"},
-                "data": {"foo": "string"},
+                "data": {},
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
                 "method": "GET",
                 "params": "string",
+                "timeout": 0,
                 "url": "https://example.com",
             },
             description="description",
             function={
-                "description": "description",
+                "description": {},
                 "name": {},
                 "parameters": {},
             },
@@ -674,7 +695,10 @@ class TestAsyncTools:
             name="name",
             system={
                 "arguments": {},
-                "call": "call",
+                "operation": "create",
+                "resource": "agent",
+                "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                "subresource": "tool",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])

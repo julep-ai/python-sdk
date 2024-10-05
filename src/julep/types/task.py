@@ -367,7 +367,7 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -377,9 +377,11 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -397,9 +399,28 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseMode
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
@@ -654,7 +675,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -664,9 +685,11 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -684,9 +707,28 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
@@ -963,7 +1005,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -973,9 +1015,11 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -993,9 +1037,28 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
@@ -1283,7 +1346,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -1293,9 +1356,11 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -1313,9 +1378,28 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
@@ -1602,7 +1686,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -1612,9 +1696,11 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -1632,9 +1718,28 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
@@ -1879,7 +1984,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -1889,9 +1994,11 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -1909,9 +2016,28 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
@@ -2146,7 +2272,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestAPICall
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -2156,9 +2282,11 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestAPICall
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -2176,9 +2304,28 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegra
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):

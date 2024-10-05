@@ -20,7 +20,7 @@ class APICall(BaseModel):
 
     cookies: Optional[Dict[str, str]] = None
 
-    data: Optional[Dict[str, str]] = None
+    data: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -30,9 +30,11 @@ class APICall(BaseModel):
 
     params: Union[str, object, None] = None
 
+    timeout: Optional[int] = None
+
 
 class Function(BaseModel):
-    description: Optional[str] = None
+    description: Optional[object] = None
 
     name: Optional[object] = None
 
@@ -50,9 +52,28 @@ class Integration(BaseModel):
 
 
 class System(BaseModel):
-    call: str
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
 
     arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
 class ToolListResponse(BaseModel):
