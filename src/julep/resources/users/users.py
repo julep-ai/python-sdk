@@ -159,7 +159,6 @@ class UsersResource(SyncAPIResource):
         *,
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: str | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
         sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -193,7 +192,6 @@ class UsersResource(SyncAPIResource):
                     {
                         "direction": direction,
                         "limit": limit,
-                        "metadata_filter": metadata_filter,
                         "offset": offset,
                         "sort_by": sort_by,
                     },
@@ -472,7 +470,6 @@ class AsyncUsersResource(AsyncAPIResource):
         *,
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: str | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
         sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -506,7 +503,6 @@ class AsyncUsersResource(AsyncAPIResource):
                     {
                         "direction": direction,
                         "limit": limit,
-                        "metadata_filter": metadata_filter,
                         "offset": offset,
                         "sort_by": sort_by,
                     },

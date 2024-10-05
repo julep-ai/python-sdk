@@ -113,7 +113,6 @@ class TestUsers:
         user = client.users.list(
             direction="asc",
             limit=0,
-            metadata_filter="metadata_filter",
             offset=0,
             sort_by="created_at",
         )
@@ -407,7 +406,6 @@ class TestAsyncUsers:
         user = await async_client.users.list(
             direction="asc",
             limit=0,
-            metadata_filter="metadata_filter",
             offset=0,
             sort_by="created_at",
         )

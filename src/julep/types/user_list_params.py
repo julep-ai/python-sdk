@@ -12,8 +12,6 @@ class UserListParams(TypedDict, total=False):
 
     limit: int
 
-    metadata_filter: str
-
     offset: int
 
     sort_by: Literal["created_at", "updated_at"]
