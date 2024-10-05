@@ -89,7 +89,6 @@ class TestDocs:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             direction="asc",
             limit=0,
-            metadata_filter="metadata_filter",
             offset=0,
             sort_by="created_at",
         )
@@ -411,7 +410,6 @@ class TestAsyncDocs:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             direction="asc",
             limit=0,
-            metadata_filter="metadata_filter",
             offset=0,
             sort_by="created_at",
         )
