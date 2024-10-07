@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.15.1 (2024-10-07)
+
+Full Changelog: [v1.15.0...v1.15.1](https://github.com/julep-ai/python-sdk/compare/v1.15.0...v1.15.1)
+
+### Bug Fixes
+
+* **client:** avoid OverflowError with very large retry counts ([#69](https://github.com/julep-ai/python-sdk/issues/69)) ([7e9c5de](https://github.com/julep-ai/python-sdk/commit/7e9c5ded74f129cdb0cbb84c804c8e892c22fe8b))
+
 ## 1.15.0 (2024-10-07)
 
 Full Changelog: [v1.14.0...v1.15.0](https://github.com/julep-ai/python-sdk/compare/v1.14.0...v1.15.0)
