@@ -35,13 +35,6 @@ __all__ = [
     "MainGetStep",
     "MainSetStep",
     "MainLogStep",
-    "MainEmbedStep",
-    "MainEmbedStepEmbed",
-    "MainSearchStep",
-    "MainSearchStepSearch",
-    "MainSearchStepSearchVectorDocSearchRequest",
-    "MainSearchStepSearchTextOnlyDocSearchRequest",
-    "MainSearchStepSearchHybridDocSearchRequest",
     "MainYieldStep",
     "MainReturnStep",
     "MainSleepStep",
@@ -75,13 +68,6 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenGetStep",
     "MainIfElseWorkflowStepInputThenSetStep",
     "MainIfElseWorkflowStepInputThenLogStep",
-    "MainIfElseWorkflowStepInputThenEmbedStep",
-    "MainIfElseWorkflowStepInputThenEmbedStepEmbed",
-    "MainIfElseWorkflowStepInputThenSearchStep",
-    "MainIfElseWorkflowStepInputThenSearchStepSearch",
-    "MainIfElseWorkflowStepInputThenSearchStepSearchVectorDocSearchRequest",
-    "MainIfElseWorkflowStepInputThenSearchStepSearchTextOnlyDocSearchRequest",
-    "MainIfElseWorkflowStepInputThenSearchStepSearchHybridDocSearchRequest",
     "MainIfElseWorkflowStepInputThenYieldStep",
     "MainIfElseWorkflowStepInputThenReturnStep",
     "MainIfElseWorkflowStepInputThenSleepStep",
@@ -114,13 +100,6 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseGetStep",
     "MainIfElseWorkflowStepInputElseSetStep",
     "MainIfElseWorkflowStepInputElseLogStep",
-    "MainIfElseWorkflowStepInputElseEmbedStep",
-    "MainIfElseWorkflowStepInputElseEmbedStepEmbed",
-    "MainIfElseWorkflowStepInputElseSearchStep",
-    "MainIfElseWorkflowStepInputElseSearchStepSearch",
-    "MainIfElseWorkflowStepInputElseSearchStepSearchVectorDocSearchRequest",
-    "MainIfElseWorkflowStepInputElseSearchStepSearchTextOnlyDocSearchRequest",
-    "MainIfElseWorkflowStepInputElseSearchStepSearchHybridDocSearchRequest",
     "MainIfElseWorkflowStepInputElseYieldStep",
     "MainIfElseWorkflowStepInputElseReturnStep",
     "MainIfElseWorkflowStepInputElseSleepStep",
@@ -155,13 +134,6 @@ __all__ = [
     "MainSwitchStepInputSwitchThenGetStep",
     "MainSwitchStepInputSwitchThenSetStep",
     "MainSwitchStepInputSwitchThenLogStep",
-    "MainSwitchStepInputSwitchThenEmbedStep",
-    "MainSwitchStepInputSwitchThenEmbedStepEmbed",
-    "MainSwitchStepInputSwitchThenSearchStep",
-    "MainSwitchStepInputSwitchThenSearchStepSearch",
-    "MainSwitchStepInputSwitchThenSearchStepSearchVectorDocSearchRequest",
-    "MainSwitchStepInputSwitchThenSearchStepSearchTextOnlyDocSearchRequest",
-    "MainSwitchStepInputSwitchThenSearchStepSearchHybridDocSearchRequest",
     "MainSwitchStepInputSwitchThenYieldStep",
     "MainSwitchStepInputSwitchThenReturnStep",
     "MainSwitchStepInputSwitchThenSleepStep",
@@ -196,13 +168,6 @@ __all__ = [
     "MainForeachStepInputForeachDoGetStep",
     "MainForeachStepInputForeachDoSetStep",
     "MainForeachStepInputForeachDoLogStep",
-    "MainForeachStepInputForeachDoEmbedStep",
-    "MainForeachStepInputForeachDoEmbedStepEmbed",
-    "MainForeachStepInputForeachDoSearchStep",
-    "MainForeachStepInputForeachDoSearchStepSearch",
-    "MainForeachStepInputForeachDoSearchStepSearchVectorDocSearchRequest",
-    "MainForeachStepInputForeachDoSearchStepSearchTextOnlyDocSearchRequest",
-    "MainForeachStepInputForeachDoSearchStepSearchHybridDocSearchRequest",
     "MainForeachStepInputForeachDoYieldStep",
     "MainParallelStepInput",
     "MainParallelStepInputParallel",
@@ -230,13 +195,6 @@ __all__ = [
     "MainParallelStepInputParallelGetStep",
     "MainParallelStepInputParallelSetStep",
     "MainParallelStepInputParallelLogStep",
-    "MainParallelStepInputParallelEmbedStep",
-    "MainParallelStepInputParallelEmbedStepEmbed",
-    "MainParallelStepInputParallelSearchStep",
-    "MainParallelStepInputParallelSearchStepSearch",
-    "MainParallelStepInputParallelSearchStepSearchVectorDocSearchRequest",
-    "MainParallelStepInputParallelSearchStepSearchTextOnlyDocSearchRequest",
-    "MainParallelStepInputParallelSearchStepSearchHybridDocSearchRequest",
     "MainParallelStepInputParallelYieldStep",
     "MainMainInput",
     "MainMainInputMap",
@@ -264,13 +222,6 @@ __all__ = [
     "MainMainInputMapGetStep",
     "MainMainInputMapSetStep",
     "MainMainInputMapLogStep",
-    "MainMainInputMapEmbedStep",
-    "MainMainInputMapEmbedStepEmbed",
-    "MainMainInputMapSearchStep",
-    "MainMainInputMapSearchStepSearch",
-    "MainMainInputMapSearchStepSearchVectorDocSearchRequest",
-    "MainMainInputMapSearchStepSearchTextOnlyDocSearchRequest",
-    "MainMainInputMapSearchStepSearchHybridDocSearchRequest",
     "MainMainInputMapYieldStep",
 ]
 
@@ -406,7 +357,7 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestFunction(TypedDict, t
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str]
     ]
 
     arguments: Optional[object]
@@ -490,57 +441,6 @@ class MainSetStep(TypedDict, total=False):
 
 class MainLogStep(TypedDict, total=False):
     log: Required[str]
-
-
-class MainEmbedStepEmbed(TypedDict, total=False):
-    text: Required[Union[str, List[str]]]
-
-
-class MainEmbedStep(TypedDict, total=False):
-    embed: Required[MainEmbedStepEmbed]
-
-
-class MainSearchStepSearchVectorDocSearchRequest(TypedDict, total=False):
-    vector: Required[Iterable[float]]
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainSearchStepSearchTextOnlyDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainSearchStepSearchHybridDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    vector: Required[Iterable[float]]
-
-    alpha: float
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-MainSearchStepSearch: TypeAlias = Union[
-    MainSearchStepSearchVectorDocSearchRequest,
-    MainSearchStepSearchTextOnlyDocSearchRequest,
-    MainSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainSearchStep(TypedDict, total=False):
-    search: Required[MainSearchStepSearch]
 
 
 class MainYieldStep(TypedDict, total=False):
@@ -721,7 +621,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
     TypedDict, total=False
 ):
     provider: Required[
-        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str]
     ]
 
     arguments: Optional[object]
@@ -808,57 +708,6 @@ class MainIfElseWorkflowStepInputThenLogStep(TypedDict, total=False):
     log: Required[str]
 
 
-class MainIfElseWorkflowStepInputThenEmbedStepEmbed(TypedDict, total=False):
-    text: Required[Union[str, List[str]]]
-
-
-class MainIfElseWorkflowStepInputThenEmbedStep(TypedDict, total=False):
-    embed: Required[MainIfElseWorkflowStepInputThenEmbedStepEmbed]
-
-
-class MainIfElseWorkflowStepInputThenSearchStepSearchVectorDocSearchRequest(TypedDict, total=False):
-    vector: Required[Iterable[float]]
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainIfElseWorkflowStepInputThenSearchStepSearchTextOnlyDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainIfElseWorkflowStepInputThenSearchStepSearchHybridDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    vector: Required[Iterable[float]]
-
-    alpha: float
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-MainIfElseWorkflowStepInputThenSearchStepSearch: TypeAlias = Union[
-    MainIfElseWorkflowStepInputThenSearchStepSearchVectorDocSearchRequest,
-    MainIfElseWorkflowStepInputThenSearchStepSearchTextOnlyDocSearchRequest,
-    MainIfElseWorkflowStepInputThenSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainIfElseWorkflowStepInputThenSearchStep(TypedDict, total=False):
-    search: Required[MainIfElseWorkflowStepInputThenSearchStepSearch]
-
-
 class MainIfElseWorkflowStepInputThenYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
@@ -913,8 +762,6 @@ MainIfElseWorkflowStepInputThen: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenGetStep,
     MainIfElseWorkflowStepInputThenSetStep,
     MainIfElseWorkflowStepInputThenLogStep,
-    MainIfElseWorkflowStepInputThenEmbedStep,
-    MainIfElseWorkflowStepInputThenSearchStep,
     MainIfElseWorkflowStepInputThenYieldStep,
     MainIfElseWorkflowStepInputThenReturnStep,
     MainIfElseWorkflowStepInputThenSleepStep,
@@ -1056,7 +903,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
     TypedDict, total=False
 ):
     provider: Required[
-        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str]
     ]
 
     arguments: Optional[object]
@@ -1143,57 +990,6 @@ class MainIfElseWorkflowStepInputElseLogStep(TypedDict, total=False):
     log: Required[str]
 
 
-class MainIfElseWorkflowStepInputElseEmbedStepEmbed(TypedDict, total=False):
-    text: Required[Union[str, List[str]]]
-
-
-class MainIfElseWorkflowStepInputElseEmbedStep(TypedDict, total=False):
-    embed: Required[MainIfElseWorkflowStepInputElseEmbedStepEmbed]
-
-
-class MainIfElseWorkflowStepInputElseSearchStepSearchVectorDocSearchRequest(TypedDict, total=False):
-    vector: Required[Iterable[float]]
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainIfElseWorkflowStepInputElseSearchStepSearchTextOnlyDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainIfElseWorkflowStepInputElseSearchStepSearchHybridDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    vector: Required[Iterable[float]]
-
-    alpha: float
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-MainIfElseWorkflowStepInputElseSearchStepSearch: TypeAlias = Union[
-    MainIfElseWorkflowStepInputElseSearchStepSearchVectorDocSearchRequest,
-    MainIfElseWorkflowStepInputElseSearchStepSearchTextOnlyDocSearchRequest,
-    MainIfElseWorkflowStepInputElseSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainIfElseWorkflowStepInputElseSearchStep(TypedDict, total=False):
-    search: Required[MainIfElseWorkflowStepInputElseSearchStepSearch]
-
-
 class MainIfElseWorkflowStepInputElseYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
@@ -1248,8 +1044,6 @@ MainIfElseWorkflowStepInputElse: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseGetStep,
     MainIfElseWorkflowStepInputElseSetStep,
     MainIfElseWorkflowStepInputElseLogStep,
-    MainIfElseWorkflowStepInputElseEmbedStep,
-    MainIfElseWorkflowStepInputElseSearchStep,
     MainIfElseWorkflowStepInputElseYieldStep,
     MainIfElseWorkflowStepInputElseReturnStep,
     MainIfElseWorkflowStepInputElseSleepStep,
@@ -1398,7 +1192,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str]
     ]
 
     arguments: Optional[object]
@@ -1485,57 +1279,6 @@ class MainSwitchStepInputSwitchThenLogStep(TypedDict, total=False):
     log: Required[str]
 
 
-class MainSwitchStepInputSwitchThenEmbedStepEmbed(TypedDict, total=False):
-    text: Required[Union[str, List[str]]]
-
-
-class MainSwitchStepInputSwitchThenEmbedStep(TypedDict, total=False):
-    embed: Required[MainSwitchStepInputSwitchThenEmbedStepEmbed]
-
-
-class MainSwitchStepInputSwitchThenSearchStepSearchVectorDocSearchRequest(TypedDict, total=False):
-    vector: Required[Iterable[float]]
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainSwitchStepInputSwitchThenSearchStepSearchTextOnlyDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainSwitchStepInputSwitchThenSearchStepSearchHybridDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    vector: Required[Iterable[float]]
-
-    alpha: float
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-MainSwitchStepInputSwitchThenSearchStepSearch: TypeAlias = Union[
-    MainSwitchStepInputSwitchThenSearchStepSearchVectorDocSearchRequest,
-    MainSwitchStepInputSwitchThenSearchStepSearchTextOnlyDocSearchRequest,
-    MainSwitchStepInputSwitchThenSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainSwitchStepInputSwitchThenSearchStep(TypedDict, total=False):
-    search: Required[MainSwitchStepInputSwitchThenSearchStepSearch]
-
-
 class MainSwitchStepInputSwitchThenYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
@@ -1588,8 +1331,6 @@ MainSwitchStepInputSwitchThen: TypeAlias = Union[
     MainSwitchStepInputSwitchThenGetStep,
     MainSwitchStepInputSwitchThenSetStep,
     MainSwitchStepInputSwitchThenLogStep,
-    MainSwitchStepInputSwitchThenEmbedStep,
-    MainSwitchStepInputSwitchThenSearchStep,
     MainSwitchStepInputSwitchThenYieldStep,
     MainSwitchStepInputSwitchThenReturnStep,
     MainSwitchStepInputSwitchThenSleepStep,
@@ -1735,7 +1476,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str]
     ]
 
     arguments: Optional[object]
@@ -1822,57 +1563,6 @@ class MainForeachStepInputForeachDoLogStep(TypedDict, total=False):
     log: Required[str]
 
 
-class MainForeachStepInputForeachDoEmbedStepEmbed(TypedDict, total=False):
-    text: Required[Union[str, List[str]]]
-
-
-class MainForeachStepInputForeachDoEmbedStep(TypedDict, total=False):
-    embed: Required[MainForeachStepInputForeachDoEmbedStepEmbed]
-
-
-class MainForeachStepInputForeachDoSearchStepSearchVectorDocSearchRequest(TypedDict, total=False):
-    vector: Required[Iterable[float]]
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainForeachStepInputForeachDoSearchStepSearchTextOnlyDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainForeachStepInputForeachDoSearchStepSearchHybridDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    vector: Required[Iterable[float]]
-
-    alpha: float
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-MainForeachStepInputForeachDoSearchStepSearch: TypeAlias = Union[
-    MainForeachStepInputForeachDoSearchStepSearchVectorDocSearchRequest,
-    MainForeachStepInputForeachDoSearchStepSearchTextOnlyDocSearchRequest,
-    MainForeachStepInputForeachDoSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainForeachStepInputForeachDoSearchStep(TypedDict, total=False):
-    search: Required[MainForeachStepInputForeachDoSearchStepSearch]
-
-
 class MainForeachStepInputForeachDoYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
@@ -1886,8 +1576,6 @@ MainForeachStepInputForeachDo: TypeAlias = Union[
     MainForeachStepInputForeachDoGetStep,
     MainForeachStepInputForeachDoSetStep,
     MainForeachStepInputForeachDoLogStep,
-    MainForeachStepInputForeachDoEmbedStep,
-    MainForeachStepInputForeachDoSearchStep,
     MainForeachStepInputForeachDoYieldStep,
 ]
 
@@ -2035,7 +1723,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str]
     ]
 
     arguments: Optional[object]
@@ -2122,57 +1810,6 @@ class MainParallelStepInputParallelLogStep(TypedDict, total=False):
     log: Required[str]
 
 
-class MainParallelStepInputParallelEmbedStepEmbed(TypedDict, total=False):
-    text: Required[Union[str, List[str]]]
-
-
-class MainParallelStepInputParallelEmbedStep(TypedDict, total=False):
-    embed: Required[MainParallelStepInputParallelEmbedStepEmbed]
-
-
-class MainParallelStepInputParallelSearchStepSearchVectorDocSearchRequest(TypedDict, total=False):
-    vector: Required[Iterable[float]]
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainParallelStepInputParallelSearchStepSearchTextOnlyDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainParallelStepInputParallelSearchStepSearchHybridDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    vector: Required[Iterable[float]]
-
-    alpha: float
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-MainParallelStepInputParallelSearchStepSearch: TypeAlias = Union[
-    MainParallelStepInputParallelSearchStepSearchVectorDocSearchRequest,
-    MainParallelStepInputParallelSearchStepSearchTextOnlyDocSearchRequest,
-    MainParallelStepInputParallelSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainParallelStepInputParallelSearchStep(TypedDict, total=False):
-    search: Required[MainParallelStepInputParallelSearchStepSearch]
-
-
 class MainParallelStepInputParallelYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
@@ -2186,8 +1823,6 @@ MainParallelStepInputParallel: TypeAlias = Union[
     MainParallelStepInputParallelGetStep,
     MainParallelStepInputParallelSetStep,
     MainParallelStepInputParallelLogStep,
-    MainParallelStepInputParallelEmbedStep,
-    MainParallelStepInputParallelSearchStep,
     MainParallelStepInputParallelYieldStep,
 ]
 
@@ -2315,7 +1950,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestFunction(
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestIntegration(TypedDict, total=False):
     provider: Required[
-        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str]
     ]
 
     arguments: Optional[object]
@@ -2402,57 +2037,6 @@ class MainMainInputMapLogStep(TypedDict, total=False):
     log: Required[str]
 
 
-class MainMainInputMapEmbedStepEmbed(TypedDict, total=False):
-    text: Required[Union[str, List[str]]]
-
-
-class MainMainInputMapEmbedStep(TypedDict, total=False):
-    embed: Required[MainMainInputMapEmbedStepEmbed]
-
-
-class MainMainInputMapSearchStepSearchVectorDocSearchRequest(TypedDict, total=False):
-    vector: Required[Iterable[float]]
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainMainInputMapSearchStepSearchTextOnlyDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-class MainMainInputMapSearchStepSearchHybridDocSearchRequest(TypedDict, total=False):
-    text: Required[str]
-
-    vector: Required[Iterable[float]]
-
-    alpha: float
-
-    confidence: float
-
-    lang: Literal["en-US"]
-
-    limit: int
-
-
-MainMainInputMapSearchStepSearch: TypeAlias = Union[
-    MainMainInputMapSearchStepSearchVectorDocSearchRequest,
-    MainMainInputMapSearchStepSearchTextOnlyDocSearchRequest,
-    MainMainInputMapSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainMainInputMapSearchStep(TypedDict, total=False):
-    search: Required[MainMainInputMapSearchStepSearch]
-
-
 class MainMainInputMapYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
@@ -2466,8 +2050,6 @@ MainMainInputMap: TypeAlias = Union[
     MainMainInputMapGetStep,
     MainMainInputMapSetStep,
     MainMainInputMapLogStep,
-    MainMainInputMapEmbedStep,
-    MainMainInputMapSearchStep,
     MainMainInputMapYieldStep,
 ]
 
@@ -2491,8 +2073,6 @@ Main: TypeAlias = Union[
     MainGetStep,
     MainSetStep,
     MainLogStep,
-    MainEmbedStep,
-    MainSearchStep,
     MainYieldStep,
     MainReturnStep,
     MainSleepStep,

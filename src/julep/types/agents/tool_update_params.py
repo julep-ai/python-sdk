@@ -60,7 +60,7 @@ class Function(TypedDict, total=False):
 
 class Integration(TypedDict, total=False):
     provider: Required[
-        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str]
     ]
 
     arguments: Optional[object]

@@ -37,13 +37,6 @@ __all__ = [
     "MainGetStep",
     "MainSetStep",
     "MainLogStep",
-    "MainEmbedStep",
-    "MainEmbedStepEmbed",
-    "MainSearchStep",
-    "MainSearchStepSearch",
-    "MainSearchStepSearchVectorDocSearchRequest",
-    "MainSearchStepSearchTextOnlyDocSearchRequest",
-    "MainSearchStepSearchHybridDocSearchRequest",
     "MainYieldStep",
     "MainReturnStep",
     "MainSleepStep",
@@ -77,13 +70,6 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenGetStep",
     "MainIfElseWorkflowStepOutputThenSetStep",
     "MainIfElseWorkflowStepOutputThenLogStep",
-    "MainIfElseWorkflowStepOutputThenEmbedStep",
-    "MainIfElseWorkflowStepOutputThenEmbedStepEmbed",
-    "MainIfElseWorkflowStepOutputThenSearchStep",
-    "MainIfElseWorkflowStepOutputThenSearchStepSearch",
-    "MainIfElseWorkflowStepOutputThenSearchStepSearchVectorDocSearchRequest",
-    "MainIfElseWorkflowStepOutputThenSearchStepSearchTextOnlyDocSearchRequest",
-    "MainIfElseWorkflowStepOutputThenSearchStepSearchHybridDocSearchRequest",
     "MainIfElseWorkflowStepOutputThenYieldStep",
     "MainIfElseWorkflowStepOutputThenReturnStep",
     "MainIfElseWorkflowStepOutputThenSleepStep",
@@ -116,13 +102,6 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseGetStep",
     "MainIfElseWorkflowStepOutputElseSetStep",
     "MainIfElseWorkflowStepOutputElseLogStep",
-    "MainIfElseWorkflowStepOutputElseEmbedStep",
-    "MainIfElseWorkflowStepOutputElseEmbedStepEmbed",
-    "MainIfElseWorkflowStepOutputElseSearchStep",
-    "MainIfElseWorkflowStepOutputElseSearchStepSearch",
-    "MainIfElseWorkflowStepOutputElseSearchStepSearchVectorDocSearchRequest",
-    "MainIfElseWorkflowStepOutputElseSearchStepSearchTextOnlyDocSearchRequest",
-    "MainIfElseWorkflowStepOutputElseSearchStepSearchHybridDocSearchRequest",
     "MainIfElseWorkflowStepOutputElseYieldStep",
     "MainIfElseWorkflowStepOutputElseReturnStep",
     "MainIfElseWorkflowStepOutputElseSleepStep",
@@ -157,13 +136,6 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenGetStep",
     "MainSwitchStepOutputSwitchThenSetStep",
     "MainSwitchStepOutputSwitchThenLogStep",
-    "MainSwitchStepOutputSwitchThenEmbedStep",
-    "MainSwitchStepOutputSwitchThenEmbedStepEmbed",
-    "MainSwitchStepOutputSwitchThenSearchStep",
-    "MainSwitchStepOutputSwitchThenSearchStepSearch",
-    "MainSwitchStepOutputSwitchThenSearchStepSearchVectorDocSearchRequest",
-    "MainSwitchStepOutputSwitchThenSearchStepSearchTextOnlyDocSearchRequest",
-    "MainSwitchStepOutputSwitchThenSearchStepSearchHybridDocSearchRequest",
     "MainSwitchStepOutputSwitchThenYieldStep",
     "MainSwitchStepOutputSwitchThenReturnStep",
     "MainSwitchStepOutputSwitchThenSleepStep",
@@ -198,13 +170,6 @@ __all__ = [
     "MainForeachStepOutputForeachDoGetStep",
     "MainForeachStepOutputForeachDoSetStep",
     "MainForeachStepOutputForeachDoLogStep",
-    "MainForeachStepOutputForeachDoEmbedStep",
-    "MainForeachStepOutputForeachDoEmbedStepEmbed",
-    "MainForeachStepOutputForeachDoSearchStep",
-    "MainForeachStepOutputForeachDoSearchStepSearch",
-    "MainForeachStepOutputForeachDoSearchStepSearchVectorDocSearchRequest",
-    "MainForeachStepOutputForeachDoSearchStepSearchTextOnlyDocSearchRequest",
-    "MainForeachStepOutputForeachDoSearchStepSearchHybridDocSearchRequest",
     "MainForeachStepOutputForeachDoYieldStep",
     "MainParallelStepOutput",
     "MainParallelStepOutputParallel",
@@ -232,13 +197,6 @@ __all__ = [
     "MainParallelStepOutputParallelGetStep",
     "MainParallelStepOutputParallelSetStep",
     "MainParallelStepOutputParallelLogStep",
-    "MainParallelStepOutputParallelEmbedStep",
-    "MainParallelStepOutputParallelEmbedStepEmbed",
-    "MainParallelStepOutputParallelSearchStep",
-    "MainParallelStepOutputParallelSearchStepSearch",
-    "MainParallelStepOutputParallelSearchStepSearchVectorDocSearchRequest",
-    "MainParallelStepOutputParallelSearchStepSearchTextOnlyDocSearchRequest",
-    "MainParallelStepOutputParallelSearchStepSearchHybridDocSearchRequest",
     "MainParallelStepOutputParallelYieldStep",
     "MainMainOutput",
     "MainMainOutputMap",
@@ -266,13 +224,6 @@ __all__ = [
     "MainMainOutputMapGetStep",
     "MainMainOutputMapSetStep",
     "MainMainOutputMapLogStep",
-    "MainMainOutputMapEmbedStep",
-    "MainMainOutputMapEmbedStepEmbed",
-    "MainMainOutputMapSearchStep",
-    "MainMainOutputMapSearchStepSearch",
-    "MainMainOutputMapSearchStepSearchVectorDocSearchRequest",
-    "MainMainOutputMapSearchStepSearchTextOnlyDocSearchRequest",
-    "MainMainOutputMapSearchStepSearchHybridDocSearchRequest",
     "MainMainOutputMapYieldStep",
 ]
 
@@ -389,7 +340,9 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 
@@ -478,61 +431,6 @@ class MainLogStep(BaseModel):
     log: str
 
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
-
-
-class MainEmbedStepEmbed(BaseModel):
-    text: Union[str, List[str]]
-
-
-class MainEmbedStep(BaseModel):
-    embed: MainEmbedStepEmbed
-
-    kind: Optional[Literal["embed"]] = FieldInfo(alias="kind_", default=None)
-
-
-class MainSearchStepSearchVectorDocSearchRequest(BaseModel):
-    vector: List[float]
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainSearchStepSearchTextOnlyDocSearchRequest(BaseModel):
-    text: str
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainSearchStepSearchHybridDocSearchRequest(BaseModel):
-    text: str
-
-    vector: List[float]
-
-    alpha: Optional[float] = None
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-MainSearchStepSearch: TypeAlias = Union[
-    MainSearchStepSearchVectorDocSearchRequest,
-    MainSearchStepSearchTextOnlyDocSearchRequest,
-    MainSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainSearchStep(BaseModel):
-    search: MainSearchStepSearch
-
-    kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
 
 
 class MainYieldStep(BaseModel):
@@ -697,7 +595,9 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 
@@ -793,61 +693,6 @@ class MainIfElseWorkflowStepOutputThenLogStep(BaseModel):
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
 
 
-class MainIfElseWorkflowStepOutputThenEmbedStepEmbed(BaseModel):
-    text: Union[str, List[str]]
-
-
-class MainIfElseWorkflowStepOutputThenEmbedStep(BaseModel):
-    embed: MainIfElseWorkflowStepOutputThenEmbedStepEmbed
-
-    kind: Optional[Literal["embed"]] = FieldInfo(alias="kind_", default=None)
-
-
-class MainIfElseWorkflowStepOutputThenSearchStepSearchVectorDocSearchRequest(BaseModel):
-    vector: List[float]
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainIfElseWorkflowStepOutputThenSearchStepSearchTextOnlyDocSearchRequest(BaseModel):
-    text: str
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainIfElseWorkflowStepOutputThenSearchStepSearchHybridDocSearchRequest(BaseModel):
-    text: str
-
-    vector: List[float]
-
-    alpha: Optional[float] = None
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-MainIfElseWorkflowStepOutputThenSearchStepSearch: TypeAlias = Union[
-    MainIfElseWorkflowStepOutputThenSearchStepSearchVectorDocSearchRequest,
-    MainIfElseWorkflowStepOutputThenSearchStepSearchTextOnlyDocSearchRequest,
-    MainIfElseWorkflowStepOutputThenSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainIfElseWorkflowStepOutputThenSearchStep(BaseModel):
-    search: MainIfElseWorkflowStepOutputThenSearchStepSearch
-
-    kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
-
-
 class MainIfElseWorkflowStepOutputThenYieldStep(BaseModel):
     workflow: str
 
@@ -901,8 +746,6 @@ MainIfElseWorkflowStepOutputThen: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenGetStep,
     MainIfElseWorkflowStepOutputThenSetStep,
     MainIfElseWorkflowStepOutputThenLogStep,
-    MainIfElseWorkflowStepOutputThenEmbedStep,
-    MainIfElseWorkflowStepOutputThenSearchStep,
     MainIfElseWorkflowStepOutputThenYieldStep,
     MainIfElseWorkflowStepOutputThenReturnStep,
     MainIfElseWorkflowStepOutputThenSleepStep,
@@ -1027,7 +870,9 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 
@@ -1123,61 +968,6 @@ class MainIfElseWorkflowStepOutputElseLogStep(BaseModel):
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
 
 
-class MainIfElseWorkflowStepOutputElseEmbedStepEmbed(BaseModel):
-    text: Union[str, List[str]]
-
-
-class MainIfElseWorkflowStepOutputElseEmbedStep(BaseModel):
-    embed: MainIfElseWorkflowStepOutputElseEmbedStepEmbed
-
-    kind: Optional[Literal["embed"]] = FieldInfo(alias="kind_", default=None)
-
-
-class MainIfElseWorkflowStepOutputElseSearchStepSearchVectorDocSearchRequest(BaseModel):
-    vector: List[float]
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainIfElseWorkflowStepOutputElseSearchStepSearchTextOnlyDocSearchRequest(BaseModel):
-    text: str
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainIfElseWorkflowStepOutputElseSearchStepSearchHybridDocSearchRequest(BaseModel):
-    text: str
-
-    vector: List[float]
-
-    alpha: Optional[float] = None
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-MainIfElseWorkflowStepOutputElseSearchStepSearch: TypeAlias = Union[
-    MainIfElseWorkflowStepOutputElseSearchStepSearchVectorDocSearchRequest,
-    MainIfElseWorkflowStepOutputElseSearchStepSearchTextOnlyDocSearchRequest,
-    MainIfElseWorkflowStepOutputElseSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainIfElseWorkflowStepOutputElseSearchStep(BaseModel):
-    search: MainIfElseWorkflowStepOutputElseSearchStepSearch
-
-    kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
-
-
 class MainIfElseWorkflowStepOutputElseYieldStep(BaseModel):
     workflow: str
 
@@ -1231,8 +1021,6 @@ MainIfElseWorkflowStepOutputElse: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElseGetStep,
     MainIfElseWorkflowStepOutputElseSetStep,
     MainIfElseWorkflowStepOutputElseLogStep,
-    MainIfElseWorkflowStepOutputElseEmbedStep,
-    MainIfElseWorkflowStepOutputElseSearchStep,
     MainIfElseWorkflowStepOutputElseYieldStep,
     MainIfElseWorkflowStepOutputElseReturnStep,
     MainIfElseWorkflowStepOutputElseSleepStep,
@@ -1368,7 +1156,9 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 
@@ -1462,61 +1252,6 @@ class MainSwitchStepOutputSwitchThenLogStep(BaseModel):
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
 
 
-class MainSwitchStepOutputSwitchThenEmbedStepEmbed(BaseModel):
-    text: Union[str, List[str]]
-
-
-class MainSwitchStepOutputSwitchThenEmbedStep(BaseModel):
-    embed: MainSwitchStepOutputSwitchThenEmbedStepEmbed
-
-    kind: Optional[Literal["embed"]] = FieldInfo(alias="kind_", default=None)
-
-
-class MainSwitchStepOutputSwitchThenSearchStepSearchVectorDocSearchRequest(BaseModel):
-    vector: List[float]
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainSwitchStepOutputSwitchThenSearchStepSearchTextOnlyDocSearchRequest(BaseModel):
-    text: str
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainSwitchStepOutputSwitchThenSearchStepSearchHybridDocSearchRequest(BaseModel):
-    text: str
-
-    vector: List[float]
-
-    alpha: Optional[float] = None
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-MainSwitchStepOutputSwitchThenSearchStepSearch: TypeAlias = Union[
-    MainSwitchStepOutputSwitchThenSearchStepSearchVectorDocSearchRequest,
-    MainSwitchStepOutputSwitchThenSearchStepSearchTextOnlyDocSearchRequest,
-    MainSwitchStepOutputSwitchThenSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainSwitchStepOutputSwitchThenSearchStep(BaseModel):
-    search: MainSwitchStepOutputSwitchThenSearchStepSearch
-
-    kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
-
-
 class MainSwitchStepOutputSwitchThenYieldStep(BaseModel):
     workflow: str
 
@@ -1570,8 +1305,6 @@ MainSwitchStepOutputSwitchThen: TypeAlias = Union[
     MainSwitchStepOutputSwitchThenGetStep,
     MainSwitchStepOutputSwitchThenSetStep,
     MainSwitchStepOutputSwitchThenLogStep,
-    MainSwitchStepOutputSwitchThenEmbedStep,
-    MainSwitchStepOutputSwitchThenSearchStep,
     MainSwitchStepOutputSwitchThenYieldStep,
     MainSwitchStepOutputSwitchThenReturnStep,
     MainSwitchStepOutputSwitchThenSleepStep,
@@ -1708,7 +1441,9 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 
@@ -1802,61 +1537,6 @@ class MainForeachStepOutputForeachDoLogStep(BaseModel):
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
 
 
-class MainForeachStepOutputForeachDoEmbedStepEmbed(BaseModel):
-    text: Union[str, List[str]]
-
-
-class MainForeachStepOutputForeachDoEmbedStep(BaseModel):
-    embed: MainForeachStepOutputForeachDoEmbedStepEmbed
-
-    kind: Optional[Literal["embed"]] = FieldInfo(alias="kind_", default=None)
-
-
-class MainForeachStepOutputForeachDoSearchStepSearchVectorDocSearchRequest(BaseModel):
-    vector: List[float]
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainForeachStepOutputForeachDoSearchStepSearchTextOnlyDocSearchRequest(BaseModel):
-    text: str
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainForeachStepOutputForeachDoSearchStepSearchHybridDocSearchRequest(BaseModel):
-    text: str
-
-    vector: List[float]
-
-    alpha: Optional[float] = None
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-MainForeachStepOutputForeachDoSearchStepSearch: TypeAlias = Union[
-    MainForeachStepOutputForeachDoSearchStepSearchVectorDocSearchRequest,
-    MainForeachStepOutputForeachDoSearchStepSearchTextOnlyDocSearchRequest,
-    MainForeachStepOutputForeachDoSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainForeachStepOutputForeachDoSearchStep(BaseModel):
-    search: MainForeachStepOutputForeachDoSearchStepSearch
-
-    kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
-
-
 class MainForeachStepOutputForeachDoYieldStep(BaseModel):
     workflow: str
 
@@ -1872,8 +1552,6 @@ MainForeachStepOutputForeachDo: TypeAlias = Union[
     MainForeachStepOutputForeachDoGetStep,
     MainForeachStepOutputForeachDoSetStep,
     MainForeachStepOutputForeachDoLogStep,
-    MainForeachStepOutputForeachDoEmbedStep,
-    MainForeachStepOutputForeachDoSearchStep,
     MainForeachStepOutputForeachDoYieldStep,
 ]
 
@@ -2006,7 +1684,9 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 
@@ -2100,61 +1780,6 @@ class MainParallelStepOutputParallelLogStep(BaseModel):
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
 
 
-class MainParallelStepOutputParallelEmbedStepEmbed(BaseModel):
-    text: Union[str, List[str]]
-
-
-class MainParallelStepOutputParallelEmbedStep(BaseModel):
-    embed: MainParallelStepOutputParallelEmbedStepEmbed
-
-    kind: Optional[Literal["embed"]] = FieldInfo(alias="kind_", default=None)
-
-
-class MainParallelStepOutputParallelSearchStepSearchVectorDocSearchRequest(BaseModel):
-    vector: List[float]
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainParallelStepOutputParallelSearchStepSearchTextOnlyDocSearchRequest(BaseModel):
-    text: str
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainParallelStepOutputParallelSearchStepSearchHybridDocSearchRequest(BaseModel):
-    text: str
-
-    vector: List[float]
-
-    alpha: Optional[float] = None
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-MainParallelStepOutputParallelSearchStepSearch: TypeAlias = Union[
-    MainParallelStepOutputParallelSearchStepSearchVectorDocSearchRequest,
-    MainParallelStepOutputParallelSearchStepSearchTextOnlyDocSearchRequest,
-    MainParallelStepOutputParallelSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainParallelStepOutputParallelSearchStep(BaseModel):
-    search: MainParallelStepOutputParallelSearchStepSearch
-
-    kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
-
-
 class MainParallelStepOutputParallelYieldStep(BaseModel):
     workflow: str
 
@@ -2170,8 +1795,6 @@ MainParallelStepOutputParallel: TypeAlias = Union[
     MainParallelStepOutputParallelGetStep,
     MainParallelStepOutputParallelSetStep,
     MainParallelStepOutputParallelLogStep,
-    MainParallelStepOutputParallelEmbedStep,
-    MainParallelStepOutputParallelSearchStep,
     MainParallelStepOutputParallelYieldStep,
 ]
 
@@ -2294,7 +1917,9 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunctio
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 
@@ -2386,61 +2011,6 @@ class MainMainOutputMapLogStep(BaseModel):
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
 
 
-class MainMainOutputMapEmbedStepEmbed(BaseModel):
-    text: Union[str, List[str]]
-
-
-class MainMainOutputMapEmbedStep(BaseModel):
-    embed: MainMainOutputMapEmbedStepEmbed
-
-    kind: Optional[Literal["embed"]] = FieldInfo(alias="kind_", default=None)
-
-
-class MainMainOutputMapSearchStepSearchVectorDocSearchRequest(BaseModel):
-    vector: List[float]
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainMainOutputMapSearchStepSearchTextOnlyDocSearchRequest(BaseModel):
-    text: str
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-class MainMainOutputMapSearchStepSearchHybridDocSearchRequest(BaseModel):
-    text: str
-
-    vector: List[float]
-
-    alpha: Optional[float] = None
-
-    confidence: Optional[float] = None
-
-    lang: Optional[Literal["en-US"]] = None
-
-    limit: Optional[int] = None
-
-
-MainMainOutputMapSearchStepSearch: TypeAlias = Union[
-    MainMainOutputMapSearchStepSearchVectorDocSearchRequest,
-    MainMainOutputMapSearchStepSearchTextOnlyDocSearchRequest,
-    MainMainOutputMapSearchStepSearchHybridDocSearchRequest,
-]
-
-
-class MainMainOutputMapSearchStep(BaseModel):
-    search: MainMainOutputMapSearchStepSearch
-
-    kind: Optional[Literal["search"]] = FieldInfo(alias="kind_", default=None)
-
-
 class MainMainOutputMapYieldStep(BaseModel):
     workflow: str
 
@@ -2456,8 +2026,6 @@ MainMainOutputMap: TypeAlias = Union[
     MainMainOutputMapGetStep,
     MainMainOutputMapSetStep,
     MainMainOutputMapLogStep,
-    MainMainOutputMapEmbedStep,
-    MainMainOutputMapSearchStep,
     MainMainOutputMapYieldStep,
 ]
 
@@ -2483,8 +2051,6 @@ Main: TypeAlias = Union[
     MainGetStep,
     MainSetStep,
     MainLogStep,
-    MainEmbedStep,
-    MainSearchStep,
     MainYieldStep,
     MainReturnStep,
     MainSleepStep,
