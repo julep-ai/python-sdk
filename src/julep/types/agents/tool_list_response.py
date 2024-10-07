@@ -42,7 +42,9 @@ class Function(BaseModel):
 
 
 class Integration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 

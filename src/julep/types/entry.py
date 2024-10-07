@@ -92,7 +92,9 @@ class ContentToolFunction(BaseModel):
 
 
 class ContentToolIntegration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 
@@ -223,7 +225,9 @@ class ContentUnionMember5ToolFunction(BaseModel):
 
 
 class ContentUnionMember5ToolIntegration(BaseModel):
-    provider: Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str]
+    provider: Union[
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
+    ]
 
     arguments: Optional[object] = None
 

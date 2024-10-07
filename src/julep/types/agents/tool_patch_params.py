@@ -64,7 +64,7 @@ class Integration(TypedDict, total=False):
     method: Optional[str]
 
     provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase"], str, None
+        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str, None
     ]
 
     setup: Optional[object]
