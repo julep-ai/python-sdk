@@ -144,6 +144,8 @@ __all__ = [
     "MainForeachStepInput",
     "MainForeachStepInputForeach",
     "MainForeachStepInputForeachDo",
+    "MainForeachStepInputForeachDoWaitForInputStep",
+    "MainForeachStepInputForeachDoWaitForInputStepWaitForInput",
     "MainForeachStepInputForeachDoEvaluateStep",
     "MainForeachStepInputForeachDoToolCallStep",
     "MainForeachStepInputForeachDoPromptStepInput",
@@ -1347,6 +1349,14 @@ class MainSwitchStepInput(TypedDict, total=False):
     switch: Required[Iterable[MainSwitchStepInputSwitch]]
 
 
+class MainForeachStepInputForeachDoWaitForInputStepWaitForInput(TypedDict, total=False):
+    info: Required[Dict[str, str]]
+
+
+class MainForeachStepInputForeachDoWaitForInputStep(TypedDict, total=False):
+    wait_for_input: Required[MainForeachStepInputForeachDoWaitForInputStepWaitForInput]
+
+
 class MainForeachStepInputForeachDoEvaluateStep(TypedDict, total=False):
     evaluate: Required[Dict[str, str]]
 
@@ -1568,6 +1578,7 @@ class MainForeachStepInputForeachDoYieldStep(TypedDict, total=False):
 
 
 MainForeachStepInputForeachDo: TypeAlias = Union[
+    MainForeachStepInputForeachDoWaitForInputStep,
     MainForeachStepInputForeachDoEvaluateStep,
     MainForeachStepInputForeachDoToolCallStep,
     MainForeachStepInputForeachDoPromptStepInput,

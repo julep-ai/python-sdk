@@ -146,6 +146,8 @@ __all__ = [
     "MainForeachStepOutput",
     "MainForeachStepOutputForeach",
     "MainForeachStepOutputForeachDo",
+    "MainForeachStepOutputForeachDoWaitForInputStep",
+    "MainForeachStepOutputForeachDoWaitForInputStepWaitForInput",
     "MainForeachStepOutputForeachDoEvaluateStep",
     "MainForeachStepOutputForeachDoToolCallStep",
     "MainForeachStepOutputForeachDoPromptStepOutput",
@@ -1325,6 +1327,16 @@ class MainSwitchStepOutput(BaseModel):
     kind: Optional[Literal["switch"]] = FieldInfo(alias="kind_", default=None)
 
 
+class MainForeachStepOutputForeachDoWaitForInputStepWaitForInput(BaseModel):
+    info: Dict[str, str]
+
+
+class MainForeachStepOutputForeachDoWaitForInputStep(BaseModel):
+    wait_for_input: MainForeachStepOutputForeachDoWaitForInputStepWaitForInput
+
+    kind: Optional[Literal["wait_for_input"]] = FieldInfo(alias="kind_", default=None)
+
+
 class MainForeachStepOutputForeachDoEvaluateStep(BaseModel):
     evaluate: Dict[str, str]
 
@@ -1546,6 +1558,7 @@ class MainForeachStepOutputForeachDoYieldStep(BaseModel):
 
 
 MainForeachStepOutputForeachDo: TypeAlias = Union[
+    MainForeachStepOutputForeachDoWaitForInputStep,
     MainForeachStepOutputForeachDoEvaluateStep,
     MainForeachStepOutputForeachDoToolCallStep,
     MainForeachStepOutputForeachDoPromptStepOutput,
