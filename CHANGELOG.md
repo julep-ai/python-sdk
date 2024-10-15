@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.16.1 (2024-10-15)
+
+Full Changelog: [v1.16.0...v1.16.1](https://github.com/julep-ai/python-sdk/compare/v1.16.0...v1.16.1)
+
 ## 1.16.0 (2024-10-10)
 
 Full Changelog: [v1.15.2...v1.16.0](https://github.com/julep-ai/python-sdk/compare/v1.15.2...v1.16.0)
