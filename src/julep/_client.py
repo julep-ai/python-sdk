@@ -46,8 +46,8 @@ __all__ = [
 ]
 
 ENVIRONMENTS: Dict[str, str] = {
-    "production": "https://api.julep.ai/api",
     "dev": "https://dev.julep.ai/api",
+    "production": "https://api.julep.ai/api",
     "local_multi_tenant": "http://localhost/api",
     "local": "http://localhost:8080",
 }
@@ -67,13 +67,13 @@ class Julep(SyncAPIClient):
     # client options
     api_key: str
 
-    _environment: Literal["production", "dev", "local_multi_tenant", "local"] | NotGiven
+    _environment: Literal["dev", "production", "local_multi_tenant", "local"] | NotGiven
 
     def __init__(
         self,
         *,
         api_key: str | None = None,
-        environment: Literal["production", "dev", "local_multi_tenant", "local"] | NotGiven = NOT_GIVEN,
+        environment: Literal["dev", "production", "local_multi_tenant", "local"] | NotGiven = NOT_GIVEN,
         base_url: str | httpx.URL | None | NotGiven = NOT_GIVEN,
         timeout: Union[float, Timeout, None, NotGiven] = NOT_GIVEN,
         max_retries: int = DEFAULT_MAX_RETRIES,
@@ -124,7 +124,7 @@ class Julep(SyncAPIClient):
         elif base_url_env is not None:
             base_url = base_url_env
         else:
-            self._environment = environment = "production"
+            self._environment = environment = "dev"
 
             try:
                 base_url = ENVIRONMENTS[environment]
@@ -176,7 +176,7 @@ class Julep(SyncAPIClient):
         self,
         *,
         api_key: str | None = None,
-        environment: Literal["production", "dev", "local_multi_tenant", "local"] | None = None,
+        environment: Literal["dev", "production", "local_multi_tenant", "local"] | None = None,
         base_url: str | httpx.URL | None = None,
         timeout: float | Timeout | None | NotGiven = NOT_GIVEN,
         http_client: httpx.Client | None = None,
@@ -273,13 +273,13 @@ class AsyncJulep(AsyncAPIClient):
     # client options
     api_key: str
 
-    _environment: Literal["production", "dev", "local_multi_tenant", "local"] | NotGiven
+    _environment: Literal["dev", "production", "local_multi_tenant", "local"] | NotGiven
 
     def __init__(
         self,
         *,
         api_key: str | None = None,
-        environment: Literal["production", "dev", "local_multi_tenant", "local"] | NotGiven = NOT_GIVEN,
+        environment: Literal["dev", "production", "local_multi_tenant", "local"] | NotGiven = NOT_GIVEN,
         base_url: str | httpx.URL | None | NotGiven = NOT_GIVEN,
         timeout: Union[float, Timeout, None, NotGiven] = NOT_GIVEN,
         max_retries: int = DEFAULT_MAX_RETRIES,
@@ -330,7 +330,7 @@ class AsyncJulep(AsyncAPIClient):
         elif base_url_env is not None:
             base_url = base_url_env
         else:
-            self._environment = environment = "production"
+            self._environment = environment = "dev"
 
             try:
                 base_url = ENVIRONMENTS[environment]
@@ -382,7 +382,7 @@ class AsyncJulep(AsyncAPIClient):
         self,
         *,
         api_key: str | None = None,
-        environment: Literal["production", "dev", "local_multi_tenant", "local"] | None = None,
+        environment: Literal["dev", "production", "local_multi_tenant", "local"] | None = None,
         base_url: str | httpx.URL | None = None,
         timeout: float | Timeout | None | NotGiven = NOT_GIVEN,
         http_client: httpx.AsyncClient | None = None,
