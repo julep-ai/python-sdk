@@ -13,4 +13,6 @@ class DocCreateParams(TypedDict, total=False):
 
     title: Required[str]
 
+    embed_instruction: Optional[str]
+
     metadata: Optional[object]
