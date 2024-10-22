@@ -58,6 +58,7 @@ class DocsResource(SyncAPIResource):
         *,
         content: Union[str, List[str]],
         title: str,
+        embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -86,6 +87,7 @@ class DocsResource(SyncAPIResource):
                 {
                     "content": content,
                     "title": title,
+                    "embed_instruction": embed_instruction,
                     "metadata": metadata,
                 },
                 doc_create_params.DocCreateParams,
@@ -339,6 +341,7 @@ class AsyncDocsResource(AsyncAPIResource):
         *,
         content: Union[str, List[str]],
         title: str,
+        embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -367,6 +370,7 @@ class AsyncDocsResource(AsyncAPIResource):
                 {
                     "content": content,
                     "title": title,
+                    "embed_instruction": embed_instruction,
                     "metadata": metadata,
                 },
                 doc_create_params.DocCreateParams,

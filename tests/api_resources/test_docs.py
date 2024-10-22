@@ -25,6 +25,14 @@ class TestDocs:
         assert_matches_type(EmbedQueryResponse, doc, path=["response"])
 
     @parametrize
+    def test_method_embed_with_all_params(self, client: Julep) -> None:
+        doc = client.docs.embed(
+            text="string",
+            embed_instruction="embed_instruction",
+        )
+        assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+    @parametrize
     def test_raw_response_embed(self, client: Julep) -> None:
         response = client.docs.with_raw_response.embed(
             text="string",
@@ -94,6 +102,14 @@ class TestAsyncDocs:
     async def test_method_embed(self, async_client: AsyncJulep) -> None:
         doc = await async_client.docs.embed(
             text="string",
+        )
+        assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+    @parametrize
+    async def test_method_embed_with_all_params(self, async_client: AsyncJulep) -> None:
+        doc = await async_client.docs.embed(
+            text="string",
+            embed_instruction="embed_instruction",
         )
         assert_matches_type(EmbedQueryResponse, doc, path=["response"])
 

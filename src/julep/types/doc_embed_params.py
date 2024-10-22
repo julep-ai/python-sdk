@@ -10,3 +10,5 @@ __all__ = ["DocEmbedParams"]
 
 class DocEmbedParams(TypedDict, total=False):
     text: Required[Union[str, List[str]]]
+
+    embed_instruction: str

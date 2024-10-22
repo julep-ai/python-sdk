@@ -51,6 +51,7 @@ class DocsResource(SyncAPIResource):
         self,
         *,
         text: Union[str, List[str]],
+        embed_instruction: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -72,7 +73,13 @@ class DocsResource(SyncAPIResource):
         """
         return self._post(
             "/embed",
-            body=maybe_transform({"text": text}, doc_embed_params.DocEmbedParams),
+            body=maybe_transform(
+                {
+                    "text": text,
+                    "embed_instruction": embed_instruction,
+                },
+                doc_embed_params.DocEmbedParams,
+            ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -137,6 +144,7 @@ class AsyncDocsResource(AsyncAPIResource):
         self,
         *,
         text: Union[str, List[str]],
+        embed_instruction: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -158,7 +166,13 @@ class AsyncDocsResource(AsyncAPIResource):
         """
         return await self._post(
             "/embed",
-            body=await async_maybe_transform({"text": text}, doc_embed_params.DocEmbedParams),
+            body=await async_maybe_transform(
+                {
+                    "text": text,
+                    "embed_instruction": embed_instruction,
+                },
+                doc_embed_params.DocEmbedParams,
+            ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
