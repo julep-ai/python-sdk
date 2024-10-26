@@ -18,24 +18,24 @@ class TestDocs:
     parametrize = pytest.mark.parametrize("client", [False, True], indirect=True, ids=["loose", "strict"])
 
     @parametrize
-    def test_method_embed(self, client: Julep) -> None:
+    def test_method_embed_overload_1(self, client: Julep) -> None:
         doc = client.docs.embed(
-            text="string",
+            text="text",
         )
         assert_matches_type(EmbedQueryResponse, doc, path=["response"])
 
     @parametrize
-    def test_method_embed_with_all_params(self, client: Julep) -> None:
+    def test_method_embed_with_all_params_overload_1(self, client: Julep) -> None:
         doc = client.docs.embed(
-            text="string",
+            text="text",
             embed_instruction="embed_instruction",
         )
         assert_matches_type(EmbedQueryResponse, doc, path=["response"])
 
     @parametrize
-    def test_raw_response_embed(self, client: Julep) -> None:
+    def test_raw_response_embed_overload_1(self, client: Julep) -> None:
         response = client.docs.with_raw_response.embed(
-            text="string",
+            text="text",
         )
 
         assert response.is_closed is True
@@ -44,9 +44,48 @@ class TestDocs:
         assert_matches_type(EmbedQueryResponse, doc, path=["response"])
 
     @parametrize
-    def test_streaming_response_embed(self, client: Julep) -> None:
+    def test_streaming_response_embed_overload_1(self, client: Julep) -> None:
         with client.docs.with_streaming_response.embed(
-            text="string",
+            text="text",
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            doc = response.parse()
+            assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    def test_method_embed_overload_2(self, client: Julep) -> None:
+        doc = client.docs.embed(
+            text=["string"],
+        )
+        assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+    @parametrize
+    def test_method_embed_with_all_params_overload_2(self, client: Julep) -> None:
+        doc = client.docs.embed(
+            text=["string"],
+            embed_instruction="embed_instruction",
+        )
+        assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+    @parametrize
+    def test_raw_response_embed_overload_2(self, client: Julep) -> None:
+        response = client.docs.with_raw_response.embed(
+            text=["string"],
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        doc = response.parse()
+        assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+    @parametrize
+    def test_streaming_response_embed_overload_2(self, client: Julep) -> None:
+        with client.docs.with_streaming_response.embed(
+            text=["string"],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -99,24 +138,24 @@ class TestAsyncDocs:
     parametrize = pytest.mark.parametrize("async_client", [False, True], indirect=True, ids=["loose", "strict"])
 
     @parametrize
-    async def test_method_embed(self, async_client: AsyncJulep) -> None:
+    async def test_method_embed_overload_1(self, async_client: AsyncJulep) -> None:
         doc = await async_client.docs.embed(
-            text="string",
+            text="text",
         )
         assert_matches_type(EmbedQueryResponse, doc, path=["response"])
 
     @parametrize
-    async def test_method_embed_with_all_params(self, async_client: AsyncJulep) -> None:
+    async def test_method_embed_with_all_params_overload_1(self, async_client: AsyncJulep) -> None:
         doc = await async_client.docs.embed(
-            text="string",
+            text="text",
             embed_instruction="embed_instruction",
         )
         assert_matches_type(EmbedQueryResponse, doc, path=["response"])
 
     @parametrize
-    async def test_raw_response_embed(self, async_client: AsyncJulep) -> None:
+    async def test_raw_response_embed_overload_1(self, async_client: AsyncJulep) -> None:
         response = await async_client.docs.with_raw_response.embed(
-            text="string",
+            text="text",
         )
 
         assert response.is_closed is True
@@ -125,9 +164,48 @@ class TestAsyncDocs:
         assert_matches_type(EmbedQueryResponse, doc, path=["response"])
 
     @parametrize
-    async def test_streaming_response_embed(self, async_client: AsyncJulep) -> None:
+    async def test_streaming_response_embed_overload_1(self, async_client: AsyncJulep) -> None:
         async with async_client.docs.with_streaming_response.embed(
-            text="string",
+            text="text",
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            doc = await response.parse()
+            assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    async def test_method_embed_overload_2(self, async_client: AsyncJulep) -> None:
+        doc = await async_client.docs.embed(
+            text=["string"],
+        )
+        assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+    @parametrize
+    async def test_method_embed_with_all_params_overload_2(self, async_client: AsyncJulep) -> None:
+        doc = await async_client.docs.embed(
+            text=["string"],
+            embed_instruction="embed_instruction",
+        )
+        assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+    @parametrize
+    async def test_raw_response_embed_overload_2(self, async_client: AsyncJulep) -> None:
+        response = await async_client.docs.with_raw_response.embed(
+            text=["string"],
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        doc = await response.parse()
+        assert_matches_type(EmbedQueryResponse, doc, path=["response"])
+
+    @parametrize
+    async def test_streaming_response_embed_overload_2(self, async_client: AsyncJulep) -> None:
+        async with async_client.docs.with_streaming_response.embed(
+            text=["string"],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"

@@ -3,12 +3,21 @@
 from __future__ import annotations
 
 from typing import List, Union
-from typing_extensions import Required, TypedDict
+from typing_extensions import Required, TypeAlias, TypedDict
 
-__all__ = ["DocEmbedParams"]
+__all__ = ["DocEmbedParams", "SingleEmbedQueryRequest", "MultipleEmbedQueryRequest"]
 
 
-class DocEmbedParams(TypedDict, total=False):
-    text: Required[Union[str, List[str]]]
+class SingleEmbedQueryRequest(TypedDict, total=False):
+    text: Required[str]
 
     embed_instruction: str
+
+
+class MultipleEmbedQueryRequest(TypedDict, total=False):
+    text: Required[List[str]]
+
+    embed_instruction: str
+
+
+DocEmbedParams: TypeAlias = Union[SingleEmbedQueryRequest, MultipleEmbedQueryRequest]

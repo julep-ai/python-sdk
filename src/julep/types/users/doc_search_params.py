@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Union, Iterable
+from typing import Dict, Union, Iterable
 from typing_extensions import Literal, Required, TypeAlias, TypedDict
 
 __all__ = ["DocSearchParams", "TextOnlyDocSearchRequest", "VectorDocSearchRequest", "HybridDocSearchRequest"]
@@ -15,6 +15,8 @@ class TextOnlyDocSearchRequest(TypedDict, total=False):
 
     limit: int
 
+    metadata_filter: Dict[str, Union[float, str, bool, None]]
+
 
 class VectorDocSearchRequest(TypedDict, total=False):
     vector: Required[Iterable[float]]
@@ -24,6 +26,8 @@ class VectorDocSearchRequest(TypedDict, total=False):
     lang: Literal["en-US"]
 
     limit: int
+
+    metadata_filter: Dict[str, Union[float, str, bool, None]]
 
 
 class HybridDocSearchRequest(TypedDict, total=False):
@@ -38,6 +42,8 @@ class HybridDocSearchRequest(TypedDict, total=False):
     lang: Literal["en-US"]
 
     limit: int
+
+    metadata_filter: Dict[str, Union[float, str, bool, None]]
 
 
 DocSearchParams: TypeAlias = Union[TextOnlyDocSearchRequest, VectorDocSearchRequest, HybridDocSearchRequest]
