@@ -2,13 +2,15 @@
 
 from __future__ import annotations
 
-from typing import List, Union
+from typing import List
+from typing_extensions import overload
 
 import httpx
 
 from ..types import doc_embed_params
 from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven
 from .._utils import (
+    required_args,
     maybe_transform,
     async_maybe_transform,
 )
@@ -47,10 +49,11 @@ class DocsResource(SyncAPIResource):
         """
         return DocsResourceWithStreamingResponse(self)
 
+    @overload
     def embed(
         self,
         *,
-        text: Union[str, List[str]],
+        text: str,
         embed_instruction: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -71,6 +74,48 @@ class DocsResource(SyncAPIResource):
 
           timeout: Override the client-level default timeout for this request, in seconds
         """
+        ...
+
+    @overload
+    def embed(
+        self,
+        *,
+        text: List[str],
+        embed_instruction: str | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> EmbedQueryResponse:
+        """
+        Embed
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        ...
+
+    @required_args(["text"])
+    def embed(
+        self,
+        *,
+        text: str | List[str],
+        embed_instruction: str | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> EmbedQueryResponse:
         return self._post(
             "/embed",
             body=maybe_transform(
@@ -140,10 +185,11 @@ class AsyncDocsResource(AsyncAPIResource):
         """
         return AsyncDocsResourceWithStreamingResponse(self)
 
+    @overload
     async def embed(
         self,
         *,
-        text: Union[str, List[str]],
+        text: str,
         embed_instruction: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -164,6 +210,48 @@ class AsyncDocsResource(AsyncAPIResource):
 
           timeout: Override the client-level default timeout for this request, in seconds
         """
+        ...
+
+    @overload
+    async def embed(
+        self,
+        *,
+        text: List[str],
+        embed_instruction: str | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> EmbedQueryResponse:
+        """
+        Embed
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        ...
+
+    @required_args(["text"])
+    async def embed(
+        self,
+        *,
+        text: str | List[str],
+        embed_instruction: str | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> EmbedQueryResponse:
         return await self._post(
             "/embed",
             body=await async_maybe_transform(

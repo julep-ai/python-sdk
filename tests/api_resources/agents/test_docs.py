@@ -189,6 +189,7 @@ class TestDocs:
             text="text",
             lang="en-US",
             limit=1,
+            metadata_filter={"foo": 0},
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -242,6 +243,7 @@ class TestDocs:
             confidence=0,
             lang="en-US",
             limit=1,
+            metadata_filter={"foo": 0},
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -298,6 +300,7 @@ class TestDocs:
             confidence=0,
             lang="en-US",
             limit=1,
+            metadata_filter={"foo": 0},
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -511,6 +514,7 @@ class TestAsyncDocs:
             text="text",
             lang="en-US",
             limit=1,
+            metadata_filter={"foo": 0},
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -564,6 +568,7 @@ class TestAsyncDocs:
             confidence=0,
             lang="en-US",
             limit=1,
+            metadata_filter={"foo": 0},
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -620,6 +625,7 @@ class TestAsyncDocs:
             confidence=0,
             lang="en-US",
             limit=1,
+            metadata_filter={"foo": 0},
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
