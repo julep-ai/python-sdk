@@ -18,6 +18,8 @@ __all__ = [
     "ToolChoiceNamedToolChoiceFunction",
     "Tool",
     "ToolAPICall",
+    "ToolBash20241022",
+    "ToolComputer20241022",
     "ToolFunction",
     "ToolIntegration",
     "ToolIntegrationDummyIntegrationDef",
@@ -36,6 +38,7 @@ __all__ = [
     "ToolIntegrationWeatherIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDefSetup",
     "ToolSystem",
+    "ToolTextEditor20241022",
 ]
 
 
@@ -129,6 +132,24 @@ class ToolAPICall(TypedDict, total=False):
     params: Union[str, object, None]
 
     timeout: Optional[int]
+
+
+class ToolBash20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class ToolComputer20241022(TypedDict, total=False):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
 
 
 class ToolFunction(TypedDict, total=False):
@@ -308,11 +329,22 @@ class ToolSystem(TypedDict, total=False):
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
+class ToolTextEditor20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["text_editor_20241022"]
+
+
 class Tool(TypedDict, total=False):
     name: Required[str]
 
     api_call: Optional[ToolAPICall]
     """API call definition"""
+
+    bash_20241022: Optional[ToolBash20241022]
+
+    computer_20241022: Optional[ToolComputer20241022]
+    """Anthropic new tools"""
 
     description: Optional[str]
 
@@ -324,3 +356,5 @@ class Tool(TypedDict, total=False):
 
     system: Optional[ToolSystem]
     """System definition"""
+
+    text_editor_20241022: Optional[ToolTextEditor20241022]

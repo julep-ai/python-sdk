@@ -8,6 +8,8 @@ from typing_extensions import Literal, Required, TypeAlias, TypedDict
 __all__ = [
     "ToolUpdateParams",
     "APICall",
+    "Bash20241022",
+    "Computer20241022",
     "Function",
     "Integration",
     "IntegrationDummyIntegrationDef",
@@ -26,6 +28,7 @@ __all__ = [
     "IntegrationWeatherIntegrationDefArguments",
     "IntegrationWeatherIntegrationDefSetup",
     "System",
+    "TextEditor20241022",
 ]
 
 
@@ -37,6 +40,11 @@ class ToolUpdateParams(TypedDict, total=False):
     api_call: Optional[APICall]
     """API call definition"""
 
+    bash_20241022: Optional[Bash20241022]
+
+    computer_20241022: Optional[Computer20241022]
+    """Anthropic new tools"""
+
     description: Optional[str]
 
     function: Optional[Function]
@@ -47,6 +55,8 @@ class ToolUpdateParams(TypedDict, total=False):
 
     system: Optional[System]
     """System definition"""
+
+    text_editor_20241022: Optional[TextEditor20241022]
 
 
 class APICall(TypedDict, total=False):
@@ -69,6 +79,24 @@ class APICall(TypedDict, total=False):
     params: Union[str, object, None]
 
     timeout: Optional[int]
+
+
+class Bash20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class Computer20241022(TypedDict, total=False):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
 
 
 class Function(TypedDict, total=False):
@@ -244,3 +272,9 @@ class System(TypedDict, total=False):
     resource_id: Optional[str]
 
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
+
+
+class TextEditor20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["text_editor_20241022"]

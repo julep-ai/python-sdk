@@ -57,10 +57,13 @@ class ToolsResource(SyncAPIResource):
         *,
         name: str,
         api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[tool_create_params.Bash20241022] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[tool_create_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[tool_create_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -73,6 +76,8 @@ class ToolsResource(SyncAPIResource):
 
         Args:
           api_call: API call definition
+
+          computer_20241022: Anthropic new tools
 
           function: Function definition
 
@@ -96,10 +101,13 @@ class ToolsResource(SyncAPIResource):
                 {
                     "name": name,
                     "api_call": api_call,
+                    "bash_20241022": bash_20241022,
+                    "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
                     "system": system,
+                    "text_editor_20241022": text_editor_20241022,
                 },
                 tool_create_params.ToolCreateParams,
             ),
@@ -116,10 +124,13 @@ class ToolsResource(SyncAPIResource):
         agent_id: str,
         name: str,
         api_call: Optional[tool_update_params.APICall] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[tool_update_params.Bash20241022] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[tool_update_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[tool_update_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -132,6 +143,8 @@ class ToolsResource(SyncAPIResource):
 
         Args:
           api_call: API call definition
+
+          computer_20241022: Anthropic new tools
 
           function: Function definition
 
@@ -157,10 +170,13 @@ class ToolsResource(SyncAPIResource):
                 {
                     "name": name,
                     "api_call": api_call,
+                    "bash_20241022": bash_20241022,
+                    "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
                     "system": system,
+                    "text_editor_20241022": text_editor_20241022,
                 },
                 tool_update_params.ToolUpdateParams,
             ),
@@ -262,11 +278,14 @@ class ToolsResource(SyncAPIResource):
         *,
         agent_id: str,
         api_call: Optional[tool_patch_params.APICall] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[tool_patch_params.Bash20241022] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[tool_patch_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_patch_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[tool_patch_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -279,6 +298,8 @@ class ToolsResource(SyncAPIResource):
 
         Args:
           api_call: API call definition
+
+          computer_20241022: Anthropic new tools
 
           function: Function definition
 
@@ -303,11 +324,14 @@ class ToolsResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "api_call": api_call,
+                    "bash_20241022": bash_20241022,
+                    "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
                     "name": name,
                     "system": system,
+                    "text_editor_20241022": text_editor_20241022,
                 },
                 tool_patch_params.ToolPatchParams,
             ),
@@ -344,10 +368,13 @@ class AsyncToolsResource(AsyncAPIResource):
         *,
         name: str,
         api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[tool_create_params.Bash20241022] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[tool_create_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[tool_create_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -360,6 +387,8 @@ class AsyncToolsResource(AsyncAPIResource):
 
         Args:
           api_call: API call definition
+
+          computer_20241022: Anthropic new tools
 
           function: Function definition
 
@@ -383,10 +412,13 @@ class AsyncToolsResource(AsyncAPIResource):
                 {
                     "name": name,
                     "api_call": api_call,
+                    "bash_20241022": bash_20241022,
+                    "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
                     "system": system,
+                    "text_editor_20241022": text_editor_20241022,
                 },
                 tool_create_params.ToolCreateParams,
             ),
@@ -403,10 +435,13 @@ class AsyncToolsResource(AsyncAPIResource):
         agent_id: str,
         name: str,
         api_call: Optional[tool_update_params.APICall] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[tool_update_params.Bash20241022] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[tool_update_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[tool_update_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -419,6 +454,8 @@ class AsyncToolsResource(AsyncAPIResource):
 
         Args:
           api_call: API call definition
+
+          computer_20241022: Anthropic new tools
 
           function: Function definition
 
@@ -444,10 +481,13 @@ class AsyncToolsResource(AsyncAPIResource):
                 {
                     "name": name,
                     "api_call": api_call,
+                    "bash_20241022": bash_20241022,
+                    "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
                     "system": system,
+                    "text_editor_20241022": text_editor_20241022,
                 },
                 tool_update_params.ToolUpdateParams,
             ),
@@ -549,11 +589,14 @@ class AsyncToolsResource(AsyncAPIResource):
         *,
         agent_id: str,
         api_call: Optional[tool_patch_params.APICall] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[tool_patch_params.Bash20241022] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[tool_patch_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_patch_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[tool_patch_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -566,6 +609,8 @@ class AsyncToolsResource(AsyncAPIResource):
 
         Args:
           api_call: API call definition
+
+          computer_20241022: Anthropic new tools
 
           function: Function definition
 
@@ -590,11 +635,14 @@ class AsyncToolsResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "api_call": api_call,
+                    "bash_20241022": bash_20241022,
+                    "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
                     "name": name,
                     "system": system,
+                    "text_editor_20241022": text_editor_20241022,
                 },
                 tool_patch_params.ToolPatchParams,
             ),

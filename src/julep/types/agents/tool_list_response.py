@@ -11,6 +11,8 @@ from ..._models import BaseModel
 __all__ = [
     "ToolListResponse",
     "APICall",
+    "Bash20241022",
+    "Computer20241022",
     "Function",
     "Integration",
     "IntegrationDummyIntegrationDef",
@@ -29,6 +31,7 @@ __all__ = [
     "IntegrationWeatherIntegrationDefArguments",
     "IntegrationWeatherIntegrationDefSetup",
     "System",
+    "TextEditor20241022",
 ]
 
 
@@ -52,6 +55,24 @@ class APICall(BaseModel):
     params: Union[str, object, None] = None
 
     timeout: Optional[int] = None
+
+
+class Bash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class Computer20241022(BaseModel):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
 
 
 class Function(BaseModel):
@@ -221,6 +242,12 @@ class System(BaseModel):
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class TextEditor20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class ToolListResponse(BaseModel):
     id: str
 
@@ -233,6 +260,11 @@ class ToolListResponse(BaseModel):
     api_call: Optional[APICall] = None
     """API call definition"""
 
+    bash_20241022: Optional[Bash20241022] = None
+
+    computer_20241022: Optional[Computer20241022] = None
+    """Anthropic new tools"""
+
     description: Optional[str] = None
 
     function: Optional[Function] = None
@@ -243,3 +275,5 @@ class ToolListResponse(BaseModel):
 
     system: Optional[System] = None
     """System definition"""
+
+    text_editor_20241022: Optional[TextEditor20241022] = None

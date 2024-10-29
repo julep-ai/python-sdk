@@ -17,6 +17,8 @@ __all__ = [
     "ContentUnionMember0ContentModelImageURL",
     "ContentToolOutput",
     "ContentToolOutputAPICall",
+    "ContentToolOutputBash20241022",
+    "ContentToolOutputComputer20241022",
     "ContentToolOutputFunction",
     "ContentToolOutputIntegration",
     "ContentToolOutputIntegrationDummyIntegrationDef",
@@ -35,37 +37,53 @@ __all__ = [
     "ContentToolOutputIntegrationWeatherIntegrationDefArguments",
     "ContentToolOutputIntegrationWeatherIntegrationDefSetup",
     "ContentToolOutputSystem",
-    "ContentChosenToolCall",
-    "ContentChosenToolCallFunction",
+    "ContentToolOutputTextEditor20241022",
+    "ContentChosenFunctionCall",
+    "ContentChosenFunctionCallFunction",
+    "ContentChosenFunctionCallBash20241022",
+    "ContentChosenFunctionCallComputer20241022",
+    "ContentChosenFunctionCallTextEditor20241022",
+    "ContentChosenComputer20241022",
+    "ContentChosenTextEditor20241022",
+    "ContentChosenBash20241022",
     "ContentToolResponse",
-    "ContentUnionMember5",
-    "ContentUnionMember5UnionMember0",
-    "ContentUnionMember5UnionMember0Content",
-    "ContentUnionMember5UnionMember0ContentModel",
-    "ContentUnionMember5UnionMember0ContentModelImageURL",
-    "ContentUnionMember5ToolOutput",
-    "ContentUnionMember5ToolOutputAPICall",
-    "ContentUnionMember5ToolOutputFunction",
-    "ContentUnionMember5ToolOutputIntegration",
-    "ContentUnionMember5ToolOutputIntegrationDummyIntegrationDef",
-    "ContentUnionMember5ToolOutputIntegrationBraveIntegrationDef",
-    "ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefArguments",
-    "ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefSetup",
-    "ContentUnionMember5ToolOutputIntegrationEmailIntegrationDef",
-    "ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefArguments",
-    "ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefSetup",
-    "ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDef",
-    "ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefArguments",
-    "ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefSetup",
-    "ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDef",
-    "ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDefArguments",
-    "ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDef",
-    "ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefArguments",
-    "ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefSetup",
-    "ContentUnionMember5ToolOutputSystem",
-    "ContentUnionMember5ChosenToolCall",
-    "ContentUnionMember5ChosenToolCallFunction",
-    "ContentUnionMember5ToolResponse",
+    "ContentUnionMember8",
+    "ContentUnionMember8UnionMember0",
+    "ContentUnionMember8UnionMember0Content",
+    "ContentUnionMember8UnionMember0ContentModel",
+    "ContentUnionMember8UnionMember0ContentModelImageURL",
+    "ContentUnionMember8ToolOutput",
+    "ContentUnionMember8ToolOutputAPICall",
+    "ContentUnionMember8ToolOutputBash20241022",
+    "ContentUnionMember8ToolOutputComputer20241022",
+    "ContentUnionMember8ToolOutputFunction",
+    "ContentUnionMember8ToolOutputIntegration",
+    "ContentUnionMember8ToolOutputIntegrationDummyIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationBraveIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationBraveIntegrationDefArguments",
+    "ContentUnionMember8ToolOutputIntegrationBraveIntegrationDefSetup",
+    "ContentUnionMember8ToolOutputIntegrationEmailIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationEmailIntegrationDefArguments",
+    "ContentUnionMember8ToolOutputIntegrationEmailIntegrationDefSetup",
+    "ContentUnionMember8ToolOutputIntegrationSpiderIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationSpiderIntegrationDefArguments",
+    "ContentUnionMember8ToolOutputIntegrationSpiderIntegrationDefSetup",
+    "ContentUnionMember8ToolOutputIntegrationWikipediaIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationWikipediaIntegrationDefArguments",
+    "ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDefArguments",
+    "ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDefSetup",
+    "ContentUnionMember8ToolOutputSystem",
+    "ContentUnionMember8ToolOutputTextEditor20241022",
+    "ContentUnionMember8ChosenFunctionCall",
+    "ContentUnionMember8ChosenFunctionCallFunction",
+    "ContentUnionMember8ChosenFunctionCallBash20241022",
+    "ContentUnionMember8ChosenFunctionCallComputer20241022",
+    "ContentUnionMember8ChosenFunctionCallTextEditor20241022",
+    "ContentUnionMember8ChosenComputer20241022",
+    "ContentUnionMember8ChosenTextEditor20241022",
+    "ContentUnionMember8ChosenBash20241022",
+    "ContentUnionMember8ToolResponse",
 ]
 
 
@@ -111,6 +129,24 @@ class ContentToolOutputAPICall(BaseModel):
     params: Union[str, object, None] = None
 
     timeout: Optional[int] = None
+
+
+class ContentToolOutputBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class ContentToolOutputComputer20241022(BaseModel):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
 
 
 class ContentToolOutputFunction(BaseModel):
@@ -280,6 +316,12 @@ class ContentToolOutputSystem(BaseModel):
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class ContentToolOutputTextEditor20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class ContentToolOutput(BaseModel):
     id: str
 
@@ -292,6 +334,11 @@ class ContentToolOutput(BaseModel):
     api_call: Optional[ContentToolOutputAPICall] = None
     """API call definition"""
 
+    bash_20241022: Optional[ContentToolOutputBash20241022] = None
+
+    computer_20241022: Optional[ContentToolOutputComputer20241022] = None
+    """Anthropic new tools"""
+
     description: Optional[str] = None
 
     function: Optional[ContentToolOutputFunction] = None
@@ -303,17 +350,111 @@ class ContentToolOutput(BaseModel):
     system: Optional[ContentToolOutputSystem] = None
     """System definition"""
 
+    text_editor_20241022: Optional[ContentToolOutputTextEditor20241022] = None
 
-class ContentChosenToolCallFunction(BaseModel):
+
+class ContentChosenFunctionCallFunction(BaseModel):
     name: str
 
 
-class ContentChosenToolCall(BaseModel):
-    id: str
+class ContentChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
 
-    type: Literal["function", "integration", "system", "api_call"]
+    restart: Optional[bool] = None
 
-    function: Optional[ContentChosenToolCallFunction] = None
+
+class ContentChosenFunctionCallComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ContentChosenFunctionCallTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ContentChosenFunctionCall(BaseModel):
+    function: ContentChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[ContentChosenFunctionCallBash20241022] = None
+
+    computer_20241022: Optional[ContentChosenFunctionCallComputer20241022] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[ContentChosenFunctionCallTextEditor20241022] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class ContentChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ContentChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ContentChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
 
 
 class ContentToolResponse(BaseModel):
@@ -322,31 +463,31 @@ class ContentToolResponse(BaseModel):
     output: object
 
 
-class ContentUnionMember5UnionMember0Content(BaseModel):
+class ContentUnionMember8UnionMember0Content(BaseModel):
     text: str
 
     type: Optional[Literal["text"]] = None
 
 
-class ContentUnionMember5UnionMember0ContentModelImageURL(BaseModel):
+class ContentUnionMember8UnionMember0ContentModelImageURL(BaseModel):
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
 
 
-class ContentUnionMember5UnionMember0ContentModel(BaseModel):
-    image_url: ContentUnionMember5UnionMember0ContentModelImageURL
+class ContentUnionMember8UnionMember0ContentModel(BaseModel):
+    image_url: ContentUnionMember8UnionMember0ContentModelImageURL
     """The image URL"""
 
     type: Optional[Literal["image_url"]] = None
 
 
-ContentUnionMember5UnionMember0: TypeAlias = Union[
-    ContentUnionMember5UnionMember0Content, ContentUnionMember5UnionMember0ContentModel
+ContentUnionMember8UnionMember0: TypeAlias = Union[
+    ContentUnionMember8UnionMember0Content, ContentUnionMember8UnionMember0ContentModel
 ]
 
 
-class ContentUnionMember5ToolOutputAPICall(BaseModel):
+class ContentUnionMember8ToolOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -368,7 +509,25 @@ class ContentUnionMember5ToolOutputAPICall(BaseModel):
     timeout: Optional[int] = None
 
 
-class ContentUnionMember5ToolOutputFunction(BaseModel):
+class ContentUnionMember8ToolOutputBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class ContentUnionMember8ToolOutputComputer20241022(BaseModel):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
+
+
+class ContentUnionMember8ToolOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -376,7 +535,7 @@ class ContentUnionMember5ToolOutputFunction(BaseModel):
     parameters: Optional[object] = None
 
 
-class ContentUnionMember5ToolOutputIntegrationDummyIntegrationDef(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationDummyIntegrationDef(BaseModel):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
@@ -386,27 +545,27 @@ class ContentUnionMember5ToolOutputIntegrationDummyIntegrationDef(BaseModel):
     setup: Optional[object] = None
 
 
-class ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefArguments(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationBraveIntegrationDefArguments(BaseModel):
     query: str
 
 
-class ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefSetup(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationBraveIntegrationDefSetup(BaseModel):
     api_key: str
 
 
-class ContentUnionMember5ToolOutputIntegrationBraveIntegrationDef(BaseModel):
-    arguments: Optional[ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefArguments] = None
+class ContentUnionMember8ToolOutputIntegrationBraveIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationBraveIntegrationDefArguments] = None
     """Arguments for Brave Search"""
 
     method: Optional[str] = None
 
     provider: Optional[Literal["brave"]] = None
 
-    setup: Optional[ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefSetup] = None
+    setup: Optional[ContentUnionMember8ToolOutputIntegrationBraveIntegrationDefSetup] = None
     """Integration definition for Brave Search"""
 
 
-class ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefArguments(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationEmailIntegrationDefArguments(BaseModel):
     body: str
 
     from_: str = FieldInfo(alias="from")
@@ -416,7 +575,7 @@ class ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefArguments(BaseM
     to: str
 
 
-class ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefSetup(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationEmailIntegrationDefSetup(BaseModel):
     host: str
 
     password: str
@@ -426,19 +585,19 @@ class ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefSetup(BaseModel
     user: str
 
 
-class ContentUnionMember5ToolOutputIntegrationEmailIntegrationDef(BaseModel):
-    arguments: Optional[ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefArguments] = None
+class ContentUnionMember8ToolOutputIntegrationEmailIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationEmailIntegrationDefArguments] = None
     """Arguments for Email sending"""
 
     method: Optional[str] = None
 
     provider: Optional[Literal["email"]] = None
 
-    setup: Optional[ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefSetup] = None
+    setup: Optional[ContentUnionMember8ToolOutputIntegrationEmailIntegrationDefSetup] = None
     """Setup parameters for Email integration"""
 
 
-class ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefArguments(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationSpiderIntegrationDefArguments(BaseModel):
     url: str
 
     mode: Optional[Literal["scrape"]] = None
@@ -446,30 +605,30 @@ class ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefArguments(Base
     params: Optional[object] = None
 
 
-class ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefSetup(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationSpiderIntegrationDefSetup(BaseModel):
     spider_api_key: str
 
 
-class ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDef(BaseModel):
-    arguments: Optional[ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefArguments] = None
+class ContentUnionMember8ToolOutputIntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationSpiderIntegrationDefArguments] = None
     """Arguments for Spider integration"""
 
     method: Optional[str] = None
 
     provider: Optional[Literal["spider"]] = None
 
-    setup: Optional[ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefSetup] = None
+    setup: Optional[ContentUnionMember8ToolOutputIntegrationSpiderIntegrationDefSetup] = None
     """Setup parameters for Spider integration"""
 
 
-class ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDefArguments(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationWikipediaIntegrationDefArguments(BaseModel):
     query: str
 
     load_max_docs: Optional[int] = None
 
 
-class ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDef(BaseModel):
-    arguments: Optional[ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDefArguments] = None
+class ContentUnionMember8ToolOutputIntegrationWikipediaIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationWikipediaIntegrationDefArguments] = None
     """Arguments for Wikipedia Search"""
 
     method: Optional[str] = None
@@ -479,38 +638,38 @@ class ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDef(BaseModel)
     setup: Optional[object] = None
 
 
-class ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefArguments(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDefArguments(BaseModel):
     location: str
 
 
-class ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefSetup(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDefSetup(BaseModel):
     openweathermap_api_key: str
 
 
-class ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDef(BaseModel):
-    arguments: Optional[ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefArguments] = None
+class ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDefArguments] = None
     """Arguments for Weather"""
 
     method: Optional[str] = None
 
     provider: Optional[Literal["weather"]] = None
 
-    setup: Optional[ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefSetup] = None
+    setup: Optional[ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDefSetup] = None
     """Integration definition for Weather"""
 
 
-ContentUnionMember5ToolOutputIntegration: TypeAlias = Union[
-    ContentUnionMember5ToolOutputIntegrationDummyIntegrationDef,
-    ContentUnionMember5ToolOutputIntegrationBraveIntegrationDef,
-    ContentUnionMember5ToolOutputIntegrationEmailIntegrationDef,
-    ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDef,
-    ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDef,
-    ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDef,
+ContentUnionMember8ToolOutputIntegration: TypeAlias = Union[
+    ContentUnionMember8ToolOutputIntegrationDummyIntegrationDef,
+    ContentUnionMember8ToolOutputIntegrationBraveIntegrationDef,
+    ContentUnionMember8ToolOutputIntegrationEmailIntegrationDef,
+    ContentUnionMember8ToolOutputIntegrationSpiderIntegrationDef,
+    ContentUnionMember8ToolOutputIntegrationWikipediaIntegrationDef,
+    ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDef,
     None,
 ]
 
 
-class ContentUnionMember5ToolOutputSystem(BaseModel):
+class ContentUnionMember8ToolOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -535,7 +694,13 @@ class ContentUnionMember5ToolOutputSystem(BaseModel):
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class ContentUnionMember5ToolOutput(BaseModel):
+class ContentUnionMember8ToolOutputTextEditor20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
+class ContentUnionMember8ToolOutput(BaseModel):
     id: str
 
     created_at: datetime
@@ -544,54 +709,159 @@ class ContentUnionMember5ToolOutput(BaseModel):
 
     updated_at: datetime
 
-    api_call: Optional[ContentUnionMember5ToolOutputAPICall] = None
+    api_call: Optional[ContentUnionMember8ToolOutputAPICall] = None
     """API call definition"""
+
+    bash_20241022: Optional[ContentUnionMember8ToolOutputBash20241022] = None
+
+    computer_20241022: Optional[ContentUnionMember8ToolOutputComputer20241022] = None
+    """Anthropic new tools"""
 
     description: Optional[str] = None
 
-    function: Optional[ContentUnionMember5ToolOutputFunction] = None
+    function: Optional[ContentUnionMember8ToolOutputFunction] = None
     """Function definition"""
 
-    integration: Optional[ContentUnionMember5ToolOutputIntegration] = None
+    integration: Optional[ContentUnionMember8ToolOutputIntegration] = None
     """Brave integration definition"""
 
-    system: Optional[ContentUnionMember5ToolOutputSystem] = None
+    system: Optional[ContentUnionMember8ToolOutputSystem] = None
     """System definition"""
 
+    text_editor_20241022: Optional[ContentUnionMember8ToolOutputTextEditor20241022] = None
 
-class ContentUnionMember5ChosenToolCallFunction(BaseModel):
+
+class ContentUnionMember8ChosenFunctionCallFunction(BaseModel):
     name: str
 
 
-class ContentUnionMember5ChosenToolCall(BaseModel):
-    id: str
+class ContentUnionMember8ChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
 
-    type: Literal["function", "integration", "system", "api_call"]
-
-    function: Optional[ContentUnionMember5ChosenToolCallFunction] = None
+    restart: Optional[bool] = None
 
 
-class ContentUnionMember5ToolResponse(BaseModel):
+class ContentUnionMember8ChosenFunctionCallComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ContentUnionMember8ChosenFunctionCallTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ContentUnionMember8ChosenFunctionCall(BaseModel):
+    function: ContentUnionMember8ChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[ContentUnionMember8ChosenFunctionCallBash20241022] = None
+
+    computer_20241022: Optional[ContentUnionMember8ChosenFunctionCallComputer20241022] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[ContentUnionMember8ChosenFunctionCallTextEditor20241022] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class ContentUnionMember8ChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ContentUnionMember8ChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ContentUnionMember8ChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class ContentUnionMember8ToolResponse(BaseModel):
     id: str
 
     output: object
 
 
-ContentUnionMember5: TypeAlias = Union[
-    List[ContentUnionMember5UnionMember0],
-    ContentUnionMember5ToolOutput,
-    ContentUnionMember5ChosenToolCall,
+ContentUnionMember8: TypeAlias = Union[
+    List[ContentUnionMember8UnionMember0],
+    ContentUnionMember8ToolOutput,
+    ContentUnionMember8ChosenFunctionCall,
+    ContentUnionMember8ChosenComputer20241022,
+    ContentUnionMember8ChosenTextEditor20241022,
+    ContentUnionMember8ChosenBash20241022,
     str,
-    ContentUnionMember5ToolResponse,
+    ContentUnionMember8ToolResponse,
 ]
 
 Content: TypeAlias = Union[
     List[ContentUnionMember0],
     ContentToolOutput,
-    ContentChosenToolCall,
+    ContentChosenFunctionCall,
+    ContentChosenComputer20241022,
+    ContentChosenTextEditor20241022,
+    ContentChosenBash20241022,
     str,
     ContentToolResponse,
-    List[ContentUnionMember5],
+    List[ContentUnionMember8],
 ]
 
 
@@ -599,7 +869,6 @@ class Entry(BaseModel):
     id: str
 
     content: Content
-    """The response tool value generated by the model"""
 
     created_at: datetime
 
