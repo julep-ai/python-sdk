@@ -28,6 +28,8 @@ __all__ = [
     "MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInput",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputFunction",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef",
@@ -46,6 +48,7 @@ __all__ = [
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainGetStep",
     "MainSetStep",
     "MainLogStep",
@@ -76,6 +79,8 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInput",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputFunction",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef",
@@ -94,6 +99,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenGetStep",
     "MainIfElseWorkflowStepInputThenSetStep",
     "MainIfElseWorkflowStepInputThenLogStep",
@@ -123,6 +129,8 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInput",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputFunction",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegration",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef",
@@ -141,6 +149,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseGetStep",
     "MainIfElseWorkflowStepInputElseSetStep",
     "MainIfElseWorkflowStepInputElseLogStep",
@@ -172,6 +181,8 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInput",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputFunction",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef",
@@ -190,6 +201,7 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainSwitchStepInputSwitchThenGetStep",
     "MainSwitchStepInputSwitchThenSetStep",
     "MainSwitchStepInputSwitchThenLogStep",
@@ -223,6 +235,8 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInput",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputFunction",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef",
@@ -241,6 +255,7 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainForeachStepInputForeachDoGetStep",
     "MainForeachStepInputForeachDoSetStep",
     "MainForeachStepInputForeachDoLogStep",
@@ -265,6 +280,8 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInput",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputFunction",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef",
@@ -283,6 +300,7 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainParallelStepInputParallelGetStep",
     "MainParallelStepInputParallelSetStep",
     "MainParallelStepInputParallelLogStep",
@@ -307,6 +325,8 @@ __all__ = [
     "MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInput",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputFunction",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef",
@@ -325,12 +345,15 @@ __all__ = [
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainMainInputMapGetStep",
     "MainMainInputMapSetStep",
     "MainMainInputMapLogStep",
     "MainMainInputMapYieldStep",
     "Tool",
     "ToolAPICall",
+    "ToolBash20241022",
+    "ToolComputer20241022",
     "ToolFunction",
     "ToolIntegration",
     "ToolIntegrationDummyIntegrationDef",
@@ -349,6 +372,7 @@ __all__ = [
     "ToolIntegrationWeatherIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDefSetup",
     "ToolSystem",
+    "ToolTextEditor20241022",
 ]
 
 
@@ -471,6 +495,24 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall(TypedDic
     params: Union[str, object, None]
 
     timeout: Optional[int]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022(TypedDict, total=False):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(TypedDict, total=False):
@@ -681,11 +723,22 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputSystem(TypedDict
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["text_editor_20241022"]
+
+
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
     api_call: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
+
+    bash_20241022: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022]
+
+    computer_20241022: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022]
+    """Anthropic new tools"""
 
     description: Optional[str]
 
@@ -697,6 +750,8 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, tota
 
     system: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestInputSystem]
     """System definition"""
+
+    text_editor_20241022: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022]
 
 
 MainPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -896,6 +951,28 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
     params: Union[str, object, None]
 
     timeout: Optional[int]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022(
+    TypedDict, total=False
+):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
@@ -1126,11 +1203,28 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["text_editor_20241022"]
+
+
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
     api_call: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022
+    ]
+
+    computer_20241022: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022
+    ]
+    """Anthropic new tools"""
 
     description: Optional[str]
 
@@ -1144,6 +1238,10 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
     system: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputSystem]
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022
+    ]
 
 
 MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -1361,6 +1459,28 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
     params: Union[str, object, None]
 
     timeout: Optional[int]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022(
+    TypedDict, total=False
+):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
@@ -1591,11 +1711,28 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["text_editor_20241022"]
+
+
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
     api_call: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022
+    ]
+
+    computer_20241022: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022
+    ]
+    """Anthropic new tools"""
 
     description: Optional[str]
 
@@ -1609,6 +1746,10 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
     system: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputSystem]
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022
+    ]
 
 
 MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -1837,6 +1978,28 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
     timeout: Optional[int]
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022(
+    TypedDict, total=False
+):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
+
+
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
     TypedDict, total=False
 ):
@@ -2063,11 +2226,28 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["text_editor_20241022"]
+
+
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
     api_call: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022
+    ]
+
+    computer_20241022: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022
+    ]
+    """Anthropic new tools"""
 
     description: Optional[str]
 
@@ -2081,6 +2261,10 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
     system: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputSystem]
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022
+    ]
 
 
 MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -2312,6 +2496,28 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
     timeout: Optional[int]
 
 
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022(
+    TypedDict, total=False
+):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
+
+
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
     TypedDict, total=False
 ):
@@ -2538,11 +2744,28 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["text_editor_20241022"]
+
+
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
     api_call: Optional[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022
+    ]
+
+    computer_20241022: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022
+    ]
+    """Anthropic new tools"""
 
     description: Optional[str]
 
@@ -2556,6 +2779,10 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
     system: Optional[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputSystem]
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022
+    ]
 
 
 MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -2741,6 +2968,28 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
     params: Union[str, object, None]
 
     timeout: Optional[int]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022(
+    TypedDict, total=False
+):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
@@ -2969,11 +3218,28 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022(
+    TypedDict, total=False
+):
+    name: str
+
+    type: Literal["text_editor_20241022"]
+
+
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
     api_call: Optional[MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022
+    ]
+
+    computer_20241022: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022
+    ]
+    """Anthropic new tools"""
 
     description: Optional[str]
 
@@ -2987,6 +3253,10 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
     system: Optional[MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputSystem]
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022
+    ]
 
 
 MainParallelStepInputParallelPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -3149,6 +3419,24 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputAPIC
     params: Union[str, object, None]
 
     timeout: Optional[int]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022(TypedDict, total=False):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(TypedDict, total=False):
@@ -3375,11 +3663,22 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputSyst
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["text_editor_20241022"]
+
+
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
     api_call: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
+
+    bash_20241022: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputBash20241022]
+
+    computer_20241022: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022]
+    """Anthropic new tools"""
 
     description: Optional[str]
 
@@ -3391,6 +3690,10 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInput(Typ
 
     system: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputSystem]
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022
+    ]
 
 
 MainMainInputMapPromptStepInputToolsUnionMember1: TypeAlias = Union[
@@ -3494,6 +3797,24 @@ class ToolAPICall(TypedDict, total=False):
     params: Union[str, object, None]
 
     timeout: Optional[int]
+
+
+class ToolBash20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["bash_20241022"]
+
+
+class ToolComputer20241022(TypedDict, total=False):
+    display_height_px: int
+
+    display_number: int
+
+    display_width_px: int
+
+    name: str
+
+    type: Literal["computer_20241022"]
 
 
 class ToolFunction(TypedDict, total=False):
@@ -3673,11 +3994,22 @@ class ToolSystem(TypedDict, total=False):
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]]
 
 
+class ToolTextEditor20241022(TypedDict, total=False):
+    name: str
+
+    type: Literal["text_editor_20241022"]
+
+
 class Tool(TypedDict, total=False):
     name: Required[str]
 
     api_call: Optional[ToolAPICall]
     """API call definition"""
+
+    bash_20241022: Optional[ToolBash20241022]
+
+    computer_20241022: Optional[ToolComputer20241022]
+    """Anthropic new tools"""
 
     description: Optional[str]
 
@@ -3689,3 +4021,5 @@ class Tool(TypedDict, total=False):
 
     system: Optional[ToolSystem]
     """System definition"""
+
+    text_editor_20241022: Optional[ToolTextEditor20241022]

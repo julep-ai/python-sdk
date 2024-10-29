@@ -17,7 +17,14 @@ __all__ = [
     "ChoiceSingleChatOutputMessageContentUnionMember2ContentModel",
     "ChoiceSingleChatOutputMessageContentUnionMember2ContentModelImageURL",
     "ChoiceSingleChatOutputMessageToolCall",
-    "ChoiceSingleChatOutputMessageToolCallFunction",
+    "ChoiceSingleChatOutputMessageToolCallChosenFunctionCall",
+    "ChoiceSingleChatOutputMessageToolCallChosenFunctionCallFunction",
+    "ChoiceSingleChatOutputMessageToolCallChosenFunctionCallBash20241022",
+    "ChoiceSingleChatOutputMessageToolCallChosenFunctionCallComputer20241022",
+    "ChoiceSingleChatOutputMessageToolCallChosenFunctionCallTextEditor20241022",
+    "ChoiceSingleChatOutputMessageToolCallChosenComputer20241022",
+    "ChoiceSingleChatOutputMessageToolCallChosenTextEditor20241022",
+    "ChoiceSingleChatOutputMessageToolCallChosenBash20241022",
     "ChoiceSingleChatOutputLogprobs",
     "ChoiceSingleChatOutputLogprobsContent",
     "ChoiceSingleChatOutputLogprobsContentTopLogprob",
@@ -28,7 +35,14 @@ __all__ = [
     "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel",
     "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModelImageURL",
     "ChoiceMultipleChatOutputMessageToolCall",
-    "ChoiceMultipleChatOutputMessageToolCallFunction",
+    "ChoiceMultipleChatOutputMessageToolCallChosenFunctionCall",
+    "ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallFunction",
+    "ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallBash20241022",
+    "ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallComputer20241022",
+    "ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallTextEditor20241022",
+    "ChoiceMultipleChatOutputMessageToolCallChosenComputer20241022",
+    "ChoiceMultipleChatOutputMessageToolCallChosenTextEditor20241022",
+    "ChoiceMultipleChatOutputMessageToolCallChosenBash20241022",
     "ChoiceMultipleChatOutputLogprobs",
     "ChoiceMultipleChatOutputLogprobsContent",
     "ChoiceMultipleChatOutputLogprobsContentTopLogprob",
@@ -63,16 +77,116 @@ ChoiceSingleChatOutputMessageContentUnionMember2: TypeAlias = Union[
 ]
 
 
-class ChoiceSingleChatOutputMessageToolCallFunction(BaseModel):
+class ChoiceSingleChatOutputMessageToolCallChosenFunctionCallFunction(BaseModel):
     name: str
 
 
-class ChoiceSingleChatOutputMessageToolCall(BaseModel):
-    id: str
+class ChoiceSingleChatOutputMessageToolCallChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
 
-    type: Literal["function", "integration", "system", "api_call"]
+    restart: Optional[bool] = None
 
-    function: Optional[ChoiceSingleChatOutputMessageToolCallFunction] = None
+
+class ChoiceSingleChatOutputMessageToolCallChosenFunctionCallComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ChoiceSingleChatOutputMessageToolCallChosenFunctionCallTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ChoiceSingleChatOutputMessageToolCallChosenFunctionCall(BaseModel):
+    function: ChoiceSingleChatOutputMessageToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[ChoiceSingleChatOutputMessageToolCallChosenFunctionCallBash20241022] = None
+
+    computer_20241022: Optional[ChoiceSingleChatOutputMessageToolCallChosenFunctionCallComputer20241022] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[ChoiceSingleChatOutputMessageToolCallChosenFunctionCallTextEditor20241022] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class ChoiceSingleChatOutputMessageToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ChoiceSingleChatOutputMessageToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ChoiceSingleChatOutputMessageToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+ChoiceSingleChatOutputMessageToolCall: TypeAlias = Union[
+    ChoiceSingleChatOutputMessageToolCallChosenFunctionCall,
+    ChoiceSingleChatOutputMessageToolCallChosenComputer20241022,
+    ChoiceSingleChatOutputMessageToolCallChosenTextEditor20241022,
+    ChoiceSingleChatOutputMessageToolCallChosenBash20241022,
+]
 
 
 class ChoiceSingleChatOutputMessage(BaseModel):
@@ -146,16 +260,116 @@ ChoiceMultipleChatOutputMessageContentUnionMember2: TypeAlias = Union[
 ]
 
 
-class ChoiceMultipleChatOutputMessageToolCallFunction(BaseModel):
+class ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallFunction(BaseModel):
     name: str
 
 
-class ChoiceMultipleChatOutputMessageToolCall(BaseModel):
-    id: str
+class ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
 
-    type: Literal["function", "integration", "system", "api_call"]
+    restart: Optional[bool] = None
 
-    function: Optional[ChoiceMultipleChatOutputMessageToolCallFunction] = None
+
+class ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ChoiceMultipleChatOutputMessageToolCallChosenFunctionCall(BaseModel):
+    function: ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallBash20241022] = None
+
+    computer_20241022: Optional[ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallComputer20241022] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallTextEditor20241022] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class ChoiceMultipleChatOutputMessageToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ChoiceMultipleChatOutputMessageToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ChoiceMultipleChatOutputMessageToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+ChoiceMultipleChatOutputMessageToolCall: TypeAlias = Union[
+    ChoiceMultipleChatOutputMessageToolCallChosenFunctionCall,
+    ChoiceMultipleChatOutputMessageToolCallChosenComputer20241022,
+    ChoiceMultipleChatOutputMessageToolCallChosenTextEditor20241022,
+    ChoiceMultipleChatOutputMessageToolCallChosenBash20241022,
+]
 
 
 class ChoiceMultipleChatOutputMessage(BaseModel):

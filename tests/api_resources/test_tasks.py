@@ -53,6 +53,17 @@ class TestTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -71,6 +82,10 @@ class TestTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
                 {
@@ -87,6 +102,17 @@ class TestTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -105,6 +131,10 @@ class TestTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
                 {
@@ -121,6 +151,17 @@ class TestTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -139,6 +180,10 @@ class TestTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
             ],
@@ -267,6 +312,17 @@ class TestTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -285,6 +341,10 @@ class TestTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
                 {
@@ -301,6 +361,17 @@ class TestTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -319,6 +390,10 @@ class TestTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
                 {
@@ -335,6 +410,17 @@ class TestTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -353,6 +439,10 @@ class TestTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
             ],
@@ -483,6 +573,17 @@ class TestAsyncTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -501,6 +602,10 @@ class TestAsyncTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
                 {
@@ -517,6 +622,17 @@ class TestAsyncTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -535,6 +651,10 @@ class TestAsyncTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
                 {
@@ -551,6 +671,17 @@ class TestAsyncTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -569,6 +700,10 @@ class TestAsyncTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
             ],
@@ -697,6 +832,17 @@ class TestAsyncTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -715,6 +861,10 @@ class TestAsyncTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
                 {
@@ -731,6 +881,17 @@ class TestAsyncTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -749,6 +910,10 @@ class TestAsyncTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
                 {
@@ -765,6 +930,17 @@ class TestAsyncTasks:
                         "params": "string",
                         "timeout": 0,
                     },
+                    "bash_20241022": {
+                        "name": "name",
+                        "type": "bash_20241022",
+                    },
+                    "computer_20241022": {
+                        "display_height_px": 400,
+                        "display_number": 1,
+                        "display_width_px": 600,
+                        "name": "name",
+                        "type": "computer_20241022",
+                    },
                     "description": "description",
                     "function": {
                         "description": {},
@@ -783,6 +959,10 @@ class TestAsyncTasks:
                         "arguments": {},
                         "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                         "subresource": "tool",
+                    },
+                    "text_editor_20241022": {
+                        "name": "name",
+                        "type": "text_editor_20241022",
                     },
                 },
             ],

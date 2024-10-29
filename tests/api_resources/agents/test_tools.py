@@ -46,6 +46,17 @@ class TestTools:
                 "params": "string",
                 "timeout": 0,
             },
+            bash_20241022={
+                "name": "name",
+                "type": "bash_20241022",
+            },
+            computer_20241022={
+                "display_height_px": 400,
+                "display_number": 1,
+                "display_width_px": 600,
+                "name": "name",
+                "type": "computer_20241022",
+            },
             description="description",
             function={
                 "description": {},
@@ -64,6 +75,10 @@ class TestTools:
                 "arguments": {},
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
+            },
+            text_editor_20241022={
+                "name": "name",
+                "type": "text_editor_20241022",
             },
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -129,6 +144,17 @@ class TestTools:
                 "params": "string",
                 "timeout": 0,
             },
+            bash_20241022={
+                "name": "name",
+                "type": "bash_20241022",
+            },
+            computer_20241022={
+                "display_height_px": 400,
+                "display_number": 1,
+                "display_width_px": 600,
+                "name": "name",
+                "type": "computer_20241022",
+            },
             description="description",
             function={
                 "description": {},
@@ -147,6 +173,10 @@ class TestTools:
                 "arguments": {},
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
+            },
+            text_editor_20241022={
+                "name": "name",
+                "type": "text_editor_20241022",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -317,6 +347,17 @@ class TestTools:
                 "timeout": 0,
                 "url": "https://example.com",
             },
+            bash_20241022={
+                "name": "name",
+                "type": "bash_20241022",
+            },
+            computer_20241022={
+                "display_height_px": 400,
+                "display_number": 1,
+                "display_width_px": 600,
+                "name": "name",
+                "type": "computer_20241022",
+            },
             description="description",
             function={
                 "description": {},
@@ -336,6 +377,10 @@ class TestTools:
                 "resource": "agent",
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
+            },
+            text_editor_20241022={
+                "name": "name",
+                "type": "text_editor_20241022",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -409,6 +454,17 @@ class TestAsyncTools:
                 "params": "string",
                 "timeout": 0,
             },
+            bash_20241022={
+                "name": "name",
+                "type": "bash_20241022",
+            },
+            computer_20241022={
+                "display_height_px": 400,
+                "display_number": 1,
+                "display_width_px": 600,
+                "name": "name",
+                "type": "computer_20241022",
+            },
             description="description",
             function={
                 "description": {},
@@ -427,6 +483,10 @@ class TestAsyncTools:
                 "arguments": {},
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
+            },
+            text_editor_20241022={
+                "name": "name",
+                "type": "text_editor_20241022",
             },
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
@@ -492,6 +552,17 @@ class TestAsyncTools:
                 "params": "string",
                 "timeout": 0,
             },
+            bash_20241022={
+                "name": "name",
+                "type": "bash_20241022",
+            },
+            computer_20241022={
+                "display_height_px": 400,
+                "display_number": 1,
+                "display_width_px": 600,
+                "name": "name",
+                "type": "computer_20241022",
+            },
             description="description",
             function={
                 "description": {},
@@ -510,6 +581,10 @@ class TestAsyncTools:
                 "arguments": {},
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
+            },
+            text_editor_20241022={
+                "name": "name",
+                "type": "text_editor_20241022",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
@@ -680,6 +755,17 @@ class TestAsyncTools:
                 "timeout": 0,
                 "url": "https://example.com",
             },
+            bash_20241022={
+                "name": "name",
+                "type": "bash_20241022",
+            },
+            computer_20241022={
+                "display_height_px": 400,
+                "display_number": 1,
+                "display_width_px": 600,
+                "name": "name",
+                "type": "computer_20241022",
+            },
             description="description",
             function={
                 "description": {},
@@ -699,6 +785,10 @@ class TestAsyncTools:
                 "resource": "agent",
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
+            },
+            text_editor_20241022={
+                "name": "name",
+                "type": "text_editor_20241022",
             },
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])

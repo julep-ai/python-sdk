@@ -30,6 +30,8 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
@@ -48,6 +50,7 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainGetStep",
     "MainSetStep",
     "MainLogStep",
@@ -78,6 +81,8 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
@@ -96,6 +101,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenGetStep",
     "MainIfElseWorkflowStepOutputThenSetStep",
     "MainIfElseWorkflowStepOutputThenLogStep",
@@ -125,6 +131,8 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
@@ -143,6 +151,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseGetStep",
     "MainIfElseWorkflowStepOutputElseSetStep",
     "MainIfElseWorkflowStepOutputElseLogStep",
@@ -174,6 +183,8 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
@@ -192,6 +203,7 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainSwitchStepOutputSwitchThenGetStep",
     "MainSwitchStepOutputSwitchThenSetStep",
     "MainSwitchStepOutputSwitchThenLogStep",
@@ -225,6 +237,8 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
@@ -243,6 +257,7 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainForeachStepOutputForeachDoGetStep",
     "MainForeachStepOutputForeachDoSetStep",
     "MainForeachStepOutputForeachDoLogStep",
@@ -267,6 +282,8 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
@@ -285,6 +302,7 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainParallelStepOutputParallelGetStep",
     "MainParallelStepOutputParallelSetStep",
     "MainParallelStepOutputParallelLogStep",
@@ -309,6 +327,8 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
@@ -327,12 +347,15 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainMainOutputMapGetStep",
     "MainMainOutputMapSetStep",
     "MainMainOutputMapLogStep",
     "MainMainOutputMapYieldStep",
     "Tool",
     "ToolAPICall",
+    "ToolBash20241022",
+    "ToolComputer20241022",
     "ToolFunction",
     "ToolIntegration",
     "ToolIntegrationDummyIntegrationDef",
@@ -351,6 +374,7 @@ __all__ = [
     "ToolIntegrationWeatherIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDefSetup",
     "ToolSystem",
+    "ToolTextEditor20241022",
 ]
 
 
@@ -455,6 +479,24 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseMo
     params: Union[str, object, None] = None
 
     timeout: Optional[int] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022(BaseModel):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
@@ -644,11 +686,22 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem(BaseMod
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
     api_call: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall] = None
     """API call definition"""
+
+    bash_20241022: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022] = None
+
+    computer_20241022: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022] = None
+    """Anthropic new tools"""
 
     description: Optional[str] = None
 
@@ -660,6 +713,10 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
 
     system: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem] = None
     """System definition"""
+
+    text_editor_20241022: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022] = (
+        None
+    )
 
 
 MainPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -852,6 +909,26 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     params: Union[str, object, None] = None
 
     timeout: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022(
+    BaseModel
+):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
@@ -1069,6 +1146,14 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022(
+    BaseModel
+):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
@@ -1076,6 +1161,15 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
         MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022
+    ] = None
+    """Anthropic new tools"""
 
     description: Optional[str] = None
 
@@ -1093,6 +1187,10 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
         None
     )
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022
+    ] = None
 
 
 MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -1301,6 +1399,26 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     params: Union[str, object, None] = None
 
     timeout: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022(
+    BaseModel
+):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
@@ -1518,6 +1636,14 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022(
+    BaseModel
+):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
@@ -1525,6 +1651,15 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
         MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022
+    ] = None
+    """Anthropic new tools"""
 
     description: Optional[str] = None
 
@@ -1542,6 +1677,10 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
         None
     )
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022
+    ] = None
 
 
 MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -1763,6 +1902,24 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     timeout: Optional[int] = None
 
 
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022(BaseModel):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
+
+
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
     description: Optional[object] = None
 
@@ -1978,6 +2135,14 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022(
+    BaseModel
+):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
@@ -1985,6 +2150,15 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
         MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022
+    ] = None
+    """Anthropic new tools"""
 
     description: Optional[str] = None
 
@@ -2002,6 +2176,10 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
         None
     )
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022
+    ] = None
 
 
 MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -2234,6 +2412,24 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     timeout: Optional[int] = None
 
 
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022(BaseModel):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
+
+
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
     description: Optional[object] = None
 
@@ -2449,6 +2645,14 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022(
+    BaseModel
+):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
@@ -2456,6 +2660,15 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
         MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022
+    ] = None
+    """Anthropic new tools"""
 
     description: Optional[str] = None
 
@@ -2473,6 +2686,10 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
         None
     )
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022
+    ] = None
 
 
 MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -2652,6 +2869,24 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     params: Union[str, object, None] = None
 
     timeout: Optional[int] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022(BaseModel):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
@@ -2869,6 +3104,14 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022(
+    BaseModel
+):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
@@ -2876,6 +3119,15 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
         MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
     """API call definition"""
+
+    bash_20241022: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022
+    ] = None
+    """Anthropic new tools"""
 
     description: Optional[str] = None
 
@@ -2893,6 +3145,10 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
         None
     )
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022
+    ] = None
 
 
 MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -3061,6 +3317,24 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputA
     params: Union[str, object, None] = None
 
     timeout: Optional[int] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022(BaseModel):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
@@ -3278,11 +3552,26 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputS
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
     api_call: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall] = None
     """API call definition"""
+
+    bash_20241022: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022] = (
+        None
+    )
+
+    computer_20241022: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022
+    ] = None
+    """Anthropic new tools"""
 
     description: Optional[str] = None
 
@@ -3294,6 +3583,10 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput(
 
     system: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem] = None
     """System definition"""
+
+    text_editor_20241022: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022
+    ] = None
 
 
 MainMainOutputMapPromptStepOutputToolsUnionMember1: TypeAlias = Union[
@@ -3409,6 +3702,24 @@ class ToolAPICall(BaseModel):
     params: Union[str, object, None] = None
 
     timeout: Optional[int] = None
+
+
+class ToolBash20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["bash_20241022"]] = None
+
+
+class ToolComputer20241022(BaseModel):
+    display_height_px: Optional[int] = None
+
+    display_number: Optional[int] = None
+
+    display_width_px: Optional[int] = None
+
+    name: Optional[str] = None
+
+    type: Optional[Literal["computer_20241022"]] = None
 
 
 class ToolFunction(BaseModel):
@@ -3578,11 +3889,22 @@ class ToolSystem(BaseModel):
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
+class ToolTextEditor20241022(BaseModel):
+    name: Optional[str] = None
+
+    type: Optional[Literal["text_editor_20241022"]] = None
+
+
 class Tool(BaseModel):
     name: str
 
     api_call: Optional[ToolAPICall] = None
     """API call definition"""
+
+    bash_20241022: Optional[ToolBash20241022] = None
+
+    computer_20241022: Optional[ToolComputer20241022] = None
+    """Anthropic new tools"""
 
     description: Optional[str] = None
 
@@ -3596,6 +3918,8 @@ class Tool(BaseModel):
 
     system: Optional[ToolSystem] = None
     """System definition"""
+
+    text_editor_20241022: Optional[ToolTextEditor20241022] = None
 
 
 class Task(BaseModel):
