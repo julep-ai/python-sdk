@@ -145,7 +145,7 @@ Methods:
 Types:
 
 ```python
-from julep.types import Task, Tool
+from julep.types import Task
 ```
 
 Methods:

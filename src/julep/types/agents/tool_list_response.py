@@ -2,13 +2,34 @@
 
 from typing import Dict, Union, Optional
 from datetime import datetime
-from typing_extensions import Literal
+from typing_extensions import Literal, TypeAlias
 
 from pydantic import Field as FieldInfo
 
 from ..._models import BaseModel
 
-__all__ = ["ToolListResponse", "APICall", "Function", "Integration", "System"]
+__all__ = [
+    "ToolListResponse",
+    "APICall",
+    "Function",
+    "Integration",
+    "IntegrationDummyIntegrationDef",
+    "IntegrationBraveIntegrationDef",
+    "IntegrationBraveIntegrationDefArguments",
+    "IntegrationBraveIntegrationDefSetup",
+    "IntegrationEmailIntegrationDef",
+    "IntegrationEmailIntegrationDefArguments",
+    "IntegrationEmailIntegrationDefSetup",
+    "IntegrationSpiderIntegrationDef",
+    "IntegrationSpiderIntegrationDefArguments",
+    "IntegrationSpiderIntegrationDefSetup",
+    "IntegrationWikipediaIntegrationDef",
+    "IntegrationWikipediaIntegrationDefArguments",
+    "IntegrationWeatherIntegrationDef",
+    "IntegrationWeatherIntegrationDefArguments",
+    "IntegrationWeatherIntegrationDefSetup",
+    "System",
+]
 
 
 class APICall(BaseModel):
@@ -41,16 +62,138 @@ class Function(BaseModel):
     parameters: Optional[object] = None
 
 
-class Integration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class IntegrationDummyIntegrationDef(BaseModel):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
+
+
+class IntegrationBraveIntegrationDefArguments(BaseModel):
+    query: str
+
+
+class IntegrationBraveIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class IntegrationBraveIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationBraveIntegrationDefArguments] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[IntegrationBraveIntegrationDefSetup] = None
+    """Integration definition for Brave Search"""
+
+
+class IntegrationEmailIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class IntegrationEmailIntegrationDefSetup(BaseModel):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class IntegrationEmailIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationEmailIntegrationDefArguments] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[IntegrationEmailIntegrationDefSetup] = None
+    """Setup parameters for Email integration"""
+
+
+class IntegrationSpiderIntegrationDefArguments(BaseModel):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class IntegrationSpiderIntegrationDefSetup(BaseModel):
+    spider_api_key: str
+
+
+class IntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationSpiderIntegrationDefArguments] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[IntegrationSpiderIntegrationDefSetup] = None
+    """Setup parameters for Spider integration"""
+
+
+class IntegrationWikipediaIntegrationDefArguments(BaseModel):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class IntegrationWikipediaIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationWikipediaIntegrationDefArguments] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class IntegrationWeatherIntegrationDefArguments(BaseModel):
+    location: str
+
+
+class IntegrationWeatherIntegrationDefSetup(BaseModel):
+    openweathermap_api_key: str
+
+
+class IntegrationWeatherIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationWeatherIntegrationDefArguments] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[IntegrationWeatherIntegrationDefSetup] = None
+    """Integration definition for Weather"""
+
+
+Integration: TypeAlias = Union[
+    IntegrationDummyIntegrationDef,
+    IntegrationBraveIntegrationDef,
+    IntegrationEmailIntegrationDef,
+    IntegrationSpiderIntegrationDef,
+    IntegrationWikipediaIntegrationDef,
+    IntegrationWeatherIntegrationDef,
+    None,
+]
 
 
 class System(BaseModel):
@@ -96,7 +239,7 @@ class ToolListResponse(BaseModel):
     """Function definition"""
 
     integration: Optional[Integration] = None
-    """Integration definition"""
+    """Brave integration definition"""
 
     system: Optional[System] = None
     """System definition"""
