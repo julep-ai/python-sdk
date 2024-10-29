@@ -260,9 +260,9 @@ class TestSessions:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -294,9 +294,9 @@ class TestSessions:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -328,9 +328,9 @@ class TestSessions:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -827,9 +827,9 @@ class TestAsyncSessions:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -861,9 +861,9 @@ class TestAsyncSessions:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -895,9 +895,9 @@ class TestAsyncSessions:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {

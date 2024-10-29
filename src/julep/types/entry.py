@@ -15,11 +15,26 @@ __all__ = [
     "ContentUnionMember0Content",
     "ContentUnionMember0ContentModel",
     "ContentUnionMember0ContentModelImageURL",
-    "ContentTool",
-    "ContentToolAPICall",
-    "ContentToolFunction",
-    "ContentToolIntegration",
-    "ContentToolSystem",
+    "ContentToolOutput",
+    "ContentToolOutputAPICall",
+    "ContentToolOutputFunction",
+    "ContentToolOutputIntegration",
+    "ContentToolOutputIntegrationDummyIntegrationDef",
+    "ContentToolOutputIntegrationBraveIntegrationDef",
+    "ContentToolOutputIntegrationBraveIntegrationDefArguments",
+    "ContentToolOutputIntegrationBraveIntegrationDefSetup",
+    "ContentToolOutputIntegrationEmailIntegrationDef",
+    "ContentToolOutputIntegrationEmailIntegrationDefArguments",
+    "ContentToolOutputIntegrationEmailIntegrationDefSetup",
+    "ContentToolOutputIntegrationSpiderIntegrationDef",
+    "ContentToolOutputIntegrationSpiderIntegrationDefArguments",
+    "ContentToolOutputIntegrationSpiderIntegrationDefSetup",
+    "ContentToolOutputIntegrationWikipediaIntegrationDef",
+    "ContentToolOutputIntegrationWikipediaIntegrationDefArguments",
+    "ContentToolOutputIntegrationWeatherIntegrationDef",
+    "ContentToolOutputIntegrationWeatherIntegrationDefArguments",
+    "ContentToolOutputIntegrationWeatherIntegrationDefSetup",
+    "ContentToolOutputSystem",
     "ContentChosenToolCall",
     "ContentChosenToolCallFunction",
     "ContentToolResponse",
@@ -28,11 +43,26 @@ __all__ = [
     "ContentUnionMember5UnionMember0Content",
     "ContentUnionMember5UnionMember0ContentModel",
     "ContentUnionMember5UnionMember0ContentModelImageURL",
-    "ContentUnionMember5Tool",
-    "ContentUnionMember5ToolAPICall",
-    "ContentUnionMember5ToolFunction",
-    "ContentUnionMember5ToolIntegration",
-    "ContentUnionMember5ToolSystem",
+    "ContentUnionMember5ToolOutput",
+    "ContentUnionMember5ToolOutputAPICall",
+    "ContentUnionMember5ToolOutputFunction",
+    "ContentUnionMember5ToolOutputIntegration",
+    "ContentUnionMember5ToolOutputIntegrationDummyIntegrationDef",
+    "ContentUnionMember5ToolOutputIntegrationBraveIntegrationDef",
+    "ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefArguments",
+    "ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefSetup",
+    "ContentUnionMember5ToolOutputIntegrationEmailIntegrationDef",
+    "ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefArguments",
+    "ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefSetup",
+    "ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDef",
+    "ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefArguments",
+    "ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefSetup",
+    "ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDef",
+    "ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDefArguments",
+    "ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDef",
+    "ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefArguments",
+    "ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefSetup",
+    "ContentUnionMember5ToolOutputSystem",
     "ContentUnionMember5ChosenToolCall",
     "ContentUnionMember5ChosenToolCallFunction",
     "ContentUnionMember5ToolResponse",
@@ -61,7 +91,7 @@ class ContentUnionMember0ContentModel(BaseModel):
 ContentUnionMember0: TypeAlias = Union[ContentUnionMember0Content, ContentUnionMember0ContentModel]
 
 
-class ContentToolAPICall(BaseModel):
+class ContentToolOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -83,7 +113,7 @@ class ContentToolAPICall(BaseModel):
     timeout: Optional[int] = None
 
 
-class ContentToolFunction(BaseModel):
+class ContentToolOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -91,19 +121,141 @@ class ContentToolFunction(BaseModel):
     parameters: Optional[object] = None
 
 
-class ContentToolIntegration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class ContentToolOutputIntegrationDummyIntegrationDef(BaseModel):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
 
 
-class ContentToolSystem(BaseModel):
+class ContentToolOutputIntegrationBraveIntegrationDefArguments(BaseModel):
+    query: str
+
+
+class ContentToolOutputIntegrationBraveIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentToolOutputIntegrationBraveIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolOutputIntegrationBraveIntegrationDefArguments] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[ContentToolOutputIntegrationBraveIntegrationDefSetup] = None
+    """Integration definition for Brave Search"""
+
+
+class ContentToolOutputIntegrationEmailIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class ContentToolOutputIntegrationEmailIntegrationDefSetup(BaseModel):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class ContentToolOutputIntegrationEmailIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolOutputIntegrationEmailIntegrationDefArguments] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[ContentToolOutputIntegrationEmailIntegrationDefSetup] = None
+    """Setup parameters for Email integration"""
+
+
+class ContentToolOutputIntegrationSpiderIntegrationDefArguments(BaseModel):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class ContentToolOutputIntegrationSpiderIntegrationDefSetup(BaseModel):
+    spider_api_key: str
+
+
+class ContentToolOutputIntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolOutputIntegrationSpiderIntegrationDefArguments] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[ContentToolOutputIntegrationSpiderIntegrationDefSetup] = None
+    """Setup parameters for Spider integration"""
+
+
+class ContentToolOutputIntegrationWikipediaIntegrationDefArguments(BaseModel):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class ContentToolOutputIntegrationWikipediaIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolOutputIntegrationWikipediaIntegrationDefArguments] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class ContentToolOutputIntegrationWeatherIntegrationDefArguments(BaseModel):
+    location: str
+
+
+class ContentToolOutputIntegrationWeatherIntegrationDefSetup(BaseModel):
+    openweathermap_api_key: str
+
+
+class ContentToolOutputIntegrationWeatherIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolOutputIntegrationWeatherIntegrationDefArguments] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[ContentToolOutputIntegrationWeatherIntegrationDefSetup] = None
+    """Integration definition for Weather"""
+
+
+ContentToolOutputIntegration: TypeAlias = Union[
+    ContentToolOutputIntegrationDummyIntegrationDef,
+    ContentToolOutputIntegrationBraveIntegrationDef,
+    ContentToolOutputIntegrationEmailIntegrationDef,
+    ContentToolOutputIntegrationSpiderIntegrationDef,
+    ContentToolOutputIntegrationWikipediaIntegrationDef,
+    ContentToolOutputIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class ContentToolOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -128,7 +280,7 @@ class ContentToolSystem(BaseModel):
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class ContentTool(BaseModel):
+class ContentToolOutput(BaseModel):
     id: str
 
     created_at: datetime
@@ -137,18 +289,18 @@ class ContentTool(BaseModel):
 
     updated_at: datetime
 
-    api_call: Optional[ContentToolAPICall] = None
+    api_call: Optional[ContentToolOutputAPICall] = None
     """API call definition"""
 
     description: Optional[str] = None
 
-    function: Optional[ContentToolFunction] = None
+    function: Optional[ContentToolOutputFunction] = None
     """Function definition"""
 
-    integration: Optional[ContentToolIntegration] = None
-    """Integration definition"""
+    integration: Optional[ContentToolOutputIntegration] = None
+    """Brave integration definition"""
 
-    system: Optional[ContentToolSystem] = None
+    system: Optional[ContentToolOutputSystem] = None
     """System definition"""
 
 
@@ -194,7 +346,7 @@ ContentUnionMember5UnionMember0: TypeAlias = Union[
 ]
 
 
-class ContentUnionMember5ToolAPICall(BaseModel):
+class ContentUnionMember5ToolOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -216,7 +368,7 @@ class ContentUnionMember5ToolAPICall(BaseModel):
     timeout: Optional[int] = None
 
 
-class ContentUnionMember5ToolFunction(BaseModel):
+class ContentUnionMember5ToolOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -224,19 +376,141 @@ class ContentUnionMember5ToolFunction(BaseModel):
     parameters: Optional[object] = None
 
 
-class ContentUnionMember5ToolIntegration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class ContentUnionMember5ToolOutputIntegrationDummyIntegrationDef(BaseModel):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
 
 
-class ContentUnionMember5ToolSystem(BaseModel):
+class ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefArguments(BaseModel):
+    query: str
+
+
+class ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentUnionMember5ToolOutputIntegrationBraveIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefArguments] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[ContentUnionMember5ToolOutputIntegrationBraveIntegrationDefSetup] = None
+    """Integration definition for Brave Search"""
+
+
+class ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefSetup(BaseModel):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class ContentUnionMember5ToolOutputIntegrationEmailIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefArguments] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[ContentUnionMember5ToolOutputIntegrationEmailIntegrationDefSetup] = None
+    """Setup parameters for Email integration"""
+
+
+class ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefArguments(BaseModel):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefSetup(BaseModel):
+    spider_api_key: str
+
+
+class ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefArguments] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDefSetup] = None
+    """Setup parameters for Spider integration"""
+
+
+class ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDefArguments(BaseModel):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDefArguments] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefArguments(BaseModel):
+    location: str
+
+
+class ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefSetup(BaseModel):
+    openweathermap_api_key: str
+
+
+class ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefArguments] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDefSetup] = None
+    """Integration definition for Weather"""
+
+
+ContentUnionMember5ToolOutputIntegration: TypeAlias = Union[
+    ContentUnionMember5ToolOutputIntegrationDummyIntegrationDef,
+    ContentUnionMember5ToolOutputIntegrationBraveIntegrationDef,
+    ContentUnionMember5ToolOutputIntegrationEmailIntegrationDef,
+    ContentUnionMember5ToolOutputIntegrationSpiderIntegrationDef,
+    ContentUnionMember5ToolOutputIntegrationWikipediaIntegrationDef,
+    ContentUnionMember5ToolOutputIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class ContentUnionMember5ToolOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -261,7 +535,7 @@ class ContentUnionMember5ToolSystem(BaseModel):
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class ContentUnionMember5Tool(BaseModel):
+class ContentUnionMember5ToolOutput(BaseModel):
     id: str
 
     created_at: datetime
@@ -270,18 +544,18 @@ class ContentUnionMember5Tool(BaseModel):
 
     updated_at: datetime
 
-    api_call: Optional[ContentUnionMember5ToolAPICall] = None
+    api_call: Optional[ContentUnionMember5ToolOutputAPICall] = None
     """API call definition"""
 
     description: Optional[str] = None
 
-    function: Optional[ContentUnionMember5ToolFunction] = None
+    function: Optional[ContentUnionMember5ToolOutputFunction] = None
     """Function definition"""
 
-    integration: Optional[ContentUnionMember5ToolIntegration] = None
-    """Integration definition"""
+    integration: Optional[ContentUnionMember5ToolOutputIntegration] = None
+    """Brave integration definition"""
 
-    system: Optional[ContentUnionMember5ToolSystem] = None
+    system: Optional[ContentUnionMember5ToolOutputSystem] = None
     """System definition"""
 
 
@@ -305,14 +579,19 @@ class ContentUnionMember5ToolResponse(BaseModel):
 
 ContentUnionMember5: TypeAlias = Union[
     List[ContentUnionMember5UnionMember0],
-    ContentUnionMember5Tool,
+    ContentUnionMember5ToolOutput,
     ContentUnionMember5ChosenToolCall,
     str,
     ContentUnionMember5ToolResponse,
 ]
 
 Content: TypeAlias = Union[
-    List[ContentUnionMember0], ContentTool, ContentChosenToolCall, str, ContentToolResponse, List[ContentUnionMember5]
+    List[ContentUnionMember0],
+    ContentToolOutput,
+    ContentChosenToolCall,
+    str,
+    ContentToolResponse,
+    List[ContentUnionMember5],
 ]
 
 

@@ -6,7 +6,6 @@ from typing_extensions import Literal, TypeAlias
 
 from pydantic import Field as FieldInfo
 
-from .tool import Tool
 from .._models import BaseModel
 from .chat_settings import ChatSettings
 
@@ -29,11 +28,26 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1ToolRefRef",
     "MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequest",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainGetStep",
     "MainSetStep",
     "MainLogStep",
@@ -62,11 +76,26 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequest",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenGetStep",
     "MainIfElseWorkflowStepOutputThenSetStep",
     "MainIfElseWorkflowStepOutputThenLogStep",
@@ -94,11 +123,26 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequest",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestSystem",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutput",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElseGetStep",
     "MainIfElseWorkflowStepOutputElseSetStep",
     "MainIfElseWorkflowStepOutputElseLogStep",
@@ -128,11 +172,26 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainSwitchStepOutputSwitchThenGetStep",
     "MainSwitchStepOutputSwitchThenSetStep",
     "MainSwitchStepOutputSwitchThenLogStep",
@@ -164,11 +223,26 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainForeachStepOutputForeachDoGetStep",
     "MainForeachStepOutputForeachDoSetStep",
     "MainForeachStepOutputForeachDoLogStep",
@@ -191,11 +265,26 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainParallelStepOutputParallelGetStep",
     "MainParallelStepOutputParallelSetStep",
     "MainParallelStepOutputParallelLogStep",
@@ -218,15 +307,50 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByID",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestAPICall",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegration",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainMainOutputMapGetStep",
     "MainMainOutputMapSetStep",
     "MainMainOutputMapLogStep",
     "MainMainOutputMapYieldStep",
+    "Tool",
+    "ToolAPICall",
+    "ToolFunction",
+    "ToolIntegration",
+    "ToolIntegrationDummyIntegrationDef",
+    "ToolIntegrationBraveIntegrationDef",
+    "ToolIntegrationBraveIntegrationDefArguments",
+    "ToolIntegrationBraveIntegrationDefSetup",
+    "ToolIntegrationEmailIntegrationDef",
+    "ToolIntegrationEmailIntegrationDefArguments",
+    "ToolIntegrationEmailIntegrationDefSetup",
+    "ToolIntegrationSpiderIntegrationDef",
+    "ToolIntegrationSpiderIntegrationDefArguments",
+    "ToolIntegrationSpiderIntegrationDefSetup",
+    "ToolIntegrationWikipediaIntegrationDef",
+    "ToolIntegrationWikipediaIntegrationDefArguments",
+    "ToolIntegrationWeatherIntegrationDef",
+    "ToolIntegrationWeatherIntegrationDefArguments",
+    "ToolIntegrationWeatherIntegrationDefSetup",
+    "ToolSystem",
 ]
 
 
@@ -311,7 +435,7 @@ class MainPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
     """Reference to a tool by id"""
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -333,7 +457,7 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
     timeout: Optional[int] = None
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -341,19 +465,161 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
     parameters: Optional[object] = None
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef(BaseModel):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments(BaseModel):
+    query: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef(BaseModel):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments
+    ] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup] = (
+        None
+    )
+    """Integration definition for Brave Search"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup(BaseModel):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef(BaseModel):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments
+    ] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup] = (
+        None
+    )
+    """Setup parameters for Email integration"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(BaseModel):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(BaseModel):
+    spider_api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+    ] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+    ] = None
+    """Setup parameters for Spider integration"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef(BaseModel):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments
+    ] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments(BaseModel):
+    location: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup(BaseModel):
+    openweathermap_api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef(BaseModel):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments
+    ] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
+    ] = None
+    """Integration definition for Weather"""
+
+
+MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -378,26 +644,26 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
-    api_call: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    api_call: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall] = None
     """API call definition"""
 
     description: Optional[str] = None
 
-    function: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    function: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction] = None
     """Function definition"""
 
-    integration: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestIntegration] = None
-    """Integration definition"""
+    integration: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration] = None
+    """Brave integration definition"""
 
-    system: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    system: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem] = None
     """System definition"""
 
 
 MainPromptStepOutputToolsUnionMember1: TypeAlias = Union[
-    MainPromptStepOutputToolsUnionMember1ToolRef, MainPromptStepOutputToolsUnionMember1CreateToolRequest
+    MainPromptStepOutputToolsUnionMember1ToolRef, MainPromptStepOutputToolsUnionMember1CreateToolRequestOutput
 ]
 
 
@@ -566,7 +832,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRef(B
     """Reference to a tool by id"""
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -588,7 +854,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     timeout: Optional[int] = None
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -596,19 +862,189 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     parameters: Optional[object] = None
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef(
+    BaseModel
+):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments
+    ] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup
+    ] = None
+    """Integration definition for Brave Search"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup(
+    BaseModel
+):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments
+    ] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup
+    ] = None
+    """Setup parameters for Email integration"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+    BaseModel
+):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+    BaseModel
+):
+    spider_api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+    ] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+    ] = None
+    """Setup parameters for Spider integration"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments
+    ] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments(
+    BaseModel
+):
+    location: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup(
+    BaseModel
+):
+    openweathermap_api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments
+    ] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
+    ] = None
+    """Integration definition for Weather"""
+
+
+MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -633,31 +1069,35 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
-    api_call: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    api_call: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
+    ] = None
     """API call definition"""
 
     description: Optional[str] = None
 
-    function: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = (
-        None
-    )
+    function: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction
+    ] = None
     """Function definition"""
 
     integration: Optional[
-        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration
     ] = None
-    """Integration definition"""
+    """Brave integration definition"""
 
-    system: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    system: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem] = (
+        None
+    )
     """System definition"""
 
 
 MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRef,
-    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequest,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput,
 ]
 
 
@@ -841,7 +1281,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRef(B
     """Reference to a tool by id"""
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -863,7 +1303,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     timeout: Optional[int] = None
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -871,19 +1311,189 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     parameters: Optional[object] = None
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef(
+    BaseModel
+):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments
+    ] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup
+    ] = None
+    """Integration definition for Brave Search"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup(
+    BaseModel
+):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments
+    ] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup
+    ] = None
+    """Setup parameters for Email integration"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+    BaseModel
+):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+    BaseModel
+):
+    spider_api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+    ] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+    ] = None
+    """Setup parameters for Spider integration"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments
+    ] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments(
+    BaseModel
+):
+    location: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup(
+    BaseModel
+):
+    openweathermap_api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments
+    ] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
+    ] = None
+    """Integration definition for Weather"""
+
+
+MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -908,31 +1518,35 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
-    api_call: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    api_call: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
+    ] = None
     """API call definition"""
 
     description: Optional[str] = None
 
-    function: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestFunction] = (
-        None
-    )
+    function: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction
+    ] = None
     """Function definition"""
 
     integration: Optional[
-        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration
     ] = None
-    """Integration definition"""
+    """Brave integration definition"""
 
-    system: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    system: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem] = (
+        None
+    )
     """System definition"""
 
 
 MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRef,
-    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequest,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutput,
 ]
 
 
@@ -1127,7 +1741,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRef(Bas
     """Reference to a tool by id"""
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -1149,7 +1763,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     timeout: Optional[int] = None
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -1157,19 +1771,189 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     parameters: Optional[object] = None
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef(
+    BaseModel
+):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments
+    ] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup
+    ] = None
+    """Integration definition for Brave Search"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup(
+    BaseModel
+):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments
+    ] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup
+    ] = None
+    """Setup parameters for Email integration"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+    BaseModel
+):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+    BaseModel
+):
+    spider_api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+    ] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+    ] = None
+    """Setup parameters for Spider integration"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments
+    ] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments(
+    BaseModel
+):
+    location: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup(
+    BaseModel
+):
+    openweathermap_api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments
+    ] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
+    ] = None
+    """Integration definition for Weather"""
+
+
+MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -1194,29 +1978,35 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
-    api_call: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    api_call: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
+    ] = None
     """API call definition"""
 
     description: Optional[str] = None
 
-    function: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    function: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction
+    ] = None
     """Function definition"""
 
     integration: Optional[
-        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration
     ] = None
-    """Integration definition"""
+    """Brave integration definition"""
 
-    system: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    system: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem] = (
+        None
+    )
     """System definition"""
 
 
 MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1: TypeAlias = Union[
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRef,
-    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput,
 ]
 
 
@@ -1422,7 +2212,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRef(Bas
     """Reference to a tool by id"""
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -1444,7 +2234,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     timeout: Optional[int] = None
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -1452,19 +2242,189 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     parameters: Optional[object] = None
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef(
+    BaseModel
+):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments
+    ] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup
+    ] = None
+    """Integration definition for Brave Search"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup(
+    BaseModel
+):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments
+    ] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup
+    ] = None
+    """Setup parameters for Email integration"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+    BaseModel
+):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+    BaseModel
+):
+    spider_api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+    ] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+    ] = None
+    """Setup parameters for Spider integration"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments
+    ] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments(
+    BaseModel
+):
+    location: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup(
+    BaseModel
+):
+    openweathermap_api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments
+    ] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
+    ] = None
+    """Integration definition for Weather"""
+
+
+MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -1489,29 +2449,35 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
-    api_call: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    api_call: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
+    ] = None
     """API call definition"""
 
     description: Optional[str] = None
 
-    function: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    function: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction
+    ] = None
     """Function definition"""
 
     integration: Optional[
-        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration
     ] = None
-    """Integration definition"""
+    """Brave integration definition"""
 
-    system: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    system: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem] = (
+        None
+    )
     """System definition"""
 
 
 MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1: TypeAlias = Union[
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRef,
-    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutput,
 ]
 
 
@@ -1666,7 +2632,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRef(Bas
     """Reference to a tool by id"""
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -1688,7 +2654,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     timeout: Optional[int] = None
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -1696,19 +2662,189 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     parameters: Optional[object] = None
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef(
+    BaseModel
+):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments
+    ] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup
+    ] = None
+    """Integration definition for Brave Search"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup(
+    BaseModel
+):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments
+    ] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup
+    ] = None
+    """Setup parameters for Email integration"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+    BaseModel
+):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+    BaseModel
+):
+    spider_api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+    ] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+    ] = None
+    """Setup parameters for Spider integration"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments
+    ] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments(
+    BaseModel
+):
+    location: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup(
+    BaseModel
+):
+    openweathermap_api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments
+    ] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
+    ] = None
+    """Integration definition for Weather"""
+
+
+MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -1733,29 +2869,35 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
-    api_call: Optional[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    api_call: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
+    ] = None
     """API call definition"""
 
     description: Optional[str] = None
 
-    function: Optional[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    function: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction
+    ] = None
     """Function definition"""
 
     integration: Optional[
-        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestIntegration
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration
     ] = None
-    """Integration definition"""
+    """Brave integration definition"""
 
-    system: Optional[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    system: Optional[MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem] = (
+        None
+    )
     """System definition"""
 
 
 MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1: TypeAlias = Union[
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRef,
-    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutput,
 ]
 
 
@@ -1899,7 +3041,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
     """Reference to a tool by id"""
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestAPICall(BaseModel):
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -1921,7 +3063,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestAPICall
     timeout: Optional[int] = None
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction(BaseModel):
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction(BaseModel):
     description: Optional[object] = None
 
     name: Optional[object] = None
@@ -1929,19 +3071,189 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunctio
     parameters: Optional[object] = None
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegration(BaseModel):
-    provider: Union[
-        Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str
-    ]
-
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef(
+    BaseModel
+):
     arguments: Optional[object] = None
 
     method: Optional[str] = None
 
+    provider: Optional[Literal["dummy"]] = None
+
     setup: Optional[object] = None
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem(BaseModel):
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefArguments
+    ] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDefSetup
+    ] = None
+    """Integration definition for Brave Search"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup(
+    BaseModel
+):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments
+    ] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup
+    ] = None
+    """Setup parameters for Email integration"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+    BaseModel
+):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+    BaseModel
+):
+    spider_api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+    ] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+    ] = None
+    """Setup parameters for Spider integration"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments
+    ] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments(
+    BaseModel
+):
+    location: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup(
+    BaseModel
+):
+    openweathermap_api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments
+    ] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
+    ] = None
+    """Integration definition for Weather"""
+
+
+MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem(BaseModel):
     operation: Literal[
         "create",
         "update",
@@ -1966,27 +3278,27 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem(
     subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest(BaseModel):
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
-    api_call: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestAPICall] = None
+    api_call: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall] = None
     """API call definition"""
 
     description: Optional[str] = None
 
-    function: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestFunction] = None
+    function: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction] = None
     """Function definition"""
 
-    integration: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestIntegration] = None
-    """Integration definition"""
+    integration: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration] = None
+    """Brave integration definition"""
 
-    system: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestSystem] = None
+    system: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem] = None
     """System definition"""
 
 
 MainMainOutputMapPromptStepOutputToolsUnionMember1: TypeAlias = Union[
     MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRef,
-    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequest,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput,
 ]
 
 
@@ -2075,6 +3387,215 @@ Main: TypeAlias = Union[
     MainParallelStepOutput,
     MainMainOutput,
 ]
+
+
+class ToolAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[object] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+    timeout: Optional[int] = None
+
+
+class ToolFunction(BaseModel):
+    description: Optional[object] = None
+
+    name: Optional[object] = None
+
+    parameters: Optional[object] = None
+
+
+class ToolIntegrationDummyIntegrationDef(BaseModel):
+    arguments: Optional[object] = None
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["dummy"]] = None
+
+    setup: Optional[object] = None
+
+
+class ToolIntegrationBraveIntegrationDefArguments(BaseModel):
+    query: str
+
+
+class ToolIntegrationBraveIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ToolIntegrationBraveIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationBraveIntegrationDefArguments] = None
+    """Arguments for Brave Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["brave"]] = None
+
+    setup: Optional[ToolIntegrationBraveIntegrationDefSetup] = None
+    """Integration definition for Brave Search"""
+
+
+class ToolIntegrationEmailIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+
+class ToolIntegrationEmailIntegrationDefSetup(BaseModel):
+    host: str
+
+    password: str
+
+    port: int
+
+    user: str
+
+
+class ToolIntegrationEmailIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationEmailIntegrationDefArguments] = None
+    """Arguments for Email sending"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["email"]] = None
+
+    setup: Optional[ToolIntegrationEmailIntegrationDefSetup] = None
+    """Setup parameters for Email integration"""
+
+
+class ToolIntegrationSpiderIntegrationDefArguments(BaseModel):
+    url: str
+
+    mode: Optional[Literal["scrape"]] = None
+
+    params: Optional[object] = None
+
+
+class ToolIntegrationSpiderIntegrationDefSetup(BaseModel):
+    spider_api_key: str
+
+
+class ToolIntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationSpiderIntegrationDefArguments] = None
+    """Arguments for Spider integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["spider"]] = None
+
+    setup: Optional[ToolIntegrationSpiderIntegrationDefSetup] = None
+    """Setup parameters for Spider integration"""
+
+
+class ToolIntegrationWikipediaIntegrationDefArguments(BaseModel):
+    query: str
+
+    load_max_docs: Optional[int] = None
+
+
+class ToolIntegrationWikipediaIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationWikipediaIntegrationDefArguments] = None
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["wikipedia"]] = None
+
+    setup: Optional[object] = None
+
+
+class ToolIntegrationWeatherIntegrationDefArguments(BaseModel):
+    location: str
+
+
+class ToolIntegrationWeatherIntegrationDefSetup(BaseModel):
+    openweathermap_api_key: str
+
+
+class ToolIntegrationWeatherIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationWeatherIntegrationDefArguments] = None
+    """Arguments for Weather"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["weather"]] = None
+
+    setup: Optional[ToolIntegrationWeatherIntegrationDefSetup] = None
+    """Integration definition for Weather"""
+
+
+ToolIntegration: TypeAlias = Union[
+    ToolIntegrationDummyIntegrationDef,
+    ToolIntegrationBraveIntegrationDef,
+    ToolIntegrationEmailIntegrationDef,
+    ToolIntegrationSpiderIntegrationDef,
+    ToolIntegrationWikipediaIntegrationDef,
+    ToolIntegrationWeatherIntegrationDef,
+    None,
+]
+
+
+class ToolSystem(BaseModel):
+    operation: Literal[
+        "create",
+        "update",
+        "patch",
+        "create_or_update",
+        "embed",
+        "change_status",
+        "search",
+        "chat",
+        "history",
+        "delete",
+        "get",
+        "list",
+    ]
+
+    resource: Literal["agent", "user", "task", "execution", "doc", "session", "job"]
+
+    arguments: Optional[object] = None
+
+    resource_id: Optional[str] = None
+
+    subresource: Optional[Literal["tool", "doc", "execution", "transition"]] = None
+
+
+class Tool(BaseModel):
+    name: str
+
+    api_call: Optional[ToolAPICall] = None
+    """API call definition"""
+
+    description: Optional[str] = None
+
+    function: Optional[ToolFunction] = None
+    """Function definition"""
+
+    inherited: Optional[bool] = None
+
+    integration: Optional[ToolIntegration] = None
+    """Brave integration definition"""
+
+    system: Optional[ToolSystem] = None
+    """System definition"""
 
 
 class Task(BaseModel):

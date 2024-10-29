@@ -76,7 +76,7 @@ class ToolsResource(SyncAPIResource):
 
           function: Function definition
 
-          integration: Integration definition
+          integration: Brave integration definition
 
           system: System definition
 
@@ -135,7 +135,7 @@ class ToolsResource(SyncAPIResource):
 
           function: Function definition
 
-          integration: Integration definition
+          integration: Brave integration definition
 
           system: System definition
 
@@ -282,7 +282,7 @@ class ToolsResource(SyncAPIResource):
 
           function: Function definition
 
-          integration: Integration definition
+          integration: Brave integration definition
 
           system: System definition
 
@@ -363,7 +363,7 @@ class AsyncToolsResource(AsyncAPIResource):
 
           function: Function definition
 
-          integration: Integration definition
+          integration: Brave integration definition
 
           system: System definition
 
@@ -422,7 +422,7 @@ class AsyncToolsResource(AsyncAPIResource):
 
           function: Function definition
 
-          integration: Integration definition
+          integration: Brave integration definition
 
           system: System definition
 
@@ -569,7 +569,7 @@ class AsyncToolsResource(AsyncAPIResource):
 
           function: Function definition
 
-          integration: Integration definition
+          integration: Brave integration definition
 
           system: System definition
 

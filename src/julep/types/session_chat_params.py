@@ -20,6 +20,21 @@ __all__ = [
     "ToolAPICall",
     "ToolFunction",
     "ToolIntegration",
+    "ToolIntegrationDummyIntegrationDef",
+    "ToolIntegrationBraveIntegrationDef",
+    "ToolIntegrationBraveIntegrationDefArguments",
+    "ToolIntegrationBraveIntegrationDefSetup",
+    "ToolIntegrationEmailIntegrationDef",
+    "ToolIntegrationEmailIntegrationDefArguments",
+    "ToolIntegrationEmailIntegrationDefSetup",
+    "ToolIntegrationSpiderIntegrationDef",
+    "ToolIntegrationSpiderIntegrationDefArguments",
+    "ToolIntegrationSpiderIntegrationDefSetup",
+    "ToolIntegrationWikipediaIntegrationDef",
+    "ToolIntegrationWikipediaIntegrationDefArguments",
+    "ToolIntegrationWeatherIntegrationDef",
+    "ToolIntegrationWeatherIntegrationDefArguments",
+    "ToolIntegrationWeatherIntegrationDefSetup",
     "ToolSystem",
 ]
 
@@ -124,16 +139,146 @@ class ToolFunction(TypedDict, total=False):
     parameters: Optional[object]
 
 
-class ToolIntegration(TypedDict, total=False):
-    provider: Required[
-        Union[Literal["dummy", "hacker_news", "weather", "wikipedia", "spider", "brave", "browserbase", "email"], str]
-    ]
-
+class ToolIntegrationDummyIntegrationDef(TypedDict, total=False):
     arguments: Optional[object]
 
     method: Optional[str]
 
+    provider: Literal["dummy"]
+
     setup: Optional[object]
+
+
+class ToolIntegrationBraveIntegrationDefArguments(TypedDict, total=False):
+    query: Required[str]
+
+
+class ToolIntegrationBraveIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBraveIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationBraveIntegrationDefArguments]
+    """Arguments for Brave Search"""
+
+    method: Optional[str]
+
+    provider: Literal["brave"]
+
+    setup: Optional[ToolIntegrationBraveIntegrationDefSetup]
+    """Integration definition for Brave Search"""
+
+
+_ToolIntegrationEmailIntegrationDefArgumentsReservedKeywords = TypedDict(
+    "_ToolIntegrationEmailIntegrationDefArgumentsReservedKeywords",
+    {
+        "from": str,
+    },
+    total=False,
+)
+
+
+class ToolIntegrationEmailIntegrationDefArguments(
+    _ToolIntegrationEmailIntegrationDefArgumentsReservedKeywords, total=False
+):
+    body: Required[str]
+
+    subject: Required[str]
+
+    to: Required[str]
+
+
+class ToolIntegrationEmailIntegrationDefSetup(TypedDict, total=False):
+    host: Required[str]
+
+    password: Required[str]
+
+    port: Required[int]
+
+    user: Required[str]
+
+
+class ToolIntegrationEmailIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationEmailIntegrationDefArguments]
+    """Arguments for Email sending"""
+
+    method: Optional[str]
+
+    provider: Literal["email"]
+
+    setup: Optional[ToolIntegrationEmailIntegrationDefSetup]
+    """Setup parameters for Email integration"""
+
+
+class ToolIntegrationSpiderIntegrationDefArguments(TypedDict, total=False):
+    url: Required[str]
+
+    mode: Literal["scrape"]
+
+    params: Optional[object]
+
+
+class ToolIntegrationSpiderIntegrationDefSetup(TypedDict, total=False):
+    spider_api_key: Required[str]
+
+
+class ToolIntegrationSpiderIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationSpiderIntegrationDefArguments]
+    """Arguments for Spider integration"""
+
+    method: Optional[str]
+
+    provider: Literal["spider"]
+
+    setup: Optional[ToolIntegrationSpiderIntegrationDefSetup]
+    """Setup parameters for Spider integration"""
+
+
+class ToolIntegrationWikipediaIntegrationDefArguments(TypedDict, total=False):
+    query: Required[str]
+
+    load_max_docs: int
+
+
+class ToolIntegrationWikipediaIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationWikipediaIntegrationDefArguments]
+    """Arguments for Wikipedia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["wikipedia"]
+
+    setup: Optional[object]
+
+
+class ToolIntegrationWeatherIntegrationDefArguments(TypedDict, total=False):
+    location: Required[str]
+
+
+class ToolIntegrationWeatherIntegrationDefSetup(TypedDict, total=False):
+    openweathermap_api_key: Required[str]
+
+
+class ToolIntegrationWeatherIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationWeatherIntegrationDefArguments]
+    """Arguments for Weather"""
+
+    method: Optional[str]
+
+    provider: Literal["weather"]
+
+    setup: Optional[ToolIntegrationWeatherIntegrationDefSetup]
+    """Integration definition for Weather"""
+
+
+ToolIntegration: TypeAlias = Union[
+    ToolIntegrationDummyIntegrationDef,
+    ToolIntegrationBraveIntegrationDef,
+    ToolIntegrationEmailIntegrationDef,
+    ToolIntegrationSpiderIntegrationDef,
+    ToolIntegrationWikipediaIntegrationDef,
+    ToolIntegrationWeatherIntegrationDef,
+]
 
 
 class ToolSystem(TypedDict, total=False):
@@ -175,7 +320,7 @@ class Tool(TypedDict, total=False):
     """Function definition"""
 
     integration: Optional[ToolIntegration]
-    """Integration definition"""
+    """Brave integration definition"""
 
     system: Optional[ToolSystem]
     """System definition"""

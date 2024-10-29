@@ -53,9 +53,9 @@ class TestTools:
                 "parameters": {},
             },
             integration={
-                "provider": "dummy",
                 "arguments": {},
                 "method": "method",
+                "provider": "dummy",
                 "setup": {},
             },
             system={
@@ -136,9 +136,9 @@ class TestTools:
                 "parameters": {},
             },
             integration={
-                "provider": "dummy",
                 "arguments": {},
                 "method": "method",
+                "provider": "dummy",
                 "setup": {},
             },
             system={
@@ -416,9 +416,9 @@ class TestAsyncTools:
                 "parameters": {},
             },
             integration={
-                "provider": "dummy",
                 "arguments": {},
                 "method": "method",
+                "provider": "dummy",
                 "setup": {},
             },
             system={
@@ -499,9 +499,9 @@ class TestAsyncTools:
                 "parameters": {},
             },
             integration={
-                "provider": "dummy",
                 "arguments": {},
                 "method": "method",
+                "provider": "dummy",
                 "setup": {},
             },
             system={

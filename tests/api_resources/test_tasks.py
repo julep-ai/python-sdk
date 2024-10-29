@@ -60,9 +60,9 @@ class TestTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -94,9 +94,9 @@ class TestTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -128,9 +128,9 @@ class TestTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -274,9 +274,9 @@ class TestTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -308,9 +308,9 @@ class TestTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -342,9 +342,9 @@ class TestTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -490,9 +490,9 @@ class TestAsyncTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -524,9 +524,9 @@ class TestAsyncTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -558,9 +558,9 @@ class TestAsyncTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -704,9 +704,9 @@ class TestAsyncTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -738,9 +738,9 @@ class TestAsyncTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
@@ -772,9 +772,9 @@ class TestAsyncTasks:
                         "parameters": {},
                     },
                     "integration": {
-                        "provider": "dummy",
                         "arguments": {},
                         "method": "method",
+                        "provider": "dummy",
                         "setup": {},
                     },
                     "system": {
