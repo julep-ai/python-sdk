@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 from typing import Dict, List, Union, Iterable, Optional
-from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from .._utils import PropertyInfo
 from .chat_settings_param import ChatSettingsParam
 
 __all__ = [
@@ -47,6 +48,23 @@ __all__ = [
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainGetStep",
@@ -98,6 +116,23 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenGetStep",
@@ -148,6 +183,23 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseGetStep",
@@ -200,6 +252,23 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainSwitchStepInputSwitchThenGetStep",
@@ -254,6 +323,23 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainForeachStepInputForeachDoGetStep",
@@ -299,6 +385,23 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainParallelStepInputParallelGetStep",
@@ -344,6 +447,23 @@ __all__ = [
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainMainInputMapGetStep",
@@ -371,6 +491,23 @@ __all__ = [
     "ToolIntegrationWeatherIntegrationDef",
     "ToolIntegrationWeatherIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseContextIntegrationDef",
+    "ToolIntegrationBrowserbaseContextIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseListSessionsIntegrationDef",
+    "ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseGetSessionIntegrationDef",
+    "ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "ToolIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -686,6 +823,184 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeath
     """Integration definition for Weather"""
 
 
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
 MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
     MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef,
     MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -693,6 +1008,12 @@ MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias
     MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationSpiderIntegrationDef,
     MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWikipediaIntegrationDef,
     MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef,
+    MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef,
+    MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 
@@ -1164,6 +1485,184 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
     """Integration definition for Weather"""
 
 
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
 MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -1171,6 +1670,12 @@ MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequest
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 
@@ -1672,6 +2177,184 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
     """Integration definition for Weather"""
 
 
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
 MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -1679,6 +2362,12 @@ MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequest
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 
@@ -2189,6 +2878,184 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
     """Integration definition for Weather"""
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
 MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -2196,6 +3063,12 @@ MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestIn
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationSpiderIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWikipediaIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 
@@ -2707,6 +3580,184 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
     """Integration definition for Weather"""
 
 
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
 MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -2714,6 +3765,12 @@ MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestIn
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationSpiderIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWikipediaIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 
@@ -3181,6 +4238,184 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
     """Integration definition for Weather"""
 
 
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
 MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -3188,6 +4423,12 @@ MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestIn
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationSpiderIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWikipediaIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 
@@ -3626,6 +4867,184 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
     """Integration definition for Weather"""
 
 
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+    ]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    TypedDict, total=False
+):
+    id: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    TypedDict, total=False
+):
+    api_key: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Required[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ]
+    """The setup parameters for the browserbase integration"""
+
+
 MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
     MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -3633,6 +5052,12 @@ MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegratio
     MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationSpiderIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWikipediaIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 
@@ -3957,6 +5382,128 @@ class ToolIntegrationWeatherIntegrationDef(TypedDict, total=False):
     """Integration definition for Weather"""
 
 
+class ToolIntegrationBrowserbaseContextIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseContextIntegrationDef(TypedDict, total=False):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseContextIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments(TypedDict, total=False):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseListSessionsIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments(TypedDict, total=False):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseCreateSessionIntegrationDef(TypedDict, total=False):
+    arguments: Required[ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments(TypedDict, total=False):
+    id: Required[str]
+
+
+class ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseGetSessionIntegrationDef(TypedDict, total=False):
+    arguments: Required[ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(TypedDict, total=False):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class ToolIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseUpdateSessionIntegrationDef(TypedDict, total=False):
+    arguments: Required[ToolIntegrationBrowserbaseUpdateSessionIntegrationDefArguments]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseUpdateSessionIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(TypedDict, total=False):
+    id: Required[str]
+
+
+class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(TypedDict, total=False):
+    arguments: Required[ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -3964,6 +5511,12 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationSpiderIntegrationDef,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
+    ToolIntegrationBrowserbaseContextIntegrationDef,
+    ToolIntegrationBrowserbaseListSessionsIntegrationDef,
+    ToolIntegrationBrowserbaseCreateSessionIntegrationDef,
+    ToolIntegrationBrowserbaseGetSessionIntegrationDef,
+    ToolIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 

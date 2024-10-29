@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Dict, Union, Optional
-from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from typing import Dict, Union, Iterable, Optional
+from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
+
+from ..._utils import PropertyInfo
 
 __all__ = [
     "ToolPatchParams",
@@ -27,6 +29,23 @@ __all__ = [
     "IntegrationWeatherIntegrationDefUpdate",
     "IntegrationWeatherIntegrationDefUpdateArguments",
     "IntegrationWeatherIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseContextIntegrationDefUpdate",
+    "IntegrationBrowserbaseContextIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseListSessionsIntegrationDefUpdate",
+    "IntegrationBrowserbaseListSessionsIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseListSessionsIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefUpdate",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseGetSessionIntegrationDefUpdate",
+    "IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseGetSessionIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseUpdateSessionIntegrationDefUpdate",
+    "IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateSetup",
     "System",
     "TextEditor20241022",
 ]
@@ -239,6 +258,128 @@ class IntegrationWeatherIntegrationDefUpdate(TypedDict, total=False):
     """Integration definition for Weather"""
 
 
+class IntegrationBrowserbaseContextIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationBrowserbaseContextIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseContextIntegrationDefUpdateSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseListSessionsIntegrationDefUpdateArguments(TypedDict, total=False):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class IntegrationBrowserbaseListSessionsIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationBrowserbaseListSessionsIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseListSessionsIntegrationDefUpdateArguments]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseListSessionsIntegrationDefUpdateSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseCreateSessionIntegrationDefUpdateArguments(TypedDict, total=False):
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class IntegrationBrowserbaseCreateSessionIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationBrowserbaseCreateSessionIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseCreateSessionIntegrationDefUpdateArguments]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseCreateSessionIntegrationDefUpdateSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments(TypedDict, total=False):
+    id: Optional[str]
+
+
+class IntegrationBrowserbaseGetSessionIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationBrowserbaseGetSessionIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseGetSessionIntegrationDefUpdateSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateArguments(TypedDict, total=False):
+    id: Optional[str]
+
+    status: Optional[Literal["REQUEST_RELEASE"]]
+
+
+class IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationBrowserbaseUpdateSessionIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateArguments]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments(TypedDict, total=False):
+    id: Optional[str]
+
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateSetup]
+    """The setup parameters for the browserbase integration"""
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDefUpdate,
     IntegrationBraveIntegrationDefUpdate,
@@ -246,6 +387,12 @@ Integration: TypeAlias = Union[
     IntegrationSpiderIntegrationDefUpdate,
     IntegrationWikipediaIntegrationDefUpdate,
     IntegrationWeatherIntegrationDefUpdate,
+    IntegrationBrowserbaseContextIntegrationDefUpdate,
+    IntegrationBrowserbaseListSessionsIntegrationDefUpdate,
+    IntegrationBrowserbaseCreateSessionIntegrationDefUpdate,
+    IntegrationBrowserbaseGetSessionIntegrationDefUpdate,
+    IntegrationBrowserbaseUpdateSessionIntegrationDefUpdate,
+    IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate,
 ]
 
 

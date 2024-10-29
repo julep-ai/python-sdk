@@ -1,6 +1,6 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import Dict, Union, Optional
+from typing import Dict, List, Union, Optional
 from datetime import datetime
 from typing_extensions import Literal, TypeAlias
 
@@ -30,6 +30,23 @@ __all__ = [
     "IntegrationWeatherIntegrationDef",
     "IntegrationWeatherIntegrationDefArguments",
     "IntegrationWeatherIntegrationDefSetup",
+    "IntegrationBrowserbaseContextIntegrationDef",
+    "IntegrationBrowserbaseContextIntegrationDefSetup",
+    "IntegrationBrowserbaseListSessionsIntegrationDef",
+    "IntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "IntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "IntegrationBrowserbaseCreateSessionIntegrationDef",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "IntegrationBrowserbaseGetSessionIntegrationDef",
+    "IntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "IntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "IntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "IntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "IntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "System",
     "TextEditor20241022",
 ]
@@ -206,6 +223,128 @@ class IntegrationWeatherIntegrationDef(BaseModel):
     """Integration definition for Weather"""
 
 
+class IntegrationBrowserbaseContextIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class IntegrationBrowserbaseContextIntegrationDef(BaseModel):
+    arguments: Optional[object] = None
+
+    method: Optional[Literal["create_context"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[IntegrationBrowserbaseContextIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseListSessionsIntegrationDefArguments(BaseModel):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]] = None
+
+
+class IntegrationBrowserbaseListSessionsIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class IntegrationBrowserbaseListSessionsIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationBrowserbaseListSessionsIntegrationDefArguments] = None
+
+    method: Optional[Literal["list_sessions"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[IntegrationBrowserbaseListSessionsIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseCreateSessionIntegrationDefArguments(BaseModel):
+    project_id: str = FieldInfo(alias="projectId")
+
+    browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
+
+    extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
+
+    keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    proxies: Union[bool, List[object], None] = None
+
+    timeout: Optional[int] = None
+
+
+class IntegrationBrowserbaseCreateSessionIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class IntegrationBrowserbaseCreateSessionIntegrationDef(BaseModel):
+    arguments: IntegrationBrowserbaseCreateSessionIntegrationDefArguments
+
+    method: Optional[Literal["create_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[IntegrationBrowserbaseCreateSessionIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseGetSessionIntegrationDefArguments(BaseModel):
+    id: str
+
+
+class IntegrationBrowserbaseGetSessionIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class IntegrationBrowserbaseGetSessionIntegrationDef(BaseModel):
+    arguments: IntegrationBrowserbaseGetSessionIntegrationDefArguments
+
+    method: Optional[Literal["get_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[IntegrationBrowserbaseGetSessionIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseUpdateSessionIntegrationDefArguments(BaseModel):
+    id: str
+
+    status: Optional[Literal["REQUEST_RELEASE"]] = None
+
+
+class IntegrationBrowserbaseUpdateSessionIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class IntegrationBrowserbaseUpdateSessionIntegrationDef(BaseModel):
+    arguments: IntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+
+    method: Optional[Literal["update_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[IntegrationBrowserbaseUpdateSessionIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(BaseModel):
+    id: str
+
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(BaseModel):
+    arguments: IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+
+    method: Optional[Literal["get_live_urls"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDef,
     IntegrationBraveIntegrationDef,
@@ -213,6 +352,12 @@ Integration: TypeAlias = Union[
     IntegrationSpiderIntegrationDef,
     IntegrationWikipediaIntegrationDef,
     IntegrationWeatherIntegrationDef,
+    IntegrationBrowserbaseContextIntegrationDef,
+    IntegrationBrowserbaseListSessionsIntegrationDef,
+    IntegrationBrowserbaseCreateSessionIntegrationDef,
+    IntegrationBrowserbaseGetSessionIntegrationDef,
+    IntegrationBrowserbaseUpdateSessionIntegrationDef,
+    IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     None,
 ]
 
