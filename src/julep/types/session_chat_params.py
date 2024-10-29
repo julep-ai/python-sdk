@@ -37,6 +37,23 @@ __all__ = [
     "ToolIntegrationWeatherIntegrationDef",
     "ToolIntegrationWeatherIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseContextIntegrationDef",
+    "ToolIntegrationBrowserbaseContextIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseListSessionsIntegrationDef",
+    "ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseGetSessionIntegrationDef",
+    "ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "ToolIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -292,6 +309,128 @@ class ToolIntegrationWeatherIntegrationDef(TypedDict, total=False):
     """Integration definition for Weather"""
 
 
+class ToolIntegrationBrowserbaseContextIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseContextIntegrationDef(TypedDict, total=False):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseContextIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments(TypedDict, total=False):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseListSessionsIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments(TypedDict, total=False):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseCreateSessionIntegrationDef(TypedDict, total=False):
+    arguments: Required[ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments(TypedDict, total=False):
+    id: Required[str]
+
+
+class ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseGetSessionIntegrationDef(TypedDict, total=False):
+    arguments: Required[ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(TypedDict, total=False):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class ToolIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseUpdateSessionIntegrationDef(TypedDict, total=False):
+    arguments: Required[ToolIntegrationBrowserbaseUpdateSessionIntegrationDefArguments]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseUpdateSessionIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(TypedDict, total=False):
+    id: Required[str]
+
+
+class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(TypedDict, total=False):
+    arguments: Required[ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -299,6 +438,12 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationSpiderIntegrationDef,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
+    ToolIntegrationBrowserbaseContextIntegrationDef,
+    ToolIntegrationBrowserbaseListSessionsIntegrationDef,
+    ToolIntegrationBrowserbaseCreateSessionIntegrationDef,
+    ToolIntegrationBrowserbaseGetSessionIntegrationDef,
+    ToolIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 

@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Dict, Union, Optional
-from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from typing import Dict, Union, Iterable, Optional
+from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
+
+from ..._utils import PropertyInfo
 
 __all__ = [
     "ToolCreateParams",
@@ -27,6 +29,23 @@ __all__ = [
     "IntegrationWeatherIntegrationDef",
     "IntegrationWeatherIntegrationDefArguments",
     "IntegrationWeatherIntegrationDefSetup",
+    "IntegrationBrowserbaseContextIntegrationDef",
+    "IntegrationBrowserbaseContextIntegrationDefSetup",
+    "IntegrationBrowserbaseListSessionsIntegrationDef",
+    "IntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "IntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "IntegrationBrowserbaseCreateSessionIntegrationDef",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "IntegrationBrowserbaseGetSessionIntegrationDef",
+    "IntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "IntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "IntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "IntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "IntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "System",
     "TextEditor20241022",
 ]
@@ -235,6 +254,128 @@ class IntegrationWeatherIntegrationDef(TypedDict, total=False):
     """Integration definition for Weather"""
 
 
+class IntegrationBrowserbaseContextIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class IntegrationBrowserbaseContextIntegrationDef(TypedDict, total=False):
+    arguments: Optional[object]
+
+    method: Literal["create_context"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseContextIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseListSessionsIntegrationDefArguments(TypedDict, total=False):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
+
+
+class IntegrationBrowserbaseListSessionsIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class IntegrationBrowserbaseListSessionsIntegrationDef(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseListSessionsIntegrationDefArguments]
+
+    method: Literal["list_sessions"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseListSessionsIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseCreateSessionIntegrationDefArguments(TypedDict, total=False):
+    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+
+    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+
+    extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
+
+    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+
+    proxies: Union[bool, Iterable[object], None]
+
+    timeout: Optional[int]
+
+
+class IntegrationBrowserbaseCreateSessionIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class IntegrationBrowserbaseCreateSessionIntegrationDef(TypedDict, total=False):
+    arguments: Required[IntegrationBrowserbaseCreateSessionIntegrationDefArguments]
+
+    method: Literal["create_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseCreateSessionIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseGetSessionIntegrationDefArguments(TypedDict, total=False):
+    id: Required[str]
+
+
+class IntegrationBrowserbaseGetSessionIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class IntegrationBrowserbaseGetSessionIntegrationDef(TypedDict, total=False):
+    arguments: Required[IntegrationBrowserbaseGetSessionIntegrationDefArguments]
+
+    method: Literal["get_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseGetSessionIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseUpdateSessionIntegrationDefArguments(TypedDict, total=False):
+    id: Required[str]
+
+    status: Literal["REQUEST_RELEASE"]
+
+
+class IntegrationBrowserbaseUpdateSessionIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class IntegrationBrowserbaseUpdateSessionIntegrationDef(TypedDict, total=False):
+    arguments: Required[IntegrationBrowserbaseUpdateSessionIntegrationDefArguments]
+
+    method: Literal["update_session"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseUpdateSessionIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(TypedDict, total=False):
+    id: Required[str]
+
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(TypedDict, total=False):
+    arguments: Required[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments]
+
+    method: Literal["get_live_urls"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup]
+    """The setup parameters for the browserbase integration"""
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDef,
     IntegrationBraveIntegrationDef,
@@ -242,6 +383,12 @@ Integration: TypeAlias = Union[
     IntegrationSpiderIntegrationDef,
     IntegrationWikipediaIntegrationDef,
     IntegrationWeatherIntegrationDef,
+    IntegrationBrowserbaseContextIntegrationDef,
+    IntegrationBrowserbaseListSessionsIntegrationDef,
+    IntegrationBrowserbaseCreateSessionIntegrationDef,
+    IntegrationBrowserbaseGetSessionIntegrationDef,
+    IntegrationBrowserbaseUpdateSessionIntegrationDef,
+    IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
 ]
 
 

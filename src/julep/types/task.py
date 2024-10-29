@@ -49,6 +49,23 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainGetStep",
@@ -100,6 +117,23 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenGetStep",
@@ -150,6 +184,23 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseGetStep",
@@ -202,6 +253,23 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainSwitchStepOutputSwitchThenGetStep",
@@ -256,6 +324,23 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainForeachStepOutputForeachDoGetStep",
@@ -301,6 +386,23 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainParallelStepOutputParallelGetStep",
@@ -346,6 +448,23 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainMainOutputMapGetStep",
@@ -373,6 +492,23 @@ __all__ = [
     "ToolIntegrationWeatherIntegrationDef",
     "ToolIntegrationWeatherIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseContextIntegrationDef",
+    "ToolIntegrationBrowserbaseContextIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseListSessionsIntegrationDef",
+    "ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseCreateSessionIntegrationDef",
+    "ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseGetSessionIntegrationDef",
+    "ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseUpdateSessionIntegrationDef",
+    "ToolIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
+    "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -650,6 +786,176 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWea
     """Integration definition for Weather"""
 
 
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[object] = None
+
+    method: Optional[Literal["create_context"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    BaseModel
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["list_sessions"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    BaseModel
+):
+    project_id: str = FieldInfo(alias="projectId")
+
+    browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
+
+    extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
+
+    keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    proxies: Union[bool, List[object], None] = None
+
+    timeout: Optional[int] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+
+    method: Optional[Literal["create_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+
+    method: Optional[Literal["get_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+    status: Optional[Literal["REQUEST_RELEASE"]] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+
+    method: Optional[Literal["update_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    BaseModel
+):
+    arguments: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+
+    method: Optional[Literal["get_live_urls"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -657,6 +963,12 @@ MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAli
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     None,
 ]
 
@@ -1110,6 +1422,176 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     """Integration definition for Weather"""
 
 
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[object] = None
+
+    method: Optional[Literal["create_context"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    BaseModel
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["list_sessions"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    BaseModel
+):
+    project_id: str = FieldInfo(alias="projectId")
+
+    browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
+
+    extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
+
+    keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    proxies: Union[bool, List[object], None] = None
+
+    timeout: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+
+    method: Optional[Literal["create_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+
+    method: Optional[Literal["get_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+    status: Optional[Literal["REQUEST_RELEASE"]] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+
+    method: Optional[Literal["update_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    BaseModel
+):
+    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+
+    method: Optional[Literal["get_live_urls"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -1117,6 +1599,12 @@ MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     None,
 ]
 
@@ -1600,6 +2088,176 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     """Integration definition for Weather"""
 
 
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[object] = None
+
+    method: Optional[Literal["create_context"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    BaseModel
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["list_sessions"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    BaseModel
+):
+    project_id: str = FieldInfo(alias="projectId")
+
+    browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
+
+    extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
+
+    keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    proxies: Union[bool, List[object], None] = None
+
+    timeout: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+
+    method: Optional[Literal["create_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+
+    method: Optional[Literal["get_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+    status: Optional[Literal["REQUEST_RELEASE"]] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+
+    method: Optional[Literal["update_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    BaseModel
+):
+    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+
+    method: Optional[Literal["get_live_urls"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -1607,6 +2265,12 @@ MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     None,
 ]
 
@@ -2099,6 +2763,176 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     """Integration definition for Weather"""
 
 
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[object] = None
+
+    method: Optional[Literal["create_context"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    BaseModel
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["list_sessions"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    BaseModel
+):
+    project_id: str = FieldInfo(alias="projectId")
+
+    browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
+
+    extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
+
+    keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    proxies: Union[bool, List[object], None] = None
+
+    timeout: Optional[int] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+
+    method: Optional[Literal["create_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+
+    method: Optional[Literal["get_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+    status: Optional[Literal["REQUEST_RELEASE"]] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+
+    method: Optional[Literal["update_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    BaseModel
+):
+    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+
+    method: Optional[Literal["get_live_urls"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -2106,6 +2940,12 @@ MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     None,
 ]
 
@@ -2609,6 +3449,176 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     """Integration definition for Weather"""
 
 
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[object] = None
+
+    method: Optional[Literal["create_context"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    BaseModel
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["list_sessions"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    BaseModel
+):
+    project_id: str = FieldInfo(alias="projectId")
+
+    browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
+
+    extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
+
+    keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    proxies: Union[bool, List[object], None] = None
+
+    timeout: Optional[int] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+
+    method: Optional[Literal["create_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+
+    method: Optional[Literal["get_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+    status: Optional[Literal["REQUEST_RELEASE"]] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+
+    method: Optional[Literal["update_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    BaseModel
+):
+    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+
+    method: Optional[Literal["get_live_urls"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -2616,6 +3626,12 @@ MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     None,
 ]
 
@@ -3068,6 +4084,176 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     """Integration definition for Weather"""
 
 
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[object] = None
+
+    method: Optional[Literal["create_context"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    BaseModel
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["list_sessions"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    BaseModel
+):
+    project_id: str = FieldInfo(alias="projectId")
+
+    browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
+
+    extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
+
+    keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    proxies: Union[bool, List[object], None] = None
+
+    timeout: Optional[int] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+
+    method: Optional[Literal["create_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+
+    method: Optional[Literal["get_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+    status: Optional[Literal["REQUEST_RELEASE"]] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+
+    method: Optional[Literal["update_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    BaseModel
+):
+    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+
+    method: Optional[Literal["get_live_urls"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -3075,6 +4261,12 @@ MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     None,
 ]
 
@@ -3516,6 +4708,176 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
     """Integration definition for Weather"""
 
 
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[object] = None
+
+    method: Optional[Literal["create_context"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments(
+    BaseModel
+):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["list_sessions"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
+    BaseModel
+):
+    project_id: str = FieldInfo(alias="projectId")
+
+    browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
+
+    extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
+
+    keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    proxies: Union[bool, List[object], None] = None
+
+    timeout: Optional[int] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+
+    method: Optional[Literal["create_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+
+    method: Optional[Literal["get_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+    status: Optional[Literal["REQUEST_RELEASE"]] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef(
+    BaseModel
+):
+    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+
+    method: Optional[Literal["update_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
+    BaseModel
+):
+    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+
+    method: Optional[Literal["get_live_urls"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -3523,6 +4885,12 @@ MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegra
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     None,
 ]
 
@@ -3853,6 +5221,128 @@ class ToolIntegrationWeatherIntegrationDef(BaseModel):
     """Integration definition for Weather"""
 
 
+class ToolIntegrationBrowserbaseContextIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ToolIntegrationBrowserbaseContextIntegrationDef(BaseModel):
+    arguments: Optional[object] = None
+
+    method: Optional[Literal["create_context"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ToolIntegrationBrowserbaseContextIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments(BaseModel):
+    status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]] = None
+
+
+class ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ToolIntegrationBrowserbaseListSessionsIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments] = None
+
+    method: Optional[Literal["list_sessions"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments(BaseModel):
+    project_id: str = FieldInfo(alias="projectId")
+
+    browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
+
+    extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
+
+    keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    proxies: Union[bool, List[object], None] = None
+
+    timeout: Optional[int] = None
+
+
+class ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ToolIntegrationBrowserbaseCreateSessionIntegrationDef(BaseModel):
+    arguments: ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+
+    method: Optional[Literal["create_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments(BaseModel):
+    id: str
+
+
+class ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ToolIntegrationBrowserbaseGetSessionIntegrationDef(BaseModel):
+    arguments: ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments
+
+    method: Optional[Literal["get_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(BaseModel):
+    id: str
+
+    status: Optional[Literal["REQUEST_RELEASE"]] = None
+
+
+class ToolIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ToolIntegrationBrowserbaseUpdateSessionIntegrationDef(BaseModel):
+    arguments: ToolIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+
+    method: Optional[Literal["update_session"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ToolIntegrationBrowserbaseUpdateSessionIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(BaseModel):
+    id: str
+
+
+class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(BaseModel):
+    arguments: ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+
+    method: Optional[Literal["get_live_urls"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -3860,6 +5350,12 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationSpiderIntegrationDef,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
+    ToolIntegrationBrowserbaseContextIntegrationDef,
+    ToolIntegrationBrowserbaseListSessionsIntegrationDef,
+    ToolIntegrationBrowserbaseCreateSessionIntegrationDef,
+    ToolIntegrationBrowserbaseGetSessionIntegrationDef,
+    ToolIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     None,
 ]
 
