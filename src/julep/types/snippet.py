@@ -1,5 +1,6 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
+from typing import List, Optional
 
 from .._models import BaseModel
 
@@ -10,3 +11,5 @@ class Snippet(BaseModel):
     content: str
 
     index: int
+
+    embedding: Optional[List[float]] = None
