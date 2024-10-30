@@ -37,7 +37,11 @@ __all__ = [
     "ContentToolOutputIntegrationWeatherIntegrationDefArguments",
     "ContentToolOutputIntegrationWeatherIntegrationDefSetup",
     "ContentToolOutputIntegrationBrowserbaseContextIntegrationDef",
+    "ContentToolOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "ContentToolOutputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDef",
+    "ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDefArguments",
+    "ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDefSetup",
     "ContentToolOutputIntegrationBrowserbaseListSessionsIntegrationDef",
     "ContentToolOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
     "ContentToolOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
@@ -47,12 +51,18 @@ __all__ = [
     "ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDef",
     "ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
     "ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
-    "ContentToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDef",
-    "ContentToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
-    "ContentToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDef",
+    "ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments",
+    "ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefSetup",
     "ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
+    "ContentToolOutputIntegrationRemoteBrowserIntegrationDef",
+    "ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments",
+    "ContentToolOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "ContentToolOutputSystem",
     "ContentToolOutputTextEditor20241022",
     "ContentChosenFunctionCall",
@@ -91,7 +101,11 @@ __all__ = [
     "ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDefArguments",
     "ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDefSetup",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDefSetup",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDefArguments",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDefSetup",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseListSessionsIntegrationDef",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup",
@@ -101,12 +115,18 @@ __all__ = [
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDef",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup",
-    "ContentUnionMember8ToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDef",
-    "ContentUnionMember8ToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments",
-    "ContentUnionMember8ToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefSetup",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
+    "ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDef",
+    "ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArguments",
+    "ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "ContentUnionMember8ToolOutputSystem",
     "ContentUnionMember8ToolOutputTextEditor20241022",
     "ContentUnionMember8ChosenFunctionCall",
@@ -314,18 +334,43 @@ class ContentToolOutputIntegrationWeatherIntegrationDef(BaseModel):
     """Integration definition for Weather"""
 
 
+class ContentToolOutputIntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
+    project_id: str = FieldInfo(alias="projectId")
+
+
 class ContentToolOutputIntegrationBrowserbaseContextIntegrationDefSetup(BaseModel):
     api_key: str
 
 
 class ContentToolOutputIntegrationBrowserbaseContextIntegrationDef(BaseModel):
-    arguments: Optional[object] = None
+    arguments: Optional[ContentToolOutputIntegrationBrowserbaseContextIntegrationDefArguments] = None
 
     method: Optional[Literal["create_context"]] = None
 
     provider: Optional[Literal["browserbase"]] = None
 
     setup: Optional[ContentToolOutputIntegrationBrowserbaseContextIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDefArguments(BaseModel):
+    repository_name: str = FieldInfo(alias="repositoryName")
+
+    ref: Optional[str] = None
+
+
+class ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDefArguments] = None
+
+    method: Optional[Literal["install_extension_from_github"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDefSetup] = None
     """The setup parameters for the browserbase integration"""
 
 
@@ -396,24 +441,24 @@ class ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDef(BaseModel)
     """The setup parameters for the browserbase integration"""
 
 
-class ContentToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(BaseModel):
+class ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments(BaseModel):
     id: str
 
     status: Optional[Literal["REQUEST_RELEASE"]] = None
 
 
-class ContentToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(BaseModel):
+class ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
 
-class ContentToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDef(BaseModel):
-    arguments: ContentToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+class ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(BaseModel):
+    arguments: ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
 
-    method: Optional[Literal["update_session"]] = None
+    method: Optional[Literal["complete_session"]] = None
 
     provider: Optional[Literal["browserbase"]] = None
 
-    setup: Optional[ContentToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup] = None
+    setup: Optional[ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefSetup] = None
     """The setup parameters for the browserbase integration"""
 
 
@@ -436,6 +481,67 @@ class ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(Ba
     """The setup parameters for the browserbase integration"""
 
 
+class ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(BaseModel):
+    id: str
+
+
+class ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
+    arguments: ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "mouse_move",
+        "left_click",
+        "left_click_drag",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+        "cursor_position",
+        "navigate",
+        "refresh",
+        "wait_for_load",
+    ]
+
+    coordinate: Optional[List[object]] = None
+
+    text: Optional[str] = None
+
+
+class ContentToolOutputIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
+    connect_url: str
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
+
+
+class ContentToolOutputIntegrationRemoteBrowserIntegrationDef(BaseModel):
+    arguments: ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments
+    """The arguments for the remote browser"""
+
+    setup: ContentToolOutputIntegrationRemoteBrowserIntegrationDefSetup
+    """The setup parameters for the remote browser"""
+
+    method: Optional[Literal["perform_action"]] = None
+
+    provider: Optional[Literal["remote_browser"]] = None
+
+
 ContentToolOutputIntegration: TypeAlias = Union[
     ContentToolOutputIntegrationDummyIntegrationDef,
     ContentToolOutputIntegrationBraveIntegrationDef,
@@ -444,11 +550,14 @@ ContentToolOutputIntegration: TypeAlias = Union[
     ContentToolOutputIntegrationWikipediaIntegrationDef,
     ContentToolOutputIntegrationWeatherIntegrationDef,
     ContentToolOutputIntegrationBrowserbaseContextIntegrationDef,
+    ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDef,
     ContentToolOutputIntegrationBrowserbaseListSessionsIntegrationDef,
     ContentToolOutputIntegrationBrowserbaseCreateSessionIntegrationDef,
     ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDef,
-    ContentToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDef,
     ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
+    ContentToolOutputIntegrationRemoteBrowserIntegrationDef,
     None,
 ]
 
@@ -820,18 +929,43 @@ class ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDef(BaseModel):
     """Integration definition for Weather"""
 
 
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
+    project_id: str = FieldInfo(alias="projectId")
+
+
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDefSetup(BaseModel):
     api_key: str
 
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDef(BaseModel):
-    arguments: Optional[object] = None
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDefArguments] = None
 
     method: Optional[Literal["create_context"]] = None
 
     provider: Optional[Literal["browserbase"]] = None
 
     setup: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDefArguments(BaseModel):
+    repository_name: str = FieldInfo(alias="repositoryName")
+
+    ref: Optional[str] = None
+
+
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDefArguments] = None
+
+    method: Optional[Literal["install_extension_from_github"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDefSetup] = None
     """The setup parameters for the browserbase integration"""
 
 
@@ -902,24 +1036,24 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDe
     """The setup parameters for the browserbase integration"""
 
 
-class ContentUnionMember8ToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments(BaseModel):
     id: str
 
     status: Optional[Literal["REQUEST_RELEASE"]] = None
 
 
-class ContentUnionMember8ToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup(BaseModel):
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
 
-class ContentUnionMember8ToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDef(BaseModel):
-    arguments: ContentUnionMember8ToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefArguments
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(BaseModel):
+    arguments: ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
 
-    method: Optional[Literal["update_session"]] = None
+    method: Optional[Literal["complete_session"]] = None
 
     provider: Optional[Literal["browserbase"]] = None
 
-    setup: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDefSetup] = None
+    setup: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefSetup] = None
     """The setup parameters for the browserbase integration"""
 
 
@@ -942,6 +1076,67 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsInteg
     """The setup parameters for the browserbase integration"""
 
 
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(BaseModel):
+    id: str
+
+
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
+    arguments: ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
+class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "mouse_move",
+        "left_click",
+        "left_click_drag",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+        "cursor_position",
+        "navigate",
+        "refresh",
+        "wait_for_load",
+    ]
+
+    coordinate: Optional[List[object]] = None
+
+    text: Optional[str] = None
+
+
+class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
+    connect_url: str
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
+
+
+class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDef(BaseModel):
+    arguments: ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArguments
+    """The arguments for the remote browser"""
+
+    setup: ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefSetup
+    """The setup parameters for the remote browser"""
+
+    method: Optional[Literal["perform_action"]] = None
+
+    provider: Optional[Literal["remote_browser"]] = None
+
+
 ContentUnionMember8ToolOutputIntegration: TypeAlias = Union[
     ContentUnionMember8ToolOutputIntegrationDummyIntegrationDef,
     ContentUnionMember8ToolOutputIntegrationBraveIntegrationDef,
@@ -950,11 +1145,14 @@ ContentUnionMember8ToolOutputIntegration: TypeAlias = Union[
     ContentUnionMember8ToolOutputIntegrationWikipediaIntegrationDef,
     ContentUnionMember8ToolOutputIntegrationWeatherIntegrationDef,
     ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDef,
+    ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDef,
     ContentUnionMember8ToolOutputIntegrationBrowserbaseListSessionsIntegrationDef,
     ContentUnionMember8ToolOutputIntegrationBrowserbaseCreateSessionIntegrationDef,
     ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDef,
-    ContentUnionMember8ToolOutputIntegrationBrowserbaseUpdateSessionIntegrationDef,
+    ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDef,
     ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
+    ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDef,
     None,
 ]
 
