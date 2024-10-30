@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.25.1 (2024-10-30)
+
+Full Changelog: [v1.25.0...v1.25.1](https://github.com/julep-ai/python-sdk/compare/v1.25.0...v1.25.1)
+
+### Bug Fixes
+
+* Fix import ([405e1db](https://github.com/julep-ai/python-sdk/commit/405e1dba578da2732373431bbae0e4b802554699))
+
+
+### Chores
+
+* Fix formatting ([a0b10ef](https://github.com/julep-ai/python-sdk/commit/a0b10ef5b42e43dd15a4de7a2f5e642efa23cc84))
+* Ignore attr defined error ([abd8afe](https://github.com/julep-ai/python-sdk/commit/abd8afe890a22a79ee718363d1ab61ed863ab0cb))
+* Ignore typing errors ([3de90b1](https://github.com/julep-ai/python-sdk/commit/3de90b100ad1f99c3824bde44699651f22ff7a33))
+
 ## 1.25.0 (2024-10-30)
 
 Full Changelog: [v1.24.0...v1.25.0](https://github.com/julep-ai/python-sdk/compare/v1.24.0...v1.25.0)
