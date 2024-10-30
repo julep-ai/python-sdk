@@ -17,6 +17,8 @@ class TextOnlyDocSearchRequest(TypedDict, total=False):
 
     metadata_filter: Dict[str, Union[float, str, bool, None]]
 
+    mmr_strength: float
+
 
 class VectorDocSearchRequest(TypedDict, total=False):
     vector: Required[Iterable[float]]
@@ -28,6 +30,8 @@ class VectorDocSearchRequest(TypedDict, total=False):
     limit: int
 
     metadata_filter: Dict[str, Union[float, str, bool, None]]
+
+    mmr_strength: float
 
 
 class HybridDocSearchRequest(TypedDict, total=False):
@@ -44,6 +48,8 @@ class HybridDocSearchRequest(TypedDict, total=False):
     limit: int
 
     metadata_filter: Dict[str, Union[float, str, bool, None]]
+
+    mmr_strength: float
 
 
 DocSearchParams: TypeAlias = Union[TextOnlyDocSearchRequest, VectorDocSearchRequest, HybridDocSearchRequest]
