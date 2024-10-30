@@ -30,7 +30,11 @@ __all__ = [
     "IntegrationWeatherIntegrationDefUpdateArguments",
     "IntegrationWeatherIntegrationDefUpdateSetup",
     "IntegrationBrowserbaseContextIntegrationDefUpdate",
+    "IntegrationBrowserbaseContextIntegrationDefUpdateArguments",
     "IntegrationBrowserbaseContextIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseExtensionIntegrationDefUpdate",
+    "IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseExtensionIntegrationDefUpdateSetup",
     "IntegrationBrowserbaseListSessionsIntegrationDefUpdate",
     "IntegrationBrowserbaseListSessionsIntegrationDefUpdateArguments",
     "IntegrationBrowserbaseListSessionsIntegrationDefUpdateSetup",
@@ -40,12 +44,18 @@ __all__ = [
     "IntegrationBrowserbaseGetSessionIntegrationDefUpdate",
     "IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments",
     "IntegrationBrowserbaseGetSessionIntegrationDefUpdateSetup",
-    "IntegrationBrowserbaseUpdateSessionIntegrationDefUpdate",
-    "IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateArguments",
-    "IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseCompleteSessionIntegrationDefUpdate",
+    "IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateSetup",
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate",
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments",
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate",
+    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup",
+    "IntegrationRemoteBrowserIntegrationDefUpdate",
+    "IntegrationRemoteBrowserIntegrationDefUpdateArguments",
+    "IntegrationRemoteBrowserIntegrationDefUpdateSetup",
     "System",
     "TextEditor20241022",
 ]
@@ -258,18 +268,43 @@ class IntegrationWeatherIntegrationDefUpdate(TypedDict, total=False):
     """Integration definition for Weather"""
 
 
+class IntegrationBrowserbaseContextIntegrationDefUpdateArguments(TypedDict, total=False):
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
+
+
 class IntegrationBrowserbaseContextIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
 
 
 class IntegrationBrowserbaseContextIntegrationDefUpdate(TypedDict, total=False):
-    arguments: Optional[object]
+    arguments: Optional[IntegrationBrowserbaseContextIntegrationDefUpdateArguments]
 
     method: Literal["create_context"]
 
     provider: Literal["browserbase"]
 
     setup: Optional[IntegrationBrowserbaseContextIntegrationDefUpdateSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments(TypedDict, total=False):
+    ref: Optional[str]
+
+    repository_name: Annotated[Optional[str], PropertyInfo(alias="repositoryName")]
+
+
+class IntegrationBrowserbaseExtensionIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationBrowserbaseExtensionIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments]
+
+    method: Optional[Literal["install_extension_from_github"]]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseExtensionIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
@@ -340,24 +375,24 @@ class IntegrationBrowserbaseGetSessionIntegrationDefUpdate(TypedDict, total=Fals
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateArguments(TypedDict, total=False):
+class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments(TypedDict, total=False):
     id: Optional[str]
 
-    status: Optional[Literal["REQUEST_RELEASE"]]
+    status: Literal["REQUEST_RELEASE"]
 
 
-class IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateSetup(TypedDict, total=False):
+class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
 
 
-class IntegrationBrowserbaseUpdateSessionIntegrationDefUpdate(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateArguments]
+class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments]
 
-    method: Literal["update_session"]
+    method: Literal["complete_session"]
 
     provider: Literal["browserbase"]
 
-    setup: Optional[IntegrationBrowserbaseUpdateSessionIntegrationDefUpdateSetup]
+    setup: Optional[IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
@@ -380,6 +415,69 @@ class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate(TypedDict, to
     """The setup parameters for the browserbase integration"""
 
 
+class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments(TypedDict, total=False):
+    id: Optional[str]
+
+
+class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments]
+
+    method: Literal["get_connect_url"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup]
+    """The setup parameters for the browserbase integration"""
+
+
+class IntegrationRemoteBrowserIntegrationDefUpdateArguments(TypedDict, total=False):
+    action: Optional[
+        Literal[
+            "key",
+            "type",
+            "mouse_move",
+            "left_click",
+            "left_click_drag",
+            "right_click",
+            "middle_click",
+            "double_click",
+            "screenshot",
+            "cursor_position",
+            "navigate",
+            "refresh",
+            "wait_for_load",
+        ]
+    ]
+
+    coordinate: Optional[Iterable[object]]
+
+    text: Optional[str]
+
+
+class IntegrationRemoteBrowserIntegrationDefUpdateSetup(TypedDict, total=False):
+    connect_url: Optional[str]
+
+    height: Optional[int]
+
+    width: Optional[int]
+
+
+class IntegrationRemoteBrowserIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationRemoteBrowserIntegrationDefUpdateArguments]
+    """The arguments for the remote browser"""
+
+    method: Literal["perform_action"]
+
+    provider: Literal["remote_browser"]
+
+    setup: Optional[IntegrationRemoteBrowserIntegrationDefUpdateSetup]
+    """The setup parameters for the remote browser"""
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDefUpdate,
     IntegrationBraveIntegrationDefUpdate,
@@ -388,11 +486,14 @@ Integration: TypeAlias = Union[
     IntegrationWikipediaIntegrationDefUpdate,
     IntegrationWeatherIntegrationDefUpdate,
     IntegrationBrowserbaseContextIntegrationDefUpdate,
+    IntegrationBrowserbaseExtensionIntegrationDefUpdate,
     IntegrationBrowserbaseListSessionsIntegrationDefUpdate,
     IntegrationBrowserbaseCreateSessionIntegrationDefUpdate,
     IntegrationBrowserbaseGetSessionIntegrationDefUpdate,
-    IntegrationBrowserbaseUpdateSessionIntegrationDefUpdate,
+    IntegrationBrowserbaseCompleteSessionIntegrationDefUpdate,
     IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate,
+    IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate,
+    IntegrationRemoteBrowserIntegrationDefUpdate,
 ]
 
 
