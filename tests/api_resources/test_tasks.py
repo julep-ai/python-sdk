@@ -32,7 +32,12 @@ class TestTasks:
     def test_method_create_with_all_params(self, client: Julep) -> None:
         task = client.tasks.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": "string"}}],
+            main=[
+                {
+                    "evaluate": {"foo": "string"},
+                    "label": "label",
+                }
+            ],
             name="name",
             description="description",
             inherit_tools=True,
@@ -41,6 +46,7 @@ class TestTasks:
             tools=[
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -51,6 +57,7 @@ class TestTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -90,6 +97,7 @@ class TestTasks:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -100,6 +108,7 @@ class TestTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -139,6 +148,7 @@ class TestTasks:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -149,6 +159,7 @@ class TestTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -291,7 +302,12 @@ class TestTasks:
         task = client.tasks.create_or_update(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": "string"}}],
+            main=[
+                {
+                    "evaluate": {"foo": "string"},
+                    "label": "label",
+                }
+            ],
             name="name",
             description="description",
             inherit_tools=True,
@@ -300,6 +316,7 @@ class TestTasks:
             tools=[
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -310,6 +327,7 @@ class TestTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -349,6 +367,7 @@ class TestTasks:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -359,6 +378,7 @@ class TestTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -398,6 +418,7 @@ class TestTasks:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -408,6 +429,7 @@ class TestTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -552,7 +574,12 @@ class TestAsyncTasks:
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
         task = await async_client.tasks.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": "string"}}],
+            main=[
+                {
+                    "evaluate": {"foo": "string"},
+                    "label": "label",
+                }
+            ],
             name="name",
             description="description",
             inherit_tools=True,
@@ -561,6 +588,7 @@ class TestAsyncTasks:
             tools=[
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -571,6 +599,7 @@ class TestAsyncTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -610,6 +639,7 @@ class TestAsyncTasks:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -620,6 +650,7 @@ class TestAsyncTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -659,6 +690,7 @@ class TestAsyncTasks:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -669,6 +701,7 @@ class TestAsyncTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -811,7 +844,12 @@ class TestAsyncTasks:
         task = await async_client.tasks.create_or_update(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": "string"}}],
+            main=[
+                {
+                    "evaluate": {"foo": "string"},
+                    "label": "label",
+                }
+            ],
             name="name",
             description="description",
             inherit_tools=True,
@@ -820,6 +858,7 @@ class TestAsyncTasks:
             tools=[
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -830,6 +869,7 @@ class TestAsyncTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -869,6 +909,7 @@ class TestAsyncTasks:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -879,6 +920,7 @@ class TestAsyncTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -918,6 +960,7 @@ class TestAsyncTasks:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -928,6 +971,7 @@ class TestAsyncTasks:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {

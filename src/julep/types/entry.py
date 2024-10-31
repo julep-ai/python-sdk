@@ -182,6 +182,8 @@ class ContentToolOutputAPICall(BaseModel):
 
     params: Union[str, object, None] = None
 
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
     timeout: Optional[int] = None
 
 
@@ -600,6 +602,10 @@ class ContentToolOutput(BaseModel):
 
     name: str
 
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
+
     updated_at: datetime
 
     api_call: Optional[ContentToolOutputAPICall] = None
@@ -776,6 +782,8 @@ class ContentUnionMember8ToolOutputAPICall(BaseModel):
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
 
     timeout: Optional[int] = None
 
@@ -1194,6 +1202,10 @@ class ContentUnionMember8ToolOutput(BaseModel):
     created_at: datetime
 
     name: str
+
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
 
     updated_at: datetime
 

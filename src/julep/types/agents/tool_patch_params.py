@@ -87,6 +87,18 @@ class ToolPatchParams(TypedDict, total=False):
 
     text_editor_20241022: Optional[TextEditor20241022]
 
+    type: Optional[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
 
 class APICall(TypedDict, total=False):
     content: Optional[str]
@@ -104,6 +116,8 @@ class APICall(TypedDict, total=False):
     method: Optional[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 

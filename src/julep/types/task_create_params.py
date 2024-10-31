@@ -612,11 +612,15 @@ class TaskCreateParams(TypedDict, total=False):
 class MainEvaluateStep(TypedDict, total=False):
     evaluate: Required[Dict[str, str]]
 
+    label: Optional[str]
+
 
 class MainToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+
+    label: Optional[str]
 
 
 class MainPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -708,6 +712,8 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall(TypedDic
     json: Optional[object]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 
@@ -1256,6 +1262,18 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor202410
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
     api_call: Optional[MainPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
 
@@ -1288,6 +1306,8 @@ class MainPromptStepInput(TypedDict, total=False):
 
     forward_tool_results: Optional[bool]
 
+    label: Optional[str]
+
     settings: Optional[ChatSettingsParam]
 
     tool_choice: Optional[MainPromptStepInputToolChoice]
@@ -1300,19 +1320,27 @@ class MainPromptStepInput(TypedDict, total=False):
 class MainGetStep(TypedDict, total=False):
     get: Required[str]
 
+    label: Optional[str]
+
 
 class MainSetStep(TypedDict, total=False):
     set: Required[Dict[str, str]]
 
+    label: Optional[str]
+
 
 class MainLogStep(TypedDict, total=False):
     log: Required[str]
+
+    label: Optional[str]
 
 
 class MainYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
     arguments: Union[Dict[str, str], Literal["_"]]
+
+    label: Optional[str]
 
 
 _MainReturnStepReservedKeywords = TypedDict(
@@ -1325,7 +1353,7 @@ _MainReturnStepReservedKeywords = TypedDict(
 
 
 class MainReturnStep(_MainReturnStepReservedKeywords, total=False):
-    pass
+    label: Optional[str]
 
 
 class MainSleepStepSleep(TypedDict, total=False):
@@ -1341,9 +1369,13 @@ class MainSleepStepSleep(TypedDict, total=False):
 class MainSleepStep(TypedDict, total=False):
     sleep: Required[MainSleepStepSleep]
 
+    label: Optional[str]
+
 
 class MainErrorWorkflowStep(TypedDict, total=False):
     error: Required[str]
+
+    label: Optional[str]
 
 
 class MainWaitForInputStepWaitForInput(TypedDict, total=False):
@@ -1353,15 +1385,21 @@ class MainWaitForInputStepWaitForInput(TypedDict, total=False):
 class MainWaitForInputStep(TypedDict, total=False):
     wait_for_input: Required[MainWaitForInputStepWaitForInput]
 
+    label: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenEvaluateStep(TypedDict, total=False):
     evaluate: Required[Dict[str, str]]
+
+    label: Optional[str]
 
 
 class MainIfElseWorkflowStepInputThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+
+    label: Optional[str]
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1Content(
@@ -1473,6 +1511,8 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
     json: Optional[object]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 
@@ -2047,6 +2087,18 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
     api_call: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
 
@@ -2088,6 +2140,8 @@ class MainIfElseWorkflowStepInputThenPromptStepInput(TypedDict, total=False):
 
     forward_tool_results: Optional[bool]
 
+    label: Optional[str]
+
     settings: Optional[ChatSettingsParam]
 
     tool_choice: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolChoice]
@@ -2100,19 +2154,27 @@ class MainIfElseWorkflowStepInputThenPromptStepInput(TypedDict, total=False):
 class MainIfElseWorkflowStepInputThenGetStep(TypedDict, total=False):
     get: Required[str]
 
+    label: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenSetStep(TypedDict, total=False):
     set: Required[Dict[str, str]]
 
+    label: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenLogStep(TypedDict, total=False):
     log: Required[str]
+
+    label: Optional[str]
 
 
 class MainIfElseWorkflowStepInputThenYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
     arguments: Union[Dict[str, str], Literal["_"]]
+
+    label: Optional[str]
 
 
 _MainIfElseWorkflowStepInputThenReturnStepReservedKeywords = TypedDict(
@@ -2127,7 +2189,7 @@ _MainIfElseWorkflowStepInputThenReturnStepReservedKeywords = TypedDict(
 class MainIfElseWorkflowStepInputThenReturnStep(
     _MainIfElseWorkflowStepInputThenReturnStepReservedKeywords, total=False
 ):
-    pass
+    label: Optional[str]
 
 
 class MainIfElseWorkflowStepInputThenSleepStepSleep(TypedDict, total=False):
@@ -2143,9 +2205,13 @@ class MainIfElseWorkflowStepInputThenSleepStepSleep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputThenSleepStep(TypedDict, total=False):
     sleep: Required[MainIfElseWorkflowStepInputThenSleepStepSleep]
 
+    label: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenErrorWorkflowStep(TypedDict, total=False):
     error: Required[str]
+
+    label: Optional[str]
 
 
 class MainIfElseWorkflowStepInputThenWaitForInputStepWaitForInput(TypedDict, total=False):
@@ -2154,6 +2220,8 @@ class MainIfElseWorkflowStepInputThenWaitForInputStepWaitForInput(TypedDict, tot
 
 class MainIfElseWorkflowStepInputThenWaitForInputStep(TypedDict, total=False):
     wait_for_input: Required[MainIfElseWorkflowStepInputThenWaitForInputStepWaitForInput]
+
+    label: Optional[str]
 
 
 MainIfElseWorkflowStepInputThen: TypeAlias = Union[
@@ -2174,11 +2242,15 @@ MainIfElseWorkflowStepInputThen: TypeAlias = Union[
 class MainIfElseWorkflowStepInputElseEvaluateStep(TypedDict, total=False):
     evaluate: Required[Dict[str, str]]
 
+    label: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElseToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+
+    label: Optional[str]
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1Content(
@@ -2290,6 +2362,8 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
     json: Optional[object]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 
@@ -2864,6 +2938,18 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
     api_call: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
 
@@ -2905,6 +2991,8 @@ class MainIfElseWorkflowStepInputElsePromptStepInput(TypedDict, total=False):
 
     forward_tool_results: Optional[bool]
 
+    label: Optional[str]
+
     settings: Optional[ChatSettingsParam]
 
     tool_choice: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolChoice]
@@ -2917,19 +3005,27 @@ class MainIfElseWorkflowStepInputElsePromptStepInput(TypedDict, total=False):
 class MainIfElseWorkflowStepInputElseGetStep(TypedDict, total=False):
     get: Required[str]
 
+    label: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElseSetStep(TypedDict, total=False):
     set: Required[Dict[str, str]]
 
+    label: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElseLogStep(TypedDict, total=False):
     log: Required[str]
+
+    label: Optional[str]
 
 
 class MainIfElseWorkflowStepInputElseYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
     arguments: Union[Dict[str, str], Literal["_"]]
+
+    label: Optional[str]
 
 
 _MainIfElseWorkflowStepInputElseReturnStepReservedKeywords = TypedDict(
@@ -2944,7 +3040,7 @@ _MainIfElseWorkflowStepInputElseReturnStepReservedKeywords = TypedDict(
 class MainIfElseWorkflowStepInputElseReturnStep(
     _MainIfElseWorkflowStepInputElseReturnStepReservedKeywords, total=False
 ):
-    pass
+    label: Optional[str]
 
 
 class MainIfElseWorkflowStepInputElseSleepStepSleep(TypedDict, total=False):
@@ -2960,9 +3056,13 @@ class MainIfElseWorkflowStepInputElseSleepStepSleep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputElseSleepStep(TypedDict, total=False):
     sleep: Required[MainIfElseWorkflowStepInputElseSleepStepSleep]
 
+    label: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElseErrorWorkflowStep(TypedDict, total=False):
     error: Required[str]
+
+    label: Optional[str]
 
 
 class MainIfElseWorkflowStepInputElseWaitForInputStepWaitForInput(TypedDict, total=False):
@@ -2971,6 +3071,8 @@ class MainIfElseWorkflowStepInputElseWaitForInputStepWaitForInput(TypedDict, tot
 
 class MainIfElseWorkflowStepInputElseWaitForInputStep(TypedDict, total=False):
     wait_for_input: Required[MainIfElseWorkflowStepInputElseWaitForInputStepWaitForInput]
+
+    label: Optional[str]
 
 
 MainIfElseWorkflowStepInputElse: TypeAlias = Union[
@@ -3000,15 +3102,21 @@ _MainIfElseWorkflowStepInputReservedKeywords = TypedDict(
 class MainIfElseWorkflowStepInput(_MainIfElseWorkflowStepInputReservedKeywords, total=False):
     then: Required[MainIfElseWorkflowStepInputThen]
 
+    label: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenEvaluateStep(TypedDict, total=False):
     evaluate: Required[Dict[str, str]]
+
+    label: Optional[str]
 
 
 class MainSwitchStepInputSwitchThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+
+    label: Optional[str]
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -3116,6 +3224,8 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
     json: Optional[object]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 
@@ -3688,6 +3798,18 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
     api_call: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
 
@@ -3729,6 +3851,8 @@ class MainSwitchStepInputSwitchThenPromptStepInput(TypedDict, total=False):
 
     forward_tool_results: Optional[bool]
 
+    label: Optional[str]
+
     settings: Optional[ChatSettingsParam]
 
     tool_choice: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolChoice]
@@ -3741,19 +3865,27 @@ class MainSwitchStepInputSwitchThenPromptStepInput(TypedDict, total=False):
 class MainSwitchStepInputSwitchThenGetStep(TypedDict, total=False):
     get: Required[str]
 
+    label: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenSetStep(TypedDict, total=False):
     set: Required[Dict[str, str]]
 
+    label: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenLogStep(TypedDict, total=False):
     log: Required[str]
+
+    label: Optional[str]
 
 
 class MainSwitchStepInputSwitchThenYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
     arguments: Union[Dict[str, str], Literal["_"]]
+
+    label: Optional[str]
 
 
 _MainSwitchStepInputSwitchThenReturnStepReservedKeywords = TypedDict(
@@ -3766,7 +3898,7 @@ _MainSwitchStepInputSwitchThenReturnStepReservedKeywords = TypedDict(
 
 
 class MainSwitchStepInputSwitchThenReturnStep(_MainSwitchStepInputSwitchThenReturnStepReservedKeywords, total=False):
-    pass
+    label: Optional[str]
 
 
 class MainSwitchStepInputSwitchThenSleepStepSleep(TypedDict, total=False):
@@ -3782,9 +3914,13 @@ class MainSwitchStepInputSwitchThenSleepStepSleep(TypedDict, total=False):
 class MainSwitchStepInputSwitchThenSleepStep(TypedDict, total=False):
     sleep: Required[MainSwitchStepInputSwitchThenSleepStepSleep]
 
+    label: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenErrorWorkflowStep(TypedDict, total=False):
     error: Required[str]
+
+    label: Optional[str]
 
 
 class MainSwitchStepInputSwitchThenWaitForInputStepWaitForInput(TypedDict, total=False):
@@ -3793,6 +3929,8 @@ class MainSwitchStepInputSwitchThenWaitForInputStepWaitForInput(TypedDict, total
 
 class MainSwitchStepInputSwitchThenWaitForInputStep(TypedDict, total=False):
     wait_for_input: Required[MainSwitchStepInputSwitchThenWaitForInputStepWaitForInput]
+
+    label: Optional[str]
 
 
 MainSwitchStepInputSwitchThen: TypeAlias = Union[
@@ -3819,6 +3957,8 @@ class MainSwitchStepInputSwitch(TypedDict, total=False):
 class MainSwitchStepInput(TypedDict, total=False):
     switch: Required[Iterable[MainSwitchStepInputSwitch]]
 
+    label: Optional[str]
+
 
 class MainForeachStepInputForeachDoWaitForInputStepWaitForInput(TypedDict, total=False):
     info: Required[Dict[str, str]]
@@ -3827,15 +3967,21 @@ class MainForeachStepInputForeachDoWaitForInputStepWaitForInput(TypedDict, total
 class MainForeachStepInputForeachDoWaitForInputStep(TypedDict, total=False):
     wait_for_input: Required[MainForeachStepInputForeachDoWaitForInputStepWaitForInput]
 
+    label: Optional[str]
+
 
 class MainForeachStepInputForeachDoEvaluateStep(TypedDict, total=False):
     evaluate: Required[Dict[str, str]]
+
+    label: Optional[str]
 
 
 class MainForeachStepInputForeachDoToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+
+    label: Optional[str]
 
 
 class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -3943,6 +4089,8 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
     json: Optional[object]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 
@@ -4515,6 +4663,18 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
     api_call: Optional[MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
 
@@ -4556,6 +4716,8 @@ class MainForeachStepInputForeachDoPromptStepInput(TypedDict, total=False):
 
     forward_tool_results: Optional[bool]
 
+    label: Optional[str]
+
     settings: Optional[ChatSettingsParam]
 
     tool_choice: Optional[MainForeachStepInputForeachDoPromptStepInputToolChoice]
@@ -4568,19 +4730,27 @@ class MainForeachStepInputForeachDoPromptStepInput(TypedDict, total=False):
 class MainForeachStepInputForeachDoGetStep(TypedDict, total=False):
     get: Required[str]
 
+    label: Optional[str]
+
 
 class MainForeachStepInputForeachDoSetStep(TypedDict, total=False):
     set: Required[Dict[str, str]]
 
+    label: Optional[str]
+
 
 class MainForeachStepInputForeachDoLogStep(TypedDict, total=False):
     log: Required[str]
+
+    label: Optional[str]
 
 
 class MainForeachStepInputForeachDoYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
     arguments: Union[Dict[str, str], Literal["_"]]
+
+    label: Optional[str]
 
 
 MainForeachStepInputForeachDo: TypeAlias = Union[
@@ -4610,15 +4780,21 @@ class MainForeachStepInputForeach(_MainForeachStepInputForeachReservedKeywords, 
 class MainForeachStepInput(TypedDict, total=False):
     foreach: Required[MainForeachStepInputForeach]
 
+    label: Optional[str]
+
 
 class MainParallelStepInputParallelEvaluateStep(TypedDict, total=False):
     evaluate: Required[Dict[str, str]]
+
+    label: Optional[str]
 
 
 class MainParallelStepInputParallelToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+
+    label: Optional[str]
 
 
 class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -4726,6 +4902,8 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
     json: Optional[object]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 
@@ -5298,6 +5476,18 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
     api_call: Optional[MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
 
@@ -5339,6 +5529,8 @@ class MainParallelStepInputParallelPromptStepInput(TypedDict, total=False):
 
     forward_tool_results: Optional[bool]
 
+    label: Optional[str]
+
     settings: Optional[ChatSettingsParam]
 
     tool_choice: Optional[MainParallelStepInputParallelPromptStepInputToolChoice]
@@ -5351,19 +5543,27 @@ class MainParallelStepInputParallelPromptStepInput(TypedDict, total=False):
 class MainParallelStepInputParallelGetStep(TypedDict, total=False):
     get: Required[str]
 
+    label: Optional[str]
+
 
 class MainParallelStepInputParallelSetStep(TypedDict, total=False):
     set: Required[Dict[str, str]]
 
+    label: Optional[str]
+
 
 class MainParallelStepInputParallelLogStep(TypedDict, total=False):
     log: Required[str]
+
+    label: Optional[str]
 
 
 class MainParallelStepInputParallelYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
     arguments: Union[Dict[str, str], Literal["_"]]
+
+    label: Optional[str]
 
 
 MainParallelStepInputParallel: TypeAlias = Union[
@@ -5380,15 +5580,21 @@ MainParallelStepInputParallel: TypeAlias = Union[
 class MainParallelStepInput(TypedDict, total=False):
     parallel: Required[Iterable[MainParallelStepInputParallel]]
 
+    label: Optional[str]
+
 
 class MainMainInputMapEvaluateStep(TypedDict, total=False):
     evaluate: Required[Dict[str, str]]
+
+    label: Optional[str]
 
 
 class MainMainInputMapToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+
+    label: Optional[str]
 
 
 class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
@@ -5486,6 +5692,8 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputAPIC
     json: Optional[object]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 
@@ -6050,6 +6258,18 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputText
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInput(TypedDict, total=False):
     name: Required[str]
 
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
     api_call: Optional[MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputAPICall]
     """API call definition"""
 
@@ -6085,6 +6305,8 @@ class MainMainInputMapPromptStepInput(TypedDict, total=False):
 
     forward_tool_results: Optional[bool]
 
+    label: Optional[str]
+
     settings: Optional[ChatSettingsParam]
 
     tool_choice: Optional[MainMainInputMapPromptStepInputToolChoice]
@@ -6097,19 +6319,27 @@ class MainMainInputMapPromptStepInput(TypedDict, total=False):
 class MainMainInputMapGetStep(TypedDict, total=False):
     get: Required[str]
 
+    label: Optional[str]
+
 
 class MainMainInputMapSetStep(TypedDict, total=False):
     set: Required[Dict[str, str]]
 
+    label: Optional[str]
+
 
 class MainMainInputMapLogStep(TypedDict, total=False):
     log: Required[str]
+
+    label: Optional[str]
 
 
 class MainMainInputMapYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
     arguments: Union[Dict[str, str], Literal["_"]]
+
+    label: Optional[str]
 
 
 MainMainInputMap: TypeAlias = Union[
@@ -6129,6 +6359,8 @@ class MainMainInput(TypedDict, total=False):
     over: Required[str]
 
     initial: object
+
+    label: Optional[str]
 
     parallelism: Optional[int]
 
@@ -6173,6 +6405,8 @@ class ToolAPICall(TypedDict, total=False):
     json: Optional[object]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 
@@ -6599,6 +6833,18 @@ class ToolTextEditor20241022(TypedDict, total=False):
 
 class Tool(TypedDict, total=False):
     name: Required[str]
+
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
 
     api_call: Optional[ToolAPICall]
     """API call definition"""

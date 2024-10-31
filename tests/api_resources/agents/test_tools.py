@@ -26,6 +26,7 @@ class TestTools:
         tool = client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
 
@@ -34,6 +35,7 @@ class TestTools:
         tool = client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
             api_call={
                 "method": "GET",
                 "url": "https://example.com",
@@ -44,6 +46,7 @@ class TestTools:
                 "headers": {"foo": "string"},
                 "json": {},
                 "params": "string",
+                "schema": {},
                 "timeout": 0,
             },
             bash_20241022={
@@ -88,6 +91,7 @@ class TestTools:
         response = client.agents.tools.with_raw_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         )
 
         assert response.is_closed is True
@@ -100,6 +104,7 @@ class TestTools:
         with client.agents.tools.with_streaming_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -115,6 +120,7 @@ class TestTools:
             client.agents.tools.with_raw_response.create(
                 agent_id="",
                 name="name",
+                type="function",
             )
 
     @parametrize
@@ -123,6 +129,7 @@ class TestTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -132,6 +139,7 @@ class TestTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
             api_call={
                 "method": "GET",
                 "url": "https://example.com",
@@ -142,6 +150,7 @@ class TestTools:
                 "headers": {"foo": "string"},
                 "json": {},
                 "params": "string",
+                "schema": {},
                 "timeout": 0,
             },
             bash_20241022={
@@ -187,6 +196,7 @@ class TestTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         )
 
         assert response.is_closed is True
@@ -200,6 +210,7 @@ class TestTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -216,6 +227,7 @@ class TestTools:
                 tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
                 name="name",
+                type="function",
             )
 
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `tool_id` but received ''"):
@@ -223,6 +235,7 @@ class TestTools:
                 tool_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 name="name",
+                type="function",
             )
 
     @parametrize
@@ -344,6 +357,7 @@ class TestTools:
                 "json": {},
                 "method": "GET",
                 "params": "string",
+                "schema": {},
                 "timeout": 0,
                 "url": "https://example.com",
             },
@@ -382,6 +396,7 @@ class TestTools:
                 "name": "name",
                 "type": "text_editor_20241022",
             },
+            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -434,6 +449,7 @@ class TestAsyncTools:
         tool = await async_client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         )
         assert_matches_type(ResourceCreated, tool, path=["response"])
 
@@ -442,6 +458,7 @@ class TestAsyncTools:
         tool = await async_client.agents.tools.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
             api_call={
                 "method": "GET",
                 "url": "https://example.com",
@@ -452,6 +469,7 @@ class TestAsyncTools:
                 "headers": {"foo": "string"},
                 "json": {},
                 "params": "string",
+                "schema": {},
                 "timeout": 0,
             },
             bash_20241022={
@@ -496,6 +514,7 @@ class TestAsyncTools:
         response = await async_client.agents.tools.with_raw_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         )
 
         assert response.is_closed is True
@@ -508,6 +527,7 @@ class TestAsyncTools:
         async with async_client.agents.tools.with_streaming_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -523,6 +543,7 @@ class TestAsyncTools:
             await async_client.agents.tools.with_raw_response.create(
                 agent_id="",
                 name="name",
+                type="function",
             )
 
     @parametrize
@@ -531,6 +552,7 @@ class TestAsyncTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -540,6 +562,7 @@ class TestAsyncTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
             api_call={
                 "method": "GET",
                 "url": "https://example.com",
@@ -550,6 +573,7 @@ class TestAsyncTools:
                 "headers": {"foo": "string"},
                 "json": {},
                 "params": "string",
+                "schema": {},
                 "timeout": 0,
             },
             bash_20241022={
@@ -595,6 +619,7 @@ class TestAsyncTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         )
 
         assert response.is_closed is True
@@ -608,6 +633,7 @@ class TestAsyncTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="name",
+            type="function",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -624,6 +650,7 @@ class TestAsyncTools:
                 tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
                 name="name",
+                type="function",
             )
 
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `tool_id` but received ''"):
@@ -631,6 +658,7 @@ class TestAsyncTools:
                 tool_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 name="name",
+                type="function",
             )
 
     @parametrize
@@ -752,6 +780,7 @@ class TestAsyncTools:
                 "json": {},
                 "method": "GET",
                 "params": "string",
+                "schema": {},
                 "timeout": 0,
                 "url": "https://example.com",
             },
@@ -790,6 +819,7 @@ class TestAsyncTools:
                 "name": "name",
                 "type": "text_editor_20241022",
             },
+            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
