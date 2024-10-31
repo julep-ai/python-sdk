@@ -467,6 +467,8 @@ class IntegrationRemoteBrowserIntegrationDefUpdateArguments(TypedDict, total=Fal
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]

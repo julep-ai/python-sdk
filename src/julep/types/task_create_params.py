@@ -610,7 +610,7 @@ class TaskCreateParams(TypedDict, total=False):
 
 
 class MainEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -618,7 +618,27 @@ class MainEvaluateStep(TypedDict, total=False):
 class MainToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -1174,6 +1194,8 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemot
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
@@ -1182,7 +1204,7 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemot
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
     TypedDict, total=False
 ):
-    connect_url: Required[str]
+    connect_url: Optional[str]
 
     height: Optional[int]
 
@@ -1338,7 +1360,7 @@ class MainLogStep(TypedDict, total=False):
 class MainYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -1346,7 +1368,7 @@ class MainYieldStep(TypedDict, total=False):
 _MainReturnStepReservedKeywords = TypedDict(
     "_MainReturnStepReservedKeywords",
     {
-        "return": Dict[str, str],
+        "return": Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
     },
     total=False,
 )
@@ -1379,7 +1401,7 @@ class MainErrorWorkflowStep(TypedDict, total=False):
 
 
 class MainWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainWaitForInputStep(TypedDict, total=False):
@@ -1389,7 +1411,7 @@ class MainWaitForInputStep(TypedDict, total=False):
 
 
 class MainIfElseWorkflowStepInputThenEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -1397,7 +1419,27 @@ class MainIfElseWorkflowStepInputThenEvaluateStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -1995,6 +2037,8 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
@@ -2003,7 +2047,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
     TypedDict, total=False
 ):
-    connect_url: Required[str]
+    connect_url: Optional[str]
 
     height: Optional[int]
 
@@ -2172,7 +2216,7 @@ class MainIfElseWorkflowStepInputThenLogStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputThenYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -2180,7 +2224,7 @@ class MainIfElseWorkflowStepInputThenYieldStep(TypedDict, total=False):
 _MainIfElseWorkflowStepInputThenReturnStepReservedKeywords = TypedDict(
     "_MainIfElseWorkflowStepInputThenReturnStepReservedKeywords",
     {
-        "return": Dict[str, str],
+        "return": Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
     },
     total=False,
 )
@@ -2215,7 +2259,7 @@ class MainIfElseWorkflowStepInputThenErrorWorkflowStep(TypedDict, total=False):
 
 
 class MainIfElseWorkflowStepInputThenWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainIfElseWorkflowStepInputThenWaitForInputStep(TypedDict, total=False):
@@ -2240,7 +2284,7 @@ MainIfElseWorkflowStepInputThen: TypeAlias = Union[
 
 
 class MainIfElseWorkflowStepInputElseEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -2248,7 +2292,27 @@ class MainIfElseWorkflowStepInputElseEvaluateStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputElseToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -2846,6 +2910,8 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
@@ -2854,7 +2920,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
     TypedDict, total=False
 ):
-    connect_url: Required[str]
+    connect_url: Optional[str]
 
     height: Optional[int]
 
@@ -3023,7 +3089,7 @@ class MainIfElseWorkflowStepInputElseLogStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputElseYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -3031,7 +3097,7 @@ class MainIfElseWorkflowStepInputElseYieldStep(TypedDict, total=False):
 _MainIfElseWorkflowStepInputElseReturnStepReservedKeywords = TypedDict(
     "_MainIfElseWorkflowStepInputElseReturnStepReservedKeywords",
     {
-        "return": Dict[str, str],
+        "return": Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
     },
     total=False,
 )
@@ -3066,7 +3132,7 @@ class MainIfElseWorkflowStepInputElseErrorWorkflowStep(TypedDict, total=False):
 
 
 class MainIfElseWorkflowStepInputElseWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainIfElseWorkflowStepInputElseWaitForInputStep(TypedDict, total=False):
@@ -3106,7 +3172,7 @@ class MainIfElseWorkflowStepInput(_MainIfElseWorkflowStepInputReservedKeywords, 
 
 
 class MainSwitchStepInputSwitchThenEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -3114,7 +3180,27 @@ class MainSwitchStepInputSwitchThenEvaluateStep(TypedDict, total=False):
 class MainSwitchStepInputSwitchThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -3708,6 +3794,8 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
@@ -3716,7 +3804,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
     TypedDict, total=False
 ):
-    connect_url: Required[str]
+    connect_url: Optional[str]
 
     height: Optional[int]
 
@@ -3883,7 +3971,7 @@ class MainSwitchStepInputSwitchThenLogStep(TypedDict, total=False):
 class MainSwitchStepInputSwitchThenYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -3891,7 +3979,7 @@ class MainSwitchStepInputSwitchThenYieldStep(TypedDict, total=False):
 _MainSwitchStepInputSwitchThenReturnStepReservedKeywords = TypedDict(
     "_MainSwitchStepInputSwitchThenReturnStepReservedKeywords",
     {
-        "return": Dict[str, str],
+        "return": Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
     },
     total=False,
 )
@@ -3924,7 +4012,7 @@ class MainSwitchStepInputSwitchThenErrorWorkflowStep(TypedDict, total=False):
 
 
 class MainSwitchStepInputSwitchThenWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainSwitchStepInputSwitchThenWaitForInputStep(TypedDict, total=False):
@@ -3961,7 +4049,7 @@ class MainSwitchStepInput(TypedDict, total=False):
 
 
 class MainForeachStepInputForeachDoWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainForeachStepInputForeachDoWaitForInputStep(TypedDict, total=False):
@@ -3971,7 +4059,7 @@ class MainForeachStepInputForeachDoWaitForInputStep(TypedDict, total=False):
 
 
 class MainForeachStepInputForeachDoEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -3979,7 +4067,27 @@ class MainForeachStepInputForeachDoEvaluateStep(TypedDict, total=False):
 class MainForeachStepInputForeachDoToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -4573,6 +4681,8 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
@@ -4581,7 +4691,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
     TypedDict, total=False
 ):
-    connect_url: Required[str]
+    connect_url: Optional[str]
 
     height: Optional[int]
 
@@ -4748,7 +4858,7 @@ class MainForeachStepInputForeachDoLogStep(TypedDict, total=False):
 class MainForeachStepInputForeachDoYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -4784,7 +4894,7 @@ class MainForeachStepInput(TypedDict, total=False):
 
 
 class MainParallelStepInputParallelEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -4792,7 +4902,27 @@ class MainParallelStepInputParallelEvaluateStep(TypedDict, total=False):
 class MainParallelStepInputParallelToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -5386,6 +5516,8 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
@@ -5394,7 +5526,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
     TypedDict, total=False
 ):
-    connect_url: Required[str]
+    connect_url: Optional[str]
 
     height: Optional[int]
 
@@ -5561,7 +5693,7 @@ class MainParallelStepInputParallelLogStep(TypedDict, total=False):
 class MainParallelStepInputParallelYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -5584,7 +5716,7 @@ class MainParallelStepInput(TypedDict, total=False):
 
 
 class MainMainInputMapEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -5592,7 +5724,27 @@ class MainMainInputMapEvaluateStep(TypedDict, total=False):
 class MainMainInputMapToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -6170,6 +6322,8 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
@@ -6178,7 +6332,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
     TypedDict, total=False
 ):
-    connect_url: Required[str]
+    connect_url: Optional[str]
 
     height: Optional[int]
 
@@ -6337,7 +6491,7 @@ class MainMainInputMapLogStep(TypedDict, total=False):
 class MainMainInputMapYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -6754,13 +6908,15 @@ class ToolIntegrationRemoteBrowserIntegrationDefArguments(TypedDict, total=False
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
 class ToolIntegrationRemoteBrowserIntegrationDefSetup(TypedDict, total=False):
-    connect_url: Required[str]
+    connect_url: Optional[str]
 
     height: Optional[int]
 

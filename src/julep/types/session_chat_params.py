@@ -506,13 +506,15 @@ class ToolIntegrationRemoteBrowserIntegrationDefArguments(TypedDict, total=False
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
 class ToolIntegrationRemoteBrowserIntegrationDefSetup(TypedDict, total=False):
-    connect_url: Required[str]
+    connect_url: Optional[str]
 
     height: Optional[int]
 

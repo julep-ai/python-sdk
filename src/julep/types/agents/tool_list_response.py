@@ -418,13 +418,15 @@ class IntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
 class IntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 

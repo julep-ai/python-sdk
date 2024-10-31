@@ -519,13 +519,15 @@ class ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments(BaseModel
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
 class ContentToolOutputIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
@@ -1120,13 +1122,15 @@ class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArgumen
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
 class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
