@@ -36,7 +36,7 @@ client = Julep(
 
 resource_created = client.tasks.create(
     agent_id="dad00000-0000-4000-a000-000000000000",
-    main=[{"evaluate": {"foo": "string"}}],
+    main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
     name="name",
 )
 print(resource_created.id)
@@ -67,7 +67,7 @@ client = AsyncJulep(
 async def main() -> None:
     resource_created = await client.tasks.create(
         agent_id="dad00000-0000-4000-a000-000000000000",
-        main=[{"evaluate": {"foo": "string"}}],
+        main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
         name="name",
     )
     print(resource_created.id)

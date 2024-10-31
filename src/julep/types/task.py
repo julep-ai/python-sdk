@@ -595,7 +595,7 @@ __all__ = [
 
 
 class MainEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -605,7 +605,28 @@ class MainEvaluateStep(BaseModel):
 class MainToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1127,6 +1148,8 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRem
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
@@ -1135,7 +1158,7 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRem
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
@@ -1288,7 +1311,7 @@ class MainLogStep(BaseModel):
 class MainYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1296,7 +1319,7 @@ class MainYieldStep(BaseModel):
 
 
 class MainReturnStep(BaseModel):
-    return_: Dict[str, str] = FieldInfo(alias="return")
+    return_: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1330,7 +1353,7 @@ class MainErrorWorkflowStep(BaseModel):
 
 
 class MainWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainWaitForInputStep(BaseModel):
@@ -1342,7 +1365,7 @@ class MainWaitForInputStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputThenEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1352,7 +1375,28 @@ class MainIfElseWorkflowStepOutputThenEvaluateStep(BaseModel):
 class MainIfElseWorkflowStepOutputThenToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1908,6 +1952,8 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
@@ -1916,7 +1962,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
@@ -2084,7 +2130,7 @@ class MainIfElseWorkflowStepOutputThenLogStep(BaseModel):
 class MainIfElseWorkflowStepOutputThenYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2092,7 +2138,7 @@ class MainIfElseWorkflowStepOutputThenYieldStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputThenReturnStep(BaseModel):
-    return_: Dict[str, str] = FieldInfo(alias="return")
+    return_: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2126,7 +2172,7 @@ class MainIfElseWorkflowStepOutputThenErrorWorkflowStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputThenWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainIfElseWorkflowStepOutputThenWaitForInputStep(BaseModel):
@@ -2153,7 +2199,7 @@ MainIfElseWorkflowStepOutputThen: TypeAlias = Union[
 
 
 class MainIfElseWorkflowStepOutputElseEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2163,7 +2209,28 @@ class MainIfElseWorkflowStepOutputElseEvaluateStep(BaseModel):
 class MainIfElseWorkflowStepOutputElseToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2719,6 +2786,8 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
@@ -2727,7 +2796,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
@@ -2895,7 +2964,7 @@ class MainIfElseWorkflowStepOutputElseLogStep(BaseModel):
 class MainIfElseWorkflowStepOutputElseYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2903,7 +2972,7 @@ class MainIfElseWorkflowStepOutputElseYieldStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputElseReturnStep(BaseModel):
-    return_: Dict[str, str] = FieldInfo(alias="return")
+    return_: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2937,7 +3006,7 @@ class MainIfElseWorkflowStepOutputElseErrorWorkflowStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputElseWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainIfElseWorkflowStepOutputElseWaitForInputStep(BaseModel):
@@ -2977,7 +3046,7 @@ class MainIfElseWorkflowStepOutput(BaseModel):
 
 
 class MainSwitchStepOutputSwitchThenEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2987,7 +3056,28 @@ class MainSwitchStepOutputSwitchThenEvaluateStep(BaseModel):
 class MainSwitchStepOutputSwitchThenToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3541,6 +3631,8 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
@@ -3549,7 +3641,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
@@ -3717,7 +3809,7 @@ class MainSwitchStepOutputSwitchThenLogStep(BaseModel):
 class MainSwitchStepOutputSwitchThenYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3725,7 +3817,7 @@ class MainSwitchStepOutputSwitchThenYieldStep(BaseModel):
 
 
 class MainSwitchStepOutputSwitchThenReturnStep(BaseModel):
-    return_: Dict[str, str] = FieldInfo(alias="return")
+    return_: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3759,7 +3851,7 @@ class MainSwitchStepOutputSwitchThenErrorWorkflowStep(BaseModel):
 
 
 class MainSwitchStepOutputSwitchThenWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainSwitchStepOutputSwitchThenWaitForInputStep(BaseModel):
@@ -3800,7 +3892,7 @@ class MainSwitchStepOutput(BaseModel):
 
 
 class MainForeachStepOutputForeachDoWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainForeachStepOutputForeachDoWaitForInputStep(BaseModel):
@@ -3812,7 +3904,7 @@ class MainForeachStepOutputForeachDoWaitForInputStep(BaseModel):
 
 
 class MainForeachStepOutputForeachDoEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3822,7 +3914,28 @@ class MainForeachStepOutputForeachDoEvaluateStep(BaseModel):
 class MainForeachStepOutputForeachDoToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4376,6 +4489,8 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
@@ -4384,7 +4499,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
@@ -4552,7 +4667,7 @@ class MainForeachStepOutputForeachDoLogStep(BaseModel):
 class MainForeachStepOutputForeachDoYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4586,7 +4701,7 @@ class MainForeachStepOutput(BaseModel):
 
 
 class MainParallelStepOutputParallelEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4596,7 +4711,28 @@ class MainParallelStepOutputParallelEvaluateStep(BaseModel):
 class MainParallelStepOutputParallelToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5150,6 +5286,8 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
@@ -5158,7 +5296,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
@@ -5326,7 +5464,7 @@ class MainParallelStepOutputParallelLogStep(BaseModel):
 class MainParallelStepOutputParallelYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5353,7 +5491,7 @@ class MainParallelStepOutput(BaseModel):
 
 
 class MainMainOutputMapEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5363,7 +5501,28 @@ class MainMainOutputMapEvaluateStep(BaseModel):
 class MainMainOutputMapToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5913,6 +6072,8 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
@@ -5921,7 +6082,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
@@ -6079,7 +6240,7 @@ class MainMainOutputMapLogStep(BaseModel):
 class MainMainOutputMapYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -6489,13 +6650,15 @@ class ToolIntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
 class ToolIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
-    connect_url: str
+    connect_url: Optional[str] = None
 
     height: Optional[int] = None
 
