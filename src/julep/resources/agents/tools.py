@@ -56,6 +56,15 @@ class ToolsResource(SyncAPIResource):
         agent_id: str,
         *,
         name: str,
+        type: Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ],
         api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[tool_create_params.Bash20241022] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[tool_create_params.Computer20241022] | NotGiven = NOT_GIVEN,
@@ -100,6 +109,7 @@ class ToolsResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "name": name,
+                    "type": type,
                     "api_call": api_call,
                     "bash_20241022": bash_20241022,
                     "computer_20241022": computer_20241022,
@@ -123,6 +133,15 @@ class ToolsResource(SyncAPIResource):
         *,
         agent_id: str,
         name: str,
+        type: Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ],
         api_call: Optional[tool_update_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[tool_update_params.Bash20241022] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[tool_update_params.Computer20241022] | NotGiven = NOT_GIVEN,
@@ -169,6 +188,7 @@ class ToolsResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "name": name,
+                    "type": type,
                     "api_call": api_call,
                     "bash_20241022": bash_20241022,
                     "computer_20241022": computer_20241022,
@@ -286,6 +306,18 @@ class ToolsResource(SyncAPIResource):
         name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
         text_editor_20241022: Optional[tool_patch_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
+        type: Optional[
+            Literal[
+                "function",
+                "integration",
+                "system",
+                "api_call",
+                "computer_20241022",
+                "text_editor_20241022",
+                "bash_20241022",
+            ]
+        ]
+        | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -332,6 +364,7 @@ class ToolsResource(SyncAPIResource):
                     "name": name,
                     "system": system,
                     "text_editor_20241022": text_editor_20241022,
+                    "type": type,
                 },
                 tool_patch_params.ToolPatchParams,
             ),
@@ -367,6 +400,15 @@ class AsyncToolsResource(AsyncAPIResource):
         agent_id: str,
         *,
         name: str,
+        type: Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ],
         api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[tool_create_params.Bash20241022] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[tool_create_params.Computer20241022] | NotGiven = NOT_GIVEN,
@@ -411,6 +453,7 @@ class AsyncToolsResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "name": name,
+                    "type": type,
                     "api_call": api_call,
                     "bash_20241022": bash_20241022,
                     "computer_20241022": computer_20241022,
@@ -434,6 +477,15 @@ class AsyncToolsResource(AsyncAPIResource):
         *,
         agent_id: str,
         name: str,
+        type: Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ],
         api_call: Optional[tool_update_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[tool_update_params.Bash20241022] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[tool_update_params.Computer20241022] | NotGiven = NOT_GIVEN,
@@ -480,6 +532,7 @@ class AsyncToolsResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "name": name,
+                    "type": type,
                     "api_call": api_call,
                     "bash_20241022": bash_20241022,
                     "computer_20241022": computer_20241022,
@@ -597,6 +650,18 @@ class AsyncToolsResource(AsyncAPIResource):
         name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
         text_editor_20241022: Optional[tool_patch_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
+        type: Optional[
+            Literal[
+                "function",
+                "integration",
+                "system",
+                "api_call",
+                "computer_20241022",
+                "text_editor_20241022",
+                "bash_20241022",
+            ]
+        ]
+        | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -643,6 +708,7 @@ class AsyncToolsResource(AsyncAPIResource):
                     "name": name,
                     "system": system,
                     "text_editor_20241022": text_editor_20241022,
+                    "type": type,
                 },
                 tool_patch_params.ToolPatchParams,
             ),

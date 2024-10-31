@@ -241,6 +241,7 @@ class TestSessions:
             tools=[
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -251,6 +252,7 @@ class TestSessions:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -290,6 +292,7 @@ class TestSessions:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -300,6 +303,7 @@ class TestSessions:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -339,6 +343,7 @@ class TestSessions:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -349,6 +354,7 @@ class TestSessions:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -853,6 +859,7 @@ class TestAsyncSessions:
             tools=[
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -863,6 +870,7 @@ class TestAsyncSessions:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -902,6 +910,7 @@ class TestAsyncSessions:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -912,6 +921,7 @@ class TestAsyncSessions:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -951,6 +961,7 @@ class TestAsyncSessions:
                 },
                 {
                     "name": "name",
+                    "type": "function",
                     "api_call": {
                         "method": "GET",
                         "url": "https://example.com",
@@ -961,6 +972,7 @@ class TestAsyncSessions:
                         "headers": {"foo": "string"},
                         "json": {},
                         "params": "string",
+                        "schema": {},
                         "timeout": 0,
                     },
                     "bash_20241022": {

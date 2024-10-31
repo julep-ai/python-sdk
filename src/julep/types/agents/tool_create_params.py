@@ -64,6 +64,18 @@ __all__ = [
 class ToolCreateParams(TypedDict, total=False):
     name: Required[str]
 
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
     api_call: Optional[APICall]
     """API call definition"""
 
@@ -104,6 +116,8 @@ class APICall(TypedDict, total=False):
     json: Optional[object]
 
     params: Union[str, object, None]
+
+    schema: Optional[object]
 
     timeout: Optional[int]
 

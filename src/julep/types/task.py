@@ -599,6 +599,8 @@ class MainEvaluateStep(BaseModel):
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainToolCallStep(BaseModel):
     tool: str
@@ -606,6 +608,8 @@ class MainToolCallStep(BaseModel):
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainPromptStepOutputPromptUnionMember0ContentUnionMember1Content(BaseModel):
@@ -693,6 +697,8 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseMo
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
 
     timeout: Optional[int] = None
 
@@ -1204,6 +1210,10 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor2024
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
+
     api_call: Optional[MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall] = None
     """API call definition"""
 
@@ -1240,6 +1250,8 @@ class MainPromptStepOutput(BaseModel):
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
     settings: Optional[ChatSettings] = None
 
     tool_choice: Optional[MainPromptStepOutputToolChoice] = None
@@ -1254,17 +1266,23 @@ class MainGetStep(BaseModel):
 
     kind: Optional[Literal["get"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainSetStep(BaseModel):
     set: Dict[str, str]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainLogStep(BaseModel):
     log: str
 
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainYieldStep(BaseModel):
@@ -1274,11 +1292,15 @@ class MainYieldStep(BaseModel):
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainReturnStep(BaseModel):
     return_: Dict[str, str] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainSleepStepSleep(BaseModel):
@@ -1296,11 +1318,15 @@ class MainSleepStep(BaseModel):
 
     kind: Optional[Literal["sleep"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainErrorWorkflowStep(BaseModel):
     error: str
 
     kind: Optional[Literal["error"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainWaitForInputStepWaitForInput(BaseModel):
@@ -1312,11 +1338,15 @@ class MainWaitForInputStep(BaseModel):
 
     kind: Optional[Literal["wait_for_input"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenEvaluateStep(BaseModel):
     evaluate: Dict[str, str]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputThenToolCallStep(BaseModel):
@@ -1325,6 +1355,8 @@ class MainIfElseWorkflowStepOutputThenToolCallStep(BaseModel):
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMember1Content(BaseModel):
@@ -1416,6 +1448,8 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
 
     timeout: Optional[int] = None
 
@@ -1959,6 +1993,10 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
+
     api_call: Optional[
         MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
@@ -2008,6 +2046,8 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutput(BaseModel):
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
     settings: Optional[ChatSettings] = None
 
     tool_choice: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoice] = None
@@ -2022,17 +2062,23 @@ class MainIfElseWorkflowStepOutputThenGetStep(BaseModel):
 
     kind: Optional[Literal["get"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenSetStep(BaseModel):
     set: Dict[str, str]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenLogStep(BaseModel):
     log: str
 
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputThenYieldStep(BaseModel):
@@ -2042,11 +2088,15 @@ class MainIfElseWorkflowStepOutputThenYieldStep(BaseModel):
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenReturnStep(BaseModel):
     return_: Dict[str, str] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputThenSleepStepSleep(BaseModel):
@@ -2064,11 +2114,15 @@ class MainIfElseWorkflowStepOutputThenSleepStep(BaseModel):
 
     kind: Optional[Literal["sleep"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenErrorWorkflowStep(BaseModel):
     error: str
 
     kind: Optional[Literal["error"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputThenWaitForInputStepWaitForInput(BaseModel):
@@ -2079,6 +2133,8 @@ class MainIfElseWorkflowStepOutputThenWaitForInputStep(BaseModel):
     wait_for_input: MainIfElseWorkflowStepOutputThenWaitForInputStepWaitForInput
 
     kind: Optional[Literal["wait_for_input"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 MainIfElseWorkflowStepOutputThen: TypeAlias = Union[
@@ -2101,6 +2157,8 @@ class MainIfElseWorkflowStepOutputElseEvaluateStep(BaseModel):
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElseToolCallStep(BaseModel):
     tool: str
@@ -2108,6 +2166,8 @@ class MainIfElseWorkflowStepOutputElseToolCallStep(BaseModel):
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMember1Content(BaseModel):
@@ -2199,6 +2259,8 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
 
     timeout: Optional[int] = None
 
@@ -2742,6 +2804,10 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
+
     api_call: Optional[
         MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
@@ -2791,6 +2857,8 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutput(BaseModel):
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
     settings: Optional[ChatSettings] = None
 
     tool_choice: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoice] = None
@@ -2805,17 +2873,23 @@ class MainIfElseWorkflowStepOutputElseGetStep(BaseModel):
 
     kind: Optional[Literal["get"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElseSetStep(BaseModel):
     set: Dict[str, str]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElseLogStep(BaseModel):
     log: str
 
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputElseYieldStep(BaseModel):
@@ -2825,11 +2899,15 @@ class MainIfElseWorkflowStepOutputElseYieldStep(BaseModel):
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElseReturnStep(BaseModel):
     return_: Dict[str, str] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputElseSleepStepSleep(BaseModel):
@@ -2847,11 +2925,15 @@ class MainIfElseWorkflowStepOutputElseSleepStep(BaseModel):
 
     kind: Optional[Literal["sleep"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElseErrorWorkflowStep(BaseModel):
     error: str
 
     kind: Optional[Literal["error"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputElseWaitForInputStepWaitForInput(BaseModel):
@@ -2862,6 +2944,8 @@ class MainIfElseWorkflowStepOutputElseWaitForInputStep(BaseModel):
     wait_for_input: MainIfElseWorkflowStepOutputElseWaitForInputStepWaitForInput
 
     kind: Optional[Literal["wait_for_input"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 MainIfElseWorkflowStepOutputElse: TypeAlias = Union[
@@ -2889,11 +2973,15 @@ class MainIfElseWorkflowStepOutput(BaseModel):
 
     kind: Optional[Literal["if_else"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenEvaluateStep(BaseModel):
     evaluate: Dict[str, str]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainSwitchStepOutputSwitchThenToolCallStep(BaseModel):
@@ -2902,6 +2990,8 @@ class MainSwitchStepOutputSwitchThenToolCallStep(BaseModel):
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMember1Content(BaseModel):
@@ -2993,6 +3083,8 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
 
     timeout: Optional[int] = None
 
@@ -3534,6 +3626,10 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
+
     api_call: Optional[
         MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
@@ -3583,6 +3679,8 @@ class MainSwitchStepOutputSwitchThenPromptStepOutput(BaseModel):
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
     settings: Optional[ChatSettings] = None
 
     tool_choice: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolChoice] = None
@@ -3597,17 +3695,23 @@ class MainSwitchStepOutputSwitchThenGetStep(BaseModel):
 
     kind: Optional[Literal["get"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenSetStep(BaseModel):
     set: Dict[str, str]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenLogStep(BaseModel):
     log: str
 
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainSwitchStepOutputSwitchThenYieldStep(BaseModel):
@@ -3617,11 +3721,15 @@ class MainSwitchStepOutputSwitchThenYieldStep(BaseModel):
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenReturnStep(BaseModel):
     return_: Dict[str, str] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainSwitchStepOutputSwitchThenSleepStepSleep(BaseModel):
@@ -3639,11 +3747,15 @@ class MainSwitchStepOutputSwitchThenSleepStep(BaseModel):
 
     kind: Optional[Literal["sleep"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenErrorWorkflowStep(BaseModel):
     error: str
 
     kind: Optional[Literal["error"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainSwitchStepOutputSwitchThenWaitForInputStepWaitForInput(BaseModel):
@@ -3654,6 +3766,8 @@ class MainSwitchStepOutputSwitchThenWaitForInputStep(BaseModel):
     wait_for_input: MainSwitchStepOutputSwitchThenWaitForInputStepWaitForInput
 
     kind: Optional[Literal["wait_for_input"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 MainSwitchStepOutputSwitchThen: TypeAlias = Union[
@@ -3682,6 +3796,8 @@ class MainSwitchStepOutput(BaseModel):
 
     kind: Optional[Literal["switch"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoWaitForInputStepWaitForInput(BaseModel):
     info: Dict[str, str]
@@ -3692,11 +3808,15 @@ class MainForeachStepOutputForeachDoWaitForInputStep(BaseModel):
 
     kind: Optional[Literal["wait_for_input"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoEvaluateStep(BaseModel):
     evaluate: Dict[str, str]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainForeachStepOutputForeachDoToolCallStep(BaseModel):
@@ -3705,6 +3825,8 @@ class MainForeachStepOutputForeachDoToolCallStep(BaseModel):
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMember1Content(BaseModel):
@@ -3796,6 +3918,8 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
 
     timeout: Optional[int] = None
 
@@ -4337,6 +4461,10 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
+
     api_call: Optional[
         MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
@@ -4386,6 +4514,8 @@ class MainForeachStepOutputForeachDoPromptStepOutput(BaseModel):
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
     settings: Optional[ChatSettings] = None
 
     tool_choice: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolChoice] = None
@@ -4400,17 +4530,23 @@ class MainForeachStepOutputForeachDoGetStep(BaseModel):
 
     kind: Optional[Literal["get"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoSetStep(BaseModel):
     set: Dict[str, str]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoLogStep(BaseModel):
     log: str
 
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainForeachStepOutputForeachDoYieldStep(BaseModel):
@@ -4419,6 +4555,8 @@ class MainForeachStepOutputForeachDoYieldStep(BaseModel):
     arguments: Union[Dict[str, str], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 MainForeachStepOutputForeachDo: TypeAlias = Union[
@@ -4444,11 +4582,15 @@ class MainForeachStepOutput(BaseModel):
 
     kind: Optional[Literal["foreach"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainParallelStepOutputParallelEvaluateStep(BaseModel):
     evaluate: Dict[str, str]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainParallelStepOutputParallelToolCallStep(BaseModel):
@@ -4457,6 +4599,8 @@ class MainParallelStepOutputParallelToolCallStep(BaseModel):
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMember1Content(BaseModel):
@@ -4548,6 +4692,8 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
 
     timeout: Optional[int] = None
 
@@ -5089,6 +5235,10 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
+
     api_call: Optional[
         MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall
     ] = None
@@ -5138,6 +5288,8 @@ class MainParallelStepOutputParallelPromptStepOutput(BaseModel):
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
     settings: Optional[ChatSettings] = None
 
     tool_choice: Optional[MainParallelStepOutputParallelPromptStepOutputToolChoice] = None
@@ -5152,17 +5304,23 @@ class MainParallelStepOutputParallelGetStep(BaseModel):
 
     kind: Optional[Literal["get"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainParallelStepOutputParallelSetStep(BaseModel):
     set: Dict[str, str]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainParallelStepOutputParallelLogStep(BaseModel):
     log: str
 
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainParallelStepOutputParallelYieldStep(BaseModel):
@@ -5171,6 +5329,8 @@ class MainParallelStepOutputParallelYieldStep(BaseModel):
     arguments: Union[Dict[str, str], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 MainParallelStepOutputParallel: TypeAlias = Union[
@@ -5189,11 +5349,15 @@ class MainParallelStepOutput(BaseModel):
 
     kind: Optional[Literal["parallel"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainMainOutputMapEvaluateStep(BaseModel):
     evaluate: Dict[str, str]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainMainOutputMapToolCallStep(BaseModel):
@@ -5202,6 +5366,8 @@ class MainMainOutputMapToolCallStep(BaseModel):
     arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1Content(BaseModel):
@@ -5289,6 +5455,8 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputA
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
 
     timeout: Optional[int] = None
 
@@ -5828,6 +5996,10 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputT
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput(BaseModel):
     name: str
 
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
+
     api_call: Optional[MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall] = None
     """API call definition"""
 
@@ -5869,6 +6041,8 @@ class MainMainOutputMapPromptStepOutput(BaseModel):
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
     settings: Optional[ChatSettings] = None
 
     tool_choice: Optional[MainMainOutputMapPromptStepOutputToolChoice] = None
@@ -5883,17 +6057,23 @@ class MainMainOutputMapGetStep(BaseModel):
 
     kind: Optional[Literal["get"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainMainOutputMapSetStep(BaseModel):
     set: Dict[str, str]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
+    label: Optional[str] = None
+
 
 class MainMainOutputMapLogStep(BaseModel):
     log: str
 
     kind: Optional[Literal["log"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 class MainMainOutputMapYieldStep(BaseModel):
@@ -5902,6 +6082,8 @@ class MainMainOutputMapYieldStep(BaseModel):
     arguments: Union[Dict[str, str], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
 
 MainMainOutputMap: TypeAlias = Union[
@@ -5923,6 +6105,8 @@ class MainMainOutput(BaseModel):
     initial: Optional[object] = None
 
     kind: Optional[Literal["map_reduce"]] = FieldInfo(alias="kind_", default=None)
+
+    label: Optional[str] = None
 
     parallelism: Optional[int] = None
 
@@ -5967,6 +6151,8 @@ class ToolAPICall(BaseModel):
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
 
     timeout: Optional[int] = None
 
@@ -6381,6 +6567,10 @@ class ToolTextEditor20241022(BaseModel):
 
 class Tool(BaseModel):
     name: str
+
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
 
     api_call: Optional[ToolAPICall] = None
     """API call definition"""

@@ -81,6 +81,8 @@ class APICall(BaseModel):
 
     params: Union[str, object, None] = None
 
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
     timeout: Optional[int] = None
 
 
@@ -498,6 +500,10 @@ class ToolListResponse(BaseModel):
     created_at: datetime
 
     name: str
+
+    type: Literal[
+        "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
+    ]
 
     updated_at: datetime
 

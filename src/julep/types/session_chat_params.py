@@ -158,6 +158,8 @@ class ToolAPICall(TypedDict, total=False):
 
     params: Union[str, object, None]
 
+    schema: Optional[object]
+
     timeout: Optional[int]
 
 
@@ -583,6 +585,18 @@ class ToolTextEditor20241022(TypedDict, total=False):
 
 class Tool(TypedDict, total=False):
     name: Required[str]
+
+    type: Required[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
 
     api_call: Optional[ToolAPICall]
     """API call definition"""
