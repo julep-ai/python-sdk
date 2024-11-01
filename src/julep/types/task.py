@@ -74,8 +74,8 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainGetStep",
@@ -152,8 +152,8 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenGetStep",
@@ -229,8 +229,8 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseGetStep",
@@ -308,8 +308,8 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainSwitchStepOutputSwitchThenGetStep",
@@ -389,8 +389,8 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainForeachStepOutputForeachDoGetStep",
@@ -461,8 +461,8 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainParallelStepOutputParallelGetStep",
@@ -533,8 +533,8 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainMainOutputMapGetStep",
@@ -587,15 +587,15 @@ __all__ = [
     "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "ToolIntegrationRemoteBrowserIntegrationDef",
-    "ToolIntegrationRemoteBrowserIntegrationDefArguments",
     "ToolIntegrationRemoteBrowserIntegrationDefSetup",
+    "ToolIntegrationRemoteBrowserIntegrationDefArguments",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
 
 
 class MainEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -605,7 +605,28 @@ class MainEvaluateStep(BaseModel):
 class MainToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -883,6 +904,12 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
     BaseModel
@@ -914,6 +941,12 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef(
     BaseModel
@@ -943,6 +976,12 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
     BaseModel
@@ -964,13 +1003,13 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     BaseModel
 ):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -982,11 +1021,19 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -1009,11 +1056,19 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -1038,11 +1093,19 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -1065,11 +1128,19 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     BaseModel
 ):
-    arguments: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -1092,11 +1163,19 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     BaseModel
 ):
-    arguments: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -1106,6 +1185,16 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
         MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ] = None
     """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
+    BaseModel
+):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -1127,29 +1216,21 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRem
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
-    BaseModel
-):
-    connect_url: str
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef(BaseModel):
-    arguments: (
-        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
-    )
-    """The arguments for the remote browser"""
-
     setup: MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
+    ] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 
@@ -1246,7 +1327,9 @@ MainPromptStepOutputToolsUnionMember1: TypeAlias = Union[
 class MainPromptStepOutput(BaseModel):
     prompt: Union[List[MainPromptStepOutputPromptUnionMember0], str]
 
-    forward_tool_results: Optional[bool] = None
+    auto_run_tools: Optional[bool] = None
+
+    disable_cache: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1288,7 +1371,7 @@ class MainLogStep(BaseModel):
 class MainYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1296,7 +1379,7 @@ class MainYieldStep(BaseModel):
 
 
 class MainReturnStep(BaseModel):
-    return_: Dict[str, str] = FieldInfo(alias="return")
+    return_: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1330,7 +1413,7 @@ class MainErrorWorkflowStep(BaseModel):
 
 
 class MainWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainWaitForInputStep(BaseModel):
@@ -1342,7 +1425,7 @@ class MainWaitForInputStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputThenEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1352,7 +1435,28 @@ class MainIfElseWorkflowStepOutputThenEvaluateStep(BaseModel):
 class MainIfElseWorkflowStepOutputThenToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1664,6 +1768,12 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
     BaseModel
@@ -1695,6 +1805,12 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef(
     BaseModel
@@ -1724,6 +1840,12 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
     BaseModel
@@ -1745,13 +1867,13 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     BaseModel
 ):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -1763,11 +1885,19 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -1790,11 +1920,19 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -1819,11 +1957,19 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -1846,11 +1992,19 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -1873,11 +2027,19 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -1887,6 +2049,16 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
         MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ] = None
     """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
+    BaseModel
+):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -1908,29 +2080,23 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
-    BaseModel
-):
-    connect_url: str
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
+    ] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 
@@ -2042,7 +2208,9 @@ MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1: TypeAlias = U
 class MainIfElseWorkflowStepOutputThenPromptStepOutput(BaseModel):
     prompt: Union[List[MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0], str]
 
-    forward_tool_results: Optional[bool] = None
+    auto_run_tools: Optional[bool] = None
+
+    disable_cache: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2084,7 +2252,7 @@ class MainIfElseWorkflowStepOutputThenLogStep(BaseModel):
 class MainIfElseWorkflowStepOutputThenYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2092,7 +2260,7 @@ class MainIfElseWorkflowStepOutputThenYieldStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputThenReturnStep(BaseModel):
-    return_: Dict[str, str] = FieldInfo(alias="return")
+    return_: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2126,7 +2294,7 @@ class MainIfElseWorkflowStepOutputThenErrorWorkflowStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputThenWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainIfElseWorkflowStepOutputThenWaitForInputStep(BaseModel):
@@ -2153,7 +2321,7 @@ MainIfElseWorkflowStepOutputThen: TypeAlias = Union[
 
 
 class MainIfElseWorkflowStepOutputElseEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2163,7 +2331,28 @@ class MainIfElseWorkflowStepOutputElseEvaluateStep(BaseModel):
 class MainIfElseWorkflowStepOutputElseToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2475,6 +2664,12 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
     BaseModel
@@ -2506,6 +2701,12 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef(
     BaseModel
@@ -2535,6 +2736,12 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
     BaseModel
@@ -2556,13 +2763,13 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     BaseModel
 ):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -2574,11 +2781,19 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -2601,11 +2816,19 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -2630,11 +2853,19 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -2657,11 +2888,19 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -2684,11 +2923,19 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -2698,6 +2945,16 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
         MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ] = None
     """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
+    BaseModel
+):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -2719,29 +2976,23 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
-    BaseModel
-):
-    connect_url: str
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef(
     BaseModel
 ):
-    arguments: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
+    ] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 
@@ -2853,7 +3104,9 @@ MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1: TypeAlias = U
 class MainIfElseWorkflowStepOutputElsePromptStepOutput(BaseModel):
     prompt: Union[List[MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0], str]
 
-    forward_tool_results: Optional[bool] = None
+    auto_run_tools: Optional[bool] = None
+
+    disable_cache: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2895,7 +3148,7 @@ class MainIfElseWorkflowStepOutputElseLogStep(BaseModel):
 class MainIfElseWorkflowStepOutputElseYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2903,7 +3156,7 @@ class MainIfElseWorkflowStepOutputElseYieldStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputElseReturnStep(BaseModel):
-    return_: Dict[str, str] = FieldInfo(alias="return")
+    return_: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2937,7 +3190,7 @@ class MainIfElseWorkflowStepOutputElseErrorWorkflowStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputElseWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainIfElseWorkflowStepOutputElseWaitForInputStep(BaseModel):
@@ -2977,7 +3230,7 @@ class MainIfElseWorkflowStepOutput(BaseModel):
 
 
 class MainSwitchStepOutputSwitchThenEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -2987,7 +3240,28 @@ class MainSwitchStepOutputSwitchThenEvaluateStep(BaseModel):
 class MainSwitchStepOutputSwitchThenToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3297,6 +3571,12 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
     BaseModel
@@ -3328,6 +3608,12 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef(
     BaseModel
@@ -3357,6 +3643,12 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
     BaseModel
@@ -3378,13 +3670,13 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     BaseModel
 ):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -3396,11 +3688,19 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -3423,11 +3723,19 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -3452,11 +3760,19 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -3479,11 +3795,19 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     BaseModel
 ):
-    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -3506,11 +3830,19 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     BaseModel
 ):
-    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -3520,6 +3852,16 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
         MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ] = None
     """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
+    BaseModel
+):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -3541,29 +3883,23 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
-    BaseModel
-):
-    connect_url: str
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef(
     BaseModel
 ):
-    arguments: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
+    ] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 
@@ -3675,7 +4011,9 @@ MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1: TypeAlias = Uni
 class MainSwitchStepOutputSwitchThenPromptStepOutput(BaseModel):
     prompt: Union[List[MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0], str]
 
-    forward_tool_results: Optional[bool] = None
+    auto_run_tools: Optional[bool] = None
+
+    disable_cache: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3717,7 +4055,7 @@ class MainSwitchStepOutputSwitchThenLogStep(BaseModel):
 class MainSwitchStepOutputSwitchThenYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3725,7 +4063,7 @@ class MainSwitchStepOutputSwitchThenYieldStep(BaseModel):
 
 
 class MainSwitchStepOutputSwitchThenReturnStep(BaseModel):
-    return_: Dict[str, str] = FieldInfo(alias="return")
+    return_: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]] = FieldInfo(alias="return")
 
     kind: Optional[Literal["return"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3759,7 +4097,7 @@ class MainSwitchStepOutputSwitchThenErrorWorkflowStep(BaseModel):
 
 
 class MainSwitchStepOutputSwitchThenWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainSwitchStepOutputSwitchThenWaitForInputStep(BaseModel):
@@ -3800,7 +4138,7 @@ class MainSwitchStepOutput(BaseModel):
 
 
 class MainForeachStepOutputForeachDoWaitForInputStepWaitForInput(BaseModel):
-    info: Dict[str, str]
+    info: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
 
 class MainForeachStepOutputForeachDoWaitForInputStep(BaseModel):
@@ -3812,7 +4150,7 @@ class MainForeachStepOutputForeachDoWaitForInputStep(BaseModel):
 
 
 class MainForeachStepOutputForeachDoEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3822,7 +4160,28 @@ class MainForeachStepOutputForeachDoEvaluateStep(BaseModel):
 class MainForeachStepOutputForeachDoToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4132,6 +4491,12 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
     BaseModel
@@ -4163,6 +4528,12 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef(
     BaseModel
@@ -4192,6 +4563,12 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
     BaseModel
@@ -4213,13 +4590,13 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     BaseModel
 ):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -4231,11 +4608,19 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -4258,11 +4643,19 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -4287,11 +4680,19 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -4314,11 +4715,19 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     BaseModel
 ):
-    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -4341,11 +4750,19 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     BaseModel
 ):
-    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -4355,6 +4772,16 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
         MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ] = None
     """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
+    BaseModel
+):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -4376,29 +4803,23 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
-    BaseModel
-):
-    connect_url: str
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef(
     BaseModel
 ):
-    arguments: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
+    ] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 
@@ -4510,7 +4931,9 @@ MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1: TypeAlias = Uni
 class MainForeachStepOutputForeachDoPromptStepOutput(BaseModel):
     prompt: Union[List[MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0], str]
 
-    forward_tool_results: Optional[bool] = None
+    auto_run_tools: Optional[bool] = None
+
+    disable_cache: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4552,7 +4975,7 @@ class MainForeachStepOutputForeachDoLogStep(BaseModel):
 class MainForeachStepOutputForeachDoYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4586,7 +5009,7 @@ class MainForeachStepOutput(BaseModel):
 
 
 class MainParallelStepOutputParallelEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4596,7 +5019,28 @@ class MainParallelStepOutputParallelEvaluateStep(BaseModel):
 class MainParallelStepOutputParallelToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4906,6 +5350,12 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
     BaseModel
@@ -4937,6 +5387,12 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef(
     BaseModel
@@ -4966,6 +5422,12 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
     BaseModel
@@ -4987,13 +5449,13 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     BaseModel
 ):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -5005,11 +5467,19 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -5032,11 +5502,19 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -5061,11 +5539,19 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -5088,11 +5574,19 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     BaseModel
 ):
-    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -5115,11 +5609,19 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     BaseModel
 ):
-    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -5129,6 +5631,16 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
         MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ] = None
     """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
+    BaseModel
+):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -5150,29 +5662,23 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
-    BaseModel
-):
-    connect_url: str
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef(
     BaseModel
 ):
-    arguments: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
+    ] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 
@@ -5284,7 +5790,9 @@ MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1: TypeAlias = Uni
 class MainParallelStepOutputParallelPromptStepOutput(BaseModel):
     prompt: Union[List[MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0], str]
 
-    forward_tool_results: Optional[bool] = None
+    auto_run_tools: Optional[bool] = None
+
+    disable_cache: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5326,7 +5834,7 @@ class MainParallelStepOutputParallelLogStep(BaseModel):
 class MainParallelStepOutputParallelYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5353,7 +5861,7 @@ class MainParallelStepOutput(BaseModel):
 
 
 class MainMainOutputMapEvaluateStep(BaseModel):
-    evaluate: Dict[str, str]
+    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5363,7 +5871,28 @@ class MainMainOutputMapEvaluateStep(BaseModel):
 class MainMainOutputMapToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"], None] = None
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        List[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
+                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+        None,
+    ] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5669,6 +6198,12 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef(
     BaseModel
@@ -5700,6 +6235,12 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef(
     BaseModel
@@ -5729,6 +6270,12 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef(
     BaseModel
@@ -5750,13 +6297,13 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     BaseModel
 ):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -5768,11 +6315,19 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -5795,11 +6350,19 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -5824,11 +6387,19 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     BaseModel
 ):
-    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -5851,11 +6422,19 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     BaseModel
 ):
-    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -5878,11 +6457,19 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     BaseModel
 ):
-    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -5892,6 +6479,16 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
         MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ] = None
     """The setup parameters for the browserbase integration"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
+    BaseModel
+):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -5913,29 +6510,23 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
-    BaseModel
-):
-    connect_url: str
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef(
     BaseModel
 ):
-    arguments: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments
+    ] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 
@@ -6037,7 +6628,9 @@ MainMainOutputMapPromptStepOutputToolsUnionMember1: TypeAlias = Union[
 class MainMainOutputMapPromptStepOutput(BaseModel):
     prompt: Union[List[MainMainOutputMapPromptStepOutputPromptUnionMember0], str]
 
-    forward_tool_results: Optional[bool] = None
+    auto_run_tools: Optional[bool] = None
+
+    disable_cache: Optional[bool] = None
 
     kind: Optional[Literal["prompt"]] = FieldInfo(alias="kind_", default=None)
 
@@ -6079,7 +6672,7 @@ class MainMainOutputMapLogStep(BaseModel):
 class MainMainOutputMapYieldStep(BaseModel):
     workflow: str
 
-    arguments: Union[Dict[str, str], Literal["_"], None] = None
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]], Literal["_"], None] = None
 
     kind: Optional[Literal["yield"]] = FieldInfo(alias="kind_", default=None)
 
@@ -6313,6 +6906,12 @@ class ToolIntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
 class ToolIntegrationBrowserbaseContextIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ToolIntegrationBrowserbaseContextIntegrationDef(BaseModel):
     arguments: Optional[ToolIntegrationBrowserbaseContextIntegrationDefArguments] = None
@@ -6334,6 +6933,12 @@ class ToolIntegrationBrowserbaseExtensionIntegrationDefArguments(BaseModel):
 class ToolIntegrationBrowserbaseExtensionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ToolIntegrationBrowserbaseExtensionIntegrationDef(BaseModel):
     arguments: Optional[ToolIntegrationBrowserbaseExtensionIntegrationDefArguments] = None
@@ -6353,6 +6958,12 @@ class ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments(BaseModel):
 class ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ToolIntegrationBrowserbaseListSessionsIntegrationDef(BaseModel):
     arguments: Optional[ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments] = None
@@ -6366,13 +6977,13 @@ class ToolIntegrationBrowserbaseListSessionsIntegrationDef(BaseModel):
 
 
 class ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments(BaseModel):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -6382,9 +6993,15 @@ class ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments(BaseModel):
 class ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ToolIntegrationBrowserbaseCreateSessionIntegrationDef(BaseModel):
-    arguments: ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -6401,9 +7018,15 @@ class ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments(BaseModel):
 class ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ToolIntegrationBrowserbaseGetSessionIntegrationDef(BaseModel):
-    arguments: ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -6422,9 +7045,15 @@ class ToolIntegrationBrowserbaseCompleteSessionIntegrationDefArguments(BaseModel
 class ToolIntegrationBrowserbaseCompleteSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ToolIntegrationBrowserbaseCompleteSessionIntegrationDef(BaseModel):
-    arguments: ToolIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[ToolIntegrationBrowserbaseCompleteSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -6441,9 +7070,15 @@ class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(BaseMo
 class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(BaseModel):
-    arguments: ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -6460,9 +7095,15 @@ class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(Base
 class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
-    arguments: ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -6470,6 +7111,14 @@ class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
 
     setup: Optional[ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
     """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class ToolIntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
@@ -6489,25 +7138,19 @@ class ToolIntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
         "wait_for_load",
     ]
 
+    connect_url: Optional[str] = None
+
     coordinate: Optional[List[object]] = None
 
     text: Optional[str] = None
 
 
-class ToolIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
-    connect_url: str
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class ToolIntegrationRemoteBrowserIntegrationDef(BaseModel):
-    arguments: ToolIntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: ToolIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[ToolIntegrationRemoteBrowserIntegrationDefArguments] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 

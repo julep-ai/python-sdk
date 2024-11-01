@@ -106,7 +106,7 @@ class ChunkChatResponseDoc(BaseModel):
 
     owner: ChunkChatResponseDocOwner
 
-    snippets: List[Snippet]
+    snippet: Snippet
 
     distance: Optional[float] = None
 

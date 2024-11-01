@@ -432,7 +432,7 @@ class Doc(BaseModel):
 
     owner: DocOwner
 
-    snippets: List[Snippet]
+    snippet: Snippet
 
     distance: Optional[float] = None
 

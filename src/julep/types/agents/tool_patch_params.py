@@ -289,6 +289,12 @@ class IntegrationBrowserbaseContextIntegrationDefUpdateArguments(TypedDict, tota
 class IntegrationBrowserbaseContextIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
 
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
+    project_id: Optional[str]
+
 
 class IntegrationBrowserbaseContextIntegrationDefUpdate(TypedDict, total=False):
     arguments: Optional[IntegrationBrowserbaseContextIntegrationDefUpdateArguments]
@@ -310,6 +316,12 @@ class IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments(TypedDict, to
 class IntegrationBrowserbaseExtensionIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
 
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
+    project_id: Optional[str]
+
 
 class IntegrationBrowserbaseExtensionIntegrationDefUpdate(TypedDict, total=False):
     arguments: Optional[IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments]
@@ -329,6 +341,12 @@ class IntegrationBrowserbaseListSessionsIntegrationDefUpdateArguments(TypedDict,
 class IntegrationBrowserbaseListSessionsIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
 
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
+    project_id: Optional[str]
+
 
 class IntegrationBrowserbaseListSessionsIntegrationDefUpdate(TypedDict, total=False):
     arguments: Optional[IntegrationBrowserbaseListSessionsIntegrationDefUpdateArguments]
@@ -342,21 +360,27 @@ class IntegrationBrowserbaseListSessionsIntegrationDefUpdate(TypedDict, total=Fa
 
 
 class IntegrationBrowserbaseCreateSessionIntegrationDefUpdateArguments(TypedDict, total=False):
-    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+    browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
 
-    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+    keep_alive: Annotated[bool, PropertyInfo(alias="keepAlive")]
 
     project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
-    proxies: Union[bool, Iterable[object], None]
+    proxies: Union[bool, Iterable[object]]
 
-    timeout: Optional[int]
+    timeout: int
 
 
 class IntegrationBrowserbaseCreateSessionIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
+    project_id: Optional[str]
 
 
 class IntegrationBrowserbaseCreateSessionIntegrationDefUpdate(TypedDict, total=False):
@@ -376,6 +400,12 @@ class IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments(TypedDict, t
 
 class IntegrationBrowserbaseGetSessionIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
+    project_id: Optional[str]
 
 
 class IntegrationBrowserbaseGetSessionIntegrationDefUpdate(TypedDict, total=False):
@@ -398,6 +428,12 @@ class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments(TypedDi
 class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
 
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
+    project_id: Optional[str]
+
 
 class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdate(TypedDict, total=False):
     arguments: Optional[IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments]
@@ -417,6 +453,12 @@ class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments(Type
 class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
 
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
+    project_id: Optional[str]
+
 
 class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate(TypedDict, total=False):
     arguments: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments]
@@ -435,6 +477,12 @@ class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments(Ty
 
 class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup(TypedDict, total=False):
     api_key: Optional[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
+    project_id: Optional[str]
 
 
 class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate(TypedDict, total=False):
@@ -466,6 +514,8 @@ class IntegrationRemoteBrowserIntegrationDefUpdateArguments(TypedDict, total=Fal
             "wait_for_load",
         ]
     ]
+
+    connect_url: Optional[str]
 
     coordinate: Optional[Iterable[object]]
 

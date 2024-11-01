@@ -13,9 +13,9 @@ class SessionCreateParams(TypedDict, total=False):
 
     agents: Optional[List[str]]
 
-    context_overflow: Optional[Literal["truncate", "adaptive"]]
+    auto_run_tools: bool
 
-    forward_tool_results: Optional[bool]
+    context_overflow: Optional[Literal["truncate", "adaptive"]]
 
     metadata: Optional[object]
 
