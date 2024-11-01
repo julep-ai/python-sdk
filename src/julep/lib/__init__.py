@@ -20,7 +20,7 @@ def make_patch(kw: "list[str]", method: Callable, positional_args: list[str] = [
         args += tuple([kwarg for arg in positional_args if (kwarg := kwargs.pop(arg, None))])
         
         extra_args = set(kwargs.keys()).difference(set(kw))
-
+        
         if extra_args:
             extra_body = {k: kwargs.pop(k) for k in extra_args}
             kwargs["extra_body"] = extra_body
