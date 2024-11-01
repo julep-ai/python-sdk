@@ -17,7 +17,7 @@ create_or_update_spec = inspect.getfullargspec(resources.tasks.TasksResource.cre
 def make_patch(kw: "list[str]", method: Callable):
     @wraps(method)
     def patched_method(self: resources.tasks.TasksResource, *args: P.args, **kwargs: P.kwargs):
-        extra_args = set(kwargs).difference(set(kw))
+        extra_args = set(kwargs.keys()).difference(set(kw))
         if extra_args:
             extra_body = {k: kwargs[k] for k in extra_args}
             kwargs["extra_body"] = extra_body
