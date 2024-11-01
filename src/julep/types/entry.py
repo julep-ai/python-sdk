@@ -61,8 +61,8 @@ __all__ = [
     "ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "ContentToolOutputIntegrationRemoteBrowserIntegrationDef",
-    "ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "ContentToolOutputIntegrationRemoteBrowserIntegrationDefSetup",
+    "ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "ContentToolOutputSystem",
     "ContentToolOutputTextEditor20241022",
     "ContentChosenFunctionCall",
@@ -125,8 +125,8 @@ __all__ = [
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDef",
-    "ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefSetup",
+    "ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArguments",
     "ContentUnionMember8ToolOutputSystem",
     "ContentUnionMember8ToolOutputTextEditor20241022",
     "ContentUnionMember8ChosenFunctionCall",
@@ -343,6 +343,12 @@ class ContentToolOutputIntegrationBrowserbaseContextIntegrationDefArguments(Base
 class ContentToolOutputIntegrationBrowserbaseContextIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentToolOutputIntegrationBrowserbaseContextIntegrationDef(BaseModel):
     arguments: Optional[ContentToolOutputIntegrationBrowserbaseContextIntegrationDefArguments] = None
@@ -364,6 +370,12 @@ class ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDefArguments(Ba
 class ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDef(BaseModel):
     arguments: Optional[ContentToolOutputIntegrationBrowserbaseExtensionIntegrationDefArguments] = None
@@ -383,6 +395,12 @@ class ContentToolOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments
 class ContentToolOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentToolOutputIntegrationBrowserbaseListSessionsIntegrationDef(BaseModel):
     arguments: Optional[ContentToolOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments] = None
@@ -396,13 +414,13 @@ class ContentToolOutputIntegrationBrowserbaseListSessionsIntegrationDef(BaseMode
 
 
 class ContentToolOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(BaseModel):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -412,9 +430,15 @@ class ContentToolOutputIntegrationBrowserbaseCreateSessionIntegrationDefArgument
 class ContentToolOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentToolOutputIntegrationBrowserbaseCreateSessionIntegrationDef(BaseModel):
-    arguments: ContentToolOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[ContentToolOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -431,9 +455,15 @@ class ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments(B
 class ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDef(BaseModel):
-    arguments: ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[ContentToolOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -452,9 +482,15 @@ class ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArgume
 class ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(BaseModel):
-    arguments: ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[ContentToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -471,9 +507,15 @@ class ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArg
 class ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(BaseModel):
-    arguments: ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[ContentToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -490,9 +532,15 @@ class ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefA
 class ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
-    arguments: ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -500,6 +548,14 @@ class ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
 
     setup: Optional[ContentToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
     """The setup parameters for the browserbase integration"""
+
+
+class ContentToolOutputIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
@@ -526,20 +582,12 @@ class ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments(BaseModel
     text: Optional[str] = None
 
 
-class ContentToolOutputIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
-    connect_url: Optional[str] = None
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class ContentToolOutputIntegrationRemoteBrowserIntegrationDef(BaseModel):
-    arguments: ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: ContentToolOutputIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 
@@ -946,6 +994,12 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDefAr
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDef(BaseModel):
     arguments: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseContextIntegrationDefArguments] = None
@@ -967,6 +1021,12 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDef
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDef(BaseModel):
     arguments: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseExtensionIntegrationDefArguments] = None
@@ -986,6 +1046,12 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseListSessionsIntegration
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseListSessionsIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseListSessionsIntegrationDef(BaseModel):
     arguments: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseListSessionsIntegrationDefArguments] = None
@@ -999,13 +1065,13 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseListSessionsIntegration
 
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(BaseModel):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -1015,9 +1081,15 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseCreateSessionIntegratio
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseCreateSessionIntegrationDef(BaseModel):
-    arguments: ContentUnionMember8ToolOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseCreateSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -1034,9 +1106,15 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDe
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDef(BaseModel):
-    arguments: ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -1055,9 +1133,17 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrat
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDef(BaseModel):
-    arguments: ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments] = (
+        None
+    )
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -1074,9 +1160,17 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsInteg
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(BaseModel):
-    arguments: ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[
+        ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -1093,9 +1187,17 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLInt
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
-    arguments: ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[
+        ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -1103,6 +1205,14 @@ class ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLInt
 
     setup: Optional[ContentUnionMember8ToolOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
     """The setup parameters for the browserbase integration"""
+
+
+class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
@@ -1129,20 +1239,12 @@ class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArgumen
     text: Optional[str] = None
 
 
-class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
-    connect_url: Optional[str] = None
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDef(BaseModel):
-    arguments: ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArguments] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 
