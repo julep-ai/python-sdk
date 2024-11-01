@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.29.0 (2024-11-01)
+
+Full Changelog: [v1.28.0...v1.29.0](https://github.com/julep-ai/python-sdk/compare/v1.28.0...v1.29.0)
+
+### Features
+
+* **api:** api update ([#119](https://github.com/julep-ai/python-sdk/issues/119)) ([05c25ee](https://github.com/julep-ai/python-sdk/commit/05c25ee9df8c4b87f40a40285c2b18662fd82104))
+
 ## 1.28.0 (2024-10-31)
 
 Full Changelog: [v1.27.0...v1.28.0](https://github.com/julep-ai/python-sdk/compare/v1.27.0...v1.28.0)
