@@ -37,8 +37,8 @@ class TestSessions:
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             ],
+            auto_run_tools=True,
             context_overflow="truncate",
-            forward_tool_results=True,
             metadata={},
             render_templates=True,
             situation="situation",
@@ -83,8 +83,8 @@ class TestSessions:
     def test_method_update_with_all_params(self, client: Julep) -> None:
         session = client.sessions.update(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            auto_run_tools=True,
             context_overflow="truncate",
-            forward_tool_results=True,
             metadata={},
             render_templates=True,
             situation="situation",
@@ -464,8 +464,8 @@ class TestSessions:
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             ],
+            auto_run_tools=True,
             context_overflow="truncate",
-            forward_tool_results=True,
             metadata={},
             render_templates=True,
             situation="situation",
@@ -597,8 +597,8 @@ class TestSessions:
     def test_method_patch_with_all_params(self, client: Julep) -> None:
         session = client.sessions.patch(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            auto_run_tools=True,
             context_overflow="truncate",
-            forward_tool_results=True,
             metadata={},
             render_templates=True,
             situation="situation",
@@ -655,8 +655,8 @@ class TestAsyncSessions:
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             ],
+            auto_run_tools=True,
             context_overflow="truncate",
-            forward_tool_results=True,
             metadata={},
             render_templates=True,
             situation="situation",
@@ -701,8 +701,8 @@ class TestAsyncSessions:
     async def test_method_update_with_all_params(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.update(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            auto_run_tools=True,
             context_overflow="truncate",
-            forward_tool_results=True,
             metadata={},
             render_templates=True,
             situation="situation",
@@ -1082,8 +1082,8 @@ class TestAsyncSessions:
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             ],
+            auto_run_tools=True,
             context_overflow="truncate",
-            forward_tool_results=True,
             metadata={},
             render_templates=True,
             situation="situation",
@@ -1215,8 +1215,8 @@ class TestAsyncSessions:
     async def test_method_patch_with_all_params(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.patch(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            auto_run_tools=True,
             context_overflow="truncate",
-            forward_tool_results=True,
             metadata={},
             render_templates=True,
             situation="situation",

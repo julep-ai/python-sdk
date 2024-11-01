@@ -73,8 +73,8 @@ __all__ = [
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef",
-    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainGetStep",
@@ -151,8 +151,8 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef",
-    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenGetStep",
@@ -228,8 +228,8 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef",
-    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseGetStep",
@@ -307,8 +307,8 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef",
-    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainSwitchStepInputSwitchThenGetStep",
@@ -388,8 +388,8 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef",
-    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainForeachStepInputForeachDoGetStep",
@@ -460,8 +460,8 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef",
-    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainParallelStepInputParallelGetStep",
@@ -532,8 +532,8 @@ __all__ = [
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef",
-    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputSystem",
     "MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputTextEditor20241022",
     "MainMainInputMapGetStep",
@@ -586,8 +586,8 @@ __all__ = [
     "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "ToolIntegrationRemoteBrowserIntegrationDef",
-    "ToolIntegrationRemoteBrowserIntegrationDefArguments",
     "ToolIntegrationRemoteBrowserIntegrationDefSetup",
+    "ToolIntegrationRemoteBrowserIntegrationDefArguments",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -612,7 +612,7 @@ class TaskCreateOrUpdateParams(TypedDict, total=False):
 
 
 class MainEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -620,7 +620,27 @@ class MainEvaluateStep(TypedDict, total=False):
 class MainToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -920,6 +940,12 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
     TypedDict, total=False
@@ -951,6 +977,12 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseExtensionIntegrationDef(
     TypedDict, total=False
@@ -980,6 +1012,12 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
     TypedDict, total=False
@@ -1001,17 +1039,17 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     TypedDict, total=False
 ):
-    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
-
-    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+    browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
 
-    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+    keep_alive: Annotated[bool, PropertyInfo(alias="keepAlive")]
 
-    proxies: Union[bool, Iterable[object], None]
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
-    timeout: Optional[int]
+    proxies: Union[bool, Iterable[object]]
+
+    timeout: int
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
@@ -1019,11 +1057,17 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
     ]
 
@@ -1048,11 +1092,17 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
     ]
 
@@ -1079,11 +1129,17 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
     ]
 
@@ -1108,11 +1164,17 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
     ]
 
@@ -1137,11 +1199,17 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
     ]
 
@@ -1153,6 +1221,16 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrows
         MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ]
     """The setup parameters for the browserbase integration"""
+
+
+class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
+    TypedDict, total=False
+):
+    connect_url: Optional[str]
+
+    height: Optional[int]
+
+    width: Optional[int]
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -1176,33 +1254,25 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemot
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
-class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
-    TypedDict, total=False
-):
-    connect_url: Required[str]
-
-    height: Optional[int]
-
-    width: Optional[int]
-
-
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
-        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
-    ]
-    """The arguments for the remote browser"""
-
     setup: Required[
         MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup
     ]
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
+    ]
+    """The arguments for the remote browser"""
 
     method: Literal["perform_action"]
 
@@ -1306,7 +1376,9 @@ MainPromptStepInputToolsUnionMember1: TypeAlias = Union[
 class MainPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainPromptStepInputPromptUnionMember0], str]]
 
-    forward_tool_results: Optional[bool]
+    auto_run_tools: bool
+
+    disable_cache: bool
 
     label: Optional[str]
 
@@ -1340,7 +1412,7 @@ class MainLogStep(TypedDict, total=False):
 class MainYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -1348,7 +1420,7 @@ class MainYieldStep(TypedDict, total=False):
 _MainReturnStepReservedKeywords = TypedDict(
     "_MainReturnStepReservedKeywords",
     {
-        "return": Dict[str, str],
+        "return": Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
     },
     total=False,
 )
@@ -1381,7 +1453,7 @@ class MainErrorWorkflowStep(TypedDict, total=False):
 
 
 class MainWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainWaitForInputStep(TypedDict, total=False):
@@ -1391,7 +1463,7 @@ class MainWaitForInputStep(TypedDict, total=False):
 
 
 class MainIfElseWorkflowStepInputThenEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -1399,7 +1471,27 @@ class MainIfElseWorkflowStepInputThenEvaluateStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -1741,6 +1833,12 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
     TypedDict, total=False
@@ -1772,6 +1870,12 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseExtensionIntegrationDef(
     TypedDict, total=False
@@ -1801,6 +1905,12 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
     TypedDict, total=False
@@ -1822,17 +1932,17 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     TypedDict, total=False
 ):
-    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
-
-    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+    browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
 
-    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+    keep_alive: Annotated[bool, PropertyInfo(alias="keepAlive")]
 
-    proxies: Union[bool, Iterable[object], None]
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
-    timeout: Optional[int]
+    proxies: Union[bool, Iterable[object]]
+
+    timeout: int
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
@@ -1840,11 +1950,17 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
     ]
 
@@ -1869,11 +1985,17 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
     ]
 
@@ -1900,11 +2022,17 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
     ]
 
@@ -1929,11 +2057,17 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
     ]
 
@@ -1958,11 +2092,17 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
     ]
 
@@ -1974,6 +2114,16 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
         MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ]
     """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
+    TypedDict, total=False
+):
+    connect_url: Optional[str]
+
+    height: Optional[int]
+
+    width: Optional[int]
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -1997,33 +2147,25 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
-class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
-    TypedDict, total=False
-):
-    connect_url: Required[str]
-
-    height: Optional[int]
-
-    width: Optional[int]
-
-
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
-        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
-    ]
-    """The arguments for the remote browser"""
-
     setup: Required[
         MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup
     ]
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
+    ]
+    """The arguments for the remote browser"""
 
     method: Literal["perform_action"]
 
@@ -2140,7 +2282,9 @@ MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1: TypeAlias = Uni
 class MainIfElseWorkflowStepInputThenPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0], str]]
 
-    forward_tool_results: Optional[bool]
+    auto_run_tools: bool
+
+    disable_cache: bool
 
     label: Optional[str]
 
@@ -2174,7 +2318,7 @@ class MainIfElseWorkflowStepInputThenLogStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputThenYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -2182,7 +2326,7 @@ class MainIfElseWorkflowStepInputThenYieldStep(TypedDict, total=False):
 _MainIfElseWorkflowStepInputThenReturnStepReservedKeywords = TypedDict(
     "_MainIfElseWorkflowStepInputThenReturnStepReservedKeywords",
     {
-        "return": Dict[str, str],
+        "return": Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
     },
     total=False,
 )
@@ -2217,7 +2361,7 @@ class MainIfElseWorkflowStepInputThenErrorWorkflowStep(TypedDict, total=False):
 
 
 class MainIfElseWorkflowStepInputThenWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainIfElseWorkflowStepInputThenWaitForInputStep(TypedDict, total=False):
@@ -2242,7 +2386,7 @@ MainIfElseWorkflowStepInputThen: TypeAlias = Union[
 
 
 class MainIfElseWorkflowStepInputElseEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -2250,7 +2394,27 @@ class MainIfElseWorkflowStepInputElseEvaluateStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputElseToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -2592,6 +2756,12 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
     TypedDict, total=False
@@ -2623,6 +2793,12 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseExtensionIntegrationDef(
     TypedDict, total=False
@@ -2652,6 +2828,12 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
     TypedDict, total=False
@@ -2673,17 +2855,17 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     TypedDict, total=False
 ):
-    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
-
-    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+    browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
 
-    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+    keep_alive: Annotated[bool, PropertyInfo(alias="keepAlive")]
 
-    proxies: Union[bool, Iterable[object], None]
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
-    timeout: Optional[int]
+    proxies: Union[bool, Iterable[object]]
+
+    timeout: int
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
@@ -2691,11 +2873,17 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
     ]
 
@@ -2720,11 +2908,17 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
     ]
 
@@ -2751,11 +2945,17 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
     ]
 
@@ -2780,11 +2980,17 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
     ]
 
@@ -2809,11 +3015,17 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
     ]
 
@@ -2825,6 +3037,16 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
         MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ]
     """The setup parameters for the browserbase integration"""
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
+    TypedDict, total=False
+):
+    connect_url: Optional[str]
+
+    height: Optional[int]
+
+    width: Optional[int]
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -2848,33 +3070,25 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
-class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
-    TypedDict, total=False
-):
-    connect_url: Required[str]
-
-    height: Optional[int]
-
-    width: Optional[int]
-
-
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
-        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
-    ]
-    """The arguments for the remote browser"""
-
     setup: Required[
         MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup
     ]
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
+    ]
+    """The arguments for the remote browser"""
 
     method: Literal["perform_action"]
 
@@ -2991,7 +3205,9 @@ MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1: TypeAlias = Uni
 class MainIfElseWorkflowStepInputElsePromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0], str]]
 
-    forward_tool_results: Optional[bool]
+    auto_run_tools: bool
+
+    disable_cache: bool
 
     label: Optional[str]
 
@@ -3025,7 +3241,7 @@ class MainIfElseWorkflowStepInputElseLogStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputElseYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -3033,7 +3249,7 @@ class MainIfElseWorkflowStepInputElseYieldStep(TypedDict, total=False):
 _MainIfElseWorkflowStepInputElseReturnStepReservedKeywords = TypedDict(
     "_MainIfElseWorkflowStepInputElseReturnStepReservedKeywords",
     {
-        "return": Dict[str, str],
+        "return": Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
     },
     total=False,
 )
@@ -3068,7 +3284,7 @@ class MainIfElseWorkflowStepInputElseErrorWorkflowStep(TypedDict, total=False):
 
 
 class MainIfElseWorkflowStepInputElseWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainIfElseWorkflowStepInputElseWaitForInputStep(TypedDict, total=False):
@@ -3108,7 +3324,7 @@ class MainIfElseWorkflowStepInput(_MainIfElseWorkflowStepInputReservedKeywords, 
 
 
 class MainSwitchStepInputSwitchThenEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -3116,7 +3332,27 @@ class MainSwitchStepInputSwitchThenEvaluateStep(TypedDict, total=False):
 class MainSwitchStepInputSwitchThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -3454,6 +3690,12 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
     TypedDict, total=False
@@ -3485,6 +3727,12 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseExtensionIntegrationDef(
     TypedDict, total=False
@@ -3514,6 +3762,12 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
     TypedDict, total=False
@@ -3535,17 +3789,17 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     TypedDict, total=False
 ):
-    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
-
-    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+    browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
 
-    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+    keep_alive: Annotated[bool, PropertyInfo(alias="keepAlive")]
 
-    proxies: Union[bool, Iterable[object], None]
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
-    timeout: Optional[int]
+    proxies: Union[bool, Iterable[object]]
+
+    timeout: int
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
@@ -3553,11 +3807,17 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
     ]
 
@@ -3582,11 +3842,17 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
     ]
 
@@ -3613,11 +3879,17 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
     ]
 
@@ -3642,11 +3914,17 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
     ]
 
@@ -3671,11 +3949,17 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
     ]
 
@@ -3687,6 +3971,16 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
         MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ]
     """The setup parameters for the browserbase integration"""
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
+    TypedDict, total=False
+):
+    connect_url: Optional[str]
+
+    height: Optional[int]
+
+    width: Optional[int]
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -3710,33 +4004,25 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
-class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
-    TypedDict, total=False
-):
-    connect_url: Required[str]
-
-    height: Optional[int]
-
-    width: Optional[int]
-
-
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
-        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
-    ]
-    """The arguments for the remote browser"""
-
     setup: Required[
         MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup
     ]
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
+    ]
+    """The arguments for the remote browser"""
 
     method: Literal["perform_action"]
 
@@ -3851,7 +4137,9 @@ MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1: TypeAlias = Union
 class MainSwitchStepInputSwitchThenPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0], str]]
 
-    forward_tool_results: Optional[bool]
+    auto_run_tools: bool
+
+    disable_cache: bool
 
     label: Optional[str]
 
@@ -3885,7 +4173,7 @@ class MainSwitchStepInputSwitchThenLogStep(TypedDict, total=False):
 class MainSwitchStepInputSwitchThenYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -3893,7 +4181,7 @@ class MainSwitchStepInputSwitchThenYieldStep(TypedDict, total=False):
 _MainSwitchStepInputSwitchThenReturnStepReservedKeywords = TypedDict(
     "_MainSwitchStepInputSwitchThenReturnStepReservedKeywords",
     {
-        "return": Dict[str, str],
+        "return": Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
     },
     total=False,
 )
@@ -3926,7 +4214,7 @@ class MainSwitchStepInputSwitchThenErrorWorkflowStep(TypedDict, total=False):
 
 
 class MainSwitchStepInputSwitchThenWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainSwitchStepInputSwitchThenWaitForInputStep(TypedDict, total=False):
@@ -3963,7 +4251,7 @@ class MainSwitchStepInput(TypedDict, total=False):
 
 
 class MainForeachStepInputForeachDoWaitForInputStepWaitForInput(TypedDict, total=False):
-    info: Required[Dict[str, str]]
+    info: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
 
 class MainForeachStepInputForeachDoWaitForInputStep(TypedDict, total=False):
@@ -3973,7 +4261,7 @@ class MainForeachStepInputForeachDoWaitForInputStep(TypedDict, total=False):
 
 
 class MainForeachStepInputForeachDoEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -3981,7 +4269,27 @@ class MainForeachStepInputForeachDoEvaluateStep(TypedDict, total=False):
 class MainForeachStepInputForeachDoToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -4319,6 +4627,12 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
     TypedDict, total=False
@@ -4350,6 +4664,12 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseExtensionIntegrationDef(
     TypedDict, total=False
@@ -4379,6 +4699,12 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
     TypedDict, total=False
@@ -4400,17 +4726,17 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     TypedDict, total=False
 ):
-    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
-
-    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+    browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
 
-    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+    keep_alive: Annotated[bool, PropertyInfo(alias="keepAlive")]
 
-    proxies: Union[bool, Iterable[object], None]
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
-    timeout: Optional[int]
+    proxies: Union[bool, Iterable[object]]
+
+    timeout: int
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
@@ -4418,11 +4744,17 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
     ]
 
@@ -4447,11 +4779,17 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
     ]
 
@@ -4478,11 +4816,17 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
     ]
 
@@ -4507,11 +4851,17 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
     ]
 
@@ -4536,11 +4886,17 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
     ]
 
@@ -4552,6 +4908,16 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
         MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ]
     """The setup parameters for the browserbase integration"""
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
+    TypedDict, total=False
+):
+    connect_url: Optional[str]
+
+    height: Optional[int]
+
+    width: Optional[int]
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -4575,33 +4941,25 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
-class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
-    TypedDict, total=False
-):
-    connect_url: Required[str]
-
-    height: Optional[int]
-
-    width: Optional[int]
-
-
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
-        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
-    ]
-    """The arguments for the remote browser"""
-
     setup: Required[
         MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup
     ]
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
+    ]
+    """The arguments for the remote browser"""
 
     method: Literal["perform_action"]
 
@@ -4716,7 +5074,9 @@ MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1: TypeAlias = Union
 class MainForeachStepInputForeachDoPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0], str]]
 
-    forward_tool_results: Optional[bool]
+    auto_run_tools: bool
+
+    disable_cache: bool
 
     label: Optional[str]
 
@@ -4750,7 +5110,7 @@ class MainForeachStepInputForeachDoLogStep(TypedDict, total=False):
 class MainForeachStepInputForeachDoYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -4786,7 +5146,7 @@ class MainForeachStepInput(TypedDict, total=False):
 
 
 class MainParallelStepInputParallelEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -4794,7 +5154,27 @@ class MainParallelStepInputParallelEvaluateStep(TypedDict, total=False):
 class MainParallelStepInputParallelToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -5132,6 +5512,12 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
     TypedDict, total=False
@@ -5163,6 +5549,12 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseExtensionIntegrationDef(
     TypedDict, total=False
@@ -5192,6 +5584,12 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
     TypedDict, total=False
@@ -5213,17 +5611,17 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     TypedDict, total=False
 ):
-    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
-
-    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+    browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
 
-    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+    keep_alive: Annotated[bool, PropertyInfo(alias="keepAlive")]
 
-    proxies: Union[bool, Iterable[object], None]
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
-    timeout: Optional[int]
+    proxies: Union[bool, Iterable[object]]
+
+    timeout: int
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
@@ -5231,11 +5629,17 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
     ]
 
@@ -5260,11 +5664,17 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
     ]
 
@@ -5291,11 +5701,17 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
     ]
 
@@ -5320,11 +5736,17 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
     ]
 
@@ -5349,11 +5771,17 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
     ]
 
@@ -5365,6 +5793,16 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
         MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ]
     """The setup parameters for the browserbase integration"""
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
+    TypedDict, total=False
+):
+    connect_url: Optional[str]
+
+    height: Optional[int]
+
+    width: Optional[int]
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -5388,33 +5826,25 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
-class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
-    TypedDict, total=False
-):
-    connect_url: Required[str]
-
-    height: Optional[int]
-
-    width: Optional[int]
-
-
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
-        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
-    ]
-    """The arguments for the remote browser"""
-
     setup: Required[
         MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup
     ]
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
+    ]
+    """The arguments for the remote browser"""
 
     method: Literal["perform_action"]
 
@@ -5529,7 +5959,9 @@ MainParallelStepInputParallelPromptStepInputToolsUnionMember1: TypeAlias = Union
 class MainParallelStepInputParallelPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainParallelStepInputParallelPromptStepInputPromptUnionMember0], str]]
 
-    forward_tool_results: Optional[bool]
+    auto_run_tools: bool
+
+    disable_cache: bool
 
     label: Optional[str]
 
@@ -5563,7 +5995,7 @@ class MainParallelStepInputParallelLogStep(TypedDict, total=False):
 class MainParallelStepInputParallelYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -5586,7 +6018,7 @@ class MainParallelStepInput(TypedDict, total=False):
 
 
 class MainMainInputMapEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, str]]
+    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
 
     label: Optional[str]
 
@@ -5594,7 +6026,27 @@ class MainMainInputMapEvaluateStep(TypedDict, total=False):
 class MainMainInputMapToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[Dict[str, Union[Dict[str, str], str]], Literal["_"]]
+    arguments: Union[
+        Dict[
+            str,
+            Union[
+                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                str,
+            ],
+        ],
+        Iterable[
+            Dict[
+                str,
+                Union[
+                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
+                    str,
+                ],
+            ]
+        ],
+        Literal["_"],
+    ]
 
     label: Optional[str]
 
@@ -5916,6 +6368,12 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseContextIntegrationDef(
     TypedDict, total=False
@@ -5947,6 +6405,12 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseExtensionIntegrationDef(
     TypedDict, total=False
@@ -5976,6 +6440,12 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseListSessionsIntegrationDef(
     TypedDict, total=False
@@ -5997,17 +6467,17 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments(
     TypedDict, total=False
 ):
-    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
-
-    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+    browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
 
-    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+    keep_alive: Annotated[bool, PropertyInfo(alias="keepAlive")]
 
-    proxies: Union[bool, Iterable[object], None]
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
-    timeout: Optional[int]
+    proxies: Union[bool, Iterable[object]]
+
+    timeout: int
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefSetup(
@@ -6015,11 +6485,17 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCreateSessionIntegrationDefArguments
     ]
 
@@ -6044,11 +6520,17 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionIntegrationDefArguments
     ]
 
@@ -6075,11 +6557,17 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseCompleteSessionIntegrationDefArguments
     ]
 
@@ -6104,11 +6592,17 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
     ]
 
@@ -6133,11 +6627,17 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 ):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
+    arguments: Optional[
         MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
     ]
 
@@ -6149,6 +6649,16 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
         MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
     ]
     """The setup parameters for the browserbase integration"""
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
+    TypedDict, total=False
+):
+    connect_url: Optional[str]
+
+    height: Optional[int]
+
+    width: Optional[int]
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments(
@@ -6172,33 +6682,25 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
-class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup(
-    TypedDict, total=False
-):
-    connect_url: Required[str]
-
-    height: Optional[int]
-
-    width: Optional[int]
-
-
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Required[
-        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
-    ]
-    """The arguments for the remote browser"""
-
     setup: Required[
         MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefSetup
     ]
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemoteBrowserIntegrationDefArguments
+    ]
+    """The arguments for the remote browser"""
 
     method: Literal["perform_action"]
 
@@ -6305,7 +6807,9 @@ MainMainInputMapPromptStepInputToolsUnionMember1: TypeAlias = Union[
 class MainMainInputMapPromptStepInput(TypedDict, total=False):
     prompt: Required[Union[Iterable[MainMainInputMapPromptStepInputPromptUnionMember0], str]]
 
-    forward_tool_results: Optional[bool]
+    auto_run_tools: bool
+
+    disable_cache: bool
 
     label: Optional[str]
 
@@ -6339,7 +6843,7 @@ class MainMainInputMapLogStep(TypedDict, total=False):
 class MainMainInputMapYieldStep(TypedDict, total=False):
     workflow: Required[str]
 
-    arguments: Union[Dict[str, str], Literal["_"]]
+    arguments: Union[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]], Literal["_"]]
 
     label: Optional[str]
 
@@ -6578,6 +7082,12 @@ class ToolIntegrationBrowserbaseContextIntegrationDefArguments(TypedDict, total=
 class ToolIntegrationBrowserbaseContextIntegrationDefSetup(TypedDict, total=False):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class ToolIntegrationBrowserbaseContextIntegrationDef(TypedDict, total=False):
     arguments: Optional[ToolIntegrationBrowserbaseContextIntegrationDefArguments]
@@ -6599,6 +7109,12 @@ class ToolIntegrationBrowserbaseExtensionIntegrationDefArguments(TypedDict, tota
 class ToolIntegrationBrowserbaseExtensionIntegrationDefSetup(TypedDict, total=False):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class ToolIntegrationBrowserbaseExtensionIntegrationDef(TypedDict, total=False):
     arguments: Optional[ToolIntegrationBrowserbaseExtensionIntegrationDefArguments]
@@ -6618,6 +7134,12 @@ class ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments(TypedDict, t
 class ToolIntegrationBrowserbaseListSessionsIntegrationDefSetup(TypedDict, total=False):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class ToolIntegrationBrowserbaseListSessionsIntegrationDef(TypedDict, total=False):
     arguments: Optional[ToolIntegrationBrowserbaseListSessionsIntegrationDefArguments]
@@ -6631,25 +7153,31 @@ class ToolIntegrationBrowserbaseListSessionsIntegrationDef(TypedDict, total=Fals
 
 
 class ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments(TypedDict, total=False):
-    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
-
-    browser_settings: Annotated[Optional[object], PropertyInfo(alias="browserSettings")]
+    browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
 
-    keep_alive: Annotated[Optional[bool], PropertyInfo(alias="keepAlive")]
+    keep_alive: Annotated[bool, PropertyInfo(alias="keepAlive")]
 
-    proxies: Union[bool, Iterable[object], None]
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
-    timeout: Optional[int]
+    proxies: Union[bool, Iterable[object]]
+
+    timeout: int
 
 
 class ToolIntegrationBrowserbaseCreateSessionIntegrationDefSetup(TypedDict, total=False):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class ToolIntegrationBrowserbaseCreateSessionIntegrationDef(TypedDict, total=False):
-    arguments: Required[ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments]
+    arguments: Optional[ToolIntegrationBrowserbaseCreateSessionIntegrationDefArguments]
 
     method: Literal["create_session"]
 
@@ -6666,9 +7194,15 @@ class ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments(TypedDict, tot
 class ToolIntegrationBrowserbaseGetSessionIntegrationDefSetup(TypedDict, total=False):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class ToolIntegrationBrowserbaseGetSessionIntegrationDef(TypedDict, total=False):
-    arguments: Required[ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments]
+    arguments: Optional[ToolIntegrationBrowserbaseGetSessionIntegrationDefArguments]
 
     method: Literal["get_session"]
 
@@ -6687,9 +7221,15 @@ class ToolIntegrationBrowserbaseCompleteSessionIntegrationDefArguments(TypedDict
 class ToolIntegrationBrowserbaseCompleteSessionIntegrationDefSetup(TypedDict, total=False):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class ToolIntegrationBrowserbaseCompleteSessionIntegrationDef(TypedDict, total=False):
-    arguments: Required[ToolIntegrationBrowserbaseCompleteSessionIntegrationDefArguments]
+    arguments: Optional[ToolIntegrationBrowserbaseCompleteSessionIntegrationDefArguments]
 
     method: Literal["complete_session"]
 
@@ -6706,9 +7246,15 @@ class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(TypedD
 class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(TypedDict, total=False):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(TypedDict, total=False):
-    arguments: Required[ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments]
+    arguments: Optional[ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments]
 
     method: Literal["get_live_urls"]
 
@@ -6725,9 +7271,15 @@ class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(Type
 class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(TypedDict, total=False):
     api_key: Required[str]
 
+    project_id: Required[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
 
 class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(TypedDict, total=False):
-    arguments: Required[ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments]
+    arguments: Optional[ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments]
 
     method: Literal["get_connect_url"]
 
@@ -6735,6 +7287,14 @@ class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(TypedDict, to
 
     setup: Optional[ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup]
     """The setup parameters for the browserbase integration"""
+
+
+class ToolIntegrationRemoteBrowserIntegrationDefSetup(TypedDict, total=False):
+    connect_url: Optional[str]
+
+    height: Optional[int]
+
+    width: Optional[int]
 
 
 class ToolIntegrationRemoteBrowserIntegrationDefArguments(TypedDict, total=False):
@@ -6756,25 +7316,19 @@ class ToolIntegrationRemoteBrowserIntegrationDefArguments(TypedDict, total=False
         ]
     ]
 
+    connect_url: Optional[str]
+
     coordinate: Optional[Iterable[object]]
 
     text: Optional[str]
 
 
-class ToolIntegrationRemoteBrowserIntegrationDefSetup(TypedDict, total=False):
-    connect_url: Required[str]
-
-    height: Optional[int]
-
-    width: Optional[int]
-
-
 class ToolIntegrationRemoteBrowserIntegrationDef(TypedDict, total=False):
-    arguments: Required[ToolIntegrationRemoteBrowserIntegrationDefArguments]
-    """The arguments for the remote browser"""
-
     setup: Required[ToolIntegrationRemoteBrowserIntegrationDefSetup]
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[ToolIntegrationRemoteBrowserIntegrationDefArguments]
+    """The arguments for the remote browser"""
 
     method: Literal["perform_action"]
 
