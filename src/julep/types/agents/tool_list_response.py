@@ -55,8 +55,8 @@ __all__ = [
     "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
     "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "IntegrationRemoteBrowserIntegrationDef",
-    "IntegrationRemoteBrowserIntegrationDefArguments",
     "IntegrationRemoteBrowserIntegrationDefSetup",
+    "IntegrationRemoteBrowserIntegrationDefArguments",
     "System",
     "TextEditor20241022",
 ]
@@ -242,6 +242,12 @@ class IntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
 class IntegrationBrowserbaseContextIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class IntegrationBrowserbaseContextIntegrationDef(BaseModel):
     arguments: Optional[IntegrationBrowserbaseContextIntegrationDefArguments] = None
@@ -263,6 +269,12 @@ class IntegrationBrowserbaseExtensionIntegrationDefArguments(BaseModel):
 class IntegrationBrowserbaseExtensionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class IntegrationBrowserbaseExtensionIntegrationDef(BaseModel):
     arguments: Optional[IntegrationBrowserbaseExtensionIntegrationDefArguments] = None
@@ -282,6 +294,12 @@ class IntegrationBrowserbaseListSessionsIntegrationDefArguments(BaseModel):
 class IntegrationBrowserbaseListSessionsIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class IntegrationBrowserbaseListSessionsIntegrationDef(BaseModel):
     arguments: Optional[IntegrationBrowserbaseListSessionsIntegrationDefArguments] = None
@@ -295,13 +313,13 @@ class IntegrationBrowserbaseListSessionsIntegrationDef(BaseModel):
 
 
 class IntegrationBrowserbaseCreateSessionIntegrationDefArguments(BaseModel):
-    project_id: str = FieldInfo(alias="projectId")
-
     browser_settings: Optional[object] = FieldInfo(alias="browserSettings", default=None)
 
     extension_id: Optional[str] = FieldInfo(alias="extensionId", default=None)
 
     keep_alive: Optional[bool] = FieldInfo(alias="keepAlive", default=None)
+
+    project_id: Optional[str] = FieldInfo(alias="projectId", default=None)
 
     proxies: Union[bool, List[object], None] = None
 
@@ -311,9 +329,15 @@ class IntegrationBrowserbaseCreateSessionIntegrationDefArguments(BaseModel):
 class IntegrationBrowserbaseCreateSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class IntegrationBrowserbaseCreateSessionIntegrationDef(BaseModel):
-    arguments: IntegrationBrowserbaseCreateSessionIntegrationDefArguments
+    arguments: Optional[IntegrationBrowserbaseCreateSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["create_session"]] = None
 
@@ -330,9 +354,15 @@ class IntegrationBrowserbaseGetSessionIntegrationDefArguments(BaseModel):
 class IntegrationBrowserbaseGetSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class IntegrationBrowserbaseGetSessionIntegrationDef(BaseModel):
-    arguments: IntegrationBrowserbaseGetSessionIntegrationDefArguments
+    arguments: Optional[IntegrationBrowserbaseGetSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["get_session"]] = None
 
@@ -351,9 +381,15 @@ class IntegrationBrowserbaseCompleteSessionIntegrationDefArguments(BaseModel):
 class IntegrationBrowserbaseCompleteSessionIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class IntegrationBrowserbaseCompleteSessionIntegrationDef(BaseModel):
-    arguments: IntegrationBrowserbaseCompleteSessionIntegrationDefArguments
+    arguments: Optional[IntegrationBrowserbaseCompleteSessionIntegrationDefArguments] = None
 
     method: Optional[Literal["complete_session"]] = None
 
@@ -370,9 +406,15 @@ class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(BaseModel)
 class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(BaseModel):
-    arguments: IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments
+    arguments: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments] = None
 
     method: Optional[Literal["get_live_urls"]] = None
 
@@ -389,9 +431,15 @@ class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(BaseMode
 class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
     api_key: str
 
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
 
 class IntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
-    arguments: IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    arguments: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments] = None
 
     method: Optional[Literal["get_connect_url"]] = None
 
@@ -399,6 +447,14 @@ class IntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
 
     setup: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
     """The setup parameters for the browserbase integration"""
+
+
+class IntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
+    connect_url: Optional[str] = None
+
+    height: Optional[int] = None
+
+    width: Optional[int] = None
 
 
 class IntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
@@ -425,20 +481,12 @@ class IntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
     text: Optional[str] = None
 
 
-class IntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
-    connect_url: Optional[str] = None
-
-    height: Optional[int] = None
-
-    width: Optional[int] = None
-
-
 class IntegrationRemoteBrowserIntegrationDef(BaseModel):
-    arguments: IntegrationRemoteBrowserIntegrationDefArguments
-    """The arguments for the remote browser"""
-
     setup: IntegrationRemoteBrowserIntegrationDefSetup
     """The setup parameters for the remote browser"""
+
+    arguments: Optional[IntegrationRemoteBrowserIntegrationDefArguments] = None
+    """The arguments for the remote browser"""
 
     method: Optional[Literal["perform_action"]] = None
 

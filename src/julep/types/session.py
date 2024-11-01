@@ -16,9 +16,9 @@ class Session(BaseModel):
 
     updated_at: datetime
 
-    context_overflow: Optional[Literal["truncate", "adaptive"]] = None
+    auto_run_tools: Optional[bool] = None
 
-    forward_tool_results: Optional[bool] = None
+    context_overflow: Optional[Literal["truncate", "adaptive"]] = None
 
     kind: Optional[str] = None
 
