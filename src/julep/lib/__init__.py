@@ -1,6 +1,5 @@
 # type: ignore
 import inspect
-from typing import Callable
 from functools import wraps
 from typing_extensions import ParamSpec
 
