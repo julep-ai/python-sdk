@@ -1213,7 +1213,6 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRem
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None
@@ -2077,7 +2076,6 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None
@@ -2973,7 +2971,6 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None
@@ -3880,7 +3877,6 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None
@@ -4800,7 +4796,6 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None
@@ -5659,7 +5654,6 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None
@@ -6507,7 +6501,6 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None
@@ -7135,7 +7128,6 @@ class ToolIntegrationRemoteBrowserIntegrationDefArguments(BaseModel):
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None

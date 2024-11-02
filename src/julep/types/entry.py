@@ -572,7 +572,6 @@ class ContentToolOutputIntegrationRemoteBrowserIntegrationDefArguments(BaseModel
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None
@@ -1229,7 +1228,6 @@ class ContentUnionMember8ToolOutputIntegrationRemoteBrowserIntegrationDefArgumen
         "cursor_position",
         "navigate",
         "refresh",
-        "wait_for_load",
     ]
 
     connect_url: Optional[str] = None

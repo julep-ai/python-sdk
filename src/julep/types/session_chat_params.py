@@ -558,7 +558,6 @@ class ToolIntegrationRemoteBrowserIntegrationDefArguments(TypedDict, total=False
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
