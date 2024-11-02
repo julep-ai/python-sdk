@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.31.1 (2024-11-02)
+
+Full Changelog: [v1.31.0...v1.31.1](https://github.com/julep-ai/python-sdk/compare/v1.31.0...v1.31.1)
+
+### Bug Fixes
+
+* remove unused import ([cc74aa2](https://github.com/julep-ai/python-sdk/commit/cc74aa29c6030b6e1e6f3922d1cb7342cdedd8c5))
+
+
+### Chores
+
+* **internal:** codegen changes ([#132](https://github.com/julep-ai/python-sdk/issues/132)) ([bb9600c](https://github.com/julep-ai/python-sdk/commit/bb9600cc75daebccf207b23e0dd8db8bfb9cfef7))
+
 ## 1.31.0 (2024-11-02)
 
 Full Changelog: [v1.30.0...v1.31.0](https://github.com/julep-ai/python-sdk/compare/v1.30.0...v1.31.0)
