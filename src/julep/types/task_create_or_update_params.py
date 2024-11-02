@@ -1250,7 +1250,6 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationRemot
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
@@ -2143,7 +2142,6 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
@@ -3066,7 +3064,6 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
@@ -4000,7 +3997,6 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
@@ -4937,7 +4933,6 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
@@ -5822,7 +5817,6 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
@@ -6678,7 +6672,6 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
@@ -7312,7 +7305,6 @@ class ToolIntegrationRemoteBrowserIntegrationDefArguments(TypedDict, total=False
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
