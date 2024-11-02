@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.31.0 (2024-11-02)
+
+Full Changelog: [v1.30.0...v1.31.0](https://github.com/julep-ai/python-sdk/compare/v1.30.0...v1.31.0)
+
+### Features
+
+* various codegen changes ([cdb714e](https://github.com/julep-ai/python-sdk/commit/cdb714e443fbdb6caf9f8a612adfeae21d7e1b2a))
+
+
+### Bug Fixes
+
+* **lib:** Fix inspect args logic ([cbe409c](https://github.com/julep-ai/python-sdk/commit/cbe409cb7f33ad0b5cd17e8a59c1f491146007ae))
+
 ## 1.30.0 (2024-11-01)
 
 Full Changelog: [v1.29.0...v1.30.0](https://github.com/julep-ai/python-sdk/compare/v1.29.0...v1.30.0)
