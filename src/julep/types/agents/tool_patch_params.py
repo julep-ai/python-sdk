@@ -511,7 +511,6 @@ class IntegrationRemoteBrowserIntegrationDefUpdateArguments(TypedDict, total=Fal
             "cursor_position",
             "navigate",
             "refresh",
-            "wait_for_load",
         ]
     ]
 
