@@ -68,7 +68,14 @@ class DocsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceCreated:
         """
-        Create User Doc
+        Creates a new document for a user.
+
+        Parameters: user_id (UUID): The unique identifier of the user associated with
+        the document. data (CreateDocRequest): The data to create the document with.
+        x_developer_id (UUID): The unique identifier of the developer associated with
+        the document. background_tasks (BackgroundTasks): The background tasks to run.
+
+        Returns: ResourceCreatedResponse: The created document.
 
         Args:
           extra_headers: Send extra headers
@@ -202,7 +209,14 @@ class DocsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search User Docs
+        Searches for documents associated with a specific user.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the user. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        user_id (UUID): The unique identifier of the user associated with the documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -234,7 +248,14 @@ class DocsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search User Docs
+        Searches for documents associated with a specific user.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the user. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        user_id (UUID): The unique identifier of the user associated with the documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -268,7 +289,14 @@ class DocsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search User Docs
+        Searches for documents associated with a specific user.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the user. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        user_id (UUID): The unique identifier of the user associated with the documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -361,7 +389,14 @@ class AsyncDocsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceCreated:
         """
-        Create User Doc
+        Creates a new document for a user.
+
+        Parameters: user_id (UUID): The unique identifier of the user associated with
+        the document. data (CreateDocRequest): The data to create the document with.
+        x_developer_id (UUID): The unique identifier of the developer associated with
+        the document. background_tasks (BackgroundTasks): The background tasks to run.
+
+        Returns: ResourceCreatedResponse: The created document.
 
         Args:
           extra_headers: Send extra headers
@@ -495,7 +530,14 @@ class AsyncDocsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search User Docs
+        Searches for documents associated with a specific user.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the user. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        user_id (UUID): The unique identifier of the user associated with the documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -527,7 +569,14 @@ class AsyncDocsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search User Docs
+        Searches for documents associated with a specific user.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the user. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        user_id (UUID): The unique identifier of the user associated with the documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -561,7 +610,14 @@ class AsyncDocsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search User Docs
+        Searches for documents associated with a specific user.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the user. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        user_id (UUID): The unique identifier of the user associated with the documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
