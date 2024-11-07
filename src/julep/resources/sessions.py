@@ -280,7 +280,15 @@ class SessionsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> SessionChatResponse:
         """
-        Chat
+        Initiates a chat session.
+
+        Parameters: developer (Developer): The developer associated with the chat
+        session. session_id (UUID): The unique identifier of the chat session.
+        chat_input (ChatInput): The chat input data. background_tasks (BackgroundTasks):
+        The background tasks to run. x_custom_api_key (Optional[str]): The custom API
+        key.
+
+        Returns: ChatResponse: The chat response.
 
         Args:
           extra_headers: Send extra headers
@@ -745,7 +753,15 @@ class AsyncSessionsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> SessionChatResponse:
         """
-        Chat
+        Initiates a chat session.
+
+        Parameters: developer (Developer): The developer associated with the chat
+        session. session_id (UUID): The unique identifier of the chat session.
+        chat_input (ChatInput): The chat input data. background_tasks (BackgroundTasks):
+        The background tasks to run. x_custom_api_key (Optional[str]): The custom API
+        key.
+
+        Returns: ChatResponse: The chat response.
 
         Args:
           extra_headers: Send extra headers
