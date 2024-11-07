@@ -202,7 +202,15 @@ class DocsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search Agent Docs
+        Searches for documents associated with a specific agent.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the agent. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        agent_id (UUID): The unique identifier of the agent associated with the
+        documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -234,7 +242,15 @@ class DocsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search Agent Docs
+        Searches for documents associated with a specific agent.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the agent. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        agent_id (UUID): The unique identifier of the agent associated with the
+        documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -268,7 +284,15 @@ class DocsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search Agent Docs
+        Searches for documents associated with a specific agent.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the agent. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        agent_id (UUID): The unique identifier of the agent associated with the
+        documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -495,7 +519,15 @@ class AsyncDocsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search Agent Docs
+        Searches for documents associated with a specific agent.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the agent. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        agent_id (UUID): The unique identifier of the agent associated with the
+        documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -527,7 +559,15 @@ class AsyncDocsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search Agent Docs
+        Searches for documents associated with a specific agent.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the agent. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        agent_id (UUID): The unique identifier of the agent associated with the
+        documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
@@ -561,7 +601,15 @@ class AsyncDocsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> DocSearchResponse:
         """
-        Search Agent Docs
+        Searches for documents associated with a specific agent.
+
+        Parameters: x_developer_id (UUID): The unique identifier of the developer
+        associated with the agent. search_params (TextOnlyDocSearchRequest |
+        VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
+        agent_id (UUID): The unique identifier of the agent associated with the
+        documents.
+
+        Returns: DocSearchResponse: The search results.
 
         Args:
           extra_headers: Send extra headers
