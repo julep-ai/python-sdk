@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from typing import Dict
 from typing_extensions import Literal, TypedDict
 
 __all__ = ["UserListParams"]
@@ -11,6 +12,8 @@ class UserListParams(TypedDict, total=False):
     direction: Literal["asc", "desc"]
 
     limit: int
+
+    metadata_filter: Dict[str, object]
 
     offset: int
 
