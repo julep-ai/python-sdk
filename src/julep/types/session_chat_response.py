@@ -110,6 +110,8 @@ class ChunkChatResponseDoc(BaseModel):
 
     distance: Optional[float] = None
 
+    metadata: Optional[object] = None
+
     title: Optional[str] = None
 
 
