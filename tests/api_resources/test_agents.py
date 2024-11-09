@@ -135,6 +135,7 @@ class TestAgents:
         agent = client.agents.list(
             direction="asc",
             limit=0,
+            metadata_filter={"foo": "bar"},
             offset=0,
             sort_by="created_at",
         )
@@ -472,6 +473,7 @@ class TestAsyncAgents:
         agent = await async_client.agents.list(
             direction="asc",
             limit=0,
+            metadata_filter={"foo": "bar"},
             offset=0,
             sort_by="created_at",
         )

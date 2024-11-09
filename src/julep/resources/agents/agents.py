@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import List, Union, Optional
+from typing import Dict, List, Union, Optional
 from typing_extensions import Literal
 
 import httpx
@@ -187,6 +187,7 @@ class AgentsResource(SyncAPIResource):
         *,
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
+        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
         sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -220,6 +221,7 @@ class AgentsResource(SyncAPIResource):
                     {
                         "direction": direction,
                         "limit": limit,
+                        "metadata_filter": metadata_filter,
                         "offset": offset,
                         "sort_by": sort_by,
                     },
@@ -534,6 +536,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         *,
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
+        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
         sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -567,6 +570,7 @@ class AsyncAgentsResource(AsyncAPIResource):
                     {
                         "direction": direction,
                         "limit": limit,
+                        "metadata_filter": metadata_filter,
                         "offset": offset,
                         "sort_by": sort_by,
                     },

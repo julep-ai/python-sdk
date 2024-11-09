@@ -111,6 +111,7 @@ class DocsResource(SyncAPIResource):
         *,
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
+        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
         sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -146,6 +147,7 @@ class DocsResource(SyncAPIResource):
                     {
                         "direction": direction,
                         "limit": limit,
+                        "metadata_filter": metadata_filter,
                         "offset": offset,
                         "sort_by": sort_by,
                     },
@@ -199,7 +201,7 @@ class DocsResource(SyncAPIResource):
         text: str,
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, Union[float, str, bool, None]] | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -238,7 +240,7 @@ class DocsResource(SyncAPIResource):
         confidence: float | NotGiven = NOT_GIVEN,
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, Union[float, str, bool, None]] | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -279,7 +281,7 @@ class DocsResource(SyncAPIResource):
         confidence: float | NotGiven = NOT_GIVEN,
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, Union[float, str, bool, None]] | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -317,7 +319,7 @@ class DocsResource(SyncAPIResource):
         text: str | NotGiven = NOT_GIVEN,
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, Union[float, str, bool, None]] | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         vector: Iterable[float] | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
@@ -432,6 +434,7 @@ class AsyncDocsResource(AsyncAPIResource):
         *,
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
+        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
         sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -467,6 +470,7 @@ class AsyncDocsResource(AsyncAPIResource):
                     {
                         "direction": direction,
                         "limit": limit,
+                        "metadata_filter": metadata_filter,
                         "offset": offset,
                         "sort_by": sort_by,
                     },
@@ -520,7 +524,7 @@ class AsyncDocsResource(AsyncAPIResource):
         text: str,
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, Union[float, str, bool, None]] | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -559,7 +563,7 @@ class AsyncDocsResource(AsyncAPIResource):
         confidence: float | NotGiven = NOT_GIVEN,
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, Union[float, str, bool, None]] | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -600,7 +604,7 @@ class AsyncDocsResource(AsyncAPIResource):
         confidence: float | NotGiven = NOT_GIVEN,
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, Union[float, str, bool, None]] | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -638,7 +642,7 @@ class AsyncDocsResource(AsyncAPIResource):
         text: str | NotGiven = NOT_GIVEN,
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, Union[float, str, bool, None]] | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         vector: Iterable[float] | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,

@@ -133,6 +133,7 @@ class TestSessions:
         session = client.sessions.list(
             direction="asc",
             limit=0,
+            metadata_filter={"foo": "bar"},
             offset=0,
             sort_by="created_at",
         )
@@ -751,6 +752,7 @@ class TestAsyncSessions:
         session = await async_client.sessions.list(
             direction="asc",
             limit=0,
+            metadata_filter={"foo": "bar"},
             offset=0,
             sort_by="created_at",
         )
