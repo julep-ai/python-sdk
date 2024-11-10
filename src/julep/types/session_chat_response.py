@@ -19,9 +19,27 @@ __all__ = [
     "ChunkChatResponseChoiceDeltaContentUnionMember2Content",
     "ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel",
     "ChunkChatResponseChoiceDeltaContentUnionMember2ContentModelImageURL",
+    "ChunkChatResponseChoiceDeltaToolCall",
+    "ChunkChatResponseChoiceDeltaToolCallChosenFunctionCall",
+    "ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallFunction",
+    "ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallBash20241022",
+    "ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallComputer20241022",
+    "ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallTextEditor20241022",
+    "ChunkChatResponseChoiceDeltaToolCallChosenComputer20241022",
+    "ChunkChatResponseChoiceDeltaToolCallChosenTextEditor20241022",
+    "ChunkChatResponseChoiceDeltaToolCallChosenBash20241022",
     "ChunkChatResponseChoiceLogprobs",
     "ChunkChatResponseChoiceLogprobsContent",
     "ChunkChatResponseChoiceLogprobsContentTopLogprob",
+    "ChunkChatResponseChoiceToolCall",
+    "ChunkChatResponseChoiceToolCallChosenFunctionCall",
+    "ChunkChatResponseChoiceToolCallChosenFunctionCallFunction",
+    "ChunkChatResponseChoiceToolCallChosenFunctionCallBash20241022",
+    "ChunkChatResponseChoiceToolCallChosenFunctionCallComputer20241022",
+    "ChunkChatResponseChoiceToolCallChosenFunctionCallTextEditor20241022",
+    "ChunkChatResponseChoiceToolCallChosenComputer20241022",
+    "ChunkChatResponseChoiceToolCallChosenTextEditor20241022",
+    "ChunkChatResponseChoiceToolCallChosenBash20241022",
     "ChunkChatResponseDoc",
     "ChunkChatResponseDocOwner",
     "ChunkChatResponseUsage",
@@ -52,14 +70,132 @@ ChunkChatResponseChoiceDeltaContentUnionMember2: TypeAlias = Union[
 ]
 
 
-class ChunkChatResponseChoiceDelta(BaseModel):
-    content: Union[str, List[str], List[ChunkChatResponseChoiceDeltaContentUnionMember2]]
+class ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallFunction(BaseModel):
+    name: str
 
-    role: Literal["user", "assistant", "system", "function", "function_response", "function_call", "auto"]
+    arguments: Optional[str] = None
+
+
+class ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ChunkChatResponseChoiceDeltaToolCallChosenFunctionCall(BaseModel):
+    function: ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallBash20241022] = None
+
+    computer_20241022: Optional[ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallComputer20241022] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallTextEditor20241022] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class ChunkChatResponseChoiceDeltaToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ChunkChatResponseChoiceDeltaToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ChunkChatResponseChoiceDeltaToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+ChunkChatResponseChoiceDeltaToolCall: TypeAlias = Union[
+    ChunkChatResponseChoiceDeltaToolCallChosenFunctionCall,
+    ChunkChatResponseChoiceDeltaToolCallChosenComputer20241022,
+    ChunkChatResponseChoiceDeltaToolCallChosenTextEditor20241022,
+    ChunkChatResponseChoiceDeltaToolCallChosenBash20241022,
+]
+
+
+class ChunkChatResponseChoiceDelta(BaseModel):
+    role: Literal["user", "assistant", "system", "tool"]
+
+    content: Union[str, List[str], List[ChunkChatResponseChoiceDeltaContentUnionMember2], None] = None
 
     continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
 
     name: Optional[str] = None
+
+    tool_call_id: Optional[str] = None
+
+    tool_calls: Optional[List[ChunkChatResponseChoiceDeltaToolCall]] = None
 
 
 class ChunkChatResponseChoiceLogprobsContentTopLogprob(BaseModel):
@@ -84,6 +220,120 @@ class ChunkChatResponseChoiceLogprobs(BaseModel):
     content: Optional[List[ChunkChatResponseChoiceLogprobsContent]] = None
 
 
+class ChunkChatResponseChoiceToolCallChosenFunctionCallFunction(BaseModel):
+    name: str
+
+    arguments: Optional[str] = None
+
+
+class ChunkChatResponseChoiceToolCallChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class ChunkChatResponseChoiceToolCallChosenFunctionCallComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ChunkChatResponseChoiceToolCallChosenFunctionCallTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ChunkChatResponseChoiceToolCallChosenFunctionCall(BaseModel):
+    function: ChunkChatResponseChoiceToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[ChunkChatResponseChoiceToolCallChosenFunctionCallBash20241022] = None
+
+    computer_20241022: Optional[ChunkChatResponseChoiceToolCallChosenFunctionCallComputer20241022] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[ChunkChatResponseChoiceToolCallChosenFunctionCallTextEditor20241022] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class ChunkChatResponseChoiceToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class ChunkChatResponseChoiceToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class ChunkChatResponseChoiceToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+ChunkChatResponseChoiceToolCall: TypeAlias = Union[
+    ChunkChatResponseChoiceToolCallChosenFunctionCall,
+    ChunkChatResponseChoiceToolCallChosenComputer20241022,
+    ChunkChatResponseChoiceToolCallChosenTextEditor20241022,
+    ChunkChatResponseChoiceToolCallChosenBash20241022,
+]
+
+
 class ChunkChatResponseChoice(BaseModel):
     delta: ChunkChatResponseChoiceDelta
     """The message generated by the model"""
@@ -93,6 +343,8 @@ class ChunkChatResponseChoice(BaseModel):
     finish_reason: Optional[Literal["stop", "length", "content_filter", "tool_calls"]] = None
 
     logprobs: Optional[ChunkChatResponseChoiceLogprobs] = None
+
+    tool_calls: Optional[List[ChunkChatResponseChoiceToolCall]] = None
 
 
 class ChunkChatResponseDocOwner(BaseModel):

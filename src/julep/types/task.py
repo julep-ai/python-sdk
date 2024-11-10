@@ -20,6 +20,15 @@ __all__ = [
     "MainPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainPromptStepOutputPromptUnionMember0ToolCall",
+    "MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall",
+    "MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction",
+    "MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022",
+    "MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022",
+    "MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022",
+    "MainPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022",
+    "MainPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022",
+    "MainPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022",
     "MainPromptStepOutputToolChoice",
     "MainPromptStepOutputToolChoiceNamedToolChoice",
     "MainPromptStepOutputToolChoiceNamedToolChoiceFunction",
@@ -98,6 +107,15 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCall",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoice",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoice",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoiceFunction",
@@ -175,6 +193,15 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCall",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenBash20241022",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoice",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoice",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoiceFunction",
@@ -254,6 +281,15 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCall",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolChoice",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoice",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoiceFunction",
@@ -335,6 +371,15 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCall",
+    "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall",
+    "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction",
+    "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022",
+    "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022",
+    "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022",
+    "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022",
+    "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022",
+    "MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022",
     "MainForeachStepOutputForeachDoPromptStepOutputToolChoice",
     "MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoice",
     "MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoiceFunction",
@@ -407,6 +452,15 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCall",
+    "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall",
+    "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction",
+    "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022",
+    "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022",
+    "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022",
+    "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022",
+    "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022",
+    "MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022",
     "MainParallelStepOutputParallelPromptStepOutputToolChoice",
     "MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoice",
     "MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoiceFunction",
@@ -479,6 +533,15 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1Content",
     "MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModel",
     "MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCall",
+    "MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall",
+    "MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction",
+    "MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022",
+    "MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022",
+    "MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022",
+    "MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022",
+    "MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022",
+    "MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022",
     "MainMainOutputMapPromptStepOutputToolChoice",
     "MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoice",
     "MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoiceFunction",
@@ -658,18 +721,140 @@ MainPromptStepOutputPromptUnionMember0ContentUnionMember1: TypeAlias = Union[
 ]
 
 
-class MainPromptStepOutputPromptUnionMember0(BaseModel):
-    content: Union[List[str], List[MainPromptStepOutputPromptUnionMember0ContentUnionMember1], str]
+class MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction(BaseModel):
+    name: str
 
-    role: Literal["user", "assistant", "system", "function", "function_response", "function_call", "auto"]
+    arguments: Optional[str] = None
+
+
+class MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall(BaseModel):
+    function: MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022] = None
+
+    computer_20241022: Optional[MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[
+        MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
+    ] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class MainPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+MainPromptStepOutputPromptUnionMember0ToolCall: TypeAlias = Union[
+    MainPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall,
+    MainPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022,
+    MainPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022,
+    MainPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022,
+]
+
+
+class MainPromptStepOutputPromptUnionMember0(BaseModel):
+    content: Union[List[str], List[MainPromptStepOutputPromptUnionMember0ContentUnionMember1], str, None] = None
+
+    role: Literal["user", "assistant", "system", "tool"]
 
     continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
 
     name: Optional[str] = None
 
+    tool_call_id: Optional[str] = None
+
+    tool_calls: Optional[List[MainPromptStepOutputPromptUnionMember0ToolCall]] = None
+
 
 class MainPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
     name: str
+
+    arguments: Optional[str] = None
 
 
 class MainPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
@@ -1489,20 +1674,155 @@ MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMe
 ]
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0(BaseModel):
-    content: Union[
-        List[str], List[MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMember1], str
+class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction(BaseModel):
+    name: str
+
+    arguments: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022(
+    BaseModel
+):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022(
+    BaseModel
+):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
     ]
 
-    role: Literal["user", "assistant", "system", "function", "function_response", "function_call", "auto"]
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022(
+    BaseModel
+):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall(BaseModel):
+    function: MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
+    ] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
+    ] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCall: TypeAlias = Union[
+    MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022,
+]
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0(BaseModel):
+    content: Union[
+        List[str],
+        List[MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ContentUnionMember1],
+        str,
+        None,
+    ] = None
+
+    role: Literal["user", "assistant", "system", "tool"]
 
     continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
 
     name: Optional[str] = None
 
+    tool_call_id: Optional[str] = None
+
+    tool_calls: Optional[List[MainIfElseWorkflowStepOutputThenPromptStepOutputPromptUnionMember0ToolCall]] = None
+
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
     name: str
+
+    arguments: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
@@ -2384,20 +2704,155 @@ MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMe
 ]
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0(BaseModel):
-    content: Union[
-        List[str], List[MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMember1], str
+class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction(BaseModel):
+    name: str
+
+    arguments: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022(
+    BaseModel
+):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022(
+    BaseModel
+):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
     ]
 
-    role: Literal["user", "assistant", "system", "function", "function_response", "function_call", "auto"]
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022(
+    BaseModel
+):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall(BaseModel):
+    function: MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
+    ] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
+    ] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCall: TypeAlias = Union[
+    MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCallChosenBash20241022,
+]
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0(BaseModel):
+    content: Union[
+        List[str],
+        List[MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ContentUnionMember1],
+        str,
+        None,
+    ] = None
+
+    role: Literal["user", "assistant", "system", "tool"]
 
     continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
 
     name: Optional[str] = None
 
+    tool_call_id: Optional[str] = None
+
+    tool_calls: Optional[List[MainIfElseWorkflowStepOutputElsePromptStepOutputPromptUnionMember0ToolCall]] = None
+
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
     name: str
+
+    arguments: Optional[str] = None
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoiceNamedToolChoice(BaseModel):
@@ -3292,20 +3747,150 @@ MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMemb
 ]
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0(BaseModel):
-    content: Union[
-        List[str], List[MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMember1], str
+class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction(BaseModel):
+    name: str
+
+    arguments: Optional[str] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022(
+    BaseModel
+):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
     ]
 
-    role: Literal["user", "assistant", "system", "function", "function_response", "function_call", "auto"]
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022(
+    BaseModel
+):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall(BaseModel):
+    function: MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
+    ] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
+    ] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCall: TypeAlias = Union[
+    MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall,
+    MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022,
+    MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022,
+    MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022,
+]
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0(BaseModel):
+    content: Union[
+        List[str], List[MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ContentUnionMember1], str, None
+    ] = None
+
+    role: Literal["user", "assistant", "system", "tool"]
 
     continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
 
     name: Optional[str] = None
 
+    tool_call_id: Optional[str] = None
+
+    tool_calls: Optional[List[MainSwitchStepOutputSwitchThenPromptStepOutputPromptUnionMember0ToolCall]] = None
+
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
     name: str
+
+    arguments: Optional[str] = None
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
@@ -4211,20 +4796,150 @@ MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMemb
 ]
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0(BaseModel):
-    content: Union[
-        List[str], List[MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMember1], str
+class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction(BaseModel):
+    name: str
+
+    arguments: Optional[str] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022(
+    BaseModel
+):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
     ]
 
-    role: Literal["user", "assistant", "system", "function", "function_response", "function_call", "auto"]
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022(
+    BaseModel
+):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall(BaseModel):
+    function: MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
+    ] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
+    ] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCall: TypeAlias = Union[
+    MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall,
+    MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022,
+    MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022,
+    MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022,
+]
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0(BaseModel):
+    content: Union[
+        List[str], List[MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ContentUnionMember1], str, None
+    ] = None
+
+    role: Literal["user", "assistant", "system", "tool"]
 
     continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
 
     name: Optional[str] = None
 
+    tool_call_id: Optional[str] = None
+
+    tool_calls: Optional[List[MainForeachStepOutputForeachDoPromptStepOutputPromptUnionMember0ToolCall]] = None
+
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
     name: str
+
+    arguments: Optional[str] = None
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
@@ -5069,20 +5784,150 @@ MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMemb
 ]
 
 
-class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0(BaseModel):
-    content: Union[
-        List[str], List[MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMember1], str
+class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction(BaseModel):
+    name: str
+
+    arguments: Optional[str] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022(
+    BaseModel
+):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
     ]
 
-    role: Literal["user", "assistant", "system", "function", "function_response", "function_call", "auto"]
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022(
+    BaseModel
+):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall(BaseModel):
+    function: MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[
+        MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
+    ] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[
+        MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
+    ] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCall: TypeAlias = Union[
+    MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall,
+    MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022,
+    MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022,
+    MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022,
+]
+
+
+class MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0(BaseModel):
+    content: Union[
+        List[str], List[MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ContentUnionMember1], str, None
+    ] = None
+
+    role: Literal["user", "assistant", "system", "tool"]
 
     continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
 
     name: Optional[str] = None
 
+    tool_call_id: Optional[str] = None
+
+    tool_calls: Optional[List[MainParallelStepOutputParallelPromptStepOutputPromptUnionMember0ToolCall]] = None
+
 
 class MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
     name: str
+
+    arguments: Optional[str] = None
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
@@ -5918,18 +6763,146 @@ MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1: TypeAlia
 ]
 
 
-class MainMainOutputMapPromptStepOutputPromptUnionMember0(BaseModel):
-    content: Union[List[str], List[MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1], str]
+class MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction(BaseModel):
+    name: str
 
-    role: Literal["user", "assistant", "system", "function", "function_response", "function_call", "auto"]
+    arguments: Optional[str] = None
+
+
+class MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+class MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall(BaseModel):
+    function: MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallFunction
+
+    id: Optional[str] = None
+
+    api_call: Optional[object] = None
+
+    bash_20241022: Optional[
+        MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
+    ] = None
+
+    computer_20241022: Optional[
+        MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
+    ] = None
+
+    integration: Optional[object] = None
+
+    system: Optional[object] = None
+
+    text_editor_20241022: Optional[
+        MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
+    ] = None
+
+    type: Optional[Literal["function"]] = None
+
+
+class MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022(BaseModel):
+    action: Literal[
+        "key",
+        "type",
+        "cursor_position",
+        "mouse_move",
+        "left_click",
+        "right_click",
+        "middle_click",
+        "double_click",
+        "screenshot",
+    ]
+
+    coordinate: Optional[List[int]] = None
+
+    text: Optional[str] = None
+
+
+class MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022(BaseModel):
+    command: Literal["str_replace", "insert", "view", "undo_edit"]
+
+    path: str
+
+    file_text: Optional[str] = None
+
+    insert_line: Optional[int] = None
+
+    new_str: Optional[str] = None
+
+    old_str: Optional[str] = None
+
+    view_range: Optional[List[int]] = None
+
+
+class MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022(BaseModel):
+    command: Optional[str] = None
+
+    restart: Optional[bool] = None
+
+
+MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCall: TypeAlias = Union[
+    MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenFunctionCall,
+    MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenComputer20241022,
+    MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenTextEditor20241022,
+    MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCallChosenBash20241022,
+]
+
+
+class MainMainOutputMapPromptStepOutputPromptUnionMember0(BaseModel):
+    content: Union[
+        List[str], List[MainMainOutputMapPromptStepOutputPromptUnionMember0ContentUnionMember1], str, None
+    ] = None
+
+    role: Literal["user", "assistant", "system", "tool"]
 
     continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
 
     name: Optional[str] = None
 
+    tool_call_id: Optional[str] = None
+
+    tool_calls: Optional[List[MainMainOutputMapPromptStepOutputPromptUnionMember0ToolCall]] = None
+
 
 class MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoiceFunction(BaseModel):
     name: str
+
+    arguments: Optional[str] = None
 
 
 class MainMainOutputMapPromptStepOutputToolChoiceNamedToolChoice(BaseModel):
