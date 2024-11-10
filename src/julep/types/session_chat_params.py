@@ -131,6 +131,8 @@ ResponseFormat: TypeAlias = Union[
 class ToolChoiceNamedToolChoiceFunction(TypedDict, total=False):
     name: Required[str]
 
+    arguments: Optional[str]
+
 
 class ToolChoiceNamedToolChoice(TypedDict, total=False):
     function: Optional[ToolChoiceNamedToolChoiceFunction]
