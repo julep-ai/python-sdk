@@ -201,12 +201,7 @@ class TestSessions:
     def test_method_chat(self, client: Julep) -> None:
         session = client.sessions.chat(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            messages=[
-                {
-                    "content": "string",
-                    "role": "user",
-                }
-            ],
+            messages=[{"role": "user"}],
         )
         assert_matches_type(SessionChatResponse, session, path=["response"])
 
@@ -216,10 +211,97 @@ class TestSessions:
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             messages=[
                 {
-                    "content": "string",
                     "role": "user",
+                    "content": "string",
                     "continue": True,
                     "name": "name",
+                    "tool_call_id": "tool_call_id",
+                    "tool_calls": [
+                        {
+                            "function": {
+                                "name": "name",
+                                "arguments": "arguments",
+                            },
+                            "api_call": {},
+                            "bash_20241022": {
+                                "command": "command",
+                                "restart": True,
+                            },
+                            "computer_20241022": {
+                                "action": "key",
+                                "coordinate": [0, 0, 0],
+                                "text": "text",
+                            },
+                            "integration": {},
+                            "system": {},
+                            "text_editor_20241022": {
+                                "command": "str_replace",
+                                "path": "path",
+                                "file_text": "file_text",
+                                "insert_line": 0,
+                                "new_str": "new_str",
+                                "old_str": "old_str",
+                                "view_range": [0, 0, 0],
+                            },
+                            "type": "function",
+                        },
+                        {
+                            "function": {
+                                "name": "name",
+                                "arguments": "arguments",
+                            },
+                            "api_call": {},
+                            "bash_20241022": {
+                                "command": "command",
+                                "restart": True,
+                            },
+                            "computer_20241022": {
+                                "action": "key",
+                                "coordinate": [0, 0, 0],
+                                "text": "text",
+                            },
+                            "integration": {},
+                            "system": {},
+                            "text_editor_20241022": {
+                                "command": "str_replace",
+                                "path": "path",
+                                "file_text": "file_text",
+                                "insert_line": 0,
+                                "new_str": "new_str",
+                                "old_str": "old_str",
+                                "view_range": [0, 0, 0],
+                            },
+                            "type": "function",
+                        },
+                        {
+                            "function": {
+                                "name": "name",
+                                "arguments": "arguments",
+                            },
+                            "api_call": {},
+                            "bash_20241022": {
+                                "command": "command",
+                                "restart": True,
+                            },
+                            "computer_20241022": {
+                                "action": "key",
+                                "coordinate": [0, 0, 0],
+                                "text": "text",
+                            },
+                            "integration": {},
+                            "system": {},
+                            "text_editor_20241022": {
+                                "command": "str_replace",
+                                "path": "path",
+                                "file_text": "file_text",
+                                "insert_line": 0,
+                                "new_str": "new_str",
+                                "old_str": "old_str",
+                                "view_range": [0, 0, 0],
+                            },
+                            "type": "function",
+                        },
+                    ],
                 }
             ],
             agent="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
@@ -403,12 +485,7 @@ class TestSessions:
     def test_raw_response_chat(self, client: Julep) -> None:
         response = client.sessions.with_raw_response.chat(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            messages=[
-                {
-                    "content": "string",
-                    "role": "user",
-                }
-            ],
+            messages=[{"role": "user"}],
         )
 
         assert response.is_closed is True
@@ -420,12 +497,7 @@ class TestSessions:
     def test_streaming_response_chat(self, client: Julep) -> None:
         with client.sessions.with_streaming_response.chat(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            messages=[
-                {
-                    "content": "string",
-                    "role": "user",
-                }
-            ],
+            messages=[{"role": "user"}],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -440,12 +512,7 @@ class TestSessions:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `session_id` but received ''"):
             client.sessions.with_raw_response.chat(
                 session_id="",
-                messages=[
-                    {
-                        "content": "string",
-                        "role": "user",
-                    }
-                ],
+                messages=[{"role": "user"}],
             )
 
     @parametrize
@@ -820,12 +887,7 @@ class TestAsyncSessions:
     async def test_method_chat(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.chat(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            messages=[
-                {
-                    "content": "string",
-                    "role": "user",
-                }
-            ],
+            messages=[{"role": "user"}],
         )
         assert_matches_type(SessionChatResponse, session, path=["response"])
 
@@ -835,10 +897,97 @@ class TestAsyncSessions:
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             messages=[
                 {
-                    "content": "string",
                     "role": "user",
+                    "content": "string",
                     "continue": True,
                     "name": "name",
+                    "tool_call_id": "tool_call_id",
+                    "tool_calls": [
+                        {
+                            "function": {
+                                "name": "name",
+                                "arguments": "arguments",
+                            },
+                            "api_call": {},
+                            "bash_20241022": {
+                                "command": "command",
+                                "restart": True,
+                            },
+                            "computer_20241022": {
+                                "action": "key",
+                                "coordinate": [0, 0, 0],
+                                "text": "text",
+                            },
+                            "integration": {},
+                            "system": {},
+                            "text_editor_20241022": {
+                                "command": "str_replace",
+                                "path": "path",
+                                "file_text": "file_text",
+                                "insert_line": 0,
+                                "new_str": "new_str",
+                                "old_str": "old_str",
+                                "view_range": [0, 0, 0],
+                            },
+                            "type": "function",
+                        },
+                        {
+                            "function": {
+                                "name": "name",
+                                "arguments": "arguments",
+                            },
+                            "api_call": {},
+                            "bash_20241022": {
+                                "command": "command",
+                                "restart": True,
+                            },
+                            "computer_20241022": {
+                                "action": "key",
+                                "coordinate": [0, 0, 0],
+                                "text": "text",
+                            },
+                            "integration": {},
+                            "system": {},
+                            "text_editor_20241022": {
+                                "command": "str_replace",
+                                "path": "path",
+                                "file_text": "file_text",
+                                "insert_line": 0,
+                                "new_str": "new_str",
+                                "old_str": "old_str",
+                                "view_range": [0, 0, 0],
+                            },
+                            "type": "function",
+                        },
+                        {
+                            "function": {
+                                "name": "name",
+                                "arguments": "arguments",
+                            },
+                            "api_call": {},
+                            "bash_20241022": {
+                                "command": "command",
+                                "restart": True,
+                            },
+                            "computer_20241022": {
+                                "action": "key",
+                                "coordinate": [0, 0, 0],
+                                "text": "text",
+                            },
+                            "integration": {},
+                            "system": {},
+                            "text_editor_20241022": {
+                                "command": "str_replace",
+                                "path": "path",
+                                "file_text": "file_text",
+                                "insert_line": 0,
+                                "new_str": "new_str",
+                                "old_str": "old_str",
+                                "view_range": [0, 0, 0],
+                            },
+                            "type": "function",
+                        },
+                    ],
                 }
             ],
             agent="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
@@ -1022,12 +1171,7 @@ class TestAsyncSessions:
     async def test_raw_response_chat(self, async_client: AsyncJulep) -> None:
         response = await async_client.sessions.with_raw_response.chat(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            messages=[
-                {
-                    "content": "string",
-                    "role": "user",
-                }
-            ],
+            messages=[{"role": "user"}],
         )
 
         assert response.is_closed is True
@@ -1039,12 +1183,7 @@ class TestAsyncSessions:
     async def test_streaming_response_chat(self, async_client: AsyncJulep) -> None:
         async with async_client.sessions.with_streaming_response.chat(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            messages=[
-                {
-                    "content": "string",
-                    "role": "user",
-                }
-            ],
+            messages=[{"role": "user"}],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -1059,12 +1198,7 @@ class TestAsyncSessions:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `session_id` but received ''"):
             await async_client.sessions.with_raw_response.chat(
                 session_id="",
-                messages=[
-                    {
-                        "content": "string",
-                        "role": "user",
-                    }
-                ],
+                messages=[{"role": "user"}],
             )
 
     @parametrize
