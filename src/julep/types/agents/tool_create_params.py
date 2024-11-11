@@ -56,6 +56,9 @@ __all__ = [
     "IntegrationRemoteBrowserIntegrationDef",
     "IntegrationRemoteBrowserIntegrationDefSetup",
     "IntegrationRemoteBrowserIntegrationDefArguments",
+    "IntegrationLlamaParseIntegrationDef",
+    "IntegrationLlamaParseIntegrationDefArguments",
+    "IntegrationLlamaParseIntegrationDefSetup",
     "System",
     "TextEditor20241022",
 ]
@@ -108,6 +111,8 @@ class APICall(TypedDict, total=False):
     cookies: Optional[Dict[str, str]]
 
     data: Optional[object]
+
+    files: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -537,6 +542,36 @@ class IntegrationRemoteBrowserIntegrationDef(TypedDict, total=False):
     provider: Literal["remote_browser"]
 
 
+class IntegrationLlamaParseIntegrationDefArguments(TypedDict, total=False):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    language: str
+
+    num_workers: int
+
+    result_format: Literal["text", "markdown"]
+
+    verbose: bool
+
+
+class IntegrationLlamaParseIntegrationDefSetup(TypedDict, total=False):
+    llamaparse_api_key: Required[str]
+
+
+class IntegrationLlamaParseIntegrationDef(TypedDict, total=False):
+    arguments: Optional[IntegrationLlamaParseIntegrationDefArguments]
+    """Arguments for LlamaParse integration"""
+
+    method: Optional[str]
+
+    provider: Literal["llama_parse"]
+
+    setup: Optional[IntegrationLlamaParseIntegrationDefSetup]
+    """Setup parameters for LlamaParse integration"""
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDef,
     IntegrationBraveIntegrationDef,
@@ -553,6 +588,7 @@ Integration: TypeAlias = Union[
     IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     IntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     IntegrationRemoteBrowserIntegrationDef,
+    IntegrationLlamaParseIntegrationDef,
 ]
 
 
