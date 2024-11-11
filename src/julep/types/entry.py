@@ -63,6 +63,9 @@ __all__ = [
     "ContentToolIntegrationRemoteBrowserIntegrationDef",
     "ContentToolIntegrationRemoteBrowserIntegrationDefSetup",
     "ContentToolIntegrationRemoteBrowserIntegrationDefArguments",
+    "ContentToolIntegrationLlamaParseIntegrationDef",
+    "ContentToolIntegrationLlamaParseIntegrationDefArguments",
+    "ContentToolIntegrationLlamaParseIntegrationDefSetup",
     "ContentToolSystem",
     "ContentToolTextEditor20241022",
     "ContentChosenFunctionCall",
@@ -127,6 +130,9 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDef",
     "ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDefSetup",
     "ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationLlamaParseIntegrationDef",
+    "ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefSetup",
     "ContentUnionMember8ToolSystem",
     "ContentUnionMember8ToolTextEditor20241022",
     "ContentUnionMember8ChosenFunctionCall",
@@ -182,6 +188,8 @@ class ContentToolAPICall(BaseModel):
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
+
+    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -602,6 +610,36 @@ class ContentToolIntegrationRemoteBrowserIntegrationDef(BaseModel):
     provider: Optional[Literal["remote_browser"]] = None
 
 
+class ContentToolIntegrationLlamaParseIntegrationDefArguments(BaseModel):
+    file: str
+
+    filename: Optional[str] = None
+
+    language: Optional[str] = None
+
+    num_workers: Optional[int] = None
+
+    result_format: Optional[Literal["text", "markdown"]] = None
+
+    verbose: Optional[bool] = None
+
+
+class ContentToolIntegrationLlamaParseIntegrationDefSetup(BaseModel):
+    llamaparse_api_key: str
+
+
+class ContentToolIntegrationLlamaParseIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationLlamaParseIntegrationDefArguments] = None
+    """Arguments for LlamaParse integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["llama_parse"]] = None
+
+    setup: Optional[ContentToolIntegrationLlamaParseIntegrationDefSetup] = None
+    """Setup parameters for LlamaParse integration"""
+
+
 ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationDummyIntegrationDef,
     ContentToolIntegrationBraveIntegrationDef,
@@ -618,6 +656,7 @@ ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ContentToolIntegrationRemoteBrowserIntegrationDef,
+    ContentToolIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
@@ -834,6 +873,8 @@ class ContentUnionMember8ToolAPICall(BaseModel):
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
+
+    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -1254,6 +1295,36 @@ class ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDef(BaseModel):
     provider: Optional[Literal["remote_browser"]] = None
 
 
+class ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefArguments(BaseModel):
+    file: str
+
+    filename: Optional[str] = None
+
+    language: Optional[str] = None
+
+    num_workers: Optional[int] = None
+
+    result_format: Optional[Literal["text", "markdown"]] = None
+
+    verbose: Optional[bool] = None
+
+
+class ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefSetup(BaseModel):
+    llamaparse_api_key: str
+
+
+class ContentUnionMember8ToolIntegrationLlamaParseIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefArguments] = None
+    """Arguments for LlamaParse integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["llama_parse"]] = None
+
+    setup: Optional[ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefSetup] = None
+    """Setup parameters for LlamaParse integration"""
+
+
 ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationDummyIntegrationDef,
     ContentUnionMember8ToolIntegrationBraveIntegrationDef,
@@ -1270,6 +1341,7 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDef,
+    ContentUnionMember8ToolIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
