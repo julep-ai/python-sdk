@@ -28,8 +28,7 @@ import os
 from julep import Julep
 
 client = Julep(
-    # This is the default and can be omitted
-    api_key=os.environ.get("JULEP_API_KEY"),
+    api_key=os.environ.get("JULEP_API_KEY"),  # This is the default and can be omitted
     # or 'dev' | 'local_multi_tenant' | 'local'; defaults to "dev".
     environment="production",
 )
@@ -57,8 +56,7 @@ import asyncio
 from julep import AsyncJulep
 
 client = AsyncJulep(
-    # This is the default and can be omitted
-    api_key=os.environ.get("JULEP_API_KEY"),
+    api_key=os.environ.get("JULEP_API_KEY"),  # This is the default and can be omitted
     # or 'dev' | 'local_multi_tenant' | 'local'; defaults to "dev".
     environment="production",
 )

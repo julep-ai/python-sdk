@@ -85,9 +85,6 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainGetStep",
@@ -175,9 +172,6 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenGetStep",
@@ -264,9 +258,6 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseGetStep",
@@ -355,9 +346,6 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainSwitchStepOutputSwitchThenGetStep",
@@ -448,9 +436,6 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainForeachStepOutputForeachDoGetStep",
@@ -532,9 +517,6 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainParallelStepOutputParallelGetStep",
@@ -616,9 +598,6 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainMainOutputMapGetStep",
@@ -673,9 +652,6 @@ __all__ = [
     "ToolIntegrationRemoteBrowserIntegrationDef",
     "ToolIntegrationRemoteBrowserIntegrationDefSetup",
     "ToolIntegrationRemoteBrowserIntegrationDefArguments",
-    "ToolIntegrationLlamaParseIntegrationDef",
-    "ToolIntegrationLlamaParseIntegrationDefArguments",
-    "ToolIntegrationLlamaParseIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -919,8 +895,6 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseMo
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
-
-    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -1447,42 +1421,6 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRem
     provider: Optional[Literal["remote_browser"]] = None
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
-    BaseModel
-):
-    file: str
-
-    filename: Optional[str] = None
-
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
-
-
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(BaseModel):
-    llamaparse_api_key: str
-
-
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(BaseModel):
-    arguments: Optional[
-        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments
-    ] = None
-    """Arguments for LlamaParse integration"""
-
-    method: Optional[str] = None
-
-    provider: Optional[Literal["llama_parse"]] = None
-
-    setup: Optional[
-        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup
-    ] = None
-    """Setup parameters for LlamaParse integration"""
-
-
 MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -1499,7 +1437,6 @@ MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAli
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
-    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
@@ -1926,8 +1863,6 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
-
-    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -2486,46 +2421,6 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     provider: Optional[Literal["remote_browser"]] = None
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
-    BaseModel
-):
-    file: str
-
-    filename: Optional[str] = None
-
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
-
-
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
-    BaseModel
-):
-    llamaparse_api_key: str
-
-
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
-    BaseModel
-):
-    arguments: Optional[
-        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments
-    ] = None
-    """Arguments for LlamaParse integration"""
-
-    method: Optional[str] = None
-
-    provider: Optional[Literal["llama_parse"]] = None
-
-    setup: Optional[
-        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup
-    ] = None
-    """Setup parameters for LlamaParse integration"""
-
-
 MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -2542,7 +2437,6 @@ MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
-    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
@@ -2999,8 +2893,6 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
-
-    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -3559,46 +3451,6 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     provider: Optional[Literal["remote_browser"]] = None
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
-    BaseModel
-):
-    file: str
-
-    filename: Optional[str] = None
-
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
-
-
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
-    BaseModel
-):
-    llamaparse_api_key: str
-
-
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
-    BaseModel
-):
-    arguments: Optional[
-        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments
-    ] = None
-    """Arguments for LlamaParse integration"""
-
-    method: Optional[str] = None
-
-    provider: Optional[Literal["llama_parse"]] = None
-
-    setup: Optional[
-        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup
-    ] = None
-    """Setup parameters for LlamaParse integration"""
-
-
 MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -3615,7 +3467,6 @@ MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
-    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
@@ -4080,8 +3931,6 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
-
-    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -4638,46 +4487,6 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     provider: Optional[Literal["remote_browser"]] = None
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
-    BaseModel
-):
-    file: str
-
-    filename: Optional[str] = None
-
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
-
-
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
-    BaseModel
-):
-    llamaparse_api_key: str
-
-
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
-    BaseModel
-):
-    arguments: Optional[
-        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments
-    ] = None
-    """Arguments for LlamaParse integration"""
-
-    method: Optional[str] = None
-
-    provider: Optional[Literal["llama_parse"]] = None
-
-    setup: Optional[
-        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup
-    ] = None
-    """Setup parameters for LlamaParse integration"""
-
-
 MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -4694,7 +4503,6 @@ MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
-    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
@@ -5172,8 +4980,6 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
-
-    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -5730,46 +5536,6 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     provider: Optional[Literal["remote_browser"]] = None
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
-    BaseModel
-):
-    file: str
-
-    filename: Optional[str] = None
-
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
-
-
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
-    BaseModel
-):
-    llamaparse_api_key: str
-
-
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
-    BaseModel
-):
-    arguments: Optional[
-        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments
-    ] = None
-    """Arguments for LlamaParse integration"""
-
-    method: Optional[str] = None
-
-    provider: Optional[Literal["llama_parse"]] = None
-
-    setup: Optional[
-        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup
-    ] = None
-    """Setup parameters for LlamaParse integration"""
-
-
 MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -5786,7 +5552,6 @@ MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
-    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
@@ -6203,8 +5968,6 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
-
-    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -6761,46 +6524,6 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     provider: Optional[Literal["remote_browser"]] = None
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
-    BaseModel
-):
-    file: str
-
-    filename: Optional[str] = None
-
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
-
-
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
-    BaseModel
-):
-    llamaparse_api_key: str
-
-
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
-    BaseModel
-):
-    arguments: Optional[
-        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments
-    ] = None
-    """Arguments for LlamaParse integration"""
-
-    method: Optional[str] = None
-
-    provider: Optional[Literal["llama_parse"]] = None
-
-    setup: Optional[
-        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup
-    ] = None
-    """Setup parameters for LlamaParse integration"""
-
-
 MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -6817,7 +6540,6 @@ MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
-    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
@@ -7221,8 +6943,6 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputA
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
-
-    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -7779,46 +7499,6 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
     provider: Optional[Literal["remote_browser"]] = None
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
-    BaseModel
-):
-    file: str
-
-    filename: Optional[str] = None
-
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
-
-
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
-    BaseModel
-):
-    llamaparse_api_key: str
-
-
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
-    BaseModel
-):
-    arguments: Optional[
-        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments
-    ] = None
-    """Arguments for LlamaParse integration"""
-
-    method: Optional[str] = None
-
-    provider: Optional[Literal["llama_parse"]] = None
-
-    setup: Optional[
-        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup
-    ] = None
-    """Setup parameters for LlamaParse integration"""
-
-
 MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -7835,7 +7515,6 @@ MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegra
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
-    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
@@ -8023,8 +7702,6 @@ class ToolAPICall(BaseModel):
     cookies: Optional[Dict[str, str]] = None
 
     data: Optional[object] = None
-
-    files: Optional[object] = None
 
     follow_redirects: Optional[bool] = None
 
@@ -8445,36 +8122,6 @@ class ToolIntegrationRemoteBrowserIntegrationDef(BaseModel):
     provider: Optional[Literal["remote_browser"]] = None
 
 
-class ToolIntegrationLlamaParseIntegrationDefArguments(BaseModel):
-    file: str
-
-    filename: Optional[str] = None
-
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
-
-
-class ToolIntegrationLlamaParseIntegrationDefSetup(BaseModel):
-    llamaparse_api_key: str
-
-
-class ToolIntegrationLlamaParseIntegrationDef(BaseModel):
-    arguments: Optional[ToolIntegrationLlamaParseIntegrationDefArguments] = None
-    """Arguments for LlamaParse integration"""
-
-    method: Optional[str] = None
-
-    provider: Optional[Literal["llama_parse"]] = None
-
-    setup: Optional[ToolIntegrationLlamaParseIntegrationDefSetup] = None
-    """Setup parameters for LlamaParse integration"""
-
-
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -8491,7 +8138,6 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ToolIntegrationRemoteBrowserIntegrationDef,
-    ToolIntegrationLlamaParseIntegrationDef,
     None,
 ]
 
