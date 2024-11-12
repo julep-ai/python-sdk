@@ -64,9 +64,6 @@ __all__ = [
     "ToolIntegrationRemoteBrowserIntegrationDef",
     "ToolIntegrationRemoteBrowserIntegrationDefSetup",
     "ToolIntegrationRemoteBrowserIntegrationDefArguments",
-    "ToolIntegrationLlamaParseIntegrationDef",
-    "ToolIntegrationLlamaParseIntegrationDefArguments",
-    "ToolIntegrationLlamaParseIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -154,8 +151,6 @@ class ToolAPICall(TypedDict, total=False):
     cookies: Optional[Dict[str, str]]
 
     data: Optional[object]
-
-    files: Optional[object]
 
     follow_redirects: Optional[bool]
 
@@ -587,36 +582,6 @@ class ToolIntegrationRemoteBrowserIntegrationDef(TypedDict, total=False):
     provider: Literal["remote_browser"]
 
 
-class ToolIntegrationLlamaParseIntegrationDefArguments(TypedDict, total=False):
-    file: Required[str]
-
-    filename: Optional[str]
-
-    language: str
-
-    num_workers: int
-
-    result_format: Literal["text", "markdown"]
-
-    verbose: bool
-
-
-class ToolIntegrationLlamaParseIntegrationDefSetup(TypedDict, total=False):
-    llamaparse_api_key: Required[str]
-
-
-class ToolIntegrationLlamaParseIntegrationDef(TypedDict, total=False):
-    arguments: Optional[ToolIntegrationLlamaParseIntegrationDefArguments]
-    """Arguments for LlamaParse integration"""
-
-    method: Optional[str]
-
-    provider: Literal["llama_parse"]
-
-    setup: Optional[ToolIntegrationLlamaParseIntegrationDefSetup]
-    """Setup parameters for LlamaParse integration"""
-
-
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -633,7 +598,6 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
     ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ToolIntegrationRemoteBrowserIntegrationDef,
-    ToolIntegrationLlamaParseIntegrationDef,
 ]
 
 
