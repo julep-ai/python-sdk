@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.40.0 (2024-11-16)
+
+Full Changelog: [v1.39.0...v1.40.0](https://github.com/julep-ai/python-sdk/compare/v1.39.0...v1.40.0)
+
+### Features
+
+* **api:** increase retries ([#160](https://github.com/julep-ai/python-sdk/issues/160)) ([6ab6ffc](https://github.com/julep-ai/python-sdk/commit/6ab6ffc36e1af790c32db5276b6ac0f5bccd7759))
+
 ## 1.39.0 (2024-11-12)
 
 Full Changelog: [v1.38.0...v1.39.0](https://github.com/julep-ai/python-sdk/compare/v1.38.0...v1.39.0)
