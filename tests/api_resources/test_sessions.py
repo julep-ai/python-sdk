@@ -32,11 +32,7 @@ class TestSessions:
     def test_method_create_with_all_params(self, client: Julep) -> None:
         session = client.sessions.create(
             agent="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agents=[
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            ],
+            agents=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             auto_run_tools=True,
             context_overflow="truncate",
             metadata={},
@@ -44,11 +40,7 @@ class TestSessions:
             situation="situation",
             token_budget=0,
             user="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            users=[
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            ],
+            users=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
         )
         assert_matches_type(ResourceCreated, session, path=["response"])
 
@@ -229,7 +221,7 @@ class TestSessions:
                             },
                             "computer_20241022": {
                                 "action": "key",
-                                "coordinate": [0, 0, 0],
+                                "coordinate": [0],
                                 "text": "text",
                             },
                             "integration": {},
@@ -241,66 +233,10 @@ class TestSessions:
                                 "insert_line": 0,
                                 "new_str": "new_str",
                                 "old_str": "old_str",
-                                "view_range": [0, 0, 0],
+                                "view_range": [0],
                             },
                             "type": "function",
-                        },
-                        {
-                            "function": {
-                                "name": "name",
-                                "arguments": "arguments",
-                            },
-                            "api_call": {},
-                            "bash_20241022": {
-                                "command": "command",
-                                "restart": True,
-                            },
-                            "computer_20241022": {
-                                "action": "key",
-                                "coordinate": [0, 0, 0],
-                                "text": "text",
-                            },
-                            "integration": {},
-                            "system": {},
-                            "text_editor_20241022": {
-                                "command": "str_replace",
-                                "path": "path",
-                                "file_text": "file_text",
-                                "insert_line": 0,
-                                "new_str": "new_str",
-                                "old_str": "old_str",
-                                "view_range": [0, 0, 0],
-                            },
-                            "type": "function",
-                        },
-                        {
-                            "function": {
-                                "name": "name",
-                                "arguments": "arguments",
-                            },
-                            "api_call": {},
-                            "bash_20241022": {
-                                "command": "command",
-                                "restart": True,
-                            },
-                            "computer_20241022": {
-                                "action": "key",
-                                "coordinate": [0, 0, 0],
-                                "text": "text",
-                            },
-                            "integration": {},
-                            "system": {},
-                            "text_editor_20241022": {
-                                "command": "str_replace",
-                                "path": "path",
-                                "file_text": "file_text",
-                                "insert_line": 0,
-                                "new_str": "new_str",
-                                "old_str": "old_str",
-                                "view_range": [0, 0, 0],
-                            },
-                            "type": "function",
-                        },
+                        }
                     ],
                 }
             ],
@@ -317,7 +253,7 @@ class TestSessions:
             response_format={"type": "text"},
             save=True,
             seed=-1,
-            stop=["string", "string", "string"],
+            stop=["string"],
             stream=True,
             temperature=0,
             tool_choice="auto",
@@ -373,111 +309,7 @@ class TestSessions:
                         "name": "name",
                         "type": "text_editor_20241022",
                     },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
+                }
             ],
             top_p=0,
             x_custom_api_key="X-Custom-Api-Key",
@@ -530,11 +362,7 @@ class TestSessions:
         session = client.sessions.create_or_update(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agents=[
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            ],
+            agents=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             auto_run_tools=True,
             context_overflow="truncate",
             metadata={},
@@ -542,11 +370,7 @@ class TestSessions:
             situation="situation",
             token_budget=0,
             user="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            users=[
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            ],
+            users=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
@@ -721,11 +545,7 @@ class TestAsyncSessions:
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
         session = await async_client.sessions.create(
             agent="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agents=[
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            ],
+            agents=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             auto_run_tools=True,
             context_overflow="truncate",
             metadata={},
@@ -733,11 +553,7 @@ class TestAsyncSessions:
             situation="situation",
             token_budget=0,
             user="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            users=[
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            ],
+            users=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
         )
         assert_matches_type(ResourceCreated, session, path=["response"])
 
@@ -918,7 +734,7 @@ class TestAsyncSessions:
                             },
                             "computer_20241022": {
                                 "action": "key",
-                                "coordinate": [0, 0, 0],
+                                "coordinate": [0],
                                 "text": "text",
                             },
                             "integration": {},
@@ -930,66 +746,10 @@ class TestAsyncSessions:
                                 "insert_line": 0,
                                 "new_str": "new_str",
                                 "old_str": "old_str",
-                                "view_range": [0, 0, 0],
+                                "view_range": [0],
                             },
                             "type": "function",
-                        },
-                        {
-                            "function": {
-                                "name": "name",
-                                "arguments": "arguments",
-                            },
-                            "api_call": {},
-                            "bash_20241022": {
-                                "command": "command",
-                                "restart": True,
-                            },
-                            "computer_20241022": {
-                                "action": "key",
-                                "coordinate": [0, 0, 0],
-                                "text": "text",
-                            },
-                            "integration": {},
-                            "system": {},
-                            "text_editor_20241022": {
-                                "command": "str_replace",
-                                "path": "path",
-                                "file_text": "file_text",
-                                "insert_line": 0,
-                                "new_str": "new_str",
-                                "old_str": "old_str",
-                                "view_range": [0, 0, 0],
-                            },
-                            "type": "function",
-                        },
-                        {
-                            "function": {
-                                "name": "name",
-                                "arguments": "arguments",
-                            },
-                            "api_call": {},
-                            "bash_20241022": {
-                                "command": "command",
-                                "restart": True,
-                            },
-                            "computer_20241022": {
-                                "action": "key",
-                                "coordinate": [0, 0, 0],
-                                "text": "text",
-                            },
-                            "integration": {},
-                            "system": {},
-                            "text_editor_20241022": {
-                                "command": "str_replace",
-                                "path": "path",
-                                "file_text": "file_text",
-                                "insert_line": 0,
-                                "new_str": "new_str",
-                                "old_str": "old_str",
-                                "view_range": [0, 0, 0],
-                            },
-                            "type": "function",
-                        },
+                        }
                     ],
                 }
             ],
@@ -1006,7 +766,7 @@ class TestAsyncSessions:
             response_format={"type": "text"},
             save=True,
             seed=-1,
-            stop=["string", "string", "string"],
+            stop=["string"],
             stream=True,
             temperature=0,
             tool_choice="auto",
@@ -1062,111 +822,7 @@ class TestAsyncSessions:
                         "name": "name",
                         "type": "text_editor_20241022",
                     },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
+                }
             ],
             top_p=0,
             x_custom_api_key="X-Custom-Api-Key",
@@ -1219,11 +875,7 @@ class TestAsyncSessions:
         session = await async_client.sessions.create_or_update(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            agents=[
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            ],
+            agents=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             auto_run_tools=True,
             context_overflow="truncate",
             metadata={},
@@ -1231,11 +883,7 @@ class TestAsyncSessions:
             situation="situation",
             token_budget=0,
             user="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            users=[
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            ],
+            users=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
 

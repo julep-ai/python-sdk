@@ -233,7 +233,7 @@ class TestDocs:
     def test_method_search_overload_2(self, client: Julep) -> None:
         doc = client.users.docs.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            vector=[0, 0, 0],
+            vector=[0],
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -241,7 +241,7 @@ class TestDocs:
     def test_method_search_with_all_params_overload_2(self, client: Julep) -> None:
         doc = client.users.docs.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            vector=[0, 0, 0],
+            vector=[0],
             confidence=0,
             lang="en-US",
             limit=1,
@@ -254,7 +254,7 @@ class TestDocs:
     def test_raw_response_search_overload_2(self, client: Julep) -> None:
         response = client.users.docs.with_raw_response.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            vector=[0, 0, 0],
+            vector=[0],
         )
 
         assert response.is_closed is True
@@ -266,7 +266,7 @@ class TestDocs:
     def test_streaming_response_search_overload_2(self, client: Julep) -> None:
         with client.users.docs.with_streaming_response.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            vector=[0, 0, 0],
+            vector=[0],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -281,7 +281,7 @@ class TestDocs:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `user_id` but received ''"):
             client.users.docs.with_raw_response.search(
                 user_id="",
-                vector=[0, 0, 0],
+                vector=[0],
             )
 
     @parametrize
@@ -289,7 +289,7 @@ class TestDocs:
         doc = client.users.docs.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
-            vector=[0, 0, 0],
+            vector=[0],
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -298,7 +298,7 @@ class TestDocs:
         doc = client.users.docs.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
-            vector=[0, 0, 0],
+            vector=[0],
             alpha=0,
             confidence=0,
             lang="en-US",
@@ -313,7 +313,7 @@ class TestDocs:
         response = client.users.docs.with_raw_response.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
-            vector=[0, 0, 0],
+            vector=[0],
         )
 
         assert response.is_closed is True
@@ -326,7 +326,7 @@ class TestDocs:
         with client.users.docs.with_streaming_response.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
-            vector=[0, 0, 0],
+            vector=[0],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -342,7 +342,7 @@ class TestDocs:
             client.users.docs.with_raw_response.search(
                 user_id="",
                 text="text",
-                vector=[0, 0, 0],
+                vector=[0],
             )
 
 
@@ -562,7 +562,7 @@ class TestAsyncDocs:
     async def test_method_search_overload_2(self, async_client: AsyncJulep) -> None:
         doc = await async_client.users.docs.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            vector=[0, 0, 0],
+            vector=[0],
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -570,7 +570,7 @@ class TestAsyncDocs:
     async def test_method_search_with_all_params_overload_2(self, async_client: AsyncJulep) -> None:
         doc = await async_client.users.docs.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            vector=[0, 0, 0],
+            vector=[0],
             confidence=0,
             lang="en-US",
             limit=1,
@@ -583,7 +583,7 @@ class TestAsyncDocs:
     async def test_raw_response_search_overload_2(self, async_client: AsyncJulep) -> None:
         response = await async_client.users.docs.with_raw_response.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            vector=[0, 0, 0],
+            vector=[0],
         )
 
         assert response.is_closed is True
@@ -595,7 +595,7 @@ class TestAsyncDocs:
     async def test_streaming_response_search_overload_2(self, async_client: AsyncJulep) -> None:
         async with async_client.users.docs.with_streaming_response.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            vector=[0, 0, 0],
+            vector=[0],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -610,7 +610,7 @@ class TestAsyncDocs:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `user_id` but received ''"):
             await async_client.users.docs.with_raw_response.search(
                 user_id="",
-                vector=[0, 0, 0],
+                vector=[0],
             )
 
     @parametrize
@@ -618,7 +618,7 @@ class TestAsyncDocs:
         doc = await async_client.users.docs.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
-            vector=[0, 0, 0],
+            vector=[0],
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -627,7 +627,7 @@ class TestAsyncDocs:
         doc = await async_client.users.docs.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
-            vector=[0, 0, 0],
+            vector=[0],
             alpha=0,
             confidence=0,
             lang="en-US",
@@ -642,7 +642,7 @@ class TestAsyncDocs:
         response = await async_client.users.docs.with_raw_response.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
-            vector=[0, 0, 0],
+            vector=[0],
         )
 
         assert response.is_closed is True
@@ -655,7 +655,7 @@ class TestAsyncDocs:
         async with async_client.users.docs.with_streaming_response.search(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
-            vector=[0, 0, 0],
+            vector=[0],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -671,5 +671,5 @@ class TestAsyncDocs:
             await async_client.users.docs.with_raw_response.search(
                 user_id="",
                 text="text",
-                vector=[0, 0, 0],
+                vector=[0],
             )
