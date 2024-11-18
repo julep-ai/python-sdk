@@ -23,7 +23,7 @@ class TestTasks:
     def test_method_create(self, client: Julep) -> None:
         task = client.tasks.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         )
         assert_matches_type(ResourceCreated, task, path=["response"])
@@ -34,7 +34,7 @@ class TestTasks:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[
                 {
-                    "evaluate": {"foo": ["string", "string", "string"]},
+                    "evaluate": {"foo": ["string"]},
                     "label": "label",
                 }
             ],
@@ -95,111 +95,7 @@ class TestTasks:
                         "name": "name",
                         "type": "text_editor_20241022",
                     },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
+                }
             ],
         )
         assert_matches_type(ResourceCreated, task, path=["response"])
@@ -208,7 +104,7 @@ class TestTasks:
     def test_raw_response_create(self, client: Julep) -> None:
         response = client.tasks.with_raw_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         )
 
@@ -221,7 +117,7 @@ class TestTasks:
     def test_streaming_response_create(self, client: Julep) -> None:
         with client.tasks.with_streaming_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         ) as response:
             assert not response.is_closed
@@ -237,7 +133,7 @@ class TestTasks:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
             client.tasks.with_raw_response.create(
                 agent_id="",
-                main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+                main=[{"evaluate": {"foo": ["string"]}}],
                 name="name",
             )
 
@@ -295,7 +191,7 @@ class TestTasks:
         task = client.tasks.create_or_update(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         )
         assert_matches_type(ResourceUpdated, task, path=["response"])
@@ -307,7 +203,7 @@ class TestTasks:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[
                 {
-                    "evaluate": {"foo": ["string", "string", "string"]},
+                    "evaluate": {"foo": ["string"]},
                     "label": "label",
                 }
             ],
@@ -368,111 +264,7 @@ class TestTasks:
                         "name": "name",
                         "type": "text_editor_20241022",
                     },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
+                }
             ],
         )
         assert_matches_type(ResourceUpdated, task, path=["response"])
@@ -482,7 +274,7 @@ class TestTasks:
         response = client.tasks.with_raw_response.create_or_update(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         )
 
@@ -496,7 +288,7 @@ class TestTasks:
         with client.tasks.with_streaming_response.create_or_update(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         ) as response:
             assert not response.is_closed
@@ -513,7 +305,7 @@ class TestTasks:
             client.tasks.with_raw_response.create_or_update(
                 task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
-                main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+                main=[{"evaluate": {"foo": ["string"]}}],
                 name="name",
             )
 
@@ -521,7 +313,7 @@ class TestTasks:
             client.tasks.with_raw_response.create_or_update(
                 task_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+                main=[{"evaluate": {"foo": ["string"]}}],
                 name="name",
             )
 
@@ -571,7 +363,7 @@ class TestAsyncTasks:
     async def test_method_create(self, async_client: AsyncJulep) -> None:
         task = await async_client.tasks.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         )
         assert_matches_type(ResourceCreated, task, path=["response"])
@@ -582,7 +374,7 @@ class TestAsyncTasks:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[
                 {
-                    "evaluate": {"foo": ["string", "string", "string"]},
+                    "evaluate": {"foo": ["string"]},
                     "label": "label",
                 }
             ],
@@ -643,111 +435,7 @@ class TestAsyncTasks:
                         "name": "name",
                         "type": "text_editor_20241022",
                     },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
+                }
             ],
         )
         assert_matches_type(ResourceCreated, task, path=["response"])
@@ -756,7 +444,7 @@ class TestAsyncTasks:
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
         response = await async_client.tasks.with_raw_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         )
 
@@ -769,7 +457,7 @@ class TestAsyncTasks:
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
         async with async_client.tasks.with_streaming_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         ) as response:
             assert not response.is_closed
@@ -785,7 +473,7 @@ class TestAsyncTasks:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
             await async_client.tasks.with_raw_response.create(
                 agent_id="",
-                main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+                main=[{"evaluate": {"foo": ["string"]}}],
                 name="name",
             )
 
@@ -843,7 +531,7 @@ class TestAsyncTasks:
         task = await async_client.tasks.create_or_update(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         )
         assert_matches_type(ResourceUpdated, task, path=["response"])
@@ -855,7 +543,7 @@ class TestAsyncTasks:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[
                 {
-                    "evaluate": {"foo": ["string", "string", "string"]},
+                    "evaluate": {"foo": ["string"]},
                     "label": "label",
                 }
             ],
@@ -916,111 +604,7 @@ class TestAsyncTasks:
                         "name": "name",
                         "type": "text_editor_20241022",
                     },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
-                {
-                    "name": "name",
-                    "type": "function",
-                    "api_call": {
-                        "method": "GET",
-                        "url": "https://example.com",
-                        "content": "content",
-                        "cookies": {"foo": "string"},
-                        "data": {},
-                        "files": {},
-                        "follow_redirects": True,
-                        "headers": {"foo": "string"},
-                        "json": {},
-                        "params": "string",
-                        "schema": {},
-                        "timeout": 0,
-                    },
-                    "bash_20241022": {
-                        "name": "name",
-                        "type": "bash_20241022",
-                    },
-                    "computer_20241022": {
-                        "display_height_px": 400,
-                        "display_number": 1,
-                        "display_width_px": 600,
-                        "name": "name",
-                        "type": "computer_20241022",
-                    },
-                    "description": "description",
-                    "function": {
-                        "description": {},
-                        "name": {},
-                        "parameters": {},
-                    },
-                    "integration": {
-                        "arguments": {},
-                        "method": "method",
-                        "provider": "dummy",
-                        "setup": {},
-                    },
-                    "system": {
-                        "operation": "create",
-                        "resource": "agent",
-                        "arguments": {},
-                        "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                        "subresource": "tool",
-                    },
-                    "text_editor_20241022": {
-                        "name": "name",
-                        "type": "text_editor_20241022",
-                    },
-                },
+                }
             ],
         )
         assert_matches_type(ResourceUpdated, task, path=["response"])
@@ -1030,7 +614,7 @@ class TestAsyncTasks:
         response = await async_client.tasks.with_raw_response.create_or_update(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         )
 
@@ -1044,7 +628,7 @@ class TestAsyncTasks:
         async with async_client.tasks.with_streaming_response.create_or_update(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+            main=[{"evaluate": {"foo": ["string"]}}],
             name="name",
         ) as response:
             assert not response.is_closed
@@ -1061,7 +645,7 @@ class TestAsyncTasks:
             await async_client.tasks.with_raw_response.create_or_update(
                 task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
-                main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+                main=[{"evaluate": {"foo": ["string"]}}],
                 name="name",
             )
 
@@ -1069,7 +653,7 @@ class TestAsyncTasks:
             await async_client.tasks.with_raw_response.create_or_update(
                 task_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                main=[{"evaluate": {"foo": ["string", "string", "string"]}}],
+                main=[{"evaluate": {"foo": ["string"]}}],
                 name="name",
             )
 
