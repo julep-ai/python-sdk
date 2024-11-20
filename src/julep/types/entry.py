@@ -13,8 +13,12 @@ __all__ = [
     "Content",
     "ContentUnionMember0",
     "ContentUnionMember0Content",
-    "ContentUnionMember0ContentModel",
-    "ContentUnionMember0ContentModelImageURL",
+    "ContentUnionMember0AgentsAPIAutogenEntriesContentModel3",
+    "ContentUnionMember0AgentsAPIAutogenEntriesContentModel3ImageURL",
+    "ContentUnionMember0AgentsAPIAutogenEntriesContentModel",
+    "ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember0",
+    "ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1",
+    "ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1Source",
     "ContentTool",
     "ContentToolAPICall",
     "ContentToolBash20241022",
@@ -66,6 +70,14 @@ __all__ = [
     "ContentToolIntegrationLlamaParseIntegrationDef",
     "ContentToolIntegrationLlamaParseIntegrationDefArguments",
     "ContentToolIntegrationLlamaParseIntegrationDefSetup",
+    "ContentToolIntegrationFfmpegIntegrationDef",
+    "ContentToolIntegrationFfmpegIntegrationDefArguments",
+    "ContentToolIntegrationCloudinaryUploadIntegrationDef",
+    "ContentToolIntegrationCloudinaryUploadIntegrationDefArguments",
+    "ContentToolIntegrationCloudinaryUploadIntegrationDefSetup",
+    "ContentToolIntegrationCloudinaryEditIntegrationDef",
+    "ContentToolIntegrationCloudinaryEditIntegrationDefArguments",
+    "ContentToolIntegrationCloudinaryEditIntegrationDefSetup",
     "ContentToolSystem",
     "ContentToolTextEditor20241022",
     "ContentChosenFunctionCall",
@@ -79,9 +91,13 @@ __all__ = [
     "ContentToolResponse",
     "ContentUnionMember8",
     "ContentUnionMember8UnionMember0",
-    "ContentUnionMember8UnionMember0Content",
-    "ContentUnionMember8UnionMember0ContentModel",
-    "ContentUnionMember8UnionMember0ContentModelImageURL",
+    "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel1",
+    "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel3",
+    "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel3ImageURL",
+    "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2",
+    "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember0",
+    "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1",
+    "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1Source",
     "ContentUnionMember8Tool",
     "ContentUnionMember8ToolAPICall",
     "ContentUnionMember8ToolBash20241022",
@@ -133,6 +149,14 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationLlamaParseIntegrationDef",
     "ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefSetup",
+    "ContentUnionMember8ToolIntegrationFfmpegIntegrationDef",
+    "ContentUnionMember8ToolIntegrationFfmpegIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDef",
+    "ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDefSetup",
+    "ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDef",
+    "ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDefSetup",
     "ContentUnionMember8ToolSystem",
     "ContentUnionMember8ToolTextEditor20241022",
     "ContentUnionMember8ChosenFunctionCall",
@@ -162,20 +186,55 @@ class ContentUnionMember0Content(BaseModel):
     type: Optional[Literal["text"]] = None
 
 
-class ContentUnionMember0ContentModelImageURL(BaseModel):
+class ContentUnionMember0AgentsAPIAutogenEntriesContentModel3ImageURL(BaseModel):
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
 
 
-class ContentUnionMember0ContentModel(BaseModel):
-    image_url: ContentUnionMember0ContentModelImageURL
+class ContentUnionMember0AgentsAPIAutogenEntriesContentModel3(BaseModel):
+    image_url: ContentUnionMember0AgentsAPIAutogenEntriesContentModel3ImageURL
     """The image URL"""
 
     type: Optional[Literal["image_url"]] = None
 
 
-ContentUnionMember0: TypeAlias = Union[ContentUnionMember0Content, ContentUnionMember0ContentModel]
+class ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember0(BaseModel):
+    text: str
+
+    type: Optional[Literal["text"]] = None
+
+
+class ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1Source(BaseModel):
+    data: str
+
+    media_type: str
+
+    type: Optional[Literal["base64"]] = None
+
+
+class ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1(BaseModel):
+    source: ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1Source
+
+    type: Optional[Literal["image"]] = None
+
+
+class ContentUnionMember0AgentsAPIAutogenEntriesContentModel(BaseModel):
+    content: Union[
+        List[ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember0],
+        List[ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1],
+    ]
+
+    tool_use_id: str
+
+    type: Optional[Literal["tool_result"]] = None
+
+
+ContentUnionMember0: TypeAlias = Union[
+    ContentUnionMember0Content,
+    ContentUnionMember0AgentsAPIAutogenEntriesContentModel3,
+    ContentUnionMember0AgentsAPIAutogenEntriesContentModel,
+]
 
 
 class ContentToolAPICall(BaseModel):
@@ -640,6 +699,85 @@ class ContentToolIntegrationLlamaParseIntegrationDef(BaseModel):
     """Setup parameters for LlamaParse integration"""
 
 
+class ContentToolIntegrationFfmpegIntegrationDefArguments(BaseModel):
+    cmd: str
+
+    file: Optional[str] = None
+
+
+class ContentToolIntegrationFfmpegIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationFfmpegIntegrationDefArguments] = None
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["ffmpeg"]] = None
+
+    setup: Optional[object] = None
+
+
+class ContentToolIntegrationCloudinaryUploadIntegrationDefArguments(BaseModel):
+    file: str
+
+    public_id: Optional[str] = None
+
+    return_base64: Optional[bool] = None
+
+    upload_params: Optional[object] = None
+
+
+class ContentToolIntegrationCloudinaryUploadIntegrationDefSetup(BaseModel):
+    cloudinary_api_key: str
+
+    cloudinary_api_secret: str
+
+    cloudinary_cloud_name: str
+
+    params: Optional[object] = None
+
+
+class ContentToolIntegrationCloudinaryUploadIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationCloudinaryUploadIntegrationDefArguments] = None
+    """Arguments for Cloudinary media upload"""
+
+    method: Optional[Literal["media_upload"]] = None
+
+    provider: Optional[Literal["cloudinary"]] = None
+
+    setup: Optional[ContentToolIntegrationCloudinaryUploadIntegrationDefSetup] = None
+    """Setup parameters for Cloudinary integration"""
+
+
+class ContentToolIntegrationCloudinaryEditIntegrationDefArguments(BaseModel):
+    public_id: str
+
+    transformation: List[object]
+
+    return_base64: Optional[bool] = None
+
+
+class ContentToolIntegrationCloudinaryEditIntegrationDefSetup(BaseModel):
+    cloudinary_api_key: str
+
+    cloudinary_api_secret: str
+
+    cloudinary_cloud_name: str
+
+    params: Optional[object] = None
+
+
+class ContentToolIntegrationCloudinaryEditIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationCloudinaryEditIntegrationDefArguments] = None
+    """Arguments for Cloudinary media edit"""
+
+    method: Optional[Literal["media_edit"]] = None
+
+    provider: Optional[Literal["cloudinary"]] = None
+
+    setup: Optional[ContentToolIntegrationCloudinaryEditIntegrationDefSetup] = None
+    """Setup parameters for Cloudinary integration"""
+
+
 ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationDummyIntegrationDef,
     ContentToolIntegrationBraveIntegrationDef,
@@ -657,6 +795,9 @@ ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ContentToolIntegrationRemoteBrowserIntegrationDef,
     ContentToolIntegrationLlamaParseIntegrationDef,
+    ContentToolIntegrationFfmpegIntegrationDef,
+    ContentToolIntegrationCloudinaryUploadIntegrationDef,
+    ContentToolIntegrationCloudinaryEditIntegrationDef,
     None,
 ]
 
@@ -839,27 +980,60 @@ class ContentToolResponse(BaseModel):
     output: object
 
 
-class ContentUnionMember8UnionMember0Content(BaseModel):
+class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel1(BaseModel):
     text: str
 
     type: Optional[Literal["text"]] = None
 
 
-class ContentUnionMember8UnionMember0ContentModelImageURL(BaseModel):
+class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel3ImageURL(BaseModel):
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
 
 
-class ContentUnionMember8UnionMember0ContentModel(BaseModel):
-    image_url: ContentUnionMember8UnionMember0ContentModelImageURL
+class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel3(BaseModel):
+    image_url: ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel3ImageURL
     """The image URL"""
 
     type: Optional[Literal["image_url"]] = None
 
 
+class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember0(BaseModel):
+    text: str
+
+    type: Optional[Literal["text"]] = None
+
+
+class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1Source(BaseModel):
+    data: str
+
+    media_type: str
+
+    type: Optional[Literal["base64"]] = None
+
+
+class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1(BaseModel):
+    source: ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1Source
+
+    type: Optional[Literal["image"]] = None
+
+
+class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2(BaseModel):
+    content: Union[
+        List[ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember0],
+        List[ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1],
+    ]
+
+    tool_use_id: str
+
+    type: Optional[Literal["tool_result"]] = None
+
+
 ContentUnionMember8UnionMember0: TypeAlias = Union[
-    ContentUnionMember8UnionMember0Content, ContentUnionMember8UnionMember0ContentModel
+    ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel1,
+    ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel3,
+    ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2,
 ]
 
 
@@ -1325,6 +1499,85 @@ class ContentUnionMember8ToolIntegrationLlamaParseIntegrationDef(BaseModel):
     """Setup parameters for LlamaParse integration"""
 
 
+class ContentUnionMember8ToolIntegrationFfmpegIntegrationDefArguments(BaseModel):
+    cmd: str
+
+    file: Optional[str] = None
+
+
+class ContentUnionMember8ToolIntegrationFfmpegIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationFfmpegIntegrationDefArguments] = None
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["ffmpeg"]] = None
+
+    setup: Optional[object] = None
+
+
+class ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDefArguments(BaseModel):
+    file: str
+
+    public_id: Optional[str] = None
+
+    return_base64: Optional[bool] = None
+
+    upload_params: Optional[object] = None
+
+
+class ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDefSetup(BaseModel):
+    cloudinary_api_key: str
+
+    cloudinary_api_secret: str
+
+    cloudinary_cloud_name: str
+
+    params: Optional[object] = None
+
+
+class ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDefArguments] = None
+    """Arguments for Cloudinary media upload"""
+
+    method: Optional[Literal["media_upload"]] = None
+
+    provider: Optional[Literal["cloudinary"]] = None
+
+    setup: Optional[ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDefSetup] = None
+    """Setup parameters for Cloudinary integration"""
+
+
+class ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDefArguments(BaseModel):
+    public_id: str
+
+    transformation: List[object]
+
+    return_base64: Optional[bool] = None
+
+
+class ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDefSetup(BaseModel):
+    cloudinary_api_key: str
+
+    cloudinary_api_secret: str
+
+    cloudinary_cloud_name: str
+
+    params: Optional[object] = None
+
+
+class ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDefArguments] = None
+    """Arguments for Cloudinary media edit"""
+
+    method: Optional[Literal["media_edit"]] = None
+
+    provider: Optional[Literal["cloudinary"]] = None
+
+    setup: Optional[ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDefSetup] = None
+    """Setup parameters for Cloudinary integration"""
+
+
 ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationDummyIntegrationDef,
     ContentUnionMember8ToolIntegrationBraveIntegrationDef,
@@ -1342,6 +1595,9 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDef,
     ContentUnionMember8ToolIntegrationLlamaParseIntegrationDef,
+    ContentUnionMember8ToolIntegrationFfmpegIntegrationDef,
+    ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDef,
+    ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDef,
     None,
 ]
 
