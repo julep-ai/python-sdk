@@ -17,8 +17,12 @@ __all__ = [
     "MainPromptStepInputPromptUnionMember0",
     "MainPromptStepInputPromptUnionMember0ContentUnionMember1",
     "MainPromptStepInputPromptUnionMember0ContentUnionMember1Content",
-    "MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
-    "MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel",
+    "MainPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL",
+    "MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input",
+    "MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0",
+    "MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1",
+    "MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source",
     "MainPromptStepInputPromptUnionMember0ToolCall",
     "MainPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall",
     "MainPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction",
@@ -87,6 +91,14 @@ __all__ = [
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefArguments",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputSystem",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputTextEditor20241022",
     "MainGetStep",
@@ -107,8 +119,12 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0",
     "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1",
     "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1Content",
-    "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
-    "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel",
+    "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL",
+    "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input",
+    "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0",
+    "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1",
+    "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source",
     "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ToolCall",
     "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall",
     "MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction",
@@ -177,6 +193,14 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenGetStep",
@@ -196,8 +220,12 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0",
     "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1",
     "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1Content",
-    "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
-    "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel",
+    "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL",
+    "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input",
+    "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0",
+    "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1",
+    "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source",
     "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ToolCall",
     "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ToolCallChosenFunctionCall",
     "MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction",
@@ -266,6 +294,14 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseGetStep",
@@ -287,8 +323,12 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0",
     "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1",
     "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1Content",
-    "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
-    "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel",
+    "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL",
+    "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input",
+    "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0",
+    "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1",
+    "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source",
     "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCall",
     "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall",
     "MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction",
@@ -357,6 +397,14 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefArguments",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputSystem",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputTextEditor20241022",
     "MainSwitchStepInputSwitchThenGetStep",
@@ -380,8 +428,12 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0",
     "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1",
     "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1Content",
-    "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
-    "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel",
+    "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL",
+    "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input",
+    "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0",
+    "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1",
+    "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source",
     "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCall",
     "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall",
     "MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction",
@@ -450,6 +502,14 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefArguments",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputSystem",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputTextEditor20241022",
     "MainForeachStepInputForeachDoGetStep",
@@ -464,8 +524,12 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputPromptUnionMember0",
     "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1",
     "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1Content",
-    "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
-    "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel",
+    "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL",
+    "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input",
+    "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0",
+    "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1",
+    "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source",
     "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCall",
     "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall",
     "MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction",
@@ -534,6 +598,14 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefArguments",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputSystem",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputTextEditor20241022",
     "MainParallelStepInputParallelGetStep",
@@ -548,8 +620,12 @@ __all__ = [
     "MainMainInputMapPromptStepInputPromptUnionMember0",
     "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1",
     "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1Content",
-    "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel",
-    "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL",
+    "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel",
+    "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL",
+    "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input",
+    "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0",
+    "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1",
+    "MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source",
     "MainMainInputMapPromptStepInputPromptUnionMember0ToolCall",
     "MainMainInputMapPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall",
     "MainMainInputMapPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction",
@@ -618,6 +694,14 @@ __all__ = [
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefArguments",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputSystem",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputTextEditor20241022",
     "MainMainInputMapGetStep",
@@ -675,6 +759,14 @@ __all__ = [
     "ToolIntegrationLlamaParseIntegrationDef",
     "ToolIntegrationLlamaParseIntegrationDefArguments",
     "ToolIntegrationLlamaParseIntegrationDefSetup",
+    "ToolIntegrationFfmpegIntegrationDef",
+    "ToolIntegrationFfmpegIntegrationDefArguments",
+    "ToolIntegrationCloudinaryUploadIntegrationDef",
+    "ToolIntegrationCloudinaryUploadIntegrationDefArguments",
+    "ToolIntegrationCloudinaryUploadIntegrationDefSetup",
+    "ToolIntegrationCloudinaryEditIntegrationDef",
+    "ToolIntegrationCloudinaryEditIntegrationDefArguments",
+    "ToolIntegrationCloudinaryEditIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -738,22 +830,68 @@ class MainPromptStepInputPromptUnionMember0ContentUnionMember1Content(TypedDict,
     type: Literal["text"]
 
 
-class MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL(TypedDict, total=False):
+class MainPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL(
+    TypedDict, total=False
+):
     url: Required[str]
 
     detail: Literal["low", "high", "auto"]
 
 
-class MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel(TypedDict, total=False):
-    image_url: Required[MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL]
+class MainPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel(TypedDict, total=False):
+    image_url: Required[
+        MainPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL
+    ]
     """The image URL"""
 
     type: Literal["image_url"]
 
 
+class MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0(
+    TypedDict, total=False
+):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source(
+    TypedDict, total=False
+):
+    data: Required[str]
+
+    media_type: Required[str]
+
+    type: Literal["base64"]
+
+
+class MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1(
+    TypedDict, total=False
+):
+    source: Required[
+        MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source
+    ]
+
+    type: Literal["image"]
+
+
+class MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input(TypedDict, total=False):
+    content: Required[
+        Union[
+            Iterable[MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0],
+            Iterable[MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1],
+        ]
+    ]
+
+    tool_use_id: Required[str]
+
+    type: Literal["tool_result"]
+
+
 MainPromptStepInputPromptUnionMember0ContentUnionMember1: TypeAlias = Union[
     MainPromptStepInputPromptUnionMember0ContentUnionMember1Content,
-    MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel,
+    MainPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel,
+    MainPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input,
 ]
 
 
@@ -1553,6 +1691,111 @@ class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateTool
     """Setup parameters for LlamaParse integration"""
 
 
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments(
+    TypedDict, total=False
+):
+    cmd: Required[str]
+
+    file: Optional[str]
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments
+    ]
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str]
+
+    provider: Literal["ffmpeg"]
+
+    setup: Optional[object]
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    upload_params: Optional[object]
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media upload"""
+
+    method: Literal["media_upload"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments(
+    TypedDict, total=False
+):
+    public_id: Required[str]
+
+    transformation: Required[Iterable[object]]
+
+    return_base64: bool
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media edit"""
+
+    method: Literal["media_edit"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
 MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegration: TypeAlias = Union[
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -1570,6 +1813,9 @@ MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolReques
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationRemoteBrowserIntegrationDef,
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef,
+    MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef,
+    MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
+    MainPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
 ]
 
 
@@ -1792,7 +2038,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUni
     type: Literal["text"]
 
 
-class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL(
+class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL(
     TypedDict, total=False
 ):
     url: Required[str]
@@ -1800,20 +2046,68 @@ class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUni
     detail: Literal["low", "high", "auto"]
 
 
-class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel(
+class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel(
     TypedDict, total=False
 ):
     image_url: Required[
-        MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL
+        MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL
     ]
     """The image URL"""
 
     type: Literal["image_url"]
 
 
+class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0(
+    TypedDict, total=False
+):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source(
+    TypedDict, total=False
+):
+    data: Required[str]
+
+    media_type: Required[str]
+
+    type: Literal["base64"]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1(
+    TypedDict, total=False
+):
+    source: Required[
+        MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source
+    ]
+
+    type: Literal["image"]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input(
+    TypedDict, total=False
+):
+    content: Required[
+        Union[
+            Iterable[
+                MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0
+            ],
+            Iterable[
+                MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1
+            ],
+        ]
+    ]
+
+    tool_use_id: Required[str]
+
+    type: Literal["tool_result"]
+
+
 MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1Content,
-    MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel,
+    MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel,
+    MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input,
 ]
 
 
@@ -2648,6 +2942,111 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAu
     """Setup parameters for LlamaParse integration"""
 
 
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments(
+    TypedDict, total=False
+):
+    cmd: Required[str]
+
+    file: Optional[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments
+    ]
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str]
+
+    provider: Literal["ffmpeg"]
+
+    setup: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    upload_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media upload"""
+
+    method: Literal["media_upload"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments(
+    TypedDict, total=False
+):
+    public_id: Required[str]
+
+    transformation: Required[Iterable[object]]
+
+    return_base64: bool
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media edit"""
+
+    method: Literal["media_edit"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
 MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -2665,6 +3064,9 @@ MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenO
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationRemoteBrowserIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
 ]
 
 
@@ -2912,7 +3314,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUni
     type: Literal["text"]
 
 
-class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL(
+class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL(
     TypedDict, total=False
 ):
     url: Required[str]
@@ -2920,20 +3322,68 @@ class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUni
     detail: Literal["low", "high", "auto"]
 
 
-class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel(
+class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel(
     TypedDict, total=False
 ):
     image_url: Required[
-        MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL
+        MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL
     ]
     """The image URL"""
 
     type: Literal["image_url"]
 
 
+class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0(
+    TypedDict, total=False
+):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source(
+    TypedDict, total=False
+):
+    data: Required[str]
+
+    media_type: Required[str]
+
+    type: Literal["base64"]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1(
+    TypedDict, total=False
+):
+    source: Required[
+        MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source
+    ]
+
+    type: Literal["image"]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input(
+    TypedDict, total=False
+):
+    content: Required[
+        Union[
+            Iterable[
+                MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0
+            ],
+            Iterable[
+                MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1
+            ],
+        ]
+    ]
+
+    tool_use_id: Required[str]
+
+    type: Literal["tool_result"]
+
+
 MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1: TypeAlias = Union[
     MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1Content,
-    MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel,
+    MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel,
+    MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input,
 ]
 
 
@@ -3768,6 +4218,111 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAu
     """Setup parameters for LlamaParse integration"""
 
 
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments(
+    TypedDict, total=False
+):
+    cmd: Required[str]
+
+    file: Optional[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments
+    ]
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str]
+
+    provider: Literal["ffmpeg"]
+
+    setup: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    upload_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media upload"""
+
+    method: Literal["media_upload"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments(
+    TypedDict, total=False
+):
+    public_id: Required[str]
+
+    transformation: Required[Iterable[object]]
+
+    return_base64: bool
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media edit"""
+
+    method: Literal["media_edit"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
 MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -3785,6 +4340,9 @@ MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenO
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationRemoteBrowserIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
 ]
 
 
@@ -4045,7 +4603,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnion
     type: Literal["text"]
 
 
-class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL(
+class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL(
     TypedDict, total=False
 ):
     url: Required[str]
@@ -4053,20 +4611,68 @@ class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnion
     detail: Literal["low", "high", "auto"]
 
 
-class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel(
+class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel(
     TypedDict, total=False
 ):
     image_url: Required[
-        MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL
+        MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL
     ]
     """The image URL"""
 
     type: Literal["image_url"]
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0(
+    TypedDict, total=False
+):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source(
+    TypedDict, total=False
+):
+    data: Required[str]
+
+    media_type: Required[str]
+
+    type: Literal["base64"]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1(
+    TypedDict, total=False
+):
+    source: Required[
+        MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source
+    ]
+
+    type: Literal["image"]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input(
+    TypedDict, total=False
+):
+    content: Required[
+        Union[
+            Iterable[
+                MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0
+            ],
+            Iterable[
+                MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1
+            ],
+        ]
+    ]
+
+    tool_use_id: Required[str]
+
+    type: Literal["tool_result"]
+
+
 MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1: TypeAlias = Union[
     MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1Content,
-    MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel,
+    MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel,
+    MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input,
 ]
 
 
@@ -4895,6 +5501,111 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAuto
     """Setup parameters for LlamaParse integration"""
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments(
+    TypedDict, total=False
+):
+    cmd: Required[str]
+
+    file: Optional[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments
+    ]
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str]
+
+    provider: Literal["ffmpeg"]
+
+    setup: Optional[object]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    upload_params: Optional[object]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media upload"""
+
+    method: Literal["media_upload"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments(
+    TypedDict, total=False
+):
+    public_id: Required[str]
+
+    transformation: Required[Iterable[object]]
+
+    return_base64: bool
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media edit"""
+
+    method: Literal["media_edit"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
 MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegration: TypeAlias = Union[
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -4912,6 +5623,9 @@ MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpe
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationRemoteBrowserIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
 ]
 
 
@@ -5177,7 +5891,7 @@ class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnion
     type: Literal["text"]
 
 
-class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL(
+class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL(
     TypedDict, total=False
 ):
     url: Required[str]
@@ -5185,20 +5899,68 @@ class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnion
     detail: Literal["low", "high", "auto"]
 
 
-class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel(
+class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel(
     TypedDict, total=False
 ):
     image_url: Required[
-        MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL
+        MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL
     ]
     """The image URL"""
 
     type: Literal["image_url"]
 
 
+class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0(
+    TypedDict, total=False
+):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source(
+    TypedDict, total=False
+):
+    data: Required[str]
+
+    media_type: Required[str]
+
+    type: Literal["base64"]
+
+
+class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1(
+    TypedDict, total=False
+):
+    source: Required[
+        MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source
+    ]
+
+    type: Literal["image"]
+
+
+class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input(
+    TypedDict, total=False
+):
+    content: Required[
+        Union[
+            Iterable[
+                MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0
+            ],
+            Iterable[
+                MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1
+            ],
+        ]
+    ]
+
+    tool_use_id: Required[str]
+
+    type: Literal["tool_result"]
+
+
 MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1: TypeAlias = Union[
     MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1Content,
-    MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel,
+    MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel,
+    MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input,
 ]
 
 
@@ -6027,6 +6789,111 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAuto
     """Setup parameters for LlamaParse integration"""
 
 
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments(
+    TypedDict, total=False
+):
+    cmd: Required[str]
+
+    file: Optional[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments
+    ]
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str]
+
+    provider: Literal["ffmpeg"]
+
+    setup: Optional[object]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    upload_params: Optional[object]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media upload"""
+
+    method: Literal["media_upload"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments(
+    TypedDict, total=False
+):
+    public_id: Required[str]
+
+    transformation: Required[Iterable[object]]
+
+    return_base64: bool
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media edit"""
+
+    method: Literal["media_edit"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
 MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegration: TypeAlias = Union[
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -6044,6 +6911,9 @@ MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpe
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationRemoteBrowserIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
 ]
 
 
@@ -6257,7 +7127,7 @@ class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnion
     type: Literal["text"]
 
 
-class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL(
+class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL(
     TypedDict, total=False
 ):
     url: Required[str]
@@ -6265,20 +7135,68 @@ class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnion
     detail: Literal["low", "high", "auto"]
 
 
-class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel(
+class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel(
     TypedDict, total=False
 ):
     image_url: Required[
-        MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL
+        MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL
     ]
     """The image URL"""
 
     type: Literal["image_url"]
 
 
+class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0(
+    TypedDict, total=False
+):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source(
+    TypedDict, total=False
+):
+    data: Required[str]
+
+    media_type: Required[str]
+
+    type: Literal["base64"]
+
+
+class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1(
+    TypedDict, total=False
+):
+    source: Required[
+        MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source
+    ]
+
+    type: Literal["image"]
+
+
+class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input(
+    TypedDict, total=False
+):
+    content: Required[
+        Union[
+            Iterable[
+                MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0
+            ],
+            Iterable[
+                MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1
+            ],
+        ]
+    ]
+
+    tool_use_id: Required[str]
+
+    type: Literal["tool_result"]
+
+
 MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1: TypeAlias = Union[
     MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1Content,
-    MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel,
+    MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel,
+    MainParallelStepInputParallelPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input,
 ]
 
 
@@ -7107,6 +8025,111 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAuto
     """Setup parameters for LlamaParse integration"""
 
 
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments(
+    TypedDict, total=False
+):
+    cmd: Required[str]
+
+    file: Optional[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments
+    ]
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str]
+
+    provider: Literal["ffmpeg"]
+
+    setup: Optional[object]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    upload_params: Optional[object]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media upload"""
+
+    method: Literal["media_upload"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments(
+    TypedDict, total=False
+):
+    public_id: Required[str]
+
+    transformation: Required[Iterable[object]]
+
+    return_base64: bool
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media edit"""
+
+    method: Literal["media_edit"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
 MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegration: TypeAlias = Union[
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -7124,6 +8147,9 @@ MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpe
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationRemoteBrowserIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
 ]
 
 
@@ -7324,22 +8350,74 @@ class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1Conten
     type: Literal["text"]
 
 
-class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL(TypedDict, total=False):
+class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL(
+    TypedDict, total=False
+):
     url: Required[str]
 
     detail: Literal["low", "high", "auto"]
 
 
-class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel(TypedDict, total=False):
-    image_url: Required[MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModelImageURL]
+class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel(
+    TypedDict, total=False
+):
+    image_url: Required[
+        MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL
+    ]
     """The image URL"""
 
     type: Literal["image_url"]
 
 
+class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0(
+    TypedDict, total=False
+):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source(
+    TypedDict, total=False
+):
+    data: Required[str]
+
+    media_type: Required[str]
+
+    type: Literal["base64"]
+
+
+class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1(
+    TypedDict, total=False
+):
+    source: Required[
+        MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1Source
+    ]
+
+    type: Literal["image"]
+
+
+class MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input(TypedDict, total=False):
+    content: Required[
+        Union[
+            Iterable[
+                MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0
+            ],
+            Iterable[
+                MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1
+            ],
+        ]
+    ]
+
+    tool_use_id: Required[str]
+
+    type: Literal["tool_result"]
+
+
 MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1: TypeAlias = Union[
     MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1Content,
-    MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel,
+    MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel,
+    MainMainInputMapPromptStepInputPromptUnionMember0ContentUnionMember1ContentModel1Input,
 ]
 
 
@@ -8153,6 +9231,111 @@ class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIMod
     """Setup parameters for LlamaParse integration"""
 
 
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments(
+    TypedDict, total=False
+):
+    cmd: Required[str]
+
+    file: Optional[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDefArguments
+    ]
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str]
+
+    provider: Literal["ffmpeg"]
+
+    setup: Optional[object]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    upload_params: Optional[object]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media upload"""
+
+    method: Literal["media_upload"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments(
+    TypedDict, total=False
+):
+    public_id: Required[str]
+
+    transformation: Required[Iterable[object]]
+
+    return_base64: bool
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup(
+    TypedDict, total=False
+):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefArguments
+    ]
+    """Arguments for Cloudinary media edit"""
+
+    method: Literal["media_edit"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup
+    ]
+    """Setup parameters for Cloudinary integration"""
+
+
 MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegration: TypeAlias = Union[
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -8170,6 +9353,9 @@ MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCrea
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationRemoteBrowserIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationLlamaParseIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationFfmpegIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenOpenAPIModelCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
 ]
 
 
@@ -8831,6 +10017,85 @@ class ToolIntegrationLlamaParseIntegrationDef(TypedDict, total=False):
     """Setup parameters for LlamaParse integration"""
 
 
+class ToolIntegrationFfmpegIntegrationDefArguments(TypedDict, total=False):
+    cmd: Required[str]
+
+    file: Optional[str]
+
+
+class ToolIntegrationFfmpegIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationFfmpegIntegrationDefArguments]
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str]
+
+    provider: Literal["ffmpeg"]
+
+    setup: Optional[object]
+
+
+class ToolIntegrationCloudinaryUploadIntegrationDefArguments(TypedDict, total=False):
+    file: Required[str]
+
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    upload_params: Optional[object]
+
+
+class ToolIntegrationCloudinaryUploadIntegrationDefSetup(TypedDict, total=False):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class ToolIntegrationCloudinaryUploadIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationCloudinaryUploadIntegrationDefArguments]
+    """Arguments for Cloudinary media upload"""
+
+    method: Literal["media_upload"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[ToolIntegrationCloudinaryUploadIntegrationDefSetup]
+    """Setup parameters for Cloudinary integration"""
+
+
+class ToolIntegrationCloudinaryEditIntegrationDefArguments(TypedDict, total=False):
+    public_id: Required[str]
+
+    transformation: Required[Iterable[object]]
+
+    return_base64: bool
+
+
+class ToolIntegrationCloudinaryEditIntegrationDefSetup(TypedDict, total=False):
+    cloudinary_api_key: Required[str]
+
+    cloudinary_api_secret: Required[str]
+
+    cloudinary_cloud_name: Required[str]
+
+    params: Optional[object]
+
+
+class ToolIntegrationCloudinaryEditIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationCloudinaryEditIntegrationDefArguments]
+    """Arguments for Cloudinary media edit"""
+
+    method: Literal["media_edit"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[ToolIntegrationCloudinaryEditIntegrationDefSetup]
+    """Setup parameters for Cloudinary integration"""
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -8848,6 +10113,9 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ToolIntegrationRemoteBrowserIntegrationDef,
     ToolIntegrationLlamaParseIntegrationDef,
+    ToolIntegrationFfmpegIntegrationDef,
+    ToolIntegrationCloudinaryUploadIntegrationDef,
+    ToolIntegrationCloudinaryEditIntegrationDef,
 ]
 
 
