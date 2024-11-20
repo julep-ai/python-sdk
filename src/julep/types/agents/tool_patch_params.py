@@ -59,6 +59,14 @@ __all__ = [
     "IntegrationLlamaParseIntegrationDefUpdate",
     "IntegrationLlamaParseIntegrationDefUpdateArguments",
     "IntegrationLlamaParseIntegrationDefUpdateSetup",
+    "IntegrationFfmpegIntegrationDefUpdate",
+    "IntegrationFfmpegIntegrationDefUpdateArguments",
+    "IntegrationCloudinaryUploadIntegrationDefUpdate",
+    "IntegrationCloudinaryUploadIntegrationDefUpdateArguments",
+    "IntegrationCloudinaryUploadIntegrationDefUpdateSetup",
+    "IntegrationCloudinaryEditIntegrationDefUpdate",
+    "IntegrationCloudinaryEditIntegrationDefUpdateArguments",
+    "IntegrationCloudinaryEditIntegrationDefUpdateSetup",
     "System",
     "TextEditor20241022",
 ]
@@ -576,6 +584,85 @@ class IntegrationLlamaParseIntegrationDefUpdate(TypedDict, total=False):
     """Setup parameters for LlamaParse integration"""
 
 
+class IntegrationFfmpegIntegrationDefUpdateArguments(TypedDict, total=False):
+    cmd: Optional[str]
+
+    file: Optional[str]
+
+
+class IntegrationFfmpegIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationFfmpegIntegrationDefUpdateArguments]
+    """Arguments for Ffmpeg CMD"""
+
+    method: Optional[str]
+
+    provider: Literal["ffmpeg"]
+
+    setup: Optional[object]
+
+
+class IntegrationCloudinaryUploadIntegrationDefUpdateArguments(TypedDict, total=False):
+    file: Optional[str]
+
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    upload_params: Optional[object]
+
+
+class IntegrationCloudinaryUploadIntegrationDefUpdateSetup(TypedDict, total=False):
+    cloudinary_api_key: Optional[str]
+
+    cloudinary_api_secret: Optional[str]
+
+    cloudinary_cloud_name: Optional[str]
+
+    params: Optional[object]
+
+
+class IntegrationCloudinaryUploadIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationCloudinaryUploadIntegrationDefUpdateArguments]
+    """Arguments for Cloudinary media upload"""
+
+    method: Literal["media_upload"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[IntegrationCloudinaryUploadIntegrationDefUpdateSetup]
+    """Setup parameters for Cloudinary integration"""
+
+
+class IntegrationCloudinaryEditIntegrationDefUpdateArguments(TypedDict, total=False):
+    public_id: Optional[str]
+
+    return_base64: bool
+
+    transformation: Optional[Iterable[object]]
+
+
+class IntegrationCloudinaryEditIntegrationDefUpdateSetup(TypedDict, total=False):
+    cloudinary_api_key: Optional[str]
+
+    cloudinary_api_secret: Optional[str]
+
+    cloudinary_cloud_name: Optional[str]
+
+    params: Optional[object]
+
+
+class IntegrationCloudinaryEditIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationCloudinaryEditIntegrationDefUpdateArguments]
+    """Arguments for Cloudinary media edit"""
+
+    method: Literal["media_edit"]
+
+    provider: Literal["cloudinary"]
+
+    setup: Optional[IntegrationCloudinaryEditIntegrationDefUpdateSetup]
+    """Setup parameters for Cloudinary integration"""
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDefUpdate,
     IntegrationBraveIntegrationDefUpdate,
@@ -593,6 +680,9 @@ Integration: TypeAlias = Union[
     IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate,
     IntegrationRemoteBrowserIntegrationDefUpdate,
     IntegrationLlamaParseIntegrationDefUpdate,
+    IntegrationFfmpegIntegrationDefUpdate,
+    IntegrationCloudinaryUploadIntegrationDefUpdate,
+    IntegrationCloudinaryEditIntegrationDefUpdate,
 ]
 
 

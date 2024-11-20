@@ -16,9 +16,13 @@ __all__ = [
     "ChunkChatResponseChoice",
     "ChunkChatResponseChoiceDelta",
     "ChunkChatResponseChoiceDeltaContentUnionMember2",
-    "ChunkChatResponseChoiceDeltaContentUnionMember2Content",
-    "ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel",
-    "ChunkChatResponseChoiceDeltaContentUnionMember2ContentModelImageURL",
+    "ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel1",
+    "ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel7",
+    "ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel7ImageURL",
+    "ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2",
+    "ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2ContentUnionMember0",
+    "ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2ContentUnionMember1",
+    "ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2ContentUnionMember1Source",
     "ChunkChatResponseChoiceDeltaToolCall",
     "ChunkChatResponseChoiceDeltaToolCallChosenFunctionCall",
     "ChunkChatResponseChoiceDeltaToolCallChosenFunctionCallFunction",
@@ -46,27 +50,62 @@ __all__ = [
 ]
 
 
-class ChunkChatResponseChoiceDeltaContentUnionMember2Content(BaseModel):
+class ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel1(BaseModel):
     text: str
 
     type: Optional[Literal["text"]] = None
 
 
-class ChunkChatResponseChoiceDeltaContentUnionMember2ContentModelImageURL(BaseModel):
+class ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel7ImageURL(BaseModel):
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
 
 
-class ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel(BaseModel):
-    image_url: ChunkChatResponseChoiceDeltaContentUnionMember2ContentModelImageURL
+class ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel7(BaseModel):
+    image_url: ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel7ImageURL
     """The image URL"""
 
     type: Optional[Literal["image_url"]] = None
 
 
+class ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2ContentUnionMember0(BaseModel):
+    text: str
+
+    type: Optional[Literal["text"]] = None
+
+
+class ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2ContentUnionMember1Source(
+    BaseModel
+):
+    data: str
+
+    media_type: str
+
+    type: Optional[Literal["base64"]] = None
+
+
+class ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2ContentUnionMember1(BaseModel):
+    source: ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2ContentUnionMember1Source
+
+    type: Optional[Literal["image"]] = None
+
+
+class ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2(BaseModel):
+    content: Union[
+        List[ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2ContentUnionMember0],
+        List[ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2ContentUnionMember1],
+    ]
+
+    tool_use_id: str
+
+    type: Optional[Literal["tool_result"]] = None
+
+
 ChunkChatResponseChoiceDeltaContentUnionMember2: TypeAlias = Union[
-    ChunkChatResponseChoiceDeltaContentUnionMember2Content, ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel
+    ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel1,
+    ChunkChatResponseChoiceDeltaContentUnionMember2ContentModel7,
+    ChunkChatResponseChoiceDeltaContentUnionMember2AgentsAPIAutogenChatContentModel2,
 ]
 
 
