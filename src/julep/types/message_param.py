@@ -9,8 +9,12 @@ __all__ = [
     "MessageParam",
     "ContentUnionMember2",
     "ContentUnionMember2Content",
-    "ContentUnionMember2ContentModel",
-    "ContentUnionMember2ContentModelImageURL",
+    "ContentUnionMember2ContentModel7",
+    "ContentUnionMember2ContentModel7ImageURL",
+    "ContentUnionMember2AgentsAPIAutogenChatContentModel",
+    "ContentUnionMember2AgentsAPIAutogenChatContentModelContentUnionMember0",
+    "ContentUnionMember2AgentsAPIAutogenChatContentModelContentUnionMember1",
+    "ContentUnionMember2AgentsAPIAutogenChatContentModelContentUnionMember1Source",
     "ToolCall",
     "ToolCallChosenFunctionCall",
     "ToolCallChosenFunctionCallFunction",
@@ -29,20 +33,55 @@ class ContentUnionMember2Content(TypedDict, total=False):
     type: Literal["text"]
 
 
-class ContentUnionMember2ContentModelImageURL(TypedDict, total=False):
+class ContentUnionMember2ContentModel7ImageURL(TypedDict, total=False):
     url: Required[str]
 
     detail: Literal["low", "high", "auto"]
 
 
-class ContentUnionMember2ContentModel(TypedDict, total=False):
-    image_url: Required[ContentUnionMember2ContentModelImageURL]
+class ContentUnionMember2ContentModel7(TypedDict, total=False):
+    image_url: Required[ContentUnionMember2ContentModel7ImageURL]
     """The image URL"""
 
     type: Literal["image_url"]
 
 
-ContentUnionMember2: TypeAlias = Union[ContentUnionMember2Content, ContentUnionMember2ContentModel]
+class ContentUnionMember2AgentsAPIAutogenChatContentModelContentUnionMember0(TypedDict, total=False):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class ContentUnionMember2AgentsAPIAutogenChatContentModelContentUnionMember1Source(TypedDict, total=False):
+    data: Required[str]
+
+    media_type: Required[str]
+
+    type: Literal["base64"]
+
+
+class ContentUnionMember2AgentsAPIAutogenChatContentModelContentUnionMember1(TypedDict, total=False):
+    source: Required[ContentUnionMember2AgentsAPIAutogenChatContentModelContentUnionMember1Source]
+
+    type: Literal["image"]
+
+
+class ContentUnionMember2AgentsAPIAutogenChatContentModel(TypedDict, total=False):
+    content: Required[
+        Union[
+            Iterable[ContentUnionMember2AgentsAPIAutogenChatContentModelContentUnionMember0],
+            Iterable[ContentUnionMember2AgentsAPIAutogenChatContentModelContentUnionMember1],
+        ]
+    ]
+
+    tool_use_id: Required[str]
+
+    type: Literal["tool_result"]
+
+
+ContentUnionMember2: TypeAlias = Union[
+    ContentUnionMember2Content, ContentUnionMember2ContentModel7, ContentUnionMember2AgentsAPIAutogenChatContentModel
+]
 
 
 class ToolCallChosenFunctionCallFunction(TypedDict, total=False):

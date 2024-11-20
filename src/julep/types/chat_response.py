@@ -13,9 +13,13 @@ __all__ = [
     "ChoiceSingleChatOutput",
     "ChoiceSingleChatOutputMessage",
     "ChoiceSingleChatOutputMessageContentUnionMember2",
-    "ChoiceSingleChatOutputMessageContentUnionMember2Content",
-    "ChoiceSingleChatOutputMessageContentUnionMember2ContentModel",
-    "ChoiceSingleChatOutputMessageContentUnionMember2ContentModelImageURL",
+    "ChoiceSingleChatOutputMessageContentUnionMember2AgentsAPIAutogenChatContentModel3",
+    "ChoiceSingleChatOutputMessageContentUnionMember2ContentModel7",
+    "ChoiceSingleChatOutputMessageContentUnionMember2ContentModel7ImageURL",
+    "ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4",
+    "ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember0",
+    "ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1",
+    "ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1Source",
     "ChoiceSingleChatOutputMessageToolCall",
     "ChoiceSingleChatOutputMessageToolCallChosenFunctionCall",
     "ChoiceSingleChatOutputMessageToolCallChosenFunctionCallFunction",
@@ -40,9 +44,13 @@ __all__ = [
     "ChoiceMultipleChatOutput",
     "ChoiceMultipleChatOutputMessage",
     "ChoiceMultipleChatOutputMessageContentUnionMember2",
-    "ChoiceMultipleChatOutputMessageContentUnionMember2Content",
-    "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel",
-    "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModelImageURL",
+    "ChoiceMultipleChatOutputMessageContentUnionMember2AgentsAPIAutogenChatContentModel3",
+    "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel7",
+    "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel7ImageURL",
+    "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4",
+    "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember0",
+    "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1",
+    "ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1Source",
     "ChoiceMultipleChatOutputMessageToolCall",
     "ChoiceMultipleChatOutputMessageToolCallChosenFunctionCall",
     "ChoiceMultipleChatOutputMessageToolCallChosenFunctionCallFunction",
@@ -70,28 +78,60 @@ __all__ = [
 ]
 
 
-class ChoiceSingleChatOutputMessageContentUnionMember2Content(BaseModel):
+class ChoiceSingleChatOutputMessageContentUnionMember2AgentsAPIAutogenChatContentModel3(BaseModel):
     text: str
 
     type: Optional[Literal["text"]] = None
 
 
-class ChoiceSingleChatOutputMessageContentUnionMember2ContentModelImageURL(BaseModel):
+class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel7ImageURL(BaseModel):
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
 
 
-class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel(BaseModel):
-    image_url: ChoiceSingleChatOutputMessageContentUnionMember2ContentModelImageURL
+class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel7(BaseModel):
+    image_url: ChoiceSingleChatOutputMessageContentUnionMember2ContentModel7ImageURL
     """The image URL"""
 
     type: Optional[Literal["image_url"]] = None
 
 
+class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember0(BaseModel):
+    text: str
+
+    type: Optional[Literal["text"]] = None
+
+
+class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1Source(BaseModel):
+    data: str
+
+    media_type: str
+
+    type: Optional[Literal["base64"]] = None
+
+
+class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1(BaseModel):
+    source: ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1Source
+
+    type: Optional[Literal["image"]] = None
+
+
+class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4(BaseModel):
+    content: Union[
+        List[ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember0],
+        List[ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1],
+    ]
+
+    tool_use_id: str
+
+    type: Optional[Literal["tool_result"]] = None
+
+
 ChoiceSingleChatOutputMessageContentUnionMember2: TypeAlias = Union[
-    ChoiceSingleChatOutputMessageContentUnionMember2Content,
-    ChoiceSingleChatOutputMessageContentUnionMember2ContentModel,
+    ChoiceSingleChatOutputMessageContentUnionMember2AgentsAPIAutogenChatContentModel3,
+    ChoiceSingleChatOutputMessageContentUnionMember2ContentModel7,
+    ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4,
 ]
 
 
@@ -373,28 +413,60 @@ class ChoiceSingleChatOutput(BaseModel):
     tool_calls: Optional[List[ChoiceSingleChatOutputToolCall]] = None
 
 
-class ChoiceMultipleChatOutputMessageContentUnionMember2Content(BaseModel):
+class ChoiceMultipleChatOutputMessageContentUnionMember2AgentsAPIAutogenChatContentModel3(BaseModel):
     text: str
 
     type: Optional[Literal["text"]] = None
 
 
-class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModelImageURL(BaseModel):
+class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel7ImageURL(BaseModel):
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
 
 
-class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel(BaseModel):
-    image_url: ChoiceMultipleChatOutputMessageContentUnionMember2ContentModelImageURL
+class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel7(BaseModel):
+    image_url: ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel7ImageURL
     """The image URL"""
 
     type: Optional[Literal["image_url"]] = None
 
 
+class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember0(BaseModel):
+    text: str
+
+    type: Optional[Literal["text"]] = None
+
+
+class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1Source(BaseModel):
+    data: str
+
+    media_type: str
+
+    type: Optional[Literal["base64"]] = None
+
+
+class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1(BaseModel):
+    source: ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1Source
+
+    type: Optional[Literal["image"]] = None
+
+
+class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4(BaseModel):
+    content: Union[
+        List[ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember0],
+        List[ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1],
+    ]
+
+    tool_use_id: str
+
+    type: Optional[Literal["tool_result"]] = None
+
+
 ChoiceMultipleChatOutputMessageContentUnionMember2: TypeAlias = Union[
-    ChoiceMultipleChatOutputMessageContentUnionMember2Content,
-    ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel,
+    ChoiceMultipleChatOutputMessageContentUnionMember2AgentsAPIAutogenChatContentModel3,
+    ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel7,
+    ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4,
 ]
 
 
