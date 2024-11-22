@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.42.0 (2024-11-22)
+
+Full Changelog: [v1.41.0...v1.42.0](https://github.com/julep-ai/python-sdk/compare/v1.41.0...v1.42.0)
+
+### Features
+
+* **api:** add files endpoints ([#168](https://github.com/julep-ai/python-sdk/issues/168)) ([83b7828](https://github.com/julep-ai/python-sdk/commit/83b78286db151fa439b377261a30ae77331c3ff6))
+
 ## 1.41.0 (2024-11-20)
 
 Full Changelog: [v1.40.0...v1.41.0](https://github.com/julep-ai/python-sdk/compare/v1.40.0...v1.41.0)
