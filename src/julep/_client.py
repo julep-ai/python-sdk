@@ -55,6 +55,7 @@ ENVIRONMENTS: Dict[str, str] = {
 
 class Julep(SyncAPIClient):
     agents: resources.AgentsResource
+    files: resources.FilesResource
     sessions: resources.SessionsResource
     users: resources.UsersResource
     jobs: resources.JobsResource
@@ -143,6 +144,7 @@ class Julep(SyncAPIClient):
         )
 
         self.agents = resources.AgentsResource(self)
+        self.files = resources.FilesResource(self)
         self.sessions = resources.SessionsResource(self)
         self.users = resources.UsersResource(self)
         self.jobs = resources.JobsResource(self)
@@ -261,6 +263,7 @@ class Julep(SyncAPIClient):
 
 class AsyncJulep(AsyncAPIClient):
     agents: resources.AsyncAgentsResource
+    files: resources.AsyncFilesResource
     sessions: resources.AsyncSessionsResource
     users: resources.AsyncUsersResource
     jobs: resources.AsyncJobsResource
@@ -349,6 +352,7 @@ class AsyncJulep(AsyncAPIClient):
         )
 
         self.agents = resources.AsyncAgentsResource(self)
+        self.files = resources.AsyncFilesResource(self)
         self.sessions = resources.AsyncSessionsResource(self)
         self.users = resources.AsyncUsersResource(self)
         self.jobs = resources.AsyncJobsResource(self)
@@ -468,6 +472,7 @@ class AsyncJulep(AsyncAPIClient):
 class JulepWithRawResponse:
     def __init__(self, client: Julep) -> None:
         self.agents = resources.AgentsResourceWithRawResponse(client.agents)
+        self.files = resources.FilesResourceWithRawResponse(client.files)
         self.sessions = resources.SessionsResourceWithRawResponse(client.sessions)
         self.users = resources.UsersResourceWithRawResponse(client.users)
         self.jobs = resources.JobsResourceWithRawResponse(client.jobs)
@@ -479,6 +484,7 @@ class JulepWithRawResponse:
 class AsyncJulepWithRawResponse:
     def __init__(self, client: AsyncJulep) -> None:
         self.agents = resources.AsyncAgentsResourceWithRawResponse(client.agents)
+        self.files = resources.AsyncFilesResourceWithRawResponse(client.files)
         self.sessions = resources.AsyncSessionsResourceWithRawResponse(client.sessions)
         self.users = resources.AsyncUsersResourceWithRawResponse(client.users)
         self.jobs = resources.AsyncJobsResourceWithRawResponse(client.jobs)
@@ -490,6 +496,7 @@ class AsyncJulepWithRawResponse:
 class JulepWithStreamedResponse:
     def __init__(self, client: Julep) -> None:
         self.agents = resources.AgentsResourceWithStreamingResponse(client.agents)
+        self.files = resources.FilesResourceWithStreamingResponse(client.files)
         self.sessions = resources.SessionsResourceWithStreamingResponse(client.sessions)
         self.users = resources.UsersResourceWithStreamingResponse(client.users)
         self.jobs = resources.JobsResourceWithStreamingResponse(client.jobs)
@@ -501,6 +508,7 @@ class JulepWithStreamedResponse:
 class AsyncJulepWithStreamedResponse:
     def __init__(self, client: AsyncJulep) -> None:
         self.agents = resources.AsyncAgentsResourceWithStreamingResponse(client.agents)
+        self.files = resources.AsyncFilesResourceWithStreamingResponse(client.files)
         self.sessions = resources.AsyncSessionsResourceWithStreamingResponse(client.sessions)
         self.users = resources.AsyncUsersResourceWithStreamingResponse(client.users)
         self.jobs = resources.AsyncJobsResourceWithStreamingResponse(client.jobs)

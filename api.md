@@ -53,6 +53,20 @@ Methods:
 - <code title="delete /agents/{agent_id}/docs/{doc_id}">client.agents.docs.<a href="./src/julep/resources/agents/docs.py">delete</a>(doc_id, \*, agent_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
 - <code title="post /agents/{agent_id}/search">client.agents.docs.<a href="./src/julep/resources/agents/docs.py">search</a>(agent_id, \*\*<a href="src/julep/types/agents/doc_search_params.py">params</a>) -> <a href="./src/julep/types/agents/doc_search_response.py">DocSearchResponse</a></code>
 
+# Files
+
+Types:
+
+```python
+from julep.types import File
+```
+
+Methods:
+
+- <code title="post /files">client.files.<a href="./src/julep/resources/files.py">create</a>(\*\*<a href="src/julep/types/file_create_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_created.py">ResourceCreated</a></code>
+- <code title="delete /files/{file_id}">client.files.<a href="./src/julep/resources/files.py">delete</a>(file_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
+- <code title="get /files/{file_id}">client.files.<a href="./src/julep/resources/files.py">get</a>(file_id) -> <a href="./src/julep/types/file.py">File</a></code>
+
 # Sessions
 
 Types:
