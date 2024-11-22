@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from .doc import Doc as Doc
+from .file import File as File
 from .task import Task as Task
 from .user import User as User
 from .agent import Agent as Agent
@@ -27,6 +28,7 @@ from .user_list_params import UserListParams as UserListParams
 from .agent_list_params import AgentListParams as AgentListParams
 from .user_patch_params import UserPatchParams as UserPatchParams
 from .agent_patch_params import AgentPatchParams as AgentPatchParams
+from .file_create_params import FileCreateParams as FileCreateParams
 from .task_create_params import TaskCreateParams as TaskCreateParams
 from .user_create_params import UserCreateParams as UserCreateParams
 from .user_update_params import UserUpdateParams as UserUpdateParams

@@ -16,6 +16,14 @@ from .jobs import (
     JobsResourceWithStreamingResponse,
     AsyncJobsResourceWithStreamingResponse,
 )
+from .files import (
+    FilesResource,
+    AsyncFilesResource,
+    FilesResourceWithRawResponse,
+    AsyncFilesResourceWithRawResponse,
+    FilesResourceWithStreamingResponse,
+    AsyncFilesResourceWithStreamingResponse,
+)
 from .tasks import (
     TasksResource,
     AsyncTasksResource,
@@ -64,6 +72,12 @@ __all__ = [
     "AsyncAgentsResourceWithRawResponse",
     "AgentsResourceWithStreamingResponse",
     "AsyncAgentsResourceWithStreamingResponse",
+    "FilesResource",
+    "AsyncFilesResource",
+    "FilesResourceWithRawResponse",
+    "AsyncFilesResourceWithRawResponse",
+    "FilesResourceWithStreamingResponse",
+    "AsyncFilesResourceWithStreamingResponse",
     "SessionsResource",
     "AsyncSessionsResource",
     "SessionsResourceWithRawResponse",
