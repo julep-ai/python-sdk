@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.42.1 (2024-11-26)
+
+Full Changelog: [v1.42.0...v1.42.1](https://github.com/julep-ai/python-sdk/compare/v1.42.0...v1.42.1)
+
+### Chores
+
+* **internal:** codegen related update ([#175](https://github.com/julep-ai/python-sdk/issues/175)) ([d058571](https://github.com/julep-ai/python-sdk/commit/d058571beb49ea1ea9101ea5b6622fa2b6ea679c))
+* **internal:** fix compat model_dump method when warnings are passed ([#171](https://github.com/julep-ai/python-sdk/issues/171)) ([45fdda6](https://github.com/julep-ai/python-sdk/commit/45fdda6fdca71cbaefc86332dcc73e1a2a173f1a))
+
+
+### Documentation
+
+* add info log level to readme ([#173](https://github.com/julep-ai/python-sdk/issues/173)) ([7eb93ee](https://github.com/julep-ai/python-sdk/commit/7eb93eefb33c11f8186962cf20fc2caec3de49d6))
+
 ## 1.42.0 (2024-11-22)
 
 Full Changelog: [v1.41.0...v1.42.0](https://github.com/julep-ai/python-sdk/compare/v1.41.0...v1.42.0)
