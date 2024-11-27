@@ -35,11 +35,7 @@ def patch_extra_body(cls, method: str, named_args: list[str] = []):
         bound_args.apply_defaults()
 
         # Separate extra keyword arguments
-        extra_kwargs = {}
-        for key in list(bound_args.arguments.keys()):
-            if key not in allowed_kwargs and key not in params:
-                # This key is neither in allowed_kwargs nor a positional argument
-                extra_kwargs[key] = bound_args.arguments.pop(key)
+        extra_kwargs = {k: v for k, v in kwargs.items() if k not in allowed_kwargs and k not in params}
 
         # If there are extra keyword arguments, merge them into 'extra_body'
         if extra_kwargs:
