@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.43.0 (2024-11-27)
+
+Full Changelog: [v1.42.1...v1.43.0](https://github.com/julep-ai/python-sdk/compare/v1.42.1...v1.43.0)
+
+### Features
+
+* fix: Fix extra keyword args ([c2ac39d](https://github.com/julep-ai/python-sdk/commit/c2ac39d74a5116b3014e2830bda3711d155aab64))
+
 ## 1.42.1 (2024-11-26)
 
 Full Changelog: [v1.42.0...v1.42.1](https://github.com/julep-ai/python-sdk/compare/v1.42.0...v1.42.1)
