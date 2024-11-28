@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.43.1 (2024-11-28)
+
+Full Changelog: [v1.43.0...v1.43.1](https://github.com/julep-ai/python-sdk/compare/v1.43.0...v1.43.1)
+
+### Bug Fixes
+
+* **client:** compat with new httpx 0.28.0 release ([#182](https://github.com/julep-ai/python-sdk/issues/182)) ([d585c22](https://github.com/julep-ai/python-sdk/commit/d585c2290a69f6816455869b45edfa1a8094460b))
+
+
+### Chores
+
+* **internal:** exclude mypy from running on tests ([#180](https://github.com/julep-ai/python-sdk/issues/180)) ([187d984](https://github.com/julep-ai/python-sdk/commit/187d984f3b356c399f51fb08c73a402869744582))
+
 ## 1.43.0 (2024-11-27)
 
 Full Changelog: [v1.42.1...v1.43.0](https://github.com/julep-ai/python-sdk/compare/v1.42.1...v1.43.0)
