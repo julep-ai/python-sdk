@@ -22,9 +22,9 @@ __all__ = [
     "IntegrationEmailIntegrationDef",
     "IntegrationEmailIntegrationDefArguments",
     "IntegrationEmailIntegrationDefSetup",
-    "IntegrationSpiderIntegrationDef",
-    "IntegrationSpiderIntegrationDefArguments",
-    "IntegrationSpiderIntegrationDefSetup",
+    "IntegrationSpiderIntegrationDefOutput",
+    "IntegrationSpiderIntegrationDefOutputArguments",
+    "IntegrationSpiderIntegrationDefOutputSetup",
     "IntegrationWikipediaIntegrationDef",
     "IntegrationWikipediaIntegrationDefArguments",
     "IntegrationWeatherIntegrationDef",
@@ -68,6 +68,8 @@ __all__ = [
     "IntegrationCloudinaryEditIntegrationDef",
     "IntegrationCloudinaryEditIntegrationDefArguments",
     "IntegrationCloudinaryEditIntegrationDefSetup",
+    "IntegrationArxivIntegrationDef",
+    "IntegrationArxivIntegrationDefArguments",
     "System",
     "TextEditor20241022",
 ]
@@ -187,7 +189,7 @@ class IntegrationEmailIntegrationDef(BaseModel):
     """Setup parameters for Email integration"""
 
 
-class IntegrationSpiderIntegrationDefArguments(BaseModel):
+class IntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     url: str
 
     mode: Optional[Literal["scrape"]] = None
@@ -195,19 +197,19 @@ class IntegrationSpiderIntegrationDefArguments(BaseModel):
     params: Optional[object] = None
 
 
-class IntegrationSpiderIntegrationDefSetup(BaseModel):
+class IntegrationSpiderIntegrationDefOutputSetup(BaseModel):
     spider_api_key: str
 
 
-class IntegrationSpiderIntegrationDef(BaseModel):
-    arguments: Optional[IntegrationSpiderIntegrationDefArguments] = None
+class IntegrationSpiderIntegrationDefOutput(BaseModel):
+    arguments: Optional[IntegrationSpiderIntegrationDefOutputArguments] = None
     """Arguments for Spider integration"""
 
     method: Optional[str] = None
 
     provider: Optional[Literal["spider"]] = None
 
-    setup: Optional[IntegrationSpiderIntegrationDefSetup] = None
+    setup: Optional[IntegrationSpiderIntegrationDefOutputSetup] = None
     """Setup parameters for Spider integration"""
 
 
@@ -506,21 +508,19 @@ class IntegrationRemoteBrowserIntegrationDef(BaseModel):
 
 
 class IntegrationLlamaParseIntegrationDefArguments(BaseModel):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class IntegrationLlamaParseIntegrationDefSetup(BaseModel):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class IntegrationLlamaParseIntegrationDef(BaseModel):
@@ -614,11 +614,36 @@ class IntegrationCloudinaryEditIntegrationDef(BaseModel):
     """Setup parameters for Cloudinary integration"""
 
 
+class IntegrationArxivIntegrationDefArguments(BaseModel):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class IntegrationArxivIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationArxivIntegrationDefArguments] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDef,
     IntegrationBraveIntegrationDef,
     IntegrationEmailIntegrationDef,
-    IntegrationSpiderIntegrationDef,
+    IntegrationSpiderIntegrationDefOutput,
     IntegrationWikipediaIntegrationDef,
     IntegrationWeatherIntegrationDef,
     IntegrationBrowserbaseContextIntegrationDef,
@@ -634,6 +659,7 @@ Integration: TypeAlias = Union[
     IntegrationFfmpegIntegrationDef,
     IntegrationCloudinaryUploadIntegrationDef,
     IntegrationCloudinaryEditIntegrationDef,
+    IntegrationArxivIntegrationDef,
     None,
 ]
 

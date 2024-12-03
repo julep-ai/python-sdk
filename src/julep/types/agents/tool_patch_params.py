@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Dict, Union, Iterable, Optional
+from typing import Dict, List, Union, Iterable, Optional
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
 from ..._utils import PropertyInfo
@@ -67,6 +67,8 @@ __all__ = [
     "IntegrationCloudinaryEditIntegrationDefUpdate",
     "IntegrationCloudinaryEditIntegrationDefUpdateArguments",
     "IntegrationCloudinaryEditIntegrationDefUpdateSetup",
+    "IntegrationArxivIntegrationDefUpdate",
+    "IntegrationArxivIntegrationDefUpdateArguments",
     "System",
     "TextEditor20241022",
 ]
@@ -555,21 +557,19 @@ class IntegrationRemoteBrowserIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationLlamaParseIntegrationDefUpdateArguments(TypedDict, total=False):
-    file: Optional[str]
+    base64: bool
+
+    file: Union[str, List[str], None]
 
     filename: Optional[str]
 
-    language: str
-
-    num_workers: int
-
-    result_format: Literal["text", "markdown"]
-
-    verbose: bool
+    params: Optional[object]
 
 
 class IntegrationLlamaParseIntegrationDefUpdateSetup(TypedDict, total=False):
     llamaparse_api_key: Optional[str]
+
+    params: Optional[object]
 
 
 class IntegrationLlamaParseIntegrationDefUpdate(TypedDict, total=False):
@@ -663,6 +663,31 @@ class IntegrationCloudinaryEditIntegrationDefUpdate(TypedDict, total=False):
     """Setup parameters for Cloudinary integration"""
 
 
+class IntegrationArxivIntegrationDefUpdateArguments(TypedDict, total=False):
+    download_pdf: bool
+
+    id_list: Optional[List[str]]
+
+    max_results: int
+
+    query: Optional[str]
+
+    sort_by: Literal["relevance", "lastUpdatedDate", "submittedDate"]
+
+    sort_order: Literal["ascending", "descending"]
+
+
+class IntegrationArxivIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationArxivIntegrationDefUpdateArguments]
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str]
+
+    provider: Literal["arxiv"]
+
+    setup: Optional[object]
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDefUpdate,
     IntegrationBraveIntegrationDefUpdate,
@@ -683,6 +708,7 @@ Integration: TypeAlias = Union[
     IntegrationFfmpegIntegrationDefUpdate,
     IntegrationCloudinaryUploadIntegrationDefUpdate,
     IntegrationCloudinaryEditIntegrationDefUpdate,
+    IntegrationArxivIntegrationDefUpdate,
 ]
 
 
