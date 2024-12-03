@@ -29,9 +29,9 @@ __all__ = [
     "ToolIntegrationEmailIntegrationDef",
     "ToolIntegrationEmailIntegrationDefArguments",
     "ToolIntegrationEmailIntegrationDefSetup",
-    "ToolIntegrationSpiderIntegrationDef",
-    "ToolIntegrationSpiderIntegrationDefArguments",
-    "ToolIntegrationSpiderIntegrationDefSetup",
+    "ToolIntegrationSpiderIntegrationDefInput",
+    "ToolIntegrationSpiderIntegrationDefInputArguments",
+    "ToolIntegrationSpiderIntegrationDefInputSetup",
     "ToolIntegrationWikipediaIntegrationDef",
     "ToolIntegrationWikipediaIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDef",
@@ -75,6 +75,8 @@ __all__ = [
     "ToolIntegrationCloudinaryEditIntegrationDef",
     "ToolIntegrationCloudinaryEditIntegrationDefArguments",
     "ToolIntegrationCloudinaryEditIntegrationDefSetup",
+    "ToolIntegrationArxivIntegrationDef",
+    "ToolIntegrationArxivIntegrationDefArguments",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -275,7 +277,7 @@ class ToolIntegrationEmailIntegrationDef(TypedDict, total=False):
     """Setup parameters for Email integration"""
 
 
-class ToolIntegrationSpiderIntegrationDefArguments(TypedDict, total=False):
+class ToolIntegrationSpiderIntegrationDefInputArguments(TypedDict, total=False):
     url: Required[str]
 
     mode: Literal["scrape"]
@@ -283,19 +285,19 @@ class ToolIntegrationSpiderIntegrationDefArguments(TypedDict, total=False):
     params: Optional[object]
 
 
-class ToolIntegrationSpiderIntegrationDefSetup(TypedDict, total=False):
+class ToolIntegrationSpiderIntegrationDefInputSetup(TypedDict, total=False):
     spider_api_key: Required[str]
 
 
-class ToolIntegrationSpiderIntegrationDef(TypedDict, total=False):
-    arguments: Optional[ToolIntegrationSpiderIntegrationDefArguments]
+class ToolIntegrationSpiderIntegrationDefInput(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationSpiderIntegrationDefInputArguments]
     """Arguments for Spider integration"""
 
     method: Optional[str]
 
     provider: Literal["spider"]
 
-    setup: Optional[ToolIntegrationSpiderIntegrationDefSetup]
+    setup: Optional[ToolIntegrationSpiderIntegrationDefInputSetup]
     """Setup parameters for Spider integration"""
 
 
@@ -596,21 +598,19 @@ class ToolIntegrationRemoteBrowserIntegrationDef(TypedDict, total=False):
 
 
 class ToolIntegrationLlamaParseIntegrationDefArguments(TypedDict, total=False):
-    file: Required[str]
+    file: Required[Union[str, List[str]]]
+
+    base64: bool
 
     filename: Optional[str]
 
-    language: str
-
-    num_workers: int
-
-    result_format: Literal["text", "markdown"]
-
-    verbose: bool
+    params: Optional[object]
 
 
 class ToolIntegrationLlamaParseIntegrationDefSetup(TypedDict, total=False):
     llamaparse_api_key: Required[str]
+
+    params: Optional[object]
 
 
 class ToolIntegrationLlamaParseIntegrationDef(TypedDict, total=False):
@@ -704,11 +704,36 @@ class ToolIntegrationCloudinaryEditIntegrationDef(TypedDict, total=False):
     """Setup parameters for Cloudinary integration"""
 
 
+class ToolIntegrationArxivIntegrationDefArguments(TypedDict, total=False):
+    query: Required[str]
+
+    download_pdf: bool
+
+    id_list: Optional[List[str]]
+
+    max_results: int
+
+    sort_by: Literal["relevance", "lastUpdatedDate", "submittedDate"]
+
+    sort_order: Literal["ascending", "descending"]
+
+
+class ToolIntegrationArxivIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationArxivIntegrationDefArguments]
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str]
+
+    provider: Literal["arxiv"]
+
+    setup: Optional[object]
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
     ToolIntegrationEmailIntegrationDef,
-    ToolIntegrationSpiderIntegrationDef,
+    ToolIntegrationSpiderIntegrationDefInput,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
     ToolIntegrationBrowserbaseContextIntegrationDef,
@@ -724,6 +749,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationFfmpegIntegrationDef,
     ToolIntegrationCloudinaryUploadIntegrationDef,
     ToolIntegrationCloudinaryEditIntegrationDef,
+    ToolIntegrationArxivIntegrationDef,
 ]
 
 
