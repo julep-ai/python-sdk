@@ -32,9 +32,9 @@ __all__ = [
     "ContentToolIntegrationEmailIntegrationDef",
     "ContentToolIntegrationEmailIntegrationDefArguments",
     "ContentToolIntegrationEmailIntegrationDefSetup",
-    "ContentToolIntegrationSpiderIntegrationDef",
-    "ContentToolIntegrationSpiderIntegrationDefArguments",
-    "ContentToolIntegrationSpiderIntegrationDefSetup",
+    "ContentToolIntegrationSpiderIntegrationDefOutput",
+    "ContentToolIntegrationSpiderIntegrationDefOutputArguments",
+    "ContentToolIntegrationSpiderIntegrationDefOutputSetup",
     "ContentToolIntegrationWikipediaIntegrationDef",
     "ContentToolIntegrationWikipediaIntegrationDefArguments",
     "ContentToolIntegrationWeatherIntegrationDef",
@@ -78,6 +78,8 @@ __all__ = [
     "ContentToolIntegrationCloudinaryEditIntegrationDef",
     "ContentToolIntegrationCloudinaryEditIntegrationDefArguments",
     "ContentToolIntegrationCloudinaryEditIntegrationDefSetup",
+    "ContentToolIntegrationArxivIntegrationDef",
+    "ContentToolIntegrationArxivIntegrationDefArguments",
     "ContentToolSystem",
     "ContentToolTextEditor20241022",
     "ContentChosenFunctionCall",
@@ -111,9 +113,9 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationEmailIntegrationDef",
     "ContentUnionMember8ToolIntegrationEmailIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationEmailIntegrationDefSetup",
-    "ContentUnionMember8ToolIntegrationSpiderIntegrationDef",
-    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefArguments",
-    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefSetup",
+    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutput",
+    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputArguments",
+    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputSetup",
     "ContentUnionMember8ToolIntegrationWikipediaIntegrationDef",
     "ContentUnionMember8ToolIntegrationWikipediaIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationWeatherIntegrationDef",
@@ -157,6 +159,8 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDef",
     "ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDefSetup",
+    "ContentUnionMember8ToolIntegrationArxivIntegrationDef",
+    "ContentUnionMember8ToolIntegrationArxivIntegrationDefArguments",
     "ContentUnionMember8ToolSystem",
     "ContentUnionMember8ToolTextEditor20241022",
     "ContentUnionMember8ChosenFunctionCall",
@@ -351,7 +355,7 @@ class ContentToolIntegrationEmailIntegrationDef(BaseModel):
     """Setup parameters for Email integration"""
 
 
-class ContentToolIntegrationSpiderIntegrationDefArguments(BaseModel):
+class ContentToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     url: str
 
     mode: Optional[Literal["scrape"]] = None
@@ -359,19 +363,19 @@ class ContentToolIntegrationSpiderIntegrationDefArguments(BaseModel):
     params: Optional[object] = None
 
 
-class ContentToolIntegrationSpiderIntegrationDefSetup(BaseModel):
+class ContentToolIntegrationSpiderIntegrationDefOutputSetup(BaseModel):
     spider_api_key: str
 
 
-class ContentToolIntegrationSpiderIntegrationDef(BaseModel):
-    arguments: Optional[ContentToolIntegrationSpiderIntegrationDefArguments] = None
+class ContentToolIntegrationSpiderIntegrationDefOutput(BaseModel):
+    arguments: Optional[ContentToolIntegrationSpiderIntegrationDefOutputArguments] = None
     """Arguments for Spider integration"""
 
     method: Optional[str] = None
 
     provider: Optional[Literal["spider"]] = None
 
-    setup: Optional[ContentToolIntegrationSpiderIntegrationDefSetup] = None
+    setup: Optional[ContentToolIntegrationSpiderIntegrationDefOutputSetup] = None
     """Setup parameters for Spider integration"""
 
 
@@ -670,21 +674,19 @@ class ContentToolIntegrationRemoteBrowserIntegrationDef(BaseModel):
 
 
 class ContentToolIntegrationLlamaParseIntegrationDefArguments(BaseModel):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class ContentToolIntegrationLlamaParseIntegrationDefSetup(BaseModel):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class ContentToolIntegrationLlamaParseIntegrationDef(BaseModel):
@@ -778,11 +780,36 @@ class ContentToolIntegrationCloudinaryEditIntegrationDef(BaseModel):
     """Setup parameters for Cloudinary integration"""
 
 
+class ContentToolIntegrationArxivIntegrationDefArguments(BaseModel):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class ContentToolIntegrationArxivIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationArxivIntegrationDefArguments] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationDummyIntegrationDef,
     ContentToolIntegrationBraveIntegrationDef,
     ContentToolIntegrationEmailIntegrationDef,
-    ContentToolIntegrationSpiderIntegrationDef,
+    ContentToolIntegrationSpiderIntegrationDefOutput,
     ContentToolIntegrationWikipediaIntegrationDef,
     ContentToolIntegrationWeatherIntegrationDef,
     ContentToolIntegrationBrowserbaseContextIntegrationDef,
@@ -798,6 +825,7 @@ ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationFfmpegIntegrationDef,
     ContentToolIntegrationCloudinaryUploadIntegrationDef,
     ContentToolIntegrationCloudinaryEditIntegrationDef,
+    ContentToolIntegrationArxivIntegrationDef,
     None,
 ]
 
@@ -1151,7 +1179,7 @@ class ContentUnionMember8ToolIntegrationEmailIntegrationDef(BaseModel):
     """Setup parameters for Email integration"""
 
 
-class ContentUnionMember8ToolIntegrationSpiderIntegrationDefArguments(BaseModel):
+class ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     url: str
 
     mode: Optional[Literal["scrape"]] = None
@@ -1159,19 +1187,19 @@ class ContentUnionMember8ToolIntegrationSpiderIntegrationDefArguments(BaseModel)
     params: Optional[object] = None
 
 
-class ContentUnionMember8ToolIntegrationSpiderIntegrationDefSetup(BaseModel):
+class ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputSetup(BaseModel):
     spider_api_key: str
 
 
-class ContentUnionMember8ToolIntegrationSpiderIntegrationDef(BaseModel):
-    arguments: Optional[ContentUnionMember8ToolIntegrationSpiderIntegrationDefArguments] = None
+class ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutput(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputArguments] = None
     """Arguments for Spider integration"""
 
     method: Optional[str] = None
 
     provider: Optional[Literal["spider"]] = None
 
-    setup: Optional[ContentUnionMember8ToolIntegrationSpiderIntegrationDefSetup] = None
+    setup: Optional[ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputSetup] = None
     """Setup parameters for Spider integration"""
 
 
@@ -1470,21 +1498,19 @@ class ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDef(BaseModel):
 
 
 class ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefArguments(BaseModel):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class ContentUnionMember8ToolIntegrationLlamaParseIntegrationDefSetup(BaseModel):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class ContentUnionMember8ToolIntegrationLlamaParseIntegrationDef(BaseModel):
@@ -1578,11 +1604,36 @@ class ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDef(BaseModel):
     """Setup parameters for Cloudinary integration"""
 
 
+class ContentUnionMember8ToolIntegrationArxivIntegrationDefArguments(BaseModel):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class ContentUnionMember8ToolIntegrationArxivIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationArxivIntegrationDefArguments] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationDummyIntegrationDef,
     ContentUnionMember8ToolIntegrationBraveIntegrationDef,
     ContentUnionMember8ToolIntegrationEmailIntegrationDef,
-    ContentUnionMember8ToolIntegrationSpiderIntegrationDef,
+    ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutput,
     ContentUnionMember8ToolIntegrationWikipediaIntegrationDef,
     ContentUnionMember8ToolIntegrationWeatherIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDef,
@@ -1598,6 +1649,7 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationFfmpegIntegrationDef,
     ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDef,
     ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDef,
+    ContentUnionMember8ToolIntegrationArxivIntegrationDef,
     None,
 ]
 

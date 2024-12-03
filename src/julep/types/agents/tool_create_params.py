@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Dict, Union, Iterable, Optional
+from typing import Dict, List, Union, Iterable, Optional
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
 from ..._utils import PropertyInfo
@@ -21,9 +21,9 @@ __all__ = [
     "IntegrationEmailIntegrationDef",
     "IntegrationEmailIntegrationDefArguments",
     "IntegrationEmailIntegrationDefSetup",
-    "IntegrationSpiderIntegrationDef",
-    "IntegrationSpiderIntegrationDefArguments",
-    "IntegrationSpiderIntegrationDefSetup",
+    "IntegrationSpiderIntegrationDefInput",
+    "IntegrationSpiderIntegrationDefInputArguments",
+    "IntegrationSpiderIntegrationDefInputSetup",
     "IntegrationWikipediaIntegrationDef",
     "IntegrationWikipediaIntegrationDefArguments",
     "IntegrationWeatherIntegrationDef",
@@ -67,6 +67,8 @@ __all__ = [
     "IntegrationCloudinaryEditIntegrationDef",
     "IntegrationCloudinaryEditIntegrationDefArguments",
     "IntegrationCloudinaryEditIntegrationDefSetup",
+    "IntegrationArxivIntegrationDef",
+    "IntegrationArxivIntegrationDefArguments",
     "System",
     "TextEditor20241022",
 ]
@@ -230,7 +232,7 @@ class IntegrationEmailIntegrationDef(TypedDict, total=False):
     """Setup parameters for Email integration"""
 
 
-class IntegrationSpiderIntegrationDefArguments(TypedDict, total=False):
+class IntegrationSpiderIntegrationDefInputArguments(TypedDict, total=False):
     url: Required[str]
 
     mode: Literal["scrape"]
@@ -238,19 +240,19 @@ class IntegrationSpiderIntegrationDefArguments(TypedDict, total=False):
     params: Optional[object]
 
 
-class IntegrationSpiderIntegrationDefSetup(TypedDict, total=False):
+class IntegrationSpiderIntegrationDefInputSetup(TypedDict, total=False):
     spider_api_key: Required[str]
 
 
-class IntegrationSpiderIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationSpiderIntegrationDefArguments]
+class IntegrationSpiderIntegrationDefInput(TypedDict, total=False):
+    arguments: Optional[IntegrationSpiderIntegrationDefInputArguments]
     """Arguments for Spider integration"""
 
     method: Optional[str]
 
     provider: Literal["spider"]
 
-    setup: Optional[IntegrationSpiderIntegrationDefSetup]
+    setup: Optional[IntegrationSpiderIntegrationDefInputSetup]
     """Setup parameters for Spider integration"""
 
 
@@ -551,21 +553,19 @@ class IntegrationRemoteBrowserIntegrationDef(TypedDict, total=False):
 
 
 class IntegrationLlamaParseIntegrationDefArguments(TypedDict, total=False):
-    file: Required[str]
+    file: Required[Union[str, List[str]]]
+
+    base64: bool
 
     filename: Optional[str]
 
-    language: str
-
-    num_workers: int
-
-    result_format: Literal["text", "markdown"]
-
-    verbose: bool
+    params: Optional[object]
 
 
 class IntegrationLlamaParseIntegrationDefSetup(TypedDict, total=False):
     llamaparse_api_key: Required[str]
+
+    params: Optional[object]
 
 
 class IntegrationLlamaParseIntegrationDef(TypedDict, total=False):
@@ -659,11 +659,36 @@ class IntegrationCloudinaryEditIntegrationDef(TypedDict, total=False):
     """Setup parameters for Cloudinary integration"""
 
 
+class IntegrationArxivIntegrationDefArguments(TypedDict, total=False):
+    query: Required[str]
+
+    download_pdf: bool
+
+    id_list: Optional[List[str]]
+
+    max_results: int
+
+    sort_by: Literal["relevance", "lastUpdatedDate", "submittedDate"]
+
+    sort_order: Literal["ascending", "descending"]
+
+
+class IntegrationArxivIntegrationDef(TypedDict, total=False):
+    arguments: Optional[IntegrationArxivIntegrationDefArguments]
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str]
+
+    provider: Literal["arxiv"]
+
+    setup: Optional[object]
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDef,
     IntegrationBraveIntegrationDef,
     IntegrationEmailIntegrationDef,
-    IntegrationSpiderIntegrationDef,
+    IntegrationSpiderIntegrationDefInput,
     IntegrationWikipediaIntegrationDef,
     IntegrationWeatherIntegrationDef,
     IntegrationBrowserbaseContextIntegrationDef,
@@ -679,6 +704,7 @@ Integration: TypeAlias = Union[
     IntegrationFfmpegIntegrationDef,
     IntegrationCloudinaryUploadIntegrationDef,
     IntegrationCloudinaryEditIntegrationDef,
+    IntegrationArxivIntegrationDef,
 ]
 
 
