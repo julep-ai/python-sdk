@@ -54,9 +54,9 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
-    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
@@ -100,6 +100,8 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainGetStep",
@@ -156,9 +158,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
-    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
@@ -202,6 +204,8 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenGetStep",
@@ -257,9 +261,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
-    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
@@ -303,6 +307,8 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseGetStep",
@@ -360,9 +366,9 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
-    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
@@ -406,6 +412,8 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainSwitchStepOutputSwitchThenGetStep",
@@ -465,9 +473,9 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
-    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
@@ -511,6 +519,8 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainForeachStepOutputForeachDoGetStep",
@@ -561,9 +571,9 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
-    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
@@ -607,6 +617,8 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainParallelStepOutputParallelGetStep",
@@ -657,9 +669,9 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDefSetup",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments",
-    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
@@ -703,6 +715,8 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainMainOutputMapGetStep",
@@ -722,9 +736,9 @@ __all__ = [
     "ToolIntegrationEmailIntegrationDef",
     "ToolIntegrationEmailIntegrationDefArguments",
     "ToolIntegrationEmailIntegrationDefSetup",
-    "ToolIntegrationSpiderIntegrationDef",
-    "ToolIntegrationSpiderIntegrationDefArguments",
-    "ToolIntegrationSpiderIntegrationDefSetup",
+    "ToolIntegrationSpiderIntegrationDefOutput",
+    "ToolIntegrationSpiderIntegrationDefOutputArguments",
+    "ToolIntegrationSpiderIntegrationDefOutputSetup",
     "ToolIntegrationWikipediaIntegrationDef",
     "ToolIntegrationWikipediaIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDef",
@@ -768,6 +782,8 @@ __all__ = [
     "ToolIntegrationCloudinaryEditIntegrationDef",
     "ToolIntegrationCloudinaryEditIntegrationDefArguments",
     "ToolIntegrationCloudinaryEditIntegrationDefSetup",
+    "ToolIntegrationArxivIntegrationDef",
+    "ToolIntegrationArxivIntegrationDefArguments",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -1165,7 +1181,9 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEma
     """Setup parameters for Email integration"""
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(BaseModel):
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments(
+    BaseModel
+):
     url: str
 
     mode: Optional[Literal["scrape"]] = None
@@ -1173,13 +1191,13 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpi
     params: Optional[object] = None
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(BaseModel):
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup(BaseModel):
     spider_api_key: str
 
 
-class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(BaseModel):
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput(BaseModel):
     arguments: Optional[
-        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments
     ] = None
     """Arguments for Spider integration"""
 
@@ -1188,7 +1206,7 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpi
     provider: Optional[Literal["spider"]] = None
 
     setup: Optional[
-        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup
     ] = None
     """Setup parameters for Spider integration"""
 
@@ -1584,21 +1602,19 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRem
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
     BaseModel
 ):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(BaseModel):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(BaseModel):
@@ -1714,11 +1730,38 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationClo
     """Setup parameters for Cloudinary integration"""
 
 
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments(BaseModel):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef(BaseModel):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments
+    ] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
-    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
@@ -1734,6 +1777,7 @@ MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAli
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryUploadIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     None,
 ]
 
@@ -2334,7 +2378,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     """Setup parameters for Email integration"""
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments(
     BaseModel
 ):
     url: str
@@ -2344,17 +2388,17 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     params: Optional[object] = None
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup(
     BaseModel
 ):
     spider_api_key: str
 
 
-class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput(
     BaseModel
 ):
     arguments: Optional[
-        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments
     ] = None
     """Arguments for Spider integration"""
 
@@ -2363,7 +2407,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     provider: Optional[Literal["spider"]] = None
 
     setup: Optional[
-        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup
     ] = None
     """Setup parameters for Spider integration"""
 
@@ -2769,23 +2813,21 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
     BaseModel
 ):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
     BaseModel
 ):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
@@ -2911,11 +2953,42 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     """Setup parameters for Cloudinary integration"""
 
 
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments
+    ] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
-    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
@@ -2931,6 +3004,7 @@ MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     None,
 ]
 
@@ -3561,7 +3635,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     """Setup parameters for Email integration"""
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments(
     BaseModel
 ):
     url: str
@@ -3571,17 +3645,17 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     params: Optional[object] = None
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup(
     BaseModel
 ):
     spider_api_key: str
 
 
-class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput(
     BaseModel
 ):
     arguments: Optional[
-        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments
     ] = None
     """Arguments for Spider integration"""
 
@@ -3590,7 +3664,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     provider: Optional[Literal["spider"]] = None
 
     setup: Optional[
-        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup
     ] = None
     """Setup parameters for Spider integration"""
 
@@ -3996,23 +4070,21 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
     BaseModel
 ):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
     BaseModel
 ):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
@@ -4138,11 +4210,42 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     """Setup parameters for Cloudinary integration"""
 
 
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments
+    ] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
-    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
@@ -4158,6 +4261,7 @@ MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     None,
 ]
 
@@ -4794,7 +4898,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     """Setup parameters for Email integration"""
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments(
     BaseModel
 ):
     url: str
@@ -4804,17 +4908,17 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     params: Optional[object] = None
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup(
     BaseModel
 ):
     spider_api_key: str
 
 
-class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput(
     BaseModel
 ):
     arguments: Optional[
-        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments
     ] = None
     """Arguments for Spider integration"""
 
@@ -4823,7 +4927,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     provider: Optional[Literal["spider"]] = None
 
     setup: Optional[
-        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup
     ] = None
     """Setup parameters for Spider integration"""
 
@@ -5229,23 +5333,21 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
     BaseModel
 ):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
     BaseModel
 ):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
@@ -5371,11 +5473,42 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     """Setup parameters for Cloudinary integration"""
 
 
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments
+    ] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
-    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
@@ -5391,6 +5524,7 @@ MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryUploadIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     None,
 ]
 
@@ -5593,7 +5727,7 @@ MainSwitchStepOutputSwitchThen: TypeAlias = Union[
 
 
 class MainSwitchStepOutputSwitch(BaseModel):
-    case: Union[Literal["_"], str]
+    case: Literal["_"]
 
     then: MainSwitchStepOutputSwitchThen
 
@@ -6040,7 +6174,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     """Setup parameters for Email integration"""
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments(
     BaseModel
 ):
     url: str
@@ -6050,17 +6184,17 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     params: Optional[object] = None
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup(
     BaseModel
 ):
     spider_api_key: str
 
 
-class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput(
     BaseModel
 ):
     arguments: Optional[
-        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments
     ] = None
     """Arguments for Spider integration"""
 
@@ -6069,7 +6203,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     provider: Optional[Literal["spider"]] = None
 
     setup: Optional[
-        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup
     ] = None
     """Setup parameters for Spider integration"""
 
@@ -6475,23 +6609,21 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
     BaseModel
 ):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
     BaseModel
 ):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
@@ -6617,11 +6749,42 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     """Setup parameters for Cloudinary integration"""
 
 
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments
+    ] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
-    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
@@ -6637,6 +6800,7 @@ MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryUploadIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     None,
 ]
 
@@ -7225,7 +7389,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     """Setup parameters for Email integration"""
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments(
     BaseModel
 ):
     url: str
@@ -7235,17 +7399,17 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     params: Optional[object] = None
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup(
     BaseModel
 ):
     spider_api_key: str
 
 
-class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput(
     BaseModel
 ):
     arguments: Optional[
-        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments
     ] = None
     """Arguments for Spider integration"""
 
@@ -7254,7 +7418,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     provider: Optional[Literal["spider"]] = None
 
     setup: Optional[
-        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup
     ] = None
     """Setup parameters for Spider integration"""
 
@@ -7660,23 +7824,21 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
     BaseModel
 ):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
     BaseModel
 ):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
@@ -7802,11 +7964,42 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     """Setup parameters for Cloudinary integration"""
 
 
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments
+    ] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
-    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
@@ -7822,6 +8015,7 @@ MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryUploadIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     None,
 ]
 
@@ -8401,7 +8595,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
     """Setup parameters for Email integration"""
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments(
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments(
     BaseModel
 ):
     url: str
@@ -8411,17 +8605,17 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
     params: Optional[object] = None
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup(
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup(
     BaseModel
 ):
     spider_api_key: str
 
 
-class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef(
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput(
     BaseModel
 ):
     arguments: Optional[
-        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefArguments
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputArguments
     ] = None
     """Arguments for Spider integration"""
 
@@ -8430,7 +8624,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
     provider: Optional[Literal["spider"]] = None
 
     setup: Optional[
-        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefSetup
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutputSetup
     ] = None
     """Setup parameters for Spider integration"""
 
@@ -8836,23 +9030,21 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefArguments(
     BaseModel
 ):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDefSetup(
     BaseModel
 ):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef(
@@ -8978,11 +9170,42 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
     """Setup parameters for Cloudinary integration"""
 
 
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments(
+    BaseModel
+):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDefArguments
+    ] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationEmailIntegrationDef,
-    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDefOutput,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
@@ -8998,6 +9221,7 @@ MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegra
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryUploadIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     None,
 ]
 
@@ -9289,7 +9513,7 @@ class ToolIntegrationEmailIntegrationDef(BaseModel):
     """Setup parameters for Email integration"""
 
 
-class ToolIntegrationSpiderIntegrationDefArguments(BaseModel):
+class ToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     url: str
 
     mode: Optional[Literal["scrape"]] = None
@@ -9297,19 +9521,19 @@ class ToolIntegrationSpiderIntegrationDefArguments(BaseModel):
     params: Optional[object] = None
 
 
-class ToolIntegrationSpiderIntegrationDefSetup(BaseModel):
+class ToolIntegrationSpiderIntegrationDefOutputSetup(BaseModel):
     spider_api_key: str
 
 
-class ToolIntegrationSpiderIntegrationDef(BaseModel):
-    arguments: Optional[ToolIntegrationSpiderIntegrationDefArguments] = None
+class ToolIntegrationSpiderIntegrationDefOutput(BaseModel):
+    arguments: Optional[ToolIntegrationSpiderIntegrationDefOutputArguments] = None
     """Arguments for Spider integration"""
 
     method: Optional[str] = None
 
     provider: Optional[Literal["spider"]] = None
 
-    setup: Optional[ToolIntegrationSpiderIntegrationDefSetup] = None
+    setup: Optional[ToolIntegrationSpiderIntegrationDefOutputSetup] = None
     """Setup parameters for Spider integration"""
 
 
@@ -9608,21 +9832,19 @@ class ToolIntegrationRemoteBrowserIntegrationDef(BaseModel):
 
 
 class ToolIntegrationLlamaParseIntegrationDefArguments(BaseModel):
-    file: str
+    file: Union[str, List[str]]
+
+    base64: Optional[bool] = None
 
     filename: Optional[str] = None
 
-    language: Optional[str] = None
-
-    num_workers: Optional[int] = None
-
-    result_format: Optional[Literal["text", "markdown"]] = None
-
-    verbose: Optional[bool] = None
+    params: Optional[object] = None
 
 
 class ToolIntegrationLlamaParseIntegrationDefSetup(BaseModel):
     llamaparse_api_key: str
+
+    params: Optional[object] = None
 
 
 class ToolIntegrationLlamaParseIntegrationDef(BaseModel):
@@ -9716,11 +9938,36 @@ class ToolIntegrationCloudinaryEditIntegrationDef(BaseModel):
     """Setup parameters for Cloudinary integration"""
 
 
+class ToolIntegrationArxivIntegrationDefArguments(BaseModel):
+    query: str
+
+    download_pdf: Optional[bool] = None
+
+    id_list: Optional[List[str]] = None
+
+    max_results: Optional[int] = None
+
+    sort_by: Optional[Literal["relevance", "lastUpdatedDate", "submittedDate"]] = None
+
+    sort_order: Optional[Literal["ascending", "descending"]] = None
+
+
+class ToolIntegrationArxivIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationArxivIntegrationDefArguments] = None
+    """Arguments for Arxiv Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["arxiv"]] = None
+
+    setup: Optional[object] = None
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
     ToolIntegrationEmailIntegrationDef,
-    ToolIntegrationSpiderIntegrationDef,
+    ToolIntegrationSpiderIntegrationDefOutput,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
     ToolIntegrationBrowserbaseContextIntegrationDef,
@@ -9736,6 +9983,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationFfmpegIntegrationDef,
     ToolIntegrationCloudinaryUploadIntegrationDef,
     ToolIntegrationCloudinaryEditIntegrationDef,
+    ToolIntegrationArxivIntegrationDef,
     None,
 ]
 
