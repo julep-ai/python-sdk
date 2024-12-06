@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.44.1 (2024-12-06)
+
+Full Changelog: [v1.44.0...v1.44.1](https://github.com/julep-ai/python-sdk/compare/v1.44.0...v1.44.1)
+
+### Chores
+
+* **internal:** bump pyright ([#187](https://github.com/julep-ai/python-sdk/issues/187)) ([b6b1cba](https://github.com/julep-ai/python-sdk/commit/b6b1cba69fb4e4f5d07744e19da56e66608517ab))
+* make the `Omit` type public ([#189](https://github.com/julep-ai/python-sdk/issues/189)) ([e3c45ce](https://github.com/julep-ai/python-sdk/commit/e3c45cea55ef4cb90f53bee603efc171566f69bf))
+
 ## 1.44.0 (2024-12-03)
 
 Full Changelog: [v1.43.1...v1.44.0](https://github.com/julep-ai/python-sdk/compare/v1.43.1...v1.44.0)
