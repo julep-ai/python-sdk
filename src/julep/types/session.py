@@ -6,7 +6,19 @@ from typing_extensions import Literal
 
 from .._models import BaseModel
 
-__all__ = ["Session"]
+__all__ = ["Session", "RecallOptions"]
+
+
+class RecallOptions(BaseModel):
+    confidence: Optional[float] = None
+
+    hybrid_alpha: Optional[float] = None
+
+    max_query_length: Optional[int] = None
+
+    mode: Optional[Literal["hybrid", "vector", "text"]] = None
+
+    num_search_messages: Optional[int] = None
 
 
 class Session(BaseModel):
@@ -23,6 +35,8 @@ class Session(BaseModel):
     kind: Optional[str] = None
 
     metadata: Optional[object] = None
+
+    recall_options: Optional[RecallOptions] = None
 
     render_templates: Optional[bool] = None
 

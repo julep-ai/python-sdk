@@ -280,7 +280,7 @@ class ToolIntegrationEmailIntegrationDef(TypedDict, total=False):
 class ToolIntegrationSpiderIntegrationDefInputArguments(TypedDict, total=False):
     url: Required[str]
 
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -293,7 +293,7 @@ class ToolIntegrationSpiderIntegrationDefInput(TypedDict, total=False):
     arguments: Optional[ToolIntegrationSpiderIntegrationDefInputArguments]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
