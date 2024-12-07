@@ -358,7 +358,7 @@ class ContentToolIntegrationEmailIntegrationDef(BaseModel):
 class ContentToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -371,7 +371,7 @@ class ContentToolIntegrationSpiderIntegrationDefOutput(BaseModel):
     arguments: Optional[ContentToolIntegrationSpiderIntegrationDefOutputArguments] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
@@ -1182,7 +1182,7 @@ class ContentUnionMember8ToolIntegrationEmailIntegrationDef(BaseModel):
 class ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -1195,7 +1195,7 @@ class ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutput(BaseModel):
     arguments: Optional[ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputArguments] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 

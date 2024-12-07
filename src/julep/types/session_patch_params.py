@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import Optional
 from typing_extensions import Literal, TypedDict
 
-__all__ = ["SessionPatchParams"]
+__all__ = ["SessionPatchParams", "RecallOptions"]
 
 
 class SessionPatchParams(TypedDict, total=False):
@@ -15,8 +15,22 @@ class SessionPatchParams(TypedDict, total=False):
 
     metadata: Optional[object]
 
+    recall_options: Optional[RecallOptions]
+
     render_templates: bool
 
     situation: str
 
     token_budget: Optional[int]
+
+
+class RecallOptions(TypedDict, total=False):
+    confidence: float
+
+    hybrid_alpha: float
+
+    max_query_length: int
+
+    mode: Literal["hybrid", "vector", "text"]
+
+    num_search_messages: int

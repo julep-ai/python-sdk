@@ -1230,7 +1230,7 @@ class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequest
 ):
     url: Required[str]
 
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -1249,7 +1249,7 @@ class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequest
     ]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
@@ -2505,7 +2505,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAu
 ):
     url: Required[str]
 
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -2524,7 +2524,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAu
     ]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
@@ -3811,7 +3811,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAu
 ):
     url: Required[str]
 
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -3830,7 +3830,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAu
     ]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
@@ -5124,7 +5124,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAuto
 ):
     url: Required[str]
 
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -5143,7 +5143,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAuto
     ]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
@@ -6442,7 +6442,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAuto
 ):
     url: Required[str]
 
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -6461,7 +6461,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAuto
     ]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
@@ -7708,7 +7708,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAuto
 ):
     url: Required[str]
 
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -7727,7 +7727,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAuto
     ]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
@@ -8944,7 +8944,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreat
 ):
     url: Required[str]
 
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -8963,7 +8963,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreat
     ]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
@@ -9882,7 +9882,7 @@ class ToolIntegrationEmailIntegrationDef(TypedDict, total=False):
 class ToolIntegrationSpiderIntegrationDefInputArguments(TypedDict, total=False):
     url: Required[str]
 
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -9895,7 +9895,7 @@ class ToolIntegrationSpiderIntegrationDefInput(TypedDict, total=False):
     arguments: Optional[ToolIntegrationSpiderIntegrationDefInputArguments]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 

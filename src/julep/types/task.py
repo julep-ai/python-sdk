@@ -1186,7 +1186,7 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpi
 ):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -1201,7 +1201,7 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpi
     ] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
@@ -2383,7 +2383,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -2402,7 +2402,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     ] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
@@ -3640,7 +3640,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -3659,7 +3659,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     ] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
@@ -4903,7 +4903,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -4922,7 +4922,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     ] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
@@ -6179,7 +6179,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -6198,7 +6198,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     ] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
@@ -7394,7 +7394,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -7413,7 +7413,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     ] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
@@ -8600,7 +8600,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -8619,7 +8619,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
     ] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
@@ -9516,7 +9516,7 @@ class ToolIntegrationEmailIntegrationDef(BaseModel):
 class ToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -9529,7 +9529,7 @@ class ToolIntegrationSpiderIntegrationDefOutput(BaseModel):
     arguments: Optional[ToolIntegrationSpiderIntegrationDefOutputArguments] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
