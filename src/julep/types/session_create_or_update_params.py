@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import List, Optional
 from typing_extensions import Literal, TypedDict
 
-__all__ = ["SessionCreateOrUpdateParams"]
+__all__ = ["SessionCreateOrUpdateParams", "RecallOptions"]
 
 
 class SessionCreateOrUpdateParams(TypedDict, total=False):
@@ -19,6 +19,8 @@ class SessionCreateOrUpdateParams(TypedDict, total=False):
 
     metadata: Optional[object]
 
+    recall_options: Optional[RecallOptions]
+
     render_templates: bool
 
     situation: str
@@ -28,3 +30,15 @@ class SessionCreateOrUpdateParams(TypedDict, total=False):
     user: Optional[str]
 
     users: Optional[List[str]]
+
+
+class RecallOptions(TypedDict, total=False):
+    confidence: float
+
+    hybrid_alpha: float
+
+    max_query_length: int
+
+    mode: Literal["hybrid", "vector", "text"]
+
+    num_search_messages: int

@@ -237,7 +237,7 @@ class IntegrationEmailIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationSpiderIntegrationDefUpdateArguments(TypedDict, total=False):
-    mode: Literal["scrape"]
+    content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
@@ -252,7 +252,7 @@ class IntegrationSpiderIntegrationDefUpdate(TypedDict, total=False):
     arguments: Optional[IntegrationSpiderIntegrationDefUpdateArguments]
     """Arguments for Spider integration"""
 
-    method: Optional[str]
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
