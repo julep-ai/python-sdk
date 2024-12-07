@@ -192,7 +192,7 @@ class IntegrationEmailIntegrationDef(BaseModel):
 class IntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     url: str
 
-    mode: Optional[Literal["scrape"]] = None
+    content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
 
     params: Optional[object] = None
 
@@ -205,7 +205,7 @@ class IntegrationSpiderIntegrationDefOutput(BaseModel):
     arguments: Optional[IntegrationSpiderIntegrationDefOutputArguments] = None
     """Arguments for Spider integration"""
 
-    method: Optional[str] = None
+    method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
