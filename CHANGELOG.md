@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.45.1 (2024-12-10)
+
+Full Changelog: [v1.45.0...v1.45.1](https://github.com/julep-ai/python-sdk/compare/v1.45.0...v1.45.1)
+
+### Chores
+
+* **internal:** bump pydantic dependency ([#195](https://github.com/julep-ai/python-sdk/issues/195)) ([72c124c](https://github.com/julep-ai/python-sdk/commit/72c124c256bb9e3fa25381e2b132c2e3b0b5cc6e))
+
+
+### Documentation
+
+* **readme:** fix http client proxies example ([#197](https://github.com/julep-ai/python-sdk/issues/197)) ([5b788c0](https://github.com/julep-ai/python-sdk/commit/5b788c05da8ae426c18c0925c4c8a65928da5706))
+
 ## 1.45.0 (2024-12-07)
 
 Full Changelog: [v1.44.1...v1.45.0](https://github.com/julep-ai/python-sdk/compare/v1.44.1...v1.45.0)
