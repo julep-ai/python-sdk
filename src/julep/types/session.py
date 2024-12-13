@@ -10,11 +10,19 @@ __all__ = ["Session", "RecallOptions"]
 
 
 class RecallOptions(BaseModel):
+    alpha: Optional[float] = None
+
     confidence: Optional[float] = None
 
-    hybrid_alpha: Optional[float] = None
+    lang: Optional[Literal["en-US"]] = None
+
+    limit: Optional[int] = None
 
     max_query_length: Optional[int] = None
+
+    metadata_filter: Optional[object] = None
+
+    mmr_strength: Optional[float] = None
 
     mode: Optional[Literal["hybrid", "vector", "text"]] = None
 
