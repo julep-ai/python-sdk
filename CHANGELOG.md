@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.46.1 (2024-12-13)
+
+Full Changelog: [v1.46.0...v1.46.1](https://github.com/julep-ai/python-sdk/compare/v1.46.0...v1.46.1)
+
+### Chores
+
+* **internal:** add support for TypeAliasType ([#202](https://github.com/julep-ai/python-sdk/issues/202)) ([25acb40](https://github.com/julep-ai/python-sdk/commit/25acb40c091ce67316828d2eeb65992335d5bae8))
+* **internal:** bump pyright ([#200](https://github.com/julep-ai/python-sdk/issues/200)) ([e62893a](https://github.com/julep-ai/python-sdk/commit/e62893add4117e2efba9cc63fdc206c53fe662e0))
+
 ## 1.46.0 (2024-12-13)
 
 Full Changelog: [v1.45.0...v1.46.0](https://github.com/julep-ai/python-sdk/compare/v1.45.0...v1.46.0)
