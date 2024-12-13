@@ -33,11 +33,19 @@ class SessionCreateParams(TypedDict, total=False):
 
 
 class RecallOptions(TypedDict, total=False):
+    alpha: float
+
     confidence: float
 
-    hybrid_alpha: float
+    lang: Literal["en-US"]
+
+    limit: int
 
     max_query_length: int
+
+    metadata_filter: object
+
+    mmr_strength: float
 
     mode: Literal["hybrid", "vector", "text"]
 
