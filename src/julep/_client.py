@@ -8,7 +8,7 @@ from typing_extensions import Self, Literal, override
 
 import httpx
 
-from . import resources, _exceptions
+from . import _exceptions
 from ._qs import Querystring
 from ._types import (
     NOT_GIVEN,
@@ -24,6 +24,7 @@ from ._utils import (
     get_async_library,
 )
 from ._version import __version__
+from .resources import docs, jobs, files, tasks, sessions
 from ._streaming import Stream as Stream, AsyncStream as AsyncStream
 from ._exceptions import JulepError, APIStatusError
 from ._base_client import (
@@ -31,6 +32,9 @@ from ._base_client import (
     SyncAPIClient,
     AsyncAPIClient,
 )
+from .resources.users import users
+from .resources.agents import agents
+from .resources.executions import executions
 
 __all__ = [
     "ENVIRONMENTS",
@@ -38,7 +42,6 @@ __all__ = [
     "Transport",
     "ProxiesTypes",
     "RequestOptions",
-    "resources",
     "Julep",
     "AsyncJulep",
     "Client",
@@ -54,14 +57,14 @@ ENVIRONMENTS: Dict[str, str] = {
 
 
 class Julep(SyncAPIClient):
-    agents: resources.AgentsResource
-    files: resources.FilesResource
-    sessions: resources.SessionsResource
-    users: resources.UsersResource
-    jobs: resources.JobsResource
-    docs: resources.DocsResource
-    tasks: resources.TasksResource
-    executions: resources.ExecutionsResource
+    agents: agents.AgentsResource
+    files: files.FilesResource
+    sessions: sessions.SessionsResource
+    users: users.UsersResource
+    jobs: jobs.JobsResource
+    docs: docs.DocsResource
+    tasks: tasks.TasksResource
+    executions: executions.ExecutionsResource
     with_raw_response: JulepWithRawResponse
     with_streaming_response: JulepWithStreamedResponse
 
@@ -143,14 +146,14 @@ class Julep(SyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.agents = resources.AgentsResource(self)
-        self.files = resources.FilesResource(self)
-        self.sessions = resources.SessionsResource(self)
-        self.users = resources.UsersResource(self)
-        self.jobs = resources.JobsResource(self)
-        self.docs = resources.DocsResource(self)
-        self.tasks = resources.TasksResource(self)
-        self.executions = resources.ExecutionsResource(self)
+        self.agents = agents.AgentsResource(self)
+        self.files = files.FilesResource(self)
+        self.sessions = sessions.SessionsResource(self)
+        self.users = users.UsersResource(self)
+        self.jobs = jobs.JobsResource(self)
+        self.docs = docs.DocsResource(self)
+        self.tasks = tasks.TasksResource(self)
+        self.executions = executions.ExecutionsResource(self)
         self.with_raw_response = JulepWithRawResponse(self)
         self.with_streaming_response = JulepWithStreamedResponse(self)
 
@@ -262,14 +265,14 @@ class Julep(SyncAPIClient):
 
 
 class AsyncJulep(AsyncAPIClient):
-    agents: resources.AsyncAgentsResource
-    files: resources.AsyncFilesResource
-    sessions: resources.AsyncSessionsResource
-    users: resources.AsyncUsersResource
-    jobs: resources.AsyncJobsResource
-    docs: resources.AsyncDocsResource
-    tasks: resources.AsyncTasksResource
-    executions: resources.AsyncExecutionsResource
+    agents: agents.AsyncAgentsResource
+    files: files.AsyncFilesResource
+    sessions: sessions.AsyncSessionsResource
+    users: users.AsyncUsersResource
+    jobs: jobs.AsyncJobsResource
+    docs: docs.AsyncDocsResource
+    tasks: tasks.AsyncTasksResource
+    executions: executions.AsyncExecutionsResource
     with_raw_response: AsyncJulepWithRawResponse
     with_streaming_response: AsyncJulepWithStreamedResponse
 
@@ -351,14 +354,14 @@ class AsyncJulep(AsyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.agents = resources.AsyncAgentsResource(self)
-        self.files = resources.AsyncFilesResource(self)
-        self.sessions = resources.AsyncSessionsResource(self)
-        self.users = resources.AsyncUsersResource(self)
-        self.jobs = resources.AsyncJobsResource(self)
-        self.docs = resources.AsyncDocsResource(self)
-        self.tasks = resources.AsyncTasksResource(self)
-        self.executions = resources.AsyncExecutionsResource(self)
+        self.agents = agents.AsyncAgentsResource(self)
+        self.files = files.AsyncFilesResource(self)
+        self.sessions = sessions.AsyncSessionsResource(self)
+        self.users = users.AsyncUsersResource(self)
+        self.jobs = jobs.AsyncJobsResource(self)
+        self.docs = docs.AsyncDocsResource(self)
+        self.tasks = tasks.AsyncTasksResource(self)
+        self.executions = executions.AsyncExecutionsResource(self)
         self.with_raw_response = AsyncJulepWithRawResponse(self)
         self.with_streaming_response = AsyncJulepWithStreamedResponse(self)
 
@@ -471,50 +474,50 @@ class AsyncJulep(AsyncAPIClient):
 
 class JulepWithRawResponse:
     def __init__(self, client: Julep) -> None:
-        self.agents = resources.AgentsResourceWithRawResponse(client.agents)
-        self.files = resources.FilesResourceWithRawResponse(client.files)
-        self.sessions = resources.SessionsResourceWithRawResponse(client.sessions)
-        self.users = resources.UsersResourceWithRawResponse(client.users)
-        self.jobs = resources.JobsResourceWithRawResponse(client.jobs)
-        self.docs = resources.DocsResourceWithRawResponse(client.docs)
-        self.tasks = resources.TasksResourceWithRawResponse(client.tasks)
-        self.executions = resources.ExecutionsResourceWithRawResponse(client.executions)
+        self.agents = agents.AgentsResourceWithRawResponse(client.agents)
+        self.files = files.FilesResourceWithRawResponse(client.files)
+        self.sessions = sessions.SessionsResourceWithRawResponse(client.sessions)
+        self.users = users.UsersResourceWithRawResponse(client.users)
+        self.jobs = jobs.JobsResourceWithRawResponse(client.jobs)
+        self.docs = docs.DocsResourceWithRawResponse(client.docs)
+        self.tasks = tasks.TasksResourceWithRawResponse(client.tasks)
+        self.executions = executions.ExecutionsResourceWithRawResponse(client.executions)
 
 
 class AsyncJulepWithRawResponse:
     def __init__(self, client: AsyncJulep) -> None:
-        self.agents = resources.AsyncAgentsResourceWithRawResponse(client.agents)
-        self.files = resources.AsyncFilesResourceWithRawResponse(client.files)
-        self.sessions = resources.AsyncSessionsResourceWithRawResponse(client.sessions)
-        self.users = resources.AsyncUsersResourceWithRawResponse(client.users)
-        self.jobs = resources.AsyncJobsResourceWithRawResponse(client.jobs)
-        self.docs = resources.AsyncDocsResourceWithRawResponse(client.docs)
-        self.tasks = resources.AsyncTasksResourceWithRawResponse(client.tasks)
-        self.executions = resources.AsyncExecutionsResourceWithRawResponse(client.executions)
+        self.agents = agents.AsyncAgentsResourceWithRawResponse(client.agents)
+        self.files = files.AsyncFilesResourceWithRawResponse(client.files)
+        self.sessions = sessions.AsyncSessionsResourceWithRawResponse(client.sessions)
+        self.users = users.AsyncUsersResourceWithRawResponse(client.users)
+        self.jobs = jobs.AsyncJobsResourceWithRawResponse(client.jobs)
+        self.docs = docs.AsyncDocsResourceWithRawResponse(client.docs)
+        self.tasks = tasks.AsyncTasksResourceWithRawResponse(client.tasks)
+        self.executions = executions.AsyncExecutionsResourceWithRawResponse(client.executions)
 
 
 class JulepWithStreamedResponse:
     def __init__(self, client: Julep) -> None:
-        self.agents = resources.AgentsResourceWithStreamingResponse(client.agents)
-        self.files = resources.FilesResourceWithStreamingResponse(client.files)
-        self.sessions = resources.SessionsResourceWithStreamingResponse(client.sessions)
-        self.users = resources.UsersResourceWithStreamingResponse(client.users)
-        self.jobs = resources.JobsResourceWithStreamingResponse(client.jobs)
-        self.docs = resources.DocsResourceWithStreamingResponse(client.docs)
-        self.tasks = resources.TasksResourceWithStreamingResponse(client.tasks)
-        self.executions = resources.ExecutionsResourceWithStreamingResponse(client.executions)
+        self.agents = agents.AgentsResourceWithStreamingResponse(client.agents)
+        self.files = files.FilesResourceWithStreamingResponse(client.files)
+        self.sessions = sessions.SessionsResourceWithStreamingResponse(client.sessions)
+        self.users = users.UsersResourceWithStreamingResponse(client.users)
+        self.jobs = jobs.JobsResourceWithStreamingResponse(client.jobs)
+        self.docs = docs.DocsResourceWithStreamingResponse(client.docs)
+        self.tasks = tasks.TasksResourceWithStreamingResponse(client.tasks)
+        self.executions = executions.ExecutionsResourceWithStreamingResponse(client.executions)
 
 
 class AsyncJulepWithStreamedResponse:
     def __init__(self, client: AsyncJulep) -> None:
-        self.agents = resources.AsyncAgentsResourceWithStreamingResponse(client.agents)
-        self.files = resources.AsyncFilesResourceWithStreamingResponse(client.files)
-        self.sessions = resources.AsyncSessionsResourceWithStreamingResponse(client.sessions)
-        self.users = resources.AsyncUsersResourceWithStreamingResponse(client.users)
-        self.jobs = resources.AsyncJobsResourceWithStreamingResponse(client.jobs)
-        self.docs = resources.AsyncDocsResourceWithStreamingResponse(client.docs)
-        self.tasks = resources.AsyncTasksResourceWithStreamingResponse(client.tasks)
-        self.executions = resources.AsyncExecutionsResourceWithStreamingResponse(client.executions)
+        self.agents = agents.AsyncAgentsResourceWithStreamingResponse(client.agents)
+        self.files = files.AsyncFilesResourceWithStreamingResponse(client.files)
+        self.sessions = sessions.AsyncSessionsResourceWithStreamingResponse(client.sessions)
+        self.users = users.AsyncUsersResourceWithStreamingResponse(client.users)
+        self.jobs = jobs.AsyncJobsResourceWithStreamingResponse(client.jobs)
+        self.docs = docs.AsyncDocsResourceWithStreamingResponse(client.docs)
+        self.tasks = tasks.AsyncTasksResourceWithStreamingResponse(client.tasks)
+        self.executions = executions.AsyncExecutionsResourceWithStreamingResponse(client.executions)
 
 
 Client = Julep
