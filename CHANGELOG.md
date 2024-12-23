@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.46.2 (2024-12-19)
+
+Full Changelog: [v1.46.1...v1.46.2](https://github.com/julep-ai/python-sdk/compare/v1.46.1...v1.46.2)
+
+### Chores
+
+* **internal:** codegen related update ([#204](https://github.com/julep-ai/python-sdk/issues/204)) ([bcf74cc](https://github.com/julep-ai/python-sdk/commit/bcf74ccacb6bbc55eee0a134a51c9c45814c938e))
+* **internal:** codegen related update ([#206](https://github.com/julep-ai/python-sdk/issues/206)) ([330b37a](https://github.com/julep-ai/python-sdk/commit/330b37a15d633e1b8116c52e36db8d2a652e836d))
+* **internal:** codegen related update ([#207](https://github.com/julep-ai/python-sdk/issues/207)) ([9f14f2e](https://github.com/julep-ai/python-sdk/commit/9f14f2e5d5be874cb2c428d4ed7d772afc0a51c8))
+* **internal:** codegen related update ([#208](https://github.com/julep-ai/python-sdk/issues/208)) ([a4efd84](https://github.com/julep-ai/python-sdk/commit/a4efd8460884d375eb1f457e12479eeb30d5a626))
+* **internal:** codegen related update ([#209](https://github.com/julep-ai/python-sdk/issues/209)) ([a5d3c7e](https://github.com/julep-ai/python-sdk/commit/a5d3c7e250b805512f5074f13d5d290eceadd776))
+* **internal:** codegen related update ([#210](https://github.com/julep-ai/python-sdk/issues/210)) ([095d0ae](https://github.com/julep-ai/python-sdk/commit/095d0ae75417640ea103887725b547509fa676ab))
+* **internal:** codegen related update ([#211](https://github.com/julep-ai/python-sdk/issues/211)) ([3322047](https://github.com/julep-ai/python-sdk/commit/3322047a5c02c23824a3969173fef776db2ee165))
+* **internal:** codegen related update ([#212](https://github.com/julep-ai/python-sdk/issues/212)) ([0e07c5b](https://github.com/julep-ai/python-sdk/commit/0e07c5b6a47eccafc530f2daff691b9fe4827013))
+
 ## 1.46.1 (2024-12-13)
 
 Full Changelog: [v1.46.0...v1.46.1](https://github.com/julep-ai/python-sdk/compare/v1.46.0...v1.46.1)
