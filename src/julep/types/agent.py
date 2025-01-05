@@ -29,9 +29,13 @@ class Agent(BaseModel):
 
     created_at: datetime
 
+    name: str
+
     updated_at: datetime
 
     about: Optional[str] = None
+
+    canonical_name: Optional[str] = None
 
     default_settings: Optional[DefaultSettings] = None
     """Default settings for the chat session (also used by the agent)"""
@@ -41,5 +45,3 @@ class Agent(BaseModel):
     metadata: Optional[object] = None
 
     model: Optional[str] = None
-
-    name: Optional[str] = None

@@ -8,12 +8,10 @@ from typing import Any, cast
 import pytest
 
 from julep import Julep, AsyncJulep
-from julep.types import (
-    Execution,
-)
+from julep.types import Execution
 from tests.utils import assert_matches_type
 from julep.pagination import SyncOffsetPagination, AsyncOffsetPagination
-from julep.types.shared import ResourceCreated, ResourceUpdated
+from julep.types.shared import ResourceCreated
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 
@@ -255,59 +253,6 @@ class TestExecutions:
                 "",
             )
 
-    @parametrize
-    def test_method_patch(self, client: Julep) -> None:
-        execution = client.executions.patch(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            status="queued",
-        )
-        assert_matches_type(ResourceUpdated, execution, path=["response"])
-
-    @parametrize
-    def test_raw_response_patch(self, client: Julep) -> None:
-        response = client.executions.with_raw_response.patch(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            status="queued",
-        )
-
-        assert response.is_closed is True
-        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-        execution = response.parse()
-        assert_matches_type(ResourceUpdated, execution, path=["response"])
-
-    @parametrize
-    def test_streaming_response_patch(self, client: Julep) -> None:
-        with client.executions.with_streaming_response.patch(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            status="queued",
-        ) as response:
-            assert not response.is_closed
-            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-
-            execution = response.parse()
-            assert_matches_type(ResourceUpdated, execution, path=["response"])
-
-        assert cast(Any, response.is_closed) is True
-
-    @parametrize
-    def test_path_params_patch(self, client: Julep) -> None:
-        with pytest.raises(ValueError, match=r"Expected a non-empty value for `task_id` but received ''"):
-            client.executions.with_raw_response.patch(
-                execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                task_id="",
-                status="queued",
-            )
-
-        with pytest.raises(ValueError, match=r"Expected a non-empty value for `execution_id` but received ''"):
-            client.executions.with_raw_response.patch(
-                execution_id="",
-                task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                status="queued",
-            )
-
 
 class TestAsyncExecutions:
     parametrize = pytest.mark.parametrize("async_client", [False, True], indirect=True, ids=["loose", "strict"])
@@ -544,57 +489,4 @@ class TestAsyncExecutions:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `execution_id` but received ''"):
             await async_client.executions.with_raw_response.get(
                 "",
-            )
-
-    @parametrize
-    async def test_method_patch(self, async_client: AsyncJulep) -> None:
-        execution = await async_client.executions.patch(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            status="queued",
-        )
-        assert_matches_type(ResourceUpdated, execution, path=["response"])
-
-    @parametrize
-    async def test_raw_response_patch(self, async_client: AsyncJulep) -> None:
-        response = await async_client.executions.with_raw_response.patch(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            status="queued",
-        )
-
-        assert response.is_closed is True
-        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-        execution = await response.parse()
-        assert_matches_type(ResourceUpdated, execution, path=["response"])
-
-    @parametrize
-    async def test_streaming_response_patch(self, async_client: AsyncJulep) -> None:
-        async with async_client.executions.with_streaming_response.patch(
-            execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            status="queued",
-        ) as response:
-            assert not response.is_closed
-            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-
-            execution = await response.parse()
-            assert_matches_type(ResourceUpdated, execution, path=["response"])
-
-        assert cast(Any, response.is_closed) is True
-
-    @parametrize
-    async def test_path_params_patch(self, async_client: AsyncJulep) -> None:
-        with pytest.raises(ValueError, match=r"Expected a non-empty value for `task_id` but received ''"):
-            await async_client.executions.with_raw_response.patch(
-                execution_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                task_id="",
-                status="queued",
-            )
-
-        with pytest.raises(ValueError, match=r"Expected a non-empty value for `execution_id` but received ''"):
-            await async_client.executions.with_raw_response.patch(
-                execution_id="",
-                task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                status="queued",
             )

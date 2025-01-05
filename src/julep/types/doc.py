@@ -17,6 +17,14 @@ class Doc(BaseModel):
 
     title: str
 
+    embedding_dimensions: Optional[int] = None
+
+    embedding_model: Optional[str] = None
+
     embeddings: Union[List[float], List[List[float]], None] = None
 
+    language: Optional[str] = None
+
     metadata: Optional[object] = None
+
+    modality: Optional[str] = None

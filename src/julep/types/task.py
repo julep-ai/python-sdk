@@ -10061,6 +10061,8 @@ class Task(BaseModel):
 
     updated_at: datetime
 
+    canonical_name: Optional[str] = None
+
     description: Optional[str] = None
 
     inherit_tools: Optional[bool] = None

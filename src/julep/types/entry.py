@@ -1987,6 +1987,8 @@ class Entry(BaseModel):
 
     tokenizer: str
 
+    model: Optional[str] = None
+
     name: Optional[str] = None
 
     tool_call_id: Optional[str] = None

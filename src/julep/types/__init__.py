@@ -43,7 +43,6 @@ from .execution_list_params import ExecutionListParams as ExecutionListParams
 from .session_chat_response import SessionChatResponse as SessionChatResponse
 from .session_create_params import SessionCreateParams as SessionCreateParams
 from .session_update_params import SessionUpdateParams as SessionUpdateParams
-from .execution_patch_params import ExecutionPatchParams as ExecutionPatchParams
 from .execution_create_params import ExecutionCreateParams as ExecutionCreateParams
 from .task_create_or_update_params import TaskCreateOrUpdateParams as TaskCreateOrUpdateParams
 from .user_create_or_update_params import UserCreateOrUpdateParams as UserCreateOrUpdateParams
