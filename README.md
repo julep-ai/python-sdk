@@ -36,7 +36,7 @@ client = Julep(
 resource_created = client.tasks.create(
     agent_id="dad00000-0000-4000-a000-000000000000",
     main=[{"evaluate": {"foo": ["string"]}}],
-    name="name",
+    name="x",
 )
 print(resource_created.id)
 ```
@@ -66,7 +66,7 @@ async def main() -> None:
     resource_created = await client.tasks.create(
         agent_id="dad00000-0000-4000-a000-000000000000",
         main=[{"evaluate": {"foo": ["string"]}}],
-        name="name",
+        name="x",
     )
     print(resource_created.id)
 
@@ -176,9 +176,9 @@ client = Julep()
 try:
     client.agents.create_or_update(
         agent_id="dad00000-0000-4000-a000-000000000000",
+        name="R2D2",
         instructions=["Protect Leia", "Kick butt"],
         model="o1-preview",
-        name="R2D2",
     )
 except julep.APIConnectionError as e:
     print("The server could not be reached")
@@ -224,9 +224,9 @@ client = Julep(
 # Or, configure per-request:
 client.with_options(max_retries=5).agents.create_or_update(
     agent_id="dad00000-0000-4000-a000-000000000000",
+    name="R2D2",
     instructions=["Protect Leia", "Kick butt"],
     model="o1-preview",
-    name="R2D2",
 )
 ```
 
@@ -252,9 +252,9 @@ client = Julep(
 # Override per-request:
 client.with_options(timeout=5.0).agents.create_or_update(
     agent_id="dad00000-0000-4000-a000-000000000000",
+    name="R2D2",
     instructions=["Protect Leia", "Kick butt"],
     model="o1-preview",
-    name="R2D2",
 )
 ```
 
@@ -298,9 +298,9 @@ from julep import Julep
 client = Julep()
 response = client.agents.with_raw_response.create_or_update(
     agent_id="dad00000-0000-4000-a000-000000000000",
+    name="R2D2",
     instructions=["Protect Leia", "Kick butt"],
     model="o1-preview",
-    name="R2D2",
 )
 print(response.headers.get('X-My-Header'))
 
@@ -321,9 +321,9 @@ To stream the response body, use `.with_streaming_response` instead, which requi
 ```python
 with client.agents.with_streaming_response.create_or_update(
     agent_id="dad00000-0000-4000-a000-000000000000",
+    name="R2D2",
     instructions=["Protect Leia", "Kick butt"],
     model="o1-preview",
-    name="R2D2",
 ) as response:
     print(response.headers.get("X-My-Header"))
 

@@ -35,6 +35,7 @@ class TestSessions:
             agents=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             auto_run_tools=True,
             context_overflow="truncate",
+            forward_tool_calls=True,
             metadata={},
             recall_options={
                 "alpha": 0,
@@ -49,6 +50,7 @@ class TestSessions:
             },
             render_templates=True,
             situation="situation",
+            system_template="system_template",
             token_budget=0,
             user="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             users=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
@@ -88,6 +90,7 @@ class TestSessions:
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             auto_run_tools=True,
             context_overflow="truncate",
+            forward_tool_calls=True,
             metadata={},
             recall_options={
                 "alpha": 0,
@@ -102,6 +105,7 @@ class TestSessions:
             },
             render_templates=True,
             situation="situation",
+            system_template="system_template",
             token_budget=0,
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
@@ -387,6 +391,7 @@ class TestSessions:
             agents=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             auto_run_tools=True,
             context_overflow="truncate",
+            forward_tool_calls=True,
             metadata={},
             recall_options={
                 "alpha": 0,
@@ -401,6 +406,7 @@ class TestSessions:
             },
             render_templates=True,
             situation="situation",
+            system_template="system_template",
             token_budget=0,
             user="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             users=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
@@ -527,6 +533,7 @@ class TestSessions:
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             auto_run_tools=True,
             context_overflow="truncate",
+            forward_tool_calls=True,
             metadata={},
             recall_options={
                 "alpha": 0,
@@ -541,6 +548,7 @@ class TestSessions:
             },
             render_templates=True,
             situation="situation",
+            system_template="system_template",
             token_budget=0,
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
@@ -592,6 +600,7 @@ class TestAsyncSessions:
             agents=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             auto_run_tools=True,
             context_overflow="truncate",
+            forward_tool_calls=True,
             metadata={},
             recall_options={
                 "alpha": 0,
@@ -606,6 +615,7 @@ class TestAsyncSessions:
             },
             render_templates=True,
             situation="situation",
+            system_template="system_template",
             token_budget=0,
             user="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             users=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
@@ -645,6 +655,7 @@ class TestAsyncSessions:
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             auto_run_tools=True,
             context_overflow="truncate",
+            forward_tool_calls=True,
             metadata={},
             recall_options={
                 "alpha": 0,
@@ -659,6 +670,7 @@ class TestAsyncSessions:
             },
             render_templates=True,
             situation="situation",
+            system_template="system_template",
             token_budget=0,
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
@@ -944,6 +956,7 @@ class TestAsyncSessions:
             agents=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             auto_run_tools=True,
             context_overflow="truncate",
+            forward_tool_calls=True,
             metadata={},
             recall_options={
                 "alpha": 0,
@@ -958,6 +971,7 @@ class TestAsyncSessions:
             },
             render_templates=True,
             situation="situation",
+            system_template="system_template",
             token_budget=0,
             user="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             users=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
@@ -1084,6 +1098,7 @@ class TestAsyncSessions:
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             auto_run_tools=True,
             context_overflow="truncate",
+            forward_tool_calls=True,
             metadata={},
             recall_options={
                 "alpha": 0,
@@ -1098,6 +1113,7 @@ class TestAsyncSessions:
             },
             render_templates=True,
             situation="situation",
+            system_template="system_template",
             token_budget=0,
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])

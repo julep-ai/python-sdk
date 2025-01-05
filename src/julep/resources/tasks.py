@@ -56,6 +56,7 @@ class TasksResource(SyncAPIResource):
         *,
         main: Iterable[task_create_params.Main],
         name: str,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         description: str | NotGiven = NOT_GIVEN,
         inherit_tools: bool | NotGiven = NOT_GIVEN,
         input_schema: Optional[object] | NotGiven = NOT_GIVEN,
@@ -88,6 +89,7 @@ class TasksResource(SyncAPIResource):
                 {
                     "main": main,
                     "name": name,
+                    "canonical_name": canonical_name,
                     "description": description,
                     "inherit_tools": inherit_tools,
                     "input_schema": input_schema,
@@ -159,6 +161,7 @@ class TasksResource(SyncAPIResource):
         agent_id: str,
         main: Iterable[task_create_or_update_params.Main],
         name: str,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         description: str | NotGiven = NOT_GIVEN,
         inherit_tools: bool | NotGiven = NOT_GIVEN,
         input_schema: Optional[object] | NotGiven = NOT_GIVEN,
@@ -193,6 +196,7 @@ class TasksResource(SyncAPIResource):
                 {
                     "main": main,
                     "name": name,
+                    "canonical_name": canonical_name,
                     "description": description,
                     "inherit_tools": inherit_tools,
                     "input_schema": input_schema,
@@ -267,6 +271,7 @@ class AsyncTasksResource(AsyncAPIResource):
         *,
         main: Iterable[task_create_params.Main],
         name: str,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         description: str | NotGiven = NOT_GIVEN,
         inherit_tools: bool | NotGiven = NOT_GIVEN,
         input_schema: Optional[object] | NotGiven = NOT_GIVEN,
@@ -299,6 +304,7 @@ class AsyncTasksResource(AsyncAPIResource):
                 {
                     "main": main,
                     "name": name,
+                    "canonical_name": canonical_name,
                     "description": description,
                     "inherit_tools": inherit_tools,
                     "input_schema": input_schema,
@@ -370,6 +376,7 @@ class AsyncTasksResource(AsyncAPIResource):
         agent_id: str,
         main: Iterable[task_create_or_update_params.Main],
         name: str,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         description: str | NotGiven = NOT_GIVEN,
         inherit_tools: bool | NotGiven = NOT_GIVEN,
         input_schema: Optional[object] | NotGiven = NOT_GIVEN,
@@ -404,6 +411,7 @@ class AsyncTasksResource(AsyncAPIResource):
                 {
                     "main": main,
                     "name": name,
+                    "canonical_name": canonical_name,
                     "description": description,
                     "inherit_tools": inherit_tools,
                     "input_schema": input_schema,

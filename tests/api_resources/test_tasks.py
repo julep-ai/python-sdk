@@ -24,7 +24,7 @@ class TestTasks:
         task = client.tasks.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         )
         assert_matches_type(ResourceCreated, task, path=["response"])
 
@@ -38,7 +38,8 @@ class TestTasks:
                     "label": "label",
                 }
             ],
-            name="name",
+            name="x",
+            canonical_name="x",
             description="description",
             inherit_tools=True,
             input_schema={},
@@ -105,7 +106,7 @@ class TestTasks:
         response = client.tasks.with_raw_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         )
 
         assert response.is_closed is True
@@ -118,7 +119,7 @@ class TestTasks:
         with client.tasks.with_streaming_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -134,7 +135,7 @@ class TestTasks:
             client.tasks.with_raw_response.create(
                 agent_id="",
                 main=[{"evaluate": {"foo": ["string"]}}],
-                name="name",
+                name="x",
             )
 
     @parametrize
@@ -192,7 +193,7 @@ class TestTasks:
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         )
         assert_matches_type(ResourceUpdated, task, path=["response"])
 
@@ -207,7 +208,8 @@ class TestTasks:
                     "label": "label",
                 }
             ],
-            name="name",
+            name="x",
+            canonical_name="x",
             description="description",
             inherit_tools=True,
             input_schema={},
@@ -275,7 +277,7 @@ class TestTasks:
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         )
 
         assert response.is_closed is True
@@ -289,7 +291,7 @@ class TestTasks:
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -306,7 +308,7 @@ class TestTasks:
                 task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
                 main=[{"evaluate": {"foo": ["string"]}}],
-                name="name",
+                name="x",
             )
 
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `task_id` but received ''"):
@@ -314,7 +316,7 @@ class TestTasks:
                 task_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 main=[{"evaluate": {"foo": ["string"]}}],
-                name="name",
+                name="x",
             )
 
     @parametrize
@@ -364,7 +366,7 @@ class TestAsyncTasks:
         task = await async_client.tasks.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         )
         assert_matches_type(ResourceCreated, task, path=["response"])
 
@@ -378,7 +380,8 @@ class TestAsyncTasks:
                     "label": "label",
                 }
             ],
-            name="name",
+            name="x",
+            canonical_name="x",
             description="description",
             inherit_tools=True,
             input_schema={},
@@ -445,7 +448,7 @@ class TestAsyncTasks:
         response = await async_client.tasks.with_raw_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         )
 
         assert response.is_closed is True
@@ -458,7 +461,7 @@ class TestAsyncTasks:
         async with async_client.tasks.with_streaming_response.create(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -474,7 +477,7 @@ class TestAsyncTasks:
             await async_client.tasks.with_raw_response.create(
                 agent_id="",
                 main=[{"evaluate": {"foo": ["string"]}}],
-                name="name",
+                name="x",
             )
 
     @parametrize
@@ -532,7 +535,7 @@ class TestAsyncTasks:
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         )
         assert_matches_type(ResourceUpdated, task, path=["response"])
 
@@ -547,7 +550,8 @@ class TestAsyncTasks:
                     "label": "label",
                 }
             ],
-            name="name",
+            name="x",
+            canonical_name="x",
             description="description",
             inherit_tools=True,
             input_schema={},
@@ -615,7 +619,7 @@ class TestAsyncTasks:
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         )
 
         assert response.is_closed is True
@@ -629,7 +633,7 @@ class TestAsyncTasks:
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             main=[{"evaluate": {"foo": ["string"]}}],
-            name="name",
+            name="x",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -646,7 +650,7 @@ class TestAsyncTasks:
                 task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
                 main=[{"evaluate": {"foo": ["string"]}}],
-                name="name",
+                name="x",
             )
 
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `task_id` but received ''"):
@@ -654,7 +658,7 @@ class TestAsyncTasks:
                 task_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 main=[{"evaluate": {"foo": ["string"]}}],
-                name="name",
+                name="x",
             )
 
     @parametrize

@@ -17,13 +17,17 @@ class SessionCreateOrUpdateParams(TypedDict, total=False):
 
     context_overflow: Optional[Literal["truncate", "adaptive"]]
 
+    forward_tool_calls: bool
+
     metadata: Optional[object]
 
     recall_options: Optional[RecallOptions]
 
     render_templates: bool
 
-    situation: str
+    situation: Optional[str]
+
+    system_template: str
 
     token_budget: Optional[int]
 

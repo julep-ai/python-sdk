@@ -719,7 +719,7 @@ class TestJulep:
         with pytest.raises(APITimeoutError):
             self.client.post(
                 "/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                body=cast(object, dict(instructions=["Protect Leia", "Kick butt"], model="o1-preview", name="R2D2")),
+                body=cast(object, dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview")),
                 cast_to=httpx.Response,
                 options={"headers": {RAW_RESPONSE_HEADER: "stream"}},
             )
@@ -734,7 +734,7 @@ class TestJulep:
         with pytest.raises(APIStatusError):
             self.client.post(
                 "/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                body=cast(object, dict(instructions=["Protect Leia", "Kick butt"], model="o1-preview", name="R2D2")),
+                body=cast(object, dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview")),
                 cast_to=httpx.Response,
                 options={"headers": {RAW_RESPONSE_HEADER: "stream"}},
             )
@@ -767,7 +767,9 @@ class TestJulep:
 
         respx_mock.post("/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e").mock(side_effect=retry_handler)
 
-        response = client.agents.with_raw_response.create_or_update(agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e")
+        response = client.agents.with_raw_response.create_or_update(
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", name="x"
+        )
 
         assert response.retries_taken == failures_before_success
         assert int(response.http_request.headers.get("x-stainless-retry-count")) == failures_before_success
@@ -790,7 +792,7 @@ class TestJulep:
         respx_mock.post("/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e").mock(side_effect=retry_handler)
 
         response = client.agents.with_raw_response.create_or_update(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", extra_headers={"x-stainless-retry-count": Omit()}
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", name="x", extra_headers={"x-stainless-retry-count": Omit()}
         )
 
         assert len(response.http_request.headers.get_list("x-stainless-retry-count")) == 0
@@ -815,7 +817,7 @@ class TestJulep:
         respx_mock.post("/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e").mock(side_effect=retry_handler)
 
         response = client.agents.with_raw_response.create_or_update(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", extra_headers={"x-stainless-retry-count": "42"}
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", name="x", extra_headers={"x-stainless-retry-count": "42"}
         )
 
         assert response.http_request.headers.get("x-stainless-retry-count") == "42"
@@ -1505,7 +1507,7 @@ class TestAsyncJulep:
         with pytest.raises(APITimeoutError):
             await self.client.post(
                 "/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                body=cast(object, dict(instructions=["Protect Leia", "Kick butt"], model="o1-preview", name="R2D2")),
+                body=cast(object, dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview")),
                 cast_to=httpx.Response,
                 options={"headers": {RAW_RESPONSE_HEADER: "stream"}},
             )
@@ -1520,7 +1522,7 @@ class TestAsyncJulep:
         with pytest.raises(APIStatusError):
             await self.client.post(
                 "/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                body=cast(object, dict(instructions=["Protect Leia", "Kick butt"], model="o1-preview", name="R2D2")),
+                body=cast(object, dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview")),
                 cast_to=httpx.Response,
                 options={"headers": {RAW_RESPONSE_HEADER: "stream"}},
             )
@@ -1555,7 +1557,7 @@ class TestAsyncJulep:
         respx_mock.post("/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e").mock(side_effect=retry_handler)
 
         response = await client.agents.with_raw_response.create_or_update(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", name="x"
         )
 
         assert response.retries_taken == failures_before_success
@@ -1582,7 +1584,7 @@ class TestAsyncJulep:
         respx_mock.post("/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e").mock(side_effect=retry_handler)
 
         response = await client.agents.with_raw_response.create_or_update(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", extra_headers={"x-stainless-retry-count": Omit()}
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", name="x", extra_headers={"x-stainless-retry-count": Omit()}
         )
 
         assert len(response.http_request.headers.get_list("x-stainless-retry-count")) == 0
@@ -1608,7 +1610,7 @@ class TestAsyncJulep:
         respx_mock.post("/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e").mock(side_effect=retry_handler)
 
         response = await client.agents.with_raw_response.create_or_update(
-            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", extra_headers={"x-stainless-retry-count": "42"}
+            agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e", name="x", extra_headers={"x-stainless-retry-count": "42"}
         )
 
         assert response.http_request.headers.get("x-stainless-retry-count") == "42"

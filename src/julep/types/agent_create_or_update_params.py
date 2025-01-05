@@ -3,13 +3,17 @@
 from __future__ import annotations
 
 from typing import List, Union, Optional
-from typing_extensions import TypedDict
+from typing_extensions import Required, TypedDict
 
 __all__ = ["AgentCreateOrUpdateParams", "DefaultSettings"]
 
 
 class AgentCreateOrUpdateParams(TypedDict, total=False):
+    name: Required[str]
+
     about: str
+
+    canonical_name: Optional[str]
 
     default_settings: Optional[DefaultSettings]
     """Default settings for the chat session (also used by the agent)"""
@@ -19,8 +23,6 @@ class AgentCreateOrUpdateParams(TypedDict, total=False):
     metadata: Optional[object]
 
     model: str
-
-    name: str
 
 
 class DefaultSettings(TypedDict, total=False):

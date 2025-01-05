@@ -15,14 +15,6 @@ from .docs import (
     DocsResourceWithStreamingResponse,
     AsyncDocsResourceWithStreamingResponse,
 )
-from .tools import (
-    ToolsResource,
-    AsyncToolsResource,
-    ToolsResourceWithRawResponse,
-    AsyncToolsResourceWithRawResponse,
-    ToolsResourceWithStreamingResponse,
-    AsyncToolsResourceWithStreamingResponse,
-)
 from ...types import (
     agent_list_params,
     agent_patch_params,
@@ -55,10 +47,6 @@ __all__ = ["AgentsResource", "AsyncAgentsResource"]
 
 class AgentsResource(SyncAPIResource):
     @cached_property
-    def tools(self) -> ToolsResource:
-        return ToolsResource(self._client)
-
-    @cached_property
     def docs(self) -> DocsResource:
         return DocsResource(self._client)
 
@@ -84,12 +72,13 @@ class AgentsResource(SyncAPIResource):
     def create(
         self,
         *,
+        name: str,
         about: str | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_create_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -115,12 +104,13 @@ class AgentsResource(SyncAPIResource):
             "/agents",
             body=maybe_transform(
                 {
+                    "name": name,
                     "about": about,
+                    "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
-                    "name": name,
                 },
                 agent_create_params.AgentCreateParams,
             ),
@@ -134,12 +124,13 @@ class AgentsResource(SyncAPIResource):
         self,
         agent_id: str,
         *,
+        name: str,
         about: str | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -167,12 +158,13 @@ class AgentsResource(SyncAPIResource):
             f"/agents/{agent_id}",
             body=maybe_transform(
                 {
+                    "name": name,
                     "about": about,
+                    "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
-                    "name": name,
                 },
                 agent_update_params.AgentUpdateParams,
             ),
@@ -268,12 +260,13 @@ class AgentsResource(SyncAPIResource):
         self,
         agent_id: str,
         *,
+        name: str,
         about: str | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_create_or_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -301,12 +294,13 @@ class AgentsResource(SyncAPIResource):
             f"/agents/{agent_id}",
             body=maybe_transform(
                 {
+                    "name": name,
                     "about": about,
+                    "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
-                    "name": name,
                 },
                 agent_create_or_update_params.AgentCreateOrUpdateParams,
             ),
@@ -354,11 +348,12 @@ class AgentsResource(SyncAPIResource):
         agent_id: str,
         *,
         about: str | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_patch_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
+        name: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -387,6 +382,7 @@ class AgentsResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "about": about,
+                    "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
@@ -403,10 +399,6 @@ class AgentsResource(SyncAPIResource):
 
 
 class AsyncAgentsResource(AsyncAPIResource):
-    @cached_property
-    def tools(self) -> AsyncToolsResource:
-        return AsyncToolsResource(self._client)
-
     @cached_property
     def docs(self) -> AsyncDocsResource:
         return AsyncDocsResource(self._client)
@@ -433,12 +425,13 @@ class AsyncAgentsResource(AsyncAPIResource):
     async def create(
         self,
         *,
+        name: str,
         about: str | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_create_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -464,12 +457,13 @@ class AsyncAgentsResource(AsyncAPIResource):
             "/agents",
             body=await async_maybe_transform(
                 {
+                    "name": name,
                     "about": about,
+                    "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
-                    "name": name,
                 },
                 agent_create_params.AgentCreateParams,
             ),
@@ -483,12 +477,13 @@ class AsyncAgentsResource(AsyncAPIResource):
         self,
         agent_id: str,
         *,
+        name: str,
         about: str | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -516,12 +511,13 @@ class AsyncAgentsResource(AsyncAPIResource):
             f"/agents/{agent_id}",
             body=await async_maybe_transform(
                 {
+                    "name": name,
                     "about": about,
+                    "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
-                    "name": name,
                 },
                 agent_update_params.AgentUpdateParams,
             ),
@@ -617,12 +613,13 @@ class AsyncAgentsResource(AsyncAPIResource):
         self,
         agent_id: str,
         *,
+        name: str,
         about: str | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_create_or_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -650,12 +647,13 @@ class AsyncAgentsResource(AsyncAPIResource):
             f"/agents/{agent_id}",
             body=await async_maybe_transform(
                 {
+                    "name": name,
                     "about": about,
+                    "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
-                    "name": name,
                 },
                 agent_create_or_update_params.AgentCreateOrUpdateParams,
             ),
@@ -703,11 +701,12 @@ class AsyncAgentsResource(AsyncAPIResource):
         agent_id: str,
         *,
         about: str | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_patch_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
+        name: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -736,6 +735,7 @@ class AsyncAgentsResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "about": about,
+                    "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
@@ -778,10 +778,6 @@ class AgentsResourceWithRawResponse:
         )
 
     @cached_property
-    def tools(self) -> ToolsResourceWithRawResponse:
-        return ToolsResourceWithRawResponse(self._agents.tools)
-
-    @cached_property
     def docs(self) -> DocsResourceWithRawResponse:
         return DocsResourceWithRawResponse(self._agents.docs)
 
@@ -811,10 +807,6 @@ class AsyncAgentsResourceWithRawResponse:
         self.patch = async_to_raw_response_wrapper(
             agents.patch,
         )
-
-    @cached_property
-    def tools(self) -> AsyncToolsResourceWithRawResponse:
-        return AsyncToolsResourceWithRawResponse(self._agents.tools)
 
     @cached_property
     def docs(self) -> AsyncDocsResourceWithRawResponse:
@@ -848,10 +840,6 @@ class AgentsResourceWithStreamingResponse:
         )
 
     @cached_property
-    def tools(self) -> ToolsResourceWithStreamingResponse:
-        return ToolsResourceWithStreamingResponse(self._agents.tools)
-
-    @cached_property
     def docs(self) -> DocsResourceWithStreamingResponse:
         return DocsResourceWithStreamingResponse(self._agents.docs)
 
@@ -881,10 +869,6 @@ class AsyncAgentsResourceWithStreamingResponse:
         self.patch = async_to_streamed_response_wrapper(
             agents.patch,
         )
-
-    @cached_property
-    def tools(self) -> AsyncToolsResourceWithStreamingResponse:
-        return AsyncToolsResourceWithStreamingResponse(self._agents.tools)
 
     @cached_property
     def docs(self) -> AsyncDocsResourceWithStreamingResponse:
