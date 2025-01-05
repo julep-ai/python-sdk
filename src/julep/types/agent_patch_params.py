@@ -11,6 +11,8 @@ __all__ = ["AgentPatchParams", "DefaultSettings"]
 class AgentPatchParams(TypedDict, total=False):
     about: str
 
+    canonical_name: Optional[str]
+
     default_settings: Optional[DefaultSettings]
     """Default settings for the chat session (also used by the agent)"""
 
@@ -20,7 +22,7 @@ class AgentPatchParams(TypedDict, total=False):
 
     model: str
 
-    name: str
+    name: Optional[str]
 
 
 class DefaultSettings(TypedDict, total=False):
