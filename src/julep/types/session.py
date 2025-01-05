@@ -40,6 +40,8 @@ class Session(BaseModel):
 
     context_overflow: Optional[Literal["truncate", "adaptive"]] = None
 
+    forward_tool_calls: Optional[bool] = None
+
     kind: Optional[str] = None
 
     metadata: Optional[object] = None
@@ -51,5 +53,7 @@ class Session(BaseModel):
     situation: Optional[str] = None
 
     summary: Optional[str] = None
+
+    system_template: Optional[str] = None
 
     token_budget: Optional[int] = None
