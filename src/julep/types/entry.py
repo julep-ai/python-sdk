@@ -1981,7 +1981,7 @@ class Entry(BaseModel):
 
     source: Literal["api_request", "api_response", "tool_response", "internal", "summarizer", "meta"]
 
-    timestamp: float
+    timestamp: datetime
 
     token_count: int
 
