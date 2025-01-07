@@ -964,15 +964,15 @@ class MainPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallTextEditor2
 class MainPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall(TypedDict, total=False):
     function: Required[MainPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction]
 
-    api_call: Optional[object]
+    api_call: object
 
     bash_20241022: Optional[MainPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallBash20241022]
 
     computer_20241022: Optional[MainPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022]
 
-    integration: Optional[object]
+    integration: object
 
-    system: Optional[object]
+    system: object
 
     text_editor_20241022: Optional[MainPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022]
 
@@ -1126,21 +1126,21 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputComputer20241022
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(TypedDict, total=False):
-    description: Optional[object]
+    description: object
 
-    name: Optional[object]
+    name: object
 
     parameters: Optional[object]
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef(TypedDict, total=False):
-    arguments: Optional[object]
+    arguments: object
 
     method: Optional[str]
 
     provider: Literal["dummy"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDefArguments(
@@ -1267,7 +1267,7 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWikip
 
     provider: Literal["wikipedia"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments(
@@ -1701,7 +1701,7 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationFfmpe
 
     provider: Literal["ffmpeg"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
@@ -1812,7 +1812,7 @@ class MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationArxiv
 
     provider: Literal["arxiv"]
 
-    setup: Optional[object]
+    setup: object
 
 
 MainPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
@@ -2181,7 +2181,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ToolCallCh
         MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction
     ]
 
-    api_call: Optional[object]
+    api_call: object
 
     bash_20241022: Optional[
         MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
@@ -2191,9 +2191,9 @@ class MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ToolCallCh
         MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
     ]
 
-    integration: Optional[object]
+    integration: object
 
-    system: Optional[object]
+    system: object
 
     text_editor_20241022: Optional[
         MainIfElseWorkflowStepInputThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
@@ -2374,9 +2374,9 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
     TypedDict, total=False
 ):
-    description: Optional[object]
+    description: object
 
-    name: Optional[object]
+    name: object
 
     parameters: Optional[object]
 
@@ -2384,13 +2384,13 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Optional[object]
+    arguments: object
 
     method: Optional[str]
 
     provider: Literal["dummy"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDefArguments(
@@ -2527,7 +2527,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
     provider: Literal["wikipedia"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments(
@@ -2967,7 +2967,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
     provider: Literal["ffmpeg"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
@@ -3080,7 +3080,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolR
 
     provider: Literal["arxiv"]
 
-    setup: Optional[object]
+    setup: object
 
 
 MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
@@ -3479,7 +3479,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ToolCallCh
         MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction
     ]
 
-    api_call: Optional[object]
+    api_call: object
 
     bash_20241022: Optional[
         MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
@@ -3489,9 +3489,9 @@ class MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ToolCallCh
         MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
     ]
 
-    integration: Optional[object]
+    integration: object
 
-    system: Optional[object]
+    system: object
 
     text_editor_20241022: Optional[
         MainIfElseWorkflowStepInputElsePromptStepInputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
@@ -3672,9 +3672,9 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
     TypedDict, total=False
 ):
-    description: Optional[object]
+    description: object
 
-    name: Optional[object]
+    name: object
 
     parameters: Optional[object]
 
@@ -3682,13 +3682,13 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Optional[object]
+    arguments: object
 
     method: Optional[str]
 
     provider: Literal["dummy"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDefArguments(
@@ -3825,7 +3825,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
     provider: Literal["wikipedia"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments(
@@ -4265,7 +4265,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
     provider: Literal["ffmpeg"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
@@ -4378,7 +4378,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolR
 
     provider: Literal["arxiv"]
 
-    setup: Optional[object]
+    setup: object
 
 
 MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
@@ -4786,7 +4786,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCallChos
 class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall(TypedDict, total=False):
     function: Required[MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction]
 
-    api_call: Optional[object]
+    api_call: object
 
     bash_20241022: Optional[
         MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
@@ -4796,9 +4796,9 @@ class MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCallChos
         MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
     ]
 
-    integration: Optional[object]
+    integration: object
 
-    system: Optional[object]
+    system: object
 
     text_editor_20241022: Optional[
         MainSwitchStepInputSwitchThenPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
@@ -4977,9 +4977,9 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
     TypedDict, total=False
 ):
-    description: Optional[object]
+    description: object
 
-    name: Optional[object]
+    name: object
 
     parameters: Optional[object]
 
@@ -4987,13 +4987,13 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Optional[object]
+    arguments: object
 
     method: Optional[str]
 
     provider: Literal["dummy"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDefArguments(
@@ -5130,7 +5130,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
     provider: Literal["wikipedia"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments(
@@ -5570,7 +5570,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
     provider: Literal["ffmpeg"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
@@ -5683,7 +5683,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolReq
 
     provider: Literal["arxiv"]
 
-    setup: Optional[object]
+    setup: object
 
 
 MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
@@ -6094,7 +6094,7 @@ class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCallChos
 class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall(TypedDict, total=False):
     function: Required[MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction]
 
-    api_call: Optional[object]
+    api_call: object
 
     bash_20241022: Optional[
         MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
@@ -6104,9 +6104,9 @@ class MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCallChos
         MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
     ]
 
-    integration: Optional[object]
+    integration: object
 
-    system: Optional[object]
+    system: object
 
     text_editor_20241022: Optional[
         MainForeachStepInputForeachDoPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
@@ -6285,9 +6285,9 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
     TypedDict, total=False
 ):
-    description: Optional[object]
+    description: object
 
-    name: Optional[object]
+    name: object
 
     parameters: Optional[object]
 
@@ -6295,13 +6295,13 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Optional[object]
+    arguments: object
 
     method: Optional[str]
 
     provider: Literal["dummy"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDefArguments(
@@ -6438,7 +6438,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
     provider: Literal["wikipedia"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments(
@@ -6878,7 +6878,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
     provider: Literal["ffmpeg"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
@@ -6991,7 +6991,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolReq
 
     provider: Literal["arxiv"]
 
-    setup: Optional[object]
+    setup: object
 
 
 MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
@@ -7350,7 +7350,7 @@ class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCallChos
 class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall(TypedDict, total=False):
     function: Required[MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction]
 
-    api_call: Optional[object]
+    api_call: object
 
     bash_20241022: Optional[
         MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallBash20241022
@@ -7360,9 +7360,9 @@ class MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCallChos
         MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
     ]
 
-    integration: Optional[object]
+    integration: object
 
-    system: Optional[object]
+    system: object
 
     text_editor_20241022: Optional[
         MainParallelStepInputParallelPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
@@ -7541,9 +7541,9 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(
     TypedDict, total=False
 ):
-    description: Optional[object]
+    description: object
 
-    name: Optional[object]
+    name: object
 
     parameters: Optional[object]
 
@@ -7551,13 +7551,13 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Optional[object]
+    arguments: object
 
     method: Optional[str]
 
     provider: Literal["dummy"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDefArguments(
@@ -7694,7 +7694,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
     provider: Literal["wikipedia"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments(
@@ -8134,7 +8134,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
     provider: Literal["ffmpeg"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
@@ -8247,7 +8247,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolReq
 
     provider: Literal["arxiv"]
 
-    setup: Optional[object]
+    setup: object
 
 
 MainParallelStepInputParallelPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
@@ -8587,7 +8587,7 @@ class MainMainInputMapPromptStepInputPromptUnionMember0ToolCallChosenFunctionCal
 class MainMainInputMapPromptStepInputPromptUnionMember0ToolCallChosenFunctionCall(TypedDict, total=False):
     function: Required[MainMainInputMapPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallFunction]
 
-    api_call: Optional[object]
+    api_call: object
 
     bash_20241022: Optional[MainMainInputMapPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallBash20241022]
 
@@ -8595,9 +8595,9 @@ class MainMainInputMapPromptStepInputPromptUnionMember0ToolCallChosenFunctionCal
         MainMainInputMapPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallComputer20241022
     ]
 
-    integration: Optional[object]
+    integration: object
 
-    system: Optional[object]
+    system: object
 
     text_editor_20241022: Optional[
         MainMainInputMapPromptStepInputPromptUnionMember0ToolCallChosenFunctionCallTextEditor20241022
@@ -8759,9 +8759,9 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputComp
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputFunction(TypedDict, total=False):
-    description: Optional[object]
+    description: object
 
-    name: Optional[object]
+    name: object
 
     parameters: Optional[object]
 
@@ -8769,13 +8769,13 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputFunc
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationDummyIntegrationDef(
     TypedDict, total=False
 ):
-    arguments: Optional[object]
+    arguments: object
 
     method: Optional[str]
 
     provider: Literal["dummy"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationBraveIntegrationDefArguments(
@@ -8912,7 +8912,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 
     provider: Literal["wikipedia"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationWeatherIntegrationDefArguments(
@@ -9352,7 +9352,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 
     provider: Literal["ffmpeg"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegrationCloudinaryUploadIntegrationDefArguments(
@@ -9465,7 +9465,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputInte
 
     provider: Literal["arxiv"]
 
-    setup: Optional[object]
+    setup: object
 
 
 MainMainInputMapPromptStepInputToolsUnionMember1CreateToolRequestInputIntegration: TypeAlias = Union[
@@ -9704,21 +9704,21 @@ class ToolComputer20241022(TypedDict, total=False):
 
 
 class ToolFunction(TypedDict, total=False):
-    description: Optional[object]
+    description: object
 
-    name: Optional[object]
+    name: object
 
     parameters: Optional[object]
 
 
 class ToolIntegrationDummyIntegrationDef(TypedDict, total=False):
-    arguments: Optional[object]
+    arguments: object
 
     method: Optional[str]
 
     provider: Literal["dummy"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class ToolIntegrationBraveIntegrationDefArguments(TypedDict, total=False):
@@ -9820,7 +9820,7 @@ class ToolIntegrationWikipediaIntegrationDef(TypedDict, total=False):
 
     provider: Literal["wikipedia"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class ToolIntegrationWeatherIntegrationDefArguments(TypedDict, total=False):
@@ -10144,7 +10144,7 @@ class ToolIntegrationFfmpegIntegrationDef(TypedDict, total=False):
 
     provider: Literal["ffmpeg"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class ToolIntegrationCloudinaryUploadIntegrationDefArguments(TypedDict, total=False):
@@ -10231,7 +10231,7 @@ class ToolIntegrationArxivIntegrationDef(TypedDict, total=False):
 
     provider: Literal["arxiv"]
 
-    setup: Optional[object]
+    setup: object
 
 
 ToolIntegration: TypeAlias = Union[

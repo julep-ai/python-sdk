@@ -135,15 +135,15 @@ class ToolCallChosenFunctionCallTextEditor20241022(TypedDict, total=False):
 class ToolCallChosenFunctionCall(TypedDict, total=False):
     function: Required[ToolCallChosenFunctionCallFunction]
 
-    api_call: Optional[object]
+    api_call: object
 
     bash_20241022: Optional[ToolCallChosenFunctionCallBash20241022]
 
     computer_20241022: Optional[ToolCallChosenFunctionCallComputer20241022]
 
-    integration: Optional[object]
+    integration: object
 
-    system: Optional[object]
+    system: object
 
     text_editor_20241022: Optional[ToolCallChosenFunctionCallTextEditor20241022]
 

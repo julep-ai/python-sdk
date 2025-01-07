@@ -15,4 +15,4 @@ class ExecutionCreateParams(TypedDict, total=False):
 
     metadata: Optional[object]
 
-    output: Optional[object]
+    output: object
