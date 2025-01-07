@@ -199,21 +199,21 @@ class ToolComputer20241022(TypedDict, total=False):
 
 
 class ToolFunction(TypedDict, total=False):
-    description: Optional[object]
+    description: object
 
-    name: Optional[object]
+    name: object
 
     parameters: Optional[object]
 
 
 class ToolIntegrationDummyIntegrationDef(TypedDict, total=False):
-    arguments: Optional[object]
+    arguments: object
 
     method: Optional[str]
 
     provider: Literal["dummy"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class ToolIntegrationBraveIntegrationDefArguments(TypedDict, total=False):
@@ -315,7 +315,7 @@ class ToolIntegrationWikipediaIntegrationDef(TypedDict, total=False):
 
     provider: Literal["wikipedia"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class ToolIntegrationWeatherIntegrationDefArguments(TypedDict, total=False):
@@ -639,7 +639,7 @@ class ToolIntegrationFfmpegIntegrationDef(TypedDict, total=False):
 
     provider: Literal["ffmpeg"]
 
-    setup: Optional[object]
+    setup: object
 
 
 class ToolIntegrationCloudinaryUploadIntegrationDefArguments(TypedDict, total=False):
@@ -726,7 +726,7 @@ class ToolIntegrationArxivIntegrationDef(TypedDict, total=False):
 
     provider: Literal["arxiv"]
 
-    setup: Optional[object]
+    setup: object
 
 
 ToolIntegration: TypeAlias = Union[
