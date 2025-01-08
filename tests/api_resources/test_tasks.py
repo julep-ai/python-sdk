@@ -39,7 +39,7 @@ class TestTasks:
                 }
             ],
             name="x",
-            canonical_name="x",
+            canonical_name="canonical_name",
             description="description",
             inherit_tools=True,
             input_schema={},
@@ -209,7 +209,7 @@ class TestTasks:
                 }
             ],
             name="x",
-            canonical_name="x",
+            canonical_name="canonical_name",
             description="description",
             inherit_tools=True,
             input_schema={},
@@ -381,7 +381,7 @@ class TestAsyncTasks:
                 }
             ],
             name="x",
-            canonical_name="x",
+            canonical_name="canonical_name",
             description="description",
             inherit_tools=True,
             input_schema={},
@@ -551,7 +551,7 @@ class TestAsyncTasks:
                 }
             ],
             name="x",
-            canonical_name="x",
+            canonical_name="canonical_name",
             description="description",
             inherit_tools=True,
             input_schema={},

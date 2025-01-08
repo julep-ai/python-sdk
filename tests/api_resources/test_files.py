@@ -22,7 +22,7 @@ class TestFiles:
     def test_method_create(self, client: Julep) -> None:
         file = client.files.create(
             content="content",
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceCreated, file, path=["response"])
 
@@ -30,7 +30,7 @@ class TestFiles:
     def test_method_create_with_all_params(self, client: Julep) -> None:
         file = client.files.create(
             content="content",
-            name="name",
+            name="recNPna{}ip}t",
             description="description",
             mime_type="mime_type",
         )
@@ -40,7 +40,7 @@ class TestFiles:
     def test_raw_response_create(self, client: Julep) -> None:
         response = client.files.with_raw_response.create(
             content="content",
-            name="name",
+            name="recNPna{}ip}t",
         )
 
         assert response.is_closed is True
@@ -52,7 +52,7 @@ class TestFiles:
     def test_streaming_response_create(self, client: Julep) -> None:
         with client.files.with_streaming_response.create(
             content="content",
-            name="name",
+            name="recNPna{}ip}t",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -146,7 +146,7 @@ class TestAsyncFiles:
     async def test_method_create(self, async_client: AsyncJulep) -> None:
         file = await async_client.files.create(
             content="content",
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceCreated, file, path=["response"])
 
@@ -154,7 +154,7 @@ class TestAsyncFiles:
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
         file = await async_client.files.create(
             content="content",
-            name="name",
+            name="recNPna{}ip}t",
             description="description",
             mime_type="mime_type",
         )
@@ -164,7 +164,7 @@ class TestAsyncFiles:
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
         response = await async_client.files.with_raw_response.create(
             content="content",
-            name="name",
+            name="recNPna{}ip}t",
         )
 
         assert response.is_closed is True
@@ -176,7 +176,7 @@ class TestAsyncFiles:
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
         async with async_client.files.with_streaming_response.create(
             content="content",
-            name="name",
+            name="recNPna{}ip}t",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
