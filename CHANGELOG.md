@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.48.1 (2025-01-08)
+
+Full Changelog: [v1.48.0...v1.48.1](https://github.com/julep-ai/python-sdk/compare/v1.48.0...v1.48.1)
+
+### Bug Fixes
+
+* **client:** only call .close() when needed ([#228](https://github.com/julep-ai/python-sdk/issues/228)) ([520a500](https://github.com/julep-ai/python-sdk/commit/520a500e23414b91dba825175418101c517206ec))
+
+
+### Chores
+
+* add missing isclass check ([#225](https://github.com/julep-ai/python-sdk/issues/225)) ([ca9c559](https://github.com/julep-ai/python-sdk/commit/ca9c559a1b0818a87dd20dee2e3d1575a302535a))
+* **client:** simplify `Optional[object]` to just `object` ([#223](https://github.com/julep-ai/python-sdk/issues/223)) ([432e8a2](https://github.com/julep-ai/python-sdk/commit/432e8a2d35179669a693793b487b8d4a05ff2296))
+* **internal:** bump httpx dependency ([#226](https://github.com/julep-ai/python-sdk/issues/226)) ([76d94df](https://github.com/julep-ai/python-sdk/commit/76d94dfb60d4b79bc62af019f25d39b6e4293748))
+* **internal:** update examples ([#227](https://github.com/julep-ai/python-sdk/issues/227)) ([ac2fa0c](https://github.com/julep-ai/python-sdk/commit/ac2fa0cb21ca92c1f8af700a35e8b4b91f430d4e))
+
 ## 1.48.0 (2025-01-05)
 
 Full Changelog: [v1.47.0...v1.48.0](https://github.com/julep-ai/python-sdk/compare/v1.47.0...v1.48.0)
