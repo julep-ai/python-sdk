@@ -33,7 +33,7 @@ class TestAgents:
         agent = client.agents.create(
             name="x",
             about="about",
-            canonical_name="x",
+            canonical_name="canonical_name",
             default_settings={
                 "frequency_penalty": -2,
                 "length_penalty": 0,
@@ -87,7 +87,7 @@ class TestAgents:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="x",
             about="about",
-            canonical_name="x",
+            canonical_name="canonical_name",
             default_settings={
                 "frequency_penalty": -2,
                 "length_penalty": 0,
@@ -225,7 +225,7 @@ class TestAgents:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="x",
             about="about",
-            canonical_name="x",
+            canonical_name="canonical_name",
             default_settings={
                 "frequency_penalty": -2,
                 "length_penalty": 0,
@@ -325,7 +325,7 @@ class TestAgents:
         agent = client.agents.patch(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
-            canonical_name="x",
+            canonical_name="canonical_name",
             default_settings={
                 "frequency_penalty": -2,
                 "length_penalty": 0,
@@ -389,7 +389,7 @@ class TestAsyncAgents:
         agent = await async_client.agents.create(
             name="x",
             about="about",
-            canonical_name="x",
+            canonical_name="canonical_name",
             default_settings={
                 "frequency_penalty": -2,
                 "length_penalty": 0,
@@ -443,7 +443,7 @@ class TestAsyncAgents:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="x",
             about="about",
-            canonical_name="x",
+            canonical_name="canonical_name",
             default_settings={
                 "frequency_penalty": -2,
                 "length_penalty": 0,
@@ -581,7 +581,7 @@ class TestAsyncAgents:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="x",
             about="about",
-            canonical_name="x",
+            canonical_name="canonical_name",
             default_settings={
                 "frequency_penalty": -2,
                 "length_penalty": 0,
@@ -681,7 +681,7 @@ class TestAsyncAgents:
         agent = await async_client.agents.patch(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
-            canonical_name="x",
+            canonical_name="canonical_name",
             default_settings={
                 "frequency_penalty": -2,
                 "length_penalty": 0,
