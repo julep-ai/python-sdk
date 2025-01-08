@@ -31,7 +31,7 @@ class TestUsers:
         user = client.users.create(
             about="about",
             metadata={},
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceCreated, user, path=["response"])
 
@@ -68,7 +68,7 @@ class TestUsers:
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
@@ -190,7 +190,7 @@ class TestUsers:
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceCreated, user, path=["response"])
 
@@ -276,7 +276,7 @@ class TestUsers:
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
@@ -325,7 +325,7 @@ class TestAsyncUsers:
         user = await async_client.users.create(
             about="about",
             metadata={},
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceCreated, user, path=["response"])
 
@@ -362,7 +362,7 @@ class TestAsyncUsers:
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
@@ -484,7 +484,7 @@ class TestAsyncUsers:
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceCreated, user, path=["response"])
 
@@ -570,7 +570,7 @@ class TestAsyncUsers:
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
-            name="name",
+            name="recNPna{}ip}t",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
