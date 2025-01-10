@@ -85,6 +85,8 @@ __all__ = [
 class SessionChatParams(TypedDict, total=False):
     messages: Required[Iterable[MessageParam]]
 
+    connection_pool: object
+
     agent: Optional[str]
 
     frequency_penalty: Optional[float]
