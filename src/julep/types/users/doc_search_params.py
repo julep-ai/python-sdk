@@ -11,6 +11,8 @@ __all__ = ["DocSearchParams", "TextOnlyDocSearchRequest", "VectorDocSearchReques
 class TextOnlyDocSearchRequest(TypedDict, total=False):
     text: Required[str]
 
+    connection_pool: object
+
     lang: Literal["en-US"]
 
     limit: int
@@ -22,6 +24,8 @@ class TextOnlyDocSearchRequest(TypedDict, total=False):
 
 class VectorDocSearchRequest(TypedDict, total=False):
     vector: Required[Iterable[float]]
+
+    connection_pool: object
 
     confidence: float
 
@@ -38,6 +42,8 @@ class HybridDocSearchRequest(TypedDict, total=False):
     text: Required[str]
 
     vector: Required[Iterable[float]]
+
+    connection_pool: object
 
     alpha: float
 
