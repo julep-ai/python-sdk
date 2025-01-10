@@ -266,6 +266,7 @@ class SessionsResource(SyncAPIResource):
         session_id: str,
         *,
         messages: Iterable[MessageParam],
+        connection_pool: object | NotGiven = NOT_GIVEN,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
         frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
@@ -346,7 +347,11 @@ class SessionsResource(SyncAPIResource):
                     session_chat_params.SessionChatParams,
                 ),
                 options=make_request_options(
-                    extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+                    extra_headers=extra_headers,
+                    extra_query=extra_query,
+                    extra_body=extra_body,
+                    timeout=timeout,
+                    query=maybe_transform({"connection_pool": connection_pool}, session_chat_params.SessionChatParams),
                 ),
                 cast_to=cast(
                     Any, SessionChatResponse
@@ -765,6 +770,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         session_id: str,
         *,
         messages: Iterable[MessageParam],
+        connection_pool: object | NotGiven = NOT_GIVEN,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
         frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
@@ -845,7 +851,13 @@ class AsyncSessionsResource(AsyncAPIResource):
                     session_chat_params.SessionChatParams,
                 ),
                 options=make_request_options(
-                    extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+                    extra_headers=extra_headers,
+                    extra_query=extra_query,
+                    extra_body=extra_body,
+                    timeout=timeout,
+                    query=await async_maybe_transform(
+                        {"connection_pool": connection_pool}, session_chat_params.SessionChatParams
+                    ),
                 ),
                 cast_to=cast(
                     Any, SessionChatResponse
