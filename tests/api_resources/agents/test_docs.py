@@ -35,6 +35,7 @@ class TestDocs:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             content="string",
             title="title",
+            connection_pool={},
             embed_instruction="embed_instruction",
             metadata={},
         )
@@ -188,6 +189,7 @@ class TestDocs:
         doc = client.agents.docs.search(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
+            connection_pool={},
             lang="en-US",
             limit=1,
             metadata_filter={},
@@ -242,6 +244,7 @@ class TestDocs:
         doc = client.agents.docs.search(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             vector=[0],
+            connection_pool={},
             confidence=0,
             lang="en-US",
             limit=1,
@@ -299,6 +302,7 @@ class TestDocs:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
             vector=[0],
+            connection_pool={},
             alpha=0,
             confidence=0,
             lang="en-US",
@@ -364,6 +368,7 @@ class TestAsyncDocs:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             content="string",
             title="title",
+            connection_pool={},
             embed_instruction="embed_instruction",
             metadata={},
         )
@@ -517,6 +522,7 @@ class TestAsyncDocs:
         doc = await async_client.agents.docs.search(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
+            connection_pool={},
             lang="en-US",
             limit=1,
             metadata_filter={},
@@ -571,6 +577,7 @@ class TestAsyncDocs:
         doc = await async_client.agents.docs.search(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             vector=[0],
+            connection_pool={},
             confidence=0,
             lang="en-US",
             limit=1,
@@ -628,6 +635,7 @@ class TestAsyncDocs:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
             vector=[0],
+            connection_pool={},
             alpha=0,
             confidence=0,
             lang="en-US",
