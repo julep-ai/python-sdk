@@ -15,6 +15,14 @@ from .docs import (
     DocsResourceWithStreamingResponse,
     AsyncDocsResourceWithStreamingResponse,
 )
+from .tools import (
+    ToolsResource,
+    AsyncToolsResource,
+    ToolsResourceWithRawResponse,
+    AsyncToolsResourceWithRawResponse,
+    ToolsResourceWithStreamingResponse,
+    AsyncToolsResourceWithStreamingResponse,
+)
 from ...types import (
     agent_list_params,
     agent_patch_params,
@@ -46,6 +54,10 @@ __all__ = ["AgentsResource", "AsyncAgentsResource"]
 
 
 class AgentsResource(SyncAPIResource):
+    @cached_property
+    def tools(self) -> ToolsResource:
+        return ToolsResource(self._client)
+
     @cached_property
     def docs(self) -> DocsResource:
         return DocsResource(self._client)
@@ -399,6 +411,10 @@ class AgentsResource(SyncAPIResource):
 
 
 class AsyncAgentsResource(AsyncAPIResource):
+    @cached_property
+    def tools(self) -> AsyncToolsResource:
+        return AsyncToolsResource(self._client)
+
     @cached_property
     def docs(self) -> AsyncDocsResource:
         return AsyncDocsResource(self._client)
@@ -778,6 +794,10 @@ class AgentsResourceWithRawResponse:
         )
 
     @cached_property
+    def tools(self) -> ToolsResourceWithRawResponse:
+        return ToolsResourceWithRawResponse(self._agents.tools)
+
+    @cached_property
     def docs(self) -> DocsResourceWithRawResponse:
         return DocsResourceWithRawResponse(self._agents.docs)
 
@@ -807,6 +827,10 @@ class AsyncAgentsResourceWithRawResponse:
         self.patch = async_to_raw_response_wrapper(
             agents.patch,
         )
+
+    @cached_property
+    def tools(self) -> AsyncToolsResourceWithRawResponse:
+        return AsyncToolsResourceWithRawResponse(self._agents.tools)
 
     @cached_property
     def docs(self) -> AsyncDocsResourceWithRawResponse:
@@ -840,6 +864,10 @@ class AgentsResourceWithStreamingResponse:
         )
 
     @cached_property
+    def tools(self) -> ToolsResourceWithStreamingResponse:
+        return ToolsResourceWithStreamingResponse(self._agents.tools)
+
+    @cached_property
     def docs(self) -> DocsResourceWithStreamingResponse:
         return DocsResourceWithStreamingResponse(self._agents.docs)
 
@@ -869,6 +897,10 @@ class AsyncAgentsResourceWithStreamingResponse:
         self.patch = async_to_streamed_response_wrapper(
             agents.patch,
         )
+
+    @cached_property
+    def tools(self) -> AsyncToolsResourceWithStreamingResponse:
+        return AsyncToolsResourceWithStreamingResponse(self._agents.tools)
 
     @cached_property
     def docs(self) -> AsyncDocsResourceWithStreamingResponse:
