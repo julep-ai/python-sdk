@@ -3,14 +3,12 @@
 from __future__ import annotations
 
 from typing import List, Union, Optional
-from typing_extensions import Required, TypedDict
+from typing_extensions import TypedDict
 
 __all__ = ["AgentUpdateParams", "DefaultSettings"]
 
 
 class AgentUpdateParams(TypedDict, total=False):
-    name: Required[str]
-
     about: str
 
     canonical_name: Optional[str]
@@ -23,6 +21,8 @@ class AgentUpdateParams(TypedDict, total=False):
     metadata: Optional[object]
 
     model: str
+
+    name: Optional[str]
 
 
 class DefaultSettings(TypedDict, total=False):

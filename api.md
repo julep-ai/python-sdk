@@ -15,12 +15,12 @@ from julep.types import Agent
 Methods:
 
 - <code title="post /agents">client.agents.<a href="./src/julep/resources/agents/agents.py">create</a>(\*\*<a href="src/julep/types/agent_create_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_created.py">ResourceCreated</a></code>
-- <code title="put /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">update</a>(agent_id, \*\*<a href="src/julep/types/agent_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
+- <code title="patch /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">update</a>(agent_id, \*\*<a href="src/julep/types/agent_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
 - <code title="get /agents">client.agents.<a href="./src/julep/resources/agents/agents.py">list</a>(\*\*<a href="src/julep/types/agent_list_params.py">params</a>) -> <a href="./src/julep/types/agent.py">SyncOffsetPagination[Agent]</a></code>
 - <code title="delete /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">delete</a>(agent_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
 - <code title="post /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">create_or_update</a>(agent_id, \*\*<a href="src/julep/types/agent_create_or_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_created.py">ResourceCreated</a></code>
 - <code title="get /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">get</a>(agent_id) -> <a href="./src/julep/types/agent.py">Agent</a></code>
-- <code title="patch /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">patch</a>(agent_id, \*\*<a href="src/julep/types/agent_patch_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
+- <code title="put /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">reset</a>(agent_id, \*\*<a href="src/julep/types/agent_reset_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
 
 ## Tools
 
@@ -33,10 +33,10 @@ from julep.types.agents import ToolListResponse
 Methods:
 
 - <code title="post /agents/{agent_id}/tools">client.agents.tools.<a href="./src/julep/resources/agents/tools.py">create</a>(agent_id, \*\*<a href="src/julep/types/agents/tool_create_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_created.py">ResourceCreated</a></code>
-- <code title="put /agents/{agent_id}/tools/{tool_id}">client.agents.tools.<a href="./src/julep/resources/agents/tools.py">update</a>(tool_id, \*, agent_id, \*\*<a href="src/julep/types/agents/tool_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
+- <code title="patch /agents/{agent_id}/tools/{tool_id}">client.agents.tools.<a href="./src/julep/resources/agents/tools.py">update</a>(tool_id, \*, agent_id, \*\*<a href="src/julep/types/agents/tool_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
 - <code title="get /agents/{agent_id}/tools">client.agents.tools.<a href="./src/julep/resources/agents/tools.py">list</a>(agent_id, \*\*<a href="src/julep/types/agents/tool_list_params.py">params</a>) -> <a href="./src/julep/types/agents/tool_list_response.py">SyncOffsetPagination[ToolListResponse]</a></code>
 - <code title="delete /agents/{agent_id}/tools/{tool_id}">client.agents.tools.<a href="./src/julep/resources/agents/tools.py">delete</a>(tool_id, \*, agent_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
-- <code title="patch /agents/{agent_id}/tools/{tool_id}">client.agents.tools.<a href="./src/julep/resources/agents/tools.py">patch</a>(tool_id, \*, agent_id, \*\*<a href="src/julep/types/agents/tool_patch_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
+- <code title="put /agents/{agent_id}/tools/{tool_id}">client.agents.tools.<a href="./src/julep/resources/agents/tools.py">reset</a>(tool_id, \*, agent_id, \*\*<a href="src/julep/types/agents/tool_reset_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
 
 ## Docs
 
@@ -87,14 +87,14 @@ from julep.types import (
 Methods:
 
 - <code title="post /sessions">client.sessions.<a href="./src/julep/resources/sessions.py">create</a>(\*\*<a href="src/julep/types/session_create_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_created.py">ResourceCreated</a></code>
-- <code title="put /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">update</a>(session_id, \*\*<a href="src/julep/types/session_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
+- <code title="patch /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">update</a>(session_id, \*\*<a href="src/julep/types/session_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
 - <code title="get /sessions">client.sessions.<a href="./src/julep/resources/sessions.py">list</a>(\*\*<a href="src/julep/types/session_list_params.py">params</a>) -> <a href="./src/julep/types/session.py">SyncOffsetPagination[Session]</a></code>
 - <code title="delete /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">delete</a>(session_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
 - <code title="post /sessions/{session_id}/chat">client.sessions.<a href="./src/julep/resources/sessions.py">chat</a>(session_id, \*\*<a href="src/julep/types/session_chat_params.py">params</a>) -> <a href="./src/julep/types/session_chat_response.py">SessionChatResponse</a></code>
 - <code title="post /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">create_or_update</a>(session_id, \*\*<a href="src/julep/types/session_create_or_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
 - <code title="get /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">get</a>(session_id) -> <a href="./src/julep/types/session.py">Session</a></code>
 - <code title="get /sessions/{session_id}/history">client.sessions.<a href="./src/julep/resources/sessions.py">history</a>(session_id) -> <a href="./src/julep/types/history.py">History</a></code>
-- <code title="patch /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">patch</a>(session_id, \*\*<a href="src/julep/types/session_patch_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
+- <code title="put /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">reset</a>(session_id, \*\*<a href="src/julep/types/session_reset_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
 
 # Users
 
@@ -107,12 +107,12 @@ from julep.types import User
 Methods:
 
 - <code title="post /users">client.users.<a href="./src/julep/resources/users/users.py">create</a>(\*\*<a href="src/julep/types/user_create_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_created.py">ResourceCreated</a></code>
-- <code title="put /users/{user_id}">client.users.<a href="./src/julep/resources/users/users.py">update</a>(user_id, \*\*<a href="src/julep/types/user_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
+- <code title="patch /users/{user_id}">client.users.<a href="./src/julep/resources/users/users.py">update</a>(user_id, \*\*<a href="src/julep/types/user_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
 - <code title="get /users">client.users.<a href="./src/julep/resources/users/users.py">list</a>(\*\*<a href="src/julep/types/user_list_params.py">params</a>) -> <a href="./src/julep/types/user.py">SyncOffsetPagination[User]</a></code>
 - <code title="delete /users/{user_id}">client.users.<a href="./src/julep/resources/users/users.py">delete</a>(user_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
 - <code title="post /users/{user_id}">client.users.<a href="./src/julep/resources/users/users.py">create_or_update</a>(user_id, \*\*<a href="src/julep/types/user_create_or_update_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_created.py">ResourceCreated</a></code>
 - <code title="get /users/{user_id}">client.users.<a href="./src/julep/resources/users/users.py">get</a>(user_id) -> <a href="./src/julep/types/user.py">User</a></code>
-- <code title="patch /users/{user_id}">client.users.<a href="./src/julep/resources/users/users.py">patch</a>(user_id, \*\*<a href="src/julep/types/user_patch_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
+- <code title="put /users/{user_id}">client.users.<a href="./src/julep/resources/users/users.py">reset</a>(user_id, \*\*<a href="src/julep/types/user_reset_params.py">params</a>) -> <a href="./src/julep/types/shared/resource_updated.py">ResourceUpdated</a></code>
 
 ## Docs
 

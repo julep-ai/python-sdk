@@ -26,8 +26,8 @@ from .doc_embed_params import DocEmbedParams as DocEmbedParams
 from .task_list_params import TaskListParams as TaskListParams
 from .user_list_params import UserListParams as UserListParams
 from .agent_list_params import AgentListParams as AgentListParams
-from .user_patch_params import UserPatchParams as UserPatchParams
-from .agent_patch_params import AgentPatchParams as AgentPatchParams
+from .user_reset_params import UserResetParams as UserResetParams
+from .agent_reset_params import AgentResetParams as AgentResetParams
 from .file_create_params import FileCreateParams as FileCreateParams
 from .task_create_params import TaskCreateParams as TaskCreateParams
 from .user_create_params import UserCreateParams as UserCreateParams
@@ -38,7 +38,7 @@ from .chat_settings_param import ChatSettingsParam as ChatSettingsParam
 from .session_chat_params import SessionChatParams as SessionChatParams
 from .session_list_params import SessionListParams as SessionListParams
 from .embed_query_response import EmbedQueryResponse as EmbedQueryResponse
-from .session_patch_params import SessionPatchParams as SessionPatchParams
+from .session_reset_params import SessionResetParams as SessionResetParams
 from .execution_list_params import ExecutionListParams as ExecutionListParams
 from .session_chat_response import SessionChatResponse as SessionChatResponse
 from .session_create_params import SessionCreateParams as SessionCreateParams

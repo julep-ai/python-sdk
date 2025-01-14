@@ -14,61 +14,61 @@ __all__ = [
     "Computer20241022",
     "Function",
     "Integration",
-    "IntegrationDummyIntegrationDef",
-    "IntegrationBraveIntegrationDef",
-    "IntegrationBraveIntegrationDefArguments",
-    "IntegrationBraveIntegrationDefSetup",
-    "IntegrationEmailIntegrationDef",
-    "IntegrationEmailIntegrationDefArguments",
-    "IntegrationEmailIntegrationDefSetup",
-    "IntegrationSpiderIntegrationDefInput",
-    "IntegrationSpiderIntegrationDefInputArguments",
-    "IntegrationSpiderIntegrationDefInputSetup",
-    "IntegrationWikipediaIntegrationDef",
-    "IntegrationWikipediaIntegrationDefArguments",
-    "IntegrationWeatherIntegrationDef",
-    "IntegrationWeatherIntegrationDefArguments",
-    "IntegrationWeatherIntegrationDefSetup",
-    "IntegrationBrowserbaseContextIntegrationDef",
-    "IntegrationBrowserbaseContextIntegrationDefArguments",
-    "IntegrationBrowserbaseContextIntegrationDefSetup",
-    "IntegrationBrowserbaseExtensionIntegrationDef",
-    "IntegrationBrowserbaseExtensionIntegrationDefArguments",
-    "IntegrationBrowserbaseExtensionIntegrationDefSetup",
-    "IntegrationBrowserbaseListSessionsIntegrationDef",
-    "IntegrationBrowserbaseListSessionsIntegrationDefArguments",
-    "IntegrationBrowserbaseListSessionsIntegrationDefSetup",
-    "IntegrationBrowserbaseCreateSessionIntegrationDef",
-    "IntegrationBrowserbaseCreateSessionIntegrationDefArguments",
-    "IntegrationBrowserbaseCreateSessionIntegrationDefSetup",
-    "IntegrationBrowserbaseGetSessionIntegrationDef",
-    "IntegrationBrowserbaseGetSessionIntegrationDefArguments",
-    "IntegrationBrowserbaseGetSessionIntegrationDefSetup",
-    "IntegrationBrowserbaseCompleteSessionIntegrationDef",
-    "IntegrationBrowserbaseCompleteSessionIntegrationDefArguments",
-    "IntegrationBrowserbaseCompleteSessionIntegrationDefSetup",
-    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
-    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
-    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
-    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
-    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
-    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
-    "IntegrationRemoteBrowserIntegrationDef",
-    "IntegrationRemoteBrowserIntegrationDefSetup",
-    "IntegrationRemoteBrowserIntegrationDefArguments",
-    "IntegrationLlamaParseIntegrationDef",
-    "IntegrationLlamaParseIntegrationDefArguments",
-    "IntegrationLlamaParseIntegrationDefSetup",
-    "IntegrationFfmpegIntegrationDef",
-    "IntegrationFfmpegIntegrationDefArguments",
-    "IntegrationCloudinaryUploadIntegrationDef",
-    "IntegrationCloudinaryUploadIntegrationDefArguments",
-    "IntegrationCloudinaryUploadIntegrationDefSetup",
-    "IntegrationCloudinaryEditIntegrationDef",
-    "IntegrationCloudinaryEditIntegrationDefArguments",
-    "IntegrationCloudinaryEditIntegrationDefSetup",
-    "IntegrationArxivIntegrationDef",
-    "IntegrationArxivIntegrationDefArguments",
+    "IntegrationDummyIntegrationDefUpdate",
+    "IntegrationBraveIntegrationDefUpdate",
+    "IntegrationBraveIntegrationDefUpdateArguments",
+    "IntegrationBraveIntegrationDefUpdateSetup",
+    "IntegrationEmailIntegrationDefUpdate",
+    "IntegrationEmailIntegrationDefUpdateArguments",
+    "IntegrationEmailIntegrationDefUpdateSetup",
+    "IntegrationSpiderIntegrationDefUpdate",
+    "IntegrationSpiderIntegrationDefUpdateArguments",
+    "IntegrationSpiderIntegrationDefUpdateSetup",
+    "IntegrationWikipediaIntegrationDefUpdate",
+    "IntegrationWikipediaIntegrationDefUpdateArguments",
+    "IntegrationWeatherIntegrationDefUpdate",
+    "IntegrationWeatherIntegrationDefUpdateArguments",
+    "IntegrationWeatherIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseContextIntegrationDefUpdate",
+    "IntegrationBrowserbaseContextIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseContextIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseExtensionIntegrationDefUpdate",
+    "IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseExtensionIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseListSessionsIntegrationDefUpdate",
+    "IntegrationBrowserbaseListSessionsIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseListSessionsIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefUpdate",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseCreateSessionIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseGetSessionIntegrationDefUpdate",
+    "IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseGetSessionIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseCompleteSessionIntegrationDefUpdate",
+    "IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate",
+    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup",
+    "IntegrationRemoteBrowserIntegrationDefUpdate",
+    "IntegrationRemoteBrowserIntegrationDefUpdateArguments",
+    "IntegrationRemoteBrowserIntegrationDefUpdateSetup",
+    "IntegrationLlamaParseIntegrationDefUpdate",
+    "IntegrationLlamaParseIntegrationDefUpdateArguments",
+    "IntegrationLlamaParseIntegrationDefUpdateSetup",
+    "IntegrationFfmpegIntegrationDefUpdate",
+    "IntegrationFfmpegIntegrationDefUpdateArguments",
+    "IntegrationCloudinaryUploadIntegrationDefUpdate",
+    "IntegrationCloudinaryUploadIntegrationDefUpdateArguments",
+    "IntegrationCloudinaryUploadIntegrationDefUpdateSetup",
+    "IntegrationCloudinaryEditIntegrationDefUpdate",
+    "IntegrationCloudinaryEditIntegrationDefUpdateArguments",
+    "IntegrationCloudinaryEditIntegrationDefUpdateSetup",
+    "IntegrationArxivIntegrationDefUpdate",
+    "IntegrationArxivIntegrationDefUpdateArguments",
     "System",
     "TextEditor20241022",
 ]
@@ -76,20 +76,6 @@ __all__ = [
 
 class ToolUpdateParams(TypedDict, total=False):
     agent_id: Required[str]
-
-    name: Required[str]
-
-    type: Required[
-        Literal[
-            "function",
-            "integration",
-            "system",
-            "api_call",
-            "computer_20241022",
-            "text_editor_20241022",
-            "bash_20241022",
-        ]
-    ]
 
     api_call: Optional[APICall]
     """API call definition"""
@@ -107,17 +93,27 @@ class ToolUpdateParams(TypedDict, total=False):
     integration: Optional[Integration]
     """Brave integration definition"""
 
+    name: Optional[str]
+
     system: Optional[System]
     """System definition"""
 
     text_editor_20241022: Optional[TextEditor20241022]
 
+    type: Optional[
+        Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ]
+    ]
+
 
 class APICall(TypedDict, total=False):
-    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
-
-    url: Required[str]
-
     content: Optional[str]
 
     cookies: Optional[Dict[str, str]]
@@ -132,11 +128,15 @@ class APICall(TypedDict, total=False):
 
     json: Optional[object]
 
+    method: Optional[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
     params: Union[str, object, None]
 
     schema: Optional[object]
 
     timeout: Optional[int]
+
+    url: Optional[str]
 
 
 class Bash20241022(TypedDict, total=False):
@@ -165,7 +165,7 @@ class Function(TypedDict, total=False):
     parameters: Optional[object]
 
 
-class IntegrationDummyIntegrationDef(TypedDict, total=False):
+class IntegrationDummyIntegrationDefUpdate(TypedDict, total=False):
     arguments: object
 
     method: Optional[str]
@@ -175,97 +175,99 @@ class IntegrationDummyIntegrationDef(TypedDict, total=False):
     setup: object
 
 
-class IntegrationBraveIntegrationDefArguments(TypedDict, total=False):
-    query: Required[str]
+class IntegrationBraveIntegrationDefUpdateArguments(TypedDict, total=False):
+    query: Optional[str]
 
 
-class IntegrationBraveIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
+class IntegrationBraveIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
 
 
-class IntegrationBraveIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBraveIntegrationDefArguments]
+class IntegrationBraveIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBraveIntegrationDefUpdateArguments]
     """Arguments for Brave Search"""
 
     method: Optional[str]
 
     provider: Literal["brave"]
 
-    setup: Optional[IntegrationBraveIntegrationDefSetup]
+    setup: Optional[IntegrationBraveIntegrationDefUpdateSetup]
     """Integration definition for Brave Search"""
 
 
-_IntegrationEmailIntegrationDefArgumentsReservedKeywords = TypedDict(
-    "_IntegrationEmailIntegrationDefArgumentsReservedKeywords",
+_IntegrationEmailIntegrationDefUpdateArgumentsReservedKeywords = TypedDict(
+    "_IntegrationEmailIntegrationDefUpdateArgumentsReservedKeywords",
     {
-        "from": str,
+        "from": Optional[str],
     },
     total=False,
 )
 
 
-class IntegrationEmailIntegrationDefArguments(_IntegrationEmailIntegrationDefArgumentsReservedKeywords, total=False):
-    body: Required[str]
+class IntegrationEmailIntegrationDefUpdateArguments(
+    _IntegrationEmailIntegrationDefUpdateArgumentsReservedKeywords, total=False
+):
+    body: Optional[str]
 
-    subject: Required[str]
+    subject: Optional[str]
 
-    to: Required[str]
-
-
-class IntegrationEmailIntegrationDefSetup(TypedDict, total=False):
-    host: Required[str]
-
-    password: Required[str]
-
-    port: Required[int]
-
-    user: Required[str]
+    to: Optional[str]
 
 
-class IntegrationEmailIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationEmailIntegrationDefArguments]
+class IntegrationEmailIntegrationDefUpdateSetup(TypedDict, total=False):
+    host: Optional[str]
+
+    password: Optional[str]
+
+    port: Optional[int]
+
+    user: Optional[str]
+
+
+class IntegrationEmailIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationEmailIntegrationDefUpdateArguments]
     """Arguments for Email sending"""
 
     method: Optional[str]
 
     provider: Literal["email"]
 
-    setup: Optional[IntegrationEmailIntegrationDefSetup]
+    setup: Optional[IntegrationEmailIntegrationDefUpdateSetup]
     """Setup parameters for Email integration"""
 
 
-class IntegrationSpiderIntegrationDefInputArguments(TypedDict, total=False):
-    url: Required[str]
-
+class IntegrationSpiderIntegrationDefUpdateArguments(TypedDict, total=False):
     content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
 
-
-class IntegrationSpiderIntegrationDefInputSetup(TypedDict, total=False):
-    spider_api_key: Required[str]
+    url: Optional[str]
 
 
-class IntegrationSpiderIntegrationDefInput(TypedDict, total=False):
-    arguments: Optional[IntegrationSpiderIntegrationDefInputArguments]
+class IntegrationSpiderIntegrationDefUpdateSetup(TypedDict, total=False):
+    spider_api_key: Optional[str]
+
+
+class IntegrationSpiderIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationSpiderIntegrationDefUpdateArguments]
     """Arguments for Spider integration"""
 
     method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
-    setup: Optional[IntegrationSpiderIntegrationDefInputSetup]
+    setup: Optional[IntegrationSpiderIntegrationDefUpdateSetup]
     """Setup parameters for Spider integration"""
 
 
-class IntegrationWikipediaIntegrationDefArguments(TypedDict, total=False):
-    query: Required[str]
-
+class IntegrationWikipediaIntegrationDefUpdateArguments(TypedDict, total=False):
     load_max_docs: int
 
+    query: Optional[str]
 
-class IntegrationWikipediaIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationWikipediaIntegrationDefArguments]
+
+class IntegrationWikipediaIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationWikipediaIntegrationDefUpdateArguments]
     """Arguments for Wikipedia Search"""
 
     method: Optional[str]
@@ -275,104 +277,104 @@ class IntegrationWikipediaIntegrationDef(TypedDict, total=False):
     setup: object
 
 
-class IntegrationWeatherIntegrationDefArguments(TypedDict, total=False):
-    location: Required[str]
+class IntegrationWeatherIntegrationDefUpdateArguments(TypedDict, total=False):
+    location: Optional[str]
 
 
-class IntegrationWeatherIntegrationDefSetup(TypedDict, total=False):
-    openweathermap_api_key: Required[str]
+class IntegrationWeatherIntegrationDefUpdateSetup(TypedDict, total=False):
+    openweathermap_api_key: Optional[str]
 
 
-class IntegrationWeatherIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationWeatherIntegrationDefArguments]
+class IntegrationWeatherIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationWeatherIntegrationDefUpdateArguments]
     """Arguments for Weather"""
 
     method: Optional[str]
 
     provider: Literal["weather"]
 
-    setup: Optional[IntegrationWeatherIntegrationDefSetup]
+    setup: Optional[IntegrationWeatherIntegrationDefUpdateSetup]
     """Integration definition for Weather"""
 
 
-class IntegrationBrowserbaseContextIntegrationDefArguments(TypedDict, total=False):
-    project_id: Required[Annotated[str, PropertyInfo(alias="projectId")]]
+class IntegrationBrowserbaseContextIntegrationDefUpdateArguments(TypedDict, total=False):
+    project_id: Annotated[Optional[str], PropertyInfo(alias="projectId")]
 
 
-class IntegrationBrowserbaseContextIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
-
-    project_id: Required[str]
+class IntegrationBrowserbaseContextIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
 
     api_url: Optional[str]
 
     connect_url: Optional[str]
 
+    project_id: Optional[str]
 
-class IntegrationBrowserbaseContextIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseContextIntegrationDefArguments]
+
+class IntegrationBrowserbaseContextIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseContextIntegrationDefUpdateArguments]
 
     method: Literal["create_context"]
 
     provider: Literal["browserbase"]
 
-    setup: Optional[IntegrationBrowserbaseContextIntegrationDefSetup]
+    setup: Optional[IntegrationBrowserbaseContextIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseExtensionIntegrationDefArguments(TypedDict, total=False):
-    repository_name: Required[Annotated[str, PropertyInfo(alias="repositoryName")]]
-
+class IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments(TypedDict, total=False):
     ref: Optional[str]
 
+    repository_name: Annotated[Optional[str], PropertyInfo(alias="repositoryName")]
 
-class IntegrationBrowserbaseExtensionIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
 
-    project_id: Required[str]
+class IntegrationBrowserbaseExtensionIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
 
     api_url: Optional[str]
 
     connect_url: Optional[str]
 
+    project_id: Optional[str]
 
-class IntegrationBrowserbaseExtensionIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseExtensionIntegrationDefArguments]
+
+class IntegrationBrowserbaseExtensionIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments]
 
     method: Optional[Literal["install_extension_from_github"]]
 
     provider: Literal["browserbase"]
 
-    setup: Optional[IntegrationBrowserbaseExtensionIntegrationDefSetup]
+    setup: Optional[IntegrationBrowserbaseExtensionIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseListSessionsIntegrationDefArguments(TypedDict, total=False):
+class IntegrationBrowserbaseListSessionsIntegrationDefUpdateArguments(TypedDict, total=False):
     status: Optional[Literal["RUNNING", "ERROR", "TIMED_OUT", "COMPLETED"]]
 
 
-class IntegrationBrowserbaseListSessionsIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
-
-    project_id: Required[str]
+class IntegrationBrowserbaseListSessionsIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
 
     api_url: Optional[str]
 
     connect_url: Optional[str]
 
+    project_id: Optional[str]
 
-class IntegrationBrowserbaseListSessionsIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseListSessionsIntegrationDefArguments]
+
+class IntegrationBrowserbaseListSessionsIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseListSessionsIntegrationDefUpdateArguments]
 
     method: Literal["list_sessions"]
 
     provider: Literal["browserbase"]
 
-    setup: Optional[IntegrationBrowserbaseListSessionsIntegrationDefSetup]
+    setup: Optional[IntegrationBrowserbaseListSessionsIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseCreateSessionIntegrationDefArguments(TypedDict, total=False):
+class IntegrationBrowserbaseCreateSessionIntegrationDefUpdateArguments(TypedDict, total=False):
     browser_settings: Annotated[object, PropertyInfo(alias="browserSettings")]
 
     extension_id: Annotated[Optional[str], PropertyInfo(alias="extensionId")]
@@ -386,139 +388,131 @@ class IntegrationBrowserbaseCreateSessionIntegrationDefArguments(TypedDict, tota
     timeout: int
 
 
-class IntegrationBrowserbaseCreateSessionIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
-
-    project_id: Required[str]
+class IntegrationBrowserbaseCreateSessionIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
 
     api_url: Optional[str]
 
     connect_url: Optional[str]
 
+    project_id: Optional[str]
 
-class IntegrationBrowserbaseCreateSessionIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseCreateSessionIntegrationDefArguments]
+
+class IntegrationBrowserbaseCreateSessionIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseCreateSessionIntegrationDefUpdateArguments]
 
     method: Literal["create_session"]
 
     provider: Literal["browserbase"]
 
-    setup: Optional[IntegrationBrowserbaseCreateSessionIntegrationDefSetup]
+    setup: Optional[IntegrationBrowserbaseCreateSessionIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseGetSessionIntegrationDefArguments(TypedDict, total=False):
-    id: Required[str]
+class IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments(TypedDict, total=False):
+    id: Optional[str]
 
 
-class IntegrationBrowserbaseGetSessionIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
-
-    project_id: Required[str]
+class IntegrationBrowserbaseGetSessionIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
 
     api_url: Optional[str]
 
     connect_url: Optional[str]
 
+    project_id: Optional[str]
 
-class IntegrationBrowserbaseGetSessionIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseGetSessionIntegrationDefArguments]
+
+class IntegrationBrowserbaseGetSessionIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments]
 
     method: Literal["get_session"]
 
     provider: Literal["browserbase"]
 
-    setup: Optional[IntegrationBrowserbaseGetSessionIntegrationDefSetup]
+    setup: Optional[IntegrationBrowserbaseGetSessionIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseCompleteSessionIntegrationDefArguments(TypedDict, total=False):
-    id: Required[str]
+class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments(TypedDict, total=False):
+    id: Optional[str]
 
     status: Literal["REQUEST_RELEASE"]
 
 
-class IntegrationBrowserbaseCompleteSessionIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
-
-    project_id: Required[str]
+class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
 
     api_url: Optional[str]
 
     connect_url: Optional[str]
 
+    project_id: Optional[str]
 
-class IntegrationBrowserbaseCompleteSessionIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseCompleteSessionIntegrationDefArguments]
+
+class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments]
 
     method: Literal["complete_session"]
 
     provider: Literal["browserbase"]
 
-    setup: Optional[IntegrationBrowserbaseCompleteSessionIntegrationDefSetup]
+    setup: Optional[IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments(TypedDict, total=False):
-    id: Required[str]
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments(TypedDict, total=False):
+    id: Optional[str]
 
 
-class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
-
-    project_id: Required[str]
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
 
     api_url: Optional[str]
 
     connect_url: Optional[str]
 
+    project_id: Optional[str]
 
-class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments]
+
+class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments]
 
     method: Literal["get_live_urls"]
 
     provider: Literal["browserbase"]
 
-    setup: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup]
+    setup: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(TypedDict, total=False):
-    id: Required[str]
+class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments(TypedDict, total=False):
+    id: Optional[str]
 
 
-class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
-
-    project_id: Required[str]
+class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
 
     api_url: Optional[str]
 
     connect_url: Optional[str]
 
+    project_id: Optional[str]
 
-class IntegrationBrowserbaseGetSessionConnectURLIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments]
+
+class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments]
 
     method: Literal["get_connect_url"]
 
     provider: Literal["browserbase"]
 
-    setup: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup]
+    setup: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup]
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationRemoteBrowserIntegrationDefSetup(TypedDict, total=False):
-    connect_url: Optional[str]
-
-    height: Optional[int]
-
-    width: Optional[int]
-
-
-class IntegrationRemoteBrowserIntegrationDefArguments(TypedDict, total=False):
-    action: Required[
+class IntegrationRemoteBrowserIntegrationDefUpdateArguments(TypedDict, total=False):
+    action: Optional[
         Literal[
             "key",
             "type",
@@ -542,54 +536,62 @@ class IntegrationRemoteBrowserIntegrationDefArguments(TypedDict, total=False):
     text: Optional[str]
 
 
-class IntegrationRemoteBrowserIntegrationDef(TypedDict, total=False):
-    setup: Required[IntegrationRemoteBrowserIntegrationDefSetup]
-    """The setup parameters for the remote browser"""
+class IntegrationRemoteBrowserIntegrationDefUpdateSetup(TypedDict, total=False):
+    connect_url: Optional[str]
 
-    arguments: Optional[IntegrationRemoteBrowserIntegrationDefArguments]
+    height: Optional[int]
+
+    width: Optional[int]
+
+
+class IntegrationRemoteBrowserIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationRemoteBrowserIntegrationDefUpdateArguments]
     """The arguments for the remote browser"""
 
     method: Literal["perform_action"]
 
     provider: Literal["remote_browser"]
 
+    setup: Optional[IntegrationRemoteBrowserIntegrationDefUpdateSetup]
+    """The setup parameters for the remote browser"""
 
-class IntegrationLlamaParseIntegrationDefArguments(TypedDict, total=False):
-    file: Required[Union[str, List[str]]]
 
+class IntegrationLlamaParseIntegrationDefUpdateArguments(TypedDict, total=False):
     base64: bool
+
+    file: Union[str, List[str], None]
 
     filename: Optional[str]
 
     params: Optional[object]
 
 
-class IntegrationLlamaParseIntegrationDefSetup(TypedDict, total=False):
-    llamaparse_api_key: Required[str]
+class IntegrationLlamaParseIntegrationDefUpdateSetup(TypedDict, total=False):
+    llamaparse_api_key: Optional[str]
 
     params: Optional[object]
 
 
-class IntegrationLlamaParseIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationLlamaParseIntegrationDefArguments]
+class IntegrationLlamaParseIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationLlamaParseIntegrationDefUpdateArguments]
     """Arguments for LlamaParse integration"""
 
     method: Optional[str]
 
     provider: Literal["llama_parse"]
 
-    setup: Optional[IntegrationLlamaParseIntegrationDefSetup]
+    setup: Optional[IntegrationLlamaParseIntegrationDefUpdateSetup]
     """Setup parameters for LlamaParse integration"""
 
 
-class IntegrationFfmpegIntegrationDefArguments(TypedDict, total=False):
-    cmd: Required[str]
+class IntegrationFfmpegIntegrationDefUpdateArguments(TypedDict, total=False):
+    cmd: Optional[str]
 
     file: Optional[str]
 
 
-class IntegrationFfmpegIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationFfmpegIntegrationDefArguments]
+class IntegrationFfmpegIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationFfmpegIntegrationDefUpdateArguments]
     """Arguments for Ffmpeg CMD"""
 
     method: Optional[str]
@@ -599,8 +601,8 @@ class IntegrationFfmpegIntegrationDef(TypedDict, total=False):
     setup: object
 
 
-class IntegrationCloudinaryUploadIntegrationDefArguments(TypedDict, total=False):
-    file: Required[str]
+class IntegrationCloudinaryUploadIntegrationDefUpdateArguments(TypedDict, total=False):
+    file: Optional[str]
 
     public_id: Optional[str]
 
@@ -609,74 +611,74 @@ class IntegrationCloudinaryUploadIntegrationDefArguments(TypedDict, total=False)
     upload_params: Optional[object]
 
 
-class IntegrationCloudinaryUploadIntegrationDefSetup(TypedDict, total=False):
-    cloudinary_api_key: Required[str]
+class IntegrationCloudinaryUploadIntegrationDefUpdateSetup(TypedDict, total=False):
+    cloudinary_api_key: Optional[str]
 
-    cloudinary_api_secret: Required[str]
+    cloudinary_api_secret: Optional[str]
 
-    cloudinary_cloud_name: Required[str]
+    cloudinary_cloud_name: Optional[str]
 
     params: Optional[object]
 
 
-class IntegrationCloudinaryUploadIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationCloudinaryUploadIntegrationDefArguments]
+class IntegrationCloudinaryUploadIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationCloudinaryUploadIntegrationDefUpdateArguments]
     """Arguments for Cloudinary media upload"""
 
     method: Literal["media_upload"]
 
     provider: Literal["cloudinary"]
 
-    setup: Optional[IntegrationCloudinaryUploadIntegrationDefSetup]
+    setup: Optional[IntegrationCloudinaryUploadIntegrationDefUpdateSetup]
     """Setup parameters for Cloudinary integration"""
 
 
-class IntegrationCloudinaryEditIntegrationDefArguments(TypedDict, total=False):
-    public_id: Required[str]
-
-    transformation: Required[Iterable[object]]
+class IntegrationCloudinaryEditIntegrationDefUpdateArguments(TypedDict, total=False):
+    public_id: Optional[str]
 
     return_base64: bool
 
+    transformation: Optional[Iterable[object]]
 
-class IntegrationCloudinaryEditIntegrationDefSetup(TypedDict, total=False):
-    cloudinary_api_key: Required[str]
 
-    cloudinary_api_secret: Required[str]
+class IntegrationCloudinaryEditIntegrationDefUpdateSetup(TypedDict, total=False):
+    cloudinary_api_key: Optional[str]
 
-    cloudinary_cloud_name: Required[str]
+    cloudinary_api_secret: Optional[str]
+
+    cloudinary_cloud_name: Optional[str]
 
     params: Optional[object]
 
 
-class IntegrationCloudinaryEditIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationCloudinaryEditIntegrationDefArguments]
+class IntegrationCloudinaryEditIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationCloudinaryEditIntegrationDefUpdateArguments]
     """Arguments for Cloudinary media edit"""
 
     method: Literal["media_edit"]
 
     provider: Literal["cloudinary"]
 
-    setup: Optional[IntegrationCloudinaryEditIntegrationDefSetup]
+    setup: Optional[IntegrationCloudinaryEditIntegrationDefUpdateSetup]
     """Setup parameters for Cloudinary integration"""
 
 
-class IntegrationArxivIntegrationDefArguments(TypedDict, total=False):
-    query: Required[str]
-
+class IntegrationArxivIntegrationDefUpdateArguments(TypedDict, total=False):
     download_pdf: bool
 
     id_list: Optional[List[str]]
 
     max_results: int
 
+    query: Optional[str]
+
     sort_by: Literal["relevance", "lastUpdatedDate", "submittedDate"]
 
     sort_order: Literal["ascending", "descending"]
 
 
-class IntegrationArxivIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationArxivIntegrationDefArguments]
+class IntegrationArxivIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationArxivIntegrationDefUpdateArguments]
     """Arguments for Arxiv Search"""
 
     method: Optional[str]
@@ -687,31 +689,33 @@ class IntegrationArxivIntegrationDef(TypedDict, total=False):
 
 
 Integration: TypeAlias = Union[
-    IntegrationDummyIntegrationDef,
-    IntegrationBraveIntegrationDef,
-    IntegrationEmailIntegrationDef,
-    IntegrationSpiderIntegrationDefInput,
-    IntegrationWikipediaIntegrationDef,
-    IntegrationWeatherIntegrationDef,
-    IntegrationBrowserbaseContextIntegrationDef,
-    IntegrationBrowserbaseExtensionIntegrationDef,
-    IntegrationBrowserbaseListSessionsIntegrationDef,
-    IntegrationBrowserbaseCreateSessionIntegrationDef,
-    IntegrationBrowserbaseGetSessionIntegrationDef,
-    IntegrationBrowserbaseCompleteSessionIntegrationDef,
-    IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
-    IntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
-    IntegrationRemoteBrowserIntegrationDef,
-    IntegrationLlamaParseIntegrationDef,
-    IntegrationFfmpegIntegrationDef,
-    IntegrationCloudinaryUploadIntegrationDef,
-    IntegrationCloudinaryEditIntegrationDef,
-    IntegrationArxivIntegrationDef,
+    IntegrationDummyIntegrationDefUpdate,
+    IntegrationBraveIntegrationDefUpdate,
+    IntegrationEmailIntegrationDefUpdate,
+    IntegrationSpiderIntegrationDefUpdate,
+    IntegrationWikipediaIntegrationDefUpdate,
+    IntegrationWeatherIntegrationDefUpdate,
+    IntegrationBrowserbaseContextIntegrationDefUpdate,
+    IntegrationBrowserbaseExtensionIntegrationDefUpdate,
+    IntegrationBrowserbaseListSessionsIntegrationDefUpdate,
+    IntegrationBrowserbaseCreateSessionIntegrationDefUpdate,
+    IntegrationBrowserbaseGetSessionIntegrationDefUpdate,
+    IntegrationBrowserbaseCompleteSessionIntegrationDefUpdate,
+    IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate,
+    IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate,
+    IntegrationRemoteBrowserIntegrationDefUpdate,
+    IntegrationLlamaParseIntegrationDefUpdate,
+    IntegrationFfmpegIntegrationDefUpdate,
+    IntegrationCloudinaryUploadIntegrationDefUpdate,
+    IntegrationCloudinaryEditIntegrationDefUpdate,
+    IntegrationArxivIntegrationDefUpdate,
 ]
 
 
 class System(TypedDict, total=False):
-    operation: Required[
+    arguments: Optional[object]
+
+    operation: Optional[
         Literal[
             "create",
             "update",
@@ -728,9 +732,7 @@ class System(TypedDict, total=False):
         ]
     ]
 
-    resource: Required[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
-
-    arguments: Optional[object]
+    resource: Optional[Literal["agent", "user", "task", "execution", "doc", "session", "job"]]
 
     resource_id: Optional[str]
 
