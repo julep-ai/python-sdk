@@ -17,7 +17,7 @@ from .docs import (
 )
 from ...types import (
     user_list_params,
-    user_patch_params,
+    user_reset_params,
     user_create_params,
     user_update_params,
     user_create_or_update_params,
@@ -125,7 +125,7 @@ class UsersResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Update User
+        Patch User
 
         Args:
           extra_headers: Send extra headers
@@ -138,7 +138,7 @@ class UsersResource(SyncAPIResource):
         """
         if not user_id:
             raise ValueError(f"Expected a non-empty value for `user_id` but received {user_id!r}")
-        return self._put(
+        return self._patch(
             f"/users/{user_id}",
             body=maybe_transform(
                 {
@@ -313,7 +313,7 @@ class UsersResource(SyncAPIResource):
             cast_to=User,
         )
 
-    def patch(
+    def reset(
         self,
         user_id: str,
         *,
@@ -328,7 +328,7 @@ class UsersResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Patch User
+        Update User
 
         Args:
           extra_headers: Send extra headers
@@ -341,7 +341,7 @@ class UsersResource(SyncAPIResource):
         """
         if not user_id:
             raise ValueError(f"Expected a non-empty value for `user_id` but received {user_id!r}")
-        return self._patch(
+        return self._put(
             f"/users/{user_id}",
             body=maybe_transform(
                 {
@@ -349,7 +349,7 @@ class UsersResource(SyncAPIResource):
                     "metadata": metadata,
                     "name": name,
                 },
-                user_patch_params.UserPatchParams,
+                user_reset_params.UserResetParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -438,7 +438,7 @@ class AsyncUsersResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Update User
+        Patch User
 
         Args:
           extra_headers: Send extra headers
@@ -451,7 +451,7 @@ class AsyncUsersResource(AsyncAPIResource):
         """
         if not user_id:
             raise ValueError(f"Expected a non-empty value for `user_id` but received {user_id!r}")
-        return await self._put(
+        return await self._patch(
             f"/users/{user_id}",
             body=await async_maybe_transform(
                 {
@@ -626,7 +626,7 @@ class AsyncUsersResource(AsyncAPIResource):
             cast_to=User,
         )
 
-    async def patch(
+    async def reset(
         self,
         user_id: str,
         *,
@@ -641,7 +641,7 @@ class AsyncUsersResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Patch User
+        Update User
 
         Args:
           extra_headers: Send extra headers
@@ -654,7 +654,7 @@ class AsyncUsersResource(AsyncAPIResource):
         """
         if not user_id:
             raise ValueError(f"Expected a non-empty value for `user_id` but received {user_id!r}")
-        return await self._patch(
+        return await self._put(
             f"/users/{user_id}",
             body=await async_maybe_transform(
                 {
@@ -662,7 +662,7 @@ class AsyncUsersResource(AsyncAPIResource):
                     "metadata": metadata,
                     "name": name,
                 },
-                user_patch_params.UserPatchParams,
+                user_reset_params.UserResetParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -693,8 +693,8 @@ class UsersResourceWithRawResponse:
         self.get = to_raw_response_wrapper(
             users.get,
         )
-        self.patch = to_raw_response_wrapper(
-            users.patch,
+        self.reset = to_raw_response_wrapper(
+            users.reset,
         )
 
     @cached_property
@@ -724,8 +724,8 @@ class AsyncUsersResourceWithRawResponse:
         self.get = async_to_raw_response_wrapper(
             users.get,
         )
-        self.patch = async_to_raw_response_wrapper(
-            users.patch,
+        self.reset = async_to_raw_response_wrapper(
+            users.reset,
         )
 
     @cached_property
@@ -755,8 +755,8 @@ class UsersResourceWithStreamingResponse:
         self.get = to_streamed_response_wrapper(
             users.get,
         )
-        self.patch = to_streamed_response_wrapper(
-            users.patch,
+        self.reset = to_streamed_response_wrapper(
+            users.reset,
         )
 
     @cached_property
@@ -786,8 +786,8 @@ class AsyncUsersResourceWithStreamingResponse:
         self.get = async_to_streamed_response_wrapper(
             users.get,
         )
-        self.patch = async_to_streamed_response_wrapper(
-            users.patch,
+        self.reset = async_to_streamed_response_wrapper(
+            users.reset,
         )
 
     @cached_property

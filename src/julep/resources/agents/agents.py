@@ -25,7 +25,7 @@ from .tools import (
 )
 from ...types import (
     agent_list_params,
-    agent_patch_params,
+    agent_reset_params,
     agent_create_params,
     agent_update_params,
     agent_create_or_update_params,
@@ -136,13 +136,13 @@ class AgentsResource(SyncAPIResource):
         self,
         agent_id: str,
         *,
-        name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
+        name: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -151,7 +151,7 @@ class AgentsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Update Agent
+        Patch Agent
 
         Args:
           default_settings: Default settings for the chat session (also used by the agent)
@@ -166,17 +166,17 @@ class AgentsResource(SyncAPIResource):
         """
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
-        return self._put(
+        return self._patch(
             f"/agents/{agent_id}",
             body=maybe_transform(
                 {
-                    "name": name,
                     "about": about,
                     "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
+                    "name": name,
                 },
                 agent_update_params.AgentUpdateParams,
             ),
@@ -355,17 +355,17 @@ class AgentsResource(SyncAPIResource):
             cast_to=Agent,
         )
 
-    def patch(
+    def reset(
         self,
         agent_id: str,
         *,
+        name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_patch_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[agent_reset_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -374,7 +374,7 @@ class AgentsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Patch Agent
+        Update Agent
 
         Args:
           default_settings: Default settings for the chat session (also used by the agent)
@@ -389,19 +389,19 @@ class AgentsResource(SyncAPIResource):
         """
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
-        return self._patch(
+        return self._put(
             f"/agents/{agent_id}",
             body=maybe_transform(
                 {
+                    "name": name,
                     "about": about,
                     "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
-                    "name": name,
                 },
-                agent_patch_params.AgentPatchParams,
+                agent_reset_params.AgentResetParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -493,13 +493,13 @@ class AsyncAgentsResource(AsyncAPIResource):
         self,
         agent_id: str,
         *,
-        name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[agent_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
+        name: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -508,7 +508,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Update Agent
+        Patch Agent
 
         Args:
           default_settings: Default settings for the chat session (also used by the agent)
@@ -523,17 +523,17 @@ class AsyncAgentsResource(AsyncAPIResource):
         """
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
-        return await self._put(
+        return await self._patch(
             f"/agents/{agent_id}",
             body=await async_maybe_transform(
                 {
-                    "name": name,
                     "about": about,
                     "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
+                    "name": name,
                 },
                 agent_update_params.AgentUpdateParams,
             ),
@@ -712,17 +712,17 @@ class AsyncAgentsResource(AsyncAPIResource):
             cast_to=Agent,
         )
 
-    async def patch(
+    async def reset(
         self,
         agent_id: str,
         *,
+        name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_patch_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[agent_reset_params.DefaultSettings] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
-        name: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -731,7 +731,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Patch Agent
+        Update Agent
 
         Args:
           default_settings: Default settings for the chat session (also used by the agent)
@@ -746,19 +746,19 @@ class AsyncAgentsResource(AsyncAPIResource):
         """
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
-        return await self._patch(
+        return await self._put(
             f"/agents/{agent_id}",
             body=await async_maybe_transform(
                 {
+                    "name": name,
                     "about": about,
                     "canonical_name": canonical_name,
                     "default_settings": default_settings,
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
-                    "name": name,
                 },
-                agent_patch_params.AgentPatchParams,
+                agent_reset_params.AgentResetParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -789,8 +789,8 @@ class AgentsResourceWithRawResponse:
         self.get = to_raw_response_wrapper(
             agents.get,
         )
-        self.patch = to_raw_response_wrapper(
-            agents.patch,
+        self.reset = to_raw_response_wrapper(
+            agents.reset,
         )
 
     @cached_property
@@ -824,8 +824,8 @@ class AsyncAgentsResourceWithRawResponse:
         self.get = async_to_raw_response_wrapper(
             agents.get,
         )
-        self.patch = async_to_raw_response_wrapper(
-            agents.patch,
+        self.reset = async_to_raw_response_wrapper(
+            agents.reset,
         )
 
     @cached_property
@@ -859,8 +859,8 @@ class AgentsResourceWithStreamingResponse:
         self.get = to_streamed_response_wrapper(
             agents.get,
         )
-        self.patch = to_streamed_response_wrapper(
-            agents.patch,
+        self.reset = to_streamed_response_wrapper(
+            agents.reset,
         )
 
     @cached_property
@@ -894,8 +894,8 @@ class AsyncAgentsResourceWithStreamingResponse:
         self.get = async_to_streamed_response_wrapper(
             agents.get,
         )
-        self.patch = async_to_streamed_response_wrapper(
-            agents.patch,
+        self.reset = async_to_streamed_response_wrapper(
+            agents.reset,
         )
 
     @cached_property

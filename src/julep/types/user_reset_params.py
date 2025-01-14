@@ -5,10 +5,10 @@ from __future__ import annotations
 from typing import Optional
 from typing_extensions import TypedDict
 
-__all__ = ["UserPatchParams"]
+__all__ = ["UserResetParams"]
 
 
-class UserPatchParams(TypedDict, total=False):
+class UserResetParams(TypedDict, total=False):
     about: str
 
     metadata: Optional[object]

@@ -77,7 +77,6 @@ class TestAgents:
     def test_method_update(self, client: Julep) -> None:
         agent = client.agents.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="x",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
@@ -85,7 +84,6 @@ class TestAgents:
     def test_method_update_with_all_params(self, client: Julep) -> None:
         agent = client.agents.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="x",
             about="about",
             canonical_name="canonical_name",
             default_settings={
@@ -100,6 +98,7 @@ class TestAgents:
             instructions="string",
             metadata={},
             model="model",
+            name="x",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
@@ -107,7 +106,6 @@ class TestAgents:
     def test_raw_response_update(self, client: Julep) -> None:
         response = client.agents.with_raw_response.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="x",
         )
 
         assert response.is_closed is True
@@ -119,7 +117,6 @@ class TestAgents:
     def test_streaming_response_update(self, client: Julep) -> None:
         with client.agents.with_streaming_response.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="x",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -134,7 +131,6 @@ class TestAgents:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
             client.agents.with_raw_response.update(
                 agent_id="",
-                name="x",
             )
 
     @parametrize
@@ -314,16 +310,18 @@ class TestAgents:
             )
 
     @parametrize
-    def test_method_patch(self, client: Julep) -> None:
-        agent = client.agents.patch(
+    def test_method_reset(self, client: Julep) -> None:
+        agent = client.agents.reset(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="x",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
-    def test_method_patch_with_all_params(self, client: Julep) -> None:
-        agent = client.agents.patch(
+    def test_method_reset_with_all_params(self, client: Julep) -> None:
+        agent = client.agents.reset(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="x",
             about="about",
             canonical_name="canonical_name",
             default_settings={
@@ -338,14 +336,14 @@ class TestAgents:
             instructions="string",
             metadata={},
             model="model",
-            name="x",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
-    def test_raw_response_patch(self, client: Julep) -> None:
-        response = client.agents.with_raw_response.patch(
+    def test_raw_response_reset(self, client: Julep) -> None:
+        response = client.agents.with_raw_response.reset(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="x",
         )
 
         assert response.is_closed is True
@@ -354,9 +352,10 @@ class TestAgents:
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
-    def test_streaming_response_patch(self, client: Julep) -> None:
-        with client.agents.with_streaming_response.patch(
+    def test_streaming_response_reset(self, client: Julep) -> None:
+        with client.agents.with_streaming_response.reset(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="x",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -367,10 +366,11 @@ class TestAgents:
         assert cast(Any, response.is_closed) is True
 
     @parametrize
-    def test_path_params_patch(self, client: Julep) -> None:
+    def test_path_params_reset(self, client: Julep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
-            client.agents.with_raw_response.patch(
+            client.agents.with_raw_response.reset(
                 agent_id="",
+                name="x",
             )
 
 
@@ -433,7 +433,6 @@ class TestAsyncAgents:
     async def test_method_update(self, async_client: AsyncJulep) -> None:
         agent = await async_client.agents.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="x",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
@@ -441,7 +440,6 @@ class TestAsyncAgents:
     async def test_method_update_with_all_params(self, async_client: AsyncJulep) -> None:
         agent = await async_client.agents.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="x",
             about="about",
             canonical_name="canonical_name",
             default_settings={
@@ -456,6 +454,7 @@ class TestAsyncAgents:
             instructions="string",
             metadata={},
             model="model",
+            name="x",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
@@ -463,7 +462,6 @@ class TestAsyncAgents:
     async def test_raw_response_update(self, async_client: AsyncJulep) -> None:
         response = await async_client.agents.with_raw_response.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="x",
         )
 
         assert response.is_closed is True
@@ -475,7 +473,6 @@ class TestAsyncAgents:
     async def test_streaming_response_update(self, async_client: AsyncJulep) -> None:
         async with async_client.agents.with_streaming_response.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="x",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -490,7 +487,6 @@ class TestAsyncAgents:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
             await async_client.agents.with_raw_response.update(
                 agent_id="",
-                name="x",
             )
 
     @parametrize
@@ -670,16 +666,18 @@ class TestAsyncAgents:
             )
 
     @parametrize
-    async def test_method_patch(self, async_client: AsyncJulep) -> None:
-        agent = await async_client.agents.patch(
+    async def test_method_reset(self, async_client: AsyncJulep) -> None:
+        agent = await async_client.agents.reset(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="x",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
-    async def test_method_patch_with_all_params(self, async_client: AsyncJulep) -> None:
-        agent = await async_client.agents.patch(
+    async def test_method_reset_with_all_params(self, async_client: AsyncJulep) -> None:
+        agent = await async_client.agents.reset(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="x",
             about="about",
             canonical_name="canonical_name",
             default_settings={
@@ -694,14 +692,14 @@ class TestAsyncAgents:
             instructions="string",
             metadata={},
             model="model",
-            name="x",
         )
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
-    async def test_raw_response_patch(self, async_client: AsyncJulep) -> None:
-        response = await async_client.agents.with_raw_response.patch(
+    async def test_raw_response_reset(self, async_client: AsyncJulep) -> None:
+        response = await async_client.agents.with_raw_response.reset(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="x",
         )
 
         assert response.is_closed is True
@@ -710,9 +708,10 @@ class TestAsyncAgents:
         assert_matches_type(ResourceUpdated, agent, path=["response"])
 
     @parametrize
-    async def test_streaming_response_patch(self, async_client: AsyncJulep) -> None:
-        async with async_client.agents.with_streaming_response.patch(
+    async def test_streaming_response_reset(self, async_client: AsyncJulep) -> None:
+        async with async_client.agents.with_streaming_response.reset(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="x",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -723,8 +722,9 @@ class TestAsyncAgents:
         assert cast(Any, response.is_closed) is True
 
     @parametrize
-    async def test_path_params_patch(self, async_client: AsyncJulep) -> None:
+    async def test_path_params_reset(self, async_client: AsyncJulep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
-            await async_client.agents.with_raw_response.patch(
+            await async_client.agents.with_raw_response.reset(
                 agent_id="",
+                name="x",
             )
