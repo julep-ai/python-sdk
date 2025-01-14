@@ -522,15 +522,15 @@ class TestSessions:
             )
 
     @parametrize
-    def test_method_patch(self, client: Julep) -> None:
-        session = client.sessions.patch(
+    def test_method_reset(self, client: Julep) -> None:
+        session = client.sessions.reset(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
-    def test_method_patch_with_all_params(self, client: Julep) -> None:
-        session = client.sessions.patch(
+    def test_method_reset_with_all_params(self, client: Julep) -> None:
+        session = client.sessions.reset(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             auto_run_tools=True,
             context_overflow="truncate",
@@ -555,8 +555,8 @@ class TestSessions:
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
-    def test_raw_response_patch(self, client: Julep) -> None:
-        response = client.sessions.with_raw_response.patch(
+    def test_raw_response_reset(self, client: Julep) -> None:
+        response = client.sessions.with_raw_response.reset(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
@@ -566,8 +566,8 @@ class TestSessions:
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
-    def test_streaming_response_patch(self, client: Julep) -> None:
-        with client.sessions.with_streaming_response.patch(
+    def test_streaming_response_reset(self, client: Julep) -> None:
+        with client.sessions.with_streaming_response.reset(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
@@ -579,9 +579,9 @@ class TestSessions:
         assert cast(Any, response.is_closed) is True
 
     @parametrize
-    def test_path_params_patch(self, client: Julep) -> None:
+    def test_path_params_reset(self, client: Julep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `session_id` but received ''"):
-            client.sessions.with_raw_response.patch(
+            client.sessions.with_raw_response.reset(
                 session_id="",
             )
 
@@ -1088,15 +1088,15 @@ class TestAsyncSessions:
             )
 
     @parametrize
-    async def test_method_patch(self, async_client: AsyncJulep) -> None:
-        session = await async_client.sessions.patch(
+    async def test_method_reset(self, async_client: AsyncJulep) -> None:
+        session = await async_client.sessions.reset(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
-    async def test_method_patch_with_all_params(self, async_client: AsyncJulep) -> None:
-        session = await async_client.sessions.patch(
+    async def test_method_reset_with_all_params(self, async_client: AsyncJulep) -> None:
+        session = await async_client.sessions.reset(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             auto_run_tools=True,
             context_overflow="truncate",
@@ -1121,8 +1121,8 @@ class TestAsyncSessions:
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
-    async def test_raw_response_patch(self, async_client: AsyncJulep) -> None:
-        response = await async_client.sessions.with_raw_response.patch(
+    async def test_raw_response_reset(self, async_client: AsyncJulep) -> None:
+        response = await async_client.sessions.with_raw_response.reset(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
@@ -1132,8 +1132,8 @@ class TestAsyncSessions:
         assert_matches_type(ResourceUpdated, session, path=["response"])
 
     @parametrize
-    async def test_streaming_response_patch(self, async_client: AsyncJulep) -> None:
-        async with async_client.sessions.with_streaming_response.patch(
+    async def test_streaming_response_reset(self, async_client: AsyncJulep) -> None:
+        async with async_client.sessions.with_streaming_response.reset(
             session_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
@@ -1145,8 +1145,8 @@ class TestAsyncSessions:
         assert cast(Any, response.is_closed) is True
 
     @parametrize
-    async def test_path_params_patch(self, async_client: AsyncJulep) -> None:
+    async def test_path_params_reset(self, async_client: AsyncJulep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `session_id` but received ''"):
-            await async_client.sessions.with_raw_response.patch(
+            await async_client.sessions.with_raw_response.reset(
                 session_id="",
             )

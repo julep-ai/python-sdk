@@ -129,8 +129,6 @@ class TestTools:
         tool = client.agents.tools.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="name",
-            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -139,11 +137,7 @@ class TestTools:
         tool = client.agents.tools.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="name",
-            type="function",
             api_call={
-                "method": "GET",
-                "url": "https://example.com",
                 "content": "content",
                 "cookies": {"foo": "string"},
                 "data": {},
@@ -151,9 +145,11 @@ class TestTools:
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
+                "method": "GET",
                 "params": "string",
                 "schema": {},
                 "timeout": 0,
+                "url": "https://example.com",
             },
             bash_20241022={
                 "name": "name",
@@ -178,10 +174,11 @@ class TestTools:
                 "provider": "dummy",
                 "setup": {},
             },
+            name="name",
             system={
+                "arguments": {},
                 "operation": "create",
                 "resource": "agent",
-                "arguments": {},
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
             },
@@ -189,6 +186,7 @@ class TestTools:
                 "name": "name",
                 "type": "text_editor_20241022",
             },
+            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -197,8 +195,6 @@ class TestTools:
         response = client.agents.tools.with_raw_response.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="name",
-            type="function",
         )
 
         assert response.is_closed is True
@@ -211,8 +207,6 @@ class TestTools:
         with client.agents.tools.with_streaming_response.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="name",
-            type="function",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -228,16 +222,12 @@ class TestTools:
             client.agents.tools.with_raw_response.update(
                 tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
-                name="name",
-                type="function",
             )
 
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `tool_id` but received ''"):
             client.agents.tools.with_raw_response.update(
                 tool_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                name="name",
-                type="function",
             )
 
     @parametrize
@@ -338,19 +328,25 @@ class TestTools:
             )
 
     @parametrize
-    def test_method_patch(self, client: Julep) -> None:
-        tool = client.agents.tools.patch(
+    def test_method_reset(self, client: Julep) -> None:
+        tool = client.agents.tools.reset(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
+            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
     @parametrize
-    def test_method_patch_with_all_params(self, client: Julep) -> None:
-        tool = client.agents.tools.patch(
+    def test_method_reset_with_all_params(self, client: Julep) -> None:
+        tool = client.agents.tools.reset(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
+            type="function",
             api_call={
+                "method": "GET",
+                "url": "https://example.com",
                 "content": "content",
                 "cookies": {"foo": "string"},
                 "data": {},
@@ -358,11 +354,9 @@ class TestTools:
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
-                "method": "GET",
                 "params": "string",
                 "schema": {},
                 "timeout": 0,
-                "url": "https://example.com",
             },
             bash_20241022={
                 "name": "name",
@@ -387,11 +381,10 @@ class TestTools:
                 "provider": "dummy",
                 "setup": {},
             },
-            name="name",
             system={
-                "arguments": {},
                 "operation": "create",
                 "resource": "agent",
+                "arguments": {},
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
             },
@@ -399,15 +392,16 @@ class TestTools:
                 "name": "name",
                 "type": "text_editor_20241022",
             },
-            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
     @parametrize
-    def test_raw_response_patch(self, client: Julep) -> None:
-        response = client.agents.tools.with_raw_response.patch(
+    def test_raw_response_reset(self, client: Julep) -> None:
+        response = client.agents.tools.with_raw_response.reset(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
+            type="function",
         )
 
         assert response.is_closed is True
@@ -416,10 +410,12 @@ class TestTools:
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
     @parametrize
-    def test_streaming_response_patch(self, client: Julep) -> None:
-        with client.agents.tools.with_streaming_response.patch(
+    def test_streaming_response_reset(self, client: Julep) -> None:
+        with client.agents.tools.with_streaming_response.reset(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
+            type="function",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -430,17 +426,21 @@ class TestTools:
         assert cast(Any, response.is_closed) is True
 
     @parametrize
-    def test_path_params_patch(self, client: Julep) -> None:
+    def test_path_params_reset(self, client: Julep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
-            client.agents.tools.with_raw_response.patch(
+            client.agents.tools.with_raw_response.reset(
                 tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
+                name="name",
+                type="function",
             )
 
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `tool_id` but received ''"):
-            client.agents.tools.with_raw_response.patch(
+            client.agents.tools.with_raw_response.reset(
                 tool_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                name="name",
+                type="function",
             )
 
 
@@ -555,8 +555,6 @@ class TestAsyncTools:
         tool = await async_client.agents.tools.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="name",
-            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -565,11 +563,7 @@ class TestAsyncTools:
         tool = await async_client.agents.tools.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="name",
-            type="function",
             api_call={
-                "method": "GET",
-                "url": "https://example.com",
                 "content": "content",
                 "cookies": {"foo": "string"},
                 "data": {},
@@ -577,9 +571,11 @@ class TestAsyncTools:
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
+                "method": "GET",
                 "params": "string",
                 "schema": {},
                 "timeout": 0,
+                "url": "https://example.com",
             },
             bash_20241022={
                 "name": "name",
@@ -604,10 +600,11 @@ class TestAsyncTools:
                 "provider": "dummy",
                 "setup": {},
             },
+            name="name",
             system={
+                "arguments": {},
                 "operation": "create",
                 "resource": "agent",
-                "arguments": {},
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
             },
@@ -615,6 +612,7 @@ class TestAsyncTools:
                 "name": "name",
                 "type": "text_editor_20241022",
             },
+            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
@@ -623,8 +621,6 @@ class TestAsyncTools:
         response = await async_client.agents.tools.with_raw_response.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="name",
-            type="function",
         )
 
         assert response.is_closed is True
@@ -637,8 +633,6 @@ class TestAsyncTools:
         async with async_client.agents.tools.with_streaming_response.update(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            name="name",
-            type="function",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -654,16 +648,12 @@ class TestAsyncTools:
             await async_client.agents.tools.with_raw_response.update(
                 tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
-                name="name",
-                type="function",
             )
 
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `tool_id` but received ''"):
             await async_client.agents.tools.with_raw_response.update(
                 tool_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                name="name",
-                type="function",
             )
 
     @parametrize
@@ -764,19 +754,25 @@ class TestAsyncTools:
             )
 
     @parametrize
-    async def test_method_patch(self, async_client: AsyncJulep) -> None:
-        tool = await async_client.agents.tools.patch(
+    async def test_method_reset(self, async_client: AsyncJulep) -> None:
+        tool = await async_client.agents.tools.reset(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
+            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
     @parametrize
-    async def test_method_patch_with_all_params(self, async_client: AsyncJulep) -> None:
-        tool = await async_client.agents.tools.patch(
+    async def test_method_reset_with_all_params(self, async_client: AsyncJulep) -> None:
+        tool = await async_client.agents.tools.reset(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
+            type="function",
             api_call={
+                "method": "GET",
+                "url": "https://example.com",
                 "content": "content",
                 "cookies": {"foo": "string"},
                 "data": {},
@@ -784,11 +780,9 @@ class TestAsyncTools:
                 "follow_redirects": True,
                 "headers": {"foo": "string"},
                 "json": {},
-                "method": "GET",
                 "params": "string",
                 "schema": {},
                 "timeout": 0,
-                "url": "https://example.com",
             },
             bash_20241022={
                 "name": "name",
@@ -813,11 +807,10 @@ class TestAsyncTools:
                 "provider": "dummy",
                 "setup": {},
             },
-            name="name",
             system={
-                "arguments": {},
                 "operation": "create",
                 "resource": "agent",
+                "arguments": {},
                 "resource_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 "subresource": "tool",
             },
@@ -825,15 +818,16 @@ class TestAsyncTools:
                 "name": "name",
                 "type": "text_editor_20241022",
             },
-            type="function",
         )
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
     @parametrize
-    async def test_raw_response_patch(self, async_client: AsyncJulep) -> None:
-        response = await async_client.agents.tools.with_raw_response.patch(
+    async def test_raw_response_reset(self, async_client: AsyncJulep) -> None:
+        response = await async_client.agents.tools.with_raw_response.reset(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
+            type="function",
         )
 
         assert response.is_closed is True
@@ -842,10 +836,12 @@ class TestAsyncTools:
         assert_matches_type(ResourceUpdated, tool, path=["response"])
 
     @parametrize
-    async def test_streaming_response_patch(self, async_client: AsyncJulep) -> None:
-        async with async_client.agents.tools.with_streaming_response.patch(
+    async def test_streaming_response_reset(self, async_client: AsyncJulep) -> None:
+        async with async_client.agents.tools.with_streaming_response.reset(
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            name="name",
+            type="function",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -856,15 +852,19 @@ class TestAsyncTools:
         assert cast(Any, response.is_closed) is True
 
     @parametrize
-    async def test_path_params_patch(self, async_client: AsyncJulep) -> None:
+    async def test_path_params_reset(self, async_client: AsyncJulep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `agent_id` but received ''"):
-            await async_client.agents.tools.with_raw_response.patch(
+            await async_client.agents.tools.with_raw_response.reset(
                 tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
                 agent_id="",
+                name="name",
+                type="function",
             )
 
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `tool_id` but received ''"):
-            await async_client.agents.tools.with_raw_response.patch(
+            await async_client.agents.tools.with_raw_response.reset(
                 tool_id="",
                 agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+                name="name",
+                type="function",
             )

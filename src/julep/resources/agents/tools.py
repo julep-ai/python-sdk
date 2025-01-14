@@ -22,7 +22,7 @@ from ..._response import (
 )
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ..._base_client import AsyncPaginator, make_request_options
-from ...types.agents import tool_list_params, tool_patch_params, tool_create_params, tool_update_params
+from ...types.agents import tool_list_params, tool_reset_params, tool_create_params, tool_update_params
 from ...types.shared.resource_created import ResourceCreated
 from ...types.shared.resource_deleted import ResourceDeleted
 from ...types.shared.resource_updated import ResourceUpdated
@@ -132,24 +132,27 @@ class ToolsResource(SyncAPIResource):
         tool_id: str,
         *,
         agent_id: str,
-        name: str,
-        type: Literal[
-            "function",
-            "integration",
-            "system",
-            "api_call",
-            "computer_20241022",
-            "text_editor_20241022",
-            "bash_20241022",
-        ],
         api_call: Optional[tool_update_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[tool_update_params.Bash20241022] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[tool_update_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
+        name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
         text_editor_20241022: Optional[tool_update_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
+        type: Optional[
+            Literal[
+                "function",
+                "integration",
+                "system",
+                "api_call",
+                "computer_20241022",
+                "text_editor_20241022",
+                "bash_20241022",
+            ]
+        ]
+        | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -158,7 +161,7 @@ class ToolsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Update Agent Tool
+        Patch Agent Tool
 
         Args:
           api_call: API call definition
@@ -183,20 +186,20 @@ class ToolsResource(SyncAPIResource):
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
-        return self._put(
+        return self._patch(
             f"/agents/{agent_id}/tools/{tool_id}",
             body=maybe_transform(
                 {
-                    "name": name,
-                    "type": type,
                     "api_call": api_call,
                     "bash_20241022": bash_20241022,
                     "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
+                    "name": name,
                     "system": system,
                     "text_editor_20241022": text_editor_20241022,
+                    "type": type,
                 },
                 tool_update_params.ToolUpdateParams,
             ),
@@ -292,32 +295,29 @@ class ToolsResource(SyncAPIResource):
             cast_to=ResourceDeleted,
         )
 
-    def patch(
+    def reset(
         self,
         tool_id: str,
         *,
         agent_id: str,
-        api_call: Optional[tool_patch_params.APICall] | NotGiven = NOT_GIVEN,
-        bash_20241022: Optional[tool_patch_params.Bash20241022] | NotGiven = NOT_GIVEN,
-        computer_20241022: Optional[tool_patch_params.Computer20241022] | NotGiven = NOT_GIVEN,
+        name: str,
+        type: Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ],
+        api_call: Optional[tool_reset_params.APICall] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[tool_reset_params.Bash20241022] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[tool_reset_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
-        function: Optional[tool_patch_params.Function] | NotGiven = NOT_GIVEN,
-        integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
-        name: Optional[str] | NotGiven = NOT_GIVEN,
-        system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
-        text_editor_20241022: Optional[tool_patch_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
-        type: Optional[
-            Literal[
-                "function",
-                "integration",
-                "system",
-                "api_call",
-                "computer_20241022",
-                "text_editor_20241022",
-                "bash_20241022",
-            ]
-        ]
-        | NotGiven = NOT_GIVEN,
+        function: Optional[tool_reset_params.Function] | NotGiven = NOT_GIVEN,
+        integration: Optional[tool_reset_params.Integration] | NotGiven = NOT_GIVEN,
+        system: Optional[tool_reset_params.System] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[tool_reset_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -326,7 +326,7 @@ class ToolsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Patch Agent Tool
+        Update Agent Tool
 
         Args:
           api_call: API call definition
@@ -351,22 +351,22 @@ class ToolsResource(SyncAPIResource):
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
-        return self._patch(
+        return self._put(
             f"/agents/{agent_id}/tools/{tool_id}",
             body=maybe_transform(
                 {
+                    "name": name,
+                    "type": type,
                     "api_call": api_call,
                     "bash_20241022": bash_20241022,
                     "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
-                    "name": name,
                     "system": system,
                     "text_editor_20241022": text_editor_20241022,
-                    "type": type,
                 },
-                tool_patch_params.ToolPatchParams,
+                tool_reset_params.ToolResetParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -476,24 +476,27 @@ class AsyncToolsResource(AsyncAPIResource):
         tool_id: str,
         *,
         agent_id: str,
-        name: str,
-        type: Literal[
-            "function",
-            "integration",
-            "system",
-            "api_call",
-            "computer_20241022",
-            "text_editor_20241022",
-            "bash_20241022",
-        ],
         api_call: Optional[tool_update_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[tool_update_params.Bash20241022] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[tool_update_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
         function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
+        name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
         text_editor_20241022: Optional[tool_update_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
+        type: Optional[
+            Literal[
+                "function",
+                "integration",
+                "system",
+                "api_call",
+                "computer_20241022",
+                "text_editor_20241022",
+                "bash_20241022",
+            ]
+        ]
+        | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -502,7 +505,7 @@ class AsyncToolsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Update Agent Tool
+        Patch Agent Tool
 
         Args:
           api_call: API call definition
@@ -527,20 +530,20 @@ class AsyncToolsResource(AsyncAPIResource):
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
-        return await self._put(
+        return await self._patch(
             f"/agents/{agent_id}/tools/{tool_id}",
             body=await async_maybe_transform(
                 {
-                    "name": name,
-                    "type": type,
                     "api_call": api_call,
                     "bash_20241022": bash_20241022,
                     "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
+                    "name": name,
                     "system": system,
                     "text_editor_20241022": text_editor_20241022,
+                    "type": type,
                 },
                 tool_update_params.ToolUpdateParams,
             ),
@@ -636,32 +639,29 @@ class AsyncToolsResource(AsyncAPIResource):
             cast_to=ResourceDeleted,
         )
 
-    async def patch(
+    async def reset(
         self,
         tool_id: str,
         *,
         agent_id: str,
-        api_call: Optional[tool_patch_params.APICall] | NotGiven = NOT_GIVEN,
-        bash_20241022: Optional[tool_patch_params.Bash20241022] | NotGiven = NOT_GIVEN,
-        computer_20241022: Optional[tool_patch_params.Computer20241022] | NotGiven = NOT_GIVEN,
+        name: str,
+        type: Literal[
+            "function",
+            "integration",
+            "system",
+            "api_call",
+            "computer_20241022",
+            "text_editor_20241022",
+            "bash_20241022",
+        ],
+        api_call: Optional[tool_reset_params.APICall] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[tool_reset_params.Bash20241022] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[tool_reset_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
-        function: Optional[tool_patch_params.Function] | NotGiven = NOT_GIVEN,
-        integration: Optional[tool_patch_params.Integration] | NotGiven = NOT_GIVEN,
-        name: Optional[str] | NotGiven = NOT_GIVEN,
-        system: Optional[tool_patch_params.System] | NotGiven = NOT_GIVEN,
-        text_editor_20241022: Optional[tool_patch_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
-        type: Optional[
-            Literal[
-                "function",
-                "integration",
-                "system",
-                "api_call",
-                "computer_20241022",
-                "text_editor_20241022",
-                "bash_20241022",
-            ]
-        ]
-        | NotGiven = NOT_GIVEN,
+        function: Optional[tool_reset_params.Function] | NotGiven = NOT_GIVEN,
+        integration: Optional[tool_reset_params.Integration] | NotGiven = NOT_GIVEN,
+        system: Optional[tool_reset_params.System] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[tool_reset_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -670,7 +670,7 @@ class AsyncToolsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Patch Agent Tool
+        Update Agent Tool
 
         Args:
           api_call: API call definition
@@ -695,22 +695,22 @@ class AsyncToolsResource(AsyncAPIResource):
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
-        return await self._patch(
+        return await self._put(
             f"/agents/{agent_id}/tools/{tool_id}",
             body=await async_maybe_transform(
                 {
+                    "name": name,
+                    "type": type,
                     "api_call": api_call,
                     "bash_20241022": bash_20241022,
                     "computer_20241022": computer_20241022,
                     "description": description,
                     "function": function,
                     "integration": integration,
-                    "name": name,
                     "system": system,
                     "text_editor_20241022": text_editor_20241022,
-                    "type": type,
                 },
-                tool_patch_params.ToolPatchParams,
+                tool_reset_params.ToolResetParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -735,8 +735,8 @@ class ToolsResourceWithRawResponse:
         self.delete = to_raw_response_wrapper(
             tools.delete,
         )
-        self.patch = to_raw_response_wrapper(
-            tools.patch,
+        self.reset = to_raw_response_wrapper(
+            tools.reset,
         )
 
 
@@ -756,8 +756,8 @@ class AsyncToolsResourceWithRawResponse:
         self.delete = async_to_raw_response_wrapper(
             tools.delete,
         )
-        self.patch = async_to_raw_response_wrapper(
-            tools.patch,
+        self.reset = async_to_raw_response_wrapper(
+            tools.reset,
         )
 
 
@@ -777,8 +777,8 @@ class ToolsResourceWithStreamingResponse:
         self.delete = to_streamed_response_wrapper(
             tools.delete,
         )
-        self.patch = to_streamed_response_wrapper(
-            tools.patch,
+        self.reset = to_streamed_response_wrapper(
+            tools.reset,
         )
 
 
@@ -798,6 +798,6 @@ class AsyncToolsResourceWithStreamingResponse:
         self.delete = async_to_streamed_response_wrapper(
             tools.delete,
         )
-        self.patch = async_to_streamed_response_wrapper(
-            tools.patch,
+        self.reset = async_to_streamed_response_wrapper(
+            tools.reset,
         )
