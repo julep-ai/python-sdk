@@ -5,10 +5,10 @@ from __future__ import annotations
 from typing import Optional
 from typing_extensions import Literal, TypedDict
 
-__all__ = ["SessionPatchParams", "RecallOptions"]
+__all__ = ["SessionResetParams", "RecallOptions"]
 
 
-class SessionPatchParams(TypedDict, total=False):
+class SessionResetParams(TypedDict, total=False):
     auto_run_tools: bool
 
     context_overflow: Optional[Literal["truncate", "adaptive"]]

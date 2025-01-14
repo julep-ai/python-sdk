@@ -264,15 +264,15 @@ class TestUsers:
             )
 
     @parametrize
-    def test_method_patch(self, client: Julep) -> None:
-        user = client.users.patch(
+    def test_method_reset(self, client: Julep) -> None:
+        user = client.users.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
-    def test_method_patch_with_all_params(self, client: Julep) -> None:
-        user = client.users.patch(
+    def test_method_reset_with_all_params(self, client: Julep) -> None:
+        user = client.users.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
@@ -281,8 +281,8 @@ class TestUsers:
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
-    def test_raw_response_patch(self, client: Julep) -> None:
-        response = client.users.with_raw_response.patch(
+    def test_raw_response_reset(self, client: Julep) -> None:
+        response = client.users.with_raw_response.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
@@ -292,8 +292,8 @@ class TestUsers:
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
-    def test_streaming_response_patch(self, client: Julep) -> None:
-        with client.users.with_streaming_response.patch(
+    def test_streaming_response_reset(self, client: Julep) -> None:
+        with client.users.with_streaming_response.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
@@ -305,9 +305,9 @@ class TestUsers:
         assert cast(Any, response.is_closed) is True
 
     @parametrize
-    def test_path_params_patch(self, client: Julep) -> None:
+    def test_path_params_reset(self, client: Julep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `user_id` but received ''"):
-            client.users.with_raw_response.patch(
+            client.users.with_raw_response.reset(
                 user_id="",
             )
 
@@ -558,15 +558,15 @@ class TestAsyncUsers:
             )
 
     @parametrize
-    async def test_method_patch(self, async_client: AsyncJulep) -> None:
-        user = await async_client.users.patch(
+    async def test_method_reset(self, async_client: AsyncJulep) -> None:
+        user = await async_client.users.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
-    async def test_method_patch_with_all_params(self, async_client: AsyncJulep) -> None:
-        user = await async_client.users.patch(
+    async def test_method_reset_with_all_params(self, async_client: AsyncJulep) -> None:
+        user = await async_client.users.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             about="about",
             metadata={},
@@ -575,8 +575,8 @@ class TestAsyncUsers:
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
-    async def test_raw_response_patch(self, async_client: AsyncJulep) -> None:
-        response = await async_client.users.with_raw_response.patch(
+    async def test_raw_response_reset(self, async_client: AsyncJulep) -> None:
+        response = await async_client.users.with_raw_response.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
@@ -586,8 +586,8 @@ class TestAsyncUsers:
         assert_matches_type(ResourceUpdated, user, path=["response"])
 
     @parametrize
-    async def test_streaming_response_patch(self, async_client: AsyncJulep) -> None:
-        async with async_client.users.with_streaming_response.patch(
+    async def test_streaming_response_reset(self, async_client: AsyncJulep) -> None:
+        async with async_client.users.with_streaming_response.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         ) as response:
             assert not response.is_closed
@@ -599,8 +599,8 @@ class TestAsyncUsers:
         assert cast(Any, response.is_closed) is True
 
     @parametrize
-    async def test_path_params_patch(self, async_client: AsyncJulep) -> None:
+    async def test_path_params_reset(self, async_client: AsyncJulep) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `user_id` but received ''"):
-            await async_client.users.with_raw_response.patch(
+            await async_client.users.with_raw_response.reset(
                 user_id="",
             )

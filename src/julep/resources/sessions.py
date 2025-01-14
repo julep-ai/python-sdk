@@ -10,7 +10,7 @@ import httpx
 from ..types import (
     session_chat_params,
     session_list_params,
-    session_patch_params,
+    session_reset_params,
     session_create_params,
     session_update_params,
     session_create_or_update_params,
@@ -144,7 +144,7 @@ class SessionsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Update Session
+        Patch Session
 
         Args:
           extra_headers: Send extra headers
@@ -157,7 +157,7 @@ class SessionsResource(SyncAPIResource):
         """
         if not session_id:
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
-        return self._put(
+        return self._patch(
             f"/sessions/{session_id}",
             body=maybe_transform(
                 {
@@ -489,7 +489,7 @@ class SessionsResource(SyncAPIResource):
             cast_to=History,
         )
 
-    def patch(
+    def reset(
         self,
         session_id: str,
         *,
@@ -497,7 +497,7 @@ class SessionsResource(SyncAPIResource):
         context_overflow: Optional[Literal["truncate", "adaptive"]] | NotGiven = NOT_GIVEN,
         forward_tool_calls: bool | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        recall_options: Optional[session_patch_params.RecallOptions] | NotGiven = NOT_GIVEN,
+        recall_options: Optional[session_reset_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
         system_template: str | NotGiven = NOT_GIVEN,
@@ -510,7 +510,7 @@ class SessionsResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Patch Session
+        Update Session
 
         Args:
           extra_headers: Send extra headers
@@ -523,7 +523,7 @@ class SessionsResource(SyncAPIResource):
         """
         if not session_id:
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
-        return self._patch(
+        return self._put(
             f"/sessions/{session_id}",
             body=maybe_transform(
                 {
@@ -537,7 +537,7 @@ class SessionsResource(SyncAPIResource):
                     "system_template": system_template,
                     "token_budget": token_budget,
                 },
-                session_patch_params.SessionPatchParams,
+                session_reset_params.SessionResetParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -648,7 +648,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Update Session
+        Patch Session
 
         Args:
           extra_headers: Send extra headers
@@ -661,7 +661,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         """
         if not session_id:
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
-        return await self._put(
+        return await self._patch(
             f"/sessions/{session_id}",
             body=await async_maybe_transform(
                 {
@@ -995,7 +995,7 @@ class AsyncSessionsResource(AsyncAPIResource):
             cast_to=History,
         )
 
-    async def patch(
+    async def reset(
         self,
         session_id: str,
         *,
@@ -1003,7 +1003,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         context_overflow: Optional[Literal["truncate", "adaptive"]] | NotGiven = NOT_GIVEN,
         forward_tool_calls: bool | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        recall_options: Optional[session_patch_params.RecallOptions] | NotGiven = NOT_GIVEN,
+        recall_options: Optional[session_reset_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
         system_template: str | NotGiven = NOT_GIVEN,
@@ -1016,7 +1016,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> ResourceUpdated:
         """
-        Patch Session
+        Update Session
 
         Args:
           extra_headers: Send extra headers
@@ -1029,7 +1029,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         """
         if not session_id:
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
-        return await self._patch(
+        return await self._put(
             f"/sessions/{session_id}",
             body=await async_maybe_transform(
                 {
@@ -1043,7 +1043,7 @@ class AsyncSessionsResource(AsyncAPIResource):
                     "system_template": system_template,
                     "token_budget": token_budget,
                 },
-                session_patch_params.SessionPatchParams,
+                session_reset_params.SessionResetParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -1080,8 +1080,8 @@ class SessionsResourceWithRawResponse:
         self.history = to_raw_response_wrapper(
             sessions.history,
         )
-        self.patch = to_raw_response_wrapper(
-            sessions.patch,
+        self.reset = to_raw_response_wrapper(
+            sessions.reset,
         )
 
 
@@ -1113,8 +1113,8 @@ class AsyncSessionsResourceWithRawResponse:
         self.history = async_to_raw_response_wrapper(
             sessions.history,
         )
-        self.patch = async_to_raw_response_wrapper(
-            sessions.patch,
+        self.reset = async_to_raw_response_wrapper(
+            sessions.reset,
         )
 
 
@@ -1146,8 +1146,8 @@ class SessionsResourceWithStreamingResponse:
         self.history = to_streamed_response_wrapper(
             sessions.history,
         )
-        self.patch = to_streamed_response_wrapper(
-            sessions.patch,
+        self.reset = to_streamed_response_wrapper(
+            sessions.reset,
         )
 
 
@@ -1179,6 +1179,6 @@ class AsyncSessionsResourceWithStreamingResponse:
         self.history = async_to_streamed_response_wrapper(
             sessions.history,
         )
-        self.patch = async_to_streamed_response_wrapper(
-            sessions.patch,
+        self.reset = async_to_streamed_response_wrapper(
+            sessions.reset,
         )
