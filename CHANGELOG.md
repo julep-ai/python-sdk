@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.53.0 (2025-01-14)
+
+Full Changelog: [v1.52.0...v1.53.0](https://github.com/julep-ai/python-sdk/compare/v1.52.0...v1.53.0)
+
+### Features
+
+* **api:** put/patch methods swap ([#244](https://github.com/julep-ai/python-sdk/issues/244)) ([0455920](https://github.com/julep-ai/python-sdk/commit/0455920f814ab7457a065596b944110ee091cee8))
+
 ## 1.52.0 (2025-01-13)
 
 Full Changelog: [v1.51.0...v1.52.0](https://github.com/julep-ai/python-sdk/compare/v1.51.0...v1.52.0)
