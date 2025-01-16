@@ -83,6 +83,9 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
@@ -184,6 +187,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
@@ -284,6 +290,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
@@ -386,6 +395,9 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
@@ -490,6 +502,9 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
@@ -585,6 +600,9 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
@@ -680,6 +698,9 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefArguments",
@@ -744,6 +765,9 @@ __all__ = [
     "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
+    "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
+    "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
+    "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "ToolIntegrationRemoteBrowserIntegrationDef",
     "ToolIntegrationRemoteBrowserIntegrationDefSetup",
     "ToolIntegrationRemoteBrowserIntegrationDefArguments",
@@ -1491,6 +1515,41 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBro
     """The setup parameters for the browserbase integration"""
 
 
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
@@ -1712,6 +1771,7 @@ MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAli
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
@@ -2664,6 +2724,41 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     """The setup parameters for the browserbase integration"""
 
 
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
@@ -2903,6 +2998,7 @@ MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
@@ -3885,6 +3981,41 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     """The setup parameters for the browserbase integration"""
 
 
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
@@ -4124,6 +4255,7 @@ MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
@@ -5112,6 +5244,41 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     """The setup parameters for the browserbase integration"""
 
 
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
@@ -5351,6 +5518,7 @@ MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
@@ -6352,6 +6520,41 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     """The setup parameters for the browserbase integration"""
 
 
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
@@ -6591,6 +6794,7 @@ MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
@@ -7531,6 +7735,41 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     """The setup parameters for the browserbase integration"""
 
 
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
@@ -7770,6 +8009,7 @@ MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
@@ -8701,6 +8941,41 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
     """The setup parameters for the browserbase integration"""
 
 
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(
+    BaseModel
+):
+    id: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments
+    ] = None
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup
+    ] = None
+    """The setup parameters for the browserbase integration"""
+
+
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDefSetup(
     BaseModel
 ):
@@ -8940,6 +9215,7 @@ MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegra
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseCompleteSessionIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationRemoteBrowserIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLlamaParseIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef,
@@ -9487,6 +9763,31 @@ class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(BaseModel):
     """The setup parameters for the browserbase integration"""
 
 
+class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(BaseModel):
+    id: str
+
+
+class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
+    api_key: str
+
+    project_id: str
+
+    api_url: Optional[str] = None
+
+    connect_url: Optional[str] = None
+
+
+class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments] = None
+
+    method: Optional[Literal["get_connect_url"]] = None
+
+    provider: Optional[Literal["browserbase"]] = None
+
+    setup: Optional[ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
+    """The setup parameters for the browserbase integration"""
+
+
 class ToolIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
     connect_url: Optional[str] = None
 
@@ -9676,6 +9977,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationBrowserbaseGetSessionIntegrationDef,
     ToolIntegrationBrowserbaseCompleteSessionIntegrationDef,
     ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
+    ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ToolIntegrationRemoteBrowserIntegrationDef,
     ToolIntegrationLlamaParseIntegrationDef,
     ToolIntegrationFfmpegIntegrationDef,
