@@ -39,7 +39,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "alpha": 0,
-                "confidence": -1,
+                "confidence": 0,
                 "lang": "en-US",
                 "limit": 1,
                 "max_query_length": 0,
@@ -94,7 +94,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "alpha": 0,
-                "confidence": -1,
+                "confidence": 0,
                 "lang": "en-US",
                 "limit": 1,
                 "max_query_length": 0,
@@ -396,7 +396,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "alpha": 0,
-                "confidence": -1,
+                "confidence": 0,
                 "lang": "en-US",
                 "limit": 1,
                 "max_query_length": 0,
@@ -538,7 +538,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "alpha": 0,
-                "confidence": -1,
+                "confidence": 0,
                 "lang": "en-US",
                 "limit": 1,
                 "max_query_length": 0,
@@ -605,7 +605,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "alpha": 0,
-                "confidence": -1,
+                "confidence": 0,
                 "lang": "en-US",
                 "limit": 1,
                 "max_query_length": 0,
@@ -660,7 +660,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "alpha": 0,
-                "confidence": -1,
+                "confidence": 0,
                 "lang": "en-US",
                 "limit": 1,
                 "max_query_length": 0,
@@ -962,7 +962,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "alpha": 0,
-                "confidence": -1,
+                "confidence": 0,
                 "lang": "en-US",
                 "limit": 1,
                 "max_query_length": 0,
@@ -1104,7 +1104,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "alpha": 0,
-                "confidence": -1,
+                "confidence": 0,
                 "lang": "en-US",
                 "limit": 1,
                 "max_query_length": 0,
