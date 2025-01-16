@@ -61,9 +61,6 @@ __all__ = [
     "ContentToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "ContentToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "ContentToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
-    "ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
-    "ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
-    "ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "ContentToolIntegrationRemoteBrowserIntegrationDef",
     "ContentToolIntegrationRemoteBrowserIntegrationDefSetup",
     "ContentToolIntegrationRemoteBrowserIntegrationDefArguments",
@@ -142,9 +139,6 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "ContentUnionMember8ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
-    "ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
-    "ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
-    "ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDef",
     "ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDefSetup",
     "ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDefArguments",
@@ -605,31 +599,6 @@ class ContentToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(BaseMode
     """The setup parameters for the browserbase integration"""
 
 
-class ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(BaseModel):
-    id: str
-
-
-class ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
-    api_key: str
-
-    project_id: str
-
-    api_url: Optional[str] = None
-
-    connect_url: Optional[str] = None
-
-
-class ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
-    arguments: Optional[ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments] = None
-
-    method: Optional[Literal["get_connect_url"]] = None
-
-    provider: Optional[Literal["browserbase"]] = None
-
-    setup: Optional[ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
-    """The setup parameters for the browserbase integration"""
-
-
 class ContentToolIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
     connect_url: Optional[str] = None
 
@@ -819,7 +788,6 @@ ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationBrowserbaseGetSessionIntegrationDef,
     ContentToolIntegrationBrowserbaseCompleteSessionIntegrationDef,
     ContentToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
-    ContentToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ContentToolIntegrationRemoteBrowserIntegrationDef,
     ContentToolIntegrationLlamaParseIntegrationDef,
     ContentToolIntegrationFfmpegIntegrationDef,
@@ -1429,31 +1397,6 @@ class ContentUnionMember8ToolIntegrationBrowserbaseGetSessionLiveURLsIntegration
     """The setup parameters for the browserbase integration"""
 
 
-class ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(BaseModel):
-    id: str
-
-
-class ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
-    api_key: str
-
-    project_id: str
-
-    api_url: Optional[str] = None
-
-    connect_url: Optional[str] = None
-
-
-class ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
-    arguments: Optional[ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments] = None
-
-    method: Optional[Literal["get_connect_url"]] = None
-
-    provider: Optional[Literal["browserbase"]] = None
-
-    setup: Optional[ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
-    """The setup parameters for the browserbase integration"""
-
-
 class ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
     connect_url: Optional[str] = None
 
@@ -1643,7 +1586,6 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationBrowserbaseGetSessionIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseCompleteSessionIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
-    ContentUnionMember8ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ContentUnionMember8ToolIntegrationRemoteBrowserIntegrationDef,
     ContentUnionMember8ToolIntegrationLlamaParseIntegrationDef,
     ContentUnionMember8ToolIntegrationFfmpegIntegrationDef,

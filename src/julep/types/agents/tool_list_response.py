@@ -51,9 +51,6 @@ __all__ = [
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
-    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
-    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
-    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "IntegrationRemoteBrowserIntegrationDef",
     "IntegrationRemoteBrowserIntegrationDefSetup",
     "IntegrationRemoteBrowserIntegrationDefArguments",
@@ -439,31 +436,6 @@ class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(BaseModel):
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(BaseModel):
-    id: str
-
-
-class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(BaseModel):
-    api_key: str
-
-    project_id: str
-
-    api_url: Optional[str] = None
-
-    connect_url: Optional[str] = None
-
-
-class IntegrationBrowserbaseGetSessionConnectURLIntegrationDef(BaseModel):
-    arguments: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments] = None
-
-    method: Optional[Literal["get_connect_url"]] = None
-
-    provider: Optional[Literal["browserbase"]] = None
-
-    setup: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup] = None
-    """The setup parameters for the browserbase integration"""
-
-
 class IntegrationRemoteBrowserIntegrationDefSetup(BaseModel):
     connect_url: Optional[str] = None
 
@@ -653,7 +625,6 @@ Integration: TypeAlias = Union[
     IntegrationBrowserbaseGetSessionIntegrationDef,
     IntegrationBrowserbaseCompleteSessionIntegrationDef,
     IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
-    IntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     IntegrationRemoteBrowserIntegrationDef,
     IntegrationLlamaParseIntegrationDef,
     IntegrationFfmpegIntegrationDef,
