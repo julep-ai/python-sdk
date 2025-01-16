@@ -29,8 +29,8 @@ from julep import Julep
 
 client = Julep(
     api_key=os.environ.get("JULEP_API_KEY"),  # This is the default and can be omitted
-    # or 'dev' | 'local_multi_tenant' | 'local'; defaults to "dev".
-    environment="production",
+    # or 'production' | 'local_multi_tenant' | 'local'; defaults to "production".
+    environment="dev",
 )
 
 resource_created = client.tasks.create(
@@ -57,8 +57,8 @@ from julep import AsyncJulep
 
 client = AsyncJulep(
     api_key=os.environ.get("JULEP_API_KEY"),  # This is the default and can be omitted
-    # or 'dev' | 'local_multi_tenant' | 'local'; defaults to "dev".
-    environment="production",
+    # or 'production' | 'local_multi_tenant' | 'local'; defaults to "production".
+    environment="dev",
 )
 
 
