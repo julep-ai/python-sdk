@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.54.0 (2025-01-16)
+
+Full Changelog: [v1.53.0...v1.54.0](https://github.com/julep-ai/python-sdk/compare/v1.53.0...v1.54.0)
+
+### Features
+
+* **api:** api update ([#249](https://github.com/julep-ai/python-sdk/issues/249)) ([467b9e8](https://github.com/julep-ai/python-sdk/commit/467b9e803f4b5e2f5377ae84c73b14c607a8f969))
+* **api:** api update ([#250](https://github.com/julep-ai/python-sdk/issues/250)) ([8b27a43](https://github.com/julep-ai/python-sdk/commit/8b27a4366a2ac9562ed7357ccd753a9f33d1f7a3))
+* **api:** Switch default environment to production ([#247](https://github.com/julep-ai/python-sdk/issues/247)) ([d81da34](https://github.com/julep-ai/python-sdk/commit/d81da34aea281c01fd0e933f17d01c2c01e53a42))
+* **api:** Switch default environment to production ([#251](https://github.com/julep-ai/python-sdk/issues/251)) ([a058b47](https://github.com/julep-ai/python-sdk/commit/a058b471ef493da954ec4de960dc625bbeb0f71e))
+
 ## 1.53.0 (2025-01-14)
 
 Full Changelog: [v1.52.0...v1.53.0](https://github.com/julep-ai/python-sdk/compare/v1.52.0...v1.53.0)
