@@ -50,9 +50,6 @@ __all__ = [
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
-    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
-    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
-    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "IntegrationRemoteBrowserIntegrationDef",
     "IntegrationRemoteBrowserIntegrationDefSetup",
     "IntegrationRemoteBrowserIntegrationDefArguments",
@@ -484,31 +481,6 @@ class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(TypedDict, total=Fa
     """The setup parameters for the browserbase integration"""
 
 
-class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(TypedDict, total=False):
-    id: Required[str]
-
-
-class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
-
-    project_id: Required[str]
-
-    api_url: Optional[str]
-
-    connect_url: Optional[str]
-
-
-class IntegrationBrowserbaseGetSessionConnectURLIntegrationDef(TypedDict, total=False):
-    arguments: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments]
-
-    method: Literal["get_connect_url"]
-
-    provider: Literal["browserbase"]
-
-    setup: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup]
-    """The setup parameters for the browserbase integration"""
-
-
 class IntegrationRemoteBrowserIntegrationDefSetup(TypedDict, total=False):
     connect_url: Optional[str]
 
@@ -700,7 +672,6 @@ Integration: TypeAlias = Union[
     IntegrationBrowserbaseGetSessionIntegrationDef,
     IntegrationBrowserbaseCompleteSessionIntegrationDef,
     IntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
-    IntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     IntegrationRemoteBrowserIntegrationDef,
     IntegrationLlamaParseIntegrationDef,
     IntegrationFfmpegIntegrationDef,

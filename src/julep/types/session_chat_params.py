@@ -58,9 +58,6 @@ __all__ = [
     "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef",
     "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefArguments",
     "ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDefSetup",
-    "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef",
-    "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments",
-    "ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup",
     "ToolIntegrationRemoteBrowserIntegrationDef",
     "ToolIntegrationRemoteBrowserIntegrationDefSetup",
     "ToolIntegrationRemoteBrowserIntegrationDefArguments",
@@ -529,31 +526,6 @@ class ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef(TypedDict, tota
     """The setup parameters for the browserbase integration"""
 
 
-class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments(TypedDict, total=False):
-    id: Required[str]
-
-
-class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
-
-    project_id: Required[str]
-
-    api_url: Optional[str]
-
-    connect_url: Optional[str]
-
-
-class ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef(TypedDict, total=False):
-    arguments: Optional[ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefArguments]
-
-    method: Literal["get_connect_url"]
-
-    provider: Literal["browserbase"]
-
-    setup: Optional[ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDefSetup]
-    """The setup parameters for the browserbase integration"""
-
-
 class ToolIntegrationRemoteBrowserIntegrationDefSetup(TypedDict, total=False):
     connect_url: Optional[str]
 
@@ -745,7 +717,6 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationBrowserbaseGetSessionIntegrationDef,
     ToolIntegrationBrowserbaseCompleteSessionIntegrationDef,
     ToolIntegrationBrowserbaseGetSessionLiveURLsIntegrationDef,
-    ToolIntegrationBrowserbaseGetSessionConnectURLIntegrationDef,
     ToolIntegrationRemoteBrowserIntegrationDef,
     ToolIntegrationLlamaParseIntegrationDef,
     ToolIntegrationFfmpegIntegrationDef,
