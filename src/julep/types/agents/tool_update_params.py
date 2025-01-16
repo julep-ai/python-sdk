@@ -50,6 +50,9 @@ __all__ = [
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate",
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments",
     "IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateSetup",
+    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate",
+    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments",
+    "IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup",
     "IntegrationRemoteBrowserIntegrationDefUpdate",
     "IntegrationRemoteBrowserIntegrationDefUpdateArguments",
     "IntegrationRemoteBrowserIntegrationDefUpdateSetup",
@@ -483,6 +486,31 @@ class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate(TypedDict, to
     """The setup parameters for the browserbase integration"""
 
 
+class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments(TypedDict, total=False):
+    id: Optional[str]
+
+
+class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+    api_url: Optional[str]
+
+    connect_url: Optional[str]
+
+    project_id: Optional[str]
+
+
+class IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateArguments]
+
+    method: Literal["get_connect_url"]
+
+    provider: Literal["browserbase"]
+
+    setup: Optional[IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdateSetup]
+    """The setup parameters for the browserbase integration"""
+
+
 class IntegrationRemoteBrowserIntegrationDefUpdateArguments(TypedDict, total=False):
     action: Optional[
         Literal[
@@ -674,6 +702,7 @@ Integration: TypeAlias = Union[
     IntegrationBrowserbaseGetSessionIntegrationDefUpdate,
     IntegrationBrowserbaseCompleteSessionIntegrationDefUpdate,
     IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate,
+    IntegrationBrowserbaseGetSessionConnectURLIntegrationDefUpdate,
     IntegrationRemoteBrowserIntegrationDefUpdate,
     IntegrationLlamaParseIntegrationDefUpdate,
     IntegrationFfmpegIntegrationDefUpdate,
