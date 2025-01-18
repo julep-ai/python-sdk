@@ -35,6 +35,7 @@ class TestTasks:
             main=[
                 {
                     "evaluate": {"foo": ["string"]},
+                    "kind": "evaluate",
                     "label": "label",
                 }
             ],
@@ -205,6 +206,7 @@ class TestTasks:
             main=[
                 {
                     "evaluate": {"foo": ["string"]},
+                    "kind": "evaluate",
                     "label": "label",
                 }
             ],
@@ -377,6 +379,7 @@ class TestAsyncTasks:
             main=[
                 {
                     "evaluate": {"foo": ["string"]},
+                    "kind": "evaluate",
                     "label": "label",
                 }
             ],
@@ -547,6 +550,7 @@ class TestAsyncTasks:
             main=[
                 {
                     "evaluate": {"foo": ["string"]},
+                    "kind": "evaluate",
                     "label": "label",
                 }
             ],
