@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.55.1 (2025-01-21)
+
+Full Changelog: [v1.55.0...v1.55.1](https://github.com/julep-ai/python-sdk/compare/v1.55.0...v1.55.1)
+
+### Bug Fixes
+
+* **tests:** make test_get_platform less flaky ([#260](https://github.com/julep-ai/python-sdk/issues/260)) ([1ae47e0](https://github.com/julep-ai/python-sdk/commit/1ae47e01d6353582097f8c2635cd0492b4ad72e7))
+
+
+### Chores
+
+* **internal:** codegen related update ([#256](https://github.com/julep-ai/python-sdk/issues/256)) ([af7f193](https://github.com/julep-ai/python-sdk/commit/af7f193c4c129f1df40f09136d94e724513de26f))
+* **internal:** codegen related update ([#258](https://github.com/julep-ai/python-sdk/issues/258)) ([f705d27](https://github.com/julep-ai/python-sdk/commit/f705d275e5e829ae47d37723067458337a07452d))
+
+
+### Documentation
+
+* **raw responses:** fix duplicate `the` ([#259](https://github.com/julep-ai/python-sdk/issues/259)) ([06a6a4b](https://github.com/julep-ai/python-sdk/commit/06a6a4beff581a7e501bb3f812dfdd852dc0f977))
+
 ## 1.55.0 (2025-01-16)
 
 Full Changelog: [v1.54.0...v1.55.0](https://github.com/julep-ai/python-sdk/compare/v1.54.0...v1.55.0)
