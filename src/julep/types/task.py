@@ -766,7 +766,7 @@ __all__ = [
 
 
 class MainEvaluateStep(BaseModel):
-    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
+    evaluate: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1818,7 +1818,7 @@ class MainGetStep(BaseModel):
 
 
 class MainSetStep(BaseModel):
-    set: Dict[str, str]
+    set: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1890,7 +1890,7 @@ class MainWaitForInputStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputThenEvaluateStep(BaseModel):
-    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
+    evaluate: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3024,7 +3024,7 @@ class MainIfElseWorkflowStepOutputThenGetStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputThenSetStep(BaseModel):
-    set: Dict[str, str]
+    set: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3111,7 +3111,7 @@ MainIfElseWorkflowStepOutputThen: TypeAlias = Union[
 
 
 class MainIfElseWorkflowStepOutputElseEvaluateStep(BaseModel):
-    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
+    evaluate: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4245,7 +4245,7 @@ class MainIfElseWorkflowStepOutputElseGetStep(BaseModel):
 
 
 class MainIfElseWorkflowStepOutputElseSetStep(BaseModel):
-    set: Dict[str, str]
+    set: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4345,7 +4345,7 @@ class MainIfElseWorkflowStepOutput(BaseModel):
 
 
 class MainSwitchStepOutputSwitchThenEvaluateStep(BaseModel):
-    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
+    evaluate: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5472,7 +5472,7 @@ class MainSwitchStepOutputSwitchThenGetStep(BaseModel):
 
 
 class MainSwitchStepOutputSwitchThenSetStep(BaseModel):
-    set: Dict[str, str]
+    set: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5585,7 +5585,7 @@ class MainForeachStepOutputForeachDoWaitForInputStep(BaseModel):
 
 
 class MainForeachStepOutputForeachDoEvaluateStep(BaseModel):
-    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
+    evaluate: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -6712,7 +6712,7 @@ class MainForeachStepOutputForeachDoGetStep(BaseModel):
 
 
 class MainForeachStepOutputForeachDoSetStep(BaseModel):
-    set: Dict[str, str]
+    set: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
@@ -6764,7 +6764,7 @@ class MainForeachStepOutput(BaseModel):
 
 
 class MainParallelStepOutputParallelEvaluateStep(BaseModel):
-    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
+    evaluate: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -7891,7 +7891,7 @@ class MainParallelStepOutputParallelGetStep(BaseModel):
 
 
 class MainParallelStepOutputParallelSetStep(BaseModel):
-    set: Dict[str, str]
+    set: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
@@ -7936,7 +7936,7 @@ class MainParallelStepOutput(BaseModel):
 
 
 class MainMainOutputMapEvaluateStep(BaseModel):
-    evaluate: Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]
+    evaluate: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["evaluate"]] = FieldInfo(alias="kind_", default=None)
 
@@ -9051,7 +9051,7 @@ class MainMainOutputMapGetStep(BaseModel):
 
 
 class MainMainOutputMapSetStep(BaseModel):
-    set: Dict[str, str]
+    set: Dict[str, Union[str, object]]
 
     kind: Optional[Literal["set"]] = FieldInfo(alias="kind_", default=None)
 
