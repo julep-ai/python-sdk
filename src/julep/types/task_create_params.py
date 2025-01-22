@@ -783,7 +783,7 @@ class TaskCreateParams(TypedDict, total=False):
 
 
 class MainEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
+    evaluate: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -1908,7 +1908,7 @@ class MainGetStep(TypedDict, total=False):
 
 
 class MainSetStep(TypedDict, total=False):
-    set: Required[Dict[str, str]]
+    set: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -1973,7 +1973,7 @@ class MainWaitForInputStep(TypedDict, total=False):
 
 
 class MainIfElseWorkflowStepInputThenEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
+    evaluate: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -3161,7 +3161,7 @@ class MainIfElseWorkflowStepInputThenGetStep(TypedDict, total=False):
 
 
 class MainIfElseWorkflowStepInputThenSetStep(TypedDict, total=False):
-    set: Required[Dict[str, str]]
+    set: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -3243,7 +3243,7 @@ MainIfElseWorkflowStepInputThen: TypeAlias = Union[
 
 
 class MainIfElseWorkflowStepInputElseEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
+    evaluate: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -4431,7 +4431,7 @@ class MainIfElseWorkflowStepInputElseGetStep(TypedDict, total=False):
 
 
 class MainIfElseWorkflowStepInputElseSetStep(TypedDict, total=False):
-    set: Required[Dict[str, str]]
+    set: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -4528,7 +4528,7 @@ class MainIfElseWorkflowStepInput(_MainIfElseWorkflowStepInputReservedKeywords, 
 
 
 class MainSwitchStepInputSwitchThenEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
+    evaluate: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -5708,7 +5708,7 @@ class MainSwitchStepInputSwitchThenGetStep(TypedDict, total=False):
 
 
 class MainSwitchStepInputSwitchThenSetStep(TypedDict, total=False):
-    set: Required[Dict[str, str]]
+    set: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -5810,7 +5810,7 @@ class MainForeachStepInputForeachDoWaitForInputStep(TypedDict, total=False):
 
 
 class MainForeachStepInputForeachDoEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
+    evaluate: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -6990,7 +6990,7 @@ class MainForeachStepInputForeachDoGetStep(TypedDict, total=False):
 
 
 class MainForeachStepInputForeachDoSetStep(TypedDict, total=False):
-    set: Required[Dict[str, str]]
+    set: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -7040,7 +7040,7 @@ class MainForeachStepInput(TypedDict, total=False):
 
 
 class MainParallelStepInputParallelEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
+    evaluate: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -8220,7 +8220,7 @@ class MainParallelStepInputParallelGetStep(TypedDict, total=False):
 
 
 class MainParallelStepInputParallelSetStep(TypedDict, total=False):
-    set: Required[Dict[str, str]]
+    set: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -8257,7 +8257,7 @@ class MainParallelStepInput(TypedDict, total=False):
 
 
 class MainMainInputMapEvaluateStep(TypedDict, total=False):
-    evaluate: Required[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]]
+    evaluate: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
@@ -9418,7 +9418,7 @@ class MainMainInputMapGetStep(TypedDict, total=False):
 
 
 class MainMainInputMapSetStep(TypedDict, total=False):
-    set: Required[Dict[str, str]]
+    set: Required[Dict[str, Union[str, object]]]
 
     label: Optional[str]
 
