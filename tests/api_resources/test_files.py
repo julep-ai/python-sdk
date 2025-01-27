@@ -10,7 +10,7 @@ import pytest
 from julep import Julep, AsyncJulep
 from julep.types import File
 from tests.utils import assert_matches_type
-from julep.types.shared import ResourceCreated, ResourceDeleted
+from julep.types.shared import ResourceDeleted
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 
@@ -24,7 +24,7 @@ class TestFiles:
             content="content",
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceCreated, file, path=["response"])
+        assert_matches_type(File, file, path=["response"])
 
     @parametrize
     def test_method_create_with_all_params(self, client: Julep) -> None:
@@ -34,7 +34,7 @@ class TestFiles:
             description="description",
             mime_type="mime_type",
         )
-        assert_matches_type(ResourceCreated, file, path=["response"])
+        assert_matches_type(File, file, path=["response"])
 
     @parametrize
     def test_raw_response_create(self, client: Julep) -> None:
@@ -46,7 +46,7 @@ class TestFiles:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         file = response.parse()
-        assert_matches_type(ResourceCreated, file, path=["response"])
+        assert_matches_type(File, file, path=["response"])
 
     @parametrize
     def test_streaming_response_create(self, client: Julep) -> None:
@@ -58,7 +58,7 @@ class TestFiles:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             file = response.parse()
-            assert_matches_type(ResourceCreated, file, path=["response"])
+            assert_matches_type(File, file, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -148,7 +148,7 @@ class TestAsyncFiles:
             content="content",
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceCreated, file, path=["response"])
+        assert_matches_type(File, file, path=["response"])
 
     @parametrize
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -158,7 +158,7 @@ class TestAsyncFiles:
             description="description",
             mime_type="mime_type",
         )
-        assert_matches_type(ResourceCreated, file, path=["response"])
+        assert_matches_type(File, file, path=["response"])
 
     @parametrize
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
@@ -170,7 +170,7 @@ class TestAsyncFiles:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         file = await response.parse()
-        assert_matches_type(ResourceCreated, file, path=["response"])
+        assert_matches_type(File, file, path=["response"])
 
     @parametrize
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
@@ -182,7 +182,7 @@ class TestAsyncFiles:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             file = await response.parse()
-            assert_matches_type(ResourceCreated, file, path=["response"])
+            assert_matches_type(File, file, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 

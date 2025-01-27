@@ -33,12 +33,12 @@ client = Julep(
     environment="dev",
 )
 
-resource_created = client.tasks.create(
+task = client.tasks.create(
     agent_id="dad00000-0000-4000-a000-000000000000",
     main=[{"evaluate": {"foo": "string"}}],
     name="x",
 )
-print(resource_created.id)
+print(task.id)
 ```
 
 While you can provide an `api_key` keyword argument,
@@ -63,12 +63,12 @@ client = AsyncJulep(
 
 
 async def main() -> None:
-    resource_created = await client.tasks.create(
+    task = await client.tasks.create(
         agent_id="dad00000-0000-4000-a000-000000000000",
         main=[{"evaluate": {"foo": "string"}}],
         name="x",
     )
-    print(resource_created.id)
+    print(task.id)
 
 
 asyncio.run(main())

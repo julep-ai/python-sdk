@@ -32,7 +32,6 @@ from .transitions import (
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ..._base_client import AsyncPaginator, make_request_options
 from ...types.execution import Execution
-from ...types.shared.resource_created import ResourceCreated
 
 __all__ = ["ExecutionsResource", "AsyncExecutionsResource"]
 
@@ -75,7 +74,7 @@ class ExecutionsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> Execution:
         """
         Create Task Execution
 
@@ -104,7 +103,7 @@ class ExecutionsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=Execution,
         )
 
     def list(
@@ -317,7 +316,7 @@ class AsyncExecutionsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> Execution:
         """
         Create Task Execution
 
@@ -346,7 +345,7 @@ class AsyncExecutionsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=Execution,
         )
 
     def list(

@@ -24,8 +24,6 @@ from .._response import (
 from ..pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ..types.task import Task
 from .._base_client import AsyncPaginator, make_request_options
-from ..types.shared.resource_created import ResourceCreated
-from ..types.shared.resource_updated import ResourceUpdated
 
 __all__ = ["TasksResource", "AsyncTasksResource"]
 
@@ -68,7 +66,7 @@ class TasksResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> Task:
         """
         Create Task
 
@@ -101,7 +99,7 @@ class TasksResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=Task,
         )
 
     def list(
@@ -173,7 +171,7 @@ class TasksResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> Task:
         """
         Create Or Update Task
 
@@ -208,7 +206,7 @@ class TasksResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=Task,
         )
 
     def get(
@@ -283,7 +281,7 @@ class AsyncTasksResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> Task:
         """
         Create Task
 
@@ -316,7 +314,7 @@ class AsyncTasksResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=Task,
         )
 
     def list(
@@ -388,7 +386,7 @@ class AsyncTasksResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> Task:
         """
         Create Or Update Task
 
@@ -423,7 +421,7 @@ class AsyncTasksResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=Task,
         )
 
     async def get(
