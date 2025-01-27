@@ -13,7 +13,7 @@ from julep.types import (
 )
 from tests.utils import assert_matches_type
 from julep.pagination import SyncOffsetPagination, AsyncOffsetPagination
-from julep.types.shared import ResourceCreated, ResourceDeleted, ResourceUpdated
+from julep.types.shared import ResourceDeleted
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 
@@ -24,7 +24,7 @@ class TestUsers:
     @parametrize
     def test_method_create(self, client: Julep) -> None:
         user = client.users.create()
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_method_create_with_all_params(self, client: Julep) -> None:
@@ -33,7 +33,7 @@ class TestUsers:
             metadata={},
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_raw_response_create(self, client: Julep) -> None:
@@ -42,7 +42,7 @@ class TestUsers:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         user = response.parse()
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_streaming_response_create(self, client: Julep) -> None:
@@ -51,7 +51,7 @@ class TestUsers:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             user = response.parse()
-            assert_matches_type(ResourceCreated, user, path=["response"])
+            assert_matches_type(User, user, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -60,7 +60,7 @@ class TestUsers:
         user = client.users.update(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_method_update_with_all_params(self, client: Julep) -> None:
@@ -70,7 +70,7 @@ class TestUsers:
             metadata={},
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_raw_response_update(self, client: Julep) -> None:
@@ -81,7 +81,7 @@ class TestUsers:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         user = response.parse()
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_streaming_response_update(self, client: Julep) -> None:
@@ -92,7 +92,7 @@ class TestUsers:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             user = response.parse()
-            assert_matches_type(ResourceUpdated, user, path=["response"])
+            assert_matches_type(User, user, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -182,7 +182,7 @@ class TestUsers:
         user = client.users.create_or_update(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_method_create_or_update_with_all_params(self, client: Julep) -> None:
@@ -192,7 +192,7 @@ class TestUsers:
             metadata={},
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_raw_response_create_or_update(self, client: Julep) -> None:
@@ -203,7 +203,7 @@ class TestUsers:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         user = response.parse()
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_streaming_response_create_or_update(self, client: Julep) -> None:
@@ -214,7 +214,7 @@ class TestUsers:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             user = response.parse()
-            assert_matches_type(ResourceCreated, user, path=["response"])
+            assert_matches_type(User, user, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -268,7 +268,7 @@ class TestUsers:
         user = client.users.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_method_reset_with_all_params(self, client: Julep) -> None:
@@ -278,7 +278,7 @@ class TestUsers:
             metadata={},
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_raw_response_reset(self, client: Julep) -> None:
@@ -289,7 +289,7 @@ class TestUsers:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         user = response.parse()
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     def test_streaming_response_reset(self, client: Julep) -> None:
@@ -300,7 +300,7 @@ class TestUsers:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             user = response.parse()
-            assert_matches_type(ResourceUpdated, user, path=["response"])
+            assert_matches_type(User, user, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -318,7 +318,7 @@ class TestAsyncUsers:
     @parametrize
     async def test_method_create(self, async_client: AsyncJulep) -> None:
         user = await async_client.users.create()
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -327,7 +327,7 @@ class TestAsyncUsers:
             metadata={},
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
@@ -336,7 +336,7 @@ class TestAsyncUsers:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         user = await response.parse()
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
@@ -345,7 +345,7 @@ class TestAsyncUsers:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             user = await response.parse()
-            assert_matches_type(ResourceCreated, user, path=["response"])
+            assert_matches_type(User, user, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -354,7 +354,7 @@ class TestAsyncUsers:
         user = await async_client.users.update(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_method_update_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -364,7 +364,7 @@ class TestAsyncUsers:
             metadata={},
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_raw_response_update(self, async_client: AsyncJulep) -> None:
@@ -375,7 +375,7 @@ class TestAsyncUsers:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         user = await response.parse()
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_streaming_response_update(self, async_client: AsyncJulep) -> None:
@@ -386,7 +386,7 @@ class TestAsyncUsers:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             user = await response.parse()
-            assert_matches_type(ResourceUpdated, user, path=["response"])
+            assert_matches_type(User, user, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -476,7 +476,7 @@ class TestAsyncUsers:
         user = await async_client.users.create_or_update(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_method_create_or_update_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -486,7 +486,7 @@ class TestAsyncUsers:
             metadata={},
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_raw_response_create_or_update(self, async_client: AsyncJulep) -> None:
@@ -497,7 +497,7 @@ class TestAsyncUsers:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         user = await response.parse()
-        assert_matches_type(ResourceCreated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_streaming_response_create_or_update(self, async_client: AsyncJulep) -> None:
@@ -508,7 +508,7 @@ class TestAsyncUsers:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             user = await response.parse()
-            assert_matches_type(ResourceCreated, user, path=["response"])
+            assert_matches_type(User, user, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -562,7 +562,7 @@ class TestAsyncUsers:
         user = await async_client.users.reset(
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_method_reset_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -572,7 +572,7 @@ class TestAsyncUsers:
             metadata={},
             name="recNPna{}ip}t",
         )
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_raw_response_reset(self, async_client: AsyncJulep) -> None:
@@ -583,7 +583,7 @@ class TestAsyncUsers:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         user = await response.parse()
-        assert_matches_type(ResourceUpdated, user, path=["response"])
+        assert_matches_type(User, user, path=["response"])
 
     @parametrize
     async def test_streaming_response_reset(self, async_client: AsyncJulep) -> None:
@@ -594,7 +594,7 @@ class TestAsyncUsers:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             user = await response.parse()
-            assert_matches_type(ResourceUpdated, user, path=["response"])
+            assert_matches_type(User, user, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 

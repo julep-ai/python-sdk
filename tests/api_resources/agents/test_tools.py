@@ -12,8 +12,11 @@ from tests.utils import assert_matches_type
 from julep.pagination import SyncOffsetPagination, AsyncOffsetPagination
 from julep.types.agents import (
     ToolListResponse,
+    ToolResetResponse,
+    ToolCreateResponse,
+    ToolUpdateResponse,
 )
-from julep.types.shared import ResourceCreated, ResourceDeleted, ResourceUpdated
+from julep.types.shared import ResourceDeleted
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 
@@ -28,7 +31,7 @@ class TestTools:
             name="name",
             type="function",
         )
-        assert_matches_type(ResourceCreated, tool, path=["response"])
+        assert_matches_type(ToolCreateResponse, tool, path=["response"])
 
     @parametrize
     def test_method_create_with_all_params(self, client: Julep) -> None:
@@ -85,7 +88,7 @@ class TestTools:
                 "type": "text_editor_20241022",
             },
         )
-        assert_matches_type(ResourceCreated, tool, path=["response"])
+        assert_matches_type(ToolCreateResponse, tool, path=["response"])
 
     @parametrize
     def test_raw_response_create(self, client: Julep) -> None:
@@ -98,7 +101,7 @@ class TestTools:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         tool = response.parse()
-        assert_matches_type(ResourceCreated, tool, path=["response"])
+        assert_matches_type(ToolCreateResponse, tool, path=["response"])
 
     @parametrize
     def test_streaming_response_create(self, client: Julep) -> None:
@@ -111,7 +114,7 @@ class TestTools:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             tool = response.parse()
-            assert_matches_type(ResourceCreated, tool, path=["response"])
+            assert_matches_type(ToolCreateResponse, tool, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -130,7 +133,7 @@ class TestTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolUpdateResponse, tool, path=["response"])
 
     @parametrize
     def test_method_update_with_all_params(self, client: Julep) -> None:
@@ -188,7 +191,7 @@ class TestTools:
             },
             type="function",
         )
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolUpdateResponse, tool, path=["response"])
 
     @parametrize
     def test_raw_response_update(self, client: Julep) -> None:
@@ -200,7 +203,7 @@ class TestTools:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         tool = response.parse()
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolUpdateResponse, tool, path=["response"])
 
     @parametrize
     def test_streaming_response_update(self, client: Julep) -> None:
@@ -212,7 +215,7 @@ class TestTools:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             tool = response.parse()
-            assert_matches_type(ResourceUpdated, tool, path=["response"])
+            assert_matches_type(ToolUpdateResponse, tool, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -335,7 +338,7 @@ class TestTools:
             name="name",
             type="function",
         )
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolResetResponse, tool, path=["response"])
 
     @parametrize
     def test_method_reset_with_all_params(self, client: Julep) -> None:
@@ -393,7 +396,7 @@ class TestTools:
                 "type": "text_editor_20241022",
             },
         )
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolResetResponse, tool, path=["response"])
 
     @parametrize
     def test_raw_response_reset(self, client: Julep) -> None:
@@ -407,7 +410,7 @@ class TestTools:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         tool = response.parse()
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolResetResponse, tool, path=["response"])
 
     @parametrize
     def test_streaming_response_reset(self, client: Julep) -> None:
@@ -421,7 +424,7 @@ class TestTools:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             tool = response.parse()
-            assert_matches_type(ResourceUpdated, tool, path=["response"])
+            assert_matches_type(ToolResetResponse, tool, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -454,7 +457,7 @@ class TestAsyncTools:
             name="name",
             type="function",
         )
-        assert_matches_type(ResourceCreated, tool, path=["response"])
+        assert_matches_type(ToolCreateResponse, tool, path=["response"])
 
     @parametrize
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -511,7 +514,7 @@ class TestAsyncTools:
                 "type": "text_editor_20241022",
             },
         )
-        assert_matches_type(ResourceCreated, tool, path=["response"])
+        assert_matches_type(ToolCreateResponse, tool, path=["response"])
 
     @parametrize
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
@@ -524,7 +527,7 @@ class TestAsyncTools:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         tool = await response.parse()
-        assert_matches_type(ResourceCreated, tool, path=["response"])
+        assert_matches_type(ToolCreateResponse, tool, path=["response"])
 
     @parametrize
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
@@ -537,7 +540,7 @@ class TestAsyncTools:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             tool = await response.parse()
-            assert_matches_type(ResourceCreated, tool, path=["response"])
+            assert_matches_type(ToolCreateResponse, tool, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -556,7 +559,7 @@ class TestAsyncTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolUpdateResponse, tool, path=["response"])
 
     @parametrize
     async def test_method_update_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -614,7 +617,7 @@ class TestAsyncTools:
             },
             type="function",
         )
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolUpdateResponse, tool, path=["response"])
 
     @parametrize
     async def test_raw_response_update(self, async_client: AsyncJulep) -> None:
@@ -626,7 +629,7 @@ class TestAsyncTools:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         tool = await response.parse()
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolUpdateResponse, tool, path=["response"])
 
     @parametrize
     async def test_streaming_response_update(self, async_client: AsyncJulep) -> None:
@@ -638,7 +641,7 @@ class TestAsyncTools:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             tool = await response.parse()
-            assert_matches_type(ResourceUpdated, tool, path=["response"])
+            assert_matches_type(ToolUpdateResponse, tool, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -761,7 +764,7 @@ class TestAsyncTools:
             name="name",
             type="function",
         )
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolResetResponse, tool, path=["response"])
 
     @parametrize
     async def test_method_reset_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -819,7 +822,7 @@ class TestAsyncTools:
                 "type": "text_editor_20241022",
             },
         )
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolResetResponse, tool, path=["response"])
 
     @parametrize
     async def test_raw_response_reset(self, async_client: AsyncJulep) -> None:
@@ -833,7 +836,7 @@ class TestAsyncTools:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         tool = await response.parse()
-        assert_matches_type(ResourceUpdated, tool, path=["response"])
+        assert_matches_type(ToolResetResponse, tool, path=["response"])
 
     @parametrize
     async def test_streaming_response_reset(self, async_client: AsyncJulep) -> None:
@@ -847,7 +850,7 @@ class TestAsyncTools:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             tool = await response.parse()
-            assert_matches_type(ResourceUpdated, tool, path=["response"])
+            assert_matches_type(ToolResetResponse, tool, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 

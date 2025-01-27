@@ -38,9 +38,7 @@ from ..._response import (
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ...types.user import User
 from ..._base_client import AsyncPaginator, make_request_options
-from ...types.shared.resource_created import ResourceCreated
 from ...types.shared.resource_deleted import ResourceDeleted
-from ...types.shared.resource_updated import ResourceUpdated
 
 __all__ = ["UsersResource", "AsyncUsersResource"]
 
@@ -81,7 +79,7 @@ class UsersResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> User:
         """
         Create User
 
@@ -107,7 +105,7 @@ class UsersResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=User,
         )
 
     def update(
@@ -123,7 +121,7 @@ class UsersResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> User:
         """
         Patch User
 
@@ -151,7 +149,7 @@ class UsersResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=User,
         )
 
     def list(
@@ -249,7 +247,7 @@ class UsersResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> User:
         """
         Create Or Update User
 
@@ -277,7 +275,7 @@ class UsersResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=User,
         )
 
     def get(
@@ -326,7 +324,7 @@ class UsersResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> User:
         """
         Update User
 
@@ -354,7 +352,7 @@ class UsersResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=User,
         )
 
 
@@ -394,7 +392,7 @@ class AsyncUsersResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> User:
         """
         Create User
 
@@ -420,7 +418,7 @@ class AsyncUsersResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=User,
         )
 
     async def update(
@@ -436,7 +434,7 @@ class AsyncUsersResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> User:
         """
         Patch User
 
@@ -464,7 +462,7 @@ class AsyncUsersResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=User,
         )
 
     def list(
@@ -562,7 +560,7 @@ class AsyncUsersResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> User:
         """
         Create Or Update User
 
@@ -590,7 +588,7 @@ class AsyncUsersResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=User,
         )
 
     async def get(
@@ -639,7 +637,7 @@ class AsyncUsersResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> User:
         """
         Update User
 
@@ -667,7 +665,7 @@ class AsyncUsersResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=User,
         )
 
 

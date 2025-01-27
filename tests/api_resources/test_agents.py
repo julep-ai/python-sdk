@@ -13,7 +13,7 @@ from julep.types import (
 )
 from tests.utils import assert_matches_type
 from julep.pagination import SyncOffsetPagination, AsyncOffsetPagination
-from julep.types.shared import ResourceCreated, ResourceDeleted, ResourceUpdated
+from julep.types.shared import ResourceDeleted
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 
@@ -26,7 +26,7 @@ class TestAgents:
         agent = client.agents.create(
             name="x",
         )
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_method_create_with_all_params(self, client: Julep) -> None:
@@ -47,7 +47,7 @@ class TestAgents:
             metadata={},
             model="model",
         )
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_raw_response_create(self, client: Julep) -> None:
@@ -58,7 +58,7 @@ class TestAgents:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         agent = response.parse()
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_streaming_response_create(self, client: Julep) -> None:
@@ -69,7 +69,7 @@ class TestAgents:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             agent = response.parse()
-            assert_matches_type(ResourceCreated, agent, path=["response"])
+            assert_matches_type(Agent, agent, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -78,7 +78,7 @@ class TestAgents:
         agent = client.agents.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_method_update_with_all_params(self, client: Julep) -> None:
@@ -100,7 +100,7 @@ class TestAgents:
             model="model",
             name="x",
         )
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_raw_response_update(self, client: Julep) -> None:
@@ -111,7 +111,7 @@ class TestAgents:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         agent = response.parse()
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_streaming_response_update(self, client: Julep) -> None:
@@ -122,7 +122,7 @@ class TestAgents:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             agent = response.parse()
-            assert_matches_type(ResourceUpdated, agent, path=["response"])
+            assert_matches_type(Agent, agent, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -213,7 +213,7 @@ class TestAgents:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="x",
         )
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_method_create_or_update_with_all_params(self, client: Julep) -> None:
@@ -235,7 +235,7 @@ class TestAgents:
             metadata={},
             model="model",
         )
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_raw_response_create_or_update(self, client: Julep) -> None:
@@ -247,7 +247,7 @@ class TestAgents:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         agent = response.parse()
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_streaming_response_create_or_update(self, client: Julep) -> None:
@@ -259,7 +259,7 @@ class TestAgents:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             agent = response.parse()
-            assert_matches_type(ResourceCreated, agent, path=["response"])
+            assert_matches_type(Agent, agent, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -315,7 +315,7 @@ class TestAgents:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="x",
         )
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_method_reset_with_all_params(self, client: Julep) -> None:
@@ -337,7 +337,7 @@ class TestAgents:
             metadata={},
             model="model",
         )
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_raw_response_reset(self, client: Julep) -> None:
@@ -349,7 +349,7 @@ class TestAgents:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         agent = response.parse()
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     def test_streaming_response_reset(self, client: Julep) -> None:
@@ -361,7 +361,7 @@ class TestAgents:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             agent = response.parse()
-            assert_matches_type(ResourceUpdated, agent, path=["response"])
+            assert_matches_type(Agent, agent, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -382,7 +382,7 @@ class TestAsyncAgents:
         agent = await async_client.agents.create(
             name="x",
         )
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -403,7 +403,7 @@ class TestAsyncAgents:
             metadata={},
             model="model",
         )
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
@@ -414,7 +414,7 @@ class TestAsyncAgents:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         agent = await response.parse()
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
@@ -425,7 +425,7 @@ class TestAsyncAgents:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             agent = await response.parse()
-            assert_matches_type(ResourceCreated, agent, path=["response"])
+            assert_matches_type(Agent, agent, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -434,7 +434,7 @@ class TestAsyncAgents:
         agent = await async_client.agents.update(
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_method_update_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -456,7 +456,7 @@ class TestAsyncAgents:
             model="model",
             name="x",
         )
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_raw_response_update(self, async_client: AsyncJulep) -> None:
@@ -467,7 +467,7 @@ class TestAsyncAgents:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         agent = await response.parse()
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_streaming_response_update(self, async_client: AsyncJulep) -> None:
@@ -478,7 +478,7 @@ class TestAsyncAgents:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             agent = await response.parse()
-            assert_matches_type(ResourceUpdated, agent, path=["response"])
+            assert_matches_type(Agent, agent, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -569,7 +569,7 @@ class TestAsyncAgents:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="x",
         )
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_method_create_or_update_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -591,7 +591,7 @@ class TestAsyncAgents:
             metadata={},
             model="model",
         )
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_raw_response_create_or_update(self, async_client: AsyncJulep) -> None:
@@ -603,7 +603,7 @@ class TestAsyncAgents:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         agent = await response.parse()
-        assert_matches_type(ResourceCreated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_streaming_response_create_or_update(self, async_client: AsyncJulep) -> None:
@@ -615,7 +615,7 @@ class TestAsyncAgents:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             agent = await response.parse()
-            assert_matches_type(ResourceCreated, agent, path=["response"])
+            assert_matches_type(Agent, agent, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -671,7 +671,7 @@ class TestAsyncAgents:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             name="x",
         )
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_method_reset_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -693,7 +693,7 @@ class TestAsyncAgents:
             metadata={},
             model="model",
         )
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_raw_response_reset(self, async_client: AsyncJulep) -> None:
@@ -705,7 +705,7 @@ class TestAsyncAgents:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         agent = await response.parse()
-        assert_matches_type(ResourceUpdated, agent, path=["response"])
+        assert_matches_type(Agent, agent, path=["response"])
 
     @parametrize
     async def test_streaming_response_reset(self, async_client: AsyncJulep) -> None:
@@ -717,7 +717,7 @@ class TestAsyncAgents:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             agent = await response.parse()
-            assert_matches_type(ResourceUpdated, agent, path=["response"])
+            assert_matches_type(Agent, agent, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 

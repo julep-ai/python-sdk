@@ -12,7 +12,7 @@ from julep.types import Doc
 from tests.utils import assert_matches_type
 from julep.pagination import SyncOffsetPagination, AsyncOffsetPagination
 from julep.types.users import DocSearchResponse
-from julep.types.shared import ResourceCreated, ResourceDeleted
+from julep.types.shared import ResourceDeleted
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 
@@ -27,7 +27,7 @@ class TestDocs:
             content="string",
             title="title",
         )
-        assert_matches_type(ResourceCreated, doc, path=["response"])
+        assert_matches_type(Doc, doc, path=["response"])
 
     @parametrize
     def test_method_create_with_all_params(self, client: Julep) -> None:
@@ -35,11 +35,10 @@ class TestDocs:
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             content="string",
             title="title",
-            connection_pool={},
             embed_instruction="embed_instruction",
             metadata={},
         )
-        assert_matches_type(ResourceCreated, doc, path=["response"])
+        assert_matches_type(Doc, doc, path=["response"])
 
     @parametrize
     def test_raw_response_create(self, client: Julep) -> None:
@@ -52,7 +51,7 @@ class TestDocs:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         doc = response.parse()
-        assert_matches_type(ResourceCreated, doc, path=["response"])
+        assert_matches_type(Doc, doc, path=["response"])
 
     @parametrize
     def test_streaming_response_create(self, client: Julep) -> None:
@@ -65,7 +64,7 @@ class TestDocs:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             doc = response.parse()
-            assert_matches_type(ResourceCreated, doc, path=["response"])
+            assert_matches_type(Doc, doc, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -360,7 +359,7 @@ class TestAsyncDocs:
             content="string",
             title="title",
         )
-        assert_matches_type(ResourceCreated, doc, path=["response"])
+        assert_matches_type(Doc, doc, path=["response"])
 
     @parametrize
     async def test_method_create_with_all_params(self, async_client: AsyncJulep) -> None:
@@ -368,11 +367,10 @@ class TestAsyncDocs:
             user_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             content="string",
             title="title",
-            connection_pool={},
             embed_instruction="embed_instruction",
             metadata={},
         )
-        assert_matches_type(ResourceCreated, doc, path=["response"])
+        assert_matches_type(Doc, doc, path=["response"])
 
     @parametrize
     async def test_raw_response_create(self, async_client: AsyncJulep) -> None:
@@ -385,7 +383,7 @@ class TestAsyncDocs:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         doc = await response.parse()
-        assert_matches_type(ResourceCreated, doc, path=["response"])
+        assert_matches_type(Doc, doc, path=["response"])
 
     @parametrize
     async def test_streaming_response_create(self, async_client: AsyncJulep) -> None:
@@ -398,7 +396,7 @@ class TestAsyncDocs:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             doc = await response.parse()
-            assert_matches_type(ResourceCreated, doc, path=["response"])
+            assert_matches_type(Doc, doc, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 

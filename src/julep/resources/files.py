@@ -22,7 +22,6 @@ from .._response import (
 )
 from ..types.file import File
 from .._base_client import make_request_options
-from ..types.shared.resource_created import ResourceCreated
 from ..types.shared.resource_deleted import ResourceDeleted
 
 __all__ = ["FilesResource", "AsyncFilesResource"]
@@ -61,7 +60,7 @@ class FilesResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> File:
         """
         Create File
 
@@ -88,7 +87,7 @@ class FilesResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=File,
         )
 
     def delete(
@@ -191,7 +190,7 @@ class AsyncFilesResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> File:
         """
         Create File
 
@@ -218,7 +217,7 @@ class AsyncFilesResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=File,
         )
 
     async def delete(
