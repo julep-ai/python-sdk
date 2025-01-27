@@ -8,11 +8,7 @@ from .task import Task as Task
 from .user import User as User
 from .agent import Agent as Agent
 from .entry import Entry as Entry
-from .shared import (
-    ResourceCreated as ResourceCreated,
-    ResourceDeleted as ResourceDeleted,
-    ResourceUpdated as ResourceUpdated,
-)
+from .shared import ResourceDeleted as ResourceDeleted
 from .history import History as History
 from .session import Session as Session
 from .snippet import Snippet as Snippet

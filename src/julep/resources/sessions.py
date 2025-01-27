@@ -35,9 +35,7 @@ from ..types.history import History
 from ..types.session import Session
 from ..types.message_param import MessageParam
 from ..types.session_chat_response import SessionChatResponse
-from ..types.shared.resource_created import ResourceCreated
 from ..types.shared.resource_deleted import ResourceDeleted
-from ..types.shared.resource_updated import ResourceUpdated
 
 __all__ = ["SessionsResource", "AsyncSessionsResource"]
 
@@ -84,7 +82,7 @@ class SessionsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> Session:
         """
         Create Session
 
@@ -120,7 +118,7 @@ class SessionsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=Session,
         )
 
     def update(
@@ -142,7 +140,7 @@ class SessionsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> Session:
         """
         Patch Session
 
@@ -176,7 +174,7 @@ class SessionsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=Session,
         )
 
     def list(
@@ -382,7 +380,7 @@ class SessionsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> Session:
         """
         Create Or Update Session
 
@@ -420,7 +418,7 @@ class SessionsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=Session,
         )
 
     def get(
@@ -508,7 +506,7 @@ class SessionsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> Session:
         """
         Update Session
 
@@ -542,7 +540,7 @@ class SessionsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=Session,
         )
 
 
@@ -588,7 +586,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> Session:
         """
         Create Session
 
@@ -624,7 +622,7 @@ class AsyncSessionsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=Session,
         )
 
     async def update(
@@ -646,7 +644,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> Session:
         """
         Patch Session
 
@@ -680,7 +678,7 @@ class AsyncSessionsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=Session,
         )
 
     def list(
@@ -888,7 +886,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> Session:
         """
         Create Or Update Session
 
@@ -926,7 +924,7 @@ class AsyncSessionsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=Session,
         )
 
     async def get(
@@ -1014,7 +1012,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> Session:
         """
         Update Session
 
@@ -1048,7 +1046,7 @@ class AsyncSessionsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=Session,
         )
 
 

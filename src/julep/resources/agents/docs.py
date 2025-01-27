@@ -25,7 +25,6 @@ from ...types.doc import Doc
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ..._base_client import AsyncPaginator, make_request_options
 from ...types.agents import doc_list_params, doc_create_params, doc_search_params
-from ...types.shared.resource_created import ResourceCreated
 from ...types.shared.resource_deleted import ResourceDeleted
 from ...types.agents.doc_search_response import DocSearchResponse
 
@@ -58,7 +57,6 @@ class DocsResource(SyncAPIResource):
         *,
         content: Union[str, List[str]],
         title: str,
-        connection_pool: object | NotGiven = NOT_GIVEN,
         embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -67,7 +65,7 @@ class DocsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> Doc:
         """
         Create Agent Doc
 
@@ -94,13 +92,9 @@ class DocsResource(SyncAPIResource):
                 doc_create_params.DocCreateParams,
             ),
             options=make_request_options(
-                extra_headers=extra_headers,
-                extra_query=extra_query,
-                extra_body=extra_body,
-                timeout=timeout,
-                query=maybe_transform({"connection_pool": connection_pool}, doc_create_params.DocCreateParams),
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=Doc,
         )
 
     def list(
@@ -390,7 +384,6 @@ class AsyncDocsResource(AsyncAPIResource):
         *,
         content: Union[str, List[str]],
         title: str,
-        connection_pool: object | NotGiven = NOT_GIVEN,
         embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -399,7 +392,7 @@ class AsyncDocsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> Doc:
         """
         Create Agent Doc
 
@@ -426,15 +419,9 @@ class AsyncDocsResource(AsyncAPIResource):
                 doc_create_params.DocCreateParams,
             ),
             options=make_request_options(
-                extra_headers=extra_headers,
-                extra_query=extra_query,
-                extra_body=extra_body,
-                timeout=timeout,
-                query=await async_maybe_transform(
-                    {"connection_pool": connection_pool}, doc_create_params.DocCreateParams
-                ),
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=Doc,
         )
 
     def list(
