@@ -23,10 +23,11 @@ from ..._response import (
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ..._base_client import AsyncPaginator, make_request_options
 from ...types.agents import tool_list_params, tool_reset_params, tool_create_params, tool_update_params
-from ...types.shared.resource_created import ResourceCreated
 from ...types.shared.resource_deleted import ResourceDeleted
-from ...types.shared.resource_updated import ResourceUpdated
 from ...types.agents.tool_list_response import ToolListResponse
+from ...types.agents.tool_reset_response import ToolResetResponse
+from ...types.agents.tool_create_response import ToolCreateResponse
+from ...types.agents.tool_update_response import ToolUpdateResponse
 
 __all__ = ["ToolsResource", "AsyncToolsResource"]
 
@@ -79,7 +80,7 @@ class ToolsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> ToolCreateResponse:
         """
         Create Agent Tool
 
@@ -124,7 +125,7 @@ class ToolsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=ToolCreateResponse,
         )
 
     def update(
@@ -159,7 +160,7 @@ class ToolsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> ToolUpdateResponse:
         """
         Patch Agent Tool
 
@@ -206,7 +207,7 @@ class ToolsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=ToolUpdateResponse,
         )
 
     def list(
@@ -324,7 +325,7 @@ class ToolsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> ToolResetResponse:
         """
         Update Agent Tool
 
@@ -371,7 +372,7 @@ class ToolsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=ToolResetResponse,
         )
 
 
@@ -423,7 +424,7 @@ class AsyncToolsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceCreated:
+    ) -> ToolCreateResponse:
         """
         Create Agent Tool
 
@@ -468,7 +469,7 @@ class AsyncToolsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceCreated,
+            cast_to=ToolCreateResponse,
         )
 
     async def update(
@@ -503,7 +504,7 @@ class AsyncToolsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> ToolUpdateResponse:
         """
         Patch Agent Tool
 
@@ -550,7 +551,7 @@ class AsyncToolsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=ToolUpdateResponse,
         )
 
     def list(
@@ -668,7 +669,7 @@ class AsyncToolsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceUpdated:
+    ) -> ToolResetResponse:
         """
         Update Agent Tool
 
@@ -715,7 +716,7 @@ class AsyncToolsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceUpdated,
+            cast_to=ToolResetResponse,
         )
 
 
