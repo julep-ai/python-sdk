@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.58.0 (2025-01-28)
+
+Full Changelog: [v1.57.0...v1.58.0](https://github.com/julep-ai/python-sdk/compare/v1.57.0...v1.58.0)
+
+### Features
+
+* **api:** api update ([#272](https://github.com/julep-ai/python-sdk/issues/272)) ([c70f814](https://github.com/julep-ai/python-sdk/commit/c70f81462190c5698010bec3e7d19c0afa5e3002))
+
+
+### Chores
+
+* **internal:** codegen related update ([#270](https://github.com/julep-ai/python-sdk/issues/270)) ([6729d49](https://github.com/julep-ai/python-sdk/commit/6729d49bf43eb301971bfeb9d0ecddc218d21c2c))
+
 ## 1.57.0 (2025-01-27)
 
 Full Changelog: [v1.56.0...v1.57.0](https://github.com/julep-ai/python-sdk/compare/v1.56.0...v1.57.0)
