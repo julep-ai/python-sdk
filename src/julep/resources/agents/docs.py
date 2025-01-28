@@ -57,6 +57,7 @@ class DocsResource(SyncAPIResource):
         *,
         content: Union[str, List[str]],
         title: str,
+        connection_pool: object | NotGiven = NOT_GIVEN,
         embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -92,7 +93,11 @@ class DocsResource(SyncAPIResource):
                 doc_create_params.DocCreateParams,
             ),
             options=make_request_options(
-                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+                extra_headers=extra_headers,
+                extra_query=extra_query,
+                extra_body=extra_body,
+                timeout=timeout,
+                query=maybe_transform({"connection_pool": connection_pool}, doc_create_params.DocCreateParams),
             ),
             cast_to=Doc,
         )
@@ -384,6 +389,7 @@ class AsyncDocsResource(AsyncAPIResource):
         *,
         content: Union[str, List[str]],
         title: str,
+        connection_pool: object | NotGiven = NOT_GIVEN,
         embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -419,7 +425,13 @@ class AsyncDocsResource(AsyncAPIResource):
                 doc_create_params.DocCreateParams,
             ),
             options=make_request_options(
-                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+                extra_headers=extra_headers,
+                extra_query=extra_query,
+                extra_body=extra_body,
+                timeout=timeout,
+                query=await async_maybe_transform(
+                    {"connection_pool": connection_pool}, doc_create_params.DocCreateParams
+                ),
             ),
             cast_to=Doc,
         )
