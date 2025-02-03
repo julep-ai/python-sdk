@@ -39,3 +39,5 @@ class Transition(BaseModel):
     updated_at: datetime
 
     metadata: Optional[object] = None
+
+    step_label: Optional[str] = None
