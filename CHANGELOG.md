@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.59.0 (2025-02-04)
+
+Full Changelog: [v1.58.0...v1.59.0](https://github.com/julep-ai/python-sdk/compare/v1.58.0...v1.59.0)
+
+### Features
+
+* **api:** api update ([#274](https://github.com/julep-ai/python-sdk/issues/274)) ([3a151a2](https://github.com/julep-ai/python-sdk/commit/3a151a2f6f8d0f9b025d602e5d9edee2827e6cdd))
+
+
+### Chores
+
+* **internal:** change default timeout to an int ([#276](https://github.com/julep-ai/python-sdk/issues/276)) ([570ef97](https://github.com/julep-ai/python-sdk/commit/570ef975c241178691ecdf77d5d90f8871f28cf4))
+
 ## 1.58.0 (2025-01-28)
 
 Full Changelog: [v1.57.0...v1.58.0](https://github.com/julep-ai/python-sdk/compare/v1.57.0...v1.58.0)
