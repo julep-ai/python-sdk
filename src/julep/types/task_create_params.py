@@ -6,7 +6,6 @@ from typing import Dict, List, Union, Iterable, Optional
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
 from .._utils import PropertyInfo
-from .chat_settings_param import ChatSettingsParam
 
 __all__ = [
     "TaskCreateParams",
@@ -1892,7 +1891,7 @@ class MainPromptStepInput(TypedDict, total=False):
 
     label: Optional[str]
 
-    settings: Optional[ChatSettingsParam]
+    settings: Optional[object]
 
     tool_choice: Optional[MainPromptStepInputToolChoice]
 
@@ -3145,7 +3144,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInput(TypedDict, total=False):
 
     label: Optional[str]
 
-    settings: Optional[ChatSettingsParam]
+    settings: Optional[object]
 
     tool_choice: Optional[MainIfElseWorkflowStepInputThenPromptStepInputToolChoice]
 
@@ -4415,7 +4414,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInput(TypedDict, total=False):
 
     label: Optional[str]
 
-    settings: Optional[ChatSettingsParam]
+    settings: Optional[object]
 
     tool_choice: Optional[MainIfElseWorkflowStepInputElsePromptStepInputToolChoice]
 
@@ -5692,7 +5691,7 @@ class MainSwitchStepInputSwitchThenPromptStepInput(TypedDict, total=False):
 
     label: Optional[str]
 
-    settings: Optional[ChatSettingsParam]
+    settings: Optional[object]
 
     tool_choice: Optional[MainSwitchStepInputSwitchThenPromptStepInputToolChoice]
 
@@ -6974,7 +6973,7 @@ class MainForeachStepInputForeachDoPromptStepInput(TypedDict, total=False):
 
     label: Optional[str]
 
-    settings: Optional[ChatSettingsParam]
+    settings: Optional[object]
 
     tool_choice: Optional[MainForeachStepInputForeachDoPromptStepInputToolChoice]
 
@@ -8204,7 +8203,7 @@ class MainParallelStepInputParallelPromptStepInput(TypedDict, total=False):
 
     label: Optional[str]
 
-    settings: Optional[ChatSettingsParam]
+    settings: Optional[object]
 
     tool_choice: Optional[MainParallelStepInputParallelPromptStepInputToolChoice]
 
@@ -9402,7 +9401,7 @@ class MainMainInputMapPromptStepInput(TypedDict, total=False):
 
     label: Optional[str]
 
-    settings: Optional[ChatSettingsParam]
+    settings: Optional[object]
 
     tool_choice: Optional[MainMainInputMapPromptStepInputToolChoice]
 

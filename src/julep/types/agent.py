@@ -5,23 +5,7 @@ from datetime import datetime
 
 from .._models import BaseModel
 
-__all__ = ["Agent", "DefaultSettings"]
-
-
-class DefaultSettings(BaseModel):
-    frequency_penalty: Optional[float] = None
-
-    length_penalty: Optional[float] = None
-
-    min_p: Optional[float] = None
-
-    presence_penalty: Optional[float] = None
-
-    repetition_penalty: Optional[float] = None
-
-    temperature: Optional[float] = None
-
-    top_p: Optional[float] = None
+__all__ = ["Agent"]
 
 
 class Agent(BaseModel):
@@ -37,8 +21,7 @@ class Agent(BaseModel):
 
     canonical_name: Optional[str] = None
 
-    default_settings: Optional[DefaultSettings] = None
-    """Default settings for the chat session (also used by the agent)"""
+    default_settings: Optional[object] = None
 
     instructions: Union[str, List[str], None] = None
 

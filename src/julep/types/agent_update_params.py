@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import List, Union, Optional
 from typing_extensions import TypedDict
 
-__all__ = ["AgentUpdateParams", "DefaultSettings"]
+__all__ = ["AgentUpdateParams"]
 
 
 class AgentUpdateParams(TypedDict, total=False):
@@ -13,8 +13,7 @@ class AgentUpdateParams(TypedDict, total=False):
 
     canonical_name: Optional[str]
 
-    default_settings: Optional[DefaultSettings]
-    """Default settings for the chat session (also used by the agent)"""
+    default_settings: Optional[object]
 
     instructions: Union[str, List[str]]
 
@@ -23,19 +22,3 @@ class AgentUpdateParams(TypedDict, total=False):
     model: str
 
     name: Optional[str]
-
-
-class DefaultSettings(TypedDict, total=False):
-    frequency_penalty: Optional[float]
-
-    length_penalty: Optional[float]
-
-    min_p: Optional[float]
-
-    presence_penalty: Optional[float]
-
-    repetition_penalty: Optional[float]
-
-    temperature: Optional[float]
-
-    top_p: Optional[float]

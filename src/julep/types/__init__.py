@@ -16,7 +16,6 @@ from .execution import Execution as Execution
 from .job_status import JobStatus as JobStatus
 from .transition import Transition as Transition
 from .chat_response import ChatResponse as ChatResponse
-from .chat_settings import ChatSettings as ChatSettings
 from .message_param import MessageParam as MessageParam
 from .doc_embed_params import DocEmbedParams as DocEmbedParams
 from .task_list_params import TaskListParams as TaskListParams
@@ -30,7 +29,6 @@ from .user_create_params import UserCreateParams as UserCreateParams
 from .user_update_params import UserUpdateParams as UserUpdateParams
 from .agent_create_params import AgentCreateParams as AgentCreateParams
 from .agent_update_params import AgentUpdateParams as AgentUpdateParams
-from .chat_settings_param import ChatSettingsParam as ChatSettingsParam
 from .session_chat_params import SessionChatParams as SessionChatParams
 from .session_list_params import SessionListParams as SessionListParams
 from .embed_query_response import EmbedQueryResponse as EmbedQueryResponse
