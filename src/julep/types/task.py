@@ -7,7 +7,6 @@ from typing_extensions import Literal, TypeAlias
 from pydantic import Field as FieldInfo
 
 from .._models import BaseModel
-from .chat_settings import ChatSettings
 
 __all__ = [
     "Task",
@@ -1800,7 +1799,7 @@ class MainPromptStepOutput(BaseModel):
 
     label: Optional[str] = None
 
-    settings: Optional[ChatSettings] = None
+    settings: Optional[object] = None
 
     tool_choice: Optional[MainPromptStepOutputToolChoice] = None
 
@@ -3006,7 +3005,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutput(BaseModel):
 
     label: Optional[str] = None
 
-    settings: Optional[ChatSettings] = None
+    settings: Optional[object] = None
 
     tool_choice: Optional[MainIfElseWorkflowStepOutputThenPromptStepOutputToolChoice] = None
 
@@ -4227,7 +4226,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutput(BaseModel):
 
     label: Optional[str] = None
 
-    settings: Optional[ChatSettings] = None
+    settings: Optional[object] = None
 
     tool_choice: Optional[MainIfElseWorkflowStepOutputElsePromptStepOutputToolChoice] = None
 
@@ -5454,7 +5453,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutput(BaseModel):
 
     label: Optional[str] = None
 
-    settings: Optional[ChatSettings] = None
+    settings: Optional[object] = None
 
     tool_choice: Optional[MainSwitchStepOutputSwitchThenPromptStepOutputToolChoice] = None
 
@@ -6694,7 +6693,7 @@ class MainForeachStepOutputForeachDoPromptStepOutput(BaseModel):
 
     label: Optional[str] = None
 
-    settings: Optional[ChatSettings] = None
+    settings: Optional[object] = None
 
     tool_choice: Optional[MainForeachStepOutputForeachDoPromptStepOutputToolChoice] = None
 
@@ -7873,7 +7872,7 @@ class MainParallelStepOutputParallelPromptStepOutput(BaseModel):
 
     label: Optional[str] = None
 
-    settings: Optional[ChatSettings] = None
+    settings: Optional[object] = None
 
     tool_choice: Optional[MainParallelStepOutputParallelPromptStepOutputToolChoice] = None
 
@@ -9033,7 +9032,7 @@ class MainMainOutputMapPromptStepOutput(BaseModel):
 
     label: Optional[str] = None
 
-    settings: Optional[ChatSettings] = None
+    settings: Optional[object] = None
 
     tool_choice: Optional[MainMainOutputMapPromptStepOutputToolChoice] = None
 
