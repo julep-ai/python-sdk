@@ -85,7 +85,7 @@ class AgentsResource(SyncAPIResource):
         name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_create_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
@@ -100,8 +100,6 @@ class AgentsResource(SyncAPIResource):
         Create Agent
 
         Args:
-          default_settings: Default settings for the chat session (also used by the agent)
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -136,7 +134,7 @@ class AgentsResource(SyncAPIResource):
         *,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
@@ -152,8 +150,6 @@ class AgentsResource(SyncAPIResource):
         Patch Agent
 
         Args:
-          default_settings: Default settings for the chat session (also used by the agent)
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -273,7 +269,7 @@ class AgentsResource(SyncAPIResource):
         name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_create_or_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
@@ -288,8 +284,6 @@ class AgentsResource(SyncAPIResource):
         Create Or Update Agent
 
         Args:
-          default_settings: Default settings for the chat session (also used by the agent)
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -360,7 +354,7 @@ class AgentsResource(SyncAPIResource):
         name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_reset_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
@@ -375,8 +369,6 @@ class AgentsResource(SyncAPIResource):
         Update Agent
 
         Args:
-          default_settings: Default settings for the chat session (also used by the agent)
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -442,7 +434,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_create_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
@@ -457,8 +449,6 @@ class AsyncAgentsResource(AsyncAPIResource):
         Create Agent
 
         Args:
-          default_settings: Default settings for the chat session (also used by the agent)
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -493,7 +483,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         *,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
@@ -509,8 +499,6 @@ class AsyncAgentsResource(AsyncAPIResource):
         Patch Agent
 
         Args:
-          default_settings: Default settings for the chat session (also used by the agent)
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -630,7 +618,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_create_or_update_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
@@ -645,8 +633,6 @@ class AsyncAgentsResource(AsyncAPIResource):
         Create Or Update Agent
 
         Args:
-          default_settings: Default settings for the chat session (also used by the agent)
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -717,7 +703,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         name: str,
         about: str | NotGiven = NOT_GIVEN,
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[agent_reset_params.DefaultSettings] | NotGiven = NOT_GIVEN,
+        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
@@ -732,8 +718,6 @@ class AsyncAgentsResource(AsyncAPIResource):
         Update Agent
 
         Args:
-          default_settings: Default settings for the chat session (also used by the agent)
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request

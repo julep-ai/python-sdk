@@ -80,7 +80,6 @@ Types:
 from julep.types import (
     ChatInput,
     ChatResponse,
-    ChatSettings,
     Entry,
     History,
     Message,
