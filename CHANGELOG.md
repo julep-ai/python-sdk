@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.60.0 (2025-02-08)
+
+Full Changelog: [v1.59.0...v1.60.0](https://github.com/julep-ai/python-sdk/compare/v1.59.0...v1.60.0)
+
+### Features
+
+* **api:** api update ([#280](https://github.com/julep-ai/python-sdk/issues/280)) ([0061af7](https://github.com/julep-ai/python-sdk/commit/0061af77f2412399d1f6068f075d621001a8f9b2))
+* **client:** send `X-Stainless-Read-Timeout` header ([#281](https://github.com/julep-ai/python-sdk/issues/281)) ([78f5704](https://github.com/julep-ai/python-sdk/commit/78f5704d062edf91ee572181b64b437ac4188959))
+
+
+### Chores
+
+* **internal:** bummp ruff dependency ([#278](https://github.com/julep-ai/python-sdk/issues/278)) ([18ef865](https://github.com/julep-ai/python-sdk/commit/18ef86563c00ab2fdb13cd1d7aad4e3b01281a22))
+* **internal:** fix type traversing dictionary params ([#282](https://github.com/julep-ai/python-sdk/issues/282)) ([04ee337](https://github.com/julep-ai/python-sdk/commit/04ee3371be2ec4a71cb3fc87fe2ec73081819137))
+* **internal:** minor type handling changes ([#283](https://github.com/julep-ai/python-sdk/issues/283)) ([c60e889](https://github.com/julep-ai/python-sdk/commit/c60e889e1e1a478fae1328e230911d02c4013505))
+
 ## 1.59.0 (2025-02-04)
 
 Full Changelog: [v1.58.0...v1.59.0](https://github.com/julep-ai/python-sdk/compare/v1.58.0...v1.59.0)
