@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.61.0 (2025-02-08)
+
+Full Changelog: [v1.60.0...v1.61.0](https://github.com/julep-ai/python-sdk/compare/v1.60.0...v1.61.0)
+
+### Features
+
+* feat: Add cli as optional dependency ([96f75ea](https://github.com/julep-ai/python-sdk/commit/96f75ea71da55e26e747ea828a440a63a7be0d53))
+
 ## 1.60.0 (2025-02-08)
 
 Full Changelog: [v1.59.0...v1.60.0](https://github.com/julep-ai/python-sdk/compare/v1.59.0...v1.60.0)
