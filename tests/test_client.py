@@ -23,10 +23,12 @@ from pydantic import ValidationError
 
 from julep import Julep, AsyncJulep, APIResponseValidationError
 from julep._types import Omit
+from julep._utils import maybe_transform
 from julep._models import BaseModel, FinalRequestOptions
 from julep._constants import RAW_RESPONSE_HEADER
 from julep._exceptions import JulepError, APIStatusError, APITimeoutError, APIResponseValidationError
 from julep._base_client import DEFAULT_TIMEOUT, HTTPX_DEFAULT_TIMEOUT, BaseClient, make_request_options
+from julep.types.agent_create_or_update_params import AgentCreateOrUpdateParams
 
 from .utils import update_env
 
@@ -720,7 +722,13 @@ class TestJulep:
         with pytest.raises(APITimeoutError):
             self.client.post(
                 "/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                body=cast(object, dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview")),
+                body=cast(
+                    object,
+                    maybe_transform(
+                        dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview"),
+                        AgentCreateOrUpdateParams,
+                    ),
+                ),
                 cast_to=httpx.Response,
                 options={"headers": {RAW_RESPONSE_HEADER: "stream"}},
             )
@@ -735,7 +743,13 @@ class TestJulep:
         with pytest.raises(APIStatusError):
             self.client.post(
                 "/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                body=cast(object, dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview")),
+                body=cast(
+                    object,
+                    maybe_transform(
+                        dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview"),
+                        AgentCreateOrUpdateParams,
+                    ),
+                ),
                 cast_to=httpx.Response,
                 options={"headers": {RAW_RESPONSE_HEADER: "stream"}},
             )
@@ -1510,7 +1524,13 @@ class TestAsyncJulep:
         with pytest.raises(APITimeoutError):
             await self.client.post(
                 "/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                body=cast(object, dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview")),
+                body=cast(
+                    object,
+                    maybe_transform(
+                        dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview"),
+                        AgentCreateOrUpdateParams,
+                    ),
+                ),
                 cast_to=httpx.Response,
                 options={"headers": {RAW_RESPONSE_HEADER: "stream"}},
             )
@@ -1525,7 +1545,13 @@ class TestAsyncJulep:
         with pytest.raises(APIStatusError):
             await self.client.post(
                 "/agents/182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-                body=cast(object, dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview")),
+                body=cast(
+                    object,
+                    maybe_transform(
+                        dict(name="R2D2", instructions=["Protect Leia", "Kick butt"], model="o1-preview"),
+                        AgentCreateOrUpdateParams,
+                    ),
+                ),
                 cast_to=httpx.Response,
                 options={"headers": {RAW_RESPONSE_HEADER: "stream"}},
             )
