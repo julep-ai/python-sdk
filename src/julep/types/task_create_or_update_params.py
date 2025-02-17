@@ -1648,7 +1648,7 @@ class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequest
 ):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationFfmpegIntegrationDef(
@@ -2887,7 +2887,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAu
 ):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationFfmpegIntegrationDef(
@@ -4157,7 +4157,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAu
 ):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationFfmpegIntegrationDef(
@@ -5434,7 +5434,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAuto
 ):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationFfmpegIntegrationDef(
@@ -6716,7 +6716,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAuto
 ):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationFfmpegIntegrationDef(
@@ -7946,7 +7946,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAuto
 ):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationFfmpegIntegrationDef(
@@ -9146,7 +9146,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreat
 ):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationFfmpegIntegrationDef(
@@ -9932,7 +9932,7 @@ class ToolIntegrationLlamaParseIntegrationDef(TypedDict, total=False):
 class ToolIntegrationFfmpegIntegrationDefArguments(TypedDict, total=False):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class ToolIntegrationFfmpegIntegrationDef(TypedDict, total=False):
