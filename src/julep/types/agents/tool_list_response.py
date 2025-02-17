@@ -510,7 +510,7 @@ class IntegrationLlamaParseIntegrationDef(BaseModel):
 class IntegrationFfmpegIntegrationDefArguments(BaseModel):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class IntegrationFfmpegIntegrationDef(BaseModel):

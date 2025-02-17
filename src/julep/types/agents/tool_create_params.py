@@ -555,7 +555,7 @@ class IntegrationLlamaParseIntegrationDef(TypedDict, total=False):
 class IntegrationFfmpegIntegrationDefArguments(TypedDict, total=False):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class IntegrationFfmpegIntegrationDef(TypedDict, total=False):
