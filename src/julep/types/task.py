@@ -1576,7 +1576,7 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationLla
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDefArguments(BaseModel):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef(BaseModel):
@@ -2757,7 +2757,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 ):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef(
@@ -3978,7 +3978,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 ):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef(
@@ -5205,7 +5205,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 ):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef(
@@ -6445,7 +6445,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 ):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef(
@@ -7624,7 +7624,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 ):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef(
@@ -8794,7 +8794,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 ):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationFfmpegIntegrationDef(
@@ -9560,7 +9560,7 @@ class ToolIntegrationLlamaParseIntegrationDef(BaseModel):
 class ToolIntegrationFfmpegIntegrationDefArguments(BaseModel):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class ToolIntegrationFfmpegIntegrationDef(BaseModel):

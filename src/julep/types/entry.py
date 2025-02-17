@@ -673,7 +673,7 @@ class ContentToolIntegrationLlamaParseIntegrationDef(BaseModel):
 class ContentToolIntegrationFfmpegIntegrationDefArguments(BaseModel):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class ContentToolIntegrationFfmpegIntegrationDef(BaseModel):
@@ -1471,7 +1471,7 @@ class ContentUnionMember8ToolIntegrationLlamaParseIntegrationDef(BaseModel):
 class ContentUnionMember8ToolIntegrationFfmpegIntegrationDefArguments(BaseModel):
     cmd: str
 
-    file: Optional[str] = None
+    file: Union[str, List[str], None] = None
 
 
 class ContentUnionMember8ToolIntegrationFfmpegIntegrationDef(BaseModel):

@@ -602,7 +602,7 @@ class ToolIntegrationLlamaParseIntegrationDef(TypedDict, total=False):
 class ToolIntegrationFfmpegIntegrationDefArguments(TypedDict, total=False):
     cmd: Required[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class ToolIntegrationFfmpegIntegrationDef(TypedDict, total=False):
