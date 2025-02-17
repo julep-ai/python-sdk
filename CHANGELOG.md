@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.62.0 (2025-02-17)
+
+Full Changelog: [v1.61.0...v1.62.0](https://github.com/julep-ai/python-sdk/compare/v1.61.0...v1.62.0)
+
+### Features
+
+* **api:** api update ([#291](https://github.com/julep-ai/python-sdk/issues/291)) ([ae28070](https://github.com/julep-ai/python-sdk/commit/ae28070b3a67cdfa7f554e3452e51e6471d1c22d))
+
+
+### Bug Fixes
+
+* asyncify on non-asyncio runtimes ([#290](https://github.com/julep-ai/python-sdk/issues/290)) ([30812e2](https://github.com/julep-ai/python-sdk/commit/30812e2a95ba501c4ee0b4d15ca5b403036cfede))
+
+
+### Chores
+
+* **internal:** update client tests ([#288](https://github.com/julep-ai/python-sdk/issues/288)) ([5732cf0](https://github.com/julep-ai/python-sdk/commit/5732cf04568a0fa2bc2fea1f15659790e9154b55))
+
 ## 1.61.0 (2025-02-08)
 
 Full Changelog: [v1.60.0...v1.61.0](https://github.com/julep-ai/python-sdk/compare/v1.60.0...v1.61.0)
