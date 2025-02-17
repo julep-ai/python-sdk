@@ -559,7 +559,7 @@ class IntegrationLlamaParseIntegrationDefUpdate(TypedDict, total=False):
 class IntegrationFfmpegIntegrationDefUpdateArguments(TypedDict, total=False):
     cmd: Optional[str]
 
-    file: Optional[str]
+    file: Union[str, List[str], None]
 
 
 class IntegrationFfmpegIntegrationDefUpdate(TypedDict, total=False):
