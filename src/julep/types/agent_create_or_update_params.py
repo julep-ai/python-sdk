@@ -17,6 +17,8 @@ class AgentCreateOrUpdateParams(TypedDict, total=False):
 
     default_settings: Optional[object]
 
+    default_system_template: str
+
     instructions: Union[str, List[str]]
 
     metadata: Optional[object]
