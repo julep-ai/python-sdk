@@ -23,7 +23,7 @@ class SessionUpdateParams(TypedDict, total=False):
 
     situation: Optional[str]
 
-    system_template: str
+    system_template: Optional[str]
 
     token_budget: Optional[int]
 

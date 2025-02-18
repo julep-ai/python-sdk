@@ -72,7 +72,7 @@ class SessionsResource(SyncAPIResource):
         recall_options: Optional[session_create_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
-        system_template: str | NotGiven = NOT_GIVEN,
+        system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         user: Optional[str] | NotGiven = NOT_GIVEN,
         users: Optional[List[str]] | NotGiven = NOT_GIVEN,
@@ -132,7 +132,7 @@ class SessionsResource(SyncAPIResource):
         recall_options: Optional[session_update_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
-        system_template: str | NotGiven = NOT_GIVEN,
+        system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -370,7 +370,7 @@ class SessionsResource(SyncAPIResource):
         recall_options: Optional[session_create_or_update_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
-        system_template: str | NotGiven = NOT_GIVEN,
+        system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         user: Optional[str] | NotGiven = NOT_GIVEN,
         users: Optional[List[str]] | NotGiven = NOT_GIVEN,
@@ -498,7 +498,7 @@ class SessionsResource(SyncAPIResource):
         recall_options: Optional[session_reset_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
-        system_template: str | NotGiven = NOT_GIVEN,
+        system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -576,7 +576,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         recall_options: Optional[session_create_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
-        system_template: str | NotGiven = NOT_GIVEN,
+        system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         user: Optional[str] | NotGiven = NOT_GIVEN,
         users: Optional[List[str]] | NotGiven = NOT_GIVEN,
@@ -636,7 +636,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         recall_options: Optional[session_update_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
-        system_template: str | NotGiven = NOT_GIVEN,
+        system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -876,7 +876,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         recall_options: Optional[session_create_or_update_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
-        system_template: str | NotGiven = NOT_GIVEN,
+        system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         user: Optional[str] | NotGiven = NOT_GIVEN,
         users: Optional[List[str]] | NotGiven = NOT_GIVEN,
@@ -1004,7 +1004,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         recall_options: Optional[session_reset_params.RecallOptions] | NotGiven = NOT_GIVEN,
         render_templates: bool | NotGiven = NOT_GIVEN,
         situation: Optional[str] | NotGiven = NOT_GIVEN,
-        system_template: str | NotGiven = NOT_GIVEN,
+        system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
