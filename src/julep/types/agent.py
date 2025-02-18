@@ -23,6 +23,8 @@ class Agent(BaseModel):
 
     default_settings: Optional[object] = None
 
+    default_system_template: Optional[str] = None
+
     instructions: Union[str, List[str], None] = None
 
     metadata: Optional[object] = None
