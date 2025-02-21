@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.64.0 (2025-02-21)
+
+Full Changelog: [v1.63.0...v1.64.0](https://github.com/julep-ai/python-sdk/compare/v1.63.0...v1.64.0)
+
+### Features
+
+* **client:** allow passing `NotGiven` for body ([#296](https://github.com/julep-ai/python-sdk/issues/296)) ([8dae935](https://github.com/julep-ai/python-sdk/commit/8dae93507a5a0865d9b729bd7b0df574a2b59641))
+
+
+### Bug Fixes
+
+* **client:** mark some request bodies as optional ([8dae935](https://github.com/julep-ai/python-sdk/commit/8dae93507a5a0865d9b729bd7b0df574a2b59641))
+
 ## 1.63.0 (2025-02-18)
 
 Full Changelog: [v1.62.0...v1.63.0](https://github.com/julep-ai/python-sdk/compare/v1.62.0...v1.63.0)
