@@ -19,8 +19,6 @@ class TextOnlyDocSearchRequest(TypedDict, total=False):
 
     metadata_filter: object
 
-    mmr_strength: float
-
 
 class VectorDocSearchRequest(TypedDict, total=False):
     vector: Required[Iterable[float]]

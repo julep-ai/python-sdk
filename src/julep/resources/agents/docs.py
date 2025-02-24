@@ -200,7 +200,6 @@ class DocsResource(SyncAPIResource):
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -324,9 +323,9 @@ class DocsResource(SyncAPIResource):
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
         vector: Iterable[float] | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
+        mmr_strength: float | NotGiven = NOT_GIVEN,
         alpha: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -345,9 +344,9 @@ class DocsResource(SyncAPIResource):
                     "lang": lang,
                     "limit": limit,
                     "metadata_filter": metadata_filter,
-                    "mmr_strength": mmr_strength,
                     "vector": vector,
                     "confidence": confidence,
+                    "mmr_strength": mmr_strength,
                     "alpha": alpha,
                 },
                 doc_search_params.DocSearchParams,
@@ -534,7 +533,6 @@ class AsyncDocsResource(AsyncAPIResource):
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -658,9 +656,9 @@ class AsyncDocsResource(AsyncAPIResource):
         lang: Literal["en-US"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
         vector: Iterable[float] | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
+        mmr_strength: float | NotGiven = NOT_GIVEN,
         alpha: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -679,9 +677,9 @@ class AsyncDocsResource(AsyncAPIResource):
                     "lang": lang,
                     "limit": limit,
                     "metadata_filter": metadata_filter,
-                    "mmr_strength": mmr_strength,
                     "vector": vector,
                     "confidence": confidence,
+                    "mmr_strength": mmr_strength,
                     "alpha": alpha,
                 },
                 doc_search_params.DocSearchParams,
