@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from typing import Optional
 from typing_extensions import Literal, TypedDict
 
 __all__ = ["TransitionListParams"]
@@ -13,5 +14,7 @@ class TransitionListParams(TypedDict, total=False):
     limit: int
 
     offset: int
+
+    scope_id: Optional[str]
 
     sort_by: Literal["created_at", "updated_at"]
