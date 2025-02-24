@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.65.0 (2025-02-24)
+
+Full Changelog: [v1.64.0...v1.65.0](https://github.com/julep-ai/python-sdk/compare/v1.64.0...v1.65.0)
+
+### Features
+
+* **api:** api update ([#301](https://github.com/julep-ai/python-sdk/issues/301)) ([d9be600](https://github.com/julep-ai/python-sdk/commit/d9be6006a9740aef6e7f62f3ec8a6239ce496cb8))
+
+
+### Chores
+
+* **internal:** fix devcontainers setup ([#299](https://github.com/julep-ai/python-sdk/issues/299)) ([82ba8f7](https://github.com/julep-ai/python-sdk/commit/82ba8f75000b03608bef78d87bad71cc5291412e))
+
 ## 1.64.0 (2025-02-21)
 
 Full Changelog: [v1.63.0...v1.64.0](https://github.com/julep-ai/python-sdk/compare/v1.63.0...v1.64.0)
