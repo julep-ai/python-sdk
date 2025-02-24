@@ -193,7 +193,6 @@ class TestDocs:
             lang="en-US",
             limit=1,
             metadata_filter={},
-            mmr_strength=0,
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -526,7 +525,6 @@ class TestAsyncDocs:
             lang="en-US",
             limit=1,
             metadata_filter={},
-            mmr_strength=0,
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
