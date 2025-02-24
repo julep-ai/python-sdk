@@ -2,10 +2,16 @@
 
 from __future__ import annotations
 
-from typing import List, Optional
-from typing_extensions import Literal, TypedDict
+from typing import List, Union, Iterable, Optional
+from typing_extensions import Literal, Required, TypeAlias, TypedDict
 
-__all__ = ["SessionCreateOrUpdateParams", "RecallOptions"]
+__all__ = [
+    "SessionCreateOrUpdateParams",
+    "RecallOptions",
+    "RecallOptionsVectorDocSearch",
+    "RecallOptionsTextOnlyDocSearch",
+    "RecallOptionsHybridDocSearch",
+]
 
 
 class SessionCreateOrUpdateParams(TypedDict, total=False):
@@ -36,7 +42,49 @@ class SessionCreateOrUpdateParams(TypedDict, total=False):
     users: Optional[List[str]]
 
 
-class RecallOptions(TypedDict, total=False):
+class RecallOptionsVectorDocSearch(TypedDict, total=False):
+    vector: Required[Iterable[float]]
+
+    confidence: float
+
+    lang: Literal["en-US"]
+
+    limit: int
+
+    max_query_length: int
+
+    metadata_filter: object
+
+    mmr_strength: float
+
+    mode: str
+
+    num_search_messages: int
+
+    text: Optional[str]
+
+
+class RecallOptionsTextOnlyDocSearch(TypedDict, total=False):
+    text: Required[str]
+
+    lang: Literal["en-US"]
+
+    limit: int
+
+    max_query_length: int
+
+    metadata_filter: object
+
+    mode: str
+
+    num_search_messages: int
+
+
+class RecallOptionsHybridDocSearch(TypedDict, total=False):
+    text: Required[str]
+
+    vector: Required[Iterable[float]]
+
     alpha: float
 
     confidence: float
@@ -51,6 +99,11 @@ class RecallOptions(TypedDict, total=False):
 
     mmr_strength: float
 
-    mode: Literal["hybrid", "vector", "text"]
+    mode: str
 
     num_search_messages: int
+
+
+RecallOptions: TypeAlias = Union[
+    RecallOptionsVectorDocSearch, RecallOptionsTextOnlyDocSearch, RecallOptionsHybridDocSearch
+]
