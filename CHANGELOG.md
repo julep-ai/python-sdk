@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.66.0 (2025-02-24)
+
+Full Changelog: [v1.65.0...v1.66.0](https://github.com/julep-ai/python-sdk/compare/v1.65.0...v1.66.0)
+
+### Features
+
+* **api:** api update ([#303](https://github.com/julep-ai/python-sdk/issues/303)) ([07abd73](https://github.com/julep-ai/python-sdk/commit/07abd733ac71fa9850511069338ce4ba4cc1b62b))
+
 ## 1.65.0 (2025-02-24)
 
 Full Changelog: [v1.64.0...v1.65.0](https://github.com/julep-ai/python-sdk/compare/v1.64.0...v1.65.0)
