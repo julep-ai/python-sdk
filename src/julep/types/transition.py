@@ -10,12 +10,16 @@ __all__ = ["Transition", "Current", "Next"]
 
 
 class Current(BaseModel):
+    scope_id: str
+
     step: int
 
     workflow: str
 
 
 class Next(BaseModel):
+    scope_id: str
+
     step: int
 
     workflow: str

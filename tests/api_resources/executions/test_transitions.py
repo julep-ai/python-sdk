@@ -32,6 +32,7 @@ class TestTransitions:
             direction="asc",
             limit=0,
             offset=0,
+            scope_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             sort_by="created_at",
         )
         assert_matches_type(SyncOffsetPagination[Transition], transition, path=["response"])
@@ -131,6 +132,7 @@ class TestAsyncTransitions:
             direction="asc",
             limit=0,
             offset=0,
+            scope_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             sort_by="created_at",
         )
         assert_matches_type(AsyncOffsetPagination[Transition], transition, path=["response"])

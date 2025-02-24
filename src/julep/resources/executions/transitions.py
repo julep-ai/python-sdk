@@ -55,6 +55,7 @@ class TransitionsResource(SyncAPIResource):
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
+        scope_id: Optional[str] | NotGiven = NOT_GIVEN,
         sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -90,6 +91,7 @@ class TransitionsResource(SyncAPIResource):
                         "direction": direction,
                         "limit": limit,
                         "offset": offset,
+                        "scope_id": scope_id,
                         "sort_by": sort_by,
                     },
                     transition_list_params.TransitionListParams,
@@ -166,6 +168,7 @@ class AsyncTransitionsResource(AsyncAPIResource):
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
+        scope_id: Optional[str] | NotGiven = NOT_GIVEN,
         sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -201,6 +204,7 @@ class AsyncTransitionsResource(AsyncAPIResource):
                         "direction": direction,
                         "limit": limit,
                         "offset": offset,
+                        "scope_id": scope_id,
                         "sort_by": sort_by,
                     },
                     transition_list_params.TransitionListParams,
