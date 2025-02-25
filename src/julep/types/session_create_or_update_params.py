@@ -45,7 +45,7 @@ class SessionCreateOrUpdateParams(TypedDict, total=False):
 class RecallOptionsVectorDocSearch(TypedDict, total=False):
     confidence: float
 
-    lang: Literal["en-US"]
+    lang: str
 
     limit: int
 
@@ -61,7 +61,7 @@ class RecallOptionsVectorDocSearch(TypedDict, total=False):
 
 
 class RecallOptionsTextOnlyDocSearch(TypedDict, total=False):
-    lang: Literal["en-US"]
+    lang: str
 
     limit: int
 
@@ -79,7 +79,7 @@ class RecallOptionsHybridDocSearch(TypedDict, total=False):
 
     confidence: float
 
-    lang: Literal["en-US"]
+    lang: str
 
     limit: int
 

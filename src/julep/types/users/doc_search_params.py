@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from typing import Union, Iterable
-from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from typing_extensions import Required, TypeAlias, TypedDict
 
 __all__ = ["DocSearchParams", "TextOnlyDocSearchRequest", "VectorDocSearchRequest", "HybridDocSearchRequest"]
 
@@ -13,7 +13,7 @@ class TextOnlyDocSearchRequest(TypedDict, total=False):
 
     connection_pool: object
 
-    lang: Literal["en-US"]
+    lang: str
 
     limit: int
 
@@ -27,7 +27,7 @@ class VectorDocSearchRequest(TypedDict, total=False):
 
     confidence: float
 
-    lang: Literal["en-US"]
+    lang: str
 
     limit: int
 
@@ -47,7 +47,7 @@ class HybridDocSearchRequest(TypedDict, total=False):
 
     confidence: float
 
-    lang: Literal["en-US"]
+    lang: str
 
     limit: int
 
