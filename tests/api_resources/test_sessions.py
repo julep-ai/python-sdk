@@ -39,7 +39,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
-                "lang": "en-US",
+                "lang": "lang",
                 "limit": 1,
                 "max_query_length": 1,
                 "metadata_filter": {},
@@ -93,7 +93,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
-                "lang": "en-US",
+                "lang": "lang",
                 "limit": 1,
                 "max_query_length": 1,
                 "metadata_filter": {},
@@ -394,7 +394,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
-                "lang": "en-US",
+                "lang": "lang",
                 "limit": 1,
                 "max_query_length": 1,
                 "metadata_filter": {},
@@ -535,7 +535,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
-                "lang": "en-US",
+                "lang": "lang",
                 "limit": 1,
                 "max_query_length": 1,
                 "metadata_filter": {},
@@ -601,7 +601,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
-                "lang": "en-US",
+                "lang": "lang",
                 "limit": 1,
                 "max_query_length": 1,
                 "metadata_filter": {},
@@ -655,7 +655,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
-                "lang": "en-US",
+                "lang": "lang",
                 "limit": 1,
                 "max_query_length": 1,
                 "metadata_filter": {},
@@ -956,7 +956,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
-                "lang": "en-US",
+                "lang": "lang",
                 "limit": 1,
                 "max_query_length": 1,
                 "metadata_filter": {},
@@ -1097,7 +1097,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
-                "lang": "en-US",
+                "lang": "lang",
                 "limit": 1,
                 "max_query_length": 1,
                 "metadata_filter": {},

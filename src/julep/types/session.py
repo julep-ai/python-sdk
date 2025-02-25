@@ -18,7 +18,7 @@ __all__ = [
 class RecallOptionsVectorDocSearch(BaseModel):
     confidence: Optional[float] = None
 
-    lang: Optional[Literal["en-US"]] = None
+    lang: Optional[str] = None
 
     limit: Optional[int] = None
 
@@ -34,7 +34,7 @@ class RecallOptionsVectorDocSearch(BaseModel):
 
 
 class RecallOptionsTextOnlyDocSearch(BaseModel):
-    lang: Optional[Literal["en-US"]] = None
+    lang: Optional[str] = None
 
     limit: Optional[int] = None
 
@@ -52,7 +52,7 @@ class RecallOptionsHybridDocSearch(BaseModel):
 
     confidence: Optional[float] = None
 
-    lang: Optional[Literal["en-US"]] = None
+    lang: Optional[str] = None
 
     limit: Optional[int] = None
 
