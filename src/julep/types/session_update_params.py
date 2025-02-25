@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Union, Iterable, Optional
+from typing import Union, Optional
 from typing_extensions import Literal, TypeAlias, TypedDict
 
 __all__ = [
@@ -51,10 +51,6 @@ class RecallOptionsVectorDocSearchUpdate(TypedDict, total=False):
 
     num_search_messages: int
 
-    text: Optional[str]
-
-    vector: Optional[Iterable[float]]
-
 
 class RecallOptionsTextOnlyDocSearchUpdate(TypedDict, total=False):
     lang: Literal["en-US"]
@@ -68,8 +64,6 @@ class RecallOptionsTextOnlyDocSearchUpdate(TypedDict, total=False):
     mode: str
 
     num_search_messages: int
-
-    text: Optional[str]
 
 
 class RecallOptionsHybridDocSearchUpdate(TypedDict, total=False):
@@ -90,10 +84,6 @@ class RecallOptionsHybridDocSearchUpdate(TypedDict, total=False):
     mode: str
 
     num_search_messages: int
-
-    text: Optional[str]
-
-    vector: Optional[Iterable[float]]
 
 
 RecallOptions: TypeAlias = Union[

@@ -1,6 +1,6 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import List, Union, Optional
+from typing import Union, Optional
 from datetime import datetime
 from typing_extensions import Literal, TypeAlias
 
@@ -16,8 +16,6 @@ __all__ = [
 
 
 class RecallOptionsVectorDocSearch(BaseModel):
-    vector: List[float]
-
     confidence: Optional[float] = None
 
     lang: Optional[Literal["en-US"]] = None
@@ -34,12 +32,8 @@ class RecallOptionsVectorDocSearch(BaseModel):
 
     num_search_messages: Optional[int] = None
 
-    text: Optional[str] = None
-
 
 class RecallOptionsTextOnlyDocSearch(BaseModel):
-    text: str
-
     lang: Optional[Literal["en-US"]] = None
 
     limit: Optional[int] = None
@@ -54,10 +48,6 @@ class RecallOptionsTextOnlyDocSearch(BaseModel):
 
 
 class RecallOptionsHybridDocSearch(BaseModel):
-    text: str
-
-    vector: List[float]
-
     alpha: Optional[float] = None
 
     confidence: Optional[float] = None
