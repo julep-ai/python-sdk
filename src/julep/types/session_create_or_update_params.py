@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-from typing import List, Union, Iterable, Optional
-from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from typing import List, Union, Optional
+from typing_extensions import Literal, TypeAlias, TypedDict
 
 __all__ = [
     "SessionCreateOrUpdateParams",
@@ -43,8 +43,6 @@ class SessionCreateOrUpdateParams(TypedDict, total=False):
 
 
 class RecallOptionsVectorDocSearch(TypedDict, total=False):
-    vector: Required[Iterable[float]]
-
     confidence: float
 
     lang: Literal["en-US"]
@@ -61,12 +59,8 @@ class RecallOptionsVectorDocSearch(TypedDict, total=False):
 
     num_search_messages: int
 
-    text: Optional[str]
-
 
 class RecallOptionsTextOnlyDocSearch(TypedDict, total=False):
-    text: Required[str]
-
     lang: Literal["en-US"]
 
     limit: int
@@ -81,10 +75,6 @@ class RecallOptionsTextOnlyDocSearch(TypedDict, total=False):
 
 
 class RecallOptionsHybridDocSearch(TypedDict, total=False):
-    text: Required[str]
-
-    vector: Required[Iterable[float]]
-
     alpha: float
 
     confidence: float
