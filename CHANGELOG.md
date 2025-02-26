@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.68.0 (2025-02-26)
+
+Full Changelog: [v1.67.0...v1.68.0](https://github.com/julep-ai/python-sdk/compare/v1.67.0...v1.68.0)
+
+### Features
+
+* **api:** api update ([#312](https://github.com/julep-ai/python-sdk/issues/312)) ([b9c6dc9](https://github.com/julep-ai/python-sdk/commit/b9c6dc957423cd040f45ee353b7f7401d9a2b58f))
+
+
+### Chores
+
+* **internal:** properly set __pydantic_private__ ([#310](https://github.com/julep-ai/python-sdk/issues/310)) ([794fa72](https://github.com/julep-ai/python-sdk/commit/794fa72485e0662ff6681f96e41cc6bf1fdba733))
+
 ## 1.67.0 (2025-02-25)
 
 Full Changelog: [v1.66.0...v1.67.0](https://github.com/julep-ai/python-sdk/compare/v1.66.0...v1.67.0)
