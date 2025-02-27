@@ -190,9 +190,10 @@ class TestDocs:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
             connection_pool={},
-            lang="lang",
+            lang="en-US",
             limit=1,
             metadata_filter={},
+            mmr_strength=0,
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -245,7 +246,7 @@ class TestDocs:
             vector=[0],
             connection_pool={},
             confidence=-1,
-            lang="lang",
+            lang="en-US",
             limit=1,
             metadata_filter={},
             mmr_strength=0,
@@ -304,7 +305,7 @@ class TestDocs:
             connection_pool={},
             alpha=0,
             confidence=-1,
-            lang="lang",
+            lang="en-US",
             limit=1,
             metadata_filter={},
             mmr_strength=0,
@@ -522,9 +523,10 @@ class TestAsyncDocs:
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             text="text",
             connection_pool={},
-            lang="lang",
+            lang="en-US",
             limit=1,
             metadata_filter={},
+            mmr_strength=0,
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -577,7 +579,7 @@ class TestAsyncDocs:
             vector=[0],
             connection_pool={},
             confidence=-1,
-            lang="lang",
+            lang="en-US",
             limit=1,
             metadata_filter={},
             mmr_strength=0,
@@ -636,7 +638,7 @@ class TestAsyncDocs:
             connection_pool={},
             alpha=0,
             confidence=-1,
-            lang="lang",
+            lang="en-US",
             limit=1,
             metadata_filter={},
             mmr_strength=0,
