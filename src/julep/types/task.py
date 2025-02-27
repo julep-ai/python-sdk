@@ -775,28 +775,7 @@ class MainEvaluateStep(BaseModel):
 class MainToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        List[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-        None,
-    ] = None
+    arguments: Union[Literal["_"], object, None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -1899,28 +1878,7 @@ class MainIfElseWorkflowStepOutputThenEvaluateStep(BaseModel):
 class MainIfElseWorkflowStepOutputThenToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        List[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-        None,
-    ] = None
+    arguments: Union[Literal["_"], object, None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -3120,28 +3078,7 @@ class MainIfElseWorkflowStepOutputElseEvaluateStep(BaseModel):
 class MainIfElseWorkflowStepOutputElseToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        List[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-        None,
-    ] = None
+    arguments: Union[Literal["_"], object, None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -4354,28 +4291,7 @@ class MainSwitchStepOutputSwitchThenEvaluateStep(BaseModel):
 class MainSwitchStepOutputSwitchThenToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        List[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-        None,
-    ] = None
+    arguments: Union[Literal["_"], object, None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -5594,28 +5510,7 @@ class MainForeachStepOutputForeachDoEvaluateStep(BaseModel):
 class MainForeachStepOutputForeachDoToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        List[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-        None,
-    ] = None
+    arguments: Union[Literal["_"], object, None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -6773,28 +6668,7 @@ class MainParallelStepOutputParallelEvaluateStep(BaseModel):
 class MainParallelStepOutputParallelToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        List[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-        None,
-    ] = None
+    arguments: Union[Literal["_"], object, None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
@@ -7945,28 +7819,7 @@ class MainMainOutputMapEvaluateStep(BaseModel):
 class MainMainOutputMapToolCallStep(BaseModel):
     tool: str
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        List[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]],
-                    List[Dict[str, Union[List[str], Dict[str, str], List[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-        None,
-    ] = None
+    arguments: Union[Literal["_"], object, None] = None
 
     kind: Optional[Literal["tool_call"]] = FieldInfo(alias="kind_", default=None)
 
