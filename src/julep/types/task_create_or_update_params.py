@@ -792,27 +792,7 @@ class MainEvaluateStep(TypedDict, total=False):
 class MainToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        Iterable[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-    ]
+    arguments: Union[Literal["_"], object]
 
     label: Optional[str]
 
@@ -1982,27 +1962,7 @@ class MainIfElseWorkflowStepInputThenEvaluateStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        Iterable[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-    ]
+    arguments: Union[Literal["_"], object]
 
     label: Optional[str]
 
@@ -3252,27 +3212,7 @@ class MainIfElseWorkflowStepInputElseEvaluateStep(TypedDict, total=False):
 class MainIfElseWorkflowStepInputElseToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        Iterable[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-    ]
+    arguments: Union[Literal["_"], object]
 
     label: Optional[str]
 
@@ -4537,27 +4477,7 @@ class MainSwitchStepInputSwitchThenEvaluateStep(TypedDict, total=False):
 class MainSwitchStepInputSwitchThenToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        Iterable[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-    ]
+    arguments: Union[Literal["_"], object]
 
     label: Optional[str]
 
@@ -5819,27 +5739,7 @@ class MainForeachStepInputForeachDoEvaluateStep(TypedDict, total=False):
 class MainForeachStepInputForeachDoToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        Iterable[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-    ]
+    arguments: Union[Literal["_"], object]
 
     label: Optional[str]
 
@@ -7049,27 +6949,7 @@ class MainParallelStepInputParallelEvaluateStep(TypedDict, total=False):
 class MainParallelStepInputParallelToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        Iterable[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-    ]
+    arguments: Union[Literal["_"], object]
 
     label: Optional[str]
 
@@ -8266,27 +8146,7 @@ class MainMainInputMapEvaluateStep(TypedDict, total=False):
 class MainMainInputMapToolCallStep(TypedDict, total=False):
     tool: Required[str]
 
-    arguments: Union[
-        Dict[
-            str,
-            Union[
-                Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                str,
-            ],
-        ],
-        Iterable[
-            Dict[
-                str,
-                Union[
-                    Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
-                    Iterable[Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]]],
-                    str,
-                ],
-            ]
-        ],
-        Literal["_"],
-    ]
+    arguments: Union[Literal["_"], object]
 
     label: Optional[str]
 
