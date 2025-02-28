@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.71.0 (2025-02-28)
+
+Full Changelog: [v1.70.0...v1.71.0](https://github.com/julep-ai/python-sdk/compare/v1.70.0...v1.71.0)
+
+### Features
+
+* **api:** api update ([#323](https://github.com/julep-ai/python-sdk/issues/323)) ([58266d0](https://github.com/julep-ai/python-sdk/commit/58266d0ef5151adbb4f5b00b5da58053b9e404a1))
+
+
+### Chores
+
+* **docs:** update client docstring ([#321](https://github.com/julep-ai/python-sdk/issues/321)) ([e64cb63](https://github.com/julep-ai/python-sdk/commit/e64cb63fdd6c2df725ac71eb89fcd025652ddaca))
+
+
+### Documentation
+
+* update URLs from stainlessapi.com to stainless.com ([#320](https://github.com/julep-ai/python-sdk/issues/320)) ([fc1f8bc](https://github.com/julep-ai/python-sdk/commit/fc1f8bca544087862bace8cd45ce3dd47acfa21c))
+
 ## 1.70.0 (2025-02-27)
 
 Full Changelog: [v1.69.0...v1.70.0](https://github.com/julep-ai/python-sdk/compare/v1.69.0...v1.70.0)
