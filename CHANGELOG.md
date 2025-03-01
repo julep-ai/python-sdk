@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.73.0 (2025-03-01)
+
+Full Changelog: [v1.72.0...v1.73.0](https://github.com/julep-ai/python-sdk/compare/v1.72.0...v1.73.0)
+
+### Features
+
+* **api:** manual updates ([#328](https://github.com/julep-ai/python-sdk/issues/328)) ([b52cba0](https://github.com/julep-ai/python-sdk/commit/b52cba007de86b8a87f9791659dbb0aa8e81a233))
+
 ## 1.72.0 (2025-03-01)
 
 Full Changelog: [v1.71.0...v1.72.0](https://github.com/julep-ai/python-sdk/compare/v1.71.0...v1.72.0)
