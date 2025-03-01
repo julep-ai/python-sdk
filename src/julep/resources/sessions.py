@@ -12,6 +12,7 @@ from ..types import (
     session_list_params,
     session_reset_params,
     session_create_params,
+    session_render_params,
     session_update_params,
     session_create_or_update_params,
 )
@@ -34,6 +35,7 @@ from .._base_client import AsyncPaginator, make_request_options
 from ..types.history import History
 from ..types.session import Session
 from ..types.session_chat_response import SessionChatResponse
+from ..types.session_render_response import SessionRenderResponse
 from ..types.shared.resource_deleted import ResourceDeleted
 
 __all__ = ["SessionsResource", "AsyncSessionsResource"]
@@ -484,6 +486,90 @@ class SessionsResource(SyncAPIResource):
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
             cast_to=History,
+        )
+
+    def render(
+        self,
+        session_id: str,
+        *,
+        messages: Iterable[session_render_params.Message],
+        agent: Optional[str] | NotGiven = NOT_GIVEN,
+        frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
+        length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
+        logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
+        max_tokens: Optional[int] | NotGiven = NOT_GIVEN,
+        min_p: Optional[float] | NotGiven = NOT_GIVEN,
+        model: Optional[str] | NotGiven = NOT_GIVEN,
+        presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
+        recall: bool | NotGiven = NOT_GIVEN,
+        repetition_penalty: Optional[float] | NotGiven = NOT_GIVEN,
+        response_format: Optional[session_render_params.ResponseFormat] | NotGiven = NOT_GIVEN,
+        save: bool | NotGiven = NOT_GIVEN,
+        seed: Optional[int] | NotGiven = NOT_GIVEN,
+        stop: List[str] | NotGiven = NOT_GIVEN,
+        stream: bool | NotGiven = NOT_GIVEN,
+        temperature: Optional[float] | NotGiven = NOT_GIVEN,
+        tool_choice: Optional[session_render_params.ToolChoice] | NotGiven = NOT_GIVEN,
+        tools: Optional[Iterable[session_render_params.Tool]] | NotGiven = NOT_GIVEN,
+        top_p: Optional[float] | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> SessionRenderResponse:
+        """
+        Renders a chat input.
+
+        Parameters: developer (Developer): The developer associated with the chat
+        session. session_id (UUID): The unique identifier of the chat session.
+        chat_input (ChatInput): The chat input data.
+
+        Returns: RenderResponse: The rendered chat input.
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        if not session_id:
+            raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
+        return self._post(
+            f"/sessions/{session_id}/render",
+            body=maybe_transform(
+                {
+                    "messages": messages,
+                    "agent": agent,
+                    "frequency_penalty": frequency_penalty,
+                    "length_penalty": length_penalty,
+                    "logit_bias": logit_bias,
+                    "max_tokens": max_tokens,
+                    "min_p": min_p,
+                    "model": model,
+                    "presence_penalty": presence_penalty,
+                    "recall": recall,
+                    "repetition_penalty": repetition_penalty,
+                    "response_format": response_format,
+                    "save": save,
+                    "seed": seed,
+                    "stop": stop,
+                    "stream": stream,
+                    "temperature": temperature,
+                    "tool_choice": tool_choice,
+                    "tools": tools,
+                    "top_p": top_p,
+                },
+                session_render_params.SessionRenderParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=SessionRenderResponse,
         )
 
     def reset(
@@ -992,6 +1078,90 @@ class AsyncSessionsResource(AsyncAPIResource):
             cast_to=History,
         )
 
+    async def render(
+        self,
+        session_id: str,
+        *,
+        messages: Iterable[session_render_params.Message],
+        agent: Optional[str] | NotGiven = NOT_GIVEN,
+        frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
+        length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
+        logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
+        max_tokens: Optional[int] | NotGiven = NOT_GIVEN,
+        min_p: Optional[float] | NotGiven = NOT_GIVEN,
+        model: Optional[str] | NotGiven = NOT_GIVEN,
+        presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
+        recall: bool | NotGiven = NOT_GIVEN,
+        repetition_penalty: Optional[float] | NotGiven = NOT_GIVEN,
+        response_format: Optional[session_render_params.ResponseFormat] | NotGiven = NOT_GIVEN,
+        save: bool | NotGiven = NOT_GIVEN,
+        seed: Optional[int] | NotGiven = NOT_GIVEN,
+        stop: List[str] | NotGiven = NOT_GIVEN,
+        stream: bool | NotGiven = NOT_GIVEN,
+        temperature: Optional[float] | NotGiven = NOT_GIVEN,
+        tool_choice: Optional[session_render_params.ToolChoice] | NotGiven = NOT_GIVEN,
+        tools: Optional[Iterable[session_render_params.Tool]] | NotGiven = NOT_GIVEN,
+        top_p: Optional[float] | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> SessionRenderResponse:
+        """
+        Renders a chat input.
+
+        Parameters: developer (Developer): The developer associated with the chat
+        session. session_id (UUID): The unique identifier of the chat session.
+        chat_input (ChatInput): The chat input data.
+
+        Returns: RenderResponse: The rendered chat input.
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        if not session_id:
+            raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
+        return await self._post(
+            f"/sessions/{session_id}/render",
+            body=await async_maybe_transform(
+                {
+                    "messages": messages,
+                    "agent": agent,
+                    "frequency_penalty": frequency_penalty,
+                    "length_penalty": length_penalty,
+                    "logit_bias": logit_bias,
+                    "max_tokens": max_tokens,
+                    "min_p": min_p,
+                    "model": model,
+                    "presence_penalty": presence_penalty,
+                    "recall": recall,
+                    "repetition_penalty": repetition_penalty,
+                    "response_format": response_format,
+                    "save": save,
+                    "seed": seed,
+                    "stop": stop,
+                    "stream": stream,
+                    "temperature": temperature,
+                    "tool_choice": tool_choice,
+                    "tools": tools,
+                    "top_p": top_p,
+                },
+                session_render_params.SessionRenderParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=SessionRenderResponse,
+        )
+
     async def reset(
         self,
         session_id: str,
@@ -1077,6 +1247,9 @@ class SessionsResourceWithRawResponse:
         self.history = to_raw_response_wrapper(
             sessions.history,
         )
+        self.render = to_raw_response_wrapper(
+            sessions.render,
+        )
         self.reset = to_raw_response_wrapper(
             sessions.reset,
         )
@@ -1109,6 +1282,9 @@ class AsyncSessionsResourceWithRawResponse:
         )
         self.history = async_to_raw_response_wrapper(
             sessions.history,
+        )
+        self.render = async_to_raw_response_wrapper(
+            sessions.render,
         )
         self.reset = async_to_raw_response_wrapper(
             sessions.reset,
@@ -1143,6 +1319,9 @@ class SessionsResourceWithStreamingResponse:
         self.history = to_streamed_response_wrapper(
             sessions.history,
         )
+        self.render = to_streamed_response_wrapper(
+            sessions.render,
+        )
         self.reset = to_streamed_response_wrapper(
             sessions.reset,
         )
@@ -1175,6 +1354,9 @@ class AsyncSessionsResourceWithStreamingResponse:
         )
         self.history = async_to_streamed_response_wrapper(
             sessions.history,
+        )
+        self.render = async_to_streamed_response_wrapper(
+            sessions.render,
         )
         self.reset = async_to_streamed_response_wrapper(
             sessions.reset,
