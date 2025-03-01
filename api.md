@@ -77,7 +77,15 @@ Methods:
 Types:
 
 ```python
-from julep.types import ChatInput, ChatResponse, Entry, History, Session, SessionChatResponse
+from julep.types import (
+    ChatInput,
+    ChatResponse,
+    Entry,
+    History,
+    Session,
+    SessionChatResponse,
+    SessionRenderResponse,
+)
 ```
 
 Methods:
@@ -90,6 +98,7 @@ Methods:
 - <code title="post /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">create_or_update</a>(session_id, \*\*<a href="src/julep/types/session_create_or_update_params.py">params</a>) -> <a href="./src/julep/types/session.py">Session</a></code>
 - <code title="get /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">get</a>(session_id) -> <a href="./src/julep/types/session.py">Session</a></code>
 - <code title="get /sessions/{session_id}/history">client.sessions.<a href="./src/julep/resources/sessions.py">history</a>(session_id) -> <a href="./src/julep/types/history.py">History</a></code>
+- <code title="post /sessions/{session_id}/render">client.sessions.<a href="./src/julep/resources/sessions.py">render</a>(session_id, \*\*<a href="src/julep/types/session_render_params.py">params</a>) -> <a href="./src/julep/types/session_render_response.py">SessionRenderResponse</a></code>
 - <code title="put /sessions/{session_id}">client.sessions.<a href="./src/julep/resources/sessions.py">reset</a>(session_id, \*\*<a href="src/julep/types/session_reset_params.py">params</a>) -> <a href="./src/julep/types/session.py">Session</a></code>
 
 # Users
