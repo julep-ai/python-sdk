@@ -77,15 +77,7 @@ Methods:
 Types:
 
 ```python
-from julep.types import (
-    ChatInput,
-    ChatResponse,
-    Entry,
-    History,
-    Message,
-    Session,
-    SessionChatResponse,
-)
+from julep.types import ChatInput, ChatResponse, Entry, History, Session, SessionChatResponse
 ```
 
 Methods:

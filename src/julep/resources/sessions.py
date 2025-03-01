@@ -33,7 +33,6 @@ from ..pagination import SyncOffsetPagination, AsyncOffsetPagination
 from .._base_client import AsyncPaginator, make_request_options
 from ..types.history import History
 from ..types.session import Session
-from ..types.message_param import MessageParam
 from ..types.session_chat_response import SessionChatResponse
 from ..types.shared.resource_deleted import ResourceDeleted
 
@@ -263,7 +262,7 @@ class SessionsResource(SyncAPIResource):
         self,
         session_id: str,
         *,
-        messages: Iterable[MessageParam],
+        messages: Iterable[session_chat_params.Message],
         connection_pool: object | NotGiven = NOT_GIVEN,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
         frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
@@ -282,7 +281,7 @@ class SessionsResource(SyncAPIResource):
         stream: bool | NotGiven = NOT_GIVEN,
         temperature: Optional[float] | NotGiven = NOT_GIVEN,
         tool_choice: Optional[session_chat_params.ToolChoice] | NotGiven = NOT_GIVEN,
-        tools: Iterable[session_chat_params.Tool] | NotGiven = NOT_GIVEN,
+        tools: Optional[Iterable[session_chat_params.Tool]] | NotGiven = NOT_GIVEN,
         top_p: Optional[float] | NotGiven = NOT_GIVEN,
         x_custom_api_key: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -767,7 +766,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         self,
         session_id: str,
         *,
-        messages: Iterable[MessageParam],
+        messages: Iterable[session_chat_params.Message],
         connection_pool: object | NotGiven = NOT_GIVEN,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
         frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
@@ -786,7 +785,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         stream: bool | NotGiven = NOT_GIVEN,
         temperature: Optional[float] | NotGiven = NOT_GIVEN,
         tool_choice: Optional[session_chat_params.ToolChoice] | NotGiven = NOT_GIVEN,
-        tools: Iterable[session_chat_params.Tool] | NotGiven = NOT_GIVEN,
+        tools: Optional[Iterable[session_chat_params.Tool]] | NotGiven = NOT_GIVEN,
         top_p: Optional[float] | NotGiven = NOT_GIVEN,
         x_custom_api_key: str | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
