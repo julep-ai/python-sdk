@@ -38,6 +38,7 @@ class TestSessions:
             forward_tool_calls=True,
             metadata={},
             recall_options={
+                "alpha": 0,
                 "confidence": -1,
                 "lang": "lang",
                 "limit": 1,
@@ -92,6 +93,7 @@ class TestSessions:
             forward_tool_calls=True,
             metadata={},
             recall_options={
+                "alpha": 0,
                 "confidence": -1,
                 "lang": "lang",
                 "limit": 1,
@@ -393,6 +395,7 @@ class TestSessions:
             forward_tool_calls=True,
             metadata={},
             recall_options={
+                "alpha": 0,
                 "confidence": -1,
                 "lang": "lang",
                 "limit": 1,
@@ -534,6 +537,7 @@ class TestSessions:
             forward_tool_calls=True,
             metadata={},
             recall_options={
+                "alpha": 0,
                 "confidence": -1,
                 "lang": "lang",
                 "limit": 1,
@@ -600,6 +604,7 @@ class TestAsyncSessions:
             forward_tool_calls=True,
             metadata={},
             recall_options={
+                "alpha": 0,
                 "confidence": -1,
                 "lang": "lang",
                 "limit": 1,
@@ -654,6 +659,7 @@ class TestAsyncSessions:
             forward_tool_calls=True,
             metadata={},
             recall_options={
+                "alpha": 0,
                 "confidence": -1,
                 "lang": "lang",
                 "limit": 1,
@@ -955,6 +961,7 @@ class TestAsyncSessions:
             forward_tool_calls=True,
             metadata={},
             recall_options={
+                "alpha": 0,
                 "confidence": -1,
                 "lang": "lang",
                 "limit": 1,
@@ -1096,6 +1103,7 @@ class TestAsyncSessions:
             forward_tool_calls=True,
             metadata={},
             recall_options={
+                "alpha": 0,
                 "confidence": -1,
                 "lang": "lang",
                 "limit": 1,

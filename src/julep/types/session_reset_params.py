@@ -2,16 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Union, Optional
-from typing_extensions import Literal, TypeAlias, TypedDict
+from typing import Optional
+from typing_extensions import Literal, TypedDict
 
-__all__ = [
-    "SessionResetParams",
-    "RecallOptions",
-    "RecallOptionsVectorDocSearch",
-    "RecallOptionsTextOnlyDocSearch",
-    "RecallOptionsHybridDocSearch",
-]
+__all__ = ["SessionResetParams", "RecallOptions"]
 
 
 class SessionResetParams(TypedDict, total=False):
@@ -34,39 +28,7 @@ class SessionResetParams(TypedDict, total=False):
     token_budget: Optional[int]
 
 
-class RecallOptionsVectorDocSearch(TypedDict, total=False):
-    confidence: float
-
-    lang: str
-
-    limit: int
-
-    max_query_length: int
-
-    metadata_filter: object
-
-    mmr_strength: float
-
-    mode: str
-
-    num_search_messages: int
-
-
-class RecallOptionsTextOnlyDocSearch(TypedDict, total=False):
-    lang: str
-
-    limit: int
-
-    max_query_length: int
-
-    metadata_filter: object
-
-    mode: str
-
-    num_search_messages: int
-
-
-class RecallOptionsHybridDocSearch(TypedDict, total=False):
+class RecallOptions(TypedDict, total=False):
     alpha: float
 
     confidence: float
@@ -84,8 +46,3 @@ class RecallOptionsHybridDocSearch(TypedDict, total=False):
     mode: str
 
     num_search_messages: int
-
-
-RecallOptions: TypeAlias = Union[
-    RecallOptionsVectorDocSearch, RecallOptionsTextOnlyDocSearch, RecallOptionsHybridDocSearch
-]

@@ -16,7 +16,6 @@ from .execution import Execution as Execution
 from .job_status import JobStatus as JobStatus
 from .transition import Transition as Transition
 from .chat_response import ChatResponse as ChatResponse
-from .message_param import MessageParam as MessageParam
 from .doc_embed_params import DocEmbedParams as DocEmbedParams
 from .task_list_params import TaskListParams as TaskListParams
 from .user_list_params import UserListParams as UserListParams
