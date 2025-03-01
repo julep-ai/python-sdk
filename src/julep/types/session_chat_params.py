@@ -6,10 +6,27 @@ from typing import Dict, List, Union, Iterable, Optional
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
 from .._utils import PropertyInfo
-from .message_param import MessageParam
 
 __all__ = [
     "SessionChatParams",
+    "Message",
+    "MessageContentUnionMember2",
+    "MessageContentUnionMember2Content",
+    "MessageContentUnionMember2ContentModel7",
+    "MessageContentUnionMember2ContentModel7ImageURL",
+    "MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput",
+    "MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember0",
+    "MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember1",
+    "MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember1Source",
+    "MessageToolCall",
+    "MessageToolCallChosenFunctionCall",
+    "MessageToolCallChosenFunctionCallFunction",
+    "MessageToolCallChosenFunctionCallBash20241022",
+    "MessageToolCallChosenFunctionCallComputer20241022",
+    "MessageToolCallChosenFunctionCallTextEditor20241022",
+    "MessageToolCallChosenComputer20241022",
+    "MessageToolCallChosenTextEditor20241022",
+    "MessageToolCallChosenBash20241022",
     "ResponseFormat",
     "ResponseFormatSimpleCompletionResponseFormat",
     "ResponseFormatSchemaCompletionResponseFormat",
@@ -80,7 +97,7 @@ __all__ = [
 
 
 class SessionChatParams(TypedDict, total=False):
-    messages: Required[Iterable[MessageParam]]
+    messages: Required[Iterable[Message]]
 
     connection_pool: object
 
@@ -118,11 +135,206 @@ class SessionChatParams(TypedDict, total=False):
 
     tool_choice: Optional[ToolChoice]
 
-    tools: Iterable[Tool]
+    tools: Optional[Iterable[Tool]]
 
     top_p: Optional[float]
 
     x_custom_api_key: Annotated[str, PropertyInfo(alias="X-Custom-Api-Key")]
+
+
+class MessageContentUnionMember2Content(TypedDict, total=False):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class MessageContentUnionMember2ContentModel7ImageURL(TypedDict, total=False):
+    url: Required[str]
+
+    detail: Literal["low", "high", "auto"]
+
+
+class MessageContentUnionMember2ContentModel7(TypedDict, total=False):
+    image_url: Required[MessageContentUnionMember2ContentModel7ImageURL]
+    """The image URL"""
+
+    type: Literal["image_url"]
+
+
+class MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember0(TypedDict, total=False):
+    text: Required[str]
+
+    type: Literal["text"]
+
+
+class MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember1Source(TypedDict, total=False):
+    data: Required[str]
+
+    media_type: Required[str]
+
+    type: Literal["base64"]
+
+
+class MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember1(TypedDict, total=False):
+    source: Required[MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember1Source]
+
+    type: Literal["image"]
+
+
+class MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput(TypedDict, total=False):
+    content: Required[
+        Union[
+            Iterable[MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember0],
+            Iterable[MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember1],
+        ]
+    ]
+
+    tool_use_id: Required[str]
+
+    type: Literal["tool_result"]
+
+
+MessageContentUnionMember2: TypeAlias = Union[
+    MessageContentUnionMember2Content,
+    MessageContentUnionMember2ContentModel7,
+    MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput,
+]
+
+
+class MessageToolCallChosenFunctionCallFunction(TypedDict, total=False):
+    name: Required[str]
+
+    arguments: Optional[str]
+
+
+class MessageToolCallChosenFunctionCallBash20241022(TypedDict, total=False):
+    command: Optional[str]
+
+    restart: bool
+
+
+class MessageToolCallChosenFunctionCallComputer20241022(TypedDict, total=False):
+    action: Required[
+        Literal[
+            "key",
+            "type",
+            "cursor_position",
+            "mouse_move",
+            "left_click",
+            "right_click",
+            "middle_click",
+            "double_click",
+            "screenshot",
+        ]
+    ]
+
+    coordinate: Optional[Iterable[int]]
+
+    text: Optional[str]
+
+
+class MessageToolCallChosenFunctionCallTextEditor20241022(TypedDict, total=False):
+    command: Required[Literal["str_replace", "insert", "view", "undo_edit"]]
+
+    path: Required[str]
+
+    file_text: Optional[str]
+
+    insert_line: Optional[int]
+
+    new_str: Optional[str]
+
+    old_str: Optional[str]
+
+    view_range: Optional[Iterable[int]]
+
+
+class MessageToolCallChosenFunctionCall(TypedDict, total=False):
+    function: Required[MessageToolCallChosenFunctionCallFunction]
+
+    api_call: object
+
+    bash_20241022: Optional[MessageToolCallChosenFunctionCallBash20241022]
+
+    computer_20241022: Optional[MessageToolCallChosenFunctionCallComputer20241022]
+
+    integration: object
+
+    system: object
+
+    text_editor_20241022: Optional[MessageToolCallChosenFunctionCallTextEditor20241022]
+
+    type: Literal["function"]
+
+
+class MessageToolCallChosenComputer20241022(TypedDict, total=False):
+    action: Required[
+        Literal[
+            "key",
+            "type",
+            "cursor_position",
+            "mouse_move",
+            "left_click",
+            "right_click",
+            "middle_click",
+            "double_click",
+            "screenshot",
+        ]
+    ]
+
+    coordinate: Optional[Iterable[int]]
+
+    text: Optional[str]
+
+
+class MessageToolCallChosenTextEditor20241022(TypedDict, total=False):
+    command: Required[Literal["str_replace", "insert", "view", "undo_edit"]]
+
+    path: Required[str]
+
+    file_text: Optional[str]
+
+    insert_line: Optional[int]
+
+    new_str: Optional[str]
+
+    old_str: Optional[str]
+
+    view_range: Optional[Iterable[int]]
+
+
+class MessageToolCallChosenBash20241022(TypedDict, total=False):
+    command: Optional[str]
+
+    restart: bool
+
+
+MessageToolCall: TypeAlias = Union[
+    MessageToolCallChosenFunctionCall,
+    MessageToolCallChosenComputer20241022,
+    MessageToolCallChosenTextEditor20241022,
+    MessageToolCallChosenBash20241022,
+]
+
+_MessageReservedKeywords = TypedDict(
+    "_MessageReservedKeywords",
+    {
+        "continue": Optional[bool],
+    },
+    total=False,
+)
+
+
+class Message(_MessageReservedKeywords, total=False):
+    role: Required[Literal["user", "assistant", "system", "tool"]]
+
+    content: Union[str, List[str], Iterable[MessageContentUnionMember2], None]
+
+    name: Optional[str]
+
+    tool_call_id: Optional[str]
+
+    tool_calls: Optional[Iterable[MessageToolCall]]
 
 
 class ResponseFormatSimpleCompletionResponseFormat(TypedDict, total=False):
