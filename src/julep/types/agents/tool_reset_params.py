@@ -21,9 +21,9 @@ __all__ = [
     "IntegrationEmailIntegrationDef",
     "IntegrationEmailIntegrationDefArguments",
     "IntegrationEmailIntegrationDefSetup",
-    "IntegrationSpiderIntegrationDefInput",
-    "IntegrationSpiderIntegrationDefInputArguments",
-    "IntegrationSpiderIntegrationDefInputSetup",
+    "IntegrationSpiderIntegrationDef",
+    "IntegrationSpiderIntegrationDefArguments",
+    "IntegrationSpiderIntegrationDefSetup",
     "IntegrationWikipediaIntegrationDef",
     "IntegrationWikipediaIntegrationDefArguments",
     "IntegrationWeatherIntegrationDef",
@@ -231,7 +231,7 @@ class IntegrationEmailIntegrationDef(TypedDict, total=False):
     """Setup parameters for Email integration"""
 
 
-class IntegrationSpiderIntegrationDefInputArguments(TypedDict, total=False):
+class IntegrationSpiderIntegrationDefArguments(TypedDict, total=False):
     url: Required[str]
 
     content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
@@ -239,19 +239,19 @@ class IntegrationSpiderIntegrationDefInputArguments(TypedDict, total=False):
     params: Optional[object]
 
 
-class IntegrationSpiderIntegrationDefInputSetup(TypedDict, total=False):
+class IntegrationSpiderIntegrationDefSetup(TypedDict, total=False):
     spider_api_key: Required[str]
 
 
-class IntegrationSpiderIntegrationDefInput(TypedDict, total=False):
-    arguments: Optional[IntegrationSpiderIntegrationDefInputArguments]
+class IntegrationSpiderIntegrationDef(TypedDict, total=False):
+    arguments: Optional[IntegrationSpiderIntegrationDefArguments]
     """Arguments for Spider integration"""
 
     method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
-    setup: Optional[IntegrationSpiderIntegrationDefInputSetup]
+    setup: Optional[IntegrationSpiderIntegrationDefSetup]
     """Setup parameters for Spider integration"""
 
 
@@ -662,7 +662,7 @@ Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDef,
     IntegrationBraveIntegrationDef,
     IntegrationEmailIntegrationDef,
-    IntegrationSpiderIntegrationDefInput,
+    IntegrationSpiderIntegrationDef,
     IntegrationWikipediaIntegrationDef,
     IntegrationWeatherIntegrationDef,
     IntegrationBrowserbaseContextIntegrationDef,

@@ -2,10 +2,16 @@
 
 from __future__ import annotations
 
-from typing import Optional
-from typing_extensions import Literal, TypedDict
+from typing import Union, Optional
+from typing_extensions import Literal, TypeAlias, TypedDict
 
-__all__ = ["SessionUpdateParams", "RecallOptions"]
+__all__ = [
+    "SessionUpdateParams",
+    "RecallOptions",
+    "RecallOptionsVectorDocSearchUpdate",
+    "RecallOptionsTextOnlyDocSearchUpdate",
+    "RecallOptionsHybridDocSearchUpdate",
+]
 
 
 class SessionUpdateParams(TypedDict, total=False):
@@ -28,7 +34,39 @@ class SessionUpdateParams(TypedDict, total=False):
     token_budget: Optional[int]
 
 
-class RecallOptions(TypedDict, total=False):
+class RecallOptionsVectorDocSearchUpdate(TypedDict, total=False):
+    confidence: float
+
+    lang: str
+
+    limit: int
+
+    max_query_length: int
+
+    metadata_filter: object
+
+    mmr_strength: float
+
+    mode: Literal["vector"]
+
+    num_search_messages: int
+
+
+class RecallOptionsTextOnlyDocSearchUpdate(TypedDict, total=False):
+    lang: str
+
+    limit: int
+
+    max_query_length: int
+
+    metadata_filter: object
+
+    mode: Literal["text"]
+
+    num_search_messages: int
+
+
+class RecallOptionsHybridDocSearchUpdate(TypedDict, total=False):
     alpha: float
 
     confidence: float
@@ -43,6 +81,11 @@ class RecallOptions(TypedDict, total=False):
 
     mmr_strength: float
 
-    mode: str
+    mode: Literal["hybrid"]
 
     num_search_messages: int
+
+
+RecallOptions: TypeAlias = Union[
+    RecallOptionsVectorDocSearchUpdate, RecallOptionsTextOnlyDocSearchUpdate, RecallOptionsHybridDocSearchUpdate
+]
