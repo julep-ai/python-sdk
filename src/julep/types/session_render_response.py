@@ -46,9 +46,9 @@ __all__ = [
     "ToolIntegrationEmailIntegrationDef",
     "ToolIntegrationEmailIntegrationDefArguments",
     "ToolIntegrationEmailIntegrationDefSetup",
-    "ToolIntegrationSpiderIntegrationDefOutput",
-    "ToolIntegrationSpiderIntegrationDefOutputArguments",
-    "ToolIntegrationSpiderIntegrationDefOutputSetup",
+    "ToolIntegrationSpiderIntegrationDef",
+    "ToolIntegrationSpiderIntegrationDefArguments",
+    "ToolIntegrationSpiderIntegrationDefSetup",
     "ToolIntegrationWikipediaIntegrationDef",
     "ToolIntegrationWikipediaIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDef",
@@ -428,7 +428,7 @@ class ToolIntegrationEmailIntegrationDef(BaseModel):
     """Setup parameters for Email integration"""
 
 
-class ToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
+class ToolIntegrationSpiderIntegrationDefArguments(BaseModel):
     url: str
 
     content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
@@ -436,19 +436,19 @@ class ToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     params: Optional[object] = None
 
 
-class ToolIntegrationSpiderIntegrationDefOutputSetup(BaseModel):
+class ToolIntegrationSpiderIntegrationDefSetup(BaseModel):
     spider_api_key: str
 
 
-class ToolIntegrationSpiderIntegrationDefOutput(BaseModel):
-    arguments: Optional[ToolIntegrationSpiderIntegrationDefOutputArguments] = None
+class ToolIntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationSpiderIntegrationDefArguments] = None
     """Arguments for Spider integration"""
 
     method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
-    setup: Optional[ToolIntegrationSpiderIntegrationDefOutputSetup] = None
+    setup: Optional[ToolIntegrationSpiderIntegrationDefSetup] = None
     """Setup parameters for Spider integration"""
 
 
@@ -857,7 +857,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
     ToolIntegrationEmailIntegrationDef,
-    ToolIntegrationSpiderIntegrationDefOutput,
+    ToolIntegrationSpiderIntegrationDef,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
     ToolIntegrationBrowserbaseContextIntegrationDef,

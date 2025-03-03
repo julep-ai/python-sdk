@@ -32,9 +32,9 @@ __all__ = [
     "ContentToolIntegrationEmailIntegrationDef",
     "ContentToolIntegrationEmailIntegrationDefArguments",
     "ContentToolIntegrationEmailIntegrationDefSetup",
-    "ContentToolIntegrationSpiderIntegrationDefOutput",
-    "ContentToolIntegrationSpiderIntegrationDefOutputArguments",
-    "ContentToolIntegrationSpiderIntegrationDefOutputSetup",
+    "ContentToolIntegrationSpiderIntegrationDef",
+    "ContentToolIntegrationSpiderIntegrationDefArguments",
+    "ContentToolIntegrationSpiderIntegrationDefSetup",
     "ContentToolIntegrationWikipediaIntegrationDef",
     "ContentToolIntegrationWikipediaIntegrationDefArguments",
     "ContentToolIntegrationWeatherIntegrationDef",
@@ -110,9 +110,9 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationEmailIntegrationDef",
     "ContentUnionMember8ToolIntegrationEmailIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationEmailIntegrationDefSetup",
-    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutput",
-    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputArguments",
-    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputSetup",
+    "ContentUnionMember8ToolIntegrationSpiderIntegrationDef",
+    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationSpiderIntegrationDefSetup",
     "ContentUnionMember8ToolIntegrationWikipediaIntegrationDef",
     "ContentUnionMember8ToolIntegrationWikipediaIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationWeatherIntegrationDef",
@@ -349,7 +349,7 @@ class ContentToolIntegrationEmailIntegrationDef(BaseModel):
     """Setup parameters for Email integration"""
 
 
-class ContentToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
+class ContentToolIntegrationSpiderIntegrationDefArguments(BaseModel):
     url: str
 
     content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
@@ -357,19 +357,19 @@ class ContentToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     params: Optional[object] = None
 
 
-class ContentToolIntegrationSpiderIntegrationDefOutputSetup(BaseModel):
+class ContentToolIntegrationSpiderIntegrationDefSetup(BaseModel):
     spider_api_key: str
 
 
-class ContentToolIntegrationSpiderIntegrationDefOutput(BaseModel):
-    arguments: Optional[ContentToolIntegrationSpiderIntegrationDefOutputArguments] = None
+class ContentToolIntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationSpiderIntegrationDefArguments] = None
     """Arguments for Spider integration"""
 
     method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
-    setup: Optional[ContentToolIntegrationSpiderIntegrationDefOutputSetup] = None
+    setup: Optional[ContentToolIntegrationSpiderIntegrationDefSetup] = None
     """Setup parameters for Spider integration"""
 
 
@@ -778,7 +778,7 @@ ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationDummyIntegrationDef,
     ContentToolIntegrationBraveIntegrationDef,
     ContentToolIntegrationEmailIntegrationDef,
-    ContentToolIntegrationSpiderIntegrationDefOutput,
+    ContentToolIntegrationSpiderIntegrationDef,
     ContentToolIntegrationWikipediaIntegrationDef,
     ContentToolIntegrationWeatherIntegrationDef,
     ContentToolIntegrationBrowserbaseContextIntegrationDef,
@@ -1147,7 +1147,7 @@ class ContentUnionMember8ToolIntegrationEmailIntegrationDef(BaseModel):
     """Setup parameters for Email integration"""
 
 
-class ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputArguments(BaseModel):
+class ContentUnionMember8ToolIntegrationSpiderIntegrationDefArguments(BaseModel):
     url: str
 
     content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
@@ -1155,19 +1155,19 @@ class ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputArguments(Base
     params: Optional[object] = None
 
 
-class ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputSetup(BaseModel):
+class ContentUnionMember8ToolIntegrationSpiderIntegrationDefSetup(BaseModel):
     spider_api_key: str
 
 
-class ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutput(BaseModel):
-    arguments: Optional[ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputArguments] = None
+class ContentUnionMember8ToolIntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationSpiderIntegrationDefArguments] = None
     """Arguments for Spider integration"""
 
     method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
-    setup: Optional[ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutputSetup] = None
+    setup: Optional[ContentUnionMember8ToolIntegrationSpiderIntegrationDefSetup] = None
     """Setup parameters for Spider integration"""
 
 
@@ -1576,7 +1576,7 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationDummyIntegrationDef,
     ContentUnionMember8ToolIntegrationBraveIntegrationDef,
     ContentUnionMember8ToolIntegrationEmailIntegrationDef,
-    ContentUnionMember8ToolIntegrationSpiderIntegrationDefOutput,
+    ContentUnionMember8ToolIntegrationSpiderIntegrationDef,
     ContentUnionMember8ToolIntegrationWikipediaIntegrationDef,
     ContentUnionMember8ToolIntegrationWeatherIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDef,
