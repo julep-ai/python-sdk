@@ -46,9 +46,9 @@ __all__ = [
     "ToolIntegrationEmailIntegrationDef",
     "ToolIntegrationEmailIntegrationDefArguments",
     "ToolIntegrationEmailIntegrationDefSetup",
-    "ToolIntegrationSpiderIntegrationDefInput",
-    "ToolIntegrationSpiderIntegrationDefInputArguments",
-    "ToolIntegrationSpiderIntegrationDefInputSetup",
+    "ToolIntegrationSpiderIntegrationDef",
+    "ToolIntegrationSpiderIntegrationDefArguments",
+    "ToolIntegrationSpiderIntegrationDefSetup",
     "ToolIntegrationWikipediaIntegrationDef",
     "ToolIntegrationWikipediaIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDef",
@@ -484,7 +484,7 @@ class ToolIntegrationEmailIntegrationDef(TypedDict, total=False):
     """Setup parameters for Email integration"""
 
 
-class ToolIntegrationSpiderIntegrationDefInputArguments(TypedDict, total=False):
+class ToolIntegrationSpiderIntegrationDefArguments(TypedDict, total=False):
     url: Required[str]
 
     content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
@@ -492,19 +492,19 @@ class ToolIntegrationSpiderIntegrationDefInputArguments(TypedDict, total=False):
     params: Optional[object]
 
 
-class ToolIntegrationSpiderIntegrationDefInputSetup(TypedDict, total=False):
+class ToolIntegrationSpiderIntegrationDefSetup(TypedDict, total=False):
     spider_api_key: Required[str]
 
 
-class ToolIntegrationSpiderIntegrationDefInput(TypedDict, total=False):
-    arguments: Optional[ToolIntegrationSpiderIntegrationDefInputArguments]
+class ToolIntegrationSpiderIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationSpiderIntegrationDefArguments]
     """Arguments for Spider integration"""
 
     method: Optional[Literal["crawl", "links", "screenshot", "search"]]
 
     provider: Literal["spider"]
 
-    setup: Optional[ToolIntegrationSpiderIntegrationDefInputSetup]
+    setup: Optional[ToolIntegrationSpiderIntegrationDefSetup]
     """Setup parameters for Spider integration"""
 
 
@@ -915,7 +915,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
     ToolIntegrationEmailIntegrationDef,
-    ToolIntegrationSpiderIntegrationDefInput,
+    ToolIntegrationSpiderIntegrationDef,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
     ToolIntegrationBrowserbaseContextIntegrationDef,

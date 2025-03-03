@@ -22,9 +22,9 @@ __all__ = [
     "IntegrationEmailIntegrationDef",
     "IntegrationEmailIntegrationDefArguments",
     "IntegrationEmailIntegrationDefSetup",
-    "IntegrationSpiderIntegrationDefOutput",
-    "IntegrationSpiderIntegrationDefOutputArguments",
-    "IntegrationSpiderIntegrationDefOutputSetup",
+    "IntegrationSpiderIntegrationDef",
+    "IntegrationSpiderIntegrationDefArguments",
+    "IntegrationSpiderIntegrationDefSetup",
     "IntegrationWikipediaIntegrationDef",
     "IntegrationWikipediaIntegrationDefArguments",
     "IntegrationWeatherIntegrationDef",
@@ -186,7 +186,7 @@ class IntegrationEmailIntegrationDef(BaseModel):
     """Setup parameters for Email integration"""
 
 
-class IntegrationSpiderIntegrationDefOutputArguments(BaseModel):
+class IntegrationSpiderIntegrationDefArguments(BaseModel):
     url: str
 
     content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None
@@ -194,19 +194,19 @@ class IntegrationSpiderIntegrationDefOutputArguments(BaseModel):
     params: Optional[object] = None
 
 
-class IntegrationSpiderIntegrationDefOutputSetup(BaseModel):
+class IntegrationSpiderIntegrationDefSetup(BaseModel):
     spider_api_key: str
 
 
-class IntegrationSpiderIntegrationDefOutput(BaseModel):
-    arguments: Optional[IntegrationSpiderIntegrationDefOutputArguments] = None
+class IntegrationSpiderIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationSpiderIntegrationDefArguments] = None
     """Arguments for Spider integration"""
 
     method: Optional[Literal["crawl", "links", "screenshot", "search"]] = None
 
     provider: Optional[Literal["spider"]] = None
 
-    setup: Optional[IntegrationSpiderIntegrationDefOutputSetup] = None
+    setup: Optional[IntegrationSpiderIntegrationDefSetup] = None
     """Setup parameters for Spider integration"""
 
 
@@ -615,7 +615,7 @@ Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDef,
     IntegrationBraveIntegrationDef,
     IntegrationEmailIntegrationDef,
-    IntegrationSpiderIntegrationDefOutput,
+    IntegrationSpiderIntegrationDef,
     IntegrationWikipediaIntegrationDef,
     IntegrationWeatherIntegrationDef,
     IntegrationBrowserbaseContextIntegrationDef,

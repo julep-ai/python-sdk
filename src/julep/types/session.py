@@ -1,15 +1,53 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import Optional
+from typing import Union, Optional
 from datetime import datetime
-from typing_extensions import Literal
+from typing_extensions import Literal, TypeAlias
 
 from .._models import BaseModel
 
-__all__ = ["Session", "RecallOptions"]
+__all__ = [
+    "Session",
+    "RecallOptions",
+    "RecallOptionsVectorDocSearch",
+    "RecallOptionsTextOnlyDocSearch",
+    "RecallOptionsHybridDocSearch",
+]
 
 
-class RecallOptions(BaseModel):
+class RecallOptionsVectorDocSearch(BaseModel):
+    confidence: Optional[float] = None
+
+    lang: Optional[str] = None
+
+    limit: Optional[int] = None
+
+    max_query_length: Optional[int] = None
+
+    metadata_filter: Optional[object] = None
+
+    mmr_strength: Optional[float] = None
+
+    mode: Optional[Literal["vector"]] = None
+
+    num_search_messages: Optional[int] = None
+
+
+class RecallOptionsTextOnlyDocSearch(BaseModel):
+    lang: Optional[str] = None
+
+    limit: Optional[int] = None
+
+    max_query_length: Optional[int] = None
+
+    metadata_filter: Optional[object] = None
+
+    mode: Optional[Literal["text"]] = None
+
+    num_search_messages: Optional[int] = None
+
+
+class RecallOptionsHybridDocSearch(BaseModel):
     alpha: Optional[float] = None
 
     confidence: Optional[float] = None
@@ -24,9 +62,14 @@ class RecallOptions(BaseModel):
 
     mmr_strength: Optional[float] = None
 
-    mode: Optional[str] = None
+    mode: Optional[Literal["hybrid"]] = None
 
     num_search_messages: Optional[int] = None
+
+
+RecallOptions: TypeAlias = Union[
+    RecallOptionsVectorDocSearch, RecallOptionsTextOnlyDocSearch, RecallOptionsHybridDocSearch, None
+]
 
 
 class Session(BaseModel):
