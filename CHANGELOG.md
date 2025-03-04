@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.74.1 (2025-03-04)
+
+Full Changelog: [v1.74.0...v1.74.1](https://github.com/julep-ai/python-sdk/compare/v1.74.0...v1.74.1)
+
+### Chores
+
+* **internal:** remove unused http client options forwarding ([#334](https://github.com/julep-ai/python-sdk/issues/334)) ([014b96d](https://github.com/julep-ai/python-sdk/commit/014b96d2a26a113a13c493f72b7062c885f5befa))
+
 ## 1.74.0 (2025-03-04)
 
 Full Changelog: [v1.73.0...v1.74.0](https://github.com/julep-ai/python-sdk/compare/v1.73.0...v1.74.0)
