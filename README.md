@@ -158,6 +158,37 @@ for agent in first_page.items:
 # Remove `await` for non-async usage.
 ```
 
+## Nested params
+
+Nested parameters are dictionaries, typed using `TypedDict`, for example:
+
+```python
+from julep import Julep
+
+client = Julep()
+
+tool = client.agents.tools.create(
+    agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+    name="name",
+    type="function",
+    api_call={
+        "method": "GET",
+        "url": "https://example.com",
+        "content": "content",
+        "cookies": {"foo": "string"},
+        "data": {},
+        "files": {},
+        "follow_redirects": True,
+        "headers": {"foo": "string"},
+        "json": {},
+        "params": "string",
+        "schema": {},
+        "timeout": 0,
+    },
+)
+print(tool.api_call)
+```
+
 ## Handling errors
 
 When the library is unable to connect to the API (for example, due to network connection problems or a timeout), a subclass of `julep.APIConnectionError` is raised.
