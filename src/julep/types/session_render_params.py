@@ -91,6 +91,9 @@ __all__ = [
     "ToolIntegrationCloudinaryEditIntegrationDefSetup",
     "ToolIntegrationArxivIntegrationDef",
     "ToolIntegrationArxivIntegrationDefArguments",
+    "ToolIntegrationUnstructuredIntegrationDef",
+    "ToolIntegrationUnstructuredIntegrationDefArguments",
+    "ToolIntegrationUnstructuredIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -428,7 +431,7 @@ class ToolIntegrationBraveIntegrationDefArguments(TypedDict, total=False):
 
 
 class ToolIntegrationBraveIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class ToolIntegrationBraveIntegrationDef(TypedDict, total=False):
@@ -911,6 +914,40 @@ class ToolIntegrationArxivIntegrationDef(TypedDict, total=False):
     setup: object
 
 
+class ToolIntegrationUnstructuredIntegrationDefArguments(TypedDict, total=False):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class ToolIntegrationUnstructuredIntegrationDefSetup(TypedDict, total=False):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class ToolIntegrationUnstructuredIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationUnstructuredIntegrationDefArguments]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[ToolIntegrationUnstructuredIntegrationDefSetup]
+    """Setup parameters for Unstructured integration"""
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -931,6 +968,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationCloudinaryUploadIntegrationDef,
     ToolIntegrationCloudinaryEditIntegrationDef,
     ToolIntegrationArxivIntegrationDef,
+    ToolIntegrationUnstructuredIntegrationDef,
 ]
 
 

@@ -77,6 +77,9 @@ __all__ = [
     "ContentToolIntegrationCloudinaryEditIntegrationDefSetup",
     "ContentToolIntegrationArxivIntegrationDef",
     "ContentToolIntegrationArxivIntegrationDefArguments",
+    "ContentToolIntegrationUnstructuredIntegrationDef",
+    "ContentToolIntegrationUnstructuredIntegrationDefArguments",
+    "ContentToolIntegrationUnstructuredIntegrationDefSetup",
     "ContentToolSystem",
     "ContentToolTextEditor20241022",
     "ContentChosenFunctionCall",
@@ -155,6 +158,9 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDefSetup",
     "ContentUnionMember8ToolIntegrationArxivIntegrationDef",
     "ContentUnionMember8ToolIntegrationArxivIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationUnstructuredIntegrationDef",
+    "ContentUnionMember8ToolIntegrationUnstructuredIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationUnstructuredIntegrationDefSetup",
     "ContentUnionMember8ToolSystem",
     "ContentUnionMember8ToolTextEditor20241022",
     "ContentUnionMember8ChosenFunctionCall",
@@ -302,7 +308,7 @@ class ContentToolIntegrationBraveIntegrationDefArguments(BaseModel):
 
 
 class ContentToolIntegrationBraveIntegrationDefSetup(BaseModel):
-    api_key: str
+    brave_api_key: str
 
 
 class ContentToolIntegrationBraveIntegrationDef(BaseModel):
@@ -774,6 +780,40 @@ class ContentToolIntegrationArxivIntegrationDef(BaseModel):
     setup: Optional[object] = None
 
 
+class ContentToolIntegrationUnstructuredIntegrationDefArguments(BaseModel):
+    file: str
+
+    filename: Optional[str] = None
+
+    partition_params: Optional[object] = None
+
+
+class ContentToolIntegrationUnstructuredIntegrationDefSetup(BaseModel):
+    unstructured_api_key: str
+
+    retry_config: Optional[object] = None
+
+    server: Optional[str] = None
+
+    server_url: Optional[str] = None
+
+    timeout_ms: Optional[int] = None
+
+    url_params: Optional[object] = None
+
+
+class ContentToolIntegrationUnstructuredIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationUnstructuredIntegrationDefArguments] = None
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["unstructured"]] = None
+
+    setup: Optional[ContentToolIntegrationUnstructuredIntegrationDefSetup] = None
+    """Setup parameters for Unstructured integration"""
+
+
 ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationDummyIntegrationDef,
     ContentToolIntegrationBraveIntegrationDef,
@@ -794,6 +834,7 @@ ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationCloudinaryUploadIntegrationDef,
     ContentToolIntegrationCloudinaryEditIntegrationDef,
     ContentToolIntegrationArxivIntegrationDef,
+    ContentToolIntegrationUnstructuredIntegrationDef,
     None,
 ]
 
@@ -1100,7 +1141,7 @@ class ContentUnionMember8ToolIntegrationBraveIntegrationDefArguments(BaseModel):
 
 
 class ContentUnionMember8ToolIntegrationBraveIntegrationDefSetup(BaseModel):
-    api_key: str
+    brave_api_key: str
 
 
 class ContentUnionMember8ToolIntegrationBraveIntegrationDef(BaseModel):
@@ -1572,6 +1613,40 @@ class ContentUnionMember8ToolIntegrationArxivIntegrationDef(BaseModel):
     setup: Optional[object] = None
 
 
+class ContentUnionMember8ToolIntegrationUnstructuredIntegrationDefArguments(BaseModel):
+    file: str
+
+    filename: Optional[str] = None
+
+    partition_params: Optional[object] = None
+
+
+class ContentUnionMember8ToolIntegrationUnstructuredIntegrationDefSetup(BaseModel):
+    unstructured_api_key: str
+
+    retry_config: Optional[object] = None
+
+    server: Optional[str] = None
+
+    server_url: Optional[str] = None
+
+    timeout_ms: Optional[int] = None
+
+    url_params: Optional[object] = None
+
+
+class ContentUnionMember8ToolIntegrationUnstructuredIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationUnstructuredIntegrationDefArguments] = None
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["unstructured"]] = None
+
+    setup: Optional[ContentUnionMember8ToolIntegrationUnstructuredIntegrationDefSetup] = None
+    """Setup parameters for Unstructured integration"""
+
+
 ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationDummyIntegrationDef,
     ContentUnionMember8ToolIntegrationBraveIntegrationDef,
@@ -1592,6 +1667,7 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationCloudinaryUploadIntegrationDef,
     ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDef,
     ContentUnionMember8ToolIntegrationArxivIntegrationDef,
+    ContentUnionMember8ToolIntegrationUnstructuredIntegrationDef,
     None,
 ]
 
