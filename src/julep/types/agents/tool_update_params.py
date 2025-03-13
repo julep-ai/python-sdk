@@ -66,6 +66,9 @@ __all__ = [
     "IntegrationCloudinaryEditIntegrationDefUpdateSetup",
     "IntegrationArxivIntegrationDefUpdate",
     "IntegrationArxivIntegrationDefUpdateArguments",
+    "IntegrationUnstructuredIntegrationDefUpdate",
+    "IntegrationUnstructuredIntegrationDefUpdateArguments",
+    "IntegrationUnstructuredIntegrationDefUpdateSetup",
     "System",
     "TextEditor20241022",
 ]
@@ -177,7 +180,7 @@ class IntegrationBraveIntegrationDefUpdateArguments(TypedDict, total=False):
 
 
 class IntegrationBraveIntegrationDefUpdateSetup(TypedDict, total=False):
-    api_key: Optional[str]
+    brave_api_key: Optional[str]
 
 
 class IntegrationBraveIntegrationDefUpdate(TypedDict, total=False):
@@ -660,6 +663,40 @@ class IntegrationArxivIntegrationDefUpdate(TypedDict, total=False):
     setup: object
 
 
+class IntegrationUnstructuredIntegrationDefUpdateArguments(TypedDict, total=False):
+    file: Optional[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class IntegrationUnstructuredIntegrationDefUpdateSetup(TypedDict, total=False):
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    unstructured_api_key: Optional[str]
+
+    url_params: Optional[object]
+
+
+class IntegrationUnstructuredIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationUnstructuredIntegrationDefUpdateArguments]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[IntegrationUnstructuredIntegrationDefUpdateSetup]
+    """Setup parameters for Unstructured integration"""
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDefUpdate,
     IntegrationBraveIntegrationDefUpdate,
@@ -680,6 +717,7 @@ Integration: TypeAlias = Union[
     IntegrationCloudinaryUploadIntegrationDefUpdate,
     IntegrationCloudinaryEditIntegrationDefUpdate,
     IntegrationArxivIntegrationDefUpdate,
+    IntegrationUnstructuredIntegrationDefUpdate,
 ]
 
 

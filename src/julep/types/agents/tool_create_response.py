@@ -67,6 +67,9 @@ __all__ = [
     "IntegrationCloudinaryEditIntegrationDefSetup",
     "IntegrationArxivIntegrationDef",
     "IntegrationArxivIntegrationDefArguments",
+    "IntegrationUnstructuredIntegrationDef",
+    "IntegrationUnstructuredIntegrationDefArguments",
+    "IntegrationUnstructuredIntegrationDefSetup",
     "System",
     "TextEditor20241022",
 ]
@@ -139,7 +142,7 @@ class IntegrationBraveIntegrationDefArguments(BaseModel):
 
 
 class IntegrationBraveIntegrationDefSetup(BaseModel):
-    api_key: str
+    brave_api_key: str
 
 
 class IntegrationBraveIntegrationDef(BaseModel):
@@ -611,6 +614,40 @@ class IntegrationArxivIntegrationDef(BaseModel):
     setup: Optional[object] = None
 
 
+class IntegrationUnstructuredIntegrationDefArguments(BaseModel):
+    file: str
+
+    filename: Optional[str] = None
+
+    partition_params: Optional[object] = None
+
+
+class IntegrationUnstructuredIntegrationDefSetup(BaseModel):
+    unstructured_api_key: str
+
+    retry_config: Optional[object] = None
+
+    server: Optional[str] = None
+
+    server_url: Optional[str] = None
+
+    timeout_ms: Optional[int] = None
+
+    url_params: Optional[object] = None
+
+
+class IntegrationUnstructuredIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationUnstructuredIntegrationDefArguments] = None
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["unstructured"]] = None
+
+    setup: Optional[IntegrationUnstructuredIntegrationDefSetup] = None
+    """Setup parameters for Unstructured integration"""
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDef,
     IntegrationBraveIntegrationDef,
@@ -631,6 +668,7 @@ Integration: TypeAlias = Union[
     IntegrationCloudinaryUploadIntegrationDef,
     IntegrationCloudinaryEditIntegrationDef,
     IntegrationArxivIntegrationDef,
+    IntegrationUnstructuredIntegrationDef,
     None,
 ]
 

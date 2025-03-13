@@ -97,6 +97,9 @@ __all__ = [
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainGetStep",
@@ -200,6 +203,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenGetStep",
@@ -300,6 +306,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenGetStep",
@@ -404,6 +413,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoGetStep",
@@ -499,6 +511,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelGetStep",
@@ -594,6 +609,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenThenInputMapGetStep",
@@ -690,6 +708,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseGetStep",
@@ -790,6 +811,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenGetStep",
@@ -894,6 +918,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoGetStep",
@@ -989,6 +1016,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelGetStep",
@@ -1084,6 +1114,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseElseInputMapGetStep",
@@ -1180,6 +1213,9 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainSwitchStepInputSwitchThenGetStep",
@@ -1284,6 +1320,9 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainForeachStepInputForeachDoGetStep",
@@ -1379,6 +1418,9 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainParallelStepInputParallelGetStep",
@@ -1474,6 +1516,9 @@ __all__ = [
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDefSetup",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainMainInputMapGetStep",
@@ -1538,6 +1583,9 @@ __all__ = [
     "ToolIntegrationCloudinaryEditIntegrationDefSetup",
     "ToolIntegrationArxivIntegrationDef",
     "ToolIntegrationArxivIntegrationDefArguments",
+    "ToolIntegrationUnstructuredIntegrationDef",
+    "ToolIntegrationUnstructuredIntegrationDefArguments",
+    "ToolIntegrationUnstructuredIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -1891,7 +1939,7 @@ class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequest
 class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -2537,6 +2585,50 @@ class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequest
     setup: object
 
 
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -2557,6 +2649,7 @@ MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputI
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -3120,7 +3213,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAu
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -3766,6 +3859,50 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAu
     setup: object
 
 
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -3786,6 +3923,7 @@ MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenT
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -4363,7 +4501,7 @@ class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToo
 class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -5009,6 +5147,50 @@ class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToo
     setup: object
 
 
+class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -5029,6 +5211,7 @@ MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -5658,7 +5841,7 @@ class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToo
 class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -6304,6 +6487,50 @@ class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToo
     setup: object
 
 
+class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -6324,6 +6551,7 @@ MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -6901,7 +7129,7 @@ class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToo
 class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -7547,6 +7775,50 @@ class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToo
     setup: object
 
 
+class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -7567,6 +7839,7 @@ MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -8117,7 +8390,7 @@ class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember
 class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -8763,6 +9036,50 @@ class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember
     setup: object
 
 
+class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -8783,6 +9100,7 @@ MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1Agent
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -9360,7 +9678,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAu
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -10006,6 +10324,50 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAu
     setup: object
 
 
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -10026,6 +10388,7 @@ MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenT
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -10603,7 +10966,7 @@ class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToo
 class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -11249,6 +11612,50 @@ class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToo
     setup: object
 
 
+class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -11269,6 +11676,7 @@ MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -11898,7 +12306,7 @@ class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToo
 class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -12544,6 +12952,50 @@ class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToo
     setup: object
 
 
+class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -12564,6 +13016,7 @@ MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -13141,7 +13594,7 @@ class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToo
 class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -13787,6 +14240,50 @@ class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToo
     setup: object
 
 
+class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -13807,6 +14304,7 @@ MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -14357,7 +14855,7 @@ class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember
 class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -15003,6 +15501,50 @@ class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember
     setup: object
 
 
+class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -15023,6 +15565,7 @@ MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1Agent
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -15598,7 +16141,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAuto
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -16244,6 +16787,50 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAuto
     setup: object
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -16264,6 +16851,7 @@ MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToo
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -16860,7 +17448,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAuto
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -17506,6 +18094,50 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAuto
     setup: object
 
 
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -17526,6 +18158,7 @@ MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToo
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -18070,7 +18703,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAuto
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -18716,6 +19349,50 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAuto
     setup: object
 
 
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -18736,6 +19413,7 @@ MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToo
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -19250,7 +19928,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreat
 class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDefSetup(
     TypedDict, total=False
 ):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef(
@@ -19896,6 +20574,50 @@ class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreat
     setup: object
 
 
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments(
+    TypedDict, total=False
+):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup(
+    TypedDict, total=False
+):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments
+    ]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup
+    ]
+    """Setup parameters for Unstructured integration"""
+
+
 MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -19916,6 +20638,7 @@ MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolR
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryUploadIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
 ]
 
 
@@ -20169,7 +20892,7 @@ class ToolIntegrationBraveIntegrationDefArguments(TypedDict, total=False):
 
 
 class ToolIntegrationBraveIntegrationDefSetup(TypedDict, total=False):
-    api_key: Required[str]
+    brave_api_key: Required[str]
 
 
 class ToolIntegrationBraveIntegrationDef(TypedDict, total=False):
@@ -20652,6 +21375,40 @@ class ToolIntegrationArxivIntegrationDef(TypedDict, total=False):
     setup: object
 
 
+class ToolIntegrationUnstructuredIntegrationDefArguments(TypedDict, total=False):
+    file: Required[str]
+
+    filename: Optional[str]
+
+    partition_params: Optional[object]
+
+
+class ToolIntegrationUnstructuredIntegrationDefSetup(TypedDict, total=False):
+    unstructured_api_key: Required[str]
+
+    retry_config: Optional[object]
+
+    server: Optional[str]
+
+    server_url: Optional[str]
+
+    timeout_ms: Optional[int]
+
+    url_params: Optional[object]
+
+
+class ToolIntegrationUnstructuredIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationUnstructuredIntegrationDefArguments]
+    """Arguments for Unstructured partition integration"""
+
+    method: Optional[str]
+
+    provider: Literal["unstructured"]
+
+    setup: Optional[ToolIntegrationUnstructuredIntegrationDefSetup]
+    """Setup parameters for Unstructured integration"""
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -20672,6 +21429,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationCloudinaryUploadIntegrationDef,
     ToolIntegrationCloudinaryEditIntegrationDef,
     ToolIntegrationArxivIntegrationDef,
+    ToolIntegrationUnstructuredIntegrationDef,
 ]
 
 
