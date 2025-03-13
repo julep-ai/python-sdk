@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.75.0 (2025-03-13)
+
+Full Changelog: [v1.74.0...v1.75.0](https://github.com/julep-ai/python-sdk/compare/v1.74.0...v1.75.0)
+
+### Features
+
+* **api:** api update ([#338](https://github.com/julep-ai/python-sdk/issues/338)) ([eab1254](https://github.com/julep-ai/python-sdk/commit/eab1254480c36f2e106af2a0268e8d413a90683b))
+
+
+### Chores
+
+* **internal:** remove unused http client options forwarding ([#334](https://github.com/julep-ai/python-sdk/issues/334)) ([014b96d](https://github.com/julep-ai/python-sdk/commit/014b96d2a26a113a13c493f72b7062c885f5befa))
+
+
+### Documentation
+
+* revise readme docs about nested params ([#336](https://github.com/julep-ai/python-sdk/issues/336)) ([6ba13aa](https://github.com/julep-ai/python-sdk/commit/6ba13aac39a59f309b2b29cb9e59841e785e74dc))
+
 ## 1.74.0 (2025-03-04)
 
 Full Changelog: [v1.73.0...v1.74.0](https://github.com/julep-ai/python-sdk/compare/v1.73.0...v1.74.0)
