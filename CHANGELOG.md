@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.76.0 (2025-03-14)
+
+Full Changelog: [v1.75.0...v1.76.0](https://github.com/julep-ai/python-sdk/compare/v1.75.0...v1.76.0)
+
+### Features
+
+* **api:** api update ([#342](https://github.com/julep-ai/python-sdk/issues/342)) ([e0de8b5](https://github.com/julep-ai/python-sdk/commit/e0de8b5e92cfb5c555d887c3830f977321e7076b))
+
+
+### Chores
+
+* **internal:** remove extra empty newlines ([#340](https://github.com/julep-ai/python-sdk/issues/340)) ([a86ee2e](https://github.com/julep-ai/python-sdk/commit/a86ee2ee9c2bd1cecb4d870e42a078d47cf27737))
+
 ## 1.75.0 (2025-03-13)
 
 Full Changelog: [v1.74.0...v1.75.0](https://github.com/julep-ai/python-sdk/compare/v1.74.0...v1.75.0)
