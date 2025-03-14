@@ -80,6 +80,9 @@ __all__ = [
     "ContentToolIntegrationUnstructuredIntegrationDef",
     "ContentToolIntegrationUnstructuredIntegrationDefArguments",
     "ContentToolIntegrationUnstructuredIntegrationDefSetup",
+    "ContentToolIntegrationAlgoliaIntegrationDef",
+    "ContentToolIntegrationAlgoliaIntegrationDefArguments",
+    "ContentToolIntegrationAlgoliaIntegrationDefSetup",
     "ContentToolSystem",
     "ContentToolTextEditor20241022",
     "ContentChosenFunctionCall",
@@ -161,6 +164,9 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationUnstructuredIntegrationDef",
     "ContentUnionMember8ToolIntegrationUnstructuredIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationUnstructuredIntegrationDefSetup",
+    "ContentUnionMember8ToolIntegrationAlgoliaIntegrationDef",
+    "ContentUnionMember8ToolIntegrationAlgoliaIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationAlgoliaIntegrationDefSetup",
     "ContentUnionMember8ToolSystem",
     "ContentUnionMember8ToolTextEditor20241022",
     "ContentUnionMember8ChosenFunctionCall",
@@ -814,6 +820,34 @@ class ContentToolIntegrationUnstructuredIntegrationDef(BaseModel):
     """Setup parameters for Unstructured integration"""
 
 
+class ContentToolIntegrationAlgoliaIntegrationDefArguments(BaseModel):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class ContentToolIntegrationAlgoliaIntegrationDefSetup(BaseModel):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class ContentToolIntegrationAlgoliaIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationAlgoliaIntegrationDefArguments] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[ContentToolIntegrationAlgoliaIntegrationDefSetup] = None
+    """Integration definition for Algolia"""
+
+
 ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationDummyIntegrationDef,
     ContentToolIntegrationBraveIntegrationDef,
@@ -835,6 +869,7 @@ ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationCloudinaryEditIntegrationDef,
     ContentToolIntegrationArxivIntegrationDef,
     ContentToolIntegrationUnstructuredIntegrationDef,
+    ContentToolIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -1647,6 +1682,34 @@ class ContentUnionMember8ToolIntegrationUnstructuredIntegrationDef(BaseModel):
     """Setup parameters for Unstructured integration"""
 
 
+class ContentUnionMember8ToolIntegrationAlgoliaIntegrationDefArguments(BaseModel):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class ContentUnionMember8ToolIntegrationAlgoliaIntegrationDefSetup(BaseModel):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class ContentUnionMember8ToolIntegrationAlgoliaIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationAlgoliaIntegrationDefArguments] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[ContentUnionMember8ToolIntegrationAlgoliaIntegrationDefSetup] = None
+    """Integration definition for Algolia"""
+
+
 ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationDummyIntegrationDef,
     ContentUnionMember8ToolIntegrationBraveIntegrationDef,
@@ -1668,6 +1731,7 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationCloudinaryEditIntegrationDef,
     ContentUnionMember8ToolIntegrationArxivIntegrationDef,
     ContentUnionMember8ToolIntegrationUnstructuredIntegrationDef,
+    ContentUnionMember8ToolIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
