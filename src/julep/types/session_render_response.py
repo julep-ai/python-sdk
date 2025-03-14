@@ -94,6 +94,9 @@ __all__ = [
     "ToolIntegrationUnstructuredIntegrationDef",
     "ToolIntegrationUnstructuredIntegrationDefArguments",
     "ToolIntegrationUnstructuredIntegrationDefSetup",
+    "ToolIntegrationAlgoliaIntegrationDef",
+    "ToolIntegrationAlgoliaIntegrationDefArguments",
+    "ToolIntegrationAlgoliaIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -890,6 +893,34 @@ class ToolIntegrationUnstructuredIntegrationDef(BaseModel):
     """Setup parameters for Unstructured integration"""
 
 
+class ToolIntegrationAlgoliaIntegrationDefArguments(BaseModel):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class ToolIntegrationAlgoliaIntegrationDefSetup(BaseModel):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class ToolIntegrationAlgoliaIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationAlgoliaIntegrationDefArguments] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[ToolIntegrationAlgoliaIntegrationDefSetup] = None
+    """Integration definition for Algolia"""
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -911,6 +942,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationCloudinaryEditIntegrationDef,
     ToolIntegrationArxivIntegrationDef,
     ToolIntegrationUnstructuredIntegrationDef,
+    ToolIntegrationAlgoliaIntegrationDef,
     None,
 ]
 

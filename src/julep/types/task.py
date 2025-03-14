@@ -101,6 +101,9 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainGetStep",
@@ -207,6 +210,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenGetStep",
@@ -310,6 +316,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenGetStep",
@@ -417,6 +426,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoGetStep",
@@ -515,6 +527,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelGetStep",
@@ -613,6 +628,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputThenThenOutputMapGetStep",
@@ -712,6 +730,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseGetStep",
@@ -815,6 +836,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenGetStep",
@@ -922,6 +946,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoGetStep",
@@ -1020,6 +1047,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelGetStep",
@@ -1118,6 +1148,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainIfElseWorkflowStepOutputElseElseOutputMapGetStep",
@@ -1217,6 +1250,9 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainSwitchStepOutputSwitchThenGetStep",
@@ -1324,6 +1360,9 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainForeachStepOutputForeachDoGetStep",
@@ -1422,6 +1461,9 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainParallelStepOutputParallelGetStep",
@@ -1520,6 +1562,9 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputSystem",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputTextEditor20241022",
     "MainMainOutputMapGetStep",
@@ -1587,6 +1632,9 @@ __all__ = [
     "ToolIntegrationUnstructuredIntegrationDef",
     "ToolIntegrationUnstructuredIntegrationDefArguments",
     "ToolIntegrationUnstructuredIntegrationDefSetup",
+    "ToolIntegrationAlgoliaIntegrationDef",
+    "ToolIntegrationAlgoliaIntegrationDefArguments",
+    "ToolIntegrationAlgoliaIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -2542,6 +2590,38 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUns
     """Setup parameters for Unstructured integration"""
 
 
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(BaseModel):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(BaseModel):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(BaseModel):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -2563,6 +2643,7 @@ MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAli
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -3769,6 +3850,44 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -3790,6 +3909,7 @@ MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -5019,6 +5139,44 @@ class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutput
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -5040,6 +5198,7 @@ MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -6332,6 +6491,44 @@ class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutput
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -6353,6 +6550,7 @@ MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -7584,6 +7782,44 @@ class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutput
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -7605,6 +7841,7 @@ MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -8821,6 +9058,44 @@ class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMem
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -8842,6 +9117,7 @@ MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1Cr
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -10068,6 +10344,44 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -10089,6 +10403,7 @@ MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -11318,6 +11633,44 @@ class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutput
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -11339,6 +11692,7 @@ MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -12631,6 +12985,44 @@ class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutput
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -12652,6 +13044,7 @@ MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -13883,6 +14276,44 @@ class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutput
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -13904,6 +14335,7 @@ MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -15120,6 +15552,44 @@ class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMem
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -15141,6 +15611,7 @@ MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1Cr
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -16363,6 +16834,44 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     """Setup parameters for Unstructured integration"""
 
 
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -16384,6 +16893,7 @@ MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -17627,6 +18137,44 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     """Setup parameters for Unstructured integration"""
 
 
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -17648,6 +18196,7 @@ MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -18830,6 +19379,44 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     """Setup parameters for Unstructured integration"""
 
 
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -18851,6 +19438,7 @@ MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -20024,6 +20612,44 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
     """Setup parameters for Unstructured integration"""
 
 
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments(
+    BaseModel
+):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup(
+    BaseModel
+):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefArguments
+    ] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDefSetup
+    ] = None
+    """Integration definition for Algolia"""
+
+
 MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationDummyIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBraveIntegrationDef,
@@ -20045,6 +20671,7 @@ MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegra
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationCloudinaryEditIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationArxivIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationUnstructuredIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlgoliaIntegrationDef,
     None,
 ]
 
@@ -20795,6 +21422,34 @@ class ToolIntegrationUnstructuredIntegrationDef(BaseModel):
     """Setup parameters for Unstructured integration"""
 
 
+class ToolIntegrationAlgoliaIntegrationDefArguments(BaseModel):
+    index_name: str
+
+    query: str
+
+    attributes_to_retrieve: Optional[object] = None
+
+    hits_per_page: Optional[int] = None
+
+
+class ToolIntegrationAlgoliaIntegrationDefSetup(BaseModel):
+    algolia_api_key: str
+
+    algolia_application_id: str
+
+
+class ToolIntegrationAlgoliaIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationAlgoliaIntegrationDefArguments] = None
+    """Arguments for Algolia Search"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["algolia"]] = None
+
+    setup: Optional[ToolIntegrationAlgoliaIntegrationDefSetup] = None
+    """Integration definition for Algolia"""
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -20816,6 +21471,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationCloudinaryEditIntegrationDef,
     ToolIntegrationArxivIntegrationDef,
     ToolIntegrationUnstructuredIntegrationDef,
+    ToolIntegrationAlgoliaIntegrationDef,
     None,
 ]
 

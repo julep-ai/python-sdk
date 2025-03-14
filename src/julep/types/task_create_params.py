@@ -100,6 +100,9 @@ __all__ = [
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainGetStep",
@@ -206,6 +209,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenGetStep",
@@ -309,6 +315,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenGetStep",
@@ -416,6 +425,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoGetStep",
@@ -514,6 +526,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelGetStep",
@@ -612,6 +627,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputThenThenInputMapGetStep",
@@ -711,6 +729,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseGetStep",
@@ -814,6 +835,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenGetStep",
@@ -921,6 +945,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoGetStep",
@@ -1019,6 +1046,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelGetStep",
@@ -1117,6 +1147,9 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainIfElseWorkflowStepInputElseElseInputMapGetStep",
@@ -1216,6 +1249,9 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainSwitchStepInputSwitchThenGetStep",
@@ -1323,6 +1359,9 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainForeachStepInputForeachDoGetStep",
@@ -1421,6 +1460,9 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainParallelStepInputParallelGetStep",
@@ -1519,6 +1561,9 @@ __all__ = [
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefArguments",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDefSetup",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputSystem",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputTextEditor20241022",
     "MainMainInputMapGetStep",
@@ -1586,6 +1631,9 @@ __all__ = [
     "ToolIntegrationUnstructuredIntegrationDef",
     "ToolIntegrationUnstructuredIntegrationDefArguments",
     "ToolIntegrationUnstructuredIntegrationDefSetup",
+    "ToolIntegrationAlgoliaIntegrationDef",
+    "ToolIntegrationAlgoliaIntegrationDefArguments",
+    "ToolIntegrationAlgoliaIntegrationDefSetup",
     "ToolSystem",
     "ToolTextEditor20241022",
 ]
@@ -2629,6 +2677,44 @@ class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequest
     """Setup parameters for Unstructured integration"""
 
 
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -2650,6 +2736,7 @@ MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputI
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -3903,6 +3990,44 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAu
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -3924,6 +4049,7 @@ MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenT
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -5191,6 +5317,44 @@ class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToo
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -5212,6 +5376,7 @@ MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -6531,6 +6696,44 @@ class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToo
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -6552,6 +6755,7 @@ MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -7819,6 +8023,44 @@ class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToo
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -7840,6 +8082,7 @@ MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -9080,6 +9323,44 @@ class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -9101,6 +9382,7 @@ MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1Agent
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -10368,6 +10650,44 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAu
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -10389,6 +10709,7 @@ MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenT
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -11656,6 +11977,44 @@ class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToo
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -11677,6 +12036,7 @@ MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -12996,6 +13356,44 @@ class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToo
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -13017,6 +13415,7 @@ MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -14284,6 +14683,44 @@ class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToo
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -14305,6 +14742,7 @@ MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnio
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -15545,6 +15983,44 @@ class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember
     """Setup parameters for Unstructured integration"""
 
 
+class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -15566,6 +16042,7 @@ MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1Agent
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -16831,6 +17308,44 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAuto
     """Setup parameters for Unstructured integration"""
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -16852,6 +17367,7 @@ MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToo
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -18138,6 +18654,44 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAuto
     """Setup parameters for Unstructured integration"""
 
 
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -18159,6 +18713,7 @@ MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToo
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -19393,6 +19948,44 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAuto
     """Setup parameters for Unstructured integration"""
 
 
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -19414,6 +20007,7 @@ MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToo
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -20618,6 +21212,44 @@ class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreat
     """Setup parameters for Unstructured integration"""
 
 
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments(
+    TypedDict, total=False
+):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup(
+    TypedDict, total=False
+):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef(
+    TypedDict, total=False
+):
+    arguments: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefArguments
+    ]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[
+        MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDefSetup
+    ]
+    """Integration definition for Algolia"""
+
+
 MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationDummyIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationBraveIntegrationDef,
@@ -20639,6 +21271,7 @@ MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolR
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationCloudinaryEditIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationArxivIntegrationDef,
     MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationUnstructuredIntegrationDef,
+    MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationAlgoliaIntegrationDef,
 ]
 
 
@@ -21409,6 +22042,34 @@ class ToolIntegrationUnstructuredIntegrationDef(TypedDict, total=False):
     """Setup parameters for Unstructured integration"""
 
 
+class ToolIntegrationAlgoliaIntegrationDefArguments(TypedDict, total=False):
+    index_name: Required[str]
+
+    query: Required[str]
+
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+
+class ToolIntegrationAlgoliaIntegrationDefSetup(TypedDict, total=False):
+    algolia_api_key: Required[str]
+
+    algolia_application_id: Required[str]
+
+
+class ToolIntegrationAlgoliaIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationAlgoliaIntegrationDefArguments]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[ToolIntegrationAlgoliaIntegrationDefSetup]
+    """Integration definition for Algolia"""
+
+
 ToolIntegration: TypeAlias = Union[
     ToolIntegrationDummyIntegrationDef,
     ToolIntegrationBraveIntegrationDef,
@@ -21430,6 +22091,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationCloudinaryEditIntegrationDef,
     ToolIntegrationArxivIntegrationDef,
     ToolIntegrationUnstructuredIntegrationDef,
+    ToolIntegrationAlgoliaIntegrationDef,
 ]
 
 
