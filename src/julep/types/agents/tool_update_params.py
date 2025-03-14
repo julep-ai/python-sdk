@@ -69,6 +69,9 @@ __all__ = [
     "IntegrationUnstructuredIntegrationDefUpdate",
     "IntegrationUnstructuredIntegrationDefUpdateArguments",
     "IntegrationUnstructuredIntegrationDefUpdateSetup",
+    "IntegrationAlgoliaIntegrationDefUpdate",
+    "IntegrationAlgoliaIntegrationDefUpdateArguments",
+    "IntegrationAlgoliaIntegrationDefUpdateSetup",
     "System",
     "TextEditor20241022",
 ]
@@ -697,6 +700,34 @@ class IntegrationUnstructuredIntegrationDefUpdate(TypedDict, total=False):
     """Setup parameters for Unstructured integration"""
 
 
+class IntegrationAlgoliaIntegrationDefUpdateArguments(TypedDict, total=False):
+    attributes_to_retrieve: Optional[object]
+
+    hits_per_page: int
+
+    index_name: Optional[str]
+
+    query: Optional[str]
+
+
+class IntegrationAlgoliaIntegrationDefUpdateSetup(TypedDict, total=False):
+    algolia_api_key: Optional[str]
+
+    algolia_application_id: Optional[str]
+
+
+class IntegrationAlgoliaIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationAlgoliaIntegrationDefUpdateArguments]
+    """Arguments for Algolia Search"""
+
+    method: Optional[str]
+
+    provider: Literal["algolia"]
+
+    setup: Optional[IntegrationAlgoliaIntegrationDefUpdateSetup]
+    """Integration definition for Algolia"""
+
+
 Integration: TypeAlias = Union[
     IntegrationDummyIntegrationDefUpdate,
     IntegrationBraveIntegrationDefUpdate,
@@ -718,6 +749,7 @@ Integration: TypeAlias = Union[
     IntegrationCloudinaryEditIntegrationDefUpdate,
     IntegrationArxivIntegrationDefUpdate,
     IntegrationUnstructuredIntegrationDefUpdate,
+    IntegrationAlgoliaIntegrationDefUpdate,
 ]
 
 
