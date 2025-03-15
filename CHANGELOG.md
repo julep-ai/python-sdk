@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.76.1 (2025-03-15)
+
+Full Changelog: [v1.76.0...v1.76.1](https://github.com/julep-ai/python-sdk/compare/v1.76.0...v1.76.1)
+
+### Bug Fixes
+
+* **types:** handle more discriminated union shapes ([#346](https://github.com/julep-ai/python-sdk/issues/346)) ([1ad81fd](https://github.com/julep-ai/python-sdk/commit/1ad81fd06460654b699ccacfaed2c2e32acca460))
+
+
+### Chores
+
+* **internal:** bump rye to 0.44.0 ([#344](https://github.com/julep-ai/python-sdk/issues/344)) ([26582f4](https://github.com/julep-ai/python-sdk/commit/26582f451b9978cced4e95ba9521f4fd96df1dd2))
+
 ## 1.76.0 (2025-03-14)
 
 Full Changelog: [v1.75.0...v1.76.0](https://github.com/julep-ai/python-sdk/compare/v1.75.0...v1.76.0)
