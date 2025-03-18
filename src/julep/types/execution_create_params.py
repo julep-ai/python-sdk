@@ -16,3 +16,5 @@ class ExecutionCreateParams(TypedDict, total=False):
     metadata: Optional[object]
 
     output: object
+
+    transition_count: Optional[int]
