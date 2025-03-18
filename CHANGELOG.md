@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.77.0 (2025-03-18)
+
+Full Changelog: [v1.76.1...v1.77.0](https://github.com/julep-ai/python-sdk/compare/v1.76.1...v1.77.0)
+
+### Features
+
+* **api:** api update ([#351](https://github.com/julep-ai/python-sdk/issues/351)) ([dd7391b](https://github.com/julep-ai/python-sdk/commit/dd7391bbca5ebb118789b450ff1e8f5f8db68759))
+
+
+### Bug Fixes
+
+* **ci:** ensure pip is always available ([#348](https://github.com/julep-ai/python-sdk/issues/348)) ([d70c95e](https://github.com/julep-ai/python-sdk/commit/d70c95eb556afad91a7d7b6daa1c6838934f85d6))
+* **ci:** remove publishing patch ([#350](https://github.com/julep-ai/python-sdk/issues/350)) ([363ed70](https://github.com/julep-ai/python-sdk/commit/363ed708f34b01b1e7f30ba7a009dbb5d4401e73))
+
 ## 1.76.1 (2025-03-15)
 
 Full Changelog: [v1.76.0...v1.76.1](https://github.com/julep-ai/python-sdk/compare/v1.76.0...v1.76.1)
