@@ -34,6 +34,7 @@ class TestExecutions:
             error="error",
             metadata={},
             output={},
+            transition_count=0,
         )
         assert_matches_type(Execution, execution, path=["response"])
 
@@ -272,6 +273,7 @@ class TestAsyncExecutions:
             error="error",
             metadata={},
             output={},
+            transition_count=0,
         )
         assert_matches_type(Execution, execution, path=["response"])
 

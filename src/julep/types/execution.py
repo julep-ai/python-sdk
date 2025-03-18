@@ -27,3 +27,5 @@ class Execution(BaseModel):
     metadata: Optional[object] = None
 
     output: Optional[object] = None
+
+    transition_count: Optional[int] = None
