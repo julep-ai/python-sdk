@@ -2595,7 +2595,7 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationAlg
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -3857,7 +3857,7 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -5146,7 +5146,7 @@ class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutput
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -6498,7 +6498,7 @@ class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutput
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -7789,7 +7789,7 @@ class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutput
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -9065,7 +9065,7 @@ class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMem
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -10351,7 +10351,7 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -11640,7 +11640,7 @@ class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutput
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -12992,7 +12992,7 @@ class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutput
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -14283,7 +14283,7 @@ class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutput
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -15559,7 +15559,7 @@ class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMem
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -16841,7 +16841,7 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -18144,7 +18144,7 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -19386,7 +19386,7 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -20619,7 +20619,7 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
@@ -21427,7 +21427,7 @@ class ToolIntegrationAlgoliaIntegrationDefArguments(BaseModel):
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
