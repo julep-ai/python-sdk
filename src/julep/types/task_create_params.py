@@ -2684,7 +2684,7 @@ class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequest
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -3997,7 +3997,7 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAu
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -5324,7 +5324,7 @@ class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToo
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -6703,7 +6703,7 @@ class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToo
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -8030,7 +8030,7 @@ class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToo
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -9330,7 +9330,7 @@ class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -10657,7 +10657,7 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAu
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -11984,7 +11984,7 @@ class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToo
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -13363,7 +13363,7 @@ class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToo
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -14690,7 +14690,7 @@ class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToo
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -15990,7 +15990,7 @@ class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -17315,7 +17315,7 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAuto
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -18661,7 +18661,7 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAuto
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -19955,7 +19955,7 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAuto
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -21219,7 +21219,7 @@ class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreat
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
@@ -22047,7 +22047,7 @@ class ToolIntegrationAlgoliaIntegrationDefArguments(TypedDict, total=False):
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 

@@ -701,7 +701,7 @@ class IntegrationUnstructuredIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationAlgoliaIntegrationDefUpdateArguments(TypedDict, total=False):
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 

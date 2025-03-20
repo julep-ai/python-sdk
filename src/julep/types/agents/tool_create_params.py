@@ -701,7 +701,7 @@ class IntegrationAlgoliaIntegrationDefArguments(TypedDict, total=False):
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[object]
+    attributes_to_retrieve: Optional[List[str]]
 
     hits_per_page: int
 
