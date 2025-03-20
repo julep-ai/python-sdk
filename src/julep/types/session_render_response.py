@@ -898,7 +898,7 @@ class ToolIntegrationAlgoliaIntegrationDefArguments(BaseModel):
 
     query: str
 
-    attributes_to_retrieve: Optional[object] = None
+    attributes_to_retrieve: Optional[List[str]] = None
 
     hits_per_page: Optional[int] = None
 
