@@ -1656,7 +1656,7 @@ class TestAsyncJulep:
         import threading
 
         from julep._utils import asyncify
-        from julep._base_client import get_platform 
+        from julep._base_client import get_platform
 
         async def test_main() -> None:
             result = await asyncify(get_platform)()
