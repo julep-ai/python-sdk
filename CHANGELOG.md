@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.78.1 (2025-04-17)
+
+Full Changelog: [v1.78.0...v1.78.1](https://github.com/julep-ai/python-sdk/compare/v1.78.0...v1.78.1)
+
+### Bug Fixes
+
+* **perf:** optimize some hot paths ([73f14e7](https://github.com/julep-ai/python-sdk/commit/73f14e7264b4fa13de4b0e52fc55e981a4eb7803))
+* **perf:** skip traversing types for NotGiven values ([2fcdcd5](https://github.com/julep-ai/python-sdk/commit/2fcdcd53a3a755fc0611b188085f9c252548a0b0))
+
+
+### Chores
+
+* **client:** minor internal fixes ([84c5466](https://github.com/julep-ai/python-sdk/commit/84c5466b383a130d6588f847487e19bd09736c6b))
+* fix typos ([#357](https://github.com/julep-ai/python-sdk/issues/357)) ([5608273](https://github.com/julep-ai/python-sdk/commit/56082733301aab98046eac694d71296e382d0644))
+* **internal:** base client updates ([3cd71c5](https://github.com/julep-ai/python-sdk/commit/3cd71c5501c30458ae71d05881aaa67bc69d8432))
+* **internal:** bump pyright version ([093bea7](https://github.com/julep-ai/python-sdk/commit/093bea7de0d6663dd351487ee50d53ac17d95f1b))
+* **internal:** expand CI branch coverage ([57958c8](https://github.com/julep-ai/python-sdk/commit/57958c83db6953374a965e611da6b68cbc813791))
+* **internal:** reduce CI branch coverage ([ab56304](https://github.com/julep-ai/python-sdk/commit/ab563042803abdcc5bd2fe4b7d70df76db156e77))
+* **internal:** remove trailing character ([#359](https://github.com/julep-ai/python-sdk/issues/359)) ([20e30a9](https://github.com/julep-ai/python-sdk/commit/20e30a9ea80bf2ff98cb4ee5e9c9fe8f2ae20444))
+* **internal:** slight transform perf improvement ([#360](https://github.com/julep-ai/python-sdk/issues/360)) ([40dc868](https://github.com/julep-ai/python-sdk/commit/40dc868256e524f90b7da6f8c69759cd7221d9de))
+* **internal:** update pyright settings ([0ecbb7b](https://github.com/julep-ai/python-sdk/commit/0ecbb7b7407f1c87c1b2469e21ab1e52ae213338))
+
 ## 1.78.0 (2025-03-20)
 
 Full Changelog: [v1.77.0...v1.78.0](https://github.com/julep-ai/python-sdk/compare/v1.77.0...v1.78.0)
