@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.78.2 (2025-04-19)
+
+Full Changelog: [v1.78.1...v1.78.2](https://github.com/julep-ai/python-sdk/compare/v1.78.1...v1.78.2)
+
+### Chores
+
+* **internal:** update models test ([1a8d8ca](https://github.com/julep-ai/python-sdk/commit/1a8d8ca7259020cc2aacc2e8c74d0586f1aa5294))
+
 ## 1.78.1 (2025-04-17)
 
 Full Changelog: [v1.78.0...v1.78.1](https://github.com/julep-ai/python-sdk/compare/v1.78.0...v1.78.1)
