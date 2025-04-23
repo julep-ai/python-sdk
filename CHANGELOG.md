@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.78.2 (2025-04-23)
+
+Full Changelog: [v1.78.1...v1.78.2](https://github.com/julep-ai/python-sdk/compare/v1.78.1...v1.78.2)
+
+### Bug Fixes
+
+* **pydantic v1:** more robust ModelField.annotation check ([69040bf](https://github.com/julep-ai/python-sdk/commit/69040bfe38b3409d06e38a44557d04af51c37bd9))
+
+
+### Chores
+
+* **ci:** add timeout thresholds for CI jobs ([9bcdda4](https://github.com/julep-ai/python-sdk/commit/9bcdda49093f6219a3f65f7e23094a1293db6da1))
+* **internal:** fix list file params ([88bbf8b](https://github.com/julep-ai/python-sdk/commit/88bbf8b7fc59e362775a9a068d5fb8109ded9636))
+* **internal:** import reformatting ([98e8e43](https://github.com/julep-ai/python-sdk/commit/98e8e433f3ae707a3177aa1c93d7805f91314a8a))
+* **internal:** refactor retries to not use recursion ([c495bc8](https://github.com/julep-ai/python-sdk/commit/c495bc89a6d232c4b175ae7cc6f8644fc7f6a086))
+* **internal:** update models test ([1a8d8ca](https://github.com/julep-ai/python-sdk/commit/1a8d8ca7259020cc2aacc2e8c74d0586f1aa5294))
+
 ## 1.78.1 (2025-04-17)
 
 Full Changelog: [v1.78.0...v1.78.1](https://github.com/julep-ai/python-sdk/compare/v1.78.0...v1.78.1)
