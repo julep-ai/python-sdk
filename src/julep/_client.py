@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import os
-from typing import Any, Dict, Union, Mapping, cast
+from typing import TYPE_CHECKING, Any, Dict, Union, Mapping, cast
 from typing_extensions import Self, Literal, override
 
 import httpx
@@ -20,8 +20,8 @@ from ._types import (
     RequestOptions,
 )
 from ._utils import is_given, get_async_library
+from ._compat import cached_property
 from ._version import __version__
-from .resources import docs, jobs, files, tasks, sessions
 from ._streaming import Stream as Stream, AsyncStream as AsyncStream
 from ._exceptions import JulepError, APIStatusError
 from ._base_client import (
@@ -29,9 +29,17 @@ from ._base_client import (
     SyncAPIClient,
     AsyncAPIClient,
 )
-from .resources.users import users
-from .resources.agents import agents
-from .resources.executions import executions
+
+if TYPE_CHECKING:
+    from .resources import docs, jobs, files, tasks, users, agents, sessions, executions
+    from .resources.docs import DocsResource, AsyncDocsResource
+    from .resources.jobs import JobsResource, AsyncJobsResource
+    from .resources.files import FilesResource, AsyncFilesResource
+    from .resources.tasks import TasksResource, AsyncTasksResource
+    from .resources.sessions import SessionsResource, AsyncSessionsResource
+    from .resources.users.users import UsersResource, AsyncUsersResource
+    from .resources.agents.agents import AgentsResource, AsyncAgentsResource
+    from .resources.executions.executions import ExecutionsResource, AsyncExecutionsResource
 
 __all__ = [
     "ENVIRONMENTS",
@@ -54,17 +62,6 @@ ENVIRONMENTS: Dict[str, str] = {
 
 
 class Julep(SyncAPIClient):
-    agents: agents.AgentsResource
-    files: files.FilesResource
-    sessions: sessions.SessionsResource
-    users: users.UsersResource
-    jobs: jobs.JobsResource
-    docs: docs.DocsResource
-    tasks: tasks.TasksResource
-    executions: executions.ExecutionsResource
-    with_raw_response: JulepWithRawResponse
-    with_streaming_response: JulepWithStreamedResponse
-
     # client options
     api_key: str
 
@@ -143,16 +140,61 @@ class Julep(SyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.agents = agents.AgentsResource(self)
-        self.files = files.FilesResource(self)
-        self.sessions = sessions.SessionsResource(self)
-        self.users = users.UsersResource(self)
-        self.jobs = jobs.JobsResource(self)
-        self.docs = docs.DocsResource(self)
-        self.tasks = tasks.TasksResource(self)
-        self.executions = executions.ExecutionsResource(self)
-        self.with_raw_response = JulepWithRawResponse(self)
-        self.with_streaming_response = JulepWithStreamedResponse(self)
+    @cached_property
+    def agents(self) -> AgentsResource:
+        from .resources.agents import AgentsResource
+
+        return AgentsResource(self)
+
+    @cached_property
+    def files(self) -> FilesResource:
+        from .resources.files import FilesResource
+
+        return FilesResource(self)
+
+    @cached_property
+    def sessions(self) -> SessionsResource:
+        from .resources.sessions import SessionsResource
+
+        return SessionsResource(self)
+
+    @cached_property
+    def users(self) -> UsersResource:
+        from .resources.users import UsersResource
+
+        return UsersResource(self)
+
+    @cached_property
+    def jobs(self) -> JobsResource:
+        from .resources.jobs import JobsResource
+
+        return JobsResource(self)
+
+    @cached_property
+    def docs(self) -> DocsResource:
+        from .resources.docs import DocsResource
+
+        return DocsResource(self)
+
+    @cached_property
+    def tasks(self) -> TasksResource:
+        from .resources.tasks import TasksResource
+
+        return TasksResource(self)
+
+    @cached_property
+    def executions(self) -> ExecutionsResource:
+        from .resources.executions import ExecutionsResource
+
+        return ExecutionsResource(self)
+
+    @cached_property
+    def with_raw_response(self) -> JulepWithRawResponse:
+        return JulepWithRawResponse(self)
+
+    @cached_property
+    def with_streaming_response(self) -> JulepWithStreamedResponse:
+        return JulepWithStreamedResponse(self)
 
     @property
     @override
@@ -262,17 +304,6 @@ class Julep(SyncAPIClient):
 
 
 class AsyncJulep(AsyncAPIClient):
-    agents: agents.AsyncAgentsResource
-    files: files.AsyncFilesResource
-    sessions: sessions.AsyncSessionsResource
-    users: users.AsyncUsersResource
-    jobs: jobs.AsyncJobsResource
-    docs: docs.AsyncDocsResource
-    tasks: tasks.AsyncTasksResource
-    executions: executions.AsyncExecutionsResource
-    with_raw_response: AsyncJulepWithRawResponse
-    with_streaming_response: AsyncJulepWithStreamedResponse
-
     # client options
     api_key: str
 
@@ -351,16 +382,61 @@ class AsyncJulep(AsyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.agents = agents.AsyncAgentsResource(self)
-        self.files = files.AsyncFilesResource(self)
-        self.sessions = sessions.AsyncSessionsResource(self)
-        self.users = users.AsyncUsersResource(self)
-        self.jobs = jobs.AsyncJobsResource(self)
-        self.docs = docs.AsyncDocsResource(self)
-        self.tasks = tasks.AsyncTasksResource(self)
-        self.executions = executions.AsyncExecutionsResource(self)
-        self.with_raw_response = AsyncJulepWithRawResponse(self)
-        self.with_streaming_response = AsyncJulepWithStreamedResponse(self)
+    @cached_property
+    def agents(self) -> AsyncAgentsResource:
+        from .resources.agents import AsyncAgentsResource
+
+        return AsyncAgentsResource(self)
+
+    @cached_property
+    def files(self) -> AsyncFilesResource:
+        from .resources.files import AsyncFilesResource
+
+        return AsyncFilesResource(self)
+
+    @cached_property
+    def sessions(self) -> AsyncSessionsResource:
+        from .resources.sessions import AsyncSessionsResource
+
+        return AsyncSessionsResource(self)
+
+    @cached_property
+    def users(self) -> AsyncUsersResource:
+        from .resources.users import AsyncUsersResource
+
+        return AsyncUsersResource(self)
+
+    @cached_property
+    def jobs(self) -> AsyncJobsResource:
+        from .resources.jobs import AsyncJobsResource
+
+        return AsyncJobsResource(self)
+
+    @cached_property
+    def docs(self) -> AsyncDocsResource:
+        from .resources.docs import AsyncDocsResource
+
+        return AsyncDocsResource(self)
+
+    @cached_property
+    def tasks(self) -> AsyncTasksResource:
+        from .resources.tasks import AsyncTasksResource
+
+        return AsyncTasksResource(self)
+
+    @cached_property
+    def executions(self) -> AsyncExecutionsResource:
+        from .resources.executions import AsyncExecutionsResource
+
+        return AsyncExecutionsResource(self)
+
+    @cached_property
+    def with_raw_response(self) -> AsyncJulepWithRawResponse:
+        return AsyncJulepWithRawResponse(self)
+
+    @cached_property
+    def with_streaming_response(self) -> AsyncJulepWithStreamedResponse:
+        return AsyncJulepWithStreamedResponse(self)
 
     @property
     @override
@@ -470,51 +546,223 @@ class AsyncJulep(AsyncAPIClient):
 
 
 class JulepWithRawResponse:
+    _client: Julep
+
     def __init__(self, client: Julep) -> None:
-        self.agents = agents.AgentsResourceWithRawResponse(client.agents)
-        self.files = files.FilesResourceWithRawResponse(client.files)
-        self.sessions = sessions.SessionsResourceWithRawResponse(client.sessions)
-        self.users = users.UsersResourceWithRawResponse(client.users)
-        self.jobs = jobs.JobsResourceWithRawResponse(client.jobs)
-        self.docs = docs.DocsResourceWithRawResponse(client.docs)
-        self.tasks = tasks.TasksResourceWithRawResponse(client.tasks)
-        self.executions = executions.ExecutionsResourceWithRawResponse(client.executions)
+        self._client = client
+
+    @cached_property
+    def agents(self) -> agents.AgentsResourceWithRawResponse:
+        from .resources.agents import AgentsResourceWithRawResponse
+
+        return AgentsResourceWithRawResponse(self._client.agents)
+
+    @cached_property
+    def files(self) -> files.FilesResourceWithRawResponse:
+        from .resources.files import FilesResourceWithRawResponse
+
+        return FilesResourceWithRawResponse(self._client.files)
+
+    @cached_property
+    def sessions(self) -> sessions.SessionsResourceWithRawResponse:
+        from .resources.sessions import SessionsResourceWithRawResponse
+
+        return SessionsResourceWithRawResponse(self._client.sessions)
+
+    @cached_property
+    def users(self) -> users.UsersResourceWithRawResponse:
+        from .resources.users import UsersResourceWithRawResponse
+
+        return UsersResourceWithRawResponse(self._client.users)
+
+    @cached_property
+    def jobs(self) -> jobs.JobsResourceWithRawResponse:
+        from .resources.jobs import JobsResourceWithRawResponse
+
+        return JobsResourceWithRawResponse(self._client.jobs)
+
+    @cached_property
+    def docs(self) -> docs.DocsResourceWithRawResponse:
+        from .resources.docs import DocsResourceWithRawResponse
+
+        return DocsResourceWithRawResponse(self._client.docs)
+
+    @cached_property
+    def tasks(self) -> tasks.TasksResourceWithRawResponse:
+        from .resources.tasks import TasksResourceWithRawResponse
+
+        return TasksResourceWithRawResponse(self._client.tasks)
+
+    @cached_property
+    def executions(self) -> executions.ExecutionsResourceWithRawResponse:
+        from .resources.executions import ExecutionsResourceWithRawResponse
+
+        return ExecutionsResourceWithRawResponse(self._client.executions)
 
 
 class AsyncJulepWithRawResponse:
+    _client: AsyncJulep
+
     def __init__(self, client: AsyncJulep) -> None:
-        self.agents = agents.AsyncAgentsResourceWithRawResponse(client.agents)
-        self.files = files.AsyncFilesResourceWithRawResponse(client.files)
-        self.sessions = sessions.AsyncSessionsResourceWithRawResponse(client.sessions)
-        self.users = users.AsyncUsersResourceWithRawResponse(client.users)
-        self.jobs = jobs.AsyncJobsResourceWithRawResponse(client.jobs)
-        self.docs = docs.AsyncDocsResourceWithRawResponse(client.docs)
-        self.tasks = tasks.AsyncTasksResourceWithRawResponse(client.tasks)
-        self.executions = executions.AsyncExecutionsResourceWithRawResponse(client.executions)
+        self._client = client
+
+    @cached_property
+    def agents(self) -> agents.AsyncAgentsResourceWithRawResponse:
+        from .resources.agents import AsyncAgentsResourceWithRawResponse
+
+        return AsyncAgentsResourceWithRawResponse(self._client.agents)
+
+    @cached_property
+    def files(self) -> files.AsyncFilesResourceWithRawResponse:
+        from .resources.files import AsyncFilesResourceWithRawResponse
+
+        return AsyncFilesResourceWithRawResponse(self._client.files)
+
+    @cached_property
+    def sessions(self) -> sessions.AsyncSessionsResourceWithRawResponse:
+        from .resources.sessions import AsyncSessionsResourceWithRawResponse
+
+        return AsyncSessionsResourceWithRawResponse(self._client.sessions)
+
+    @cached_property
+    def users(self) -> users.AsyncUsersResourceWithRawResponse:
+        from .resources.users import AsyncUsersResourceWithRawResponse
+
+        return AsyncUsersResourceWithRawResponse(self._client.users)
+
+    @cached_property
+    def jobs(self) -> jobs.AsyncJobsResourceWithRawResponse:
+        from .resources.jobs import AsyncJobsResourceWithRawResponse
+
+        return AsyncJobsResourceWithRawResponse(self._client.jobs)
+
+    @cached_property
+    def docs(self) -> docs.AsyncDocsResourceWithRawResponse:
+        from .resources.docs import AsyncDocsResourceWithRawResponse
+
+        return AsyncDocsResourceWithRawResponse(self._client.docs)
+
+    @cached_property
+    def tasks(self) -> tasks.AsyncTasksResourceWithRawResponse:
+        from .resources.tasks import AsyncTasksResourceWithRawResponse
+
+        return AsyncTasksResourceWithRawResponse(self._client.tasks)
+
+    @cached_property
+    def executions(self) -> executions.AsyncExecutionsResourceWithRawResponse:
+        from .resources.executions import AsyncExecutionsResourceWithRawResponse
+
+        return AsyncExecutionsResourceWithRawResponse(self._client.executions)
 
 
 class JulepWithStreamedResponse:
+    _client: Julep
+
     def __init__(self, client: Julep) -> None:
-        self.agents = agents.AgentsResourceWithStreamingResponse(client.agents)
-        self.files = files.FilesResourceWithStreamingResponse(client.files)
-        self.sessions = sessions.SessionsResourceWithStreamingResponse(client.sessions)
-        self.users = users.UsersResourceWithStreamingResponse(client.users)
-        self.jobs = jobs.JobsResourceWithStreamingResponse(client.jobs)
-        self.docs = docs.DocsResourceWithStreamingResponse(client.docs)
-        self.tasks = tasks.TasksResourceWithStreamingResponse(client.tasks)
-        self.executions = executions.ExecutionsResourceWithStreamingResponse(client.executions)
+        self._client = client
+
+    @cached_property
+    def agents(self) -> agents.AgentsResourceWithStreamingResponse:
+        from .resources.agents import AgentsResourceWithStreamingResponse
+
+        return AgentsResourceWithStreamingResponse(self._client.agents)
+
+    @cached_property
+    def files(self) -> files.FilesResourceWithStreamingResponse:
+        from .resources.files import FilesResourceWithStreamingResponse
+
+        return FilesResourceWithStreamingResponse(self._client.files)
+
+    @cached_property
+    def sessions(self) -> sessions.SessionsResourceWithStreamingResponse:
+        from .resources.sessions import SessionsResourceWithStreamingResponse
+
+        return SessionsResourceWithStreamingResponse(self._client.sessions)
+
+    @cached_property
+    def users(self) -> users.UsersResourceWithStreamingResponse:
+        from .resources.users import UsersResourceWithStreamingResponse
+
+        return UsersResourceWithStreamingResponse(self._client.users)
+
+    @cached_property
+    def jobs(self) -> jobs.JobsResourceWithStreamingResponse:
+        from .resources.jobs import JobsResourceWithStreamingResponse
+
+        return JobsResourceWithStreamingResponse(self._client.jobs)
+
+    @cached_property
+    def docs(self) -> docs.DocsResourceWithStreamingResponse:
+        from .resources.docs import DocsResourceWithStreamingResponse
+
+        return DocsResourceWithStreamingResponse(self._client.docs)
+
+    @cached_property
+    def tasks(self) -> tasks.TasksResourceWithStreamingResponse:
+        from .resources.tasks import TasksResourceWithStreamingResponse
+
+        return TasksResourceWithStreamingResponse(self._client.tasks)
+
+    @cached_property
+    def executions(self) -> executions.ExecutionsResourceWithStreamingResponse:
+        from .resources.executions import ExecutionsResourceWithStreamingResponse
+
+        return ExecutionsResourceWithStreamingResponse(self._client.executions)
 
 
 class AsyncJulepWithStreamedResponse:
+    _client: AsyncJulep
+
     def __init__(self, client: AsyncJulep) -> None:
-        self.agents = agents.AsyncAgentsResourceWithStreamingResponse(client.agents)
-        self.files = files.AsyncFilesResourceWithStreamingResponse(client.files)
-        self.sessions = sessions.AsyncSessionsResourceWithStreamingResponse(client.sessions)
-        self.users = users.AsyncUsersResourceWithStreamingResponse(client.users)
-        self.jobs = jobs.AsyncJobsResourceWithStreamingResponse(client.jobs)
-        self.docs = docs.AsyncDocsResourceWithStreamingResponse(client.docs)
-        self.tasks = tasks.AsyncTasksResourceWithStreamingResponse(client.tasks)
-        self.executions = executions.AsyncExecutionsResourceWithStreamingResponse(client.executions)
+        self._client = client
+
+    @cached_property
+    def agents(self) -> agents.AsyncAgentsResourceWithStreamingResponse:
+        from .resources.agents import AsyncAgentsResourceWithStreamingResponse
+
+        return AsyncAgentsResourceWithStreamingResponse(self._client.agents)
+
+    @cached_property
+    def files(self) -> files.AsyncFilesResourceWithStreamingResponse:
+        from .resources.files import AsyncFilesResourceWithStreamingResponse
+
+        return AsyncFilesResourceWithStreamingResponse(self._client.files)
+
+    @cached_property
+    def sessions(self) -> sessions.AsyncSessionsResourceWithStreamingResponse:
+        from .resources.sessions import AsyncSessionsResourceWithStreamingResponse
+
+        return AsyncSessionsResourceWithStreamingResponse(self._client.sessions)
+
+    @cached_property
+    def users(self) -> users.AsyncUsersResourceWithStreamingResponse:
+        from .resources.users import AsyncUsersResourceWithStreamingResponse
+
+        return AsyncUsersResourceWithStreamingResponse(self._client.users)
+
+    @cached_property
+    def jobs(self) -> jobs.AsyncJobsResourceWithStreamingResponse:
+        from .resources.jobs import AsyncJobsResourceWithStreamingResponse
+
+        return AsyncJobsResourceWithStreamingResponse(self._client.jobs)
+
+    @cached_property
+    def docs(self) -> docs.AsyncDocsResourceWithStreamingResponse:
+        from .resources.docs import AsyncDocsResourceWithStreamingResponse
+
+        return AsyncDocsResourceWithStreamingResponse(self._client.docs)
+
+    @cached_property
+    def tasks(self) -> tasks.AsyncTasksResourceWithStreamingResponse:
+        from .resources.tasks import AsyncTasksResourceWithStreamingResponse
+
+        return AsyncTasksResourceWithStreamingResponse(self._client.tasks)
+
+    @cached_property
+    def executions(self) -> executions.AsyncExecutionsResourceWithStreamingResponse:
+        from .resources.executions import AsyncExecutionsResourceWithStreamingResponse
+
+        return AsyncExecutionsResourceWithStreamingResponse(self._client.executions)
 
 
 Client = Julep
