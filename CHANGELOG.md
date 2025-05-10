@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.78.3 (2025-05-10)
+
+Full Changelog: [v1.78.2...v1.78.3](https://github.com/julep-ai/python-sdk/compare/v1.78.2...v1.78.3)
+
+### Bug Fixes
+
+* **package:** support direct resource imports ([0152e0e](https://github.com/julep-ai/python-sdk/commit/0152e0e025fe02f2e0ffdb2e015127c87f53ad29))
+
+
+### Chores
+
+* broadly detect json family of content-type headers ([e374928](https://github.com/julep-ai/python-sdk/commit/e37492838ff9a9079642c1e97cfe7f35806545db))
+* **ci:** only use depot for staging repos ([94a8be8](https://github.com/julep-ai/python-sdk/commit/94a8be8d25b6bc18dce11c11f3538f023f34d7a3))
+* **internal:** avoid errors for isinstance checks on proxies ([17bad8a](https://github.com/julep-ai/python-sdk/commit/17bad8a57e3ee8fc380eb17eba80c16353a16cf3))
+* **internal:** codegen related update ([2fc5828](https://github.com/julep-ai/python-sdk/commit/2fc58283db4c5000ddf1b322bd74eb772e011e13))
+* use lazy imports for resources ([4dd37eb](https://github.com/julep-ai/python-sdk/commit/4dd37eb6026d02e170a4738163a551d9b4e68716))
+
 ## 1.78.2 (2025-04-23)
 
 Full Changelog: [v1.78.1...v1.78.2](https://github.com/julep-ai/python-sdk/compare/v1.78.1...v1.78.2)
