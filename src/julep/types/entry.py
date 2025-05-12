@@ -40,6 +40,9 @@ __all__ = [
     "ContentToolIntegrationWeatherIntegrationDef",
     "ContentToolIntegrationWeatherIntegrationDefArguments",
     "ContentToolIntegrationWeatherIntegrationDefSetup",
+    "ContentToolIntegrationMailgunIntegrationDef",
+    "ContentToolIntegrationMailgunIntegrationDefArguments",
+    "ContentToolIntegrationMailgunIntegrationDefSetup",
     "ContentToolIntegrationBrowserbaseContextIntegrationDef",
     "ContentToolIntegrationBrowserbaseContextIntegrationDefArguments",
     "ContentToolIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -124,6 +127,9 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationWeatherIntegrationDef",
     "ContentUnionMember8ToolIntegrationWeatherIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationWeatherIntegrationDefSetup",
+    "ContentUnionMember8ToolIntegrationMailgunIntegrationDef",
+    "ContentUnionMember8ToolIntegrationMailgunIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationMailgunIntegrationDefSetup",
     "ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDef",
     "ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -263,6 +269,8 @@ class ContentToolAPICall(BaseModel):
     follow_redirects: Optional[bool] = None
 
     headers: Optional[Dict[str, str]] = None
+
+    include_response_content: Optional[bool] = None
 
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
@@ -420,6 +428,36 @@ class ContentToolIntegrationWeatherIntegrationDef(BaseModel):
 
     setup: Optional[ContentToolIntegrationWeatherIntegrationDefSetup] = None
     """Integration definition for Weather"""
+
+
+class ContentToolIntegrationMailgunIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class ContentToolIntegrationMailgunIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentToolIntegrationMailgunIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationMailgunIntegrationDefArguments] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[ContentToolIntegrationMailgunIntegrationDefSetup] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class ContentToolIntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
@@ -855,6 +893,7 @@ ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationSpiderIntegrationDef,
     ContentToolIntegrationWikipediaIntegrationDef,
     ContentToolIntegrationWeatherIntegrationDef,
+    ContentToolIntegrationMailgunIntegrationDef,
     ContentToolIntegrationBrowserbaseContextIntegrationDef,
     ContentToolIntegrationBrowserbaseExtensionIntegrationDef,
     ContentToolIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -1126,6 +1165,8 @@ class ContentUnionMember8ToolAPICall(BaseModel):
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -1282,6 +1323,36 @@ class ContentUnionMember8ToolIntegrationWeatherIntegrationDef(BaseModel):
 
     setup: Optional[ContentUnionMember8ToolIntegrationWeatherIntegrationDefSetup] = None
     """Integration definition for Weather"""
+
+
+class ContentUnionMember8ToolIntegrationMailgunIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class ContentUnionMember8ToolIntegrationMailgunIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentUnionMember8ToolIntegrationMailgunIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationMailgunIntegrationDefArguments] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[ContentUnionMember8ToolIntegrationMailgunIntegrationDefSetup] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
@@ -1717,6 +1788,7 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationSpiderIntegrationDef,
     ContentUnionMember8ToolIntegrationWikipediaIntegrationDef,
     ContentUnionMember8ToolIntegrationWeatherIntegrationDef,
+    ContentUnionMember8ToolIntegrationMailgunIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseExtensionIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseListSessionsIntegrationDef,

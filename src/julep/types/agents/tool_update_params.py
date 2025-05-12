@@ -29,6 +29,9 @@ __all__ = [
     "IntegrationWeatherIntegrationDefUpdate",
     "IntegrationWeatherIntegrationDefUpdateArguments",
     "IntegrationWeatherIntegrationDefUpdateSetup",
+    "IntegrationMailgunIntegrationDefUpdate",
+    "IntegrationMailgunIntegrationDefUpdateArguments",
+    "IntegrationMailgunIntegrationDefUpdateSetup",
     "IntegrationBrowserbaseContextIntegrationDefUpdate",
     "IntegrationBrowserbaseContextIntegrationDefUpdateArguments",
     "IntegrationBrowserbaseContextIntegrationDefUpdateSetup",
@@ -128,6 +131,8 @@ class APICall(TypedDict, total=False):
     follow_redirects: Optional[bool]
 
     headers: Optional[Dict[str, str]]
+
+    include_response_content: bool
 
     json: Optional[object]
 
@@ -298,6 +303,45 @@ class IntegrationWeatherIntegrationDefUpdate(TypedDict, total=False):
 
     setup: Optional[IntegrationWeatherIntegrationDefUpdateSetup]
     """Integration definition for Weather"""
+
+
+_IntegrationMailgunIntegrationDefUpdateArgumentsReservedKeywords = TypedDict(
+    "_IntegrationMailgunIntegrationDefUpdateArgumentsReservedKeywords",
+    {
+        "from": Optional[str],
+    },
+    total=False,
+)
+
+
+class IntegrationMailgunIntegrationDefUpdateArguments(
+    _IntegrationMailgunIntegrationDefUpdateArgumentsReservedKeywords, total=False
+):
+    bcc: Optional[str]
+
+    body: Optional[str]
+
+    cc: Optional[str]
+
+    subject: Optional[str]
+
+    to: Optional[str]
+
+
+class IntegrationMailgunIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationMailgunIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationMailgunIntegrationDefUpdateArguments]
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]]
+
+    provider: Literal["mailgun"]
+
+    setup: Optional[IntegrationMailgunIntegrationDefUpdateSetup]
+    """Setup parameters for Mailgun integration"""
 
 
 class IntegrationBrowserbaseContextIntegrationDefUpdateArguments(TypedDict, total=False):
@@ -735,6 +779,7 @@ Integration: TypeAlias = Union[
     IntegrationSpiderIntegrationDefUpdate,
     IntegrationWikipediaIntegrationDefUpdate,
     IntegrationWeatherIntegrationDefUpdate,
+    IntegrationMailgunIntegrationDefUpdate,
     IntegrationBrowserbaseContextIntegrationDefUpdate,
     IntegrationBrowserbaseExtensionIntegrationDefUpdate,
     IntegrationBrowserbaseListSessionsIntegrationDefUpdate,

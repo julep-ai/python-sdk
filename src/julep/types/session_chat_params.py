@@ -54,6 +54,9 @@ __all__ = [
     "ToolIntegrationWeatherIntegrationDef",
     "ToolIntegrationWeatherIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDefSetup",
+    "ToolIntegrationMailgunIntegrationDef",
+    "ToolIntegrationMailgunIntegrationDefArguments",
+    "ToolIntegrationMailgunIntegrationDefSetup",
     "ToolIntegrationBrowserbaseContextIntegrationDef",
     "ToolIntegrationBrowserbaseContextIntegrationDefArguments",
     "ToolIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -388,6 +391,8 @@ class ToolAPICall(TypedDict, total=False):
 
     headers: Optional[Dict[str, str]]
 
+    include_response_content: bool
+
     json: Optional[object]
 
     params: Union[str, object, None]
@@ -553,6 +558,45 @@ class ToolIntegrationWeatherIntegrationDef(TypedDict, total=False):
 
     setup: Optional[ToolIntegrationWeatherIntegrationDefSetup]
     """Integration definition for Weather"""
+
+
+_ToolIntegrationMailgunIntegrationDefArgumentsReservedKeywords = TypedDict(
+    "_ToolIntegrationMailgunIntegrationDefArgumentsReservedKeywords",
+    {
+        "from": str,
+    },
+    total=False,
+)
+
+
+class ToolIntegrationMailgunIntegrationDefArguments(
+    _ToolIntegrationMailgunIntegrationDefArgumentsReservedKeywords, total=False
+):
+    body: Required[str]
+
+    subject: Required[str]
+
+    to: Required[str]
+
+    bcc: Optional[str]
+
+    cc: Optional[str]
+
+
+class ToolIntegrationMailgunIntegrationDefSetup(TypedDict, total=False):
+    api_key: Required[str]
+
+
+class ToolIntegrationMailgunIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationMailgunIntegrationDefArguments]
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]]
+
+    provider: Literal["mailgun"]
+
+    setup: Optional[ToolIntegrationMailgunIntegrationDefSetup]
+    """Setup parameters for Mailgun integration"""
 
 
 class ToolIntegrationBrowserbaseContextIntegrationDefArguments(TypedDict, total=False):
@@ -990,6 +1034,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationSpiderIntegrationDef,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
+    ToolIntegrationMailgunIntegrationDef,
     ToolIntegrationBrowserbaseContextIntegrationDef,
     ToolIntegrationBrowserbaseExtensionIntegrationDef,
     ToolIntegrationBrowserbaseListSessionsIntegrationDef,
