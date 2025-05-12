@@ -33,6 +33,7 @@ class TestFiles:
             name="recNPna{}ip}t",
             description="description",
             mime_type="mime_type",
+            project="project",
         )
         assert_matches_type(File, file, path=["response"])
 
@@ -157,6 +158,7 @@ class TestAsyncFiles:
             name="recNPna{}ip}t",
             description="description",
             mime_type="mime_type",
+            project="project",
         )
         assert_matches_type(File, file, path=["response"])
 

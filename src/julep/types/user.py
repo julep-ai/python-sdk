@@ -20,3 +20,5 @@ class User(BaseModel):
     metadata: Optional[object] = None
 
     name: Optional[str] = None
+
+    project: Optional[str] = None

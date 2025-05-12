@@ -24,3 +24,5 @@ class AgentResetParams(TypedDict, total=False):
     metadata: Optional[object]
 
     model: str
+
+    project: Optional[str]

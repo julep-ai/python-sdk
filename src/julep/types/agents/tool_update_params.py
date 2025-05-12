@@ -10,6 +10,7 @@ from ..._utils import PropertyInfo
 __all__ = [
     "ToolUpdateParams",
     "APICall",
+    "APICallSecrets",
     "Bash20241022",
     "Computer20241022",
     "Function",
@@ -119,6 +120,10 @@ class ToolUpdateParams(TypedDict, total=False):
     ]
 
 
+class APICallSecrets(TypedDict, total=False):
+    name: Optional[str]
+
+
 class APICall(TypedDict, total=False):
     content: Optional[str]
 
@@ -141,6 +146,8 @@ class APICall(TypedDict, total=False):
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[Dict[str, APICallSecrets]]
 
     timeout: Optional[int]
 

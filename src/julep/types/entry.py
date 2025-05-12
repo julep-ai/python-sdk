@@ -21,6 +21,7 @@ __all__ = [
     "ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1Source",
     "ContentTool",
     "ContentToolAPICall",
+    "ContentToolAPICallSecrets",
     "ContentToolBash20241022",
     "ContentToolComputer20241022",
     "ContentToolFunction",
@@ -108,6 +109,7 @@ __all__ = [
     "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1Source",
     "ContentUnionMember8Tool",
     "ContentUnionMember8ToolAPICall",
+    "ContentUnionMember8ToolAPICallSecrets",
     "ContentUnionMember8ToolBash20241022",
     "ContentUnionMember8ToolComputer20241022",
     "ContentUnionMember8ToolFunction",
@@ -253,6 +255,10 @@ ContentUnionMember0: TypeAlias = Union[
 ]
 
 
+class ContentToolAPICallSecrets(BaseModel):
+    name: str
+
+
 class ContentToolAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -277,6 +283,8 @@ class ContentToolAPICall(BaseModel):
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, ContentToolAPICallSecrets]] = None
 
     timeout: Optional[int] = None
 
@@ -1148,6 +1156,10 @@ ContentUnionMember8UnionMember0: TypeAlias = Union[
 ]
 
 
+class ContentUnionMember8ToolAPICallSecrets(BaseModel):
+    name: str
+
+
 class ContentUnionMember8ToolAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -1172,6 +1184,8 @@ class ContentUnionMember8ToolAPICall(BaseModel):
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, ContentUnionMember8ToolAPICallSecrets]] = None
 
     timeout: Optional[int] = None
 

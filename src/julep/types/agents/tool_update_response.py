@@ -11,6 +11,7 @@ from ..._models import BaseModel
 __all__ = [
     "ToolUpdateResponse",
     "APICall",
+    "APICallSecrets",
     "Bash20241022",
     "Computer20241022",
     "Function",
@@ -81,6 +82,10 @@ __all__ = [
 ]
 
 
+class APICallSecrets(BaseModel):
+    name: str
+
+
 class APICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -105,6 +110,8 @@ class APICall(BaseModel):
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, APICallSecrets]] = None
 
     timeout: Optional[int] = None
 

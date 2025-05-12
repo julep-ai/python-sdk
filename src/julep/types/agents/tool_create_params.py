@@ -10,6 +10,7 @@ from ..._utils import PropertyInfo
 __all__ = [
     "ToolCreateParams",
     "APICall",
+    "APICallSecrets",
     "Bash20241022",
     "Computer20241022",
     "Function",
@@ -117,6 +118,10 @@ class ToolCreateParams(TypedDict, total=False):
     text_editor_20241022: Optional[TextEditor20241022]
 
 
+class APICallSecrets(TypedDict, total=False):
+    name: Required[str]
+
+
 class APICall(TypedDict, total=False):
     method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
 
@@ -141,6 +146,8 @@ class APICall(TypedDict, total=False):
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[Dict[str, APICallSecrets]]
 
     timeout: Optional[int]
 
