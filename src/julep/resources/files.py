@@ -51,6 +51,7 @@ class FilesResource(SyncAPIResource):
         name: str,
         description: str | NotGiven = NOT_GIVEN,
         mime_type: Optional[str] | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -78,6 +79,7 @@ class FilesResource(SyncAPIResource):
                     "name": name,
                     "description": description,
                     "mime_type": mime_type,
+                    "project": project,
                 },
                 file_create_params.FileCreateParams,
             ),
@@ -181,6 +183,7 @@ class AsyncFilesResource(AsyncAPIResource):
         name: str,
         description: str | NotGiven = NOT_GIVEN,
         mime_type: Optional[str] | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -208,6 +211,7 @@ class AsyncFilesResource(AsyncAPIResource):
                     "name": name,
                     "description": description,
                     "mime_type": mime_type,
+                    "project": project,
                 },
                 file_create_params.FileCreateParams,
             ),

@@ -24,3 +24,5 @@ class AgentUpdateParams(TypedDict, total=False):
     model: str
 
     name: Optional[str]
+
+    project: Optional[str]

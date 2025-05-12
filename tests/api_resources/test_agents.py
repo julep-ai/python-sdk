@@ -39,6 +39,7 @@ class TestAgents:
             instructions="string",
             metadata={},
             model="model",
+            project="project",
         )
         assert_matches_type(Agent, agent, path=["response"])
 
@@ -85,6 +86,7 @@ class TestAgents:
             metadata={},
             model="model",
             name="x",
+            project="project",
         )
         assert_matches_type(Agent, agent, path=["response"])
 
@@ -213,6 +215,7 @@ class TestAgents:
             instructions="string",
             metadata={},
             model="model",
+            project="project",
         )
         assert_matches_type(Agent, agent, path=["response"])
 
@@ -308,6 +311,7 @@ class TestAgents:
             instructions="string",
             metadata={},
             model="model",
+            project="project",
         )
         assert_matches_type(Agent, agent, path=["response"])
 
@@ -367,6 +371,7 @@ class TestAsyncAgents:
             instructions="string",
             metadata={},
             model="model",
+            project="project",
         )
         assert_matches_type(Agent, agent, path=["response"])
 
@@ -413,6 +418,7 @@ class TestAsyncAgents:
             metadata={},
             model="model",
             name="x",
+            project="project",
         )
         assert_matches_type(Agent, agent, path=["response"])
 
@@ -541,6 +547,7 @@ class TestAsyncAgents:
             instructions="string",
             metadata={},
             model="model",
+            project="project",
         )
         assert_matches_type(Agent, agent, path=["response"])
 
@@ -636,6 +643,7 @@ class TestAsyncAgents:
             instructions="string",
             metadata={},
             model="model",
+            project="project",
         )
         assert_matches_type(Agent, agent, path=["response"])
 

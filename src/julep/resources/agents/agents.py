@@ -87,6 +87,7 @@ class AgentsResource(SyncAPIResource):
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -118,6 +119,7 @@ class AgentsResource(SyncAPIResource):
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
+                    "project": project,
                 },
                 agent_create_params.AgentCreateParams,
             ),
@@ -139,6 +141,7 @@ class AgentsResource(SyncAPIResource):
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -172,6 +175,7 @@ class AgentsResource(SyncAPIResource):
                     "metadata": metadata,
                     "model": model,
                     "name": name,
+                    "project": project,
                 },
                 agent_update_params.AgentUpdateParams,
             ),
@@ -275,6 +279,7 @@ class AgentsResource(SyncAPIResource):
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -308,6 +313,7 @@ class AgentsResource(SyncAPIResource):
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
+                    "project": project,
                 },
                 agent_create_or_update_params.AgentCreateOrUpdateParams,
             ),
@@ -362,6 +368,7 @@ class AgentsResource(SyncAPIResource):
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -395,6 +402,7 @@ class AgentsResource(SyncAPIResource):
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
+                    "project": project,
                 },
                 agent_reset_params.AgentResetParams,
             ),
@@ -444,6 +452,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -475,6 +484,7 @@ class AsyncAgentsResource(AsyncAPIResource):
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
+                    "project": project,
                 },
                 agent_create_params.AgentCreateParams,
             ),
@@ -496,6 +506,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -529,6 +540,7 @@ class AsyncAgentsResource(AsyncAPIResource):
                     "metadata": metadata,
                     "model": model,
                     "name": name,
+                    "project": project,
                 },
                 agent_update_params.AgentUpdateParams,
             ),
@@ -632,6 +644,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -665,6 +678,7 @@ class AsyncAgentsResource(AsyncAPIResource):
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
+                    "project": project,
                 },
                 agent_create_or_update_params.AgentCreateOrUpdateParams,
             ),
@@ -719,6 +733,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
+        project: Optional[str] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -752,6 +767,7 @@ class AsyncAgentsResource(AsyncAPIResource):
                     "instructions": instructions,
                     "metadata": metadata,
                     "model": model,
+                    "project": project,
                 },
                 agent_reset_params.AgentResetParams,
             ),

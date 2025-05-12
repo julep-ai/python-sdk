@@ -52,6 +52,7 @@ class TestTools:
                 "json": {},
                 "params": "string",
                 "schema": {},
+                "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
             },
             bash_20241022={
@@ -153,6 +154,7 @@ class TestTools:
                 "method": "GET",
                 "params": "string",
                 "schema": {},
+                "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
                 "url": "https://example.com",
             },
@@ -362,6 +364,7 @@ class TestTools:
                 "json": {},
                 "params": "string",
                 "schema": {},
+                "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
             },
             bash_20241022={
@@ -481,6 +484,7 @@ class TestAsyncTools:
                 "json": {},
                 "params": "string",
                 "schema": {},
+                "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
             },
             bash_20241022={
@@ -582,6 +586,7 @@ class TestAsyncTools:
                 "method": "GET",
                 "params": "string",
                 "schema": {},
+                "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
                 "url": "https://example.com",
             },
@@ -791,6 +796,7 @@ class TestAsyncTools:
                 "json": {},
                 "params": "string",
                 "schema": {},
+                "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
             },
             bash_20241022={

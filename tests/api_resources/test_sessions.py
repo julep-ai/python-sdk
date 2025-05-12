@@ -300,6 +300,7 @@ class TestSessions:
                         "json": {},
                         "params": "string",
                         "schema": {},
+                        "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -605,6 +606,7 @@ class TestSessions:
                         "json": {},
                         "params": "string",
                         "schema": {},
+                        "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -1024,6 +1026,7 @@ class TestAsyncSessions:
                         "json": {},
                         "params": "string",
                         "schema": {},
+                        "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -1329,6 +1332,7 @@ class TestAsyncSessions:
                         "json": {},
                         "params": "string",
                         "schema": {},
+                        "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
                     },
                     "bash_20241022": {

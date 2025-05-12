@@ -35,6 +35,7 @@ __all__ = [
     "ToolChoiceNamedToolChoiceFunction",
     "Tool",
     "ToolAPICall",
+    "ToolAPICallSecrets",
     "ToolBash20241022",
     "ToolComputer20241022",
     "ToolFunction",
@@ -370,6 +371,10 @@ class ToolChoiceNamedToolChoice(TypedDict, total=False):
 ToolChoice: TypeAlias = Union[Literal["auto", "none"], ToolChoiceNamedToolChoice]
 
 
+class ToolAPICallSecrets(TypedDict, total=False):
+    name: Required[str]
+
+
 class ToolAPICall(TypedDict, total=False):
     method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
 
@@ -394,6 +399,8 @@ class ToolAPICall(TypedDict, total=False):
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[Dict[str, ToolAPICallSecrets]]
 
     timeout: Optional[int]
 

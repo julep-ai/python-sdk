@@ -24,3 +24,5 @@ class File(BaseModel):
     description: Optional[str] = None
 
     mime_type: Optional[str] = None
+
+    project: Optional[str] = None

@@ -41,6 +41,7 @@ __all__ = [
     "MainPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -153,6 +154,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -262,6 +264,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -375,6 +378,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -479,6 +483,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -583,6 +588,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -688,6 +694,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -797,6 +804,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -910,6 +918,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -1014,6 +1023,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -1118,6 +1128,7 @@ __all__ = [
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -1223,6 +1234,7 @@ __all__ = [
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -1336,6 +1348,7 @@ __all__ = [
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -1440,6 +1453,7 @@ __all__ = [
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -1544,6 +1558,7 @@ __all__ = [
     "MainMainInputMapPromptStepInputToolsUnionMember1ToolRefRefToolRefByName",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputBash20241022",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputComputer20241022",
     "MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputFunction",
@@ -1617,6 +1632,7 @@ __all__ = [
     "MainMainInputMapYieldStep",
     "Tool",
     "ToolAPICall",
+    "ToolAPICallSecrets",
     "ToolBash20241022",
     "ToolComputer20241022",
     "ToolFunction",
@@ -1960,6 +1976,12 @@ class MainPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=False):
     """Reference to a tool by id"""
 
 
+class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(TypedDict, total=False):
     method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
 
@@ -1984,6 +2006,10 @@ class MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequest
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[str, MainPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets]
+    ]
 
     timeout: Optional[int]
 
@@ -3320,6 +3346,12 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1ToolRef(Typ
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -3346,6 +3378,13 @@ class MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAu
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -4698,6 +4737,12 @@ class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToo
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -4724,6 +4769,13 @@ class MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToo
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputThenSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -6128,6 +6180,12 @@ class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToo
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -6154,6 +6212,13 @@ class MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToo
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputThenForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -7506,6 +7571,12 @@ class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToo
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -7532,6 +7603,13 @@ class MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToo
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputThenParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -8857,6 +8935,12 @@ class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -8883,6 +8967,13 @@ class MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputThenThenInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -10235,6 +10326,12 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1ToolRef(Typ
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -10261,6 +10358,13 @@ class MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAu
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputElsePromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -11613,6 +11717,12 @@ class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToo
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -11639,6 +11749,13 @@ class MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToo
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputElseSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -13043,6 +13160,12 @@ class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToo
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -13069,6 +13192,13 @@ class MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToo
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputElseForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -14421,6 +14551,12 @@ class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToo
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -14447,6 +14583,13 @@ class MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToo
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputElseParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -15772,6 +15915,12 @@ class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -15798,6 +15947,13 @@ class MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepInputElseElseInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -17148,6 +17304,12 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1ToolRef(Typed
     """Reference to a tool by id"""
 
 
+class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -17174,6 +17336,13 @@ class MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAuto
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainSwitchStepInputSwitchThenPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -18545,6 +18714,12 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1ToolRef(Typed
     """Reference to a tool by id"""
 
 
+class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -18571,6 +18746,13 @@ class MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAuto
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainForeachStepInputForeachDoPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -19890,6 +20072,12 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1ToolRef(Typed
     """Reference to a tool by id"""
 
 
+class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -19916,6 +20104,13 @@ class MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAuto
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainParallelStepInputParallelPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -21205,6 +21400,12 @@ class MainMainInputMapPromptStepInputToolsUnionMember1ToolRef(TypedDict, total=F
     """Reference to a tool by id"""
 
 
+class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets(
+    TypedDict, total=False
+):
+    name: Required[str]
+
+
 class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(
     TypedDict, total=False
 ):
@@ -21231,6 +21432,13 @@ class MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreat
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainMainInputMapPromptStepInputToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallSecrets,
+        ]
+    ]
 
     timeout: Optional[int]
 
@@ -22273,6 +22481,10 @@ Main: TypeAlias = Union[
 ]
 
 
+class ToolAPICallSecrets(TypedDict, total=False):
+    name: Required[str]
+
+
 class ToolAPICall(TypedDict, total=False):
     method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
 
@@ -22297,6 +22509,8 @@ class ToolAPICall(TypedDict, total=False):
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[Dict[str, ToolAPICallSecrets]]
 
     timeout: Optional[int]
 

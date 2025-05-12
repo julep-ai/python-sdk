@@ -184,6 +184,7 @@ tool = client.agents.tools.create(
         "json": {},
         "params": "string",
         "schema": {},
+        "secrets": {"foo": {"name": "name"}},
         "timeout": 0,
     },
 )

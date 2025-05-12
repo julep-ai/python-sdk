@@ -42,6 +42,7 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -154,6 +155,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -263,6 +265,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -376,6 +379,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -480,6 +484,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -584,6 +589,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -689,6 +695,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -798,6 +805,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -911,6 +919,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -1015,6 +1024,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -1119,6 +1129,7 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -1224,6 +1235,7 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -1337,6 +1349,7 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -1441,6 +1454,7 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -1545,6 +1559,7 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRefRefToolRefByName",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutput",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputBash20241022",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputComputer20241022",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputFunction",
@@ -1618,6 +1633,7 @@ __all__ = [
     "MainMainOutputMapYieldStep",
     "Tool",
     "ToolAPICall",
+    "ToolAPICallSecrets",
     "ToolBash20241022",
     "ToolComputer20241022",
     "ToolFunction",
@@ -1937,6 +1953,10 @@ class MainPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
     """Reference to a tool by id"""
 
 
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(BaseModel):
+    name: str
+
+
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -1961,6 +1981,8 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseMo
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets]] = None
 
     timeout: Optional[int] = None
 
@@ -3182,6 +3204,10 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1ToolRef(B
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(BaseModel):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -3206,6 +3232,12 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str, MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -4508,6 +4540,12 @@ class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutput
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(
+    BaseModel
+):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(
     BaseModel
 ):
@@ -4534,6 +4572,13 @@ class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutput
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets,
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -5903,6 +5948,12 @@ class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutput
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(
+    BaseModel
+):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(
     BaseModel
 ):
@@ -5929,6 +5980,13 @@ class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutput
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets,
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -7237,6 +7295,12 @@ class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutput
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(
+    BaseModel
+):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(
     BaseModel
 ):
@@ -7263,6 +7327,13 @@ class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutput
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets,
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -8556,6 +8627,12 @@ class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMem
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(
+    BaseModel
+):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(
     BaseModel
 ):
@@ -8582,6 +8659,13 @@ class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMem
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets,
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -9891,6 +9975,10 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1ToolRef(B
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(BaseModel):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -9915,6 +10003,12 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str, MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -11217,6 +11311,12 @@ class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutput
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(
+    BaseModel
+):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(
     BaseModel
 ):
@@ -11243,6 +11343,13 @@ class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutput
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets,
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -12612,6 +12719,12 @@ class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutput
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(
+    BaseModel
+):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(
     BaseModel
 ):
@@ -12638,6 +12751,13 @@ class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutput
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets,
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -13946,6 +14066,12 @@ class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutput
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(
+    BaseModel
+):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(
     BaseModel
 ):
@@ -13972,6 +14098,13 @@ class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutput
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets,
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -15265,6 +15398,12 @@ class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMem
     """Reference to a tool by id"""
 
 
+class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(
+    BaseModel
+):
+    name: str
+
+
 class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(
     BaseModel
 ):
@@ -15291,6 +15430,13 @@ class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMem
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[
+            str,
+            MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets,
+        ]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -16598,6 +16744,10 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1ToolRef(Bas
     """Reference to a tool by id"""
 
 
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(BaseModel):
+    name: str
+
+
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -16622,6 +16772,10 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[str, MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -17944,6 +18098,10 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1ToolRef(Bas
     """Reference to a tool by id"""
 
 
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(BaseModel):
+    name: str
+
+
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -17968,6 +18126,10 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[str, MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -19229,6 +19391,10 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1ToolRef(Bas
     """Reference to a tool by id"""
 
 
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(BaseModel):
+    name: str
+
+
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -19253,6 +19419,10 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[str, MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -20505,6 +20675,10 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1ToolRef(BaseModel):
     """Reference to a tool by id"""
 
 
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets(BaseModel):
+    name: str
+
+
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -20529,6 +20703,10 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputA
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[
+        Dict[str, MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICallSecrets]
+    ] = None
 
     timeout: Optional[int] = None
 
@@ -21536,6 +21714,10 @@ Main: TypeAlias = Union[
 ]
 
 
+class ToolAPICallSecrets(BaseModel):
+    name: str
+
+
 class ToolAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -21560,6 +21742,8 @@ class ToolAPICall(BaseModel):
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, ToolAPICallSecrets]] = None
 
     timeout: Optional[int] = None
 

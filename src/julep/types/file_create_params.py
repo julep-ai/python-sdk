@@ -16,3 +16,5 @@ class FileCreateParams(TypedDict, total=False):
     description: str
 
     mime_type: Optional[str]
+
+    project: Optional[str]

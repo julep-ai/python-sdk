@@ -60,6 +60,7 @@ class TestTasks:
                         "json": {},
                         "params": "string",
                         "schema": {},
+                        "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -231,6 +232,7 @@ class TestTasks:
                         "json": {},
                         "params": "string",
                         "schema": {},
+                        "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -404,6 +406,7 @@ class TestAsyncTasks:
                         "json": {},
                         "params": "string",
                         "schema": {},
+                        "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
                     },
                     "bash_20241022": {
@@ -575,6 +578,7 @@ class TestAsyncTasks:
                         "json": {},
                         "params": "string",
                         "schema": {},
+                        "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
                     },
                     "bash_20241022": {
