@@ -196,6 +196,7 @@ class DocsResource(SyncAPIResource):
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -276,10 +277,12 @@ class DocsResource(SyncAPIResource):
         connection_pool: object | NotGiven = NOT_GIVEN,
         alpha: float | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
+        k_multiplier: int | NotGiven = NOT_GIVEN,
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -319,10 +322,12 @@ class DocsResource(SyncAPIResource):
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
         vector: Iterable[float] | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         alpha: float | NotGiven = NOT_GIVEN,
+        k_multiplier: int | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -340,10 +345,12 @@ class DocsResource(SyncAPIResource):
                     "lang": lang,
                     "limit": limit,
                     "metadata_filter": metadata_filter,
+                    "trigram_similarity_threshold": trigram_similarity_threshold,
                     "vector": vector,
                     "confidence": confidence,
                     "mmr_strength": mmr_strength,
                     "alpha": alpha,
+                    "k_multiplier": k_multiplier,
                 },
                 doc_search_params.DocSearchParams,
             ),
@@ -529,6 +536,7 @@ class AsyncDocsResource(AsyncAPIResource):
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -609,10 +617,12 @@ class AsyncDocsResource(AsyncAPIResource):
         connection_pool: object | NotGiven = NOT_GIVEN,
         alpha: float | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
+        k_multiplier: int | NotGiven = NOT_GIVEN,
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -652,10 +662,12 @@ class AsyncDocsResource(AsyncAPIResource):
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
         vector: Iterable[float] | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
         alpha: float | NotGiven = NOT_GIVEN,
+        k_multiplier: int | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -673,10 +685,12 @@ class AsyncDocsResource(AsyncAPIResource):
                     "lang": lang,
                     "limit": limit,
                     "metadata_filter": metadata_filter,
+                    "trigram_similarity_threshold": trigram_similarity_threshold,
                     "vector": vector,
                     "confidence": confidence,
                     "mmr_strength": mmr_strength,
                     "alpha": alpha,
+                    "k_multiplier": k_multiplier,
                 },
                 doc_search_params.DocSearchParams,
             ),

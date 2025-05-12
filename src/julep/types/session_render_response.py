@@ -54,6 +54,9 @@ __all__ = [
     "ToolIntegrationWeatherIntegrationDef",
     "ToolIntegrationWeatherIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDefSetup",
+    "ToolIntegrationMailgunIntegrationDef",
+    "ToolIntegrationMailgunIntegrationDefArguments",
+    "ToolIntegrationMailgunIntegrationDefSetup",
     "ToolIntegrationBrowserbaseContextIntegrationDef",
     "ToolIntegrationBrowserbaseContextIntegrationDefArguments",
     "ToolIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -337,6 +340,8 @@ class ToolAPICall(BaseModel):
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -493,6 +498,36 @@ class ToolIntegrationWeatherIntegrationDef(BaseModel):
 
     setup: Optional[ToolIntegrationWeatherIntegrationDefSetup] = None
     """Integration definition for Weather"""
+
+
+class ToolIntegrationMailgunIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class ToolIntegrationMailgunIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ToolIntegrationMailgunIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationMailgunIntegrationDefArguments] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[ToolIntegrationMailgunIntegrationDefSetup] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class ToolIntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
@@ -928,6 +963,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationSpiderIntegrationDef,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
+    ToolIntegrationMailgunIntegrationDef,
     ToolIntegrationBrowserbaseContextIntegrationDef,
     ToolIntegrationBrowserbaseExtensionIntegrationDef,
     ToolIntegrationBrowserbaseListSessionsIntegrationDef,

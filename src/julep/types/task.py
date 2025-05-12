@@ -61,6 +61,9 @@ __all__ = [
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -170,6 +173,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -276,6 +282,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -386,6 +395,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -487,6 +499,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -588,6 +603,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -690,6 +708,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -796,6 +817,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -906,6 +930,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -1007,6 +1034,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -1108,6 +1138,9 @@ __all__ = [
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -1210,6 +1243,9 @@ __all__ = [
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -1320,6 +1356,9 @@ __all__ = [
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -1421,6 +1460,9 @@ __all__ = [
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -1522,6 +1564,9 @@ __all__ = [
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments",
+    "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments",
     "MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -1592,6 +1637,9 @@ __all__ = [
     "ToolIntegrationWeatherIntegrationDef",
     "ToolIntegrationWeatherIntegrationDefArguments",
     "ToolIntegrationWeatherIntegrationDefSetup",
+    "ToolIntegrationMailgunIntegrationDef",
+    "ToolIntegrationMailgunIntegrationDefArguments",
+    "ToolIntegrationMailgunIntegrationDefSetup",
     "ToolIntegrationBrowserbaseContextIntegrationDef",
     "ToolIntegrationBrowserbaseContextIntegrationDefArguments",
     "ToolIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -1906,6 +1954,8 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputAPICall(BaseMo
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -2082,6 +2132,40 @@ class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWea
         MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(BaseModel):
+    arguments: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -2629,6 +2713,7 @@ MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegration: TypeAli
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -3114,6 +3199,8 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -3320,6 +3407,46 @@ class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToo
         MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -3895,6 +4022,7 @@ MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -4399,6 +4527,8 @@ class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutput
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -4609,6 +4739,46 @@ class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutput
         MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -5184,6 +5354,7 @@ MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputThenSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -5751,6 +5922,8 @@ class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutput
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -5961,6 +6134,46 @@ class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutput
         MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -6536,6 +6749,7 @@ MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputThenForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -7042,6 +7256,8 @@ class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutput
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -7252,6 +7468,46 @@ class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutput
         MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -7827,6 +8083,7 @@ MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputThenParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -8318,6 +8575,8 @@ class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMem
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -8528,6 +8787,46 @@ class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMem
         MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -9103,6 +9402,7 @@ MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1Cr
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputThenThenOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -9608,6 +9908,8 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -9814,6 +10116,46 @@ class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToo
         MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -10389,6 +10731,7 @@ MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolReque
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputElsePromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -10893,6 +11236,8 @@ class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutput
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -11103,6 +11448,46 @@ class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutput
         MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -11678,6 +12063,7 @@ MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputElseSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -12245,6 +12631,8 @@ class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutput
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -12455,6 +12843,46 @@ class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutput
         MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -13030,6 +13458,7 @@ MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputElseForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -13536,6 +13965,8 @@ class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutput
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -13746,6 +14177,46 @@ class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutput
         MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -14321,6 +14792,7 @@ MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsU
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputElseParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -14812,6 +15284,8 @@ class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMem
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -15022,6 +15496,46 @@ class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMem
         MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -15597,6 +16111,7 @@ MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1Cr
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainIfElseWorkflowStepOutputElseElseOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -16100,6 +16615,8 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -16304,6 +16821,46 @@ class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolR
         MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -16879,6 +17436,7 @@ MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequest
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainSwitchStepOutputSwitchThenPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -17403,6 +17961,8 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -17607,6 +18167,46 @@ class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolR
         MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -18182,6 +18782,7 @@ MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequest
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainForeachStepOutputForeachDoPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -18645,6 +19246,8 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -18849,6 +19452,46 @@ class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolR
         MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -19424,6 +20067,7 @@ MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequest
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainParallelStepOutputParallelPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -19878,6 +20522,8 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputA
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -20082,6 +20728,46 @@ class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputI
         MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDefSetup
     ] = None
     """Integration definition for Weather"""
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments(
+    BaseModel
+):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup(
+    BaseModel
+):
+    api_key: str
+
+
+class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef(
+    BaseModel
+):
+    arguments: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefArguments
+    ] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[
+        MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDefSetup
+    ] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDefArguments(
@@ -20657,6 +21343,7 @@ MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegra
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationSpiderIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWikipediaIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationWeatherIntegrationDef,
+    MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationMailgunIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseContextIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseExtensionIntegrationDef,
     MainMainOutputMapPromptStepOutputToolsUnionMember1CreateToolRequestOutputIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -20866,6 +21553,8 @@ class ToolAPICall(BaseModel):
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
@@ -21022,6 +21711,36 @@ class ToolIntegrationWeatherIntegrationDef(BaseModel):
 
     setup: Optional[ToolIntegrationWeatherIntegrationDefSetup] = None
     """Integration definition for Weather"""
+
+
+class ToolIntegrationMailgunIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class ToolIntegrationMailgunIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ToolIntegrationMailgunIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationMailgunIntegrationDefArguments] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[ToolIntegrationMailgunIntegrationDefSetup] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class ToolIntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
@@ -21457,6 +22176,7 @@ ToolIntegration: TypeAlias = Union[
     ToolIntegrationSpiderIntegrationDef,
     ToolIntegrationWikipediaIntegrationDef,
     ToolIntegrationWeatherIntegrationDef,
+    ToolIntegrationMailgunIntegrationDef,
     ToolIntegrationBrowserbaseContextIntegrationDef,
     ToolIntegrationBrowserbaseExtensionIntegrationDef,
     ToolIntegrationBrowserbaseListSessionsIntegrationDef,

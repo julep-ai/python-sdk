@@ -65,11 +65,15 @@ class RecallOptionsTextOnlyDocSearchUpdate(TypedDict, total=False):
 
     num_search_messages: int
 
+    trigram_similarity_threshold: float
+
 
 class RecallOptionsHybridDocSearchUpdate(TypedDict, total=False):
     alpha: float
 
     confidence: float
+
+    k_multiplier: int
 
     lang: str
 
@@ -84,6 +88,8 @@ class RecallOptionsHybridDocSearchUpdate(TypedDict, total=False):
     mode: Literal["hybrid"]
 
     num_search_messages: int
+
+    trigram_similarity_threshold: float
 
 
 RecallOptions: TypeAlias = Union[

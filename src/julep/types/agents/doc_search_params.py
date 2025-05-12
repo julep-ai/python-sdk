@@ -19,6 +19,8 @@ class TextOnlyDocSearchRequest(TypedDict, total=False):
 
     metadata_filter: object
 
+    trigram_similarity_threshold: float
+
 
 class VectorDocSearchRequest(TypedDict, total=False):
     vector: Required[Iterable[float]]
@@ -47,6 +49,8 @@ class HybridDocSearchRequest(TypedDict, total=False):
 
     confidence: float
 
+    k_multiplier: int
+
     lang: str
 
     limit: int
@@ -54,6 +58,8 @@ class HybridDocSearchRequest(TypedDict, total=False):
     metadata_filter: object
 
     mmr_strength: float
+
+    trigram_similarity_threshold: float
 
 
 DocSearchParams: TypeAlias = Union[TextOnlyDocSearchRequest, VectorDocSearchRequest, HybridDocSearchRequest]
