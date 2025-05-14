@@ -8,6 +8,7 @@ from .task import Task as Task
 from .user import User as User
 from .agent import Agent as Agent
 from .entry import Entry as Entry
+from .secret import Secret as Secret
 from .shared import ResourceDeleted as ResourceDeleted
 from .history import History as History
 from .session import Session as Session
@@ -23,6 +24,7 @@ from .agent_list_params import AgentListParams as AgentListParams
 from .user_reset_params import UserResetParams as UserResetParams
 from .agent_reset_params import AgentResetParams as AgentResetParams
 from .file_create_params import FileCreateParams as FileCreateParams
+from .secret_list_params import SecretListParams as SecretListParams
 from .task_create_params import TaskCreateParams as TaskCreateParams
 from .user_create_params import UserCreateParams as UserCreateParams
 from .user_update_params import UserUpdateParams as UserUpdateParams
@@ -31,6 +33,9 @@ from .agent_update_params import AgentUpdateParams as AgentUpdateParams
 from .session_chat_params import SessionChatParams as SessionChatParams
 from .session_list_params import SessionListParams as SessionListParams
 from .embed_query_response import EmbedQueryResponse as EmbedQueryResponse
+from .secret_create_params import SecretCreateParams as SecretCreateParams
+from .secret_list_response import SecretListResponse as SecretListResponse
+from .secret_update_params import SecretUpdateParams as SecretUpdateParams
 from .session_reset_params import SessionResetParams as SessionResetParams
 from .execution_list_params import ExecutionListParams as ExecutionListParams
 from .session_chat_response import SessionChatResponse as SessionChatResponse
