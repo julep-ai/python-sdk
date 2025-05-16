@@ -1,4 +1,4 @@
-configured_endpoints: 53
-openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/julep-ai-inc-dash%2Fjulep-14e6e11ab9b7ae3afeab9a4b72dd906f43dfe0a41c8fda86e612eaaae9a8d085.yml
-openapi_spec_hash: 01b01a97793714f89a7c971a4cc0f17b
-config_hash: 6596c6457cbea976768290d343dcfeea
+configured_endpoints: 57
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/julep-ai-inc-dash%2Fjulep-3b58badc86faa95cdd3ca635911d7e31fc286635d11d7731caaf537c239be52b.yml
+openapi_spec_hash: 9c451e0c93746d508c96eb94262c79ea
+config_hash: 88b616a80e3611da8d5935ccda360a6a

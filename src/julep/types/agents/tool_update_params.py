@@ -10,6 +10,7 @@ from ..._utils import PropertyInfo
 __all__ = [
     "ToolUpdateParams",
     "APICall",
+    "APICallSecrets",
     "Bash20241022",
     "Computer20241022",
     "Function",
@@ -29,6 +30,9 @@ __all__ = [
     "IntegrationWeatherIntegrationDefUpdate",
     "IntegrationWeatherIntegrationDefUpdateArguments",
     "IntegrationWeatherIntegrationDefUpdateSetup",
+    "IntegrationMailgunIntegrationDefUpdate",
+    "IntegrationMailgunIntegrationDefUpdateArguments",
+    "IntegrationMailgunIntegrationDefUpdateSetup",
     "IntegrationBrowserbaseContextIntegrationDefUpdate",
     "IntegrationBrowserbaseContextIntegrationDefUpdateArguments",
     "IntegrationBrowserbaseContextIntegrationDefUpdateSetup",
@@ -116,6 +120,10 @@ class ToolUpdateParams(TypedDict, total=False):
     ]
 
 
+class APICallSecrets(TypedDict, total=False):
+    name: Optional[str]
+
+
 class APICall(TypedDict, total=False):
     content: Optional[str]
 
@@ -129,6 +137,8 @@ class APICall(TypedDict, total=False):
 
     headers: Optional[Dict[str, str]]
 
+    include_response_content: bool
+
     json: Optional[object]
 
     method: Optional[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
@@ -136,6 +146,8 @@ class APICall(TypedDict, total=False):
     params: Union[str, object, None]
 
     schema: Optional[object]
+
+    secrets: Optional[Dict[str, APICallSecrets]]
 
     timeout: Optional[int]
 
@@ -298,6 +310,45 @@ class IntegrationWeatherIntegrationDefUpdate(TypedDict, total=False):
 
     setup: Optional[IntegrationWeatherIntegrationDefUpdateSetup]
     """Integration definition for Weather"""
+
+
+_IntegrationMailgunIntegrationDefUpdateArgumentsReservedKeywords = TypedDict(
+    "_IntegrationMailgunIntegrationDefUpdateArgumentsReservedKeywords",
+    {
+        "from": Optional[str],
+    },
+    total=False,
+)
+
+
+class IntegrationMailgunIntegrationDefUpdateArguments(
+    _IntegrationMailgunIntegrationDefUpdateArgumentsReservedKeywords, total=False
+):
+    bcc: Optional[str]
+
+    body: Optional[str]
+
+    cc: Optional[str]
+
+    subject: Optional[str]
+
+    to: Optional[str]
+
+
+class IntegrationMailgunIntegrationDefUpdateSetup(TypedDict, total=False):
+    api_key: Optional[str]
+
+
+class IntegrationMailgunIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationMailgunIntegrationDefUpdateArguments]
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]]
+
+    provider: Literal["mailgun"]
+
+    setup: Optional[IntegrationMailgunIntegrationDefUpdateSetup]
+    """Setup parameters for Mailgun integration"""
 
 
 class IntegrationBrowserbaseContextIntegrationDefUpdateArguments(TypedDict, total=False):
@@ -735,6 +786,7 @@ Integration: TypeAlias = Union[
     IntegrationSpiderIntegrationDefUpdate,
     IntegrationWikipediaIntegrationDefUpdate,
     IntegrationWeatherIntegrationDefUpdate,
+    IntegrationMailgunIntegrationDefUpdate,
     IntegrationBrowserbaseContextIntegrationDefUpdate,
     IntegrationBrowserbaseExtensionIntegrationDefUpdate,
     IntegrationBrowserbaseListSessionsIntegrationDefUpdate,

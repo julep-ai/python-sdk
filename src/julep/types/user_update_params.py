@@ -14,3 +14,5 @@ class UserUpdateParams(TypedDict, total=False):
     metadata: Optional[object]
 
     name: str
+
+    project: Optional[str]

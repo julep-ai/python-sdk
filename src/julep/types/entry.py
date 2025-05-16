@@ -21,6 +21,7 @@ __all__ = [
     "ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1Source",
     "ContentTool",
     "ContentToolAPICall",
+    "ContentToolAPICallSecrets",
     "ContentToolBash20241022",
     "ContentToolComputer20241022",
     "ContentToolFunction",
@@ -40,6 +41,9 @@ __all__ = [
     "ContentToolIntegrationWeatherIntegrationDef",
     "ContentToolIntegrationWeatherIntegrationDefArguments",
     "ContentToolIntegrationWeatherIntegrationDefSetup",
+    "ContentToolIntegrationMailgunIntegrationDef",
+    "ContentToolIntegrationMailgunIntegrationDefArguments",
+    "ContentToolIntegrationMailgunIntegrationDefSetup",
     "ContentToolIntegrationBrowserbaseContextIntegrationDef",
     "ContentToolIntegrationBrowserbaseContextIntegrationDefArguments",
     "ContentToolIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -105,6 +109,7 @@ __all__ = [
     "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1Source",
     "ContentUnionMember8Tool",
     "ContentUnionMember8ToolAPICall",
+    "ContentUnionMember8ToolAPICallSecrets",
     "ContentUnionMember8ToolBash20241022",
     "ContentUnionMember8ToolComputer20241022",
     "ContentUnionMember8ToolFunction",
@@ -124,6 +129,9 @@ __all__ = [
     "ContentUnionMember8ToolIntegrationWeatherIntegrationDef",
     "ContentUnionMember8ToolIntegrationWeatherIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationWeatherIntegrationDefSetup",
+    "ContentUnionMember8ToolIntegrationMailgunIntegrationDef",
+    "ContentUnionMember8ToolIntegrationMailgunIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationMailgunIntegrationDefSetup",
     "ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDef",
     "ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDefArguments",
     "ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDefSetup",
@@ -247,6 +255,10 @@ ContentUnionMember0: TypeAlias = Union[
 ]
 
 
+class ContentToolAPICallSecrets(BaseModel):
+    name: str
+
+
 class ContentToolAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -264,11 +276,15 @@ class ContentToolAPICall(BaseModel):
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, ContentToolAPICallSecrets]] = None
 
     timeout: Optional[int] = None
 
@@ -420,6 +436,36 @@ class ContentToolIntegrationWeatherIntegrationDef(BaseModel):
 
     setup: Optional[ContentToolIntegrationWeatherIntegrationDefSetup] = None
     """Integration definition for Weather"""
+
+
+class ContentToolIntegrationMailgunIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class ContentToolIntegrationMailgunIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentToolIntegrationMailgunIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationMailgunIntegrationDefArguments] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[ContentToolIntegrationMailgunIntegrationDefSetup] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class ContentToolIntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
@@ -855,6 +901,7 @@ ContentToolIntegration: TypeAlias = Union[
     ContentToolIntegrationSpiderIntegrationDef,
     ContentToolIntegrationWikipediaIntegrationDef,
     ContentToolIntegrationWeatherIntegrationDef,
+    ContentToolIntegrationMailgunIntegrationDef,
     ContentToolIntegrationBrowserbaseContextIntegrationDef,
     ContentToolIntegrationBrowserbaseExtensionIntegrationDef,
     ContentToolIntegrationBrowserbaseListSessionsIntegrationDef,
@@ -1109,6 +1156,10 @@ ContentUnionMember8UnionMember0: TypeAlias = Union[
 ]
 
 
+class ContentUnionMember8ToolAPICallSecrets(BaseModel):
+    name: str
+
+
 class ContentUnionMember8ToolAPICall(BaseModel):
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
@@ -1126,11 +1177,15 @@ class ContentUnionMember8ToolAPICall(BaseModel):
 
     headers: Optional[Dict[str, str]] = None
 
+    include_response_content: Optional[bool] = None
+
     json_: Optional[object] = FieldInfo(alias="json", default=None)
 
     params: Union[str, object, None] = None
 
     schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, ContentUnionMember8ToolAPICallSecrets]] = None
 
     timeout: Optional[int] = None
 
@@ -1282,6 +1337,36 @@ class ContentUnionMember8ToolIntegrationWeatherIntegrationDef(BaseModel):
 
     setup: Optional[ContentUnionMember8ToolIntegrationWeatherIntegrationDefSetup] = None
     """Integration definition for Weather"""
+
+
+class ContentUnionMember8ToolIntegrationMailgunIntegrationDefArguments(BaseModel):
+    body: str
+
+    from_: str = FieldInfo(alias="from")
+
+    subject: str
+
+    to: str
+
+    bcc: Optional[str] = None
+
+    cc: Optional[str] = None
+
+
+class ContentUnionMember8ToolIntegrationMailgunIntegrationDefSetup(BaseModel):
+    api_key: str
+
+
+class ContentUnionMember8ToolIntegrationMailgunIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationMailgunIntegrationDefArguments] = None
+    """Arguments for mailgun.send_email method"""
+
+    method: Optional[Literal["send_email"]] = None
+
+    provider: Optional[Literal["mailgun"]] = None
+
+    setup: Optional[ContentUnionMember8ToolIntegrationMailgunIntegrationDefSetup] = None
+    """Setup parameters for Mailgun integration"""
 
 
 class ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDefArguments(BaseModel):
@@ -1717,6 +1802,7 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ContentUnionMember8ToolIntegrationSpiderIntegrationDef,
     ContentUnionMember8ToolIntegrationWikipediaIntegrationDef,
     ContentUnionMember8ToolIntegrationWeatherIntegrationDef,
+    ContentUnionMember8ToolIntegrationMailgunIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseContextIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseExtensionIntegrationDef,
     ContentUnionMember8ToolIntegrationBrowserbaseListSessionsIntegrationDef,

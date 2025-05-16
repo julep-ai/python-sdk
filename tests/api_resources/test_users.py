@@ -32,6 +32,7 @@ class TestUsers:
             about="about",
             metadata={},
             name="recNPna{}ip}t",
+            project="project",
         )
         assert_matches_type(User, user, path=["response"])
 
@@ -69,6 +70,7 @@ class TestUsers:
             about="about",
             metadata={},
             name="recNPna{}ip}t",
+            project="project",
         )
         assert_matches_type(User, user, path=["response"])
 
@@ -191,6 +193,7 @@ class TestUsers:
             about="about",
             metadata={},
             name="recNPna{}ip}t",
+            project="project",
         )
         assert_matches_type(User, user, path=["response"])
 
@@ -277,6 +280,7 @@ class TestUsers:
             about="about",
             metadata={},
             name="recNPna{}ip}t",
+            project="project",
         )
         assert_matches_type(User, user, path=["response"])
 
@@ -326,6 +330,7 @@ class TestAsyncUsers:
             about="about",
             metadata={},
             name="recNPna{}ip}t",
+            project="project",
         )
         assert_matches_type(User, user, path=["response"])
 
@@ -363,6 +368,7 @@ class TestAsyncUsers:
             about="about",
             metadata={},
             name="recNPna{}ip}t",
+            project="project",
         )
         assert_matches_type(User, user, path=["response"])
 
@@ -485,6 +491,7 @@ class TestAsyncUsers:
             about="about",
             metadata={},
             name="recNPna{}ip}t",
+            project="project",
         )
         assert_matches_type(User, user, path=["response"])
 
@@ -571,6 +578,7 @@ class TestAsyncUsers:
             about="about",
             metadata={},
             name="recNPna{}ip}t",
+            project="project",
         )
         assert_matches_type(User, user, path=["response"])
 

@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.0.0 (2025-05-16)
+
+Full Changelog: [v1.78.3...v2.0.0](https://github.com/julep-ai/python-sdk/compare/v1.78.3...v2.0.0)
+
+### Features
+
+* **api:** api update ([053aa7e](https://github.com/julep-ai/python-sdk/commit/053aa7ed8c6447bf3e7c41a0fb8d0f537d11c8e1))
+* **api:** manual updates ([75655dd](https://github.com/julep-ai/python-sdk/commit/75655dd686306d77228d7293f32c489f11ca2fc7))
+
+
+### Chores
+
+* **ci:** fix installation instructions ([26c34e0](https://github.com/julep-ai/python-sdk/commit/26c34e0967193c6ee101d7027ffd17b677d5df81))
+* **ci:** upload sdks to package manager ([1bcf32d](https://github.com/julep-ai/python-sdk/commit/1bcf32d2ebbdbc85cd733a07760b3e3239e917fd))
+* update SDK settings ([f573d02](https://github.com/julep-ai/python-sdk/commit/f573d020c8c057a55e4099e489ff8e0a4117e4d6))
+
 ## 1.78.3 (2025-05-10)
 
 Full Changelog: [v1.78.2...v1.78.3](https://github.com/julep-ai/python-sdk/compare/v1.78.2...v1.78.3)

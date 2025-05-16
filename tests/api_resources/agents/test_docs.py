@@ -193,6 +193,7 @@ class TestDocs:
             lang="lang",
             limit=1,
             metadata_filter={},
+            trigram_similarity_threshold=0,
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -304,10 +305,12 @@ class TestDocs:
             connection_pool={},
             alpha=0,
             confidence=-1,
+            k_multiplier=0,
             lang="lang",
             limit=1,
             metadata_filter={},
             mmr_strength=0,
+            trigram_similarity_threshold=0,
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -525,6 +528,7 @@ class TestAsyncDocs:
             lang="lang",
             limit=1,
             metadata_filter={},
+            trigram_similarity_threshold=0,
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 
@@ -636,10 +640,12 @@ class TestAsyncDocs:
             connection_pool={},
             alpha=0,
             confidence=-1,
+            k_multiplier=0,
             lang="lang",
             limit=1,
             metadata_filter={},
             mmr_strength=0,
+            trigram_similarity_threshold=0,
         )
         assert_matches_type(DocSearchResponse, doc, path=["response"])
 

@@ -30,3 +30,5 @@ class Agent(BaseModel):
     metadata: Optional[object] = None
 
     model: Optional[str] = None
+
+    project: Optional[str] = None

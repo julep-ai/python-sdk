@@ -180,9 +180,11 @@ tool = client.agents.tools.create(
         "files": {},
         "follow_redirects": True,
         "headers": {"foo": "string"},
+        "include_response_content": True,
         "json": {},
         "params": "string",
         "schema": {},
+        "secrets": {"foo": {"name": "name"}},
         "timeout": 0,
     },
 )

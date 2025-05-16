@@ -5,20 +5,20 @@ from datetime import datetime
 
 from .._models import BaseModel
 
-__all__ = ["User"]
+__all__ = ["Secret"]
 
 
-class User(BaseModel):
+class Secret(BaseModel):
     id: str
 
     created_at: datetime
 
+    name: str
+
     updated_at: datetime
 
-    about: Optional[str] = None
+    value: str
+
+    description: Optional[str] = None
 
     metadata: Optional[object] = None
-
-    name: Optional[str] = None
-
-    project: Optional[str] = None

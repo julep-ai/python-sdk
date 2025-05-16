@@ -5,16 +5,14 @@ from __future__ import annotations
 from typing import Optional
 from typing_extensions import Required, TypedDict
 
-__all__ = ["FileCreateParams"]
+__all__ = ["SecretUpdateParams"]
 
 
-class FileCreateParams(TypedDict, total=False):
-    content: Required[str]
-
+class SecretUpdateParams(TypedDict, total=False):
     name: Required[str]
 
-    description: str
+    value: Required[str]
 
-    mime_type: Optional[str]
+    description: Optional[str]
 
-    project: Optional[str]
+    metadata: Optional[object]

@@ -31,11 +31,12 @@ from ._base_client import (
 )
 
 if TYPE_CHECKING:
-    from .resources import docs, jobs, files, tasks, users, agents, sessions, executions
+    from .resources import docs, jobs, files, tasks, users, agents, secrets, sessions, executions
     from .resources.docs import DocsResource, AsyncDocsResource
     from .resources.jobs import JobsResource, AsyncJobsResource
     from .resources.files import FilesResource, AsyncFilesResource
     from .resources.tasks import TasksResource, AsyncTasksResource
+    from .resources.secrets import SecretsResource, AsyncSecretsResource
     from .resources.sessions import SessionsResource, AsyncSessionsResource
     from .resources.users.users import UsersResource, AsyncUsersResource
     from .resources.agents.agents import AgentsResource, AsyncAgentsResource
@@ -187,6 +188,12 @@ class Julep(SyncAPIClient):
         from .resources.executions import ExecutionsResource
 
         return ExecutionsResource(self)
+
+    @cached_property
+    def secrets(self) -> SecretsResource:
+        from .resources.secrets import SecretsResource
+
+        return SecretsResource(self)
 
     @cached_property
     def with_raw_response(self) -> JulepWithRawResponse:
@@ -431,6 +438,12 @@ class AsyncJulep(AsyncAPIClient):
         return AsyncExecutionsResource(self)
 
     @cached_property
+    def secrets(self) -> AsyncSecretsResource:
+        from .resources.secrets import AsyncSecretsResource
+
+        return AsyncSecretsResource(self)
+
+    @cached_property
     def with_raw_response(self) -> AsyncJulepWithRawResponse:
         return AsyncJulepWithRawResponse(self)
 
@@ -599,6 +612,12 @@ class JulepWithRawResponse:
 
         return ExecutionsResourceWithRawResponse(self._client.executions)
 
+    @cached_property
+    def secrets(self) -> secrets.SecretsResourceWithRawResponse:
+        from .resources.secrets import SecretsResourceWithRawResponse
+
+        return SecretsResourceWithRawResponse(self._client.secrets)
+
 
 class AsyncJulepWithRawResponse:
     _client: AsyncJulep
@@ -653,6 +672,12 @@ class AsyncJulepWithRawResponse:
         from .resources.executions import AsyncExecutionsResourceWithRawResponse
 
         return AsyncExecutionsResourceWithRawResponse(self._client.executions)
+
+    @cached_property
+    def secrets(self) -> secrets.AsyncSecretsResourceWithRawResponse:
+        from .resources.secrets import AsyncSecretsResourceWithRawResponse
+
+        return AsyncSecretsResourceWithRawResponse(self._client.secrets)
 
 
 class JulepWithStreamedResponse:
@@ -709,6 +734,12 @@ class JulepWithStreamedResponse:
 
         return ExecutionsResourceWithStreamingResponse(self._client.executions)
 
+    @cached_property
+    def secrets(self) -> secrets.SecretsResourceWithStreamingResponse:
+        from .resources.secrets import SecretsResourceWithStreamingResponse
+
+        return SecretsResourceWithStreamingResponse(self._client.secrets)
+
 
 class AsyncJulepWithStreamedResponse:
     _client: AsyncJulep
@@ -763,6 +794,12 @@ class AsyncJulepWithStreamedResponse:
         from .resources.executions import AsyncExecutionsResourceWithStreamingResponse
 
         return AsyncExecutionsResourceWithStreamingResponse(self._client.executions)
+
+    @cached_property
+    def secrets(self) -> secrets.AsyncSecretsResourceWithStreamingResponse:
+        from .resources.secrets import AsyncSecretsResourceWithStreamingResponse
+
+        return AsyncSecretsResourceWithStreamingResponse(self._client.secrets)
 
 
 Client = Julep

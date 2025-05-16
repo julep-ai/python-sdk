@@ -46,11 +46,15 @@ class RecallOptionsTextOnlyDocSearch(BaseModel):
 
     num_search_messages: Optional[int] = None
 
+    trigram_similarity_threshold: Optional[float] = None
+
 
 class RecallOptionsHybridDocSearch(BaseModel):
     alpha: Optional[float] = None
 
     confidence: Optional[float] = None
+
+    k_multiplier: Optional[int] = None
 
     lang: Optional[str] = None
 
@@ -65,6 +69,8 @@ class RecallOptionsHybridDocSearch(BaseModel):
     mode: Optional[Literal["hybrid"]] = None
 
     num_search_messages: Optional[int] = None
+
+    trigram_similarity_threshold: Optional[float] = None
 
 
 RecallOptions: TypeAlias = Union[

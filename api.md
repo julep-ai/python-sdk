@@ -201,3 +201,18 @@ Methods:
 
 - <code title="get /executions/{execution_id}/transitions">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">list</a>(execution_id, \*\*<a href="src/julep/types/executions/transition_list_params.py">params</a>) -> <a href="./src/julep/types/transition.py">SyncOffsetPagination[Transition]</a></code>
 - <code title="get /executions/{execution_id}/transitions.stream">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">stream</a>(execution_id, \*\*<a href="src/julep/types/executions/transition_stream_params.py">params</a>) -> <a href="./src/julep/types/executions/transition_stream_response.py">object</a></code>
+
+# Secrets
+
+Types:
+
+```python
+from julep.types import Secret, SecretListResponse
+```
+
+Methods:
+
+- <code title="post /secrets">client.secrets.<a href="./src/julep/resources/secrets.py">create</a>(\*\*<a href="src/julep/types/secret_create_params.py">params</a>) -> <a href="./src/julep/types/secret.py">Secret</a></code>
+- <code title="put /secrets/{secret_id}">client.secrets.<a href="./src/julep/resources/secrets.py">update</a>(secret_id, \*\*<a href="src/julep/types/secret_update_params.py">params</a>) -> <a href="./src/julep/types/secret.py">Secret</a></code>
+- <code title="get /secrets">client.secrets.<a href="./src/julep/resources/secrets.py">list</a>(\*\*<a href="src/julep/types/secret_list_params.py">params</a>) -> <a href="./src/julep/types/secret_list_response.py">SecretListResponse</a></code>
+- <code title="delete /secrets/{secret_id}">client.secrets.<a href="./src/julep/resources/secrets.py">delete</a>(secret_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
