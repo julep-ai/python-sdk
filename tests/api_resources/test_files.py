@@ -8,7 +8,7 @@ from typing import Any, cast
 import pytest
 
 from julep import Julep, AsyncJulep
-from julep.types import File
+from julep.types import File, FileListResponse
 from tests.utils import assert_matches_type
 from julep.types.shared import ResourceDeleted
 
@@ -60,6 +60,31 @@ class TestFiles:
 
             file = response.parse()
             assert_matches_type(File, file, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    def test_method_list(self, client: Julep) -> None:
+        file = client.files.list()
+        assert_matches_type(FileListResponse, file, path=["response"])
+
+    @parametrize
+    def test_raw_response_list(self, client: Julep) -> None:
+        response = client.files.with_raw_response.list()
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        file = response.parse()
+        assert_matches_type(FileListResponse, file, path=["response"])
+
+    @parametrize
+    def test_streaming_response_list(self, client: Julep) -> None:
+        with client.files.with_streaming_response.list() as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            file = response.parse()
+            assert_matches_type(FileListResponse, file, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -185,6 +210,31 @@ class TestAsyncFiles:
 
             file = await response.parse()
             assert_matches_type(File, file, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    async def test_method_list(self, async_client: AsyncJulep) -> None:
+        file = await async_client.files.list()
+        assert_matches_type(FileListResponse, file, path=["response"])
+
+    @parametrize
+    async def test_raw_response_list(self, async_client: AsyncJulep) -> None:
+        response = await async_client.files.with_raw_response.list()
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        file = await response.parse()
+        assert_matches_type(FileListResponse, file, path=["response"])
+
+    @parametrize
+    async def test_streaming_response_list(self, async_client: AsyncJulep) -> None:
+        async with async_client.files.with_streaming_response.list() as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            file = await response.parse()
+            assert_matches_type(FileListResponse, file, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 

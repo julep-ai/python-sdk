@@ -14,3 +14,5 @@ from .doc_search_response import DocSearchResponse as DocSearchResponse
 from .tool_reset_response import ToolResetResponse as ToolResetResponse
 from .tool_create_response import ToolCreateResponse as ToolCreateResponse
 from .tool_update_response import ToolUpdateResponse as ToolUpdateResponse
+from .doc_bulk_delete_params import DocBulkDeleteParams as DocBulkDeleteParams
+from .doc_bulk_delete_response import DocBulkDeleteResponse as DocBulkDeleteResponse

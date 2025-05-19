@@ -31,7 +31,7 @@ from ...types import (
     agent_create_or_update_params,
 )
 from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven
-from ..._utils import maybe_transform, async_maybe_transform
+from ..._utils import maybe_transform, strip_not_given, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
 from ..._response import (
@@ -44,6 +44,7 @@ from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ...types.agent import Agent
 from ..._base_client import AsyncPaginator, make_request_options
 from ...types.shared.resource_deleted import ResourceDeleted
+from ...types.agent_list_models_response import AgentListModelsResponse
 
 __all__ = ["AgentsResource", "AsyncAgentsResource"]
 
@@ -354,6 +355,40 @@ class AgentsResource(SyncAPIResource):
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
             cast_to=Agent,
+        )
+
+    def list_models(
+        self,
+        *,
+        x_custom_api_key: str | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> AgentListModelsResponse:
+        """
+        List all available models that can be used with agents.
+
+        Returns: ListModelsResponse: A list of available models
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        extra_headers = {**strip_not_given({"x-custom-api-key": x_custom_api_key}), **(extra_headers or {})}
+        return self._get(
+            "/agents/models",
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=AgentListModelsResponse,
         )
 
     def reset(
@@ -721,6 +756,40 @@ class AsyncAgentsResource(AsyncAPIResource):
             cast_to=Agent,
         )
 
+    async def list_models(
+        self,
+        *,
+        x_custom_api_key: str | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> AgentListModelsResponse:
+        """
+        List all available models that can be used with agents.
+
+        Returns: ListModelsResponse: A list of available models
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        extra_headers = {**strip_not_given({"x-custom-api-key": x_custom_api_key}), **(extra_headers or {})}
+        return await self._get(
+            "/agents/models",
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=AgentListModelsResponse,
+        )
+
     async def reset(
         self,
         agent_id: str,
@@ -800,6 +869,9 @@ class AgentsResourceWithRawResponse:
         self.get = to_raw_response_wrapper(
             agents.get,
         )
+        self.list_models = to_raw_response_wrapper(
+            agents.list_models,
+        )
         self.reset = to_raw_response_wrapper(
             agents.reset,
         )
@@ -834,6 +906,9 @@ class AsyncAgentsResourceWithRawResponse:
         )
         self.get = async_to_raw_response_wrapper(
             agents.get,
+        )
+        self.list_models = async_to_raw_response_wrapper(
+            agents.list_models,
         )
         self.reset = async_to_raw_response_wrapper(
             agents.reset,
@@ -870,6 +945,9 @@ class AgentsResourceWithStreamingResponse:
         self.get = to_streamed_response_wrapper(
             agents.get,
         )
+        self.list_models = to_streamed_response_wrapper(
+            agents.list_models,
+        )
         self.reset = to_streamed_response_wrapper(
             agents.reset,
         )
@@ -904,6 +982,9 @@ class AsyncAgentsResourceWithStreamingResponse:
         )
         self.get = async_to_streamed_response_wrapper(
             agents.get,
+        )
+        self.list_models = async_to_streamed_response_wrapper(
+            agents.list_models,
         )
         self.reset = async_to_streamed_response_wrapper(
             agents.reset,

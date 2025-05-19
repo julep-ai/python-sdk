@@ -31,12 +31,14 @@ from ._base_client import (
 )
 
 if TYPE_CHECKING:
-    from .resources import docs, jobs, files, tasks, users, agents, secrets, sessions, executions
+    from .resources import docs, jobs, files, tasks, users, agents, healthz, secrets, projects, sessions, executions
     from .resources.docs import DocsResource, AsyncDocsResource
     from .resources.jobs import JobsResource, AsyncJobsResource
     from .resources.files import FilesResource, AsyncFilesResource
     from .resources.tasks import TasksResource, AsyncTasksResource
+    from .resources.healthz import HealthzResource, AsyncHealthzResource
     from .resources.secrets import SecretsResource, AsyncSecretsResource
+    from .resources.projects import ProjectsResource, AsyncProjectsResource
     from .resources.sessions import SessionsResource, AsyncSessionsResource
     from .resources.users.users import UsersResource, AsyncUsersResource
     from .resources.agents.agents import AgentsResource, AsyncAgentsResource
@@ -194,6 +196,18 @@ class Julep(SyncAPIClient):
         from .resources.secrets import SecretsResource
 
         return SecretsResource(self)
+
+    @cached_property
+    def projects(self) -> ProjectsResource:
+        from .resources.projects import ProjectsResource
+
+        return ProjectsResource(self)
+
+    @cached_property
+    def healthz(self) -> HealthzResource:
+        from .resources.healthz import HealthzResource
+
+        return HealthzResource(self)
 
     @cached_property
     def with_raw_response(self) -> JulepWithRawResponse:
@@ -444,6 +458,18 @@ class AsyncJulep(AsyncAPIClient):
         return AsyncSecretsResource(self)
 
     @cached_property
+    def projects(self) -> AsyncProjectsResource:
+        from .resources.projects import AsyncProjectsResource
+
+        return AsyncProjectsResource(self)
+
+    @cached_property
+    def healthz(self) -> AsyncHealthzResource:
+        from .resources.healthz import AsyncHealthzResource
+
+        return AsyncHealthzResource(self)
+
+    @cached_property
     def with_raw_response(self) -> AsyncJulepWithRawResponse:
         return AsyncJulepWithRawResponse(self)
 
@@ -618,6 +644,18 @@ class JulepWithRawResponse:
 
         return SecretsResourceWithRawResponse(self._client.secrets)
 
+    @cached_property
+    def projects(self) -> projects.ProjectsResourceWithRawResponse:
+        from .resources.projects import ProjectsResourceWithRawResponse
+
+        return ProjectsResourceWithRawResponse(self._client.projects)
+
+    @cached_property
+    def healthz(self) -> healthz.HealthzResourceWithRawResponse:
+        from .resources.healthz import HealthzResourceWithRawResponse
+
+        return HealthzResourceWithRawResponse(self._client.healthz)
+
 
 class AsyncJulepWithRawResponse:
     _client: AsyncJulep
@@ -678,6 +716,18 @@ class AsyncJulepWithRawResponse:
         from .resources.secrets import AsyncSecretsResourceWithRawResponse
 
         return AsyncSecretsResourceWithRawResponse(self._client.secrets)
+
+    @cached_property
+    def projects(self) -> projects.AsyncProjectsResourceWithRawResponse:
+        from .resources.projects import AsyncProjectsResourceWithRawResponse
+
+        return AsyncProjectsResourceWithRawResponse(self._client.projects)
+
+    @cached_property
+    def healthz(self) -> healthz.AsyncHealthzResourceWithRawResponse:
+        from .resources.healthz import AsyncHealthzResourceWithRawResponse
+
+        return AsyncHealthzResourceWithRawResponse(self._client.healthz)
 
 
 class JulepWithStreamedResponse:
@@ -740,6 +790,18 @@ class JulepWithStreamedResponse:
 
         return SecretsResourceWithStreamingResponse(self._client.secrets)
 
+    @cached_property
+    def projects(self) -> projects.ProjectsResourceWithStreamingResponse:
+        from .resources.projects import ProjectsResourceWithStreamingResponse
+
+        return ProjectsResourceWithStreamingResponse(self._client.projects)
+
+    @cached_property
+    def healthz(self) -> healthz.HealthzResourceWithStreamingResponse:
+        from .resources.healthz import HealthzResourceWithStreamingResponse
+
+        return HealthzResourceWithStreamingResponse(self._client.healthz)
+
 
 class AsyncJulepWithStreamedResponse:
     _client: AsyncJulep
@@ -800,6 +862,18 @@ class AsyncJulepWithStreamedResponse:
         from .resources.secrets import AsyncSecretsResourceWithStreamingResponse
 
         return AsyncSecretsResourceWithStreamingResponse(self._client.secrets)
+
+    @cached_property
+    def projects(self) -> projects.AsyncProjectsResourceWithStreamingResponse:
+        from .resources.projects import AsyncProjectsResourceWithStreamingResponse
+
+        return AsyncProjectsResourceWithStreamingResponse(self._client.projects)
+
+    @cached_property
+    def healthz(self) -> healthz.AsyncHealthzResourceWithStreamingResponse:
+        from .resources.healthz import AsyncHealthzResourceWithStreamingResponse
+
+        return AsyncHealthzResourceWithStreamingResponse(self._client.healthz)
 
 
 Client = Julep

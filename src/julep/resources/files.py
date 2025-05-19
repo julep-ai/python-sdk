@@ -19,6 +19,7 @@ from .._response import (
 )
 from ..types.file import File
 from .._base_client import make_request_options
+from ..types.file_list_response import FileListResponse
 from ..types.shared.resource_deleted import ResourceDeleted
 
 __all__ = ["FilesResource", "AsyncFilesResource"]
@@ -87,6 +88,25 @@ class FilesResource(SyncAPIResource):
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
             cast_to=File,
+        )
+
+    def list(
+        self,
+        *,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> FileListResponse:
+        """List Files"""
+        return self._get(
+            "/files",
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=FileListResponse,
         )
 
     def delete(
@@ -221,6 +241,25 @@ class AsyncFilesResource(AsyncAPIResource):
             cast_to=File,
         )
 
+    async def list(
+        self,
+        *,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> FileListResponse:
+        """List Files"""
+        return await self._get(
+            "/files",
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=FileListResponse,
+        )
+
     async def delete(
         self,
         file_id: str,
@@ -295,6 +334,9 @@ class FilesResourceWithRawResponse:
         self.create = to_raw_response_wrapper(
             files.create,
         )
+        self.list = to_raw_response_wrapper(
+            files.list,
+        )
         self.delete = to_raw_response_wrapper(
             files.delete,
         )
@@ -309,6 +351,9 @@ class AsyncFilesResourceWithRawResponse:
 
         self.create = async_to_raw_response_wrapper(
             files.create,
+        )
+        self.list = async_to_raw_response_wrapper(
+            files.list,
         )
         self.delete = async_to_raw_response_wrapper(
             files.delete,
@@ -325,6 +370,9 @@ class FilesResourceWithStreamingResponse:
         self.create = to_streamed_response_wrapper(
             files.create,
         )
+        self.list = to_streamed_response_wrapper(
+            files.list,
+        )
         self.delete = to_streamed_response_wrapper(
             files.delete,
         )
@@ -339,6 +387,9 @@ class AsyncFilesResourceWithStreamingResponse:
 
         self.create = async_to_streamed_response_wrapper(
             files.create,
+        )
+        self.list = async_to_streamed_response_wrapper(
+            files.list,
         )
         self.delete = async_to_streamed_response_wrapper(
             files.delete,

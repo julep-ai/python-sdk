@@ -9,7 +9,7 @@ from julep.types import ResourceDeleted
 Types:
 
 ```python
-from julep.types import Agent
+from julep.types import Agent, AgentListModelsResponse
 ```
 
 Methods:
@@ -20,6 +20,7 @@ Methods:
 - <code title="delete /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">delete</a>(agent_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
 - <code title="post /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">create_or_update</a>(agent_id, \*\*<a href="src/julep/types/agent_create_or_update_params.py">params</a>) -> <a href="./src/julep/types/agent.py">Agent</a></code>
 - <code title="get /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">get</a>(agent_id) -> <a href="./src/julep/types/agent.py">Agent</a></code>
+- <code title="get /agents/models">client.agents.<a href="./src/julep/resources/agents/agents.py">list_models</a>() -> <a href="./src/julep/types/agent_list_models_response.py">AgentListModelsResponse</a></code>
 - <code title="put /agents/{agent_id}">client.agents.<a href="./src/julep/resources/agents/agents.py">reset</a>(agent_id, \*\*<a href="src/julep/types/agent_reset_params.py">params</a>) -> <a href="./src/julep/types/agent.py">Agent</a></code>
 
 ## Tools
@@ -48,7 +49,7 @@ Methods:
 Types:
 
 ```python
-from julep.types.agents import DocSearchResponse
+from julep.types.agents import DocBulkDeleteResponse, DocSearchResponse
 ```
 
 Methods:
@@ -56,6 +57,7 @@ Methods:
 - <code title="post /agents/{agent_id}/docs">client.agents.docs.<a href="./src/julep/resources/agents/docs.py">create</a>(agent_id, \*\*<a href="src/julep/types/agents/doc_create_params.py">params</a>) -> <a href="./src/julep/types/doc.py">Doc</a></code>
 - <code title="get /agents/{agent_id}/docs">client.agents.docs.<a href="./src/julep/resources/agents/docs.py">list</a>(agent_id, \*\*<a href="src/julep/types/agents/doc_list_params.py">params</a>) -> <a href="./src/julep/types/doc.py">SyncOffsetPagination[Doc]</a></code>
 - <code title="delete /agents/{agent_id}/docs/{doc_id}">client.agents.docs.<a href="./src/julep/resources/agents/docs.py">delete</a>(doc_id, \*, agent_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
+- <code title="delete /agents/{agent_id}/docs">client.agents.docs.<a href="./src/julep/resources/agents/docs.py">bulk_delete</a>(agent_id, \*\*<a href="src/julep/types/agents/doc_bulk_delete_params.py">params</a>) -> <a href="./src/julep/types/agents/doc_bulk_delete_response.py">DocBulkDeleteResponse</a></code>
 - <code title="post /agents/{agent_id}/search">client.agents.docs.<a href="./src/julep/resources/agents/docs.py">search</a>(agent_id, \*\*<a href="src/julep/types/agents/doc_search_params.py">params</a>) -> <a href="./src/julep/types/agents/doc_search_response.py">DocSearchResponse</a></code>
 
 # Files
@@ -63,12 +65,13 @@ Methods:
 Types:
 
 ```python
-from julep.types import File
+from julep.types import File, FileListResponse
 ```
 
 Methods:
 
 - <code title="post /files">client.files.<a href="./src/julep/resources/files.py">create</a>(\*\*<a href="src/julep/types/file_create_params.py">params</a>) -> <a href="./src/julep/types/file.py">File</a></code>
+- <code title="get /files">client.files.<a href="./src/julep/resources/files.py">list</a>() -> <a href="./src/julep/types/file_list_response.py">FileListResponse</a></code>
 - <code title="delete /files/{file_id}">client.files.<a href="./src/julep/resources/files.py">delete</a>(file_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
 - <code title="get /files/{file_id}">client.files.<a href="./src/julep/resources/files.py">get</a>(file_id) -> <a href="./src/julep/types/file.py">File</a></code>
 
@@ -124,7 +127,7 @@ Methods:
 Types:
 
 ```python
-from julep.types.users import DocSearchResponse
+from julep.types.users import DocBulkDeleteResponse, DocSearchResponse
 ```
 
 Methods:
@@ -132,6 +135,7 @@ Methods:
 - <code title="post /users/{user_id}/docs">client.users.docs.<a href="./src/julep/resources/users/docs.py">create</a>(user_id, \*\*<a href="src/julep/types/users/doc_create_params.py">params</a>) -> <a href="./src/julep/types/doc.py">Doc</a></code>
 - <code title="get /users/{user_id}/docs">client.users.docs.<a href="./src/julep/resources/users/docs.py">list</a>(user_id, \*\*<a href="src/julep/types/users/doc_list_params.py">params</a>) -> <a href="./src/julep/types/doc.py">SyncOffsetPagination[Doc]</a></code>
 - <code title="delete /users/{user_id}/docs/{doc_id}">client.users.docs.<a href="./src/julep/resources/users/docs.py">delete</a>(doc_id, \*, user_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
+- <code title="delete /users/{user_id}/docs">client.users.docs.<a href="./src/julep/resources/users/docs.py">bulk_delete</a>(user_id, \*\*<a href="src/julep/types/users/doc_bulk_delete_params.py">params</a>) -> <a href="./src/julep/types/users/doc_bulk_delete_response.py">DocBulkDeleteResponse</a></code>
 - <code title="post /users/{user_id}/search">client.users.docs.<a href="./src/julep/resources/users/docs.py">search</a>(user_id, \*\*<a href="src/julep/types/users/doc_search_params.py">params</a>) -> <a href="./src/julep/types/users/doc_search_response.py">DocSearchResponse</a></code>
 
 # Jobs
@@ -199,6 +203,7 @@ from julep.types.executions import TransitionStreamResponse
 
 Methods:
 
+- <code title="get /executions/{execution_id}/transitions/{transition_id}">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">retrieve</a>(transition_id, \*, execution_id) -> <a href="./src/julep/types/transition.py">Transition</a></code>
 - <code title="get /executions/{execution_id}/transitions">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">list</a>(execution_id, \*\*<a href="src/julep/types/executions/transition_list_params.py">params</a>) -> <a href="./src/julep/types/transition.py">SyncOffsetPagination[Transition]</a></code>
 - <code title="get /executions/{execution_id}/transitions.stream">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">stream</a>(execution_id, \*\*<a href="src/julep/types/executions/transition_stream_params.py">params</a>) -> <a href="./src/julep/types/executions/transition_stream_response.py">object</a></code>
 
@@ -216,3 +221,28 @@ Methods:
 - <code title="put /secrets/{secret_id}">client.secrets.<a href="./src/julep/resources/secrets.py">update</a>(secret_id, \*\*<a href="src/julep/types/secret_update_params.py">params</a>) -> <a href="./src/julep/types/secret.py">Secret</a></code>
 - <code title="get /secrets">client.secrets.<a href="./src/julep/resources/secrets.py">list</a>(\*\*<a href="src/julep/types/secret_list_params.py">params</a>) -> <a href="./src/julep/types/secret_list_response.py">SecretListResponse</a></code>
 - <code title="delete /secrets/{secret_id}">client.secrets.<a href="./src/julep/resources/secrets.py">delete</a>(secret_id) -> <a href="./src/julep/types/shared/resource_deleted.py">ResourceDeleted</a></code>
+
+# Projects
+
+Types:
+
+```python
+from julep.types import ProjectCreateResponse, ProjectListResponse
+```
+
+Methods:
+
+- <code title="post /projects">client.projects.<a href="./src/julep/resources/projects.py">create</a>(\*\*<a href="src/julep/types/project_create_params.py">params</a>) -> <a href="./src/julep/types/project_create_response.py">ProjectCreateResponse</a></code>
+- <code title="get /projects">client.projects.<a href="./src/julep/resources/projects.py">list</a>(\*\*<a href="src/julep/types/project_list_params.py">params</a>) -> <a href="./src/julep/types/project_list_response.py">SyncOffsetPagination[ProjectListResponse]</a></code>
+
+# Healthz
+
+Types:
+
+```python
+from julep.types import HealthzCheckResponse
+```
+
+Methods:
+
+- <code title="get /healthz">client.healthz.<a href="./src/julep/resources/healthz.py">check</a>() -> <a href="./src/julep/types/healthz_check_response.py">object</a></code>
