@@ -48,6 +48,14 @@ from .agents import (
     AgentsResourceWithStreamingResponse,
     AsyncAgentsResourceWithStreamingResponse,
 )
+from .healthz import (
+    HealthzResource,
+    AsyncHealthzResource,
+    HealthzResourceWithRawResponse,
+    AsyncHealthzResourceWithRawResponse,
+    HealthzResourceWithStreamingResponse,
+    AsyncHealthzResourceWithStreamingResponse,
+)
 from .secrets import (
     SecretsResource,
     AsyncSecretsResource,
@@ -55,6 +63,14 @@ from .secrets import (
     AsyncSecretsResourceWithRawResponse,
     SecretsResourceWithStreamingResponse,
     AsyncSecretsResourceWithStreamingResponse,
+)
+from .projects import (
+    ProjectsResource,
+    AsyncProjectsResource,
+    ProjectsResourceWithRawResponse,
+    AsyncProjectsResourceWithRawResponse,
+    ProjectsResourceWithStreamingResponse,
+    AsyncProjectsResourceWithStreamingResponse,
 )
 from .sessions import (
     SessionsResource,
@@ -128,4 +144,16 @@ __all__ = [
     "AsyncSecretsResourceWithRawResponse",
     "SecretsResourceWithStreamingResponse",
     "AsyncSecretsResourceWithStreamingResponse",
+    "ProjectsResource",
+    "AsyncProjectsResource",
+    "ProjectsResourceWithRawResponse",
+    "AsyncProjectsResourceWithRawResponse",
+    "ProjectsResourceWithStreamingResponse",
+    "AsyncProjectsResourceWithStreamingResponse",
+    "HealthzResource",
+    "AsyncHealthzResource",
+    "HealthzResourceWithRawResponse",
+    "AsyncHealthzResourceWithRawResponse",
+    "HealthzResourceWithStreamingResponse",
+    "AsyncHealthzResourceWithStreamingResponse",
 ]

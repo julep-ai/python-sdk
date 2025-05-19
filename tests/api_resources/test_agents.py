@@ -10,6 +10,7 @@ import pytest
 from julep import Julep, AsyncJulep
 from julep.types import (
     Agent,
+    AgentListModelsResponse,
 )
 from tests.utils import assert_matches_type
 from julep.pagination import SyncOffsetPagination, AsyncOffsetPagination
@@ -290,6 +291,38 @@ class TestAgents:
             client.agents.with_raw_response.get(
                 "",
             )
+
+    @parametrize
+    def test_method_list_models(self, client: Julep) -> None:
+        agent = client.agents.list_models()
+        assert_matches_type(AgentListModelsResponse, agent, path=["response"])
+
+    @parametrize
+    def test_method_list_models_with_all_params(self, client: Julep) -> None:
+        agent = client.agents.list_models(
+            x_custom_api_key="x-custom-api-key",
+        )
+        assert_matches_type(AgentListModelsResponse, agent, path=["response"])
+
+    @parametrize
+    def test_raw_response_list_models(self, client: Julep) -> None:
+        response = client.agents.with_raw_response.list_models()
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        agent = response.parse()
+        assert_matches_type(AgentListModelsResponse, agent, path=["response"])
+
+    @parametrize
+    def test_streaming_response_list_models(self, client: Julep) -> None:
+        with client.agents.with_streaming_response.list_models() as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            agent = response.parse()
+            assert_matches_type(AgentListModelsResponse, agent, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
 
     @parametrize
     def test_method_reset(self, client: Julep) -> None:
@@ -622,6 +655,38 @@ class TestAsyncAgents:
             await async_client.agents.with_raw_response.get(
                 "",
             )
+
+    @parametrize
+    async def test_method_list_models(self, async_client: AsyncJulep) -> None:
+        agent = await async_client.agents.list_models()
+        assert_matches_type(AgentListModelsResponse, agent, path=["response"])
+
+    @parametrize
+    async def test_method_list_models_with_all_params(self, async_client: AsyncJulep) -> None:
+        agent = await async_client.agents.list_models(
+            x_custom_api_key="x-custom-api-key",
+        )
+        assert_matches_type(AgentListModelsResponse, agent, path=["response"])
+
+    @parametrize
+    async def test_raw_response_list_models(self, async_client: AsyncJulep) -> None:
+        response = await async_client.agents.with_raw_response.list_models()
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        agent = await response.parse()
+        assert_matches_type(AgentListModelsResponse, agent, path=["response"])
+
+    @parametrize
+    async def test_streaming_response_list_models(self, async_client: AsyncJulep) -> None:
+        async with async_client.agents.with_streaming_response.list_models() as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            agent = await response.parse()
+            assert_matches_type(AgentListModelsResponse, agent, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
 
     @parametrize
     async def test_method_reset(self, async_client: AsyncJulep) -> None:
