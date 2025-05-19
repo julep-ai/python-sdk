@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Union, Iterable, Optional
+from typing import Dict, List, Type, Union, Iterable, Optional, cast
 from typing_extensions import Literal, overload
 
 import httpx
@@ -17,12 +17,14 @@ from ..._response import (
     async_to_raw_response_wrapper,
     async_to_streamed_response_wrapper,
 )
+from ..._wrappers import ItemsWrapper
 from ...types.doc import Doc
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
-from ...types.users import doc_list_params, doc_create_params, doc_search_params
+from ...types.users import doc_list_params, doc_create_params, doc_search_params, doc_bulk_delete_params
 from ..._base_client import AsyncPaginator, make_request_options
 from ...types.shared.resource_deleted import ResourceDeleted
 from ...types.users.doc_search_response import DocSearchResponse
+from ...types.users.doc_bulk_delete_response import DocBulkDeleteResponse
 
 __all__ = ["DocsResource", "AsyncDocsResource"]
 
@@ -191,6 +193,52 @@ class DocsResource(SyncAPIResource):
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
             cast_to=ResourceDeleted,
+        )
+
+    def bulk_delete(
+        self,
+        user_id: str,
+        *,
+        delete_all: bool | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> DocBulkDeleteResponse:
+        """
+        Bulk delete documents owned by a user based on metadata filter
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        if not user_id:
+            raise ValueError(f"Expected a non-empty value for `user_id` but received {user_id!r}")
+        return self._delete(
+            f"/users/{user_id}/docs",
+            body=maybe_transform(
+                {
+                    "delete_all": delete_all,
+                    "metadata_filter": metadata_filter,
+                },
+                doc_bulk_delete_params.DocBulkDeleteParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers,
+                extra_query=extra_query,
+                extra_body=extra_body,
+                timeout=timeout,
+                post_parser=ItemsWrapper[DocBulkDeleteResponse]._unwrapper,
+            ),
+            cast_to=cast(Type[DocBulkDeleteResponse], ItemsWrapper[DocBulkDeleteResponse]),
         )
 
     @overload
@@ -537,6 +585,52 @@ class AsyncDocsResource(AsyncAPIResource):
             cast_to=ResourceDeleted,
         )
 
+    async def bulk_delete(
+        self,
+        user_id: str,
+        *,
+        delete_all: bool | NotGiven = NOT_GIVEN,
+        metadata_filter: object | NotGiven = NOT_GIVEN,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> DocBulkDeleteResponse:
+        """
+        Bulk delete documents owned by a user based on metadata filter
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        if not user_id:
+            raise ValueError(f"Expected a non-empty value for `user_id` but received {user_id!r}")
+        return await self._delete(
+            f"/users/{user_id}/docs",
+            body=await async_maybe_transform(
+                {
+                    "delete_all": delete_all,
+                    "metadata_filter": metadata_filter,
+                },
+                doc_bulk_delete_params.DocBulkDeleteParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers,
+                extra_query=extra_query,
+                extra_body=extra_body,
+                timeout=timeout,
+                post_parser=ItemsWrapper[DocBulkDeleteResponse]._unwrapper,
+            ),
+            cast_to=cast(Type[DocBulkDeleteResponse], ItemsWrapper[DocBulkDeleteResponse]),
+        )
+
     @overload
     async def search(
         self,
@@ -728,6 +822,9 @@ class DocsResourceWithRawResponse:
         self.delete = to_raw_response_wrapper(
             docs.delete,
         )
+        self.bulk_delete = to_raw_response_wrapper(
+            docs.bulk_delete,
+        )
         self.search = to_raw_response_wrapper(
             docs.search,
         )
@@ -745,6 +842,9 @@ class AsyncDocsResourceWithRawResponse:
         )
         self.delete = async_to_raw_response_wrapper(
             docs.delete,
+        )
+        self.bulk_delete = async_to_raw_response_wrapper(
+            docs.bulk_delete,
         )
         self.search = async_to_raw_response_wrapper(
             docs.search,
@@ -764,6 +864,9 @@ class DocsResourceWithStreamingResponse:
         self.delete = to_streamed_response_wrapper(
             docs.delete,
         )
+        self.bulk_delete = to_streamed_response_wrapper(
+            docs.bulk_delete,
+        )
         self.search = to_streamed_response_wrapper(
             docs.search,
         )
@@ -781,6 +884,9 @@ class AsyncDocsResourceWithStreamingResponse:
         )
         self.delete = async_to_streamed_response_wrapper(
             docs.delete,
+        )
+        self.bulk_delete = async_to_streamed_response_wrapper(
+            docs.bulk_delete,
         )
         self.search = async_to_streamed_response_wrapper(
             docs.search,

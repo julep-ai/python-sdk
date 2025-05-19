@@ -45,6 +45,42 @@ class TransitionsResource(SyncAPIResource):
         """
         return TransitionsResourceWithStreamingResponse(self)
 
+    def retrieve(
+        self,
+        transition_id: str,
+        *,
+        execution_id: str,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> Transition:
+        """
+        Get Execution Transition
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        if not execution_id:
+            raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
+        if not transition_id:
+            raise ValueError(f"Expected a non-empty value for `transition_id` but received {transition_id!r}")
+        return self._get(
+            f"/executions/{execution_id}/transitions/{transition_id}",
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=Transition,
+        )
+
     def list(
         self,
         execution_id: str,
@@ -158,6 +194,42 @@ class AsyncTransitionsResource(AsyncAPIResource):
         """
         return AsyncTransitionsResourceWithStreamingResponse(self)
 
+    async def retrieve(
+        self,
+        transition_id: str,
+        *,
+        execution_id: str,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+    ) -> Transition:
+        """
+        Get Execution Transition
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        if not execution_id:
+            raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
+        if not transition_id:
+            raise ValueError(f"Expected a non-empty value for `transition_id` but received {transition_id!r}")
+        return await self._get(
+            f"/executions/{execution_id}/transitions/{transition_id}",
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=Transition,
+        )
+
     def list(
         self,
         execution_id: str,
@@ -255,6 +327,9 @@ class TransitionsResourceWithRawResponse:
     def __init__(self, transitions: TransitionsResource) -> None:
         self._transitions = transitions
 
+        self.retrieve = to_raw_response_wrapper(
+            transitions.retrieve,
+        )
         self.list = to_raw_response_wrapper(
             transitions.list,
         )
@@ -267,6 +342,9 @@ class AsyncTransitionsResourceWithRawResponse:
     def __init__(self, transitions: AsyncTransitionsResource) -> None:
         self._transitions = transitions
 
+        self.retrieve = async_to_raw_response_wrapper(
+            transitions.retrieve,
+        )
         self.list = async_to_raw_response_wrapper(
             transitions.list,
         )
@@ -279,6 +357,9 @@ class TransitionsResourceWithStreamingResponse:
     def __init__(self, transitions: TransitionsResource) -> None:
         self._transitions = transitions
 
+        self.retrieve = to_streamed_response_wrapper(
+            transitions.retrieve,
+        )
         self.list = to_streamed_response_wrapper(
             transitions.list,
         )
@@ -291,6 +372,9 @@ class AsyncTransitionsResourceWithStreamingResponse:
     def __init__(self, transitions: AsyncTransitionsResource) -> None:
         self._transitions = transitions
 
+        self.retrieve = async_to_streamed_response_wrapper(
+            transitions.retrieve,
+        )
         self.list = async_to_streamed_response_wrapper(
             transitions.list,
         )
