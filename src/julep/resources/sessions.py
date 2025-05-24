@@ -298,8 +298,7 @@ class SessionsResource(SyncAPIResource):
         The background tasks to run. x_custom_api_key (Optional[str]): The custom API
         key.
 
-        Returns: ChatResponse or StreamingResponse: The chat response or streaming
-        response.
+        Returns: ChatResponse: The chat response.
 
         Args:
           extra_headers: Send extra headers
@@ -887,8 +886,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         The background tasks to run. x_custom_api_key (Optional[str]): The custom API
         key.
 
-        Returns: ChatResponse or StreamingResponse: The chat response or streaming
-        response.
+        Returns: ChatResponse: The chat response.
 
         Args:
           extra_headers: Send extra headers
