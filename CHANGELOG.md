@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.2.0 (2025-05-24)
+
+Full Changelog: [v2.1.0...v2.2.0](https://github.com/julep-ai/python-sdk/compare/v2.1.0...v2.2.0)
+
+### Features
+
+* **api:** api update ([ff9bca7](https://github.com/julep-ai/python-sdk/commit/ff9bca71b8373ceb0e2d65148edd5076ac0fd7e2))
+
+
+### Chores
+
+* **docs:** grammar improvements ([dfa258d](https://github.com/julep-ai/python-sdk/commit/dfa258d82cff627ed3054315a0c07875aedc287f))
+
 ## 2.1.0 (2025-05-19)
 
 Full Changelog: [v2.0.0...v2.1.0](https://github.com/julep-ai/python-sdk/compare/v2.0.0...v2.1.0)
