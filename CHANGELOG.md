@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.4.0 (2025-05-26)
+
+Full Changelog: [v2.3.0...v2.4.0](https://github.com/julep-ai/python-sdk/compare/v2.3.0...v2.4.0)
+
+### Features
+
+* **api:** api update ([c2648d4](https://github.com/julep-ai/python-sdk/commit/c2648d460fd72e1cca5c4017ed20aca22827ecaa))
+
 ## 2.3.0 (2025-05-24)
 
 Full Changelog: [v2.2.0...v2.3.0](https://github.com/julep-ai/python-sdk/compare/v2.2.0...v2.3.0)
