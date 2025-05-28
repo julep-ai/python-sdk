@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.5.1 (2025-05-28)
+
+Full Changelog: [v2.5.0...v2.5.1](https://github.com/julep-ai/python-sdk/compare/v2.5.0...v2.5.1)
+
+### Bug Fixes
+
+* **docs/api:** remove references to nonexistent types ([7e678b4](https://github.com/julep-ai/python-sdk/commit/7e678b40ceca3bda2555fbc19b59808a6be8d7bf))
+
 ## 2.5.0 (2025-05-26)
 
 Full Changelog: [v2.4.0...v2.5.0](https://github.com/julep-ai/python-sdk/compare/v2.4.0...v2.5.0)
