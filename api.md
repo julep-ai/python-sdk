@@ -183,29 +183,23 @@ Methods:
 Types:
 
 ```python
-from julep.types import Execution, Transition, ExecutionChangeStatusResponse
+from julep.types import Execution, Transition
 ```
 
 Methods:
 
 - <code title="post /tasks/{task_id}/executions">client.executions.<a href="./src/julep/resources/executions/executions.py">create</a>(task_id, \*\*<a href="src/julep/types/execution_create_params.py">params</a>) -> <a href="./src/julep/types/execution.py">Execution</a></code>
 - <code title="get /tasks/{task_id}/executions">client.executions.<a href="./src/julep/resources/executions/executions.py">list</a>(task_id, \*\*<a href="src/julep/types/execution_list_params.py">params</a>) -> <a href="./src/julep/types/execution.py">SyncOffsetPagination[Execution]</a></code>
-- <code title="put /executions/{execution_id}">client.executions.<a href="./src/julep/resources/executions/executions.py">change_status</a>(execution_id, \*\*<a href="src/julep/types/execution_change_status_params.py">params</a>) -> <a href="./src/julep/types/execution_change_status_response.py">object</a></code>
+- <code title="put /executions/{execution_id}">client.executions.<a href="./src/julep/resources/executions/executions.py">change_status</a>(execution_id, \*\*<a href="src/julep/types/execution_change_status_params.py">params</a>) -> object</code>
 - <code title="get /executions/{execution_id}">client.executions.<a href="./src/julep/resources/executions/executions.py">get</a>(execution_id) -> <a href="./src/julep/types/execution.py">Execution</a></code>
 
 ## Transitions
-
-Types:
-
-```python
-from julep.types.executions import TransitionStreamResponse
-```
 
 Methods:
 
 - <code title="get /executions/{execution_id}/transitions/{transition_id}">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">retrieve</a>(transition_id, \*, execution_id) -> <a href="./src/julep/types/transition.py">Transition</a></code>
 - <code title="get /executions/{execution_id}/transitions">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">list</a>(execution_id, \*\*<a href="src/julep/types/executions/transition_list_params.py">params</a>) -> <a href="./src/julep/types/transition.py">SyncOffsetPagination[Transition]</a></code>
-- <code title="get /executions/{execution_id}/transitions.stream">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">stream</a>(execution_id, \*\*<a href="src/julep/types/executions/transition_stream_params.py">params</a>) -> <a href="./src/julep/types/executions/transition_stream_response.py">object</a></code>
+- <code title="get /executions/{execution_id}/transitions.stream">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">stream</a>(execution_id, \*\*<a href="src/julep/types/executions/transition_stream_params.py">params</a>) -> object</code>
 
 # Secrets
 
@@ -237,12 +231,6 @@ Methods:
 
 # Healthz
 
-Types:
-
-```python
-from julep.types import HealthzCheckResponse
-```
-
 Methods:
 
-- <code title="get /healthz">client.healthz.<a href="./src/julep/resources/healthz.py">check</a>() -> <a href="./src/julep/types/healthz_check_response.py">object</a></code>
+- <code title="get /healthz">client.healthz.<a href="./src/julep/resources/healthz.py">check</a>() -> object</code>
