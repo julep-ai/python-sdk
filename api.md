@@ -201,6 +201,13 @@ Methods:
 - <code title="get /executions/{execution_id}/transitions">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">list</a>(execution_id, \*\*<a href="src/julep/types/executions/transition_list_params.py">params</a>) -> <a href="./src/julep/types/transition.py">SyncOffsetPagination[Transition]</a></code>
 - <code title="get /executions/{execution_id}/transitions.stream">client.executions.transitions.<a href="./src/julep/resources/executions/transitions.py">stream</a>(execution_id, \*\*<a href="src/julep/types/executions/transition_stream_params.py">params</a>) -> object</code>
 
+## Status
+
+Methods:
+
+- <code title="get /executions/{execution_id}">client.executions.status.<a href="./src/julep/resources/executions/status.py">get</a>(execution_id) -> <a href="./src/julep/types/execution.py">Execution</a></code>
+- <code title="get /executions/{execution_id}/status.stream">client.executions.status.<a href="./src/julep/resources/executions/status.py">stream</a>(execution_id) -> None</code>
+
 # Secrets
 
 Types:

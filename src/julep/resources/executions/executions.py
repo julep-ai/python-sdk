@@ -7,6 +7,14 @@ from typing_extensions import Literal, overload
 
 import httpx
 
+from .status import (
+    StatusResource,
+    AsyncStatusResource,
+    StatusResourceWithRawResponse,
+    AsyncStatusResourceWithRawResponse,
+    StatusResourceWithStreamingResponse,
+    AsyncStatusResourceWithStreamingResponse,
+)
 from ...types import execution_list_params, execution_create_params, execution_change_status_params
 from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven
 from ..._utils import maybe_transform, async_maybe_transform
@@ -37,6 +45,10 @@ class ExecutionsResource(SyncAPIResource):
     @cached_property
     def transitions(self) -> TransitionsResource:
         return TransitionsResource(self._client)
+
+    @cached_property
+    def status(self) -> StatusResource:
+        return StatusResource(self._client)
 
     @cached_property
     def with_raw_response(self) -> ExecutionsResourceWithRawResponse:
@@ -281,6 +293,10 @@ class AsyncExecutionsResource(AsyncAPIResource):
     @cached_property
     def transitions(self) -> AsyncTransitionsResource:
         return AsyncTransitionsResource(self._client)
+
+    @cached_property
+    def status(self) -> AsyncStatusResource:
+        return AsyncStatusResource(self._client)
 
     @cached_property
     def with_raw_response(self) -> AsyncExecutionsResourceWithRawResponse:
@@ -542,6 +558,10 @@ class ExecutionsResourceWithRawResponse:
     def transitions(self) -> TransitionsResourceWithRawResponse:
         return TransitionsResourceWithRawResponse(self._executions.transitions)
 
+    @cached_property
+    def status(self) -> StatusResourceWithRawResponse:
+        return StatusResourceWithRawResponse(self._executions.status)
+
 
 class AsyncExecutionsResourceWithRawResponse:
     def __init__(self, executions: AsyncExecutionsResource) -> None:
@@ -563,6 +583,10 @@ class AsyncExecutionsResourceWithRawResponse:
     @cached_property
     def transitions(self) -> AsyncTransitionsResourceWithRawResponse:
         return AsyncTransitionsResourceWithRawResponse(self._executions.transitions)
+
+    @cached_property
+    def status(self) -> AsyncStatusResourceWithRawResponse:
+        return AsyncStatusResourceWithRawResponse(self._executions.status)
 
 
 class ExecutionsResourceWithStreamingResponse:
@@ -586,6 +610,10 @@ class ExecutionsResourceWithStreamingResponse:
     def transitions(self) -> TransitionsResourceWithStreamingResponse:
         return TransitionsResourceWithStreamingResponse(self._executions.transitions)
 
+    @cached_property
+    def status(self) -> StatusResourceWithStreamingResponse:
+        return StatusResourceWithStreamingResponse(self._executions.status)
+
 
 class AsyncExecutionsResourceWithStreamingResponse:
     def __init__(self, executions: AsyncExecutionsResource) -> None:
@@ -607,3 +635,7 @@ class AsyncExecutionsResourceWithStreamingResponse:
     @cached_property
     def transitions(self) -> AsyncTransitionsResourceWithStreamingResponse:
         return AsyncTransitionsResourceWithStreamingResponse(self._executions.transitions)
+
+    @cached_property
+    def status(self) -> AsyncStatusResourceWithStreamingResponse:
+        return AsyncStatusResourceWithStreamingResponse(self._executions.status)
