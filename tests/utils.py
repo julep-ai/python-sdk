@@ -104,10 +104,10 @@ def assert_matches_type(
     elif is_stream_class_type(type_):
         # Handle Stream[T] and AsyncStream[T] types
         assert isinstance(value, (Stream, AsyncStream))
-        
+
         # Verify the chunk type matches if we can extract it
         try:
-            expected_chunk_type = extract_stream_chunk_type(type_)
+            extract_stream_chunk_type(type_)
             # We can't easily check the actual chunk types without consuming the stream,
             # so we just verify the stream instance is correct
         except Exception:

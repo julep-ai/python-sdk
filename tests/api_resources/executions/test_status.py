@@ -69,7 +69,7 @@ class TestStatus:
             "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
-        assert response.is_closed is True
+        assert response.is_closed is False
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         status = response.parse()
         assert_matches_type(Stream[Execution], status, path=["response"])
@@ -149,7 +149,7 @@ class TestAsyncStatus:
             "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
 
-        assert response.is_closed is True
+        assert response.is_closed is False
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         status = await response.parse()
         assert_matches_type(AsyncStream[Execution], status, path=["response"])
