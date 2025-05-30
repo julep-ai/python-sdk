@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.9.0 (2025-05-30)
+
+Full Changelog: [v2.8.0...v2.9.0](https://github.com/julep-ai/python-sdk/compare/v2.8.0...v2.9.0)
+
+### Features
+
+* execution status streaming ([b7d8477](https://github.com/julep-ai/python-sdk/commit/b7d84771a88e915c4b38fedbd994a09b6cf3ec03))
+
+
+### Bug Fixes
+
+* **api:** update execution status streaming to use correct types and headers ([23c42c5](https://github.com/julep-ai/python-sdk/commit/23c42c5299b33db5555367de6680e1f6482ace25))
+* **tests:** assert execution status streaming returns correct type for responses ([803a7eb](https://github.com/julep-ai/python-sdk/commit/803a7eb123e1d0e132860c0dc5fc48ba7f32350c))
+* **tests:** correct response.is_closed assertion in TestStatus and TestAsyncStatus ([1c77192](https://github.com/julep-ai/python-sdk/commit/1c771927165c43b146352db20e9ca073f8d70cf9))
+* **tests:** enhance type assertion for Stream and AsyncStream in assert_matches_type ([e6336b4](https://github.com/julep-ai/python-sdk/commit/e6336b4130f72605a807d2c50945f3c4762808e2))
+* **tests:** lint fix ([be2cb66](https://github.com/julep-ai/python-sdk/commit/be2cb663629e0f4aafcb174e02cde87132a910d8))
+
 ## 2.8.0 (2025-05-30)
 
 Full Changelog: [v2.7.0...v2.8.0](https://github.com/julep-ai/python-sdk/compare/v2.7.0...v2.8.0)
