@@ -9,6 +9,7 @@ import pytest
 
 from julep import Julep, AsyncJulep
 from julep.types import Execution
+from julep._streaming import Stream, AsyncStream
 from tests.utils import assert_matches_type
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
@@ -60,7 +61,7 @@ class TestStatus:
         status = client.executions.status.stream(
             "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert status is None
+        assert_matches_type(Stream[Execution], status, path=["response"])
 
     @parametrize
     def test_raw_response_stream(self, client: Julep) -> None:
@@ -71,7 +72,7 @@ class TestStatus:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         status = response.parse()
-        assert status is None
+        assert_matches_type(Stream[Execution], status, path=["response"])
 
     @parametrize
     def test_streaming_response_stream(self, client: Julep) -> None:
@@ -82,7 +83,7 @@ class TestStatus:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             status = response.parse()
-            assert status is None
+            assert_matches_type(Stream[Execution], status, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -140,7 +141,7 @@ class TestAsyncStatus:
         status = await async_client.executions.status.stream(
             "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert status is None
+        assert_matches_type(AsyncStream[Execution], status, path=["response"])
 
     @parametrize
     async def test_raw_response_stream(self, async_client: AsyncJulep) -> None:
@@ -151,7 +152,7 @@ class TestAsyncStatus:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         status = await response.parse()
-        assert status is None
+        assert_matches_type(AsyncStream[Execution], status, path=["response"])
 
     @parametrize
     async def test_streaming_response_stream(self, async_client: AsyncJulep) -> None:
@@ -162,7 +163,7 @@ class TestAsyncStatus:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             status = await response.parse()
-            assert status is None
+            assert_matches_type(AsyncStream[Execution], status, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
