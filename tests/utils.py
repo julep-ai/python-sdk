@@ -20,6 +20,7 @@ from julep._utils import (
 )
 from julep._compat import PYDANTIC_V2, field_outer_type, get_model_fields
 from julep._models import BaseModel
+from julep._streaming import Stream, AsyncStream, is_stream_class_type, extract_stream_chunk_type
 
 BaseModelT = TypeVar("BaseModelT", bound=BaseModel)
 
@@ -100,6 +101,18 @@ def assert_matches_type(
         for key, item in value.items():
             assert_matches_type(key_type, key, path=[*path, "<dict key>"])
             assert_matches_type(items_type, item, path=[*path, "<dict item>"])
+    elif is_stream_class_type(type_):
+        # Handle Stream[T] and AsyncStream[T] types
+        assert isinstance(value, (Stream, AsyncStream))
+
+        # Verify the chunk type matches if we can extract it
+        try:
+            extract_stream_chunk_type(type_)
+            # We can't easily check the actual chunk types without consuming the stream,
+            # so we just verify the stream instance is correct
+        except Exception:
+            # If we can't extract the chunk type, just verify it's a stream instance
+            pass
     elif is_union_type(type_):
         variants = get_args(type_)
 
