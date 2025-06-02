@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any, Dict, List, Iterable, Optional, cast
+from typing import Any, Dict, List, Iterable, Optional, cast, Union
 from typing_extensions import Literal
 
 import httpx
@@ -26,11 +26,12 @@ from .._response import (
     async_to_raw_response_wrapper,
     async_to_streamed_response_wrapper,
 )
+from .._streaming import Stream, AsyncStream
 from ..pagination import SyncOffsetPagination, AsyncOffsetPagination
 from .._base_client import AsyncPaginator, make_request_options
 from ..types.history import History
 from ..types.session import Session
-from ..types.session_chat_response import SessionChatResponse
+from ..types.session_chat_response import SessionChatResponse, ChunkChatResponse
 from ..types.session_render_response import SessionRenderResponse
 from ..types.shared.resource_deleted import ResourceDeleted
 
@@ -288,7 +289,7 @@ class SessionsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> SessionChatResponse:
+    ) -> Union[SessionChatResponse, Stream[ChunkChatResponse]]:
         """
         Initiates a chat session.
 
@@ -313,6 +314,50 @@ class SessionsResource(SyncAPIResource):
         if not session_id:
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
         extra_headers = {**strip_not_given({"X-Custom-Api-Key": x_custom_api_key}), **(extra_headers or {})}
+        
+        # If streaming is requested, return a Stream[ChunkChatResponse]
+        if stream is True:
+            extra_headers = {**extra_headers, "Accept": "text/event-stream"}
+            return self._post(
+                f"/sessions/{session_id}/chat",
+                body=maybe_transform(
+                    {
+                        "messages": messages,
+                        "agent": agent,
+                        "frequency_penalty": frequency_penalty,
+                        "length_penalty": length_penalty,
+                        "logit_bias": logit_bias,
+                        "max_tokens": max_tokens,
+                        "min_p": min_p,
+                        "model": model,
+                        "presence_penalty": presence_penalty,
+                        "recall": recall,
+                        "repetition_penalty": repetition_penalty,
+                        "response_format": response_format,
+                        "save": save,
+                        "seed": seed,
+                        "stop": stop,
+                        "stream": stream,
+                        "temperature": temperature,
+                        "tool_choice": tool_choice,
+                        "tools": tools,
+                        "top_p": top_p,
+                    },
+                    session_chat_params.SessionChatParams,
+                ),
+                options=make_request_options(
+                    extra_headers=extra_headers,
+                    extra_query=extra_query,
+                    extra_body=extra_body,
+                    timeout=timeout,
+                    query=maybe_transform({"connection_pool": connection_pool}, session_chat_params.SessionChatParams),
+                ),
+                cast_to=ChunkChatResponse,
+                stream=True,
+                stream_cls=Stream[ChunkChatResponse],
+            )
+        
+        # For non-streaming, return the regular response
         return cast(
             SessionChatResponse,
             self._post(
@@ -877,7 +922,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> SessionChatResponse:
+    ) -> Union[SessionChatResponse, AsyncStream[ChunkChatResponse]]:
         """
         Initiates a chat session.
 
@@ -902,6 +947,54 @@ class AsyncSessionsResource(AsyncAPIResource):
         if not session_id:
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
         extra_headers = {**strip_not_given({"X-Custom-Api-Key": x_custom_api_key}), **(extra_headers or {})}
+        
+        # If streaming is requested, return an AsyncStream[ChunkChatResponse]
+        if stream is True:
+            extra_headers = {**extra_headers, "Accept": "text/event-stream"}
+            body = await async_maybe_transform(
+                {
+                    "messages": messages,
+                    "agent": agent,
+                    "frequency_penalty": frequency_penalty,
+                    "length_penalty": length_penalty,
+                    "logit_bias": logit_bias,
+                    "max_tokens": max_tokens,
+                    "min_p": min_p,
+                    "model": model,
+                    "presence_penalty": presence_penalty,
+                    "recall": recall,
+                    "repetition_penalty": repetition_penalty,
+                    "response_format": response_format,
+                    "save": save,
+                    "seed": seed,
+                    "stop": stop,
+                    "stream": stream,
+                    "temperature": temperature,
+                    "tool_choice": tool_choice,
+                    "tools": tools,
+                    "top_p": top_p,
+                },
+                session_chat_params.SessionChatParams,
+            )
+            query = await async_maybe_transform(
+                {"connection_pool": connection_pool}, session_chat_params.SessionChatParams
+            )
+            return await self._post(  # Keep the await, but ensure it returns an AsyncStream
+                f"/sessions/{session_id}/chat",
+                body=body,
+                options=make_request_options(
+                    extra_headers=extra_headers,
+                    extra_query=extra_query,
+                    extra_body=extra_body,
+                    timeout=timeout,
+                    query=query,
+                ),
+                cast_to=ChunkChatResponse,
+                stream=True,
+                stream_cls=AsyncStream[ChunkChatResponse],
+            )
+        
+        # For non-streaming, return the regular response
         return cast(
             SessionChatResponse,
             await self._post(
