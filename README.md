@@ -174,18 +174,6 @@ tool = client.agents.tools.create(
     api_call={
         "method": "GET",
         "url": "https://example.com",
-        "content": "content",
-        "cookies": {"foo": "string"},
-        "data": {},
-        "files": {},
-        "follow_redirects": True,
-        "headers": {"foo": "string"},
-        "include_response_content": True,
-        "json": {},
-        "params": "string",
-        "schema": {},
-        "secrets": {"foo": {"name": "name"}},
-        "timeout": 0,
     },
 )
 print(tool.api_call)
