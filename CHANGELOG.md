@@ -1,5 +1,19 @@
 # Changelog
 
+## 2.11.0 (2025-06-03)
+
+Full Changelog: [v2.10.0...v2.11.0](https://github.com/julep-ai/python-sdk/compare/v2.10.0...v2.11.0)
+
+### Features
+
+* **client:** add follow_redirects request option ([2ee1435](https://github.com/julep-ai/python-sdk/commit/2ee14355f25b30a4a80931401c48f1c51e3b09a0))
+
+
+### Chores
+
+* **docs:** remove reference to rye shell ([acbfb68](https://github.com/julep-ai/python-sdk/commit/acbfb68a81a0f1c197b33b4bb7959511545f5176))
+* **docs:** remove unnecessary param examples ([66e291e](https://github.com/julep-ai/python-sdk/commit/66e291e0cea554edb5da15a4e105eb46de76d047))
+
 ## 2.10.0 (2025-05-30)
 
 Full Changelog: [v2.9.0...v2.10.0](https://github.com/julep-ai/python-sdk/compare/v2.9.0...v2.10.0)
