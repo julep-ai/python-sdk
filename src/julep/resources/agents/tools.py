@@ -20,13 +20,13 @@ from ..._response import (
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ..._base_client import AsyncPaginator, make_request_options
 from ...types.agents import tool_list_params, tool_reset_params, tool_create_params, tool_update_params
-from ...types.shared.resource_deleted import ResourceDeleted
 from ...types.shared_params.system_def import SystemDef
 from ...types.agents.tool_list_response import ToolListResponse
 from ...types.agents.tool_reset_response import ToolResetResponse
 from ...types.shared_params.api_call_def import APICallDef
 from ...types.shared_params.function_def import FunctionDef
 from ...types.agents.tool_create_response import ToolCreateResponse
+from ...types.agents.tool_delete_response import ToolDeleteResponse
 from ...types.agents.tool_update_response import ToolUpdateResponse
 from ...types.shared_params.bash20241022_def import Bash20241022Def
 from ...types.shared_params.computer20241022_def import Computer20241022Def
@@ -274,7 +274,7 @@ class ToolsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> ToolDeleteResponse:
         """
         Delete Agent Tool
 
@@ -296,7 +296,7 @@ class ToolsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=ToolDeleteResponse,
         )
 
     def reset(
@@ -618,7 +618,7 @@ class AsyncToolsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> ToolDeleteResponse:
         """
         Delete Agent Tool
 
@@ -640,7 +640,7 @@ class AsyncToolsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=ToolDeleteResponse,
         )
 
     async def reset(

@@ -43,7 +43,7 @@ from ..._response import (
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ...types.agent import Agent
 from ..._base_client import AsyncPaginator, make_request_options
-from ...types.shared.resource_deleted import ResourceDeleted
+from ...types.agent_delete_response import AgentDeleteResponse
 from ...types.agent_list_models_response import AgentListModelsResponse
 
 __all__ = ["AgentsResource", "AsyncAgentsResource"]
@@ -245,7 +245,7 @@ class AgentsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> AgentDeleteResponse:
         """
         Delete Agent
 
@@ -265,7 +265,7 @@ class AgentsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=AgentDeleteResponse,
         )
 
     def create_or_update(
@@ -644,7 +644,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> AgentDeleteResponse:
         """
         Delete Agent
 
@@ -664,7 +664,7 @@ class AsyncAgentsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=AgentDeleteResponse,
         )
 
     async def create_or_update(

@@ -15,7 +15,9 @@ from .cloudinary_setup import CloudinarySetup as CloudinarySetup
 from .browserbase_setup import BrowserbaseSetup as BrowserbaseSetup
 from .llama_parse_setup import LlamaParseSetup as LlamaParseSetup
 from .named_tool_choice import NamedToolChoice as NamedToolChoice
+from .prompt_step_input import PromptStepInput as PromptStepInput
 from .brave_search_setup import BraveSearchSetup as BraveSearchSetup
+from .if_else_step_input import IfElseStepInput as IfElseStepInput
 from .unstructured_setup import UnstructuredSetup as UnstructuredSetup
 from .computer20241022_def import Computer20241022Def as Computer20241022Def
 from .function_call_option import FunctionCallOption as FunctionCallOption

@@ -2,19 +2,15 @@
 
 from typing import List, Optional
 from datetime import datetime
-from typing_extensions import TypeAlias
 
 from ..._models import BaseModel
 
-__all__ = ["DocBulkDeleteResponse", "DocBulkDeleteResponseItem"]
+__all__ = ["DocDeleteResponse"]
 
 
-class DocBulkDeleteResponseItem(BaseModel):
+class DocDeleteResponse(BaseModel):
     id: str
 
     deleted_at: datetime
 
     jobs: Optional[List[str]] = None
-
-
-DocBulkDeleteResponse: TypeAlias = List[DocBulkDeleteResponseItem]
