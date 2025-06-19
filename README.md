@@ -1,6 +1,6 @@
 # Julep Python API library
 
-[![PyPI version](https://img.shields.io/pypi/v/julep.svg)](https://pypi.org/project/julep/)
+[![PyPI version](<https://img.shields.io/pypi/v/julep.svg?label=pypi%20(stable)>)](https://pypi.org/project/julep/)
 
 The Julep Python library provides convenient access to the Julep REST API from any Python 3.8+
 application. The library includes type definitions for all request params and response fields,
@@ -174,18 +174,6 @@ tool = client.agents.tools.create(
     api_call={
         "method": "GET",
         "url": "https://example.com",
-        "content": "content",
-        "cookies": {"foo": "string"},
-        "data": {},
-        "files": {},
-        "follow_redirects": True,
-        "headers": {"foo": "string"},
-        "include_response_content": True,
-        "json": {},
-        "params": "string",
-        "schema": {},
-        "secrets": {"foo": {"name": "name"}},
-        "timeout": 0,
     },
 )
 print(tool.api_call)
@@ -266,7 +254,7 @@ client.with_options(max_retries=5).agents.create_or_update(
 ### Timeouts
 
 By default requests time out after 2 minutes. You can configure this with a `timeout` option,
-which accepts a float or an [`httpx.Timeout`](https://www.python-httpx.org/advanced/#fine-tuning-the-configuration) object:
+which accepts a float or an [`httpx.Timeout`](https://www.python-httpx.org/advanced/timeouts/#fine-tuning-the-configuration) object:
 
 ```python
 from julep import Julep
