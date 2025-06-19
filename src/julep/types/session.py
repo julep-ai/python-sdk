@@ -5,77 +5,13 @@ from datetime import datetime
 from typing_extensions import Literal, TypeAlias
 
 from .._models import BaseModel
+from .hybrid_doc_search import HybridDocSearch
+from .vector_doc_search import VectorDocSearch
+from .text_only_doc_search import TextOnlyDocSearch
 
-__all__ = [
-    "Session",
-    "RecallOptions",
-    "RecallOptionsVectorDocSearch",
-    "RecallOptionsTextOnlyDocSearch",
-    "RecallOptionsHybridDocSearch",
-]
+__all__ = ["Session", "RecallOptions"]
 
-
-class RecallOptionsVectorDocSearch(BaseModel):
-    confidence: Optional[float] = None
-
-    lang: Optional[str] = None
-
-    limit: Optional[int] = None
-
-    max_query_length: Optional[int] = None
-
-    metadata_filter: Optional[object] = None
-
-    mmr_strength: Optional[float] = None
-
-    mode: Optional[Literal["vector"]] = None
-
-    num_search_messages: Optional[int] = None
-
-
-class RecallOptionsTextOnlyDocSearch(BaseModel):
-    lang: Optional[str] = None
-
-    limit: Optional[int] = None
-
-    max_query_length: Optional[int] = None
-
-    metadata_filter: Optional[object] = None
-
-    mode: Optional[Literal["text"]] = None
-
-    num_search_messages: Optional[int] = None
-
-    trigram_similarity_threshold: Optional[float] = None
-
-
-class RecallOptionsHybridDocSearch(BaseModel):
-    alpha: Optional[float] = None
-
-    confidence: Optional[float] = None
-
-    k_multiplier: Optional[int] = None
-
-    lang: Optional[str] = None
-
-    limit: Optional[int] = None
-
-    max_query_length: Optional[int] = None
-
-    metadata_filter: Optional[object] = None
-
-    mmr_strength: Optional[float] = None
-
-    mode: Optional[Literal["hybrid"]] = None
-
-    num_search_messages: Optional[int] = None
-
-    trigram_similarity_threshold: Optional[float] = None
-
-
-RecallOptions: TypeAlias = Union[
-    RecallOptionsVectorDocSearch, RecallOptionsTextOnlyDocSearch, RecallOptionsHybridDocSearch, None
-]
+RecallOptions: TypeAlias = Union[VectorDocSearch, TextOnlyDocSearch, HybridDocSearch, None]
 
 
 class Session(BaseModel):

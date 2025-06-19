@@ -1,7 +1,74 @@
 # Shared Types
 
 ```python
-from julep.types import ResourceDeleted
+from julep.types import (
+    AlgoliaIntegrationDef,
+    AlgoliaSearchArguments,
+    AlgoliaSetup,
+    APICallDef,
+    ArxivIntegrationDef,
+    ArxivSearchArguments,
+    Bash20241022Def,
+    BraveIntegrationDef,
+    BraveSearchArguments,
+    BraveSearchSetup,
+    BrowserbaseCompleteSessionArguments,
+    BrowserbaseCompleteSessionIntegrationDef,
+    BrowserbaseContextArguments,
+    BrowserbaseContextIntegrationDef,
+    BrowserbaseCreateSessionArguments,
+    BrowserbaseCreateSessionIntegrationDef,
+    BrowserbaseExtensionArguments,
+    BrowserbaseExtensionIntegrationDef,
+    BrowserbaseGetSessionArguments,
+    BrowserbaseGetSessionIntegrationDef,
+    BrowserbaseGetSessionLiveURLsArguments,
+    BrowserbaseGetSessionLiveURLsIntegrationDef,
+    BrowserbaseListSessionsArguments,
+    BrowserbaseListSessionsIntegrationDef,
+    BrowserbaseSetup,
+    CloudinaryEditArguments,
+    CloudinaryEditIntegrationDef,
+    CloudinarySetup,
+    CloudinaryUploadArguments,
+    CloudinaryUploadIntegrationDef,
+    Computer20241022Def,
+    DocOwner,
+    DocReference,
+    DummyIntegrationDef,
+    EmailArguments,
+    EmailIntegrationDef,
+    EmailSetup,
+    FfmpegIntegrationDef,
+    FfmpegSearchArguments,
+    FunctionCallOption,
+    FunctionDef,
+    LlamaParseFetchArguments,
+    LlamaParseIntegrationDef,
+    LlamaParseSetup,
+    MailgunIntegrationDef,
+    MailgunSendEmailArguments,
+    MailgunSetup,
+    NamedToolChoice,
+    RemoteBrowserArguments,
+    RemoteBrowserIntegrationDef,
+    RemoteBrowserSetup,
+    ResourceDeleted,
+    SecretRef,
+    SpiderFetchArguments,
+    SpiderIntegrationDef,
+    SpiderSetup,
+    SystemDef,
+    TextEditor20241022Def,
+    UnstructuredIntegrationDef,
+    UnstructuredPartitionArguments,
+    UnstructuredSetup,
+    WeatherGetArguments,
+    WeatherIntegrationDef,
+    WeatherSetup,
+    WikipediaIntegrationDef,
+    WikipediaSearchArguments,
+)
 ```
 
 # Agents
@@ -29,6 +96,7 @@ Types:
 
 ```python
 from julep.types.agents import (
+    BrowserbaseSetupUpdate,
     ToolCreateResponse,
     ToolUpdateResponse,
     ToolListResponse,
@@ -81,11 +149,23 @@ Types:
 
 ```python
 from julep.types import (
+    BaseTokenLogProb,
     ChatInput,
     ChatResponse,
+    ChosenBash20241022,
+    ChosenComputer20241022,
+    ChosenFunctionCall,
+    ChosenTextEditor20241022,
     Entry,
     History,
+    HybridDocSearch,
+    LogProbResponse,
+    SchemaCompletionResponseFormat,
     Session,
+    SimpleCompletionResponseFormat,
+    TextOnlyDocSearch,
+    TokenLogProb,
+    VectorDocSearch,
     SessionChatResponse,
     SessionRenderResponse,
 )
@@ -168,7 +248,27 @@ Methods:
 Types:
 
 ```python
-from julep.types import Task
+from julep.types import (
+    CaseThenOutput,
+    ErrorWorkflowStep,
+    EvaluateStep,
+    ForeachDoOutput,
+    ForeachStepOutput,
+    GetStep,
+    LogStep,
+    ParallelStepOutput,
+    PromptStepOutput,
+    ReturnStep,
+    SetStep,
+    SleepFor,
+    SleepStep,
+    SwitchStepOutput,
+    Task,
+    ToolCallStep,
+    WaitForInputInfo,
+    WaitForInputStep,
+    YieldStep,
+)
 ```
 
 Methods:
