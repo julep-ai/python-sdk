@@ -1,10 +1,20 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import List
+from typing import List, Optional
+from datetime import datetime
 from typing_extensions import TypeAlias
 
-from ..shared.resource_deleted import ResourceDeleted
+from ..._models import BaseModel
 
-__all__ = ["DocBulkDeleteResponse"]
+__all__ = ["DocBulkDeleteResponse", "DocBulkDeleteResponseItem"]
 
-DocBulkDeleteResponse: TypeAlias = List[ResourceDeleted]
+
+class DocBulkDeleteResponseItem(BaseModel):
+    id: str
+
+    deleted_at: datetime
+
+    jobs: Optional[List[str]] = None
+
+
+DocBulkDeleteResponse: TypeAlias = List[DocBulkDeleteResponseItem]

@@ -20,11 +20,17 @@ from ..._response import (
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ..._base_client import AsyncPaginator, make_request_options
 from ...types.agents import tool_list_params, tool_reset_params, tool_create_params, tool_update_params
-from ...types.shared.resource_deleted import ResourceDeleted
+from ...types.shared_params.system_def import SystemDef
 from ...types.agents.tool_list_response import ToolListResponse
 from ...types.agents.tool_reset_response import ToolResetResponse
+from ...types.shared_params.api_call_def import APICallDef
+from ...types.shared_params.function_def import FunctionDef
 from ...types.agents.tool_create_response import ToolCreateResponse
+from ...types.agents.tool_delete_response import ToolDeleteResponse
 from ...types.agents.tool_update_response import ToolUpdateResponse
+from ...types.shared_params.bash20241022_def import Bash20241022Def
+from ...types.shared_params.computer20241022_def import Computer20241022Def
+from ...types.shared_params.text_editor20241022_def import TextEditor20241022Def
 
 __all__ = ["ToolsResource", "AsyncToolsResource"]
 
@@ -63,14 +69,14 @@ class ToolsResource(SyncAPIResource):
             "text_editor_20241022",
             "bash_20241022",
         ],
-        api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
-        bash_20241022: Optional[tool_create_params.Bash20241022] | NotGiven = NOT_GIVEN,
-        computer_20241022: Optional[tool_create_params.Computer20241022] | NotGiven = NOT_GIVEN,
+        api_call: Optional[APICallDef] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[Bash20241022Def] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[Computer20241022Def] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
-        function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
+        function: Optional[FunctionDef] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
-        system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
-        text_editor_20241022: Optional[tool_create_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
+        system: Optional[SystemDef] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[TextEditor20241022Def] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -134,7 +140,7 @@ class ToolsResource(SyncAPIResource):
         bash_20241022: Optional[tool_update_params.Bash20241022] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[tool_update_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
-        function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
+        function: Optional[FunctionDef] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
@@ -268,7 +274,7 @@ class ToolsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> ToolDeleteResponse:
         """
         Delete Agent Tool
 
@@ -290,7 +296,7 @@ class ToolsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=ToolDeleteResponse,
         )
 
     def reset(
@@ -308,14 +314,14 @@ class ToolsResource(SyncAPIResource):
             "text_editor_20241022",
             "bash_20241022",
         ],
-        api_call: Optional[tool_reset_params.APICall] | NotGiven = NOT_GIVEN,
-        bash_20241022: Optional[tool_reset_params.Bash20241022] | NotGiven = NOT_GIVEN,
-        computer_20241022: Optional[tool_reset_params.Computer20241022] | NotGiven = NOT_GIVEN,
+        api_call: Optional[APICallDef] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[Bash20241022Def] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[Computer20241022Def] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
-        function: Optional[tool_reset_params.Function] | NotGiven = NOT_GIVEN,
+        function: Optional[FunctionDef] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_reset_params.Integration] | NotGiven = NOT_GIVEN,
-        system: Optional[tool_reset_params.System] | NotGiven = NOT_GIVEN,
-        text_editor_20241022: Optional[tool_reset_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
+        system: Optional[SystemDef] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[TextEditor20241022Def] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -407,14 +413,14 @@ class AsyncToolsResource(AsyncAPIResource):
             "text_editor_20241022",
             "bash_20241022",
         ],
-        api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
-        bash_20241022: Optional[tool_create_params.Bash20241022] | NotGiven = NOT_GIVEN,
-        computer_20241022: Optional[tool_create_params.Computer20241022] | NotGiven = NOT_GIVEN,
+        api_call: Optional[APICallDef] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[Bash20241022Def] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[Computer20241022Def] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
-        function: Optional[tool_create_params.Function] | NotGiven = NOT_GIVEN,
+        function: Optional[FunctionDef] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_create_params.Integration] | NotGiven = NOT_GIVEN,
-        system: Optional[tool_create_params.System] | NotGiven = NOT_GIVEN,
-        text_editor_20241022: Optional[tool_create_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
+        system: Optional[SystemDef] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[TextEditor20241022Def] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -478,7 +484,7 @@ class AsyncToolsResource(AsyncAPIResource):
         bash_20241022: Optional[tool_update_params.Bash20241022] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[tool_update_params.Computer20241022] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
-        function: Optional[tool_update_params.Function] | NotGiven = NOT_GIVEN,
+        function: Optional[FunctionDef] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_update_params.Integration] | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
         system: Optional[tool_update_params.System] | NotGiven = NOT_GIVEN,
@@ -612,7 +618,7 @@ class AsyncToolsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> ToolDeleteResponse:
         """
         Delete Agent Tool
 
@@ -634,7 +640,7 @@ class AsyncToolsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=ToolDeleteResponse,
         )
 
     async def reset(
@@ -652,14 +658,14 @@ class AsyncToolsResource(AsyncAPIResource):
             "text_editor_20241022",
             "bash_20241022",
         ],
-        api_call: Optional[tool_reset_params.APICall] | NotGiven = NOT_GIVEN,
-        bash_20241022: Optional[tool_reset_params.Bash20241022] | NotGiven = NOT_GIVEN,
-        computer_20241022: Optional[tool_reset_params.Computer20241022] | NotGiven = NOT_GIVEN,
+        api_call: Optional[APICallDef] | NotGiven = NOT_GIVEN,
+        bash_20241022: Optional[Bash20241022Def] | NotGiven = NOT_GIVEN,
+        computer_20241022: Optional[Computer20241022Def] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
-        function: Optional[tool_reset_params.Function] | NotGiven = NOT_GIVEN,
+        function: Optional[FunctionDef] | NotGiven = NOT_GIVEN,
         integration: Optional[tool_reset_params.Integration] | NotGiven = NOT_GIVEN,
-        system: Optional[tool_reset_params.System] | NotGiven = NOT_GIVEN,
-        text_editor_20241022: Optional[tool_reset_params.TextEditor20241022] | NotGiven = NOT_GIVEN,
+        system: Optional[SystemDef] | NotGiven = NOT_GIVEN,
+        text_editor_20241022: Optional[TextEditor20241022Def] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,

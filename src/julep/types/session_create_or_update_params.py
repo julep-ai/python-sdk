@@ -5,13 +5,11 @@ from __future__ import annotations
 from typing import List, Union, Optional
 from typing_extensions import Literal, TypeAlias, TypedDict
 
-__all__ = [
-    "SessionCreateOrUpdateParams",
-    "RecallOptions",
-    "RecallOptionsVectorDocSearch",
-    "RecallOptionsTextOnlyDocSearch",
-    "RecallOptionsHybridDocSearch",
-]
+from .hybrid_doc_search_param import HybridDocSearchParam
+from .vector_doc_search_param import VectorDocSearchParam
+from .text_only_doc_search_param import TextOnlyDocSearchParam
+
+__all__ = ["SessionCreateOrUpdateParams", "RecallOptions"]
 
 
 class SessionCreateOrUpdateParams(TypedDict, total=False):
@@ -42,64 +40,4 @@ class SessionCreateOrUpdateParams(TypedDict, total=False):
     users: Optional[List[str]]
 
 
-class RecallOptionsVectorDocSearch(TypedDict, total=False):
-    confidence: float
-
-    lang: str
-
-    limit: int
-
-    max_query_length: int
-
-    metadata_filter: object
-
-    mmr_strength: float
-
-    mode: Literal["vector"]
-
-    num_search_messages: int
-
-
-class RecallOptionsTextOnlyDocSearch(TypedDict, total=False):
-    lang: str
-
-    limit: int
-
-    max_query_length: int
-
-    metadata_filter: object
-
-    mode: Literal["text"]
-
-    num_search_messages: int
-
-    trigram_similarity_threshold: float
-
-
-class RecallOptionsHybridDocSearch(TypedDict, total=False):
-    alpha: float
-
-    confidence: float
-
-    k_multiplier: int
-
-    lang: str
-
-    limit: int
-
-    max_query_length: int
-
-    metadata_filter: object
-
-    mmr_strength: float
-
-    mode: Literal["hybrid"]
-
-    num_search_messages: int
-
-    trigram_similarity_threshold: float
-
-
-RecallOptions: TypeAlias = Union[
-    RecallOptionsVectorDocSearch, RecallOptionsTextOnlyDocSearch, RecallOptionsHybridDocSearch
-]
+RecallOptions: TypeAlias = Union[VectorDocSearchParam, TextOnlyDocSearchParam, HybridDocSearchParam]
