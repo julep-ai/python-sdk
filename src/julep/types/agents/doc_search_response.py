@@ -1,35 +1,14 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import List, Optional
-from typing_extensions import Literal
+from typing import List
 
-from ..snippet import Snippet
 from ..._models import BaseModel
+from ..shared.doc_reference import DocReference
 
-__all__ = ["DocSearchResponse", "Doc", "DocOwner"]
-
-
-class DocOwner(BaseModel):
-    id: str
-
-    role: Literal["user", "agent"]
-
-
-class Doc(BaseModel):
-    id: str
-
-    owner: DocOwner
-
-    snippet: Snippet
-
-    distance: Optional[float] = None
-
-    metadata: Optional[object] = None
-
-    title: Optional[str] = None
+__all__ = ["DocSearchResponse"]
 
 
 class DocSearchResponse(BaseModel):
-    docs: List[Doc]
+    docs: List[DocReference]
 
     time: float
