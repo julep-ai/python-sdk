@@ -10,9 +10,11 @@ from .tool_reset_params import ToolResetParams as ToolResetParams
 from .tool_create_params import ToolCreateParams as ToolCreateParams
 from .tool_list_response import ToolListResponse as ToolListResponse
 from .tool_update_params import ToolUpdateParams as ToolUpdateParams
+from .doc_delete_response import DocDeleteResponse as DocDeleteResponse
 from .doc_search_response import DocSearchResponse as DocSearchResponse
 from .tool_reset_response import ToolResetResponse as ToolResetResponse
 from .tool_create_response import ToolCreateResponse as ToolCreateResponse
+from .tool_delete_response import ToolDeleteResponse as ToolDeleteResponse
 from .tool_update_response import ToolUpdateResponse as ToolUpdateResponse
 from .doc_bulk_delete_params import DocBulkDeleteParams as DocBulkDeleteParams
 from .doc_bulk_delete_response import DocBulkDeleteResponse as DocBulkDeleteResponse

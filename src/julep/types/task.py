@@ -1,11 +1,14 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
+from __future__ import annotations
+
 from typing import TYPE_CHECKING, List, Union, Optional
 from datetime import datetime
 from typing_extensions import Literal, TypeAlias
 
 from pydantic import Field as FieldInfo
 
+from .._compat import PYDANTIC_V2
 from .._models import BaseModel
 from .get_step import GetStep
 from .log_step import LogStep
@@ -50,117 +53,7 @@ from .shared.browserbase_create_session_integration_def import BrowserbaseCreate
 from .shared.browserbase_complete_session_integration_def import BrowserbaseCompleteSessionIntegrationDef
 from .shared.browserbase_get_session_live_urls_integration_def import BrowserbaseGetSessionLiveURLsIntegrationDef
 
-__all__ = [
-    "Task",
-    "Main",
-    "MainIfElseWorkflowStepOutput",
-    "MainIfElseWorkflowStepOutputThen",
-    "MainIfElseWorkflowStepOutputThenThenOutput",
-    "MainIfElseWorkflowStepOutputThenThenOutputMap",
-    "MainIfElseWorkflowStepOutputElse",
-    "MainIfElseWorkflowStepOutputElseElseOutput",
-    "MainIfElseWorkflowStepOutputElseElseOutputMap",
-    "MainMainOutput",
-    "MainMainOutputMap",
-    "Tool",
-    "ToolIntegration",
-]
-
-MainIfElseWorkflowStepOutputThenThenOutputMap: TypeAlias = Union[
-    EvaluateStep, ToolCallStep, PromptStepOutput, GetStep, SetStep, LogStep, YieldStep
-]
-
-
-class MainIfElseWorkflowStepOutputThenThenOutput(BaseModel):
-    map: MainIfElseWorkflowStepOutputThenThenOutputMap
-
-    over: str
-
-    initial: Optional[object] = None
-
-    kind: Optional[Literal["map_reduce"]] = FieldInfo(alias="kind_", default=None)
-
-    label: Optional[str] = None
-
-    parallelism: Optional[int] = None
-
-    reduce: Optional[str] = None
-
-
-MainIfElseWorkflowStepOutputThen: TypeAlias = Union[
-    WaitForInputStep,
-    EvaluateStep,
-    ToolCallStep,
-    PromptStepOutput,
-    GetStep,
-    SetStep,
-    LogStep,
-    YieldStep,
-    ReturnStep,
-    SleepStep,
-    ErrorWorkflowStep,
-    SwitchStepOutput,
-    ForeachStepOutput,
-    ParallelStepOutput,
-    MainIfElseWorkflowStepOutputThenThenOutput,
-    object,
-]
-
-MainIfElseWorkflowStepOutputElseElseOutputMap: TypeAlias = Union[
-    EvaluateStep, ToolCallStep, PromptStepOutput, GetStep, SetStep, LogStep, YieldStep
-]
-
-
-class MainIfElseWorkflowStepOutputElseElseOutput(BaseModel):
-    map: MainIfElseWorkflowStepOutputElseElseOutputMap
-
-    over: str
-
-    initial: Optional[object] = None
-
-    kind: Optional[Literal["map_reduce"]] = FieldInfo(alias="kind_", default=None)
-
-    label: Optional[str] = None
-
-    parallelism: Optional[int] = None
-
-    reduce: Optional[str] = None
-
-
-MainIfElseWorkflowStepOutputElse: TypeAlias = Union[
-    WaitForInputStep,
-    EvaluateStep,
-    ToolCallStep,
-    PromptStepOutput,
-    GetStep,
-    SetStep,
-    LogStep,
-    YieldStep,
-    ReturnStep,
-    SleepStep,
-    ErrorWorkflowStep,
-    SwitchStepOutput,
-    ForeachStepOutput,
-    ParallelStepOutput,
-    MainIfElseWorkflowStepOutputElseElseOutput,
-    object,
-    None,
-]
-
-
-class MainIfElseWorkflowStepOutput(BaseModel):
-    if_: str = FieldInfo(alias="if")
-
-    then: MainIfElseWorkflowStepOutputThen
-    """The steps to run if the condition is true"""
-
-    else_: Optional[MainIfElseWorkflowStepOutputElse] = FieldInfo(alias="else", default=None)
-    """The steps to run if the condition is false"""
-
-    kind: Optional[Literal["if_else"]] = FieldInfo(alias="kind_", default=None)
-
-    label: Optional[str] = None
-
+__all__ = ["Task", "Main", "MainMainOutput", "MainMainOutputMap", "Tool", "ToolIntegration"]
 
 MainMainOutputMap: TypeAlias = Union[EvaluateStep, ToolCallStep, PromptStepOutput, GetStep, SetStep, LogStep, YieldStep]
 
@@ -193,7 +86,7 @@ Main: TypeAlias = Union[
     SleepStep,
     ErrorWorkflowStep,
     WaitForInputStep,
-    MainIfElseWorkflowStepOutput,
+    "IfElseStepOutput",
     SwitchStepOutput,
     ForeachStepOutput,
     ParallelStepOutput,
@@ -286,3 +179,15 @@ class Task(BaseModel):
         # To access properties that are not valid identifiers you can use `getattr`, e.g.
         # `getattr(obj, '$type')`
         def __getattr__(self, attr: str) -> object: ...
+
+
+from .shared.if_else_step_output import IfElseStepOutput
+
+if PYDANTIC_V2:
+    Task.model_rebuild()
+    MainMainOutput.model_rebuild()
+    Tool.model_rebuild()
+else:
+    Task.update_forward_refs()  # type: ignore
+    MainMainOutput.update_forward_refs()  # type: ignore
+    Tool.update_forward_refs()  # type: ignore

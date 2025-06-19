@@ -31,8 +31,8 @@ from .._base_client import AsyncPaginator, make_request_options
 from ..types.history import History
 from ..types.session import Session
 from ..types.session_chat_response import SessionChatResponse
+from ..types.session_delete_response import SessionDeleteResponse
 from ..types.session_render_response import SessionRenderResponse
-from ..types.shared.resource_deleted import ResourceDeleted
 
 __all__ = ["SessionsResource", "AsyncSessionsResource"]
 
@@ -233,7 +233,7 @@ class SessionsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> SessionDeleteResponse:
         """
         Delete Session
 
@@ -253,7 +253,7 @@ class SessionsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=SessionDeleteResponse,
         )
 
     def chat(
@@ -822,7 +822,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> SessionDeleteResponse:
         """
         Delete Session
 
@@ -842,7 +842,7 @@ class AsyncSessionsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=SessionDeleteResponse,
         )
 
     async def chat(
