@@ -76,6 +76,42 @@ asyncio.run(main())
 
 Functionality between the synchronous and asynchronous clients is otherwise identical.
 
+### With aiohttp
+
+By default, the async client uses `httpx` for HTTP requests. However, for improved concurrency performance you may also use `aiohttp` as the HTTP backend.
+
+You can enable this by installing `aiohttp`:
+
+```sh
+# install from PyPI
+pip install julep[aiohttp]
+```
+
+Then you can enable it by instantiating the client with `http_client=DefaultAioHttpClient()`:
+
+```python
+import os
+import asyncio
+from julep import DefaultAioHttpClient
+from julep import AsyncJulep
+
+
+async def main() -> None:
+    async with AsyncJulep(
+        api_key=os.environ.get("JULEP_API_KEY"),  # This is the default and can be omitted
+        http_client=DefaultAioHttpClient(),
+    ) as client:
+        task = await client.tasks.create(
+            agent_id="dad00000-0000-4000-a000-000000000000",
+            main=[{"evaluate": {"foo": "string"}}],
+            name="x",
+        )
+        print(task.id)
+
+
+asyncio.run(main())
+```
+
 ## Using types
 
 Nested request parameters are [TypedDicts](https://docs.python.org/3/library/typing.html#typing.TypedDict). Responses are [Pydantic models](https://docs.pydantic.dev) which also provide helper methods for things like:
