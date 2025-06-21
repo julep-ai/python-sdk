@@ -42,6 +42,8 @@ cli = ["julep-cli>=0.1.11; python_version >= '3.11'"]
 Homepage = "https://github.com/julep-ai/python-sdk"
 Repository = "https://github.com/julep-ai/python-sdk"
 
+[project.optional-dependencies]
+aiohttp = ["aiohttp", "httpx_aiohttp>=0.1.6"]
 
 [tool.rye]
 managed = true
