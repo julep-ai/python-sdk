@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.13.0 (2025-06-23)
+
+Full Changelog: [v2.12.0...v2.13.0](https://github.com/julep-ai/python-sdk/compare/v2.12.0...v2.13.0)
+
+### Features
+
+* **api:** api update ([66a9ac1](https://github.com/julep-ai/python-sdk/commit/66a9ac1994e91276dbc15004e6426627b1b151f2))
+* **client:** add support for aiohttp ([46d7bd7](https://github.com/julep-ai/python-sdk/commit/46d7bd7e457eda9e0767d4732c0d40743cad444f))
+
 ## 2.12.0 (2025-06-19)
 
 Full Changelog: [v2.11.0...v2.12.0](https://github.com/julep-ai/python-sdk/compare/v2.11.0...v2.12.0)
