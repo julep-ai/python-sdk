@@ -45,7 +45,7 @@ __all__ = [
     "SessionRenderParams",
     "Message",
     "MessageContentUnionMember2",
-    "MessageContentUnionMember2Content",
+    "MessageContentUnionMember2AgentsAPIAutogenChatContent",
     "MessageContentUnionMember2ContentModel7",
     "MessageContentUnionMember2ContentModel7ImageURL",
     "MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput",
@@ -104,7 +104,7 @@ class SessionRenderParams(TypedDict, total=False):
     top_p: Optional[float]
 
 
-class MessageContentUnionMember2Content(TypedDict, total=False):
+class MessageContentUnionMember2AgentsAPIAutogenChatContent(TypedDict, total=False):
     text: Required[str]
 
     type: Literal["text"]
@@ -157,7 +157,7 @@ class MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput(TypedDict,
 
 
 MessageContentUnionMember2: TypeAlias = Union[
-    MessageContentUnionMember2Content,
+    MessageContentUnionMember2AgentsAPIAutogenChatContent,
     MessageContentUnionMember2ContentModel7,
     MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput,
 ]

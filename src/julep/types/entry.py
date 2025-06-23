@@ -42,7 +42,7 @@ __all__ = [
     "Entry",
     "Content",
     "ContentUnionMember0",
-    "ContentUnionMember0Content",
+    "ContentUnionMember0ContentOutput",
     "ContentUnionMember0AgentsAPIAutogenEntriesContentModel3",
     "ContentUnionMember0AgentsAPIAutogenEntriesContentModel3ImageURL",
     "ContentUnionMember0AgentsAPIAutogenEntriesContentModel",
@@ -68,7 +68,7 @@ __all__ = [
 ]
 
 
-class ContentUnionMember0Content(BaseModel):
+class ContentUnionMember0ContentOutput(BaseModel):
     text: str
 
     type: Optional[Literal["text"]] = None
@@ -119,7 +119,7 @@ class ContentUnionMember0AgentsAPIAutogenEntriesContentModel(BaseModel):
 
 
 ContentUnionMember0: TypeAlias = Union[
-    ContentUnionMember0Content,
+    ContentUnionMember0ContentOutput,
     ContentUnionMember0AgentsAPIAutogenEntriesContentModel3,
     ContentUnionMember0AgentsAPIAutogenEntriesContentModel,
 ]
