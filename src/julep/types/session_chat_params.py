@@ -46,7 +46,7 @@ __all__ = [
     "SessionChatParams",
     "Message",
     "MessageContentUnionMember2",
-    "MessageContentUnionMember2Content",
+    "MessageContentUnionMember2AgentsAPIAutogenChatContent",
     "MessageContentUnionMember2ContentModel7",
     "MessageContentUnionMember2ContentModel7ImageURL",
     "MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput",
@@ -109,7 +109,7 @@ class SessionChatParams(TypedDict, total=False):
     x_custom_api_key: Annotated[str, PropertyInfo(alias="X-Custom-Api-Key")]
 
 
-class MessageContentUnionMember2Content(TypedDict, total=False):
+class MessageContentUnionMember2AgentsAPIAutogenChatContent(TypedDict, total=False):
     text: Required[str]
 
     type: Literal["text"]
@@ -162,7 +162,7 @@ class MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput(TypedDict,
 
 
 MessageContentUnionMember2: TypeAlias = Union[
-    MessageContentUnionMember2Content,
+    MessageContentUnionMember2AgentsAPIAutogenChatContent,
     MessageContentUnionMember2ContentModel7,
     MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput,
 ]

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Union, Iterable
+from typing import Union, Iterable, Optional
 from typing_extensions import Required, TypeAlias, TypedDict
 
 __all__ = ["DocSearchParams", "TextOnlyDocSearchRequest", "VectorDocSearchRequest", "HybridDocSearchRequest"]
@@ -19,7 +19,7 @@ class TextOnlyDocSearchRequest(TypedDict, total=False):
 
     metadata_filter: object
 
-    trigram_similarity_threshold: float
+    trigram_similarity_threshold: Optional[float]
 
 
 class VectorDocSearchRequest(TypedDict, total=False):
@@ -28,8 +28,6 @@ class VectorDocSearchRequest(TypedDict, total=False):
     connection_pool: object
 
     confidence: float
-
-    lang: str
 
     limit: int
 
@@ -59,7 +57,7 @@ class HybridDocSearchRequest(TypedDict, total=False):
 
     mmr_strength: float
 
-    trigram_similarity_threshold: float
+    trigram_similarity_threshold: Optional[float]
 
 
 DocSearchParams: TypeAlias = Union[TextOnlyDocSearchRequest, VectorDocSearchRequest, HybridDocSearchRequest]
