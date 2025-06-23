@@ -45,7 +45,7 @@ __all__ = [
     "SessionRenderResponse",
     "Message",
     "MessageContentUnionMember2",
-    "MessageContentUnionMember2Content",
+    "MessageContentUnionMember2ContentOutput",
     "MessageContentUnionMember2ContentModel7",
     "MessageContentUnionMember2ContentModel7ImageURL",
     "MessageContentUnionMember2AgentsAPIAutogenChatContentModelOutput",
@@ -59,7 +59,7 @@ __all__ = [
 ]
 
 
-class MessageContentUnionMember2Content(BaseModel):
+class MessageContentUnionMember2ContentOutput(BaseModel):
     text: str
 
     type: Optional[Literal["text"]] = None
@@ -110,7 +110,7 @@ class MessageContentUnionMember2AgentsAPIAutogenChatContentModelOutput(BaseModel
 
 
 MessageContentUnionMember2: TypeAlias = Union[
-    MessageContentUnionMember2Content,
+    MessageContentUnionMember2ContentOutput,
     MessageContentUnionMember2ContentModel7,
     MessageContentUnionMember2AgentsAPIAutogenChatContentModelOutput,
 ]

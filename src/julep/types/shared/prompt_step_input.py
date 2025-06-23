@@ -44,7 +44,7 @@ __all__ = [
     "PromptStepInput",
     "PromptUnionMember0",
     "PromptUnionMember0ContentUnionMember1",
-    "PromptUnionMember0ContentUnionMember1Content",
+    "PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContent",
     "PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel",
     "PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL",
     "PromptUnionMember0ContentUnionMember1ContentModel1Input",
@@ -63,7 +63,7 @@ __all__ = [
 ]
 
 
-class PromptUnionMember0ContentUnionMember1Content(BaseModel):
+class PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContent(BaseModel):
     text: str
 
     type: Optional[Literal["text"]] = None
@@ -114,7 +114,7 @@ class PromptUnionMember0ContentUnionMember1ContentModel1Input(BaseModel):
 
 
 PromptUnionMember0ContentUnionMember1: TypeAlias = Union[
-    PromptUnionMember0ContentUnionMember1Content,
+    PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContent,
     PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel,
     PromptUnionMember0ContentUnionMember1ContentModel1Input,
 ]

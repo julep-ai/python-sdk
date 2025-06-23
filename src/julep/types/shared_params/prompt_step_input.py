@@ -43,7 +43,7 @@ __all__ = [
     "PromptStepInput",
     "PromptUnionMember0",
     "PromptUnionMember0ContentUnionMember1",
-    "PromptUnionMember0ContentUnionMember1Content",
+    "PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContent",
     "PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel",
     "PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL",
     "PromptUnionMember0ContentUnionMember1ContentModel1Input",
@@ -62,7 +62,7 @@ __all__ = [
 ]
 
 
-class PromptUnionMember0ContentUnionMember1Content(TypedDict, total=False):
+class PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContent(TypedDict, total=False):
     text: Required[str]
 
     type: Literal["text"]
@@ -115,7 +115,7 @@ class PromptUnionMember0ContentUnionMember1ContentModel1Input(TypedDict, total=F
 
 
 PromptUnionMember0ContentUnionMember1: TypeAlias = Union[
-    PromptUnionMember0ContentUnionMember1Content,
+    PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContent,
     PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModel,
     PromptUnionMember0ContentUnionMember1ContentModel1Input,
 ]
