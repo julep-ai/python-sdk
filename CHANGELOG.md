@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.14.0 (2025-06-23)
+
+Full Changelog: [v2.13.0...v2.14.0](https://github.com/julep-ai/python-sdk/compare/v2.13.0...v2.14.0)
+
+### Features
+
+* **api:** api update ([9f2b92b](https://github.com/julep-ai/python-sdk/commit/9f2b92b54f239cd7c7f7ed27ce061dbf407ad6f3))
+
+
+### Chores
+
+* fix pyproject.toml ([d435d9c](https://github.com/julep-ai/python-sdk/commit/d435d9c11587b779bda5d063e7dd32ba8c3deb16))
+
 ## 2.13.0 (2025-06-23)
 
 Full Changelog: [v2.12.0...v2.13.0](https://github.com/julep-ai/python-sdk/compare/v2.12.0...v2.13.0)
