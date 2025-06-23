@@ -73,6 +73,8 @@ class SessionRenderParams(TypedDict, total=False):
 
     max_tokens: Optional[int]
 
+    metadata: Optional[object]
+
     min_p: Optional[float]
 
     model: Optional[str]
