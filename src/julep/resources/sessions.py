@@ -315,11 +315,11 @@ class SessionsResource(SyncAPIResource):
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
         extra_headers = {**strip_not_given({"X-Custom-Api-Key": x_custom_api_key}), **(extra_headers or {})}
 
-        # If streaming is requested, use the dedicated SSE endpoint `.stream`
+        # If streaming is requested, return a Stream[ChunkChatResponse]
         if stream is True:
             extra_headers = {**extra_headers, "Accept": "text/event-stream"}
             return self._post(
-                f"/sessions/{session_id}/chat.stream",
+                f"/sessions/{session_id}/chat",
                 body=maybe_transform(
                     {
                         "messages": messages,
@@ -948,7 +948,7 @@ class AsyncSessionsResource(AsyncAPIResource):
             raise ValueError(f"Expected a non-empty value for `session_id` but received {session_id!r}")
         extra_headers = {**strip_not_given({"X-Custom-Api-Key": x_custom_api_key}), **(extra_headers or {})}
 
-        # If streaming is requested, use the dedicated SSE endpoint `.stream`
+        # If streaming is requested, return an AsyncStream[ChunkChatResponse]
         if stream is True:
             extra_headers = {**extra_headers, "Accept": "text/event-stream"}
             body = await async_maybe_transform(
@@ -980,7 +980,7 @@ class AsyncSessionsResource(AsyncAPIResource):
                 {"connection_pool": connection_pool}, session_chat_params.SessionChatParams
             )
             return await self._post(  # Keep the await, but ensure it returns an AsyncStream
-                f"/sessions/{session_id}/chat.stream",
+                f"/sessions/{session_id}/chat",
                 body=body,
                 options=make_request_options(
                     extra_headers=extra_headers,
