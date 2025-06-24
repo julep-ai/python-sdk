@@ -1,5 +1,74 @@
 # Changelog
 
+## 2.14.1 (2025-06-24)
+
+Full Changelog: [v2.14.0...v2.14.1](https://github.com/julep-ai/python-sdk/compare/v2.14.0...v2.14.1)
+
+### Chores
+
+* **tests:** skip some failing tests on the latest python versions ([d65e0ef](https://github.com/julep-ai/python-sdk/commit/d65e0efb5ded3d0df78d577703fe07c38d7afc4c))
+
+## 2.14.0 (2025-06-23)
+
+Full Changelog: [v2.13.0...v2.14.0](https://github.com/julep-ai/python-sdk/compare/v2.13.0...v2.14.0)
+
+### Features
+
+* **api:** api update ([9f2b92b](https://github.com/julep-ai/python-sdk/commit/9f2b92b54f239cd7c7f7ed27ce061dbf407ad6f3))
+
+
+### Chores
+
+* fix pyproject.toml ([d435d9c](https://github.com/julep-ai/python-sdk/commit/d435d9c11587b779bda5d063e7dd32ba8c3deb16))
+
+## 2.13.0 (2025-06-23)
+
+Full Changelog: [v2.12.0...v2.13.0](https://github.com/julep-ai/python-sdk/compare/v2.12.0...v2.13.0)
+
+### Features
+
+* **api:** api update ([66a9ac1](https://github.com/julep-ai/python-sdk/commit/66a9ac1994e91276dbc15004e6426627b1b151f2))
+* **client:** add support for aiohttp ([46d7bd7](https://github.com/julep-ai/python-sdk/commit/46d7bd7e457eda9e0767d4732c0d40743cad444f))
+
+## 2.12.0 (2025-06-19)
+
+Full Changelog: [v2.11.0...v2.12.0](https://github.com/julep-ai/python-sdk/compare/v2.11.0...v2.12.0)
+
+### Features
+
+* **api:** applied suggested fixes ([22a01a8](https://github.com/julep-ai/python-sdk/commit/22a01a88670f94a31072c49ab3407fd221bbe77e))
+* **api:** fixes ([3349e34](https://github.com/julep-ai/python-sdk/commit/3349e3472e35258a24b45da9634d53b253d37f59))
+
+## 2.11.0 (2025-06-19)
+
+Full Changelog: [v2.10.0...v2.11.0](https://github.com/julep-ai/python-sdk/compare/v2.10.0...v2.11.0)
+
+### Features
+
+* **client:** add follow_redirects request option ([2ee1435](https://github.com/julep-ai/python-sdk/commit/2ee14355f25b30a4a80931401c48f1c51e3b09a0))
+
+
+### Bug Fixes
+
+* **client:** correctly parse binary response | stream ([bb822dd](https://github.com/julep-ai/python-sdk/commit/bb822dd04059161a6db37f13712268f4001f6088))
+* **tests:** fix: tests which call HTTP endpoints directly with the example parameters ([9f17127](https://github.com/julep-ai/python-sdk/commit/9f17127aaca470f58d7a6f720dc91fa9c4380b41))
+
+
+### Chores
+
+* **ci:** enable for pull requests ([4461d5e](https://github.com/julep-ai/python-sdk/commit/4461d5edcc8b175c896aad80f427388b452d1859))
+* **docs:** remove reference to rye shell ([acbfb68](https://github.com/julep-ai/python-sdk/commit/acbfb68a81a0f1c197b33b4bb7959511545f5176))
+* **docs:** remove unnecessary param examples ([66e291e](https://github.com/julep-ai/python-sdk/commit/66e291e0cea554edb5da15a4e105eb46de76d047))
+* **internal:** update conftest.py ([1a93922](https://github.com/julep-ai/python-sdk/commit/1a93922b9d71549b44bdc41beb94fa0c12f03f82))
+* **readme:** update badges ([afd2518](https://github.com/julep-ai/python-sdk/commit/afd2518be4dc7a881b3502b9c2fcb5ea449136e9))
+* **tests:** add tests for httpx client instantiation & proxies ([82132b5](https://github.com/julep-ai/python-sdk/commit/82132b536095da8441b5747431383967c836c044))
+* **tests:** run tests in parallel ([131c597](https://github.com/julep-ai/python-sdk/commit/131c59790439ec3bce60e943b8dfa7caf3edc26c))
+
+
+### Documentation
+
+* **client:** fix httpx.Timeout documentation reference ([0ec016a](https://github.com/julep-ai/python-sdk/commit/0ec016a46a16345bc22e21da216afbefb4898432))
+
 ## 2.10.0 (2025-05-30)
 
 Full Changelog: [v2.9.0...v2.10.0](https://github.com/julep-ai/python-sdk/compare/v2.9.0...v2.10.0)

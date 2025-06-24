@@ -32,8 +32,8 @@ from .._base_client import AsyncPaginator, make_request_options
 from ..types.history import History
 from ..types.session import Session
 from ..types.session_chat_response import ChunkChatResponse, SessionChatResponse
+from ..types.session_delete_response import SessionDeleteResponse
 from ..types.session_render_response import SessionRenderResponse
-from ..types.shared.resource_deleted import ResourceDeleted
 
 __all__ = ["SessionsResource", "AsyncSessionsResource"]
 
@@ -234,7 +234,7 @@ class SessionsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> SessionDeleteResponse:
         """
         Delete Session
 
@@ -254,7 +254,7 @@ class SessionsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=SessionDeleteResponse,
         )
 
     def chat(
@@ -268,6 +268,7 @@ class SessionsResource(SyncAPIResource):
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
         max_tokens: Optional[int] | NotGiven = NOT_GIVEN,
+        metadata: Optional[object] | NotGiven = NOT_GIVEN,
         min_p: Optional[float] | NotGiven = NOT_GIVEN,
         model: Optional[str] | NotGiven = NOT_GIVEN,
         presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
@@ -370,6 +371,7 @@ class SessionsResource(SyncAPIResource):
                         "length_penalty": length_penalty,
                         "logit_bias": logit_bias,
                         "max_tokens": max_tokens,
+                        "metadata": metadata,
                         "min_p": min_p,
                         "model": model,
                         "presence_penalty": presence_penalty,
@@ -540,6 +542,7 @@ class SessionsResource(SyncAPIResource):
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
         max_tokens: Optional[int] | NotGiven = NOT_GIVEN,
+        metadata: Optional[object] | NotGiven = NOT_GIVEN,
         min_p: Optional[float] | NotGiven = NOT_GIVEN,
         model: Optional[str] | NotGiven = NOT_GIVEN,
         presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
@@ -591,6 +594,7 @@ class SessionsResource(SyncAPIResource):
                     "length_penalty": length_penalty,
                     "logit_bias": logit_bias,
                     "max_tokens": max_tokens,
+                    "metadata": metadata,
                     "min_p": min_p,
                     "model": model,
                     "presence_penalty": presence_penalty,
@@ -867,7 +871,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> SessionDeleteResponse:
         """
         Delete Session
 
@@ -887,7 +891,7 @@ class AsyncSessionsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=SessionDeleteResponse,
         )
 
     async def chat(
@@ -901,6 +905,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
         max_tokens: Optional[int] | NotGiven = NOT_GIVEN,
+        metadata: Optional[object] | NotGiven = NOT_GIVEN,
         min_p: Optional[float] | NotGiven = NOT_GIVEN,
         model: Optional[str] | NotGiven = NOT_GIVEN,
         presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
@@ -1007,6 +1012,7 @@ class AsyncSessionsResource(AsyncAPIResource):
                         "length_penalty": length_penalty,
                         "logit_bias": logit_bias,
                         "max_tokens": max_tokens,
+                        "metadata": metadata,
                         "min_p": min_p,
                         "model": model,
                         "presence_penalty": presence_penalty,
@@ -1179,6 +1185,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
         max_tokens: Optional[int] | NotGiven = NOT_GIVEN,
+        metadata: Optional[object] | NotGiven = NOT_GIVEN,
         min_p: Optional[float] | NotGiven = NOT_GIVEN,
         model: Optional[str] | NotGiven = NOT_GIVEN,
         presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
@@ -1230,6 +1237,7 @@ class AsyncSessionsResource(AsyncAPIResource):
                     "length_penalty": length_penalty,
                     "logit_bias": logit_bias,
                     "max_tokens": max_tokens,
+                    "metadata": metadata,
                     "min_p": min_p,
                     "model": model,
                     "presence_penalty": presence_penalty,

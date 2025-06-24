@@ -20,7 +20,7 @@ from .._response import (
 from .._base_client import make_request_options
 from ..types.secret import Secret
 from ..types.secret_list_response import SecretListResponse
-from ..types.shared.resource_deleted import ResourceDeleted
+from ..types.secret_delete_response import SecretDeleteResponse
 
 __all__ = ["SecretsResource", "AsyncSecretsResource"]
 
@@ -206,7 +206,7 @@ class SecretsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> SecretDeleteResponse:
         """
         Delete a secret.
 
@@ -233,7 +233,7 @@ class SecretsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=SecretDeleteResponse,
         )
 
 
@@ -418,7 +418,7 @@ class AsyncSecretsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> SecretDeleteResponse:
         """
         Delete a secret.
 
@@ -445,7 +445,7 @@ class AsyncSecretsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=SecretDeleteResponse,
         )
 
 

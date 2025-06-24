@@ -22,7 +22,7 @@ from ...types.doc import Doc
 from ...pagination import SyncOffsetPagination, AsyncOffsetPagination
 from ...types.users import doc_list_params, doc_create_params, doc_search_params, doc_bulk_delete_params
 from ..._base_client import AsyncPaginator, make_request_options
-from ...types.shared.resource_deleted import ResourceDeleted
+from ...types.users.doc_delete_response import DocDeleteResponse
 from ...types.users.doc_search_response import DocSearchResponse
 from ...types.users.doc_bulk_delete_response import DocBulkDeleteResponse
 
@@ -170,7 +170,7 @@ class DocsResource(SyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> DocDeleteResponse:
         """
         Delete User Doc
 
@@ -192,7 +192,7 @@ class DocsResource(SyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=DocDeleteResponse,
         )
 
     def bulk_delete(
@@ -251,7 +251,7 @@ class DocsResource(SyncAPIResource):
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -288,7 +288,6 @@ class DocsResource(SyncAPIResource):
         vector: Iterable[float],
         connection_pool: object | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
-        lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
@@ -335,7 +334,7 @@ class DocsResource(SyncAPIResource):
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -374,7 +373,7 @@ class DocsResource(SyncAPIResource):
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
         vector: Iterable[float] | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
@@ -560,7 +559,7 @@ class AsyncDocsResource(AsyncAPIResource):
         extra_query: Query | None = None,
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
-    ) -> ResourceDeleted:
+    ) -> DocDeleteResponse:
         """
         Delete User Doc
 
@@ -582,7 +581,7 @@ class AsyncDocsResource(AsyncAPIResource):
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
-            cast_to=ResourceDeleted,
+            cast_to=DocDeleteResponse,
         )
 
     async def bulk_delete(
@@ -641,7 +640,7 @@ class AsyncDocsResource(AsyncAPIResource):
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -678,7 +677,6 @@ class AsyncDocsResource(AsyncAPIResource):
         vector: Iterable[float],
         connection_pool: object | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
-        lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
@@ -725,7 +723,7 @@ class AsyncDocsResource(AsyncAPIResource):
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -764,7 +762,7 @@ class AsyncDocsResource(AsyncAPIResource):
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: float | NotGiven = NOT_GIVEN,
+        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
         vector: Iterable[float] | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,

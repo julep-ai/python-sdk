@@ -14,9 +14,9 @@ from julep.types.agents import (
     ToolListResponse,
     ToolResetResponse,
     ToolCreateResponse,
+    ToolDeleteResponse,
     ToolUpdateResponse,
 )
-from julep.types.shared import ResourceDeleted
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 
@@ -292,7 +292,7 @@ class TestTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceDeleted, tool, path=["response"])
+        assert_matches_type(ToolDeleteResponse, tool, path=["response"])
 
     @parametrize
     def test_raw_response_delete(self, client: Julep) -> None:
@@ -304,7 +304,7 @@ class TestTools:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         tool = response.parse()
-        assert_matches_type(ResourceDeleted, tool, path=["response"])
+        assert_matches_type(ToolDeleteResponse, tool, path=["response"])
 
     @parametrize
     def test_streaming_response_delete(self, client: Julep) -> None:
@@ -316,7 +316,7 @@ class TestTools:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             tool = response.parse()
-            assert_matches_type(ResourceDeleted, tool, path=["response"])
+            assert_matches_type(ToolDeleteResponse, tool, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -454,7 +454,9 @@ class TestTools:
 
 
 class TestAsyncTools:
-    parametrize = pytest.mark.parametrize("async_client", [False, True], indirect=True, ids=["loose", "strict"])
+    parametrize = pytest.mark.parametrize(
+        "async_client", [False, True, {"http_client": "aiohttp"}], indirect=True, ids=["loose", "strict", "aiohttp"]
+    )
 
     @parametrize
     async def test_method_create(self, async_client: AsyncJulep) -> None:
@@ -724,7 +726,7 @@ class TestAsyncTools:
             tool_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             agent_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         )
-        assert_matches_type(ResourceDeleted, tool, path=["response"])
+        assert_matches_type(ToolDeleteResponse, tool, path=["response"])
 
     @parametrize
     async def test_raw_response_delete(self, async_client: AsyncJulep) -> None:
@@ -736,7 +738,7 @@ class TestAsyncTools:
         assert response.is_closed is True
         assert response.http_request.headers.get("X-Stainless-Lang") == "python"
         tool = await response.parse()
-        assert_matches_type(ResourceDeleted, tool, path=["response"])
+        assert_matches_type(ToolDeleteResponse, tool, path=["response"])
 
     @parametrize
     async def test_streaming_response_delete(self, async_client: AsyncJulep) -> None:
@@ -748,7 +750,7 @@ class TestAsyncTools:
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
 
             tool = await response.parse()
-            assert_matches_type(ResourceDeleted, tool, path=["response"])
+            assert_matches_type(ToolDeleteResponse, tool, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 

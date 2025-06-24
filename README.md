@@ -1,6 +1,6 @@
 # Julep Python API library
 
-[![PyPI version](https://img.shields.io/pypi/v/julep.svg)](https://pypi.org/project/julep/)
+[![PyPI version](<https://img.shields.io/pypi/v/julep.svg?label=pypi%20(stable)>)](https://pypi.org/project/julep/)
 
 The Julep Python library provides convenient access to the Julep REST API from any Python 3.8+
 application. The library includes type definitions for all request params and response fields,
@@ -75,6 +75,42 @@ asyncio.run(main())
 ```
 
 Functionality between the synchronous and asynchronous clients is otherwise identical.
+
+### With aiohttp
+
+By default, the async client uses `httpx` for HTTP requests. However, for improved concurrency performance you may also use `aiohttp` as the HTTP backend.
+
+You can enable this by installing `aiohttp`:
+
+```sh
+# install from PyPI
+pip install julep[aiohttp]
+```
+
+Then you can enable it by instantiating the client with `http_client=DefaultAioHttpClient()`:
+
+```python
+import os
+import asyncio
+from julep import DefaultAioHttpClient
+from julep import AsyncJulep
+
+
+async def main() -> None:
+    async with AsyncJulep(
+        api_key=os.environ.get("JULEP_API_KEY"),  # This is the default and can be omitted
+        http_client=DefaultAioHttpClient(),
+    ) as client:
+        task = await client.tasks.create(
+            agent_id="dad00000-0000-4000-a000-000000000000",
+            main=[{"evaluate": {"foo": "string"}}],
+            name="x",
+        )
+        print(task.id)
+
+
+asyncio.run(main())
+```
 
 ## Using types
 
@@ -174,18 +210,6 @@ tool = client.agents.tools.create(
     api_call={
         "method": "GET",
         "url": "https://example.com",
-        "content": "content",
-        "cookies": {"foo": "string"},
-        "data": {},
-        "files": {},
-        "follow_redirects": True,
-        "headers": {"foo": "string"},
-        "include_response_content": True,
-        "json": {},
-        "params": "string",
-        "schema": {},
-        "secrets": {"foo": {"name": "name"}},
-        "timeout": 0,
     },
 )
 print(tool.api_call)
@@ -266,7 +290,7 @@ client.with_options(max_retries=5).agents.create_or_update(
 ### Timeouts
 
 By default requests time out after 2 minutes. You can configure this with a `timeout` option,
-which accepts a float or an [`httpx.Timeout`](https://www.python-httpx.org/advanced/#fine-tuning-the-configuration) object:
+which accepts a float or an [`httpx.Timeout`](https://www.python-httpx.org/advanced/timeouts/#fine-tuning-the-configuration) object:
 
 ```python
 from julep import Julep
