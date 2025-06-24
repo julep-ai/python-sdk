@@ -281,7 +281,7 @@ class TestSessions:
             save=True,
             seed=-1,
             stop=["string"],
-            stream=True,
+            stream=False,
             temperature=0,
             tool_choice="auto",
             tools=[
@@ -1011,7 +1011,7 @@ class TestAsyncSessions:
             save=True,
             seed=-1,
             stop=["string"],
-            stream=True,
+            stream=False,
             temperature=0,
             tool_choice="auto",
             tools=[
