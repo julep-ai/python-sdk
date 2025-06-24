@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.14.1 (2025-06-24)
+
+Full Changelog: [v2.14.0...v2.14.1](https://github.com/julep-ai/python-sdk/compare/v2.14.0...v2.14.1)
+
+### Chores
+
+* **tests:** skip some failing tests on the latest python versions ([d65e0ef](https://github.com/julep-ai/python-sdk/commit/d65e0efb5ded3d0df78d577703fe07c38d7afc4c))
+
 ## 2.14.0 (2025-06-23)
 
 Full Changelog: [v2.13.0...v2.14.0](https://github.com/julep-ai/python-sdk/compare/v2.13.0...v2.14.0)
