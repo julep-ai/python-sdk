@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.14.3 (2025-06-25)
+
+Full Changelog: [v2.14.2...v2.14.3](https://github.com/julep-ai/python-sdk/compare/v2.14.2...v2.14.3)
+
+### Chores
+
+* **internal:** codegen related update ([3b6a4b9](https://github.com/julep-ai/python-sdk/commit/3b6a4b9d63ae1b5696eada9197ba24d81e8935cb))
+
 ## 2.14.2 (2025-06-24)
 
 Full Changelog: [v2.14.1...v2.14.2](https://github.com/julep-ai/python-sdk/compare/v2.14.1...v2.14.2)
