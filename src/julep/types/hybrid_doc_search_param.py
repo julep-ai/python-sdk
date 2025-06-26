@@ -12,6 +12,8 @@ class HybridDocSearchParam(TypedDict, total=False):
 
     confidence: float
 
+    include_embeddings: bool
+
     k_multiplier: int
 
     lang: str
