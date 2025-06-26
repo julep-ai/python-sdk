@@ -13,6 +13,8 @@ class TextOnlyDocSearchRequest(TypedDict, total=False):
 
     connection_pool: object
 
+    include_embeddings: bool
+
     lang: str
 
     limit: int
@@ -28,6 +30,8 @@ class VectorDocSearchRequest(TypedDict, total=False):
     connection_pool: object
 
     confidence: float
+
+    include_embeddings: bool
 
     limit: int
 
@@ -46,6 +50,8 @@ class HybridDocSearchRequest(TypedDict, total=False):
     alpha: float
 
     confidence: float
+
+    include_embeddings: bool
 
     k_multiplier: int
 

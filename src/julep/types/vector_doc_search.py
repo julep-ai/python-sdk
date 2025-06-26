@@ -11,6 +11,8 @@ __all__ = ["VectorDocSearch"]
 class VectorDocSearch(BaseModel):
     confidence: Optional[float] = None
 
+    include_embeddings: Optional[bool] = None
+
     lang: Optional[str] = None
 
     limit: Optional[int] = None

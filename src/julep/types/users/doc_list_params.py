@@ -11,6 +11,8 @@ __all__ = ["DocListParams"]
 class DocListParams(TypedDict, total=False):
     direction: Literal["asc", "desc"]
 
+    include_embeddings: bool
+
     limit: int
 
     metadata_filter: Dict[str, object]

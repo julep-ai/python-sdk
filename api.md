@@ -245,7 +245,7 @@ from julep.types import Doc, EmbedQueryResponse, Snippet
 Methods:
 
 - <code title="post /embed">client.docs.<a href="./src/julep/resources/docs.py">embed</a>(\*\*<a href="src/julep/types/doc_embed_params.py">params</a>) -> <a href="./src/julep/types/embed_query_response.py">EmbedQueryResponse</a></code>
-- <code title="get /docs/{doc_id}">client.docs.<a href="./src/julep/resources/docs.py">get</a>(doc_id) -> <a href="./src/julep/types/doc.py">Doc</a></code>
+- <code title="get /docs/{doc_id}">client.docs.<a href="./src/julep/resources/docs.py">get</a>(doc_id, \*\*<a href="src/julep/types/doc_get_params.py">params</a>) -> <a href="./src/julep/types/doc.py">Doc</a></code>
 
 # Tasks
 

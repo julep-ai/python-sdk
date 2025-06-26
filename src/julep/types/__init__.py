@@ -94,6 +94,7 @@ from .yield_step import YieldStep as YieldStep
 from .return_step import ReturnStep as ReturnStep
 from .chat_response import ChatResponse as ChatResponse
 from .evaluate_step import EvaluateStep as EvaluateStep
+from .doc_get_params import DocGetParams as DocGetParams
 from .get_step_param import GetStepParam as GetStepParam
 from .log_step_param import LogStepParam as LogStepParam
 from .set_step_param import SetStepParam as SetStepParam
