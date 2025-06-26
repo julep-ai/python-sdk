@@ -37,6 +37,8 @@ class SessionUpdateParams(TypedDict, total=False):
 class RecallOptionsVectorDocSearchUpdate(TypedDict, total=False):
     confidence: float
 
+    include_embeddings: bool
+
     lang: str
 
     limit: int
@@ -53,6 +55,8 @@ class RecallOptionsVectorDocSearchUpdate(TypedDict, total=False):
 
 
 class RecallOptionsTextOnlyDocSearchUpdate(TypedDict, total=False):
+    include_embeddings: bool
+
     lang: str
 
     limit: int
@@ -72,6 +76,8 @@ class RecallOptionsHybridDocSearchUpdate(TypedDict, total=False):
     alpha: float
 
     confidence: float
+
+    include_embeddings: bool
 
     k_multiplier: int
 

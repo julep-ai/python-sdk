@@ -40,6 +40,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
+                "include_embeddings": True,
                 "lang": "lang",
                 "limit": 1,
                 "max_query_length": 100,
@@ -94,6 +95,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
+                "include_embeddings": True,
                 "lang": "lang",
                 "limit": 1,
                 "max_query_length": 100,
@@ -398,6 +400,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
+                "include_embeddings": True,
                 "lang": "lang",
                 "limit": 1,
                 "max_query_length": 100,
@@ -702,6 +705,7 @@ class TestSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
+                "include_embeddings": True,
                 "lang": "lang",
                 "limit": 1,
                 "max_query_length": 100,
@@ -770,6 +774,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
+                "include_embeddings": True,
                 "lang": "lang",
                 "limit": 1,
                 "max_query_length": 100,
@@ -824,6 +829,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
+                "include_embeddings": True,
                 "lang": "lang",
                 "limit": 1,
                 "max_query_length": 100,
@@ -1128,6 +1134,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
+                "include_embeddings": True,
                 "lang": "lang",
                 "limit": 1,
                 "max_query_length": 100,
@@ -1432,6 +1439,7 @@ class TestAsyncSessions:
             metadata={},
             recall_options={
                 "confidence": -1,
+                "include_embeddings": True,
                 "lang": "lang",
                 "limit": 1,
                 "max_query_length": 100,

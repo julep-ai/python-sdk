@@ -10,6 +10,8 @@ __all__ = ["VectorDocSearchParam"]
 class VectorDocSearchParam(TypedDict, total=False):
     confidence: float
 
+    include_embeddings: bool
+
     lang: str
 
     limit: int

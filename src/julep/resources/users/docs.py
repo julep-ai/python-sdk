@@ -112,6 +112,7 @@ class DocsResource(SyncAPIResource):
         user_id: str,
         *,
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
@@ -148,6 +149,7 @@ class DocsResource(SyncAPIResource):
                 query=maybe_transform(
                     {
                         "direction": direction,
+                        "include_embeddings": include_embeddings,
                         "limit": limit,
                         "metadata_filter": metadata_filter,
                         "offset": offset,
@@ -248,6 +250,7 @@ class DocsResource(SyncAPIResource):
         *,
         text: str,
         connection_pool: object | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
@@ -266,7 +269,6 @@ class DocsResource(SyncAPIResource):
         associated with the user. search_params (TextOnlyDocSearchRequest |
         VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
         user_id (UUID): The unique identifier of the user associated with the documents.
-
         Returns: DocSearchResponse: The search results.
 
         Args:
@@ -288,6 +290,7 @@ class DocsResource(SyncAPIResource):
         vector: Iterable[float],
         connection_pool: object | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
@@ -305,7 +308,6 @@ class DocsResource(SyncAPIResource):
         associated with the user. search_params (TextOnlyDocSearchRequest |
         VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
         user_id (UUID): The unique identifier of the user associated with the documents.
-
         Returns: DocSearchResponse: The search results.
 
         Args:
@@ -329,6 +331,7 @@ class DocsResource(SyncAPIResource):
         connection_pool: object | NotGiven = NOT_GIVEN,
         alpha: float | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         k_multiplier: int | NotGiven = NOT_GIVEN,
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
@@ -349,7 +352,6 @@ class DocsResource(SyncAPIResource):
         associated with the user. search_params (TextOnlyDocSearchRequest |
         VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
         user_id (UUID): The unique identifier of the user associated with the documents.
-
         Returns: DocSearchResponse: The search results.
 
         Args:
@@ -370,6 +372,7 @@ class DocsResource(SyncAPIResource):
         *,
         text: str | NotGiven = NOT_GIVEN,
         connection_pool: object | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
@@ -393,6 +396,7 @@ class DocsResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "text": text,
+                    "include_embeddings": include_embeddings,
                     "lang": lang,
                     "limit": limit,
                     "metadata_filter": metadata_filter,
@@ -501,6 +505,7 @@ class AsyncDocsResource(AsyncAPIResource):
         user_id: str,
         *,
         direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
         offset: int | NotGiven = NOT_GIVEN,
@@ -537,6 +542,7 @@ class AsyncDocsResource(AsyncAPIResource):
                 query=maybe_transform(
                     {
                         "direction": direction,
+                        "include_embeddings": include_embeddings,
                         "limit": limit,
                         "metadata_filter": metadata_filter,
                         "offset": offset,
@@ -637,6 +643,7 @@ class AsyncDocsResource(AsyncAPIResource):
         *,
         text: str,
         connection_pool: object | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
@@ -655,7 +662,6 @@ class AsyncDocsResource(AsyncAPIResource):
         associated with the user. search_params (TextOnlyDocSearchRequest |
         VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
         user_id (UUID): The unique identifier of the user associated with the documents.
-
         Returns: DocSearchResponse: The search results.
 
         Args:
@@ -677,6 +683,7 @@ class AsyncDocsResource(AsyncAPIResource):
         vector: Iterable[float],
         connection_pool: object | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
         mmr_strength: float | NotGiven = NOT_GIVEN,
@@ -694,7 +701,6 @@ class AsyncDocsResource(AsyncAPIResource):
         associated with the user. search_params (TextOnlyDocSearchRequest |
         VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
         user_id (UUID): The unique identifier of the user associated with the documents.
-
         Returns: DocSearchResponse: The search results.
 
         Args:
@@ -718,6 +724,7 @@ class AsyncDocsResource(AsyncAPIResource):
         connection_pool: object | NotGiven = NOT_GIVEN,
         alpha: float | NotGiven = NOT_GIVEN,
         confidence: float | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         k_multiplier: int | NotGiven = NOT_GIVEN,
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
@@ -738,7 +745,6 @@ class AsyncDocsResource(AsyncAPIResource):
         associated with the user. search_params (TextOnlyDocSearchRequest |
         VectorDocSearchRequest | HybridDocSearchRequest): The parameters for the search.
         user_id (UUID): The unique identifier of the user associated with the documents.
-
         Returns: DocSearchResponse: The search results.
 
         Args:
@@ -759,6 +765,7 @@ class AsyncDocsResource(AsyncAPIResource):
         *,
         text: str | NotGiven = NOT_GIVEN,
         connection_pool: object | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | NotGiven = NOT_GIVEN,
         lang: str | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         metadata_filter: object | NotGiven = NOT_GIVEN,
@@ -782,6 +789,7 @@ class AsyncDocsResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "text": text,
+                    "include_embeddings": include_embeddings,
                     "lang": lang,
                     "limit": limit,
                     "metadata_filter": metadata_filter,

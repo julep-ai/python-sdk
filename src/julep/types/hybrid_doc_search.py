@@ -13,6 +13,8 @@ class HybridDocSearch(BaseModel):
 
     confidence: Optional[float] = None
 
+    include_embeddings: Optional[bool] = None
+
     k_multiplier: Optional[int] = None
 
     lang: Optional[str] = None

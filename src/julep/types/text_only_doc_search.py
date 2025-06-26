@@ -9,6 +9,8 @@ __all__ = ["TextOnlyDocSearch"]
 
 
 class TextOnlyDocSearch(BaseModel):
+    include_embeddings: Optional[bool] = None
+
     lang: Optional[str] = None
 
     limit: Optional[int] = None

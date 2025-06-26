@@ -8,6 +8,8 @@ __all__ = ["TextOnlyDocSearchParam"]
 
 
 class TextOnlyDocSearchParam(TypedDict, total=False):
+    include_embeddings: bool
+
     lang: str
 
     limit: int
