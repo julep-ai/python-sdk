@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.15.1 (2025-06-27)
+
+Full Changelog: [v2.15.0...v2.15.1](https://github.com/julep-ai/python-sdk/compare/v2.15.0...v2.15.1)
+
+### Bug Fixes
+
+* **ci:** release-doctor — report correct token name ([67188ff](https://github.com/julep-ai/python-sdk/commit/67188ff99a6a0a3cb4003122d89fb510145c97c2))
+
 ## 2.15.0 (2025-06-26)
 
 Full Changelog: [v2.14.3...v2.15.0](https://github.com/julep-ai/python-sdk/compare/v2.14.3...v2.15.0)
