@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.15.2 (2025-06-30)
+
+Full Changelog: [v2.15.1...v2.15.2](https://github.com/julep-ai/python-sdk/compare/v2.15.1...v2.15.2)
+
+### Bug Fixes
+
+* **ci:** correct conditional ([1b1778d](https://github.com/julep-ai/python-sdk/commit/1b1778d05ccf133d139e64cbd864e5cb4fcf028b))
+
+
+### Chores
+
+* **ci:** only run for pushes and fork pull requests ([8283bb5](https://github.com/julep-ai/python-sdk/commit/8283bb5fde69dd47d71799eef8de2dee88f1abbc))
+
 ## 2.15.1 (2025-06-27)
 
 Full Changelog: [v2.15.0...v2.15.1](https://github.com/julep-ai/python-sdk/compare/v2.15.0...v2.15.1)
