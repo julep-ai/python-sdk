@@ -13,7 +13,6 @@ from .shared import (
     DocOwner as DocOwner,
     SecretRef as SecretRef,
     SystemDef as SystemDef,
-    APICallDef as APICallDef,
     EmailSetup as EmailSetup,
     FunctionDef as FunctionDef,
     SpiderSetup as SpiderSetup,

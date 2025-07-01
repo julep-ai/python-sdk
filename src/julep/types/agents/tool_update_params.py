@@ -15,6 +15,8 @@ from ..shared_params.browserbase_create_session_arguments import BrowserbaseCrea
 __all__ = [
     "ToolUpdateParams",
     "APICall",
+    "APICallParamsSchema",
+    "APICallParamsSchemaProperties",
     "APICallSecrets",
     "Bash20241022",
     "Computer20241022",
@@ -114,6 +116,26 @@ class ToolUpdateParams(TypedDict, total=False):
     ]
 
 
+class APICallParamsSchemaProperties(TypedDict, total=False):
+    description: Optional[str]
+
+    enum: Optional[List[str]]
+
+    items: object
+
+    type: Optional[str]
+
+
+class APICallParamsSchema(TypedDict, total=False):
+    additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
+
+    properties: Optional[Dict[str, APICallParamsSchemaProperties]]
+
+    required: List[str]
+
+    type: str
+
+
 class APICallSecrets(TypedDict, total=False):
     name: Optional[str]
 
@@ -138,6 +160,9 @@ class APICall(TypedDict, total=False):
     method: Optional[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
 
     params: Union[str, object, None]
+
+    params_schema: Optional[APICallParamsSchema]
+    """JSON Schema for API call parameters"""
 
     schema: Optional[object]
 

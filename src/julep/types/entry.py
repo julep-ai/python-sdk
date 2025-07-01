@@ -1,13 +1,15 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import List, Union, Optional
+from typing import Dict, List, Union, Optional
 from datetime import datetime
 from typing_extensions import Literal, TypeAlias
 
+from pydantic import Field as FieldInfo
+
 from .._models import BaseModel
+from .shared.secret_ref import SecretRef
 from .shared.system_def import SystemDef
 from .chosen_bash20241022 import ChosenBash20241022
-from .shared.api_call_def import APICallDef
 from .shared.function_def import FunctionDef
 from .chosen_function_call import ChosenFunctionCall
 from .chosen_computer20241022 import ChosenComputer20241022
@@ -50,6 +52,9 @@ __all__ = [
     "ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1",
     "ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1Source",
     "ContentTool",
+    "ContentToolAPICall",
+    "ContentToolAPICallParamsSchema",
+    "ContentToolAPICallParamsSchemaProperties",
     "ContentToolIntegration",
     "ContentToolResponse",
     "ContentUnionMember8",
@@ -62,6 +67,9 @@ __all__ = [
     "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1",
     "ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1Source",
     "ContentUnionMember8Tool",
+    "ContentUnionMember8ToolAPICall",
+    "ContentUnionMember8ToolAPICallParamsSchema",
+    "ContentUnionMember8ToolAPICallParamsSchemaProperties",
     "ContentUnionMember8ToolIntegration",
     "ContentUnionMember8ToolResponse",
     "ToolCall",
@@ -124,6 +132,60 @@ ContentUnionMember0: TypeAlias = Union[
     ContentUnionMember0AgentsAPIAutogenEntriesContentModel,
 ]
 
+
+class ContentToolAPICallParamsSchemaProperties(BaseModel):
+    type: str
+
+    description: Optional[str] = None
+
+    enum: Optional[List[str]] = None
+
+    items: Optional[object] = None
+
+
+class ContentToolAPICallParamsSchema(BaseModel):
+    properties: Dict[str, ContentToolAPICallParamsSchemaProperties]
+
+    additional_properties: Optional[bool] = FieldInfo(alias="additionalProperties", default=None)
+
+    required: Optional[List[str]] = None
+
+    type: Optional[str] = None
+
+
+class ContentToolAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[object] = None
+
+    files: Optional[object] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    include_response_content: Optional[bool] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+    params_schema: Optional[ContentToolAPICallParamsSchema] = None
+    """JSON Schema for API call parameters"""
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, SecretRef]] = None
+
+    timeout: Optional[int] = None
+
+
 ContentToolIntegration: TypeAlias = Union[
     DummyIntegrationDef,
     BraveIntegrationDef,
@@ -164,7 +226,7 @@ class ContentTool(BaseModel):
 
     updated_at: datetime
 
-    api_call: Optional[APICallDef] = None
+    api_call: Optional[ContentToolAPICall] = None
     """API call definition"""
 
     bash_20241022: Optional[Bash20241022Def] = None
@@ -248,6 +310,60 @@ ContentUnionMember8UnionMember0: TypeAlias = Union[
     ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2,
 ]
 
+
+class ContentUnionMember8ToolAPICallParamsSchemaProperties(BaseModel):
+    type: str
+
+    description: Optional[str] = None
+
+    enum: Optional[List[str]] = None
+
+    items: Optional[object] = None
+
+
+class ContentUnionMember8ToolAPICallParamsSchema(BaseModel):
+    properties: Dict[str, ContentUnionMember8ToolAPICallParamsSchemaProperties]
+
+    additional_properties: Optional[bool] = FieldInfo(alias="additionalProperties", default=None)
+
+    required: Optional[List[str]] = None
+
+    type: Optional[str] = None
+
+
+class ContentUnionMember8ToolAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[object] = None
+
+    files: Optional[object] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    include_response_content: Optional[bool] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+    params_schema: Optional[ContentUnionMember8ToolAPICallParamsSchema] = None
+    """JSON Schema for API call parameters"""
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, SecretRef]] = None
+
+    timeout: Optional[int] = None
+
+
 ContentUnionMember8ToolIntegration: TypeAlias = Union[
     DummyIntegrationDef,
     BraveIntegrationDef,
@@ -288,7 +404,7 @@ class ContentUnionMember8Tool(BaseModel):
 
     updated_at: datetime
 
-    api_call: Optional[APICallDef] = None
+    api_call: Optional[ContentUnionMember8ToolAPICall] = None
     """API call definition"""
 
     bash_20241022: Optional[Bash20241022Def] = None

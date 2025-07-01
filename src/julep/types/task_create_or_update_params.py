@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Union, Iterable, Optional
-from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from typing import Dict, List, Union, Iterable, Optional
+from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from .._utils import PropertyInfo
 from .get_step_param import GetStepParam
 from .log_step_param import LogStepParam
 from .set_step_param import SetStepParam
@@ -13,10 +14,10 @@ from .yield_step_param import YieldStepParam
 from .return_step_param import ReturnStepParam
 from .evaluate_step_param import EvaluateStepParam
 from .tool_call_step_param import ToolCallStepParam
+from .shared_params.secret_ref import SecretRef
 from .shared_params.system_def import SystemDef
 from .error_workflow_step_param import ErrorWorkflowStepParam
 from .wait_for_input_step_param import WaitForInputStepParam
-from .shared_params.api_call_def import APICallDef
 from .shared_params.function_def import FunctionDef
 from .shared_params.bash20241022_def import Bash20241022Def
 from .shared_params.prompt_step_input import PromptStepInput
@@ -59,6 +60,9 @@ __all__ = [
     "MainMainInput",
     "MainMainInputMap",
     "Tool",
+    "ToolAPICall",
+    "ToolAPICallParamsSchema",
+    "ToolAPICallParamsSchemaProperties",
     "ToolIntegration",
 ]
 
@@ -189,6 +193,60 @@ Main: TypeAlias = Union[
     MainMainInput,
 ]
 
+
+class ToolAPICallParamsSchemaProperties(TypedDict, total=False):
+    type: Required[str]
+
+    description: Optional[str]
+
+    enum: Optional[List[str]]
+
+    items: object
+
+
+class ToolAPICallParamsSchema(TypedDict, total=False):
+    properties: Required[Dict[str, ToolAPICallParamsSchemaProperties]]
+
+    additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
+
+    required: List[str]
+
+    type: str
+
+
+class ToolAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[object]
+
+    files: Optional[object]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    include_response_content: bool
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+    params_schema: Optional[ToolAPICallParamsSchema]
+    """JSON Schema for API call parameters"""
+
+    schema: Optional[object]
+
+    secrets: Optional[Dict[str, SecretRef]]
+
+    timeout: Optional[int]
+
+
 ToolIntegration: TypeAlias = Union[
     DummyIntegrationDef,
     BraveIntegrationDef,
@@ -230,7 +288,7 @@ class Tool(TypedDict, total=False):
         ]
     ]
 
-    api_call: Optional[APICallDef]
+    api_call: Optional[ToolAPICall]
     """API call definition"""
 
     bash_20241022: Optional[Bash20241022Def]

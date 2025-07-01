@@ -59,6 +59,19 @@ class TestTasks:
                         "include_response_content": True,
                         "json": {},
                         "params": "string",
+                        "params_schema": {
+                            "properties": {
+                                "foo": {
+                                    "type": "type",
+                                    "description": "description",
+                                    "enum": ["string"],
+                                    "items": {},
+                                }
+                            },
+                            "additional_properties": True,
+                            "required": ["string"],
+                            "type": "type",
+                        },
                         "schema": {},
                         "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
@@ -231,6 +244,19 @@ class TestTasks:
                         "include_response_content": True,
                         "json": {},
                         "params": "string",
+                        "params_schema": {
+                            "properties": {
+                                "foo": {
+                                    "type": "type",
+                                    "description": "description",
+                                    "enum": ["string"],
+                                    "items": {},
+                                }
+                            },
+                            "additional_properties": True,
+                            "required": ["string"],
+                            "type": "type",
+                        },
                         "schema": {},
                         "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
@@ -407,6 +433,19 @@ class TestAsyncTasks:
                         "include_response_content": True,
                         "json": {},
                         "params": "string",
+                        "params_schema": {
+                            "properties": {
+                                "foo": {
+                                    "type": "type",
+                                    "description": "description",
+                                    "enum": ["string"],
+                                    "items": {},
+                                }
+                            },
+                            "additional_properties": True,
+                            "required": ["string"],
+                            "type": "type",
+                        },
                         "schema": {},
                         "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
@@ -579,6 +618,19 @@ class TestAsyncTasks:
                         "include_response_content": True,
                         "json": {},
                         "params": "string",
+                        "params_schema": {
+                            "properties": {
+                                "foo": {
+                                    "type": "type",
+                                    "description": "description",
+                                    "enum": ["string"],
+                                    "items": {},
+                                }
+                            },
+                            "additional_properties": True,
+                            "required": ["string"],
+                            "type": "type",
+                        },
                         "schema": {},
                         "secrets": {"foo": {"name": "name"}},
                         "timeout": 0,
