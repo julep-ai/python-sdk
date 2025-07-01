@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, List, Union, Optional
+from typing import TYPE_CHECKING, Dict, List, Union, Optional
 from datetime import datetime
 from typing_extensions import Literal, TypeAlias
 
@@ -18,12 +18,12 @@ from .yield_step import YieldStep
 from .return_step import ReturnStep
 from .evaluate_step import EvaluateStep
 from .tool_call_step import ToolCallStep
+from .shared.secret_ref import SecretRef
 from .shared.system_def import SystemDef
 from .prompt_step_output import PromptStepOutput
 from .switch_step_output import SwitchStepOutput
 from .error_workflow_step import ErrorWorkflowStep
 from .foreach_step_output import ForeachStepOutput
-from .shared.api_call_def import APICallDef
 from .shared.function_def import FunctionDef
 from .wait_for_input_step import WaitForInputStep
 from .parallel_step_output import ParallelStepOutput
@@ -53,7 +53,17 @@ from .shared.browserbase_create_session_integration_def import BrowserbaseCreate
 from .shared.browserbase_complete_session_integration_def import BrowserbaseCompleteSessionIntegrationDef
 from .shared.browserbase_get_session_live_urls_integration_def import BrowserbaseGetSessionLiveURLsIntegrationDef
 
-__all__ = ["Task", "Main", "MainMainOutput", "MainMainOutputMap", "Tool", "ToolIntegration"]
+__all__ = [
+    "Task",
+    "Main",
+    "MainMainOutput",
+    "MainMainOutputMap",
+    "Tool",
+    "ToolAPICall",
+    "ToolAPICallParamsSchema",
+    "ToolAPICallParamsSchemaProperties",
+    "ToolIntegration",
+]
 
 MainMainOutputMap: TypeAlias = Union[EvaluateStep, ToolCallStep, PromptStepOutput, GetStep, SetStep, LogStep, YieldStep]
 
@@ -93,6 +103,60 @@ Main: TypeAlias = Union[
     MainMainOutput,
 ]
 
+
+class ToolAPICallParamsSchemaProperties(BaseModel):
+    type: str
+
+    description: Optional[str] = None
+
+    enum: Optional[List[str]] = None
+
+    items: Optional[object] = None
+
+
+class ToolAPICallParamsSchema(BaseModel):
+    properties: Dict[str, ToolAPICallParamsSchemaProperties]
+
+    additional_properties: Optional[bool] = FieldInfo(alias="additionalProperties", default=None)
+
+    required: Optional[List[str]] = None
+
+    type: Optional[str] = None
+
+
+class ToolAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[object] = None
+
+    files: Optional[object] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    include_response_content: Optional[bool] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+    params_schema: Optional[ToolAPICallParamsSchema] = None
+    """JSON Schema for API call parameters"""
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, SecretRef]] = None
+
+    timeout: Optional[int] = None
+
+
 ToolIntegration: TypeAlias = Union[
     DummyIntegrationDef,
     BraveIntegrationDef,
@@ -127,7 +191,7 @@ class Tool(BaseModel):
         "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
     ]
 
-    api_call: Optional[APICallDef] = None
+    api_call: Optional[ToolAPICall] = None
     """API call definition"""
 
     bash_20241022: Optional[Bash20241022Def] = None
@@ -187,7 +251,13 @@ if PYDANTIC_V2:
     Task.model_rebuild()
     MainMainOutput.model_rebuild()
     Tool.model_rebuild()
+    ToolAPICall.model_rebuild()
+    ToolAPICallParamsSchema.model_rebuild()
+    ToolAPICallParamsSchemaProperties.model_rebuild()
 else:
     Task.update_forward_refs()  # type: ignore
     MainMainOutput.update_forward_refs()  # type: ignore
     Tool.update_forward_refs()  # type: ignore
+    ToolAPICall.update_forward_refs()  # type: ignore
+    ToolAPICallParamsSchema.update_forward_refs()  # type: ignore
+    ToolAPICallParamsSchemaProperties.update_forward_refs()  # type: ignore

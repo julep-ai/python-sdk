@@ -51,6 +51,19 @@ class TestTools:
                 "include_response_content": True,
                 "json": {},
                 "params": "string",
+                "params_schema": {
+                    "properties": {
+                        "foo": {
+                            "type": "type",
+                            "description": "description",
+                            "enum": ["string"],
+                            "items": {},
+                        }
+                    },
+                    "additional_properties": True,
+                    "required": ["string"],
+                    "type": "type",
+                },
                 "schema": {},
                 "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
@@ -153,6 +166,19 @@ class TestTools:
                 "json": {},
                 "method": "GET",
                 "params": "string",
+                "params_schema": {
+                    "additional_properties": True,
+                    "properties": {
+                        "foo": {
+                            "description": "description",
+                            "enum": ["string"],
+                            "items": {},
+                            "type": "type",
+                        }
+                    },
+                    "required": ["string"],
+                    "type": "type",
+                },
                 "schema": {},
                 "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
@@ -363,6 +389,19 @@ class TestTools:
                 "include_response_content": True,
                 "json": {},
                 "params": "string",
+                "params_schema": {
+                    "properties": {
+                        "foo": {
+                            "type": "type",
+                            "description": "description",
+                            "enum": ["string"],
+                            "items": {},
+                        }
+                    },
+                    "additional_properties": True,
+                    "required": ["string"],
+                    "type": "type",
+                },
                 "schema": {},
                 "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
@@ -485,6 +524,19 @@ class TestAsyncTools:
                 "include_response_content": True,
                 "json": {},
                 "params": "string",
+                "params_schema": {
+                    "properties": {
+                        "foo": {
+                            "type": "type",
+                            "description": "description",
+                            "enum": ["string"],
+                            "items": {},
+                        }
+                    },
+                    "additional_properties": True,
+                    "required": ["string"],
+                    "type": "type",
+                },
                 "schema": {},
                 "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
@@ -587,6 +639,19 @@ class TestAsyncTools:
                 "json": {},
                 "method": "GET",
                 "params": "string",
+                "params_schema": {
+                    "additional_properties": True,
+                    "properties": {
+                        "foo": {
+                            "description": "description",
+                            "enum": ["string"],
+                            "items": {},
+                            "type": "type",
+                        }
+                    },
+                    "required": ["string"],
+                    "type": "type",
+                },
                 "schema": {},
                 "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,
@@ -797,6 +862,19 @@ class TestAsyncTools:
                 "include_response_content": True,
                 "json": {},
                 "params": "string",
+                "params_schema": {
+                    "properties": {
+                        "foo": {
+                            "type": "type",
+                            "description": "description",
+                            "enum": ["string"],
+                            "items": {},
+                        }
+                    },
+                    "additional_properties": True,
+                    "required": ["string"],
+                    "type": "type",
+                },
                 "schema": {},
                 "secrets": {"foo": {"name": "name"}},
                 "timeout": 0,

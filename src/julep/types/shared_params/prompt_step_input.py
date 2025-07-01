@@ -2,11 +2,12 @@
 
 from __future__ import annotations
 
-from typing import List, Union, Iterable, Optional
-from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from typing import Dict, List, Union, Iterable, Optional
+from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from ..._utils import PropertyInfo
+from .secret_ref import SecretRef
 from .system_def import SystemDef
-from .api_call_def import APICallDef
 from .function_def import FunctionDef
 from .bash20241022_def import Bash20241022Def
 from .named_tool_choice import NamedToolChoice
@@ -58,6 +59,9 @@ __all__ = [
     "ToolsUnionMember1ToolRefRefToolRefByID",
     "ToolsUnionMember1ToolRefRefToolRefByName",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchema",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration",
 ]
 
@@ -166,6 +170,61 @@ class ToolsUnionMember1ToolRef(TypedDict, total=False):
     """Reference to a tool by id"""
 
 
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties(TypedDict, total=False):
+    type: Required[str]
+
+    description: Optional[str]
+
+    enum: Optional[List[str]]
+
+    items: object
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchema(TypedDict, total=False):
+    properties: Required[
+        Dict[str, ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties]
+    ]
+
+    additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
+
+    required: List[str]
+
+    type: str
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[object]
+
+    files: Optional[object]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    include_response_content: bool
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+    params_schema: Optional[ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchema]
+    """JSON Schema for API call parameters"""
+
+    schema: Optional[object]
+
+    secrets: Optional[Dict[str, SecretRef]]
+
+    timeout: Optional[int]
+
+
 ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     DummyIntegrationDef,
     BraveIntegrationDef,
@@ -207,7 +266,7 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput(TypedDict, to
         ]
     ]
 
-    api_call: Optional[APICallDef]
+    api_call: Optional[ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall]
     """API call definition"""
 
     bash_20241022: Optional[Bash20241022Def]

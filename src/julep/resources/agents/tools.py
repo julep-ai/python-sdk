@@ -23,7 +23,6 @@ from ...types.agents import tool_list_params, tool_reset_params, tool_create_par
 from ...types.shared_params.system_def import SystemDef
 from ...types.agents.tool_list_response import ToolListResponse
 from ...types.agents.tool_reset_response import ToolResetResponse
-from ...types.shared_params.api_call_def import APICallDef
 from ...types.shared_params.function_def import FunctionDef
 from ...types.agents.tool_create_response import ToolCreateResponse
 from ...types.agents.tool_delete_response import ToolDeleteResponse
@@ -69,7 +68,7 @@ class ToolsResource(SyncAPIResource):
             "text_editor_20241022",
             "bash_20241022",
         ],
-        api_call: Optional[APICallDef] | NotGiven = NOT_GIVEN,
+        api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[Bash20241022Def] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[Computer20241022Def] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
@@ -314,7 +313,7 @@ class ToolsResource(SyncAPIResource):
             "text_editor_20241022",
             "bash_20241022",
         ],
-        api_call: Optional[APICallDef] | NotGiven = NOT_GIVEN,
+        api_call: Optional[tool_reset_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[Bash20241022Def] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[Computer20241022Def] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
@@ -413,7 +412,7 @@ class AsyncToolsResource(AsyncAPIResource):
             "text_editor_20241022",
             "bash_20241022",
         ],
-        api_call: Optional[APICallDef] | NotGiven = NOT_GIVEN,
+        api_call: Optional[tool_create_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[Bash20241022Def] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[Computer20241022Def] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
@@ -658,7 +657,7 @@ class AsyncToolsResource(AsyncAPIResource):
             "text_editor_20241022",
             "bash_20241022",
         ],
-        api_call: Optional[APICallDef] | NotGiven = NOT_GIVEN,
+        api_call: Optional[tool_reset_params.APICall] | NotGiven = NOT_GIVEN,
         bash_20241022: Optional[Bash20241022Def] | NotGiven = NOT_GIVEN,
         computer_20241022: Optional[Computer20241022Def] | NotGiven = NOT_GIVEN,
         description: Optional[str] | NotGiven = NOT_GIVEN,
