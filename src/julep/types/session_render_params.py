@@ -3,12 +3,13 @@
 from __future__ import annotations
 
 from typing import Dict, List, Union, Iterable, Optional
-from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from .._utils import PropertyInfo
+from .shared_params.secret_ref import SecretRef
 from .shared_params.system_def import SystemDef
 from .chosen_bash20241022_param import ChosenBash20241022Param
 from .chosen_function_call_param import ChosenFunctionCallParam
-from .shared_params.api_call_def import APICallDef
 from .shared_params.function_def import FunctionDef
 from .chosen_computer20241022_param import ChosenComputer20241022Param
 from .shared_params.bash20241022_def import Bash20241022Def
@@ -56,6 +57,9 @@ __all__ = [
     "ResponseFormat",
     "ToolChoice",
     "Tool",
+    "ToolAPICall",
+    "ToolAPICallParamsSchema",
+    "ToolAPICallParamsSchemaProperties",
     "ToolIntegration",
 ]
 
@@ -191,6 +195,60 @@ ResponseFormat: TypeAlias = Union[SimpleCompletionResponseFormatParam, SchemaCom
 
 ToolChoice: TypeAlias = Union[Literal["auto", "none"], NamedToolChoice]
 
+
+class ToolAPICallParamsSchemaProperties(TypedDict, total=False):
+    type: Required[str]
+
+    description: Optional[str]
+
+    enum: Optional[List[str]]
+
+    items: object
+
+
+class ToolAPICallParamsSchema(TypedDict, total=False):
+    properties: Required[Dict[str, ToolAPICallParamsSchemaProperties]]
+
+    additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
+
+    required: List[str]
+
+    type: str
+
+
+class ToolAPICall(TypedDict, total=False):
+    method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
+
+    url: Required[str]
+
+    content: Optional[str]
+
+    cookies: Optional[Dict[str, str]]
+
+    data: Optional[object]
+
+    files: Optional[object]
+
+    follow_redirects: Optional[bool]
+
+    headers: Optional[Dict[str, str]]
+
+    include_response_content: bool
+
+    json: Optional[object]
+
+    params: Union[str, object, None]
+
+    params_schema: Optional[ToolAPICallParamsSchema]
+    """JSON Schema for API call parameters"""
+
+    schema: Optional[object]
+
+    secrets: Optional[Dict[str, SecretRef]]
+
+    timeout: Optional[int]
+
+
 ToolIntegration: TypeAlias = Union[
     DummyIntegrationDef,
     BraveIntegrationDef,
@@ -232,7 +290,7 @@ class Tool(TypedDict, total=False):
         ]
     ]
 
-    api_call: Optional[APICallDef]
+    api_call: Optional[ToolAPICall]
     """API call definition"""
 
     bash_20241022: Optional[Bash20241022Def]

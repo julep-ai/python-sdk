@@ -1,12 +1,14 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import Union, Optional
+from typing import Dict, List, Union, Optional
 from datetime import datetime
 from typing_extensions import Literal, TypeAlias
 
+from pydantic import Field as FieldInfo
+
 from ..._models import BaseModel
+from ..shared.secret_ref import SecretRef
 from ..shared.system_def import SystemDef
-from ..shared.api_call_def import APICallDef
 from ..shared.function_def import FunctionDef
 from ..shared.bash20241022_def import Bash20241022Def
 from ..shared.computer20241022_def import Computer20241022Def
@@ -34,7 +36,61 @@ from ..shared.browserbase_create_session_integration_def import BrowserbaseCreat
 from ..shared.browserbase_complete_session_integration_def import BrowserbaseCompleteSessionIntegrationDef
 from ..shared.browserbase_get_session_live_urls_integration_def import BrowserbaseGetSessionLiveURLsIntegrationDef
 
-__all__ = ["ToolUpdateResponse", "Integration"]
+__all__ = ["ToolUpdateResponse", "APICall", "APICallParamsSchema", "APICallParamsSchemaProperties", "Integration"]
+
+
+class APICallParamsSchemaProperties(BaseModel):
+    type: str
+
+    description: Optional[str] = None
+
+    enum: Optional[List[str]] = None
+
+    items: Optional[object] = None
+
+
+class APICallParamsSchema(BaseModel):
+    properties: Dict[str, APICallParamsSchemaProperties]
+
+    additional_properties: Optional[bool] = FieldInfo(alias="additionalProperties", default=None)
+
+    required: Optional[List[str]] = None
+
+    type: Optional[str] = None
+
+
+class APICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[object] = None
+
+    files: Optional[object] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    include_response_content: Optional[bool] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+    params_schema: Optional[APICallParamsSchema] = None
+    """JSON Schema for API call parameters"""
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, SecretRef]] = None
+
+    timeout: Optional[int] = None
+
 
 Integration: TypeAlias = Union[
     DummyIntegrationDef,
@@ -76,7 +132,7 @@ class ToolUpdateResponse(BaseModel):
 
     updated_at: datetime
 
-    api_call: Optional[APICallDef] = None
+    api_call: Optional[APICall] = None
     """API call definition"""
 
     bash_20241022: Optional[Bash20241022Def] = None

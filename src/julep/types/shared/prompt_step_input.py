@@ -1,13 +1,13 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import List, Union, Optional
+from typing import Dict, List, Union, Optional
 from typing_extensions import Literal, TypeAlias
 
 from pydantic import Field as FieldInfo
 
 from ..._models import BaseModel
+from .secret_ref import SecretRef
 from .system_def import SystemDef
-from .api_call_def import APICallDef
 from .function_def import FunctionDef
 from .bash20241022_def import Bash20241022Def
 from .named_tool_choice import NamedToolChoice
@@ -59,6 +59,9 @@ __all__ = [
     "ToolsUnionMember1ToolRefRefToolRefByID",
     "ToolsUnionMember1ToolRefRefToolRefByName",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchema",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration",
 ]
 
@@ -159,6 +162,59 @@ class ToolsUnionMember1ToolRef(BaseModel):
     """Reference to a tool by id"""
 
 
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties(BaseModel):
+    type: str
+
+    description: Optional[str] = None
+
+    enum: Optional[List[str]] = None
+
+    items: Optional[object] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchema(BaseModel):
+    properties: Dict[str, ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties]
+
+    additional_properties: Optional[bool] = FieldInfo(alias="additionalProperties", default=None)
+
+    required: Optional[List[str]] = None
+
+    type: Optional[str] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(BaseModel):
+    method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
+
+    url: str
+
+    content: Optional[str] = None
+
+    cookies: Optional[Dict[str, str]] = None
+
+    data: Optional[object] = None
+
+    files: Optional[object] = None
+
+    follow_redirects: Optional[bool] = None
+
+    headers: Optional[Dict[str, str]] = None
+
+    include_response_content: Optional[bool] = None
+
+    json_: Optional[object] = FieldInfo(alias="json", default=None)
+
+    params: Union[str, object, None] = None
+
+    params_schema: Optional[ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchema] = None
+    """JSON Schema for API call parameters"""
+
+    schema_: Optional[object] = FieldInfo(alias="schema", default=None)
+
+    secrets: Optional[Dict[str, SecretRef]] = None
+
+    timeout: Optional[int] = None
+
+
 ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     DummyIntegrationDef,
     BraveIntegrationDef,
@@ -193,7 +249,7 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput(BaseModel):
         "function", "integration", "system", "api_call", "computer_20241022", "text_editor_20241022", "bash_20241022"
     ]
 
-    api_call: Optional[APICallDef] = None
+    api_call: Optional[ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall] = None
     """API call definition"""
 
     bash_20241022: Optional[Bash20241022Def] = None

@@ -5,7 +5,6 @@ from julep.types import (
     AlgoliaIntegrationDef,
     AlgoliaSearchArguments,
     AlgoliaSetup,
-    APICallDef,
     ArxivIntegrationDef,
     ArxivSearchArguments,
     Bash20241022Def,
