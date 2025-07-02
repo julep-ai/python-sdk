@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.16.0 (2025-07-02)
+
+Full Changelog: [v2.15.2...v2.16.0](https://github.com/julep-ai/python-sdk/compare/v2.15.2...v2.16.0)
+
+### Features
+
+* **api:** api update ([0bfe13d](https://github.com/julep-ai/python-sdk/commit/0bfe13dcc3e35982bc17ae5394813f57a3d03177))
+
+
+### Chores
+
+* **ci:** change upload type ([3d79847](https://github.com/julep-ai/python-sdk/commit/3d79847232a02c8bff65a20fbad92192d9fa8846))
+
 ## 2.15.2 (2025-06-30)
 
 Full Changelog: [v2.15.1...v2.15.2](https://github.com/julep-ai/python-sdk/compare/v2.15.1...v2.15.2)
