@@ -263,6 +263,7 @@ class SessionsResource(SyncAPIResource):
         messages: Iterable[session_chat_params.Message],
         connection_pool: object | NotGiven = NOT_GIVEN,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
+        auto_run_tools: bool | NotGiven = NOT_GIVEN,
         frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
@@ -272,6 +273,7 @@ class SessionsResource(SyncAPIResource):
         model: Optional[str] | NotGiven = NOT_GIVEN,
         presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         recall: bool | NotGiven = NOT_GIVEN,
+        recall_tools: bool | NotGiven = NOT_GIVEN,
         repetition_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         response_format: Optional[session_chat_params.ResponseFormat] | NotGiven = NOT_GIVEN,
         save: bool | NotGiven = NOT_GIVEN,
@@ -293,11 +295,18 @@ class SessionsResource(SyncAPIResource):
         """
         Initiates a chat session.
 
+        Routes to different implementations based on feature flags:
+
+        - If auto_run_tools_chat feature flag is enabled, uses the new auto-tools
+          implementation
+        - Otherwise, uses the legacy implementation
+
         Parameters: developer (Developer): The developer associated with the chat
         session. session_id (UUID): The unique identifier of the chat session.
         chat_input (ChatInput): The chat input data. background_tasks (BackgroundTasks):
         The background tasks to run. x_custom_api_key (Optional[str]): The custom API
-        key.
+        key. mock_response (Optional[str]): Mock response for testing. connection_pool:
+        Connection pool for testing purposes.
 
         Returns: ChatResponse or StreamingResponse: The chat response or streaming
         response.
@@ -322,6 +331,7 @@ class SessionsResource(SyncAPIResource):
                     {
                         "messages": messages,
                         "agent": agent,
+                        "auto_run_tools": auto_run_tools,
                         "frequency_penalty": frequency_penalty,
                         "length_penalty": length_penalty,
                         "logit_bias": logit_bias,
@@ -331,6 +341,7 @@ class SessionsResource(SyncAPIResource):
                         "model": model,
                         "presence_penalty": presence_penalty,
                         "recall": recall,
+                        "recall_tools": recall_tools,
                         "repetition_penalty": repetition_penalty,
                         "response_format": response_format,
                         "save": save,
@@ -493,6 +504,7 @@ class SessionsResource(SyncAPIResource):
         *,
         messages: Iterable[session_render_params.Message],
         agent: Optional[str] | NotGiven = NOT_GIVEN,
+        auto_run_tools: bool | NotGiven = NOT_GIVEN,
         frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
@@ -502,6 +514,7 @@ class SessionsResource(SyncAPIResource):
         model: Optional[str] | NotGiven = NOT_GIVEN,
         presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         recall: bool | NotGiven = NOT_GIVEN,
+        recall_tools: bool | NotGiven = NOT_GIVEN,
         repetition_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         response_format: Optional[session_render_params.ResponseFormat] | NotGiven = NOT_GIVEN,
         save: bool | NotGiven = NOT_GIVEN,
@@ -521,6 +534,12 @@ class SessionsResource(SyncAPIResource):
     ) -> SessionRenderResponse:
         """
         Renders a chat input.
+
+        Routes to different implementations based on feature flags:
+
+        - If auto_run_tools_chat feature flag is enabled, uses the new auto-tools
+          implementation
+        - Otherwise, uses the legacy implementation
 
         Parameters: developer (Developer): The developer associated with the chat
         session. session_id (UUID): The unique identifier of the chat session.
@@ -545,6 +564,7 @@ class SessionsResource(SyncAPIResource):
                 {
                     "messages": messages,
                     "agent": agent,
+                    "auto_run_tools": auto_run_tools,
                     "frequency_penalty": frequency_penalty,
                     "length_penalty": length_penalty,
                     "logit_bias": logit_bias,
@@ -554,6 +574,7 @@ class SessionsResource(SyncAPIResource):
                     "model": model,
                     "presence_penalty": presence_penalty,
                     "recall": recall,
+                    "recall_tools": recall_tools,
                     "repetition_penalty": repetition_penalty,
                     "response_format": response_format,
                     "save": save,
@@ -856,6 +877,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         messages: Iterable[session_chat_params.Message],
         connection_pool: object | NotGiven = NOT_GIVEN,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
+        auto_run_tools: bool | NotGiven = NOT_GIVEN,
         frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
@@ -865,6 +887,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         model: Optional[str] | NotGiven = NOT_GIVEN,
         presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         recall: bool | NotGiven = NOT_GIVEN,
+        recall_tools: bool | NotGiven = NOT_GIVEN,
         repetition_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         response_format: Optional[session_chat_params.ResponseFormat] | NotGiven = NOT_GIVEN,
         save: bool | NotGiven = NOT_GIVEN,
@@ -886,11 +909,18 @@ class AsyncSessionsResource(AsyncAPIResource):
         """
         Initiates a chat session.
 
+        Routes to different implementations based on feature flags:
+
+        - If auto_run_tools_chat feature flag is enabled, uses the new auto-tools
+          implementation
+        - Otherwise, uses the legacy implementation
+
         Parameters: developer (Developer): The developer associated with the chat
         session. session_id (UUID): The unique identifier of the chat session.
         chat_input (ChatInput): The chat input data. background_tasks (BackgroundTasks):
         The background tasks to run. x_custom_api_key (Optional[str]): The custom API
-        key.
+        key. mock_response (Optional[str]): Mock response for testing. connection_pool:
+        Connection pool for testing purposes.
 
         Returns: ChatResponse or StreamingResponse: The chat response or streaming
         response.
@@ -915,6 +945,7 @@ class AsyncSessionsResource(AsyncAPIResource):
                     {
                         "messages": messages,
                         "agent": agent,
+                        "auto_run_tools": auto_run_tools,
                         "frequency_penalty": frequency_penalty,
                         "length_penalty": length_penalty,
                         "logit_bias": logit_bias,
@@ -924,6 +955,7 @@ class AsyncSessionsResource(AsyncAPIResource):
                         "model": model,
                         "presence_penalty": presence_penalty,
                         "recall": recall,
+                        "recall_tools": recall_tools,
                         "repetition_penalty": repetition_penalty,
                         "response_format": response_format,
                         "save": save,
@@ -1088,6 +1120,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         *,
         messages: Iterable[session_render_params.Message],
         agent: Optional[str] | NotGiven = NOT_GIVEN,
+        auto_run_tools: bool | NotGiven = NOT_GIVEN,
         frequency_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         length_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         logit_bias: Optional[Dict[str, float]] | NotGiven = NOT_GIVEN,
@@ -1097,6 +1130,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         model: Optional[str] | NotGiven = NOT_GIVEN,
         presence_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         recall: bool | NotGiven = NOT_GIVEN,
+        recall_tools: bool | NotGiven = NOT_GIVEN,
         repetition_penalty: Optional[float] | NotGiven = NOT_GIVEN,
         response_format: Optional[session_render_params.ResponseFormat] | NotGiven = NOT_GIVEN,
         save: bool | NotGiven = NOT_GIVEN,
@@ -1116,6 +1150,12 @@ class AsyncSessionsResource(AsyncAPIResource):
     ) -> SessionRenderResponse:
         """
         Renders a chat input.
+
+        Routes to different implementations based on feature flags:
+
+        - If auto_run_tools_chat feature flag is enabled, uses the new auto-tools
+          implementation
+        - Otherwise, uses the legacy implementation
 
         Parameters: developer (Developer): The developer associated with the chat
         session. session_id (UUID): The unique identifier of the chat session.
@@ -1140,6 +1180,7 @@ class AsyncSessionsResource(AsyncAPIResource):
                 {
                     "messages": messages,
                     "agent": agent,
+                    "auto_run_tools": auto_run_tools,
                     "frequency_penalty": frequency_penalty,
                     "length_penalty": length_penalty,
                     "logit_bias": logit_bias,
@@ -1149,6 +1190,7 @@ class AsyncSessionsResource(AsyncAPIResource):
                     "model": model,
                     "presence_penalty": presence_penalty,
                     "recall": recall,
+                    "recall_tools": recall_tools,
                     "repetition_penalty": repetition_penalty,
                     "response_format": response_format,
                     "save": save,

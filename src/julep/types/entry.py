@@ -467,7 +467,7 @@ class Entry(BaseModel):
 
     role: Literal["user", "assistant", "system", "tool"]
 
-    source: Literal["api_request", "api_response", "tool_response", "internal", "summarizer", "meta"]
+    source: Literal["api_request", "api_response", "tool_request", "tool_response", "internal", "summarizer", "meta"]
 
     timestamp: datetime
 
