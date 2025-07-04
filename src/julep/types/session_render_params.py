@@ -69,6 +69,8 @@ class SessionRenderParams(TypedDict, total=False):
 
     agent: Optional[str]
 
+    auto_run_tools: bool
+
     frequency_penalty: Optional[float]
 
     length_penalty: Optional[float]
@@ -86,6 +88,8 @@ class SessionRenderParams(TypedDict, total=False):
     presence_penalty: Optional[float]
 
     recall: bool
+
+    recall_tools: bool
 
     repetition_penalty: Optional[float]
 
