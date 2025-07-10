@@ -1,5 +1,20 @@
 # Changelog
 
+## 2.17.1 (2025-07-10)
+
+Full Changelog: [v2.17.0...v2.17.1](https://github.com/julep-ai/python-sdk/compare/v2.17.0...v2.17.1)
+
+### Bug Fixes
+
+* **parsing:** correctly handle nested discriminated unions ([e7c1295](https://github.com/julep-ai/python-sdk/commit/e7c12950c714056a85731981ebccdc1390343751))
+
+
+### Chores
+
+* **internal:** bump pinned h11 dep ([79b0def](https://github.com/julep-ai/python-sdk/commit/79b0deff7e3520f64f2b935ad1b1dc3786ec9886))
+* **internal:** codegen related update ([6d132ba](https://github.com/julep-ai/python-sdk/commit/6d132ba105f0b4cd710f90b8f1ecc0f4767b2e93))
+* **package:** mark python 3.13 as supported ([e8af0c1](https://github.com/julep-ai/python-sdk/commit/e8af0c1a096f824209288b85dd2992fe2bd14a68))
+
 ## 2.17.0 (2025-07-04)
 
 Full Changelog: [v2.16.0...v2.17.0](https://github.com/julep-ai/python-sdk/compare/v2.16.0...v2.17.0)
