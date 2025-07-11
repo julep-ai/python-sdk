@@ -4,8 +4,6 @@ from typing import List, Union, Optional
 from datetime import datetime
 from typing_extensions import Literal, TypeAlias
 
-from pydantic import Field as FieldInfo
-
 from .._models import BaseModel
 from .chat_response import ChatResponse
 from .log_prob_response import LogProbResponse
@@ -101,8 +99,6 @@ class ChunkChatResponseChoiceDelta(BaseModel):
     role: Literal["user", "assistant", "system", "tool"]
 
     content: Union[str, List[str], List[ChunkChatResponseChoiceDeltaContentUnionMember2], None] = None
-
-    continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
 
     name: Optional[str] = None
 

@@ -174,16 +174,8 @@ MessageToolCall: TypeAlias = Union[
     ChosenFunctionCallParam, ChosenComputer20241022Param, ChosenTextEditor20241022Param, ChosenBash20241022Param
 ]
 
-_MessageReservedKeywords = TypedDict(
-    "_MessageReservedKeywords",
-    {
-        "continue": Optional[bool],
-    },
-    total=False,
-)
 
-
-class Message(_MessageReservedKeywords, total=False):
+class Message(TypedDict, total=False):
     role: Required[Literal["user", "assistant", "system", "tool"]]
 
     content: Union[str, List[str], Iterable[MessageContentUnionMember2], None]
