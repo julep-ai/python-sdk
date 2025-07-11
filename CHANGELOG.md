@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.18.0 (2025-07-11)
+
+Full Changelog: [v2.17.1...v2.18.0](https://github.com/julep-ai/python-sdk/compare/v2.17.1...v2.18.0)
+
+### Features
+
+* **api:** api update ([4f4d574](https://github.com/julep-ai/python-sdk/commit/4f4d5740da2bc1344a597fec84de4261ee7b25ca))
+
+
+### Chores
+
+* **readme:** fix version rendering on pypi ([5e9d64d](https://github.com/julep-ai/python-sdk/commit/5e9d64d80a56c3f28048c4e4c66de465ffa4ee0f))
+
 ## 2.17.1 (2025-07-10)
 
 Full Changelog: [v2.17.0...v2.17.1](https://github.com/julep-ai/python-sdk/compare/v2.17.0...v2.17.1)
