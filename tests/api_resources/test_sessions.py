@@ -232,7 +232,6 @@ class TestSessions:
                 {
                     "role": "user",
                     "content": "string",
-                    "continue": True,
                     "name": "name",
                     "tool_call_id": "tool_call_id",
                     "tool_calls": [
@@ -556,7 +555,6 @@ class TestSessions:
                 {
                     "role": "user",
                     "content": "string",
-                    "continue": True,
                     "name": "name",
                     "tool_call_id": "tool_call_id",
                     "tool_calls": [
@@ -996,7 +994,6 @@ class TestAsyncSessions:
                 {
                     "role": "user",
                     "content": "string",
-                    "continue": True,
                     "name": "name",
                     "tool_call_id": "tool_call_id",
                     "tool_calls": [
@@ -1320,7 +1317,6 @@ class TestAsyncSessions:
                 {
                     "role": "user",
                     "content": "string",
-                    "continue": True,
                     "name": "name",
                     "tool_call_id": "tool_call_id",
                     "tool_calls": [
