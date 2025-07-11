@@ -128,16 +128,8 @@ PromptUnionMember0ToolCall: TypeAlias = Union[
     ChosenFunctionCallParam, ChosenComputer20241022Param, ChosenTextEditor20241022Param, ChosenBash20241022Param
 ]
 
-_PromptUnionMember0ReservedKeywords = TypedDict(
-    "_PromptUnionMember0ReservedKeywords",
-    {
-        "continue": Optional[bool],
-    },
-    total=False,
-)
 
-
-class PromptUnionMember0(_PromptUnionMember0ReservedKeywords, total=False):
+class PromptUnionMember0(TypedDict, total=False):
     content: Required[Union[List[str], Iterable[PromptUnionMember0ContentUnionMember1], str, None]]
 
     role: Required[Literal["user", "assistant", "system", "tool"]]

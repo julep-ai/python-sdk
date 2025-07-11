@@ -128,8 +128,6 @@ class Message(BaseModel):
 
     content: Union[str, List[str], List[MessageContentUnionMember2], None] = None
 
-    continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
-
     name: Optional[str] = None
 
     tool_call_id: Optional[str] = None

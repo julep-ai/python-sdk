@@ -132,8 +132,6 @@ class PromptUnionMember0(BaseModel):
 
     role: Literal["user", "assistant", "system", "tool"]
 
-    continue_: Optional[bool] = FieldInfo(alias="continue", default=None)
-
     name: Optional[str] = None
 
     tool_call_id: Optional[str] = None
