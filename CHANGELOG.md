@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.19.0 (2025-07-15)
+
+Full Changelog: [v2.18.0...v2.19.0](https://github.com/julep-ai/python-sdk/compare/v2.18.0...v2.19.0)
+
+### Features
+
+* clean up environment call outs ([aa3d615](https://github.com/julep-ai/python-sdk/commit/aa3d6154cafc047943985abebdf3a91eea141b6a))
+
+
+### Bug Fixes
+
+* **client:** don't send Content-Type header on GET requests ([9ddb65d](https://github.com/julep-ai/python-sdk/commit/9ddb65d4a70e709487e0647614b32e29bd465efe))
+
 ## 2.18.0 (2025-07-11)
 
 Full Changelog: [v2.17.1...v2.18.0](https://github.com/julep-ai/python-sdk/compare/v2.17.1...v2.18.0)
