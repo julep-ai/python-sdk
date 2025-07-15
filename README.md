@@ -91,7 +91,6 @@ pip install julep[aiohttp]
 Then you can enable it by instantiating the client with `http_client=DefaultAioHttpClient()`:
 
 ```python
-import os
 import asyncio
 from julep import DefaultAioHttpClient
 from julep import AsyncJulep
@@ -99,7 +98,7 @@ from julep import AsyncJulep
 
 async def main() -> None:
     async with AsyncJulep(
-        api_key=os.environ.get("JULEP_API_KEY"),  # This is the default and can be omitted
+        api_key="My API Key",
         http_client=DefaultAioHttpClient(),
     ) as client:
         task = await client.tasks.create(
