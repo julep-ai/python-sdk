@@ -171,13 +171,3 @@ class IfElseStepOutput(BaseModel):
     kind: Optional[Literal["if_else"]] = FieldInfo(alias="kind_", default=None)
 
     label: Optional[str] = None
-
-
-if PYDANTIC_V2:
-    IfElseStepOutput.model_rebuild()
-    ThenThenOutput.model_rebuild()
-    ElseElseOutput.model_rebuild()
-else:
-    IfElseStepOutput.update_forward_refs()  # type: ignore
-    ThenThenOutput.update_forward_refs()  # type: ignore
-    ElseElseOutput.update_forward_refs()  # type: ignore

@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from . import task, shared
+from .. import _compat
 from .doc import Doc as Doc
 from .file import File as File
 from .task import Task as Task
@@ -182,3 +184,16 @@ from .schema_completion_response_format_param import (
 from .simple_completion_response_format_param import (
     SimpleCompletionResponseFormatParam as SimpleCompletionResponseFormatParam,
 )
+
+# Rebuild cyclical models only after all modules are imported.
+# This ensures that, when building the deferred (due to cyclical references) model schema,
+# Pydantic can resolve the necessary references.
+# See: https://github.com/pydantic/pydantic/issues/11250 for more context.
+if _compat.PYDANTIC_V2:
+    task.Task.model_rebuild(_parent_namespace_depth=0)
+    shared.if_else_step_input.IfElseStepInput.model_rebuild(_parent_namespace_depth=0)
+    shared.if_else_step_output.IfElseStepOutput.model_rebuild(_parent_namespace_depth=0)
+else:
+    task.Task.update_forward_refs()  # type: ignore
+    shared.if_else_step_input.IfElseStepInput.update_forward_refs()  # type: ignore
+    shared.if_else_step_output.IfElseStepOutput.update_forward_refs()  # type: ignore

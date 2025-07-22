@@ -8,7 +8,6 @@ from typing_extensions import Literal, TypeAlias
 
 from pydantic import Field as FieldInfo
 
-from .._compat import PYDANTIC_V2
 from .._models import BaseModel
 from .get_step import GetStep
 from .log_step import LogStep
@@ -246,18 +245,3 @@ class Task(BaseModel):
 
 
 from .shared.if_else_step_output import IfElseStepOutput
-
-if PYDANTIC_V2:
-    Task.model_rebuild()
-    MainMainOutput.model_rebuild()
-    Tool.model_rebuild()
-    ToolAPICall.model_rebuild()
-    ToolAPICallParamsSchema.model_rebuild()
-    ToolAPICallParamsSchemaProperties.model_rebuild()
-else:
-    Task.update_forward_refs()  # type: ignore
-    MainMainOutput.update_forward_refs()  # type: ignore
-    Tool.update_forward_refs()  # type: ignore
-    ToolAPICall.update_forward_refs()  # type: ignore
-    ToolAPICallParamsSchema.update_forward_refs()  # type: ignore
-    ToolAPICallParamsSchemaProperties.update_forward_refs()  # type: ignore
