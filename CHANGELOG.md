@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.19.1 (2025-07-22)
+
+Full Changelog: [v2.19.0...v2.19.1](https://github.com/julep-ai/python-sdk/compare/v2.19.0...v2.19.1)
+
+### Bug Fixes
+
+* **parsing:** ignore empty metadata ([2cb68e9](https://github.com/julep-ai/python-sdk/commit/2cb68e93fad737f7b8b0580daf7ea17d89a45809))
+
+
+### Chores
+
+* **types:** rebuild Pydantic models after all types are defined ([606b112](https://github.com/julep-ai/python-sdk/commit/606b112bca335f589c094ed6e28123c9c18fe4fd))
+
 ## 2.19.0 (2025-07-15)
 
 Full Changelog: [v2.18.0...v2.19.0](https://github.com/julep-ai/python-sdk/compare/v2.18.0...v2.19.0)
