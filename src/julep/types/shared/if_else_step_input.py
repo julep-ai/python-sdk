@@ -306,33 +306,3 @@ class IfElseStepInput(BaseModel):
     kind: Optional[Literal["if_else"]] = FieldInfo(alias="kind_", default=None)
 
     label: Optional[str] = None
-
-
-if PYDANTIC_V2:
-    IfElseStepInput.model_rebuild()
-    ThenSwitchStepInput.model_rebuild()
-    ThenSwitchStepInputSwitch.model_rebuild()
-    ThenForeachStepInput.model_rebuild()
-    ThenForeachStepInputForeach.model_rebuild()
-    ThenParallelStepInput.model_rebuild()
-    ThenThenInput.model_rebuild()
-    ElseSwitchStepInput.model_rebuild()
-    ElseSwitchStepInputSwitch.model_rebuild()
-    ElseForeachStepInput.model_rebuild()
-    ElseForeachStepInputForeach.model_rebuild()
-    ElseParallelStepInput.model_rebuild()
-    ElseElseInput.model_rebuild()
-else:
-    IfElseStepInput.update_forward_refs()  # type: ignore
-    ThenSwitchStepInput.update_forward_refs()  # type: ignore
-    ThenSwitchStepInputSwitch.update_forward_refs()  # type: ignore
-    ThenForeachStepInput.update_forward_refs()  # type: ignore
-    ThenForeachStepInputForeach.update_forward_refs()  # type: ignore
-    ThenParallelStepInput.update_forward_refs()  # type: ignore
-    ThenThenInput.update_forward_refs()  # type: ignore
-    ElseSwitchStepInput.update_forward_refs()  # type: ignore
-    ElseSwitchStepInputSwitch.update_forward_refs()  # type: ignore
-    ElseForeachStepInput.update_forward_refs()  # type: ignore
-    ElseForeachStepInputForeach.update_forward_refs()  # type: ignore
-    ElseParallelStepInput.update_forward_refs()  # type: ignore
-    ElseElseInput.update_forward_refs()  # type: ignore
