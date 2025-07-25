@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.19.2 (2025-07-25)
+
+Full Changelog: [v2.19.1...v2.19.2](https://github.com/julep-ai/python-sdk/compare/v2.19.1...v2.19.2)
+
+### Bug Fixes
+
+* **parsing:** parse extra field types ([da16c06](https://github.com/julep-ai/python-sdk/commit/da16c062b39ff44bd2613b3a82f7d0ae83d894b9))
+
+
+### Chores
+
+* **project:** add settings file for vscode ([b205a5a](https://github.com/julep-ai/python-sdk/commit/b205a5ab177bdb328cbe787c6646c6febe84364c))
+
 ## 2.19.1 (2025-07-22)
 
 Full Changelog: [v2.19.0...v2.19.1](https://github.com/julep-ai/python-sdk/compare/v2.19.0...v2.19.1)
