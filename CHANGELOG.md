@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.20.0 (2025-07-31)
+
+Full Changelog: [v2.19.2...v2.20.0](https://github.com/julep-ai/python-sdk/compare/v2.19.2...v2.20.0)
+
+### Features
+
+* **client:** support file upload requests ([cf64f9c](https://github.com/julep-ai/python-sdk/commit/cf64f9ccf298ec188419faffd68aeed4609c47b9))
+
 ## 2.19.2 (2025-07-25)
 
 Full Changelog: [v2.19.1...v2.19.2](https://github.com/julep-ai/python-sdk/compare/v2.19.1...v2.19.2)
