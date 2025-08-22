@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.20.0 (2025-08-22)
+
+Full Changelog: [v2.19.2...v2.20.0](https://github.com/julep-ai/python-sdk/compare/v2.19.2...v2.20.0)
+
+### Features
+
+* **client:** support file upload requests ([cf64f9c](https://github.com/julep-ai/python-sdk/commit/cf64f9ccf298ec188419faffd68aeed4609c47b9))
+
+
+### Chores
+
+* **internal:** fix ruff target version ([c830640](https://github.com/julep-ai/python-sdk/commit/c8306405a44284f06a7aa58eb1dd3efe2baa1fd6))
+* **internal:** update comment in script ([1c530b2](https://github.com/julep-ai/python-sdk/commit/1c530b26089dd3d1f6caa64aa9aef3e7901a5ac5))
+* update @stainless-api/prism-cli to v5.15.0 ([e6ad37f](https://github.com/julep-ai/python-sdk/commit/e6ad37f5afb355cfe8056508c1b7628fb111d16b))
+* update github action ([6de72a2](https://github.com/julep-ai/python-sdk/commit/6de72a255a7fc4db715044d23af2339146f135e9))
+
 ## 2.19.2 (2025-07-25)
 
 Full Changelog: [v2.19.1...v2.19.2](https://github.com/julep-ai/python-sdk/compare/v2.19.1...v2.19.2)
