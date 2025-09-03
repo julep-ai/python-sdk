@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any, Dict, List, Union, Iterable, Optional, cast
+from typing import Any, Dict, Union, Iterable, Optional, cast
 from typing_extensions import Literal
 
 import httpx
@@ -16,7 +16,7 @@ from ..types import (
     session_update_params,
     session_create_or_update_params,
 )
-from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven
+from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven, SequenceNotStr
 from .._utils import maybe_transform, strip_not_given, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -62,7 +62,7 @@ class SessionsResource(SyncAPIResource):
         self,
         *,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
-        agents: Optional[List[str]] | NotGiven = NOT_GIVEN,
+        agents: Optional[SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         auto_run_tools: bool | NotGiven = NOT_GIVEN,
         context_overflow: Optional[Literal["truncate", "adaptive"]] | NotGiven = NOT_GIVEN,
         forward_tool_calls: bool | NotGiven = NOT_GIVEN,
@@ -73,7 +73,7 @@ class SessionsResource(SyncAPIResource):
         system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         user: Optional[str] | NotGiven = NOT_GIVEN,
-        users: Optional[List[str]] | NotGiven = NOT_GIVEN,
+        users: Optional[SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -279,7 +279,7 @@ class SessionsResource(SyncAPIResource):
         response_format: Optional[session_chat_params.ResponseFormat] | NotGiven = NOT_GIVEN,
         save: bool | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
-        stop: List[str] | NotGiven = NOT_GIVEN,
+        stop: SequenceNotStr[str] | NotGiven = NOT_GIVEN,
         stream: bool | NotGiven = NOT_GIVEN,
         temperature: Optional[float] | NotGiven = NOT_GIVEN,
         tool_choice: Optional[session_chat_params.ToolChoice] | NotGiven = NOT_GIVEN,
@@ -418,7 +418,7 @@ class SessionsResource(SyncAPIResource):
         session_id: str,
         *,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
-        agents: Optional[List[str]] | NotGiven = NOT_GIVEN,
+        agents: Optional[SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         auto_run_tools: bool | NotGiven = NOT_GIVEN,
         context_overflow: Optional[Literal["truncate", "adaptive"]] | NotGiven = NOT_GIVEN,
         forward_tool_calls: bool | NotGiven = NOT_GIVEN,
@@ -429,7 +429,7 @@ class SessionsResource(SyncAPIResource):
         system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         user: Optional[str] | NotGiven = NOT_GIVEN,
-        users: Optional[List[str]] | NotGiven = NOT_GIVEN,
+        users: Optional[SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -564,7 +564,7 @@ class SessionsResource(SyncAPIResource):
         response_format: Optional[session_render_params.ResponseFormat] | NotGiven = NOT_GIVEN,
         save: bool | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
-        stop: List[str] | NotGiven = NOT_GIVEN,
+        stop: SequenceNotStr[str] | NotGiven = NOT_GIVEN,
         stream: bool | NotGiven = NOT_GIVEN,
         temperature: Optional[float] | NotGiven = NOT_GIVEN,
         tool_choice: Optional[session_render_params.ToolChoice] | NotGiven = NOT_GIVEN,
@@ -720,7 +720,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         self,
         *,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
-        agents: Optional[List[str]] | NotGiven = NOT_GIVEN,
+        agents: Optional[SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         auto_run_tools: bool | NotGiven = NOT_GIVEN,
         context_overflow: Optional[Literal["truncate", "adaptive"]] | NotGiven = NOT_GIVEN,
         forward_tool_calls: bool | NotGiven = NOT_GIVEN,
@@ -731,7 +731,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         user: Optional[str] | NotGiven = NOT_GIVEN,
-        users: Optional[List[str]] | NotGiven = NOT_GIVEN,
+        users: Optional[SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -937,7 +937,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         response_format: Optional[session_chat_params.ResponseFormat] | NotGiven = NOT_GIVEN,
         save: bool | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
-        stop: List[str] | NotGiven = NOT_GIVEN,
+        stop: SequenceNotStr[str] | NotGiven = NOT_GIVEN,
         stream: bool | NotGiven = NOT_GIVEN,
         temperature: Optional[float] | NotGiven = NOT_GIVEN,
         tool_choice: Optional[session_chat_params.ToolChoice] | NotGiven = NOT_GIVEN,
@@ -1082,7 +1082,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         session_id: str,
         *,
         agent: Optional[str] | NotGiven = NOT_GIVEN,
-        agents: Optional[List[str]] | NotGiven = NOT_GIVEN,
+        agents: Optional[SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         auto_run_tools: bool | NotGiven = NOT_GIVEN,
         context_overflow: Optional[Literal["truncate", "adaptive"]] | NotGiven = NOT_GIVEN,
         forward_tool_calls: bool | NotGiven = NOT_GIVEN,
@@ -1093,7 +1093,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         system_template: Optional[str] | NotGiven = NOT_GIVEN,
         token_budget: Optional[int] | NotGiven = NOT_GIVEN,
         user: Optional[str] | NotGiven = NOT_GIVEN,
-        users: Optional[List[str]] | NotGiven = NOT_GIVEN,
+        users: Optional[SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -1228,7 +1228,7 @@ class AsyncSessionsResource(AsyncAPIResource):
         response_format: Optional[session_render_params.ResponseFormat] | NotGiven = NOT_GIVEN,
         save: bool | NotGiven = NOT_GIVEN,
         seed: Optional[int] | NotGiven = NOT_GIVEN,
-        stop: List[str] | NotGiven = NOT_GIVEN,
+        stop: SequenceNotStr[str] | NotGiven = NOT_GIVEN,
         stream: bool | NotGiven = NOT_GIVEN,
         temperature: Optional[float] | NotGiven = NOT_GIVEN,
         tool_choice: Optional[session_render_params.ToolChoice] | NotGiven = NOT_GIVEN,

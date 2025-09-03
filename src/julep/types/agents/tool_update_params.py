@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Union, Iterable, Optional
+from typing import Dict, Union, Iterable, Optional
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from ..._types import SequenceNotStr
 from ..._utils import PropertyInfo
 from ..shared_params.function_def import FunctionDef
 from .browserbase_setup_update_param import BrowserbaseSetupUpdateParam
@@ -119,7 +120,7 @@ class ToolUpdateParams(TypedDict, total=False):
 class APICallParamsSchemaProperties(TypedDict, total=False):
     description: Optional[str]
 
-    enum: Optional[List[str]]
+    enum: Optional[SequenceNotStr[str]]
 
     items: object
 
@@ -131,7 +132,7 @@ class APICallParamsSchema(TypedDict, total=False):
 
     properties: Optional[Dict[str, APICallParamsSchemaProperties]]
 
-    required: List[str]
+    required: SequenceNotStr[str]
 
     type: str
 
@@ -503,7 +504,7 @@ class IntegrationRemoteBrowserIntegrationDefUpdate(TypedDict, total=False):
 class IntegrationLlamaParseIntegrationDefUpdateArguments(TypedDict, total=False):
     base64: bool
 
-    file: Union[str, List[str], None]
+    file: Union[str, SequenceNotStr[str], None]
 
     filename: Optional[str]
 
@@ -531,7 +532,7 @@ class IntegrationLlamaParseIntegrationDefUpdate(TypedDict, total=False):
 class IntegrationFfmpegIntegrationDefUpdateArguments(TypedDict, total=False):
     cmd: Optional[str]
 
-    file: Union[str, List[str], None]
+    file: Union[str, SequenceNotStr[str], None]
 
 
 class IntegrationFfmpegIntegrationDefUpdate(TypedDict, total=False):
@@ -610,7 +611,7 @@ class IntegrationCloudinaryEditIntegrationDefUpdate(TypedDict, total=False):
 class IntegrationArxivIntegrationDefUpdateArguments(TypedDict, total=False):
     download_pdf: bool
 
-    id_list: Optional[List[str]]
+    id_list: Optional[SequenceNotStr[str]]
 
     max_results: int
 
@@ -667,7 +668,7 @@ class IntegrationUnstructuredIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationAlgoliaIntegrationDefUpdateArguments(TypedDict, total=False):
-    attributes_to_retrieve: Optional[List[str]]
+    attributes_to_retrieve: Optional[SequenceNotStr[str]]
 
     hits_per_page: int
 

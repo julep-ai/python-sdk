@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Union, Optional
+from typing import Dict, Union, Optional
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from ..._types import SequenceNotStr
 from ..._utils import PropertyInfo
 from ..shared_params.secret_ref import SecretRef
 from ..shared_params.system_def import SystemDef
@@ -82,7 +83,7 @@ class APICallParamsSchemaProperties(TypedDict, total=False):
 
     description: Optional[str]
 
-    enum: Optional[List[str]]
+    enum: Optional[SequenceNotStr[str]]
 
     items: object
 
@@ -92,7 +93,7 @@ class APICallParamsSchema(TypedDict, total=False):
 
     additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
 
-    required: List[str]
+    required: SequenceNotStr[str]
 
     type: str
 

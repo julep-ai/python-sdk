@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
-from typing import List, Optional
+from typing import Optional
 from typing_extensions import Required, TypedDict
+
+from ..._types import SequenceNotStr
 
 __all__ = ["AlgoliaSearchArguments"]
 
@@ -13,6 +15,6 @@ class AlgoliaSearchArguments(TypedDict, total=False):
 
     query: Required[str]
 
-    attributes_to_retrieve: Optional[List[str]]
+    attributes_to_retrieve: Optional[SequenceNotStr[str]]
 
     hits_per_page: int

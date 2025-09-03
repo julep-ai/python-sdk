@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from typing import List, Union, Optional
+from typing import Union, Optional
 from typing_extensions import Literal, TypeAlias, TypedDict
 
+from .._types import SequenceNotStr
 from .hybrid_doc_search_param import HybridDocSearchParam
 from .vector_doc_search_param import VectorDocSearchParam
 from .text_only_doc_search_param import TextOnlyDocSearchParam
@@ -15,7 +16,7 @@ __all__ = ["SessionCreateOrUpdateParams", "RecallOptions"]
 class SessionCreateOrUpdateParams(TypedDict, total=False):
     agent: Optional[str]
 
-    agents: Optional[List[str]]
+    agents: Optional[SequenceNotStr[str]]
 
     auto_run_tools: bool
 
@@ -37,7 +38,7 @@ class SessionCreateOrUpdateParams(TypedDict, total=False):
 
     user: Optional[str]
 
-    users: Optional[List[str]]
+    users: Optional[SequenceNotStr[str]]
 
 
 RecallOptions: TypeAlias = Union[VectorDocSearchParam, TextOnlyDocSearchParam, HybridDocSearchParam]

@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
-from typing import List, Optional
+from typing import Optional
 from typing_extensions import Literal, Required, TypedDict
+
+from ..._types import SequenceNotStr
 
 __all__ = ["ArxivSearchArguments"]
 
@@ -13,7 +15,7 @@ class ArxivSearchArguments(TypedDict, total=False):
 
     download_pdf: bool
 
-    id_list: Optional[List[str]]
+    id_list: Optional[SequenceNotStr[str]]
 
     max_results: int
 
