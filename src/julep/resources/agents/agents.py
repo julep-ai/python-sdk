@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Union, Optional
+from typing import Dict, Union, Optional
 from typing_extensions import Literal
 
 import httpx
@@ -30,7 +30,7 @@ from ...types import (
     agent_update_params,
     agent_create_or_update_params,
 )
-from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven
+from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven, SequenceNotStr
 from ..._utils import maybe_transform, strip_not_given, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
@@ -85,7 +85,7 @@ class AgentsResource(SyncAPIResource):
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
+        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         project: Optional[str] | NotGiven = NOT_GIVEN,
@@ -138,7 +138,7 @@ class AgentsResource(SyncAPIResource):
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
+        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
@@ -277,7 +277,7 @@ class AgentsResource(SyncAPIResource):
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
+        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         project: Optional[str] | NotGiven = NOT_GIVEN,
@@ -400,7 +400,7 @@ class AgentsResource(SyncAPIResource):
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
+        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         project: Optional[str] | NotGiven = NOT_GIVEN,
@@ -484,7 +484,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
+        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         project: Optional[str] | NotGiven = NOT_GIVEN,
@@ -537,7 +537,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
+        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         name: Optional[str] | NotGiven = NOT_GIVEN,
@@ -676,7 +676,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
+        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         project: Optional[str] | NotGiven = NOT_GIVEN,
@@ -799,7 +799,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
         default_settings: Optional[object] | NotGiven = NOT_GIVEN,
         default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, List[str]] | NotGiven = NOT_GIVEN,
+        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
         metadata: Optional[object] | NotGiven = NOT_GIVEN,
         model: str | NotGiven = NOT_GIVEN,
         project: Optional[str] | NotGiven = NOT_GIVEN,

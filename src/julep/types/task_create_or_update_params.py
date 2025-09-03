@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Union, Iterable, Optional
+from typing import Dict, Union, Iterable, Optional
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from .._types import SequenceNotStr
 from .._utils import PropertyInfo
 from .get_step_param import GetStepParam
 from .log_step_param import LogStepParam
@@ -199,7 +200,7 @@ class ToolAPICallParamsSchemaProperties(TypedDict, total=False):
 
     description: Optional[str]
 
-    enum: Optional[List[str]]
+    enum: Optional[SequenceNotStr[str]]
 
     items: object
 
@@ -209,7 +210,7 @@ class ToolAPICallParamsSchema(TypedDict, total=False):
 
     additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
 
-    required: List[str]
+    required: SequenceNotStr[str]
 
     type: str
 

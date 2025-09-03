@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Type, Union, Iterable, Optional, cast
+from typing import Dict, Type, Union, Iterable, Optional, cast
 from typing_extensions import Literal, overload
 
 import httpx
 
-from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven
+from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven, SequenceNotStr
 from ..._utils import required_args, maybe_transform, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
@@ -53,7 +53,7 @@ class DocsResource(SyncAPIResource):
         self,
         agent_id: str,
         *,
-        content: Union[str, List[str]],
+        content: Union[str, SequenceNotStr[str]],
         title: str,
         connection_pool: object | NotGiven = NOT_GIVEN,
         embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,
@@ -437,7 +437,7 @@ class AsyncDocsResource(AsyncAPIResource):
         self,
         agent_id: str,
         *,
-        content: Union[str, List[str]],
+        content: Union[str, SequenceNotStr[str]],
         title: str,
         connection_pool: object | NotGiven = NOT_GIVEN,
         embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,

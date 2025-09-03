@@ -2,15 +2,17 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Union, Iterable, Optional
+from typing import Dict, Union, Iterable, Optional
 from typing_extensions import TypedDict
+
+from .._types import SequenceNotStr
 
 __all__ = ["ReturnStepParam"]
 
 _ReturnStepParamReservedKeywords = TypedDict(
     "_ReturnStepParamReservedKeywords",
     {
-        "return": Dict[str, Union[List[str], Dict[str, str], Iterable[Dict[str, str]], str]],
+        "return": Dict[str, Union[SequenceNotStr[str], Dict[str, str], Iterable[Dict[str, str]], str]],
     },
     total=False,
 )
