@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Union, Iterable, Optional
+from typing import Dict, Union, Iterable, Optional
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from .._types import SequenceNotStr
 from .._utils import PropertyInfo
 from .shared_params.secret_ref import SecretRef
 from .shared_params.system_def import SystemDef
@@ -101,7 +102,7 @@ class SessionChatParams(TypedDict, total=False):
 
     seed: Optional[int]
 
-    stop: List[str]
+    stop: SequenceNotStr[str]
 
     stream: bool
 
@@ -182,7 +183,7 @@ MessageToolCall: TypeAlias = Union[
 class Message(TypedDict, total=False):
     role: Required[Literal["user", "assistant", "system", "tool"]]
 
-    content: Union[str, List[str], Iterable[MessageContentUnionMember2], None]
+    content: Union[str, SequenceNotStr[str], Iterable[MessageContentUnionMember2], None]
 
     name: Optional[str]
 
@@ -201,7 +202,7 @@ class ToolAPICallParamsSchemaProperties(TypedDict, total=False):
 
     description: Optional[str]
 
-    enum: Optional[List[str]]
+    enum: Optional[SequenceNotStr[str]]
 
     items: object
 
@@ -211,7 +212,7 @@ class ToolAPICallParamsSchema(TypedDict, total=False):
 
     additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
 
-    required: List[str]
+    required: SequenceNotStr[str]
 
     type: str
 

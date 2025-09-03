@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
-from typing import List, Union
+from typing import Union
 from typing_extensions import Required, TypeAlias, TypedDict
+
+from .._types import SequenceNotStr
 
 __all__ = ["DocEmbedParams", "SingleEmbedQueryRequest", "MultipleEmbedQueryRequest"]
 
@@ -15,7 +17,7 @@ class SingleEmbedQueryRequest(TypedDict, total=False):
 
 
 class MultipleEmbedQueryRequest(TypedDict, total=False):
-    text: Required[List[str]]
+    text: Required[SequenceNotStr[str]]
 
     embed_instruction: str
 

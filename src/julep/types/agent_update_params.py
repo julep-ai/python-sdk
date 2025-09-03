@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
-from typing import List, Union, Optional
+from typing import Union, Optional
 from typing_extensions import TypedDict
+
+from .._types import SequenceNotStr
 
 __all__ = ["AgentUpdateParams"]
 
@@ -17,7 +19,7 @@ class AgentUpdateParams(TypedDict, total=False):
 
     default_system_template: str
 
-    instructions: Union[str, List[str]]
+    instructions: Union[str, SequenceNotStr[str]]
 
     metadata: Optional[object]
 

@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Dict, List, Union, Iterable, Optional
+from typing import Dict, Union, Iterable, Optional
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
+from ..._types import SequenceNotStr
 from ..._utils import PropertyInfo
 from .secret_ref import SecretRef
 from .system_def import SystemDef
@@ -130,7 +131,7 @@ PromptUnionMember0ToolCall: TypeAlias = Union[
 
 
 class PromptUnionMember0(TypedDict, total=False):
-    content: Required[Union[List[str], Iterable[PromptUnionMember0ContentUnionMember1], str, None]]
+    content: Required[Union[SequenceNotStr[str], Iterable[PromptUnionMember0ContentUnionMember1], str, None]]
 
     role: Required[Literal["user", "assistant", "system", "tool"]]
 
@@ -167,7 +168,7 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsS
 
     description: Optional[str]
 
-    enum: Optional[List[str]]
+    enum: Optional[SequenceNotStr[str]]
 
     items: object
 
@@ -179,7 +180,7 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsS
 
     additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
 
-    required: List[str]
+    required: SequenceNotStr[str]
 
     type: str
 
