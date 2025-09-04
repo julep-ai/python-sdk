@@ -189,11 +189,11 @@ from .simple_completion_response_format_param import (
 # This ensures that, when building the deferred (due to cyclical references) model schema,
 # Pydantic can resolve the necessary references.
 # See: https://github.com/pydantic/pydantic/issues/11250 for more context.
-if _compat.PYDANTIC_V2:
-    task.Task.model_rebuild(_parent_namespace_depth=0)
-    shared.if_else_step_input.IfElseStepInput.model_rebuild(_parent_namespace_depth=0)
-    shared.if_else_step_output.IfElseStepOutput.model_rebuild(_parent_namespace_depth=0)
-else:
+if _compat.PYDANTIC_V1:
     task.Task.update_forward_refs()  # type: ignore
     shared.if_else_step_input.IfElseStepInput.update_forward_refs()  # type: ignore
     shared.if_else_step_output.IfElseStepOutput.update_forward_refs()  # type: ignore
+else:
+    task.Task.model_rebuild(_parent_namespace_depth=0)
+    shared.if_else_step_input.IfElseStepInput.model_rebuild(_parent_namespace_depth=0)
+    shared.if_else_step_output.IfElseStepOutput.model_rebuild(_parent_namespace_depth=0)

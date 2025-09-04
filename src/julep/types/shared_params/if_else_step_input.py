@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Union, Iterable, Optional
 from typing_extensions import Literal, Required, TypeAlias, TypedDict, TypeAliasType
 
-from ..._compat import PYDANTIC_V2
+from ..._compat import PYDANTIC_V1
 from ..get_step_param import GetStepParam
 from ..log_step_param import LogStepParam
 from ..set_step_param import SetStepParam
@@ -131,7 +131,7 @@ class ThenThenInput(TypedDict, total=False):
     reduce: Optional[str]
 
 
-if TYPE_CHECKING or PYDANTIC_V2:
+if TYPE_CHECKING or not PYDANTIC_V1:
     Then = TypeAliasType(
         "Then",
         Union[
@@ -260,7 +260,7 @@ class ElseElseInput(TypedDict, total=False):
     reduce: Optional[str]
 
 
-if TYPE_CHECKING or PYDANTIC_V2:
+if TYPE_CHECKING or not PYDANTIC_V1:
     Else = TypeAliasType(
         "Else",
         Union[
