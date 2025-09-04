@@ -7,7 +7,7 @@ from typing_extensions import Literal, TypeAlias, TypeAliasType
 
 from pydantic import Field as FieldInfo
 
-from ..._compat import PYDANTIC_V2
+from ..._compat import PYDANTIC_V1
 from ..._models import BaseModel
 from ..get_step import GetStep
 from ..log_step import LogStep
@@ -53,7 +53,7 @@ class ThenThenOutput(BaseModel):
     reduce: Optional[str] = None
 
 
-if TYPE_CHECKING or PYDANTIC_V2:
+if TYPE_CHECKING or not PYDANTIC_V1:
     Then = TypeAliasType(
         "Then",
         Union[
@@ -114,7 +114,7 @@ class ElseElseOutput(BaseModel):
     reduce: Optional[str] = None
 
 
-if TYPE_CHECKING or PYDANTIC_V2:
+if TYPE_CHECKING or not PYDANTIC_V1:
     Else = TypeAliasType(
         "Else",
         Union[
