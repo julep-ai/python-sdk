@@ -36,7 +36,23 @@ from ..shared.browserbase_create_session_integration_def import BrowserbaseCreat
 from ..shared.browserbase_complete_session_integration_def import BrowserbaseCompleteSessionIntegrationDef
 from ..shared.browserbase_get_session_live_urls_integration_def import BrowserbaseGetSessionLiveURLsIntegrationDef
 
-__all__ = ["ToolResetResponse", "APICall", "APICallParamsSchema", "APICallParamsSchemaProperties", "Integration"]
+__all__ = [
+    "ToolResetResponse",
+    "APICall",
+    "APICallParamsSchema",
+    "APICallParamsSchemaProperties",
+    "Integration",
+    "IntegrationGoogleSheetsIntegrationDefOutput",
+    "IntegrationGoogleSheetsIntegrationDefOutputArguments",
+    "IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments",
+    "IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsWriteArguments",
+    "IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsAppendArguments",
+    "IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsClearArguments",
+    "IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchReadArguments",
+    "IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArguments",
+    "IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArgumentsData",
+    "IntegrationGoogleSheetsIntegrationDefOutputSetup",
+]
 
 
 class APICallParamsSchemaProperties(BaseModel):
@@ -92,6 +108,115 @@ class APICall(BaseModel):
     timeout: Optional[int] = None
 
 
+class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments(BaseModel):
+    range: str
+
+    spreadsheet_id: str
+
+    date_time_render_option: Optional[Literal["SERIAL_NUMBER", "FORMATTED_STRING"]] = None
+
+    major_dimension: Optional[Literal["ROWS", "COLUMNS"]] = None
+
+    value_render_option: Optional[Literal["FORMATTED_VALUE", "UNFORMATTED_VALUE", "FORMULA"]] = None
+
+
+class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsWriteArguments(BaseModel):
+    range: str
+
+    spreadsheet_id: str
+
+    values: List[List[object]]
+
+    include_values_in_response: Optional[bool] = None
+
+    insert_data_option: Optional[Literal["OVERWRITE", "INSERT_ROWS"]] = None
+
+    value_input_option: Optional[Literal["RAW", "USER_ENTERED"]] = None
+
+
+class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsAppendArguments(BaseModel):
+    range: str
+
+    spreadsheet_id: str
+
+    values: List[List[object]]
+
+    include_values_in_response: Optional[bool] = None
+
+    insert_data_option: Optional[Literal["OVERWRITE", "INSERT_ROWS"]] = None
+
+    value_input_option: Optional[Literal["RAW", "USER_ENTERED"]] = None
+
+
+class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsClearArguments(BaseModel):
+    range: str
+
+    spreadsheet_id: str
+
+
+class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchReadArguments(BaseModel):
+    ranges: List[str]
+
+    spreadsheet_id: str
+
+    date_time_render_option: Optional[Literal["SERIAL_NUMBER", "FORMATTED_STRING"]] = None
+
+    major_dimension: Optional[Literal["ROWS", "COLUMNS"]] = None
+
+    value_render_option: Optional[Literal["FORMATTED_VALUE", "UNFORMATTED_VALUE", "FORMULA"]] = None
+
+
+class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArgumentsData(BaseModel):
+    range: str
+
+    values: List[List[object]]
+
+    major_dimension: Optional[Literal["ROWS", "COLUMNS"]] = None
+
+
+class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArguments(BaseModel):
+    data: List[IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArgumentsData]
+
+    spreadsheet_id: str
+
+    include_values_in_response: Optional[bool] = None
+
+    value_input_option: Optional[Literal["RAW", "USER_ENTERED"]] = None
+
+
+IntegrationGoogleSheetsIntegrationDefOutputArguments: TypeAlias = Union[
+    IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments,
+    IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsWriteArguments,
+    IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsAppendArguments,
+    IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsClearArguments,
+    IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchReadArguments,
+    IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArguments,
+    None,
+]
+
+
+class IntegrationGoogleSheetsIntegrationDefOutputSetup(BaseModel):
+    use_julep_service: bool
+
+    default_retry_count: Optional[int] = None
+
+    service_account_json: Optional[str] = None
+
+
+class IntegrationGoogleSheetsIntegrationDefOutput(BaseModel):
+    arguments: Optional[IntegrationGoogleSheetsIntegrationDefOutputArguments] = None
+    """Arguments for reading values from a spreadsheet"""
+
+    method: Optional[
+        Literal["read_values", "write_values", "append_values", "clear_values", "batch_read", "batch_write"]
+    ] = None
+
+    provider: Optional[Literal["google_sheets"]] = None
+
+    setup: Optional[IntegrationGoogleSheetsIntegrationDefOutputSetup] = None
+    """Setup parameters for Google Sheets integration"""
+
+
 Integration: TypeAlias = Union[
     DummyIntegrationDef,
     BraveIntegrationDef,
@@ -115,6 +240,7 @@ Integration: TypeAlias = Union[
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    IntegrationGoogleSheetsIntegrationDefOutput,
     None,
 ]
 
