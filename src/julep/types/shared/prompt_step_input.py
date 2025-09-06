@@ -63,6 +63,16 @@ __all__ = [
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchema",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInput",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsWriteArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsAppendArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsClearArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchReadArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArgumentsData",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputSetup",
 ]
 
 
@@ -213,6 +223,137 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(BaseMo
     timeout: Optional[int] = None
 
 
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments(
+    BaseModel
+):
+    range: str
+
+    spreadsheet_id: str
+
+    date_time_render_option: Optional[Literal["SERIAL_NUMBER", "FORMATTED_STRING"]] = None
+
+    major_dimension: Optional[Literal["ROWS", "COLUMNS"]] = None
+
+    value_render_option: Optional[Literal["FORMATTED_VALUE", "UNFORMATTED_VALUE", "FORMULA"]] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsWriteArguments(
+    BaseModel
+):
+    range: str
+
+    spreadsheet_id: str
+
+    values: List[List[object]]
+
+    include_values_in_response: Optional[bool] = None
+
+    insert_data_option: Optional[Literal["OVERWRITE", "INSERT_ROWS"]] = None
+
+    value_input_option: Optional[Literal["RAW", "USER_ENTERED"]] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsAppendArguments(
+    BaseModel
+):
+    range: str
+
+    spreadsheet_id: str
+
+    values: List[List[object]]
+
+    include_values_in_response: Optional[bool] = None
+
+    insert_data_option: Optional[Literal["OVERWRITE", "INSERT_ROWS"]] = None
+
+    value_input_option: Optional[Literal["RAW", "USER_ENTERED"]] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsClearArguments(
+    BaseModel
+):
+    range: str
+
+    spreadsheet_id: str
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchReadArguments(
+    BaseModel
+):
+    ranges: List[str]
+
+    spreadsheet_id: str
+
+    date_time_render_option: Optional[Literal["SERIAL_NUMBER", "FORMATTED_STRING"]] = None
+
+    major_dimension: Optional[Literal["ROWS", "COLUMNS"]] = None
+
+    value_render_option: Optional[Literal["FORMATTED_VALUE", "UNFORMATTED_VALUE", "FORMULA"]] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArgumentsData(
+    BaseModel
+):
+    range: str
+
+    values: List[List[object]]
+
+    major_dimension: Optional[Literal["ROWS", "COLUMNS"]] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArguments(
+    BaseModel
+):
+    data: List[
+        ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArgumentsData
+    ]
+
+    spreadsheet_id: str
+
+    include_values_in_response: Optional[bool] = None
+
+    value_input_option: Optional[Literal["RAW", "USER_ENTERED"]] = None
+
+
+ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArguments: TypeAlias = Union[
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments,
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsWriteArguments,
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsAppendArguments,
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsClearArguments,
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchReadArguments,
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArguments,
+    None,
+]
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputSetup(
+    BaseModel
+):
+    use_julep_service: bool
+
+    default_retry_count: Optional[int] = None
+
+    service_account_json: Optional[str] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInput(BaseModel):
+    arguments: Optional[
+        ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArguments
+    ] = None
+    """Arguments for reading values from a spreadsheet"""
+
+    method: Optional[
+        Literal["read_values", "write_values", "append_values", "clear_values", "batch_read", "batch_write"]
+    ] = None
+
+    provider: Optional[Literal["google_sheets"]] = None
+
+    setup: Optional[
+        ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputSetup
+    ] = None
+    """Setup parameters for Google Sheets integration"""
+
+
 ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAlias = Union[
     DummyIntegrationDef,
     BraveIntegrationDef,
@@ -236,6 +377,7 @@ ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAli
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInput,
     None,
 ]
 
