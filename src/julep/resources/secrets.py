@@ -7,7 +7,7 @@ from typing import Optional
 import httpx
 
 from ..types import secret_list_params, secret_create_params, secret_update_params
-from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven
+from .._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -50,14 +50,14 @@ class SecretsResource(SyncAPIResource):
         *,
         name: str,
         value: str,
-        description: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Secret:
         """
         Create a new secret for a developer.
@@ -101,14 +101,14 @@ class SecretsResource(SyncAPIResource):
         *,
         name: str,
         value: str,
-        description: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Secret:
         """
         Update a developer secret.
@@ -152,14 +152,14 @@ class SecretsResource(SyncAPIResource):
     def list(
         self,
         *,
-        limit: int | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
+        limit: int | Omit = omit,
+        offset: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SecretListResponse:
         """
         List all secrets for a developer.
@@ -205,7 +205,7 @@ class SecretsResource(SyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SecretDeleteResponse:
         """
         Delete a secret.
@@ -262,14 +262,14 @@ class AsyncSecretsResource(AsyncAPIResource):
         *,
         name: str,
         value: str,
-        description: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Secret:
         """
         Create a new secret for a developer.
@@ -313,14 +313,14 @@ class AsyncSecretsResource(AsyncAPIResource):
         *,
         name: str,
         value: str,
-        description: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
+        description: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Secret:
         """
         Update a developer secret.
@@ -364,14 +364,14 @@ class AsyncSecretsResource(AsyncAPIResource):
     async def list(
         self,
         *,
-        limit: int | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
+        limit: int | Omit = omit,
+        offset: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SecretListResponse:
         """
         List all secrets for a developer.
@@ -417,7 +417,7 @@ class AsyncSecretsResource(AsyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SecretDeleteResponse:
         """
         Delete a secret.

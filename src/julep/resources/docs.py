@@ -7,7 +7,7 @@ from typing_extensions import overload
 import httpx
 
 from ..types import doc_get_params, doc_embed_params
-from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven, SequenceNotStr
+from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from .._utils import required_args, maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -49,13 +49,13 @@ class DocsResource(SyncAPIResource):
         self,
         *,
         text: str,
-        embed_instruction: str | NotGiven = NOT_GIVEN,
+        embed_instruction: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> EmbedQueryResponse:
         """
         Embed
@@ -76,13 +76,13 @@ class DocsResource(SyncAPIResource):
         self,
         *,
         text: SequenceNotStr[str],
-        embed_instruction: str | NotGiven = NOT_GIVEN,
+        embed_instruction: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> EmbedQueryResponse:
         """
         Embed
@@ -103,13 +103,13 @@ class DocsResource(SyncAPIResource):
         self,
         *,
         text: str | SequenceNotStr[str],
-        embed_instruction: str | NotGiven = NOT_GIVEN,
+        embed_instruction: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> EmbedQueryResponse:
         return self._post(
             "/embed",
@@ -130,13 +130,13 @@ class DocsResource(SyncAPIResource):
         self,
         doc_id: str,
         *,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Doc:
         """
         Get Doc
@@ -190,13 +190,13 @@ class AsyncDocsResource(AsyncAPIResource):
         self,
         *,
         text: str,
-        embed_instruction: str | NotGiven = NOT_GIVEN,
+        embed_instruction: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> EmbedQueryResponse:
         """
         Embed
@@ -217,13 +217,13 @@ class AsyncDocsResource(AsyncAPIResource):
         self,
         *,
         text: SequenceNotStr[str],
-        embed_instruction: str | NotGiven = NOT_GIVEN,
+        embed_instruction: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> EmbedQueryResponse:
         """
         Embed
@@ -244,13 +244,13 @@ class AsyncDocsResource(AsyncAPIResource):
         self,
         *,
         text: str | SequenceNotStr[str],
-        embed_instruction: str | NotGiven = NOT_GIVEN,
+        embed_instruction: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> EmbedQueryResponse:
         return await self._post(
             "/embed",
@@ -271,13 +271,13 @@ class AsyncDocsResource(AsyncAPIResource):
         self,
         doc_id: str,
         *,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
+        include_embeddings: bool | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Doc:
         """
         Get Doc

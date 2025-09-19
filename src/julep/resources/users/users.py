@@ -22,7 +22,7 @@ from ...types import (
     user_update_params,
     user_create_or_update_params,
 )
-from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven
+from ..._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
 from ..._utils import maybe_transform, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
@@ -67,16 +67,16 @@ class UsersResource(SyncAPIResource):
     def create(
         self,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        name: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Create User
@@ -111,16 +111,16 @@ class UsersResource(SyncAPIResource):
         self,
         user_id: str,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        name: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Patch User
@@ -156,17 +156,17 @@ class UsersResource(SyncAPIResource):
     def list(
         self,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: Dict[str, object] | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SyncOffsetPagination[User]:
         """
         List Users
@@ -211,7 +211,7 @@ class UsersResource(SyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> UserDeleteResponse:
         """
         Delete User
@@ -239,16 +239,16 @@ class UsersResource(SyncAPIResource):
         self,
         user_id: str,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        name: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Create Or Update User
@@ -290,7 +290,7 @@ class UsersResource(SyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Get User Details
@@ -318,16 +318,16 @@ class UsersResource(SyncAPIResource):
         self,
         user_id: str,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        name: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Update User
@@ -388,16 +388,16 @@ class AsyncUsersResource(AsyncAPIResource):
     async def create(
         self,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        name: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Create User
@@ -432,16 +432,16 @@ class AsyncUsersResource(AsyncAPIResource):
         self,
         user_id: str,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        name: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Patch User
@@ -477,17 +477,17 @@ class AsyncUsersResource(AsyncAPIResource):
     def list(
         self,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: Dict[str, object] | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> AsyncPaginator[User, AsyncOffsetPagination[User]]:
         """
         List Users
@@ -532,7 +532,7 @@ class AsyncUsersResource(AsyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> UserDeleteResponse:
         """
         Delete User
@@ -560,16 +560,16 @@ class AsyncUsersResource(AsyncAPIResource):
         self,
         user_id: str,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        name: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Create Or Update User
@@ -611,7 +611,7 @@ class AsyncUsersResource(AsyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Get User Details
@@ -639,16 +639,16 @@ class AsyncUsersResource(AsyncAPIResource):
         self,
         user_id: str,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        name: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        name: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> User:
         """
         Update User
