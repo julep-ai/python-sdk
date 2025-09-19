@@ -44,6 +44,11 @@ __all__ = [
     "APICallParamsSchema",
     "APICallParamsSchemaProperties",
     "Integration",
+    "IntegrationMcpIntegrationDef",
+    "IntegrationMcpIntegrationDefArguments",
+    "IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments",
+    "IntegrationMcpIntegrationDefArgumentsMcpListToolsArguments",
+    "IntegrationMcpIntegrationDefSetup",
     "IntegrationGoogleSheetsIntegrationDefInput",
     "IntegrationGoogleSheetsIntegrationDefInputArguments",
     "IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments",
@@ -147,6 +152,52 @@ class APICall(TypedDict, total=False):
     secrets: Optional[Dict[str, SecretRef]]
 
     timeout: Optional[int]
+
+
+class IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(TypedDict, total=False):
+    tool_name: Required[str]
+
+    arguments: object
+
+    timeout_seconds: int
+
+
+class IntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(TypedDict, total=False):
+    dummy: str
+
+
+IntegrationMcpIntegrationDefArguments: TypeAlias = Union[
+    IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments,
+    IntegrationMcpIntegrationDefArgumentsMcpListToolsArguments,
+]
+
+
+class IntegrationMcpIntegrationDefSetup(TypedDict, total=False):
+    transport: Required[Literal["sse", "http"]]
+
+    args: SequenceNotStr[str]
+
+    command: Optional[str]
+
+    cwd: Optional[str]
+
+    env: Dict[str, str]
+
+    http_headers: Dict[str, str]
+
+    http_url: Optional[str]
+
+
+class IntegrationMcpIntegrationDef(TypedDict, total=False):
+    arguments: Optional[IntegrationMcpIntegrationDefArguments]
+    """Arguments to call a named tool on the MCP server"""
+
+    method: Optional[str]
+
+    provider: Literal["mcp"]
+
+    setup: Optional[IntegrationMcpIntegrationDefSetup]
+    """Setup parameters for MCP integration"""
 
 
 class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments(TypedDict, total=False):
@@ -280,5 +331,6 @@ Integration: TypeAlias = Union[
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    IntegrationMcpIntegrationDef,
     IntegrationGoogleSheetsIntegrationDefInput,
 ]

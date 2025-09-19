@@ -42,6 +42,11 @@ __all__ = [
     "APICallParamsSchema",
     "APICallParamsSchemaProperties",
     "Integration",
+    "IntegrationMcpIntegrationDef",
+    "IntegrationMcpIntegrationDefArguments",
+    "IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments",
+    "IntegrationMcpIntegrationDefArgumentsMcpListToolsArguments",
+    "IntegrationMcpIntegrationDefSetup",
     "IntegrationGoogleSheetsIntegrationDefOutput",
     "IntegrationGoogleSheetsIntegrationDefOutputArguments",
     "IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments",
@@ -106,6 +111,53 @@ class APICall(BaseModel):
     secrets: Optional[Dict[str, SecretRef]] = None
 
     timeout: Optional[int] = None
+
+
+class IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseModel):
+    tool_name: str
+
+    arguments: Optional[object] = None
+
+    timeout_seconds: Optional[int] = None
+
+
+class IntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(BaseModel):
+    dummy: Optional[str] = None
+
+
+IntegrationMcpIntegrationDefArguments: TypeAlias = Union[
+    IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments,
+    IntegrationMcpIntegrationDefArgumentsMcpListToolsArguments,
+    None,
+]
+
+
+class IntegrationMcpIntegrationDefSetup(BaseModel):
+    transport: Literal["sse", "http"]
+
+    args: Optional[List[str]] = None
+
+    command: Optional[str] = None
+
+    cwd: Optional[str] = None
+
+    env: Optional[Dict[str, str]] = None
+
+    http_headers: Optional[Dict[str, str]] = None
+
+    http_url: Optional[str] = None
+
+
+class IntegrationMcpIntegrationDef(BaseModel):
+    arguments: Optional[IntegrationMcpIntegrationDefArguments] = None
+    """Arguments to call a named tool on the MCP server"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["mcp"]] = None
+
+    setup: Optional[IntegrationMcpIntegrationDefSetup] = None
+    """Setup parameters for MCP integration"""
 
 
 class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments(BaseModel):
@@ -240,6 +292,7 @@ Integration: TypeAlias = Union[
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    IntegrationMcpIntegrationDef,
     IntegrationGoogleSheetsIntegrationDefOutput,
     None,
 ]

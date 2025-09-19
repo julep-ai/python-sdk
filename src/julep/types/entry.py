@@ -56,6 +56,11 @@ __all__ = [
     "ContentToolAPICallParamsSchema",
     "ContentToolAPICallParamsSchemaProperties",
     "ContentToolIntegration",
+    "ContentToolIntegrationMcpIntegrationDef",
+    "ContentToolIntegrationMcpIntegrationDefArguments",
+    "ContentToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments",
+    "ContentToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments",
+    "ContentToolIntegrationMcpIntegrationDefSetup",
     "ContentToolIntegrationGoogleSheetsIntegrationDefOutput",
     "ContentToolIntegrationGoogleSheetsIntegrationDefOutputArguments",
     "ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments",
@@ -81,6 +86,11 @@ __all__ = [
     "ContentUnionMember8ToolAPICallParamsSchema",
     "ContentUnionMember8ToolAPICallParamsSchemaProperties",
     "ContentUnionMember8ToolIntegration",
+    "ContentUnionMember8ToolIntegrationMcpIntegrationDef",
+    "ContentUnionMember8ToolIntegrationMcpIntegrationDefArguments",
+    "ContentUnionMember8ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments",
+    "ContentUnionMember8ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments",
+    "ContentUnionMember8ToolIntegrationMcpIntegrationDefSetup",
     "ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutput",
     "ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArguments",
     "ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments",
@@ -204,6 +214,53 @@ class ContentToolAPICall(BaseModel):
     secrets: Optional[Dict[str, SecretRef]] = None
 
     timeout: Optional[int] = None
+
+
+class ContentToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseModel):
+    tool_name: str
+
+    arguments: Optional[object] = None
+
+    timeout_seconds: Optional[int] = None
+
+
+class ContentToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(BaseModel):
+    dummy: Optional[str] = None
+
+
+ContentToolIntegrationMcpIntegrationDefArguments: TypeAlias = Union[
+    ContentToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments,
+    ContentToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments,
+    None,
+]
+
+
+class ContentToolIntegrationMcpIntegrationDefSetup(BaseModel):
+    transport: Literal["sse", "http"]
+
+    args: Optional[List[str]] = None
+
+    command: Optional[str] = None
+
+    cwd: Optional[str] = None
+
+    env: Optional[Dict[str, str]] = None
+
+    http_headers: Optional[Dict[str, str]] = None
+
+    http_url: Optional[str] = None
+
+
+class ContentToolIntegrationMcpIntegrationDef(BaseModel):
+    arguments: Optional[ContentToolIntegrationMcpIntegrationDefArguments] = None
+    """Arguments to call a named tool on the MCP server"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["mcp"]] = None
+
+    setup: Optional[ContentToolIntegrationMcpIntegrationDefSetup] = None
+    """Setup parameters for MCP integration"""
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments(BaseModel):
@@ -338,6 +395,7 @@ ContentToolIntegration: TypeAlias = Union[
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    ContentToolIntegrationMcpIntegrationDef,
     ContentToolIntegrationGoogleSheetsIntegrationDefOutput,
     None,
 ]
@@ -494,6 +552,53 @@ class ContentUnionMember8ToolAPICall(BaseModel):
     timeout: Optional[int] = None
 
 
+class ContentUnionMember8ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseModel):
+    tool_name: str
+
+    arguments: Optional[object] = None
+
+    timeout_seconds: Optional[int] = None
+
+
+class ContentUnionMember8ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(BaseModel):
+    dummy: Optional[str] = None
+
+
+ContentUnionMember8ToolIntegrationMcpIntegrationDefArguments: TypeAlias = Union[
+    ContentUnionMember8ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments,
+    ContentUnionMember8ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments,
+    None,
+]
+
+
+class ContentUnionMember8ToolIntegrationMcpIntegrationDefSetup(BaseModel):
+    transport: Literal["sse", "http"]
+
+    args: Optional[List[str]] = None
+
+    command: Optional[str] = None
+
+    cwd: Optional[str] = None
+
+    env: Optional[Dict[str, str]] = None
+
+    http_headers: Optional[Dict[str, str]] = None
+
+    http_url: Optional[str] = None
+
+
+class ContentUnionMember8ToolIntegrationMcpIntegrationDef(BaseModel):
+    arguments: Optional[ContentUnionMember8ToolIntegrationMcpIntegrationDefArguments] = None
+    """Arguments to call a named tool on the MCP server"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["mcp"]] = None
+
+    setup: Optional[ContentUnionMember8ToolIntegrationMcpIntegrationDefSetup] = None
+    """Setup parameters for MCP integration"""
+
+
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments(BaseModel):
     range: str
 
@@ -634,6 +739,7 @@ ContentUnionMember8ToolIntegration: TypeAlias = Union[
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    ContentUnionMember8ToolIntegrationMcpIntegrationDef,
     ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutput,
     None,
 ]
