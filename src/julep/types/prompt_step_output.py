@@ -63,6 +63,11 @@ __all__ = [
     "ToolsUnionMember1CreateToolRequestOutputAPICallParamsSchema",
     "ToolsUnionMember1CreateToolRequestOutputAPICallParamsSchemaProperties",
     "ToolsUnionMember1CreateToolRequestOutputIntegration",
+    "ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDef",
+    "ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefArguments",
+    "ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments",
+    "ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments",
+    "ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefSetup",
     "ToolsUnionMember1CreateToolRequestOutputIntegrationGoogleSheetsIntegrationDefOutput",
     "ToolsUnionMember1CreateToolRequestOutputIntegrationGoogleSheetsIntegrationDefOutputArguments",
     "ToolsUnionMember1CreateToolRequestOutputIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments",
@@ -223,6 +228,53 @@ class ToolsUnionMember1CreateToolRequestOutputAPICall(BaseModel):
     timeout: Optional[int] = None
 
 
+class ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseModel):
+    tool_name: str
+
+    arguments: Optional[object] = None
+
+    timeout_seconds: Optional[int] = None
+
+
+class ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(BaseModel):
+    dummy: Optional[str] = None
+
+
+ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefArguments: TypeAlias = Union[
+    ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments,
+    ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments,
+    None,
+]
+
+
+class ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefSetup(BaseModel):
+    transport: Literal["sse", "http"]
+
+    args: Optional[List[str]] = None
+
+    command: Optional[str] = None
+
+    cwd: Optional[str] = None
+
+    env: Optional[Dict[str, str]] = None
+
+    http_headers: Optional[Dict[str, str]] = None
+
+    http_url: Optional[str] = None
+
+
+class ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDef(BaseModel):
+    arguments: Optional[ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefArguments] = None
+    """Arguments to call a named tool on the MCP server"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["mcp"]] = None
+
+    setup: Optional[ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDefSetup] = None
+    """Setup parameters for MCP integration"""
+
+
 class ToolsUnionMember1CreateToolRequestOutputIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments(
     BaseModel
 ):
@@ -373,6 +425,7 @@ ToolsUnionMember1CreateToolRequestOutputIntegration: TypeAlias = Union[
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    ToolsUnionMember1CreateToolRequestOutputIntegrationMcpIntegrationDef,
     ToolsUnionMember1CreateToolRequestOutputIntegrationGoogleSheetsIntegrationDefOutput,
     None,
 ]

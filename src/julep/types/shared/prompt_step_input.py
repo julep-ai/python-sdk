@@ -63,6 +63,11 @@ __all__ = [
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchema",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDef",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments",
+    "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefSetup",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInput",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArguments",
     "ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments",
@@ -223,6 +228,61 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(BaseMo
     timeout: Optional[int] = None
 
 
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(
+    BaseModel
+):
+    tool_name: str
+
+    arguments: Optional[object] = None
+
+    timeout_seconds: Optional[int] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(
+    BaseModel
+):
+    dummy: Optional[str] = None
+
+
+ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArguments: TypeAlias = Union[
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments,
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments,
+    None,
+]
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefSetup(BaseModel):
+    transport: Literal["sse", "http"]
+
+    args: Optional[List[str]] = None
+
+    command: Optional[str] = None
+
+    cwd: Optional[str] = None
+
+    env: Optional[Dict[str, str]] = None
+
+    http_headers: Optional[Dict[str, str]] = None
+
+    http_url: Optional[str] = None
+
+
+class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDef(BaseModel):
+    arguments: Optional[
+        ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArguments
+    ] = None
+    """Arguments to call a named tool on the MCP server"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["mcp"]] = None
+
+    setup: Optional[ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefSetup] = (
+        None
+    )
+    """Setup parameters for MCP integration"""
+
+
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments(
     BaseModel
 ):
@@ -377,6 +437,7 @@ ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAli
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDef,
     ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInput,
     None,
 ]

@@ -73,6 +73,11 @@ __all__ = [
     "IntegrationAlgoliaIntegrationDefUpdate",
     "IntegrationAlgoliaIntegrationDefUpdateArguments",
     "IntegrationAlgoliaIntegrationDefUpdateSetup",
+    "IntegrationMcpIntegrationDefUpdate",
+    "IntegrationMcpIntegrationDefUpdateArguments",
+    "IntegrationMcpIntegrationDefUpdateArgumentsMcpCallToolArgumentsUpdate",
+    "IntegrationMcpIntegrationDefUpdateArgumentsMcpListToolsArgumentsUpdate",
+    "IntegrationMcpIntegrationDefUpdateSetup",
     "IntegrationGoogleSheetsIntegrationDefUpdate",
     "IntegrationGoogleSheetsIntegrationDefUpdateArguments",
     "IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsReadArgumentsUpdate",
@@ -705,6 +710,52 @@ class IntegrationAlgoliaIntegrationDefUpdate(TypedDict, total=False):
     """Integration definition for Algolia"""
 
 
+class IntegrationMcpIntegrationDefUpdateArgumentsMcpCallToolArgumentsUpdate(TypedDict, total=False):
+    arguments: object
+
+    timeout_seconds: int
+
+    tool_name: Optional[str]
+
+
+class IntegrationMcpIntegrationDefUpdateArgumentsMcpListToolsArgumentsUpdate(TypedDict, total=False):
+    dummy: str
+
+
+IntegrationMcpIntegrationDefUpdateArguments: TypeAlias = Union[
+    IntegrationMcpIntegrationDefUpdateArgumentsMcpCallToolArgumentsUpdate,
+    IntegrationMcpIntegrationDefUpdateArgumentsMcpListToolsArgumentsUpdate,
+]
+
+
+class IntegrationMcpIntegrationDefUpdateSetup(TypedDict, total=False):
+    args: SequenceNotStr[str]
+
+    command: Optional[str]
+
+    cwd: Optional[str]
+
+    env: Dict[str, str]
+
+    http_headers: Dict[str, str]
+
+    http_url: Optional[str]
+
+    transport: Optional[Literal["sse", "http"]]
+
+
+class IntegrationMcpIntegrationDefUpdate(TypedDict, total=False):
+    arguments: Optional[IntegrationMcpIntegrationDefUpdateArguments]
+    """Arguments to call a named tool on the MCP server"""
+
+    method: Optional[str]
+
+    provider: Literal["mcp"]
+
+    setup: Optional[IntegrationMcpIntegrationDefUpdateSetup]
+    """Setup parameters for MCP integration"""
+
+
 class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsReadArgumentsUpdate(TypedDict, total=False):
     date_time_render_option: Literal["SERIAL_NUMBER", "FORMATTED_STRING"]
 
@@ -840,6 +891,7 @@ Integration: TypeAlias = Union[
     IntegrationArxivIntegrationDefUpdate,
     IntegrationUnstructuredIntegrationDefUpdate,
     IntegrationAlgoliaIntegrationDefUpdate,
+    IntegrationMcpIntegrationDefUpdate,
     IntegrationGoogleSheetsIntegrationDefUpdate,
 ]
 

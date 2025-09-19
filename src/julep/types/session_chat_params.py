@@ -62,6 +62,11 @@ __all__ = [
     "ToolAPICallParamsSchema",
     "ToolAPICallParamsSchemaProperties",
     "ToolIntegration",
+    "ToolIntegrationMcpIntegrationDef",
+    "ToolIntegrationMcpIntegrationDefArguments",
+    "ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments",
+    "ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments",
+    "ToolIntegrationMcpIntegrationDefSetup",
     "ToolIntegrationGoogleSheetsIntegrationDefInput",
     "ToolIntegrationGoogleSheetsIntegrationDefInputArguments",
     "ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments",
@@ -260,6 +265,52 @@ class ToolAPICall(TypedDict, total=False):
     timeout: Optional[int]
 
 
+class ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(TypedDict, total=False):
+    tool_name: Required[str]
+
+    arguments: object
+
+    timeout_seconds: int
+
+
+class ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(TypedDict, total=False):
+    dummy: str
+
+
+ToolIntegrationMcpIntegrationDefArguments: TypeAlias = Union[
+    ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments,
+    ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments,
+]
+
+
+class ToolIntegrationMcpIntegrationDefSetup(TypedDict, total=False):
+    transport: Required[Literal["sse", "http"]]
+
+    args: SequenceNotStr[str]
+
+    command: Optional[str]
+
+    cwd: Optional[str]
+
+    env: Dict[str, str]
+
+    http_headers: Dict[str, str]
+
+    http_url: Optional[str]
+
+
+class ToolIntegrationMcpIntegrationDef(TypedDict, total=False):
+    arguments: Optional[ToolIntegrationMcpIntegrationDefArguments]
+    """Arguments to call a named tool on the MCP server"""
+
+    method: Optional[str]
+
+    provider: Literal["mcp"]
+
+    setup: Optional[ToolIntegrationMcpIntegrationDefSetup]
+    """Setup parameters for MCP integration"""
+
+
 class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments(TypedDict, total=False):
     range: Required[str]
 
@@ -393,6 +444,7 @@ ToolIntegration: TypeAlias = Union[
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    ToolIntegrationMcpIntegrationDef,
     ToolIntegrationGoogleSheetsIntegrationDefInput,
 ]
 
