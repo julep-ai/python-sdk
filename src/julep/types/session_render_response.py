@@ -59,6 +59,11 @@ __all__ = [
     "ToolAPICallParamsSchema",
     "ToolAPICallParamsSchemaProperties",
     "ToolIntegration",
+    "ToolIntegrationMcpIntegrationDef",
+    "ToolIntegrationMcpIntegrationDefArguments",
+    "ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments",
+    "ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments",
+    "ToolIntegrationMcpIntegrationDefSetup",
     "ToolIntegrationGoogleSheetsIntegrationDefOutput",
     "ToolIntegrationGoogleSheetsIntegrationDefOutputArguments",
     "ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments",
@@ -201,6 +206,53 @@ class ToolAPICall(BaseModel):
     timeout: Optional[int] = None
 
 
+class ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseModel):
+    tool_name: str
+
+    arguments: Optional[object] = None
+
+    timeout_seconds: Optional[int] = None
+
+
+class ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(BaseModel):
+    dummy: Optional[str] = None
+
+
+ToolIntegrationMcpIntegrationDefArguments: TypeAlias = Union[
+    ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments,
+    ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments,
+    None,
+]
+
+
+class ToolIntegrationMcpIntegrationDefSetup(BaseModel):
+    transport: Literal["sse", "http"]
+
+    args: Optional[List[str]] = None
+
+    command: Optional[str] = None
+
+    cwd: Optional[str] = None
+
+    env: Optional[Dict[str, str]] = None
+
+    http_headers: Optional[Dict[str, str]] = None
+
+    http_url: Optional[str] = None
+
+
+class ToolIntegrationMcpIntegrationDef(BaseModel):
+    arguments: Optional[ToolIntegrationMcpIntegrationDefArguments] = None
+    """Arguments to call a named tool on the MCP server"""
+
+    method: Optional[str] = None
+
+    provider: Optional[Literal["mcp"]] = None
+
+    setup: Optional[ToolIntegrationMcpIntegrationDefSetup] = None
+    """Setup parameters for MCP integration"""
+
+
 class ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments(BaseModel):
     range: str
 
@@ -333,6 +385,7 @@ ToolIntegration: TypeAlias = Union[
     ArxivIntegrationDef,
     UnstructuredIntegrationDef,
     AlgoliaIntegrationDef,
+    ToolIntegrationMcpIntegrationDef,
     ToolIntegrationGoogleSheetsIntegrationDefOutput,
     None,
 ]
