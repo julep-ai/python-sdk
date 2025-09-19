@@ -30,7 +30,7 @@ from ...types import (
     agent_update_params,
     agent_create_or_update_params,
 )
-from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven, SequenceNotStr
+from ..._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from ..._utils import maybe_transform, strip_not_given, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
@@ -81,20 +81,20 @@ class AgentsResource(SyncAPIResource):
         self,
         *,
         name: str,
-        about: str | NotGiven = NOT_GIVEN,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
-        default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        model: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        canonical_name: Optional[str] | Omit = omit,
+        default_settings: Optional[object] | Omit = omit,
+        default_system_template: str | Omit = omit,
+        instructions: Union[str, SequenceNotStr[str]] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        model: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Create Agent
@@ -134,21 +134,21 @@ class AgentsResource(SyncAPIResource):
         self,
         agent_id: str,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
-        default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        model: str | NotGiven = NOT_GIVEN,
-        name: Optional[str] | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        canonical_name: Optional[str] | Omit = omit,
+        default_settings: Optional[object] | Omit = omit,
+        default_system_template: str | Omit = omit,
+        instructions: Union[str, SequenceNotStr[str]] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        model: str | Omit = omit,
+        name: Optional[str] | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Patch Agent
@@ -189,17 +189,17 @@ class AgentsResource(SyncAPIResource):
     def list(
         self,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: Dict[str, object] | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SyncOffsetPagination[Agent]:
         """
         List Agents
@@ -244,7 +244,7 @@ class AgentsResource(SyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> AgentDeleteResponse:
         """
         Delete Agent
@@ -273,20 +273,20 @@ class AgentsResource(SyncAPIResource):
         agent_id: str,
         *,
         name: str,
-        about: str | NotGiven = NOT_GIVEN,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
-        default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        model: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        canonical_name: Optional[str] | Omit = omit,
+        default_settings: Optional[object] | Omit = omit,
+        default_system_template: str | Omit = omit,
+        instructions: Union[str, SequenceNotStr[str]] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        model: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Create Or Update Agent
@@ -333,7 +333,7 @@ class AgentsResource(SyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Get Agent Details
@@ -360,13 +360,13 @@ class AgentsResource(SyncAPIResource):
     def list_models(
         self,
         *,
-        x_custom_api_key: str | NotGiven = NOT_GIVEN,
+        x_custom_api_key: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> AgentListModelsResponse:
         """
         List all available models that can be used with agents.
@@ -396,20 +396,20 @@ class AgentsResource(SyncAPIResource):
         agent_id: str,
         *,
         name: str,
-        about: str | NotGiven = NOT_GIVEN,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
-        default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        model: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        canonical_name: Optional[str] | Omit = omit,
+        default_settings: Optional[object] | Omit = omit,
+        default_system_template: str | Omit = omit,
+        instructions: Union[str, SequenceNotStr[str]] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        model: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Update Agent
@@ -480,20 +480,20 @@ class AsyncAgentsResource(AsyncAPIResource):
         self,
         *,
         name: str,
-        about: str | NotGiven = NOT_GIVEN,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
-        default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        model: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        canonical_name: Optional[str] | Omit = omit,
+        default_settings: Optional[object] | Omit = omit,
+        default_system_template: str | Omit = omit,
+        instructions: Union[str, SequenceNotStr[str]] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        model: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Create Agent
@@ -533,21 +533,21 @@ class AsyncAgentsResource(AsyncAPIResource):
         self,
         agent_id: str,
         *,
-        about: str | NotGiven = NOT_GIVEN,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
-        default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        model: str | NotGiven = NOT_GIVEN,
-        name: Optional[str] | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        canonical_name: Optional[str] | Omit = omit,
+        default_settings: Optional[object] | Omit = omit,
+        default_system_template: str | Omit = omit,
+        instructions: Union[str, SequenceNotStr[str]] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        model: str | Omit = omit,
+        name: Optional[str] | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Patch Agent
@@ -588,17 +588,17 @@ class AsyncAgentsResource(AsyncAPIResource):
     def list(
         self,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: Dict[str, object] | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> AsyncPaginator[Agent, AsyncOffsetPagination[Agent]]:
         """
         List Agents
@@ -643,7 +643,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> AgentDeleteResponse:
         """
         Delete Agent
@@ -672,20 +672,20 @@ class AsyncAgentsResource(AsyncAPIResource):
         agent_id: str,
         *,
         name: str,
-        about: str | NotGiven = NOT_GIVEN,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
-        default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        model: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        canonical_name: Optional[str] | Omit = omit,
+        default_settings: Optional[object] | Omit = omit,
+        default_system_template: str | Omit = omit,
+        instructions: Union[str, SequenceNotStr[str]] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        model: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Create Or Update Agent
@@ -732,7 +732,7 @@ class AsyncAgentsResource(AsyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Get Agent Details
@@ -759,13 +759,13 @@ class AsyncAgentsResource(AsyncAPIResource):
     async def list_models(
         self,
         *,
-        x_custom_api_key: str | NotGiven = NOT_GIVEN,
+        x_custom_api_key: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> AgentListModelsResponse:
         """
         List all available models that can be used with agents.
@@ -795,20 +795,20 @@ class AsyncAgentsResource(AsyncAPIResource):
         agent_id: str,
         *,
         name: str,
-        about: str | NotGiven = NOT_GIVEN,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        default_settings: Optional[object] | NotGiven = NOT_GIVEN,
-        default_system_template: str | NotGiven = NOT_GIVEN,
-        instructions: Union[str, SequenceNotStr[str]] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        model: str | NotGiven = NOT_GIVEN,
-        project: Optional[str] | NotGiven = NOT_GIVEN,
+        about: str | Omit = omit,
+        canonical_name: Optional[str] | Omit = omit,
+        default_settings: Optional[object] | Omit = omit,
+        default_system_template: str | Omit = omit,
+        instructions: Union[str, SequenceNotStr[str]] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        model: str | Omit = omit,
+        project: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Agent:
         """
         Update Agent

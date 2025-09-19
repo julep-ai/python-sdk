@@ -7,7 +7,7 @@ from typing_extensions import Literal, overload
 
 import httpx
 
-from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven, SequenceNotStr
+from ..._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from ..._utils import required_args, maybe_transform, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
@@ -55,15 +55,15 @@ class DocsResource(SyncAPIResource):
         *,
         content: Union[str, SequenceNotStr[str]],
         title: str,
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
+        connection_pool: object | Omit = omit,
+        embed_instruction: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Doc:
         """
         Creates a new document for a user.
@@ -111,18 +111,18 @@ class DocsResource(SyncAPIResource):
         self,
         user_id: str,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: Dict[str, object] | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SyncOffsetPagination[Doc]:
         """
         List User Docs
@@ -171,7 +171,7 @@ class DocsResource(SyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocDeleteResponse:
         """
         Delete User Doc
@@ -201,14 +201,14 @@ class DocsResource(SyncAPIResource):
         self,
         user_id: str,
         *,
-        delete_all: bool | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
+        delete_all: bool | Omit = omit,
+        metadata_filter: object | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocBulkDeleteResponse:
         """
         Bulk delete documents owned by a user based on metadata filter
@@ -249,18 +249,18 @@ class DocsResource(SyncAPIResource):
         user_id: str,
         *,
         text: str,
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        lang: str | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
+        connection_pool: object | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        lang: str | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: object | Omit = omit,
+        trigram_similarity_threshold: Optional[float] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocSearchResponse:
         """
         Searches for documents associated with a specific user.
@@ -288,18 +288,18 @@ class DocsResource(SyncAPIResource):
         user_id: str,
         *,
         vector: Iterable[float],
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        confidence: float | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
+        connection_pool: object | Omit = omit,
+        confidence: float | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: object | Omit = omit,
+        mmr_strength: float | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocSearchResponse:
         """
         Searches for documents associated with a specific user.
@@ -328,22 +328,22 @@ class DocsResource(SyncAPIResource):
         *,
         text: str,
         vector: Iterable[float],
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        alpha: float | NotGiven = NOT_GIVEN,
-        confidence: float | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        k_multiplier: int | NotGiven = NOT_GIVEN,
-        lang: str | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
+        connection_pool: object | Omit = omit,
+        alpha: float | Omit = omit,
+        confidence: float | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        k_multiplier: int | Omit = omit,
+        lang: str | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: object | Omit = omit,
+        mmr_strength: float | Omit = omit,
+        trigram_similarity_threshold: Optional[float] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocSearchResponse:
         """
         Searches for documents associated with a specific user.
@@ -370,24 +370,24 @@ class DocsResource(SyncAPIResource):
         self,
         user_id: str,
         *,
-        text: str | NotGiven = NOT_GIVEN,
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        lang: str | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
-        vector: Iterable[float] | NotGiven = NOT_GIVEN,
-        confidence: float | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
-        alpha: float | NotGiven = NOT_GIVEN,
-        k_multiplier: int | NotGiven = NOT_GIVEN,
+        text: str | Omit = omit,
+        connection_pool: object | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        lang: str | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: object | Omit = omit,
+        trigram_similarity_threshold: Optional[float] | Omit = omit,
+        vector: Iterable[float] | Omit = omit,
+        confidence: float | Omit = omit,
+        mmr_strength: float | Omit = omit,
+        alpha: float | Omit = omit,
+        k_multiplier: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocSearchResponse:
         if not user_id:
             raise ValueError(f"Expected a non-empty value for `user_id` but received {user_id!r}")
@@ -446,15 +446,15 @@ class AsyncDocsResource(AsyncAPIResource):
         *,
         content: Union[str, SequenceNotStr[str]],
         title: str,
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        embed_instruction: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
+        connection_pool: object | Omit = omit,
+        embed_instruction: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Doc:
         """
         Creates a new document for a user.
@@ -504,18 +504,18 @@ class AsyncDocsResource(AsyncAPIResource):
         self,
         user_id: str,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: Dict[str, object] | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> AsyncPaginator[Doc, AsyncOffsetPagination[Doc]]:
         """
         List User Docs
@@ -564,7 +564,7 @@ class AsyncDocsResource(AsyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocDeleteResponse:
         """
         Delete User Doc
@@ -594,14 +594,14 @@ class AsyncDocsResource(AsyncAPIResource):
         self,
         user_id: str,
         *,
-        delete_all: bool | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
+        delete_all: bool | Omit = omit,
+        metadata_filter: object | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocBulkDeleteResponse:
         """
         Bulk delete documents owned by a user based on metadata filter
@@ -642,18 +642,18 @@ class AsyncDocsResource(AsyncAPIResource):
         user_id: str,
         *,
         text: str,
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        lang: str | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
+        connection_pool: object | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        lang: str | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: object | Omit = omit,
+        trigram_similarity_threshold: Optional[float] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocSearchResponse:
         """
         Searches for documents associated with a specific user.
@@ -681,18 +681,18 @@ class AsyncDocsResource(AsyncAPIResource):
         user_id: str,
         *,
         vector: Iterable[float],
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        confidence: float | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
+        connection_pool: object | Omit = omit,
+        confidence: float | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: object | Omit = omit,
+        mmr_strength: float | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocSearchResponse:
         """
         Searches for documents associated with a specific user.
@@ -721,22 +721,22 @@ class AsyncDocsResource(AsyncAPIResource):
         *,
         text: str,
         vector: Iterable[float],
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        alpha: float | NotGiven = NOT_GIVEN,
-        confidence: float | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        k_multiplier: int | NotGiven = NOT_GIVEN,
-        lang: str | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
+        connection_pool: object | Omit = omit,
+        alpha: float | Omit = omit,
+        confidence: float | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        k_multiplier: int | Omit = omit,
+        lang: str | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: object | Omit = omit,
+        mmr_strength: float | Omit = omit,
+        trigram_similarity_threshold: Optional[float] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocSearchResponse:
         """
         Searches for documents associated with a specific user.
@@ -763,24 +763,24 @@ class AsyncDocsResource(AsyncAPIResource):
         self,
         user_id: str,
         *,
-        text: str | NotGiven = NOT_GIVEN,
-        connection_pool: object | NotGiven = NOT_GIVEN,
-        include_embeddings: bool | NotGiven = NOT_GIVEN,
-        lang: str | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: object | NotGiven = NOT_GIVEN,
-        trigram_similarity_threshold: Optional[float] | NotGiven = NOT_GIVEN,
-        vector: Iterable[float] | NotGiven = NOT_GIVEN,
-        confidence: float | NotGiven = NOT_GIVEN,
-        mmr_strength: float | NotGiven = NOT_GIVEN,
-        alpha: float | NotGiven = NOT_GIVEN,
-        k_multiplier: int | NotGiven = NOT_GIVEN,
+        text: str | Omit = omit,
+        connection_pool: object | Omit = omit,
+        include_embeddings: bool | Omit = omit,
+        lang: str | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: object | Omit = omit,
+        trigram_similarity_threshold: Optional[float] | Omit = omit,
+        vector: Iterable[float] | Omit = omit,
+        confidence: float | Omit = omit,
+        mmr_strength: float | Omit = omit,
+        alpha: float | Omit = omit,
+        k_multiplier: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> DocSearchResponse:
         if not user_id:
             raise ValueError(f"Expected a non-empty value for `user_id` but received {user_id!r}")
