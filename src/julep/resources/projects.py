@@ -8,7 +8,7 @@ from typing_extensions import Literal
 import httpx
 
 from ..types import project_list_params, project_create_params
-from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven
+from .._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -50,14 +50,14 @@ class ProjectsResource(SyncAPIResource):
         self,
         *,
         name: str,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> ProjectCreateResponse:
         """
         Create Project
@@ -90,17 +90,17 @@ class ProjectsResource(SyncAPIResource):
     def list(
         self,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: Dict[str, object] | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SyncOffsetPagination[ProjectListResponse]:
         """
         List Projects
@@ -161,14 +161,14 @@ class AsyncProjectsResource(AsyncAPIResource):
         self,
         *,
         name: str,
-        canonical_name: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
+        canonical_name: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> ProjectCreateResponse:
         """
         Create Project
@@ -201,17 +201,17 @@ class AsyncProjectsResource(AsyncAPIResource):
     def list(
         self,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        metadata_filter: Dict[str, object] | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        limit: int | Omit = omit,
+        metadata_filter: Dict[str, object] | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> AsyncPaginator[ProjectListResponse, AsyncOffsetPagination[ProjectListResponse]]:
         """
         List Projects

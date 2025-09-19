@@ -16,7 +16,7 @@ from .status import (
     AsyncStatusResourceWithStreamingResponse,
 )
 from ...types import execution_list_params, execution_create_params, execution_change_status_params
-from ..._types import NOT_GIVEN, Body, Query, Headers, NotGiven
+from ..._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
 from ..._utils import maybe_transform, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
@@ -74,16 +74,16 @@ class ExecutionsResource(SyncAPIResource):
         task_id: str,
         *,
         input: object,
-        error: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        output: object | NotGiven = NOT_GIVEN,
-        transition_count: Optional[int] | NotGiven = NOT_GIVEN,
+        error: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        output: object | Omit = omit,
+        transition_count: Optional[int] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Execution:
         """
         Create Task Execution
@@ -121,16 +121,16 @@ class ExecutionsResource(SyncAPIResource):
         self,
         task_id: str,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        limit: int | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> SyncOffsetPagination[Execution]:
         """
         List Task Executions
@@ -172,14 +172,14 @@ class ExecutionsResource(SyncAPIResource):
         self,
         execution_id: str,
         *,
-        input: Optional[object] | NotGiven = NOT_GIVEN,
-        status: Literal["running"] | NotGiven = NOT_GIVEN,
+        input: Optional[object] | Omit = omit,
+        status: Literal["running"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> object:
         """
         Update Execution
@@ -200,14 +200,14 @@ class ExecutionsResource(SyncAPIResource):
         self,
         execution_id: str,
         *,
-        reason: Optional[str] | NotGiven = NOT_GIVEN,
-        status: Literal["cancelled"] | NotGiven = NOT_GIVEN,
+        reason: Optional[str] | Omit = omit,
+        status: Literal["cancelled"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> object:
         """
         Update Execution
@@ -227,15 +227,15 @@ class ExecutionsResource(SyncAPIResource):
         self,
         execution_id: str,
         *,
-        input: Optional[object] | NotGiven = NOT_GIVEN,
-        status: Literal["running"] | Literal["cancelled"] | NotGiven = NOT_GIVEN,
-        reason: Optional[str] | NotGiven = NOT_GIVEN,
+        input: Optional[object] | Omit = omit,
+        status: Literal["running"] | Literal["cancelled"] | Omit = omit,
+        reason: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> object:
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
@@ -264,7 +264,7 @@ class ExecutionsResource(SyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Execution:
         """
         Get Execution Details
@@ -322,16 +322,16 @@ class AsyncExecutionsResource(AsyncAPIResource):
         task_id: str,
         *,
         input: object,
-        error: Optional[str] | NotGiven = NOT_GIVEN,
-        metadata: Optional[object] | NotGiven = NOT_GIVEN,
-        output: object | NotGiven = NOT_GIVEN,
-        transition_count: Optional[int] | NotGiven = NOT_GIVEN,
+        error: Optional[str] | Omit = omit,
+        metadata: Optional[object] | Omit = omit,
+        output: object | Omit = omit,
+        transition_count: Optional[int] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Execution:
         """
         Create Task Execution
@@ -369,16 +369,16 @@ class AsyncExecutionsResource(AsyncAPIResource):
         self,
         task_id: str,
         *,
-        direction: Literal["asc", "desc"] | NotGiven = NOT_GIVEN,
-        limit: int | NotGiven = NOT_GIVEN,
-        offset: int | NotGiven = NOT_GIVEN,
-        sort_by: Literal["created_at", "updated_at"] | NotGiven = NOT_GIVEN,
+        direction: Literal["asc", "desc"] | Omit = omit,
+        limit: int | Omit = omit,
+        offset: int | Omit = omit,
+        sort_by: Literal["created_at", "updated_at"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> AsyncPaginator[Execution, AsyncOffsetPagination[Execution]]:
         """
         List Task Executions
@@ -420,14 +420,14 @@ class AsyncExecutionsResource(AsyncAPIResource):
         self,
         execution_id: str,
         *,
-        input: Optional[object] | NotGiven = NOT_GIVEN,
-        status: Literal["running"] | NotGiven = NOT_GIVEN,
+        input: Optional[object] | Omit = omit,
+        status: Literal["running"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> object:
         """
         Update Execution
@@ -448,14 +448,14 @@ class AsyncExecutionsResource(AsyncAPIResource):
         self,
         execution_id: str,
         *,
-        reason: Optional[str] | NotGiven = NOT_GIVEN,
-        status: Literal["cancelled"] | NotGiven = NOT_GIVEN,
+        reason: Optional[str] | Omit = omit,
+        status: Literal["cancelled"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> object:
         """
         Update Execution
@@ -475,15 +475,15 @@ class AsyncExecutionsResource(AsyncAPIResource):
         self,
         execution_id: str,
         *,
-        input: Optional[object] | NotGiven = NOT_GIVEN,
-        status: Literal["running"] | Literal["cancelled"] | NotGiven = NOT_GIVEN,
-        reason: Optional[str] | NotGiven = NOT_GIVEN,
+        input: Optional[object] | Omit = omit,
+        status: Literal["running"] | Literal["cancelled"] | Omit = omit,
+        reason: Optional[str] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> object:
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
@@ -512,7 +512,7 @@ class AsyncExecutionsResource(AsyncAPIResource):
         extra_headers: Headers | None = None,
         extra_query: Query | None = None,
         extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> Execution:
         """
         Get Execution Details
