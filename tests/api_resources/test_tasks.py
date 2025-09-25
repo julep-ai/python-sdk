@@ -62,15 +62,15 @@ class TestTasks:
                         "params_schema": {
                             "properties": {
                                 "foo": {
-                                    "type": "type",
+                                    "type": "string",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
+                                    "items": {"type": "string"},
                                 }
                             },
                             "additional_properties": True,
                             "required": ["string"],
-                            "type": "type",
+                            "type": "object",
                         },
                         "schema": {},
                         "secrets": {"foo": {"name": "name"}},
@@ -247,15 +247,15 @@ class TestTasks:
                         "params_schema": {
                             "properties": {
                                 "foo": {
-                                    "type": "type",
+                                    "type": "string",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
+                                    "items": {"type": "string"},
                                 }
                             },
                             "additional_properties": True,
                             "required": ["string"],
-                            "type": "type",
+                            "type": "object",
                         },
                         "schema": {},
                         "secrets": {"foo": {"name": "name"}},
@@ -436,15 +436,15 @@ class TestAsyncTasks:
                         "params_schema": {
                             "properties": {
                                 "foo": {
-                                    "type": "type",
+                                    "type": "string",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
+                                    "items": {"type": "string"},
                                 }
                             },
                             "additional_properties": True,
                             "required": ["string"],
-                            "type": "type",
+                            "type": "object",
                         },
                         "schema": {},
                         "secrets": {"foo": {"name": "name"}},
@@ -621,15 +621,15 @@ class TestAsyncTasks:
                         "params_schema": {
                             "properties": {
                                 "foo": {
-                                    "type": "type",
+                                    "type": "string",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
+                                    "items": {"type": "string"},
                                 }
                             },
                             "additional_properties": True,
                             "required": ["string"],
-                            "type": "type",
+                            "type": "object",
                         },
                         "schema": {},
                         "secrets": {"foo": {"name": "name"}},
