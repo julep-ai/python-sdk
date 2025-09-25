@@ -1,5 +1,41 @@
 # Changelog
 
+## 2.20.0 (2025-09-25)
+
+Full Changelog: [v2.19.2...v2.20.0](https://github.com/julep-ai/python-sdk/compare/v2.19.2...v2.20.0)
+
+### Features
+
+* **api:** add auto_run_tools, metadata, and recall_tools to session ([4bcb8b9](https://github.com/julep-ai/python-sdk/commit/4bcb8b983bb90926a8cbd6738ffa494a2f8c27da))
+* **api:** api update ([fb19b14](https://github.com/julep-ai/python-sdk/commit/fb19b14fd824747b2d6885e96f0a5a1e2a193f7a))
+* **api:** api update ([768c941](https://github.com/julep-ai/python-sdk/commit/768c941e0d29945f08170bf374366c6d0064422b))
+* **client:** support file upload requests ([cf64f9c](https://github.com/julep-ai/python-sdk/commit/cf64f9ccf298ec188419faffd68aeed4609c47b9))
+* improve future compat with pydantic v3 ([3a1ceb7](https://github.com/julep-ai/python-sdk/commit/3a1ceb7cf1d05be6170fd591c60b3705e099ff50))
+* **types:** replace List[str] with SequenceNotStr in params ([85c0d00](https://github.com/julep-ai/python-sdk/commit/85c0d002b08578716f5773be546eb0cea70e6c35))
+
+
+### Bug Fixes
+
+* avoid newer type syntax ([ab2b07f](https://github.com/julep-ai/python-sdk/commit/ab2b07f9ca94ab97364b3bf9f7bde09d04bfc8ef))
+* **compat:** compat with `pydantic&lt;2.8.0` when using additional fields ([754734b](https://github.com/julep-ai/python-sdk/commit/754734b3313e3f9e3daec4b0fdb1885deb2281ab))
+* **tests:** update schema types from 'type' to 'string' and 'object' in multiple test files ([f4b6f79](https://github.com/julep-ai/python-sdk/commit/f4b6f79a6f952e19138ad5a88906be65a2cefccb))
+
+
+### Chores
+
+* do not install brew dependencies in ./scripts/bootstrap by default ([9611b52](https://github.com/julep-ai/python-sdk/commit/9611b520bc8650e254b9989d239a1e30824567bf))
+* **internal:** add Sequence related utils ([ae91df8](https://github.com/julep-ai/python-sdk/commit/ae91df87bc3bac07f01ff4835364fc9c6303eb58))
+* **internal:** change ci workflow machines ([7d299f1](https://github.com/julep-ai/python-sdk/commit/7d299f17926d0d651234471263d780c8c2dcda9f))
+* **internal:** fix ruff target version ([c830640](https://github.com/julep-ai/python-sdk/commit/c8306405a44284f06a7aa58eb1dd3efe2baa1fd6))
+* **internal:** move mypy configurations to `pyproject.toml` file ([777fa24](https://github.com/julep-ai/python-sdk/commit/777fa24d36cff98ac152e62f80c64d09e4cd8142))
+* **internal:** update comment in script ([1c530b2](https://github.com/julep-ai/python-sdk/commit/1c530b26089dd3d1f6caa64aa9aef3e7901a5ac5))
+* **internal:** update pydantic dependency ([c0d79b5](https://github.com/julep-ai/python-sdk/commit/c0d79b5661ab5d651aa09e357e3e9a6aee9d3243))
+* **internal:** update pyright exclude list ([ac85eb4](https://github.com/julep-ai/python-sdk/commit/ac85eb4f98440bdcbb70bedfda6f53f30a754912))
+* **tests:** simplify `get_platform` test ([d3ce5e9](https://github.com/julep-ai/python-sdk/commit/d3ce5e9a67a7153ae7da76cc3d24ee7a4c54e9f9))
+* **types:** change optional parameter type from NotGiven to Omit ([04c2aa0](https://github.com/julep-ai/python-sdk/commit/04c2aa0b230a9c1a7f81e20b3052a79815ee23eb))
+* update @stainless-api/prism-cli to v5.15.0 ([e6ad37f](https://github.com/julep-ai/python-sdk/commit/e6ad37f5afb355cfe8056508c1b7628fb111d16b))
+* update github action ([6de72a2](https://github.com/julep-ai/python-sdk/commit/6de72a255a7fc4db715044d23af2339146f135e9))
+
 ## 2.19.2 (2025-07-25)
 
 Full Changelog: [v2.19.1...v2.19.2](https://github.com/julep-ai/python-sdk/compare/v2.19.1...v2.19.2)
