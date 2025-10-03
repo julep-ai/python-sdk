@@ -74,6 +74,7 @@ class ExecutionsResource(SyncAPIResource):
         task_id: str,
         *,
         input: object,
+        connection_pool: object | Omit = omit,
         error: Optional[str] | Omit = omit,
         metadata: Optional[object] | Omit = omit,
         output: object | Omit = omit,
@@ -112,7 +113,13 @@ class ExecutionsResource(SyncAPIResource):
                 execution_create_params.ExecutionCreateParams,
             ),
             options=make_request_options(
-                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+                extra_headers=extra_headers,
+                extra_query=extra_query,
+                extra_body=extra_body,
+                timeout=timeout,
+                query=maybe_transform(
+                    {"connection_pool": connection_pool}, execution_create_params.ExecutionCreateParams
+                ),
             ),
             cast_to=Execution,
         )
@@ -322,6 +329,7 @@ class AsyncExecutionsResource(AsyncAPIResource):
         task_id: str,
         *,
         input: object,
+        connection_pool: object | Omit = omit,
         error: Optional[str] | Omit = omit,
         metadata: Optional[object] | Omit = omit,
         output: object | Omit = omit,
@@ -360,7 +368,13 @@ class AsyncExecutionsResource(AsyncAPIResource):
                 execution_create_params.ExecutionCreateParams,
             ),
             options=make_request_options(
-                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+                extra_headers=extra_headers,
+                extra_query=extra_query,
+                extra_body=extra_body,
+                timeout=timeout,
+                query=await async_maybe_transform(
+                    {"connection_pool": connection_pool}, execution_create_params.ExecutionCreateParams
+                ),
             ),
             cast_to=Execution,
         )
