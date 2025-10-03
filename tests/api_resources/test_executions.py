@@ -31,6 +31,7 @@ class TestExecutions:
         execution = client.executions.create(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
+            connection_pool={},
             error="error",
             metadata={},
             output={},
@@ -272,6 +273,7 @@ class TestAsyncExecutions:
         execution = await async_client.executions.create(
             task_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             input={},
+            connection_pool={},
             error="error",
             metadata={},
             output={},

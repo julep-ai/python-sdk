@@ -11,6 +11,8 @@ __all__ = ["ExecutionCreateParams"]
 class ExecutionCreateParams(TypedDict, total=False):
     input: Required[object]
 
+    connection_pool: object
+
     error: Optional[str]
 
     metadata: Optional[object]
