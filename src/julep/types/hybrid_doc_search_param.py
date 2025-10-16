@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from typing import Optional
 from typing_extensions import Literal, TypedDict
 
 __all__ = ["HybridDocSearchParam"]
@@ -30,4 +31,4 @@ class HybridDocSearchParam(TypedDict, total=False):
 
     num_search_messages: int
 
-    trigram_similarity_threshold: float
+    trigram_similarity_threshold: Optional[float]
