@@ -1,5 +1,32 @@
 # Changelog
 
+## 2.22.0 (2025-11-28)
+
+Full Changelog: [v2.21.0...v2.22.0](https://github.com/julep-ai/python-sdk/compare/v2.21.0...v2.22.0)
+
+### Features
+
+* **api:** api update ([d0355a7](https://github.com/julep-ai/python-sdk/commit/d0355a73386db37937140c429a83b2cd15711494))
+
+
+### Bug Fixes
+
+* **client:** close streams without requiring full consumption ([91faa31](https://github.com/julep-ai/python-sdk/commit/91faa31ddd1b0445a7e954449f14c2d3622d2d22))
+* compat with Python 3.14 ([c684ccc](https://github.com/julep-ai/python-sdk/commit/c684ccc32f6e2c1526f0334a7e08a57bb101ab1e))
+* **compat:** update signatures of `model_dump` and `model_dump_json` for Pydantic v1 ([d2277f0](https://github.com/julep-ai/python-sdk/commit/d2277f0120acfd83e42dbbe1c40e5912b4eaa3dc))
+* ensure streams are always closed ([259546a](https://github.com/julep-ai/python-sdk/commit/259546afb47a06510793eea7e5965610d7b54a39))
+
+
+### Chores
+
+* add Python 3.14 classifier and testing ([75d0f22](https://github.com/julep-ai/python-sdk/commit/75d0f22c069029468655261e92d56dba8dd7f20a))
+* bump `httpx-aiohttp` version to 0.1.9 ([60467e7](https://github.com/julep-ai/python-sdk/commit/60467e785144c650f053e6eabf00f1e65fb99b3d))
+* **deps:** mypy 1.18.1 has a regression, pin to 1.17 ([11f8070](https://github.com/julep-ai/python-sdk/commit/11f807010b1e82a08824c0e58628f38da6cab867))
+* **internal/tests:** avoid race condition with implicit client cleanup ([9853fd4](https://github.com/julep-ai/python-sdk/commit/9853fd412fa475fd7ac8abc352bac5765c693b08))
+* **internal:** detect missing future annotations with ruff ([d93ed08](https://github.com/julep-ai/python-sdk/commit/d93ed0871a2ddecf4c4a919a0f8f9dbdbeb55f8f))
+* **internal:** grammar fix (it's -&gt; its) ([1681b0d](https://github.com/julep-ai/python-sdk/commit/1681b0dc12c108fac6ea0f787ddfae87aa33d35c))
+* **package:** drop Python 3.8 support ([240c2fa](https://github.com/julep-ai/python-sdk/commit/240c2fa49c195e65016f5181834b55b9543bc353))
+
 ## 2.21.0 (2025-10-03)
 
 Full Changelog: [v2.20.0...v2.21.0](https://github.com/julep-ai/python-sdk/compare/v2.20.0...v2.21.0)
