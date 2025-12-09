@@ -8,6 +8,8 @@ __all__ = ["FfmpegSearchArguments"]
 
 
 class FfmpegSearchArguments(BaseModel):
+    """Arguments for Ffmpeg CMD"""
+
     cmd: str
 
     file: Union[str, List[str], None] = None

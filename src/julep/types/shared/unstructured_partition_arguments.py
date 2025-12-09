@@ -8,6 +8,8 @@ __all__ = ["UnstructuredPartitionArguments"]
 
 
 class UnstructuredPartitionArguments(BaseModel):
+    """Arguments for Unstructured partition integration"""
+
     file: str
 
     filename: Optional[str] = None

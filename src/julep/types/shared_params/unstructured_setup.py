@@ -9,6 +9,8 @@ __all__ = ["UnstructuredSetup"]
 
 
 class UnstructuredSetup(TypedDict, total=False):
+    """Setup parameters for Unstructured integration"""
+
     unstructured_api_key: Required[str]
 
     retry_config: Optional[object]

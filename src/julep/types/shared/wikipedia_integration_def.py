@@ -10,6 +10,8 @@ __all__ = ["WikipediaIntegrationDef"]
 
 
 class WikipediaIntegrationDef(BaseModel):
+    """Wikipedia integration definition"""
+
     arguments: Optional[WikipediaSearchArguments] = None
     """Arguments for Wikipedia Search"""
 

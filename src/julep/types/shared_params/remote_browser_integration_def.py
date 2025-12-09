@@ -12,6 +12,8 @@ __all__ = ["RemoteBrowserIntegrationDef"]
 
 
 class RemoteBrowserIntegrationDef(TypedDict, total=False):
+    """The integration definition for the remote browser"""
+
     setup: Required[RemoteBrowserSetup]
     """The setup parameters for the remote browser"""
 

@@ -9,6 +9,8 @@ __all__ = ["UnstructuredPartitionArguments"]
 
 
 class UnstructuredPartitionArguments(TypedDict, total=False):
+    """Arguments for Unstructured partition integration"""
+
     file: Required[str]
 
     filename: Optional[str]

@@ -11,6 +11,8 @@ __all__ = ["LlamaParseIntegrationDef"]
 
 
 class LlamaParseIntegrationDef(BaseModel):
+    """LlamaParse integration definition"""
+
     arguments: Optional[LlamaParseFetchArguments] = None
     """Arguments for LlamaParse integration"""
 

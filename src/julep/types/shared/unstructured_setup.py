@@ -8,6 +8,8 @@ __all__ = ["UnstructuredSetup"]
 
 
 class UnstructuredSetup(BaseModel):
+    """Setup parameters for Unstructured integration"""
+
     unstructured_api_key: str
 
     retry_config: Optional[object] = None

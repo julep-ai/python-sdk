@@ -9,6 +9,8 @@ __all__ = ["CloudinarySetup"]
 
 
 class CloudinarySetup(TypedDict, total=False):
+    """Setup parameters for Cloudinary integration"""
+
     cloudinary_api_key: Required[str]
 
     cloudinary_api_secret: Required[str]

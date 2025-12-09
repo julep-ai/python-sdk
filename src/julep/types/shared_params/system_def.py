@@ -9,6 +9,8 @@ __all__ = ["SystemDef"]
 
 
 class SystemDef(TypedDict, total=False):
+    """System definition"""
+
     operation: Required[
         Literal[
             "create",

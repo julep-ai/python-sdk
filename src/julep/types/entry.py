@@ -113,6 +113,8 @@ class ContentUnionMember0ContentOutput(BaseModel):
 
 
 class ContentUnionMember0AgentsAPIAutogenEntriesContentModel3ImageURL(BaseModel):
+    """The image URL"""
+
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
@@ -146,6 +148,8 @@ class ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1(
 
 
 class ContentUnionMember0AgentsAPIAutogenEntriesContentModel(BaseModel):
+    """Anthropic image content part"""
+
     content: Union[
         List[ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember0],
         List[ContentUnionMember0AgentsAPIAutogenEntriesContentModelContentUnionMember1],
@@ -164,6 +168,8 @@ ContentUnionMember0: TypeAlias = Union[
 
 
 class ContentToolAPICallParamsSchemaProperties(BaseModel):
+    """Property definition for parameter schema"""
+
     type: str
 
     description: Optional[str] = None
@@ -174,6 +180,8 @@ class ContentToolAPICallParamsSchemaProperties(BaseModel):
 
 
 class ContentToolAPICallParamsSchema(BaseModel):
+    """JSON Schema for API call parameters"""
+
     properties: Dict[str, ContentToolAPICallParamsSchemaProperties]
 
     additional_properties: Optional[bool] = FieldInfo(alias="additionalProperties", default=None)
@@ -184,6 +192,8 @@ class ContentToolAPICallParamsSchema(BaseModel):
 
 
 class ContentToolAPICall(BaseModel):
+    """API call definition"""
+
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -217,6 +227,8 @@ class ContentToolAPICall(BaseModel):
 
 
 class ContentToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseModel):
+    """Arguments to call a named tool on the MCP server"""
+
     tool_name: str
 
     arguments: Optional[object] = None
@@ -225,6 +237,8 @@ class ContentToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseM
 
 
 class ContentToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(BaseModel):
+    """Arguments to list available tools"""
+
     dummy: Optional[str] = None
 
 
@@ -236,6 +250,8 @@ ContentToolIntegrationMcpIntegrationDefArguments: TypeAlias = Union[
 
 
 class ContentToolIntegrationMcpIntegrationDefSetup(BaseModel):
+    """Setup parameters for MCP integration"""
+
     transport: Literal["sse", "http"]
 
     args: Optional[List[str]] = None
@@ -252,6 +268,8 @@ class ContentToolIntegrationMcpIntegrationDefSetup(BaseModel):
 
 
 class ContentToolIntegrationMcpIntegrationDef(BaseModel):
+    """MCP integration definition"""
+
     arguments: Optional[ContentToolIntegrationMcpIntegrationDefArguments] = None
     """Arguments to call a named tool on the MCP server"""
 
@@ -264,6 +282,8 @@ class ContentToolIntegrationMcpIntegrationDef(BaseModel):
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments(BaseModel):
+    """Arguments for reading values from a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -276,6 +296,8 @@ class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheet
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsWriteArguments(BaseModel):
+    """Arguments for writing values to a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -290,6 +312,8 @@ class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheet
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsAppendArguments(BaseModel):
+    """Arguments for appending values to a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -304,12 +328,16 @@ class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheet
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsClearArguments(BaseModel):
+    """Arguments for clearing values from a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchReadArguments(BaseModel):
+    """Arguments for batch reading values from multiple ranges"""
+
     ranges: List[str]
 
     spreadsheet_id: str
@@ -322,6 +350,8 @@ class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheet
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArgumentsData(BaseModel):
+    """Represents a range of values to write"""
+
     range: str
 
     values: List[List[object]]
@@ -330,6 +360,8 @@ class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheet
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArguments(BaseModel):
+    """Arguments for batch updating values in multiple ranges"""
+
     data: List[ContentToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArgumentsData]
 
     spreadsheet_id: str
@@ -351,6 +383,8 @@ ContentToolIntegrationGoogleSheetsIntegrationDefOutputArguments: TypeAlias = Uni
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutputSetup(BaseModel):
+    """Setup parameters for Google Sheets integration"""
+
     use_julep_service: bool
 
     default_retry_count: Optional[int] = None
@@ -359,6 +393,8 @@ class ContentToolIntegrationGoogleSheetsIntegrationDefOutputSetup(BaseModel):
 
 
 class ContentToolIntegrationGoogleSheetsIntegrationDefOutput(BaseModel):
+    """Google Sheets integration definition"""
+
     arguments: Optional[ContentToolIntegrationGoogleSheetsIntegrationDefOutputArguments] = None
     """Arguments for reading values from a spreadsheet"""
 
@@ -449,6 +485,8 @@ class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel1(BaseMo
 
 
 class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel3ImageURL(BaseModel):
+    """The image URL"""
+
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
@@ -482,6 +520,8 @@ class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2Content
 
 
 class ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2(BaseModel):
+    """Anthropic image content part"""
+
     content: Union[
         List[ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember0],
         List[ContentUnionMember8UnionMember0AgentsAPIAutogenEntriesContentModel2ContentUnionMember1],
@@ -500,6 +540,8 @@ ContentUnionMember8UnionMember0: TypeAlias = Union[
 
 
 class ContentUnionMember8ToolAPICallParamsSchemaProperties(BaseModel):
+    """Property definition for parameter schema"""
+
     type: str
 
     description: Optional[str] = None
@@ -510,6 +552,8 @@ class ContentUnionMember8ToolAPICallParamsSchemaProperties(BaseModel):
 
 
 class ContentUnionMember8ToolAPICallParamsSchema(BaseModel):
+    """JSON Schema for API call parameters"""
+
     properties: Dict[str, ContentUnionMember8ToolAPICallParamsSchemaProperties]
 
     additional_properties: Optional[bool] = FieldInfo(alias="additionalProperties", default=None)
@@ -520,6 +564,8 @@ class ContentUnionMember8ToolAPICallParamsSchema(BaseModel):
 
 
 class ContentUnionMember8ToolAPICall(BaseModel):
+    """API call definition"""
+
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -553,6 +599,8 @@ class ContentUnionMember8ToolAPICall(BaseModel):
 
 
 class ContentUnionMember8ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseModel):
+    """Arguments to call a named tool on the MCP server"""
+
     tool_name: str
 
     arguments: Optional[object] = None
@@ -561,6 +609,8 @@ class ContentUnionMember8ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArg
 
 
 class ContentUnionMember8ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(BaseModel):
+    """Arguments to list available tools"""
+
     dummy: Optional[str] = None
 
 
@@ -572,6 +622,8 @@ ContentUnionMember8ToolIntegrationMcpIntegrationDefArguments: TypeAlias = Union[
 
 
 class ContentUnionMember8ToolIntegrationMcpIntegrationDefSetup(BaseModel):
+    """Setup parameters for MCP integration"""
+
     transport: Literal["sse", "http"]
 
     args: Optional[List[str]] = None
@@ -588,6 +640,8 @@ class ContentUnionMember8ToolIntegrationMcpIntegrationDefSetup(BaseModel):
 
 
 class ContentUnionMember8ToolIntegrationMcpIntegrationDef(BaseModel):
+    """MCP integration definition"""
+
     arguments: Optional[ContentUnionMember8ToolIntegrationMcpIntegrationDefArguments] = None
     """Arguments to call a named tool on the MCP server"""
 
@@ -600,6 +654,8 @@ class ContentUnionMember8ToolIntegrationMcpIntegrationDef(BaseModel):
 
 
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments(BaseModel):
+    """Arguments for reading values from a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -612,6 +668,8 @@ class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgument
 
 
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsWriteArguments(BaseModel):
+    """Arguments for writing values to a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -626,6 +684,8 @@ class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgument
 
 
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsAppendArguments(BaseModel):
+    """Arguments for appending values to a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -640,6 +700,8 @@ class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgument
 
 
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsClearArguments(BaseModel):
+    """Arguments for clearing values from a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -648,6 +710,8 @@ class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgument
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchReadArguments(
     BaseModel
 ):
+    """Arguments for batch reading values from multiple ranges"""
+
     ranges: List[str]
 
     spreadsheet_id: str
@@ -662,6 +726,8 @@ class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgument
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArgumentsData(
     BaseModel
 ):
+    """Represents a range of values to write"""
+
     range: str
 
     values: List[List[object]]
@@ -672,6 +738,8 @@ class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgument
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArguments(
     BaseModel
 ):
+    """Arguments for batch updating values in multiple ranges"""
+
     data: List[
         ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArgumentsData
     ]
@@ -695,6 +763,8 @@ ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArguments: Typ
 
 
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputSetup(BaseModel):
+    """Setup parameters for Google Sheets integration"""
+
     use_julep_service: bool
 
     default_retry_count: Optional[int] = None
@@ -703,6 +773,8 @@ class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputSetup(Ba
 
 
 class ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutput(BaseModel):
+    """Google Sheets integration definition"""
+
     arguments: Optional[ContentUnionMember8ToolIntegrationGoogleSheetsIntegrationDefOutputArguments] = None
     """Arguments for reading values from a spreadsheet"""
 

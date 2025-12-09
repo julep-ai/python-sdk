@@ -10,6 +10,8 @@ __all__ = ["FfmpegIntegrationDef"]
 
 
 class FfmpegIntegrationDef(BaseModel):
+    """Ffmpeg integration definition"""
+
     arguments: Optional[FfmpegSearchArguments] = None
     """Arguments for Ffmpeg CMD"""
 

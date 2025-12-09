@@ -8,4 +8,6 @@ __all__ = ["WeatherSetup"]
 
 
 class WeatherSetup(TypedDict, total=False):
+    """Integration definition for Weather"""
+
     openweathermap_api_key: Required[str]

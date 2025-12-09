@@ -12,6 +12,8 @@ __all__ = ["MailgunIntegrationDef"]
 
 
 class MailgunIntegrationDef(TypedDict, total=False):
+    """Mailgun integration definition"""
+
     arguments: Optional[MailgunSendEmailArguments]
     """Arguments for mailgun.send_email method"""
 

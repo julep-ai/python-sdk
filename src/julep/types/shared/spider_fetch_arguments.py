@@ -9,6 +9,8 @@ __all__ = ["SpiderFetchArguments"]
 
 
 class SpiderFetchArguments(BaseModel):
+    """Arguments for Spider integration"""
+
     url: str
 
     content_type: Optional[Literal["application/json", "text/csv", "application/xml", "application/jsonl"]] = None

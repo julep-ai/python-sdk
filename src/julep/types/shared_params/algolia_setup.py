@@ -8,6 +8,8 @@ __all__ = ["AlgoliaSetup"]
 
 
 class AlgoliaSetup(TypedDict, total=False):
+    """Integration definition for Algolia"""
+
     algolia_api_key: Required[str]
 
     algolia_application_id: Required[str]

@@ -11,6 +11,8 @@ __all__ = ["BrowserbaseExtensionIntegrationDef"]
 
 
 class BrowserbaseExtensionIntegrationDef(BaseModel):
+    """browserbase extension provider"""
+
     arguments: Optional[BrowserbaseExtensionArguments] = None
 
     method: Optional[Literal["install_extension_from_github"]] = None

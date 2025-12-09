@@ -8,6 +8,8 @@ __all__ = ["Computer20241022Def"]
 
 
 class Computer20241022Def(TypedDict, total=False):
+    """Anthropic new tools"""
+
     display_height_px: int
 
     display_number: int

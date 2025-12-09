@@ -6,6 +6,8 @@ __all__ = ["EmailSetup"]
 
 
 class EmailSetup(BaseModel):
+    """Setup parameters for Email integration"""
+
     host: str
 
     password: str

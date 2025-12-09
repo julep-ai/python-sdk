@@ -9,6 +9,8 @@ __all__ = ["CloudinaryEditArguments"]
 
 
 class CloudinaryEditArguments(TypedDict, total=False):
+    """Arguments for Cloudinary media edit"""
+
     public_id: Required[str]
 
     transformation: Required[Iterable[object]]

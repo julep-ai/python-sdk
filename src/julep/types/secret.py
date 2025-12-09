@@ -9,6 +9,8 @@ __all__ = ["Secret"]
 
 
 class Secret(BaseModel):
+    """A secret that can be used in tasks and sessions"""
+
     id: str
 
     created_at: datetime

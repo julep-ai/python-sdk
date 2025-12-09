@@ -9,6 +9,8 @@ __all__ = ["RemoteBrowserSetup"]
 
 
 class RemoteBrowserSetup(TypedDict, total=False):
+    """The setup parameters for the remote browser"""
+
     connect_url: Optional[str]
 
     height: Optional[int]

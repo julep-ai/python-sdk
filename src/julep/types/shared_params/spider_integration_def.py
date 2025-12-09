@@ -12,6 +12,8 @@ __all__ = ["SpiderIntegrationDef"]
 
 
 class SpiderIntegrationDef(TypedDict, total=False):
+    """Spider integration definition"""
+
     arguments: Optional[SpiderFetchArguments]
     """Arguments for Spider integration"""
 

@@ -8,6 +8,8 @@ __all__ = ["WikipediaSearchArguments"]
 
 
 class WikipediaSearchArguments(BaseModel):
+    """Arguments for Wikipedia Search"""
+
     query: str
 
     load_max_docs: Optional[int] = None

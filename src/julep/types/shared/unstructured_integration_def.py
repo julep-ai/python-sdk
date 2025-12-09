@@ -11,6 +11,8 @@ __all__ = ["UnstructuredIntegrationDef"]
 
 
 class UnstructuredIntegrationDef(BaseModel):
+    """Unstructured integration definition"""
+
     arguments: Optional[UnstructuredPartitionArguments] = None
     """Arguments for Unstructured partition integration"""
 

@@ -6,4 +6,6 @@ __all__ = ["MailgunSetup"]
 
 
 class MailgunSetup(BaseModel):
+    """Setup parameters for Mailgun integration"""
+
     api_key: str

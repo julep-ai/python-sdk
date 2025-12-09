@@ -133,6 +133,8 @@ class ToolUpdateParams(TypedDict, total=False):
 
 
 class APICallParamsSchemaProperties(TypedDict, total=False):
+    """Property definition for parameter schema"""
+
     description: Optional[str]
 
     enum: Optional[SequenceNotStr[str]]
@@ -143,6 +145,8 @@ class APICallParamsSchemaProperties(TypedDict, total=False):
 
 
 class APICallParamsSchema(TypedDict, total=False):
+    """JSON Schema for API call parameters"""
+
     additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
 
     properties: Optional[Dict[str, APICallParamsSchemaProperties]]
@@ -157,6 +161,8 @@ class APICallSecrets(TypedDict, total=False):
 
 
 class APICall(TypedDict, total=False):
+    """API call definition"""
+
     content: Optional[str]
 
     cookies: Optional[Dict[str, str]]
@@ -196,6 +202,8 @@ class Bash20241022(TypedDict, total=False):
 
 
 class Computer20241022(TypedDict, total=False):
+    """Anthropic new tools"""
+
     display_height_px: int
 
     display_number: int
@@ -218,14 +226,20 @@ class IntegrationDummyIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationBraveIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Brave Search"""
+
     query: Optional[str]
 
 
 class IntegrationBraveIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Integration definition for Brave Search"""
+
     brave_api_key: Optional[str]
 
 
 class IntegrationBraveIntegrationDefUpdate(TypedDict, total=False):
+    """Brave integration definition"""
+
     arguments: Optional[IntegrationBraveIntegrationDefUpdateArguments]
     """Arguments for Brave Search"""
 
@@ -249,6 +263,8 @@ _IntegrationEmailIntegrationDefUpdateArgumentsReservedKeywords = TypedDict(
 class IntegrationEmailIntegrationDefUpdateArguments(
     _IntegrationEmailIntegrationDefUpdateArgumentsReservedKeywords, total=False
 ):
+    """Arguments for Email sending"""
+
     body: Optional[str]
 
     subject: Optional[str]
@@ -257,6 +273,8 @@ class IntegrationEmailIntegrationDefUpdateArguments(
 
 
 class IntegrationEmailIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Setup parameters for Email integration"""
+
     host: Optional[str]
 
     password: Optional[str]
@@ -267,6 +285,8 @@ class IntegrationEmailIntegrationDefUpdateSetup(TypedDict, total=False):
 
 
 class IntegrationEmailIntegrationDefUpdate(TypedDict, total=False):
+    """Email integration definition"""
+
     arguments: Optional[IntegrationEmailIntegrationDefUpdateArguments]
     """Arguments for Email sending"""
 
@@ -279,6 +299,8 @@ class IntegrationEmailIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationSpiderIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Spider integration"""
+
     content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]
 
     params: Optional[object]
@@ -287,10 +309,14 @@ class IntegrationSpiderIntegrationDefUpdateArguments(TypedDict, total=False):
 
 
 class IntegrationSpiderIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Setup parameters for Spider integration"""
+
     spider_api_key: Optional[str]
 
 
 class IntegrationSpiderIntegrationDefUpdate(TypedDict, total=False):
+    """Spider integration definition"""
+
     arguments: Optional[IntegrationSpiderIntegrationDefUpdateArguments]
     """Arguments for Spider integration"""
 
@@ -303,12 +329,16 @@ class IntegrationSpiderIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationWikipediaIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Wikipedia Search"""
+
     load_max_docs: int
 
     query: Optional[str]
 
 
 class IntegrationWikipediaIntegrationDefUpdate(TypedDict, total=False):
+    """Wikipedia integration definition"""
+
     arguments: Optional[IntegrationWikipediaIntegrationDefUpdateArguments]
     """Arguments for Wikipedia Search"""
 
@@ -320,14 +350,20 @@ class IntegrationWikipediaIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationWeatherIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Weather"""
+
     location: Optional[str]
 
 
 class IntegrationWeatherIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Integration definition for Weather"""
+
     openweathermap_api_key: Optional[str]
 
 
 class IntegrationWeatherIntegrationDefUpdate(TypedDict, total=False):
+    """Weather integration definition"""
+
     arguments: Optional[IntegrationWeatherIntegrationDefUpdateArguments]
     """Arguments for Weather"""
 
@@ -351,6 +387,8 @@ _IntegrationMailgunIntegrationDefUpdateArgumentsReservedKeywords = TypedDict(
 class IntegrationMailgunIntegrationDefUpdateArguments(
     _IntegrationMailgunIntegrationDefUpdateArgumentsReservedKeywords, total=False
 ):
+    """Arguments for mailgun.send_email method"""
+
     bcc: Optional[str]
 
     body: Optional[str]
@@ -363,10 +401,14 @@ class IntegrationMailgunIntegrationDefUpdateArguments(
 
 
 class IntegrationMailgunIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Setup parameters for Mailgun integration"""
+
     api_key: Optional[str]
 
 
 class IntegrationMailgunIntegrationDefUpdate(TypedDict, total=False):
+    """Mailgun integration definition"""
+
     arguments: Optional[IntegrationMailgunIntegrationDefUpdateArguments]
     """Arguments for mailgun.send_email method"""
 
@@ -383,6 +425,8 @@ class IntegrationBrowserbaseContextIntegrationDefUpdateArguments(TypedDict, tota
 
 
 class IntegrationBrowserbaseContextIntegrationDefUpdate(TypedDict, total=False):
+    """browserbase context provider"""
+
     arguments: Optional[IntegrationBrowserbaseContextIntegrationDefUpdateArguments]
 
     method: Literal["create_context"]
@@ -400,6 +444,8 @@ class IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments(TypedDict, to
 
 
 class IntegrationBrowserbaseExtensionIntegrationDefUpdate(TypedDict, total=False):
+    """browserbase extension provider"""
+
     arguments: Optional[IntegrationBrowserbaseExtensionIntegrationDefUpdateArguments]
 
     method: Optional[Literal["install_extension_from_github"]]
@@ -411,6 +457,8 @@ class IntegrationBrowserbaseExtensionIntegrationDefUpdate(TypedDict, total=False
 
 
 class IntegrationBrowserbaseListSessionsIntegrationDefUpdate(TypedDict, total=False):
+    """browserbase list sessions integration definition"""
+
     arguments: Optional[BrowserbaseListSessionsArguments]
 
     method: Literal["list_sessions"]
@@ -422,6 +470,8 @@ class IntegrationBrowserbaseListSessionsIntegrationDefUpdate(TypedDict, total=Fa
 
 
 class IntegrationBrowserbaseCreateSessionIntegrationDefUpdate(TypedDict, total=False):
+    """browserbase create session integration definition"""
+
     arguments: Optional[BrowserbaseCreateSessionArguments]
 
     method: Literal["create_session"]
@@ -437,6 +487,8 @@ class IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments(TypedDict, t
 
 
 class IntegrationBrowserbaseGetSessionIntegrationDefUpdate(TypedDict, total=False):
+    """browserbase get session integration definition"""
+
     arguments: Optional[IntegrationBrowserbaseGetSessionIntegrationDefUpdateArguments]
 
     method: Literal["get_session"]
@@ -454,6 +506,8 @@ class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments(TypedDi
 
 
 class IntegrationBrowserbaseCompleteSessionIntegrationDefUpdate(TypedDict, total=False):
+    """browserbase complete session integration definition"""
+
     arguments: Optional[IntegrationBrowserbaseCompleteSessionIntegrationDefUpdateArguments]
 
     method: Literal["complete_session"]
@@ -469,6 +523,8 @@ class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments(Type
 
 
 class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate(TypedDict, total=False):
+    """browserbase get session live urls integration definition"""
+
     arguments: Optional[IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdateArguments]
 
     method: Literal["get_live_urls"]
@@ -480,6 +536,8 @@ class IntegrationBrowserbaseGetSessionLiveURLsIntegrationDefUpdate(TypedDict, to
 
 
 class IntegrationRemoteBrowserIntegrationDefUpdateArguments(TypedDict, total=False):
+    """The arguments for the remote browser"""
+
     action: Optional[
         Literal[
             "key",
@@ -505,6 +563,8 @@ class IntegrationRemoteBrowserIntegrationDefUpdateArguments(TypedDict, total=Fal
 
 
 class IntegrationRemoteBrowserIntegrationDefUpdate(TypedDict, total=False):
+    """The integration definition for the remote browser"""
+
     arguments: Optional[IntegrationRemoteBrowserIntegrationDefUpdateArguments]
     """The arguments for the remote browser"""
 
@@ -517,6 +577,8 @@ class IntegrationRemoteBrowserIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationLlamaParseIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for LlamaParse integration"""
+
     base64: bool
 
     file: Union[str, SequenceNotStr[str], None]
@@ -527,12 +589,16 @@ class IntegrationLlamaParseIntegrationDefUpdateArguments(TypedDict, total=False)
 
 
 class IntegrationLlamaParseIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Setup parameters for LlamaParse integration"""
+
     llamaparse_api_key: Optional[str]
 
     params: Optional[object]
 
 
 class IntegrationLlamaParseIntegrationDefUpdate(TypedDict, total=False):
+    """LlamaParse integration definition"""
+
     arguments: Optional[IntegrationLlamaParseIntegrationDefUpdateArguments]
     """Arguments for LlamaParse integration"""
 
@@ -545,12 +611,16 @@ class IntegrationLlamaParseIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationFfmpegIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Ffmpeg CMD"""
+
     cmd: Optional[str]
 
     file: Union[str, SequenceNotStr[str], None]
 
 
 class IntegrationFfmpegIntegrationDefUpdate(TypedDict, total=False):
+    """Ffmpeg integration definition"""
+
     arguments: Optional[IntegrationFfmpegIntegrationDefUpdateArguments]
     """Arguments for Ffmpeg CMD"""
 
@@ -562,6 +632,8 @@ class IntegrationFfmpegIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationCloudinaryUploadIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Cloudinary media upload"""
+
     file: Optional[str]
 
     public_id: Optional[str]
@@ -572,6 +644,8 @@ class IntegrationCloudinaryUploadIntegrationDefUpdateArguments(TypedDict, total=
 
 
 class IntegrationCloudinaryUploadIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Setup parameters for Cloudinary integration"""
+
     cloudinary_api_key: Optional[str]
 
     cloudinary_api_secret: Optional[str]
@@ -582,6 +656,8 @@ class IntegrationCloudinaryUploadIntegrationDefUpdateSetup(TypedDict, total=Fals
 
 
 class IntegrationCloudinaryUploadIntegrationDefUpdate(TypedDict, total=False):
+    """Cloudinary upload integration definition"""
+
     arguments: Optional[IntegrationCloudinaryUploadIntegrationDefUpdateArguments]
     """Arguments for Cloudinary media upload"""
 
@@ -594,6 +670,8 @@ class IntegrationCloudinaryUploadIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationCloudinaryEditIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Cloudinary media edit"""
+
     public_id: Optional[str]
 
     return_base64: bool
@@ -602,6 +680,8 @@ class IntegrationCloudinaryEditIntegrationDefUpdateArguments(TypedDict, total=Fa
 
 
 class IntegrationCloudinaryEditIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Setup parameters for Cloudinary integration"""
+
     cloudinary_api_key: Optional[str]
 
     cloudinary_api_secret: Optional[str]
@@ -612,6 +692,8 @@ class IntegrationCloudinaryEditIntegrationDefUpdateSetup(TypedDict, total=False)
 
 
 class IntegrationCloudinaryEditIntegrationDefUpdate(TypedDict, total=False):
+    """Cloudinary edit integration definition"""
+
     arguments: Optional[IntegrationCloudinaryEditIntegrationDefUpdateArguments]
     """Arguments for Cloudinary media edit"""
 
@@ -624,6 +706,8 @@ class IntegrationCloudinaryEditIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationArxivIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Arxiv Search"""
+
     download_pdf: bool
 
     id_list: Optional[SequenceNotStr[str]]
@@ -638,6 +722,8 @@ class IntegrationArxivIntegrationDefUpdateArguments(TypedDict, total=False):
 
 
 class IntegrationArxivIntegrationDefUpdate(TypedDict, total=False):
+    """Arxiv integration definition"""
+
     arguments: Optional[IntegrationArxivIntegrationDefUpdateArguments]
     """Arguments for Arxiv Search"""
 
@@ -649,6 +735,8 @@ class IntegrationArxivIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationUnstructuredIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Unstructured partition integration"""
+
     file: Optional[str]
 
     filename: Optional[str]
@@ -657,6 +745,8 @@ class IntegrationUnstructuredIntegrationDefUpdateArguments(TypedDict, total=Fals
 
 
 class IntegrationUnstructuredIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Setup parameters for Unstructured integration"""
+
     retry_config: Optional[object]
 
     server: Optional[str]
@@ -671,6 +761,8 @@ class IntegrationUnstructuredIntegrationDefUpdateSetup(TypedDict, total=False):
 
 
 class IntegrationUnstructuredIntegrationDefUpdate(TypedDict, total=False):
+    """Unstructured integration definition"""
+
     arguments: Optional[IntegrationUnstructuredIntegrationDefUpdateArguments]
     """Arguments for Unstructured partition integration"""
 
@@ -683,6 +775,8 @@ class IntegrationUnstructuredIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationAlgoliaIntegrationDefUpdateArguments(TypedDict, total=False):
+    """Arguments for Algolia Search"""
+
     attributes_to_retrieve: Optional[SequenceNotStr[str]]
 
     hits_per_page: int
@@ -693,12 +787,16 @@ class IntegrationAlgoliaIntegrationDefUpdateArguments(TypedDict, total=False):
 
 
 class IntegrationAlgoliaIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Integration definition for Algolia"""
+
     algolia_api_key: Optional[str]
 
     algolia_application_id: Optional[str]
 
 
 class IntegrationAlgoliaIntegrationDefUpdate(TypedDict, total=False):
+    """Algolia integration definition"""
+
     arguments: Optional[IntegrationAlgoliaIntegrationDefUpdateArguments]
     """Arguments for Algolia Search"""
 
@@ -711,6 +809,8 @@ class IntegrationAlgoliaIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationMcpIntegrationDefUpdateArgumentsMcpCallToolArgumentsUpdate(TypedDict, total=False):
+    """Arguments to call a named tool on the MCP server"""
+
     arguments: object
 
     timeout_seconds: int
@@ -719,6 +819,8 @@ class IntegrationMcpIntegrationDefUpdateArgumentsMcpCallToolArgumentsUpdate(Type
 
 
 class IntegrationMcpIntegrationDefUpdateArgumentsMcpListToolsArgumentsUpdate(TypedDict, total=False):
+    """Arguments to list available tools"""
+
     dummy: str
 
 
@@ -729,6 +831,8 @@ IntegrationMcpIntegrationDefUpdateArguments: TypeAlias = Union[
 
 
 class IntegrationMcpIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Setup parameters for MCP integration"""
+
     args: SequenceNotStr[str]
 
     command: Optional[str]
@@ -745,6 +849,8 @@ class IntegrationMcpIntegrationDefUpdateSetup(TypedDict, total=False):
 
 
 class IntegrationMcpIntegrationDefUpdate(TypedDict, total=False):
+    """MCP integration definition"""
+
     arguments: Optional[IntegrationMcpIntegrationDefUpdateArguments]
     """Arguments to call a named tool on the MCP server"""
 
@@ -757,6 +863,8 @@ class IntegrationMcpIntegrationDefUpdate(TypedDict, total=False):
 
 
 class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsReadArgumentsUpdate(TypedDict, total=False):
+    """Arguments for reading values from a spreadsheet"""
+
     date_time_render_option: Literal["SERIAL_NUMBER", "FORMATTED_STRING"]
 
     major_dimension: Literal["ROWS", "COLUMNS"]
@@ -769,6 +877,8 @@ class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsReadArgume
 
 
 class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsWriteArgumentsUpdate(TypedDict, total=False):
+    """Arguments for writing values to a spreadsheet"""
+
     include_values_in_response: bool
 
     insert_data_option: Literal["OVERWRITE", "INSERT_ROWS"]
@@ -783,6 +893,8 @@ class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsWriteArgum
 
 
 class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsAppendArgumentsUpdate(TypedDict, total=False):
+    """Arguments for appending values to a spreadsheet"""
+
     include_values_in_response: bool
 
     insert_data_option: Literal["OVERWRITE", "INSERT_ROWS"]
@@ -797,12 +909,16 @@ class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsAppendArgu
 
 
 class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsClearArgumentsUpdate(TypedDict, total=False):
+    """Arguments for clearing values from a spreadsheet"""
+
     range: Optional[str]
 
     spreadsheet_id: Optional[str]
 
 
 class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsBatchReadArgumentsUpdate(TypedDict, total=False):
+    """Arguments for batch reading values from multiple ranges"""
+
     date_time_render_option: Literal["SERIAL_NUMBER", "FORMATTED_STRING"]
 
     major_dimension: Literal["ROWS", "COLUMNS"]
@@ -817,6 +933,8 @@ class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsBatchReadA
 class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsBatchWriteArgumentsUpdateData(
     TypedDict, total=False
 ):
+    """Represents a range of values to write"""
+
     range: Required[str]
 
     values: Required[Iterable[Iterable[object]]]
@@ -825,6 +943,8 @@ class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsBatchWrite
 
 
 class IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsBatchWriteArgumentsUpdate(TypedDict, total=False):
+    """Arguments for batch updating values in multiple ranges"""
+
     data: Optional[
         Iterable[IntegrationGoogleSheetsIntegrationDefUpdateArgumentsGoogleSheetsBatchWriteArgumentsUpdateData]
     ]
@@ -847,6 +967,8 @@ IntegrationGoogleSheetsIntegrationDefUpdateArguments: TypeAlias = Union[
 
 
 class IntegrationGoogleSheetsIntegrationDefUpdateSetup(TypedDict, total=False):
+    """Setup parameters for Google Sheets integration"""
+
     default_retry_count: int
 
     service_account_json: Optional[str]
@@ -855,6 +977,8 @@ class IntegrationGoogleSheetsIntegrationDefUpdateSetup(TypedDict, total=False):
 
 
 class IntegrationGoogleSheetsIntegrationDefUpdate(TypedDict, total=False):
+    """Google Sheets integration definition"""
+
     arguments: Optional[IntegrationGoogleSheetsIntegrationDefUpdateArguments]
     """Arguments for reading values from a spreadsheet"""
 
@@ -897,6 +1021,8 @@ Integration: TypeAlias = Union[
 
 
 class System(TypedDict, total=False):
+    """System definition"""
+
     arguments: Optional[object]
 
     operation: Optional[

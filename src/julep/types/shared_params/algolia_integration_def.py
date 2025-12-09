@@ -12,6 +12,8 @@ __all__ = ["AlgoliaIntegrationDef"]
 
 
 class AlgoliaIntegrationDef(TypedDict, total=False):
+    """Algolia integration definition"""
+
     arguments: Optional[AlgoliaSearchArguments]
     """Arguments for Algolia Search"""
 

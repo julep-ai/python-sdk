@@ -11,6 +11,8 @@ __all__ = ["WikipediaIntegrationDef"]
 
 
 class WikipediaIntegrationDef(TypedDict, total=False):
+    """Wikipedia integration definition"""
+
     arguments: Optional[WikipediaSearchArguments]
     """Arguments for Wikipedia Search"""
 

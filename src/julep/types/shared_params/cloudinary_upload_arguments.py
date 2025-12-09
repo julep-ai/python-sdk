@@ -9,6 +9,8 @@ __all__ = ["CloudinaryUploadArguments"]
 
 
 class CloudinaryUploadArguments(TypedDict, total=False):
+    """Arguments for Cloudinary media upload"""
+
     file: Required[str]
 
     public_id: Optional[str]

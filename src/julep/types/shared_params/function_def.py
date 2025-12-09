@@ -9,6 +9,8 @@ __all__ = ["FunctionDef"]
 
 
 class FunctionDef(TypedDict, total=False):
+    """Function definition"""
+
     description: object
 
     name: object

@@ -89,6 +89,8 @@ class PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContent(TypedDic
 
 
 class PromptUnionMember0ContentUnionMember1AgentsAPIAutogenTasksContentModelImageURL(TypedDict, total=False):
+    """The image URL"""
+
     url: Required[str]
 
     detail: Literal["low", "high", "auto"]
@@ -122,6 +124,8 @@ class PromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember1
 
 
 class PromptUnionMember0ContentUnionMember1ContentModel1Input(TypedDict, total=False):
+    """Anthropic image content part"""
+
     content: Required[
         Union[
             Iterable[PromptUnionMember0ContentUnionMember1ContentModel1InputContentUnionMember0],
@@ -161,10 +165,14 @@ ToolChoice: TypeAlias = Union[Literal["auto", "none"], NamedToolChoice]
 
 
 class ToolsUnionMember1ToolRefRefToolRefByID(TypedDict, total=False):
+    """Reference to a tool by id"""
+
     id: Optional[str]
 
 
 class ToolsUnionMember1ToolRefRefToolRefByName(TypedDict, total=False):
+    """Reference to a tool by name"""
+
     name: Optional[str]
 
 
@@ -174,11 +182,15 @@ ToolsUnionMember1ToolRefRef: TypeAlias = Union[
 
 
 class ToolsUnionMember1ToolRef(TypedDict, total=False):
+    """Reference to a tool"""
+
     ref: Required[ToolsUnionMember1ToolRefRef]
     """Reference to a tool by id"""
 
 
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties(TypedDict, total=False):
+    """Property definition for parameter schema"""
+
     type: Required[str]
 
     description: Optional[str]
@@ -189,6 +201,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsS
 
 
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchema(TypedDict, total=False):
+    """JSON Schema for API call parameters"""
+
     properties: Required[
         Dict[str, ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsSchemaProperties]
     ]
@@ -201,6 +215,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICallParamsS
 
 
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(TypedDict, total=False):
+    """API call definition"""
+
     method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
 
     url: Required[str]
@@ -236,6 +252,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputAPICall(TypedD
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(
     TypedDict, total=False
 ):
+    """Arguments to call a named tool on the MCP server"""
+
     tool_name: Required[str]
 
     arguments: object
@@ -246,6 +264,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcp
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(
     TypedDict, total=False
 ):
+    """Arguments to list available tools"""
+
     dummy: str
 
 
@@ -258,6 +278,8 @@ ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegr
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefSetup(
     TypedDict, total=False
 ):
+    """Setup parameters for MCP integration"""
+
     transport: Required[Literal["sse", "http"]]
 
     args: SequenceNotStr[str]
@@ -274,6 +296,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcp
 
 
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDef(TypedDict, total=False):
+    """MCP integration definition"""
+
     arguments: Optional[
         ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcpIntegrationDefArguments
     ]
@@ -290,6 +314,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationMcp
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments(
     TypedDict, total=False
 ):
+    """Arguments for reading values from a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -304,6 +330,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoo
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsWriteArguments(
     TypedDict, total=False
 ):
+    """Arguments for writing values to a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -320,6 +348,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoo
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsAppendArguments(
     TypedDict, total=False
 ):
+    """Arguments for appending values to a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -336,6 +366,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoo
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsClearArguments(
     TypedDict, total=False
 ):
+    """Arguments for clearing values from a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -344,6 +376,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoo
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchReadArguments(
     TypedDict, total=False
 ):
+    """Arguments for batch reading values from multiple ranges"""
+
     ranges: Required[SequenceNotStr[str]]
 
     spreadsheet_id: Required[str]
@@ -358,6 +392,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoo
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArgumentsData(
     TypedDict, total=False
 ):
+    """Represents a range of values to write"""
+
     range: Required[str]
 
     values: Required[Iterable[Iterable[object]]]
@@ -368,6 +404,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoo
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArguments(
     TypedDict, total=False
 ):
+    """Arguments for batch updating values in multiple ranges"""
+
     data: Required[
         Iterable[
             ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArgumentsData
@@ -394,6 +432,8 @@ ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleShe
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputSetup(
     TypedDict, total=False
 ):
+    """Setup parameters for Google Sheets integration"""
+
     use_julep_service: Required[bool]
 
     default_retry_count: int
@@ -404,6 +444,8 @@ class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoo
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInput(
     TypedDict, total=False
 ):
+    """Google Sheets integration definition"""
+
     arguments: Optional[
         ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegrationGoogleSheetsIntegrationDefInputArguments
     ]
@@ -450,6 +492,8 @@ ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInputIntegration: TypeAli
 
 
 class ToolsUnionMember1AgentsAPIAutogenToolsCreateToolRequestInput(TypedDict, total=False):
+    """Payload for creating a tool"""
+
     name: Required[str]
 
     type: Required[

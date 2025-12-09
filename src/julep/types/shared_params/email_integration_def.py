@@ -12,6 +12,8 @@ __all__ = ["EmailIntegrationDef"]
 
 
 class EmailIntegrationDef(TypedDict, total=False):
+    """Email integration definition"""
+
     arguments: Optional[EmailArguments]
     """Arguments for Email sending"""
 

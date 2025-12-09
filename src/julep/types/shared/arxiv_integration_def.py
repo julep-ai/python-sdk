@@ -10,6 +10,8 @@ __all__ = ["ArxivIntegrationDef"]
 
 
 class ArxivIntegrationDef(BaseModel):
+    """Arxiv integration definition"""
+
     arguments: Optional[ArxivSearchArguments] = None
     """Arguments for Arxiv Search"""
 

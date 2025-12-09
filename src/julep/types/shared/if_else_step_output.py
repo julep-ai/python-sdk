@@ -38,6 +38,8 @@ ThenThenOutputMap: TypeAlias = Union[EvaluateStep, ToolCallStep, PromptStepOutpu
 
 
 class ThenThenOutput(BaseModel):
+    """The steps to run if the condition is true"""
+
     map: ThenThenOutputMap
 
     over: str
@@ -99,6 +101,8 @@ ElseElseOutputMap: TypeAlias = Union[EvaluateStep, ToolCallStep, PromptStepOutpu
 
 
 class ElseElseOutput(BaseModel):
+    """The steps to run if the condition is false"""
+
     map: ElseElseOutputMap
 
     over: str

@@ -100,6 +100,8 @@ class ToolCreateParams(TypedDict, total=False):
 
 
 class APICallParamsSchemaProperties(TypedDict, total=False):
+    """Property definition for parameter schema"""
+
     type: Required[str]
 
     description: Optional[str]
@@ -110,6 +112,8 @@ class APICallParamsSchemaProperties(TypedDict, total=False):
 
 
 class APICallParamsSchema(TypedDict, total=False):
+    """JSON Schema for API call parameters"""
+
     properties: Required[Dict[str, APICallParamsSchemaProperties]]
 
     additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
@@ -120,6 +124,8 @@ class APICallParamsSchema(TypedDict, total=False):
 
 
 class APICall(TypedDict, total=False):
+    """API call definition"""
+
     method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
 
     url: Required[str]
@@ -153,6 +159,8 @@ class APICall(TypedDict, total=False):
 
 
 class IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(TypedDict, total=False):
+    """Arguments to call a named tool on the MCP server"""
+
     tool_name: Required[str]
 
     arguments: object
@@ -161,6 +169,8 @@ class IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(TypedDict, total
 
 
 class IntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(TypedDict, total=False):
+    """Arguments to list available tools"""
+
     dummy: str
 
 
@@ -171,6 +181,8 @@ IntegrationMcpIntegrationDefArguments: TypeAlias = Union[
 
 
 class IntegrationMcpIntegrationDefSetup(TypedDict, total=False):
+    """Setup parameters for MCP integration"""
+
     transport: Required[Literal["sse", "http"]]
 
     args: SequenceNotStr[str]
@@ -187,6 +199,8 @@ class IntegrationMcpIntegrationDefSetup(TypedDict, total=False):
 
 
 class IntegrationMcpIntegrationDef(TypedDict, total=False):
+    """MCP integration definition"""
+
     arguments: Optional[IntegrationMcpIntegrationDefArguments]
     """Arguments to call a named tool on the MCP server"""
 
@@ -199,6 +213,8 @@ class IntegrationMcpIntegrationDef(TypedDict, total=False):
 
 
 class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments(TypedDict, total=False):
+    """Arguments for reading values from a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -211,6 +227,8 @@ class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArgumen
 
 
 class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsWriteArguments(TypedDict, total=False):
+    """Arguments for writing values to a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -225,6 +243,8 @@ class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsWriteArgume
 
 
 class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsAppendArguments(TypedDict, total=False):
+    """Arguments for appending values to a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -239,12 +259,16 @@ class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsAppendArgum
 
 
 class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsClearArguments(TypedDict, total=False):
+    """Arguments for clearing values from a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
 
 
 class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchReadArguments(TypedDict, total=False):
+    """Arguments for batch reading values from multiple ranges"""
+
     ranges: Required[SequenceNotStr[str]]
 
     spreadsheet_id: Required[str]
@@ -257,6 +281,8 @@ class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchReadAr
 
 
 class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArgumentsData(TypedDict, total=False):
+    """Represents a range of values to write"""
+
     range: Required[str]
 
     values: Required[Iterable[Iterable[object]]]
@@ -265,6 +291,8 @@ class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteA
 
 
 class IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArguments(TypedDict, total=False):
+    """Arguments for batch updating values in multiple ranges"""
+
     data: Required[Iterable[IntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArgumentsData]]
 
     spreadsheet_id: Required[str]
@@ -285,6 +313,8 @@ IntegrationGoogleSheetsIntegrationDefInputArguments: TypeAlias = Union[
 
 
 class IntegrationGoogleSheetsIntegrationDefInputSetup(TypedDict, total=False):
+    """Setup parameters for Google Sheets integration"""
+
     use_julep_service: Required[bool]
 
     default_retry_count: int
@@ -293,6 +323,8 @@ class IntegrationGoogleSheetsIntegrationDefInputSetup(TypedDict, total=False):
 
 
 class IntegrationGoogleSheetsIntegrationDefInput(TypedDict, total=False):
+    """Google Sheets integration definition"""
+
     arguments: Optional[IntegrationGoogleSheetsIntegrationDefInputArguments]
     """Arguments for reading values from a spreadsheet"""
 

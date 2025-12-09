@@ -8,6 +8,8 @@ __all__ = ["CloudinaryEditArguments"]
 
 
 class CloudinaryEditArguments(BaseModel):
+    """Arguments for Cloudinary media edit"""
+
     public_id: str
 
     transformation: List[object]

@@ -12,6 +12,8 @@ __all__ = ["BrowserbaseContextIntegrationDef"]
 
 
 class BrowserbaseContextIntegrationDef(TypedDict, total=False):
+    """browserbase context provider"""
+
     arguments: Optional[BrowserbaseContextArguments]
 
     method: Literal["create_context"]

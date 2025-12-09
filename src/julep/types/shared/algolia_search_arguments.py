@@ -8,6 +8,8 @@ __all__ = ["AlgoliaSearchArguments"]
 
 
 class AlgoliaSearchArguments(BaseModel):
+    """Arguments for Algolia Search"""
+
     index_name: str
 
     query: str

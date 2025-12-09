@@ -9,6 +9,8 @@ __all__ = ["Computer20241022Def"]
 
 
 class Computer20241022Def(BaseModel):
+    """Anthropic new tools"""
+
     display_height_px: Optional[int] = None
 
     display_number: Optional[int] = None

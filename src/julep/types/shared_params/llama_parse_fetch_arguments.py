@@ -11,6 +11,8 @@ __all__ = ["LlamaParseFetchArguments"]
 
 
 class LlamaParseFetchArguments(TypedDict, total=False):
+    """Arguments for LlamaParse integration"""
+
     file: Required[Union[str, SequenceNotStr[str]]]
 
     base64: bool

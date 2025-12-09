@@ -12,6 +12,8 @@ __all__ = ["BrowserbaseCreateSessionIntegrationDef"]
 
 
 class BrowserbaseCreateSessionIntegrationDef(TypedDict, total=False):
+    """browserbase create session integration definition"""
+
     arguments: Optional[BrowserbaseCreateSessionArguments]
 
     method: Literal["create_session"]

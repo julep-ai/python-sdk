@@ -11,6 +11,8 @@ __all__ = ["AlgoliaSearchArguments"]
 
 
 class AlgoliaSearchArguments(TypedDict, total=False):
+    """Arguments for Algolia Search"""
+
     index_name: Required[str]
 
     query: Required[str]

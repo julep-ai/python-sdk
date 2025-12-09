@@ -8,6 +8,8 @@ __all__ = ["LlamaParseFetchArguments"]
 
 
 class LlamaParseFetchArguments(BaseModel):
+    """Arguments for LlamaParse integration"""
+
     file: Union[str, List[str]]
 
     base64: Optional[bool] = None

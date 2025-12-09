@@ -139,6 +139,8 @@ class MessageContentUnionMember2AgentsAPIAutogenChatContent(TypedDict, total=Fal
 
 
 class MessageContentUnionMember2ContentModel7ImageURL(TypedDict, total=False):
+    """The image URL"""
+
     url: Required[str]
 
     detail: Literal["low", "high", "auto"]
@@ -172,6 +174,8 @@ class MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnio
 
 
 class MessageContentUnionMember2AgentsAPIAutogenChatContentModelInput(TypedDict, total=False):
+    """Anthropic image content part"""
+
     content: Required[
         Union[
             Iterable[MessageContentUnionMember2AgentsAPIAutogenChatContentModelInputContentUnionMember0],
@@ -213,6 +217,8 @@ ToolChoice: TypeAlias = Union[Literal["auto", "none"], NamedToolChoice]
 
 
 class ToolAPICallParamsSchemaProperties(TypedDict, total=False):
+    """Property definition for parameter schema"""
+
     type: Required[str]
 
     description: Optional[str]
@@ -223,6 +229,8 @@ class ToolAPICallParamsSchemaProperties(TypedDict, total=False):
 
 
 class ToolAPICallParamsSchema(TypedDict, total=False):
+    """JSON Schema for API call parameters"""
+
     properties: Required[Dict[str, ToolAPICallParamsSchemaProperties]]
 
     additional_properties: Annotated[Optional[bool], PropertyInfo(alias="additionalProperties")]
@@ -233,6 +241,8 @@ class ToolAPICallParamsSchema(TypedDict, total=False):
 
 
 class ToolAPICall(TypedDict, total=False):
+    """API call definition"""
+
     method: Required[Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]]
 
     url: Required[str]
@@ -266,6 +276,8 @@ class ToolAPICall(TypedDict, total=False):
 
 
 class ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(TypedDict, total=False):
+    """Arguments to call a named tool on the MCP server"""
+
     tool_name: Required[str]
 
     arguments: object
@@ -274,6 +286,8 @@ class ToolIntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(TypedDict, t
 
 
 class ToolIntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(TypedDict, total=False):
+    """Arguments to list available tools"""
+
     dummy: str
 
 
@@ -284,6 +298,8 @@ ToolIntegrationMcpIntegrationDefArguments: TypeAlias = Union[
 
 
 class ToolIntegrationMcpIntegrationDefSetup(TypedDict, total=False):
+    """Setup parameters for MCP integration"""
+
     transport: Required[Literal["sse", "http"]]
 
     args: SequenceNotStr[str]
@@ -300,6 +316,8 @@ class ToolIntegrationMcpIntegrationDefSetup(TypedDict, total=False):
 
 
 class ToolIntegrationMcpIntegrationDef(TypedDict, total=False):
+    """MCP integration definition"""
+
     arguments: Optional[ToolIntegrationMcpIntegrationDefArguments]
     """Arguments to call a named tool on the MCP server"""
 
@@ -312,6 +330,8 @@ class ToolIntegrationMcpIntegrationDef(TypedDict, total=False):
 
 
 class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArguments(TypedDict, total=False):
+    """Arguments for reading values from a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -324,6 +344,8 @@ class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsReadArg
 
 
 class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsWriteArguments(TypedDict, total=False):
+    """Arguments for writing values to a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -338,6 +360,8 @@ class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsWriteAr
 
 
 class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsAppendArguments(TypedDict, total=False):
+    """Arguments for appending values to a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
@@ -352,12 +376,16 @@ class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsAppendA
 
 
 class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsClearArguments(TypedDict, total=False):
+    """Arguments for clearing values from a spreadsheet"""
+
     range: Required[str]
 
     spreadsheet_id: Required[str]
 
 
 class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchReadArguments(TypedDict, total=False):
+    """Arguments for batch reading values from multiple ranges"""
+
     ranges: Required[SequenceNotStr[str]]
 
     spreadsheet_id: Required[str]
@@ -372,6 +400,8 @@ class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchRe
 class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArgumentsData(
     TypedDict, total=False
 ):
+    """Represents a range of values to write"""
+
     range: Required[str]
 
     values: Required[Iterable[Iterable[object]]]
@@ -380,6 +410,8 @@ class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWr
 
 
 class ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArguments(TypedDict, total=False):
+    """Arguments for batch updating values in multiple ranges"""
+
     data: Required[Iterable[ToolIntegrationGoogleSheetsIntegrationDefInputArgumentsGoogleSheetsBatchWriteArgumentsData]]
 
     spreadsheet_id: Required[str]
@@ -400,6 +432,8 @@ ToolIntegrationGoogleSheetsIntegrationDefInputArguments: TypeAlias = Union[
 
 
 class ToolIntegrationGoogleSheetsIntegrationDefInputSetup(TypedDict, total=False):
+    """Setup parameters for Google Sheets integration"""
+
     use_julep_service: Required[bool]
 
     default_retry_count: int
@@ -408,6 +442,8 @@ class ToolIntegrationGoogleSheetsIntegrationDefInputSetup(TypedDict, total=False
 
 
 class ToolIntegrationGoogleSheetsIntegrationDefInput(TypedDict, total=False):
+    """Google Sheets integration definition"""
+
     arguments: Optional[ToolIntegrationGoogleSheetsIntegrationDefInputArguments]
     """Arguments for reading values from a spreadsheet"""
 
@@ -450,6 +486,8 @@ ToolIntegration: TypeAlias = Union[
 
 
 class Tool(TypedDict, total=False):
+    """Payload for creating a tool"""
+
     name: Required[str]
 
     type: Required[

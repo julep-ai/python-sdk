@@ -12,6 +12,8 @@ __all__ = ["LlamaParseIntegrationDef"]
 
 
 class LlamaParseIntegrationDef(TypedDict, total=False):
+    """LlamaParse integration definition"""
+
     arguments: Optional[LlamaParseFetchArguments]
     """Arguments for LlamaParse integration"""
 

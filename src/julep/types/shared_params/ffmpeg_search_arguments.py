@@ -11,6 +11,8 @@ __all__ = ["FfmpegSearchArguments"]
 
 
 class FfmpegSearchArguments(TypedDict, total=False):
+    """Arguments for Ffmpeg CMD"""
+
     cmd: Required[str]
 
     file: Union[str, SequenceNotStr[str], None]

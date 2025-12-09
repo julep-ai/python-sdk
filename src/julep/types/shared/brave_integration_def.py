@@ -11,6 +11,8 @@ __all__ = ["BraveIntegrationDef"]
 
 
 class BraveIntegrationDef(BaseModel):
+    """Brave integration definition"""
+
     arguments: Optional[BraveSearchArguments] = None
     """Arguments for Brave Search"""
 

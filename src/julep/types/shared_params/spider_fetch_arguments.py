@@ -9,6 +9,8 @@ __all__ = ["SpiderFetchArguments"]
 
 
 class SpiderFetchArguments(TypedDict, total=False):
+    """Arguments for Spider integration"""
+
     url: Required[str]
 
     content_type: Literal["application/json", "text/csv", "application/xml", "application/jsonl"]

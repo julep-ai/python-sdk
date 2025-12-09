@@ -8,6 +8,8 @@ __all__ = ["EmailSetup"]
 
 
 class EmailSetup(TypedDict, total=False):
+    """Setup parameters for Email integration"""
+
     host: Required[str]
 
     password: Required[str]

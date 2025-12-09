@@ -12,6 +12,8 @@ __all__ = ["WeatherIntegrationDef"]
 
 
 class WeatherIntegrationDef(TypedDict, total=False):
+    """Weather integration definition"""
+
     arguments: Optional[WeatherGetArguments]
     """Arguments for Weather"""
 

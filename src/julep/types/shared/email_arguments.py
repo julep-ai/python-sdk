@@ -8,6 +8,8 @@ __all__ = ["EmailArguments"]
 
 
 class EmailArguments(BaseModel):
+    """Arguments for Email sending"""
+
     body: str
 
     from_: str = FieldInfo(alias="from")

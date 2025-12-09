@@ -8,6 +8,8 @@ __all__ = ["FunctionDef"]
 
 
 class FunctionDef(BaseModel):
+    """Function definition"""
+
     description: Optional[object] = None
 
     name: Optional[object] = None

@@ -8,6 +8,8 @@ __all__ = ["LlamaParseSetup"]
 
 
 class LlamaParseSetup(BaseModel):
+    """Setup parameters for LlamaParse integration"""
+
     llamaparse_api_key: str
 
     params: Optional[object] = None

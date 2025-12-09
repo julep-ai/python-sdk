@@ -11,6 +11,8 @@ __all__ = ["SpiderIntegrationDef"]
 
 
 class SpiderIntegrationDef(BaseModel):
+    """Spider integration definition"""
+
     arguments: Optional[SpiderFetchArguments] = None
     """Arguments for Spider integration"""
 

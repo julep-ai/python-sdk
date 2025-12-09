@@ -8,6 +8,8 @@ __all__ = ["BrowserbaseSetup"]
 
 
 class BrowserbaseSetup(BaseModel):
+    """The setup parameters for the browserbase integration"""
+
     api_key: str
 
     project_id: str

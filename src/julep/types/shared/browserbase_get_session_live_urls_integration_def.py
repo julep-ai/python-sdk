@@ -11,6 +11,8 @@ __all__ = ["BrowserbaseGetSessionLiveURLsIntegrationDef"]
 
 
 class BrowserbaseGetSessionLiveURLsIntegrationDef(BaseModel):
+    """browserbase get session live urls integration definition"""
+
     arguments: Optional[BrowserbaseGetSessionLiveURLsArguments] = None
 
     method: Optional[Literal["get_live_urls"]] = None

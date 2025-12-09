@@ -8,4 +8,6 @@ __all__ = ["MailgunSetup"]
 
 
 class MailgunSetup(TypedDict, total=False):
+    """Setup parameters for Mailgun integration"""
+
     api_key: Required[str]

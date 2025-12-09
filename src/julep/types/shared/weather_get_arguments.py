@@ -6,4 +6,6 @@ __all__ = ["WeatherGetArguments"]
 
 
 class WeatherGetArguments(BaseModel):
+    """Arguments for Weather"""
+
     location: str

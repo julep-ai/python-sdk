@@ -12,6 +12,8 @@ __all__ = ["CloudinaryEditIntegrationDef"]
 
 
 class CloudinaryEditIntegrationDef(TypedDict, total=False):
+    """Cloudinary edit integration definition"""
+
     arguments: Optional[CloudinaryEditArguments]
     """Arguments for Cloudinary media edit"""
 

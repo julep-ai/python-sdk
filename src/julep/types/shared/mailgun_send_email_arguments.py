@@ -10,6 +10,8 @@ __all__ = ["MailgunSendEmailArguments"]
 
 
 class MailgunSendEmailArguments(BaseModel):
+    """Arguments for mailgun.send_email method"""
+
     body: str
 
     from_: str = FieldInfo(alias="from")

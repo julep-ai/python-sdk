@@ -16,6 +16,8 @@ _EmailArgumentsReservedKeywords = TypedDict(
 
 
 class EmailArguments(_EmailArgumentsReservedKeywords, total=False):
+    """Arguments for Email sending"""
+
     body: Required[str]
 
     subject: Required[str]

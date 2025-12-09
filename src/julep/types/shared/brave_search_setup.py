@@ -6,4 +6,6 @@ __all__ = ["BraveSearchSetup"]
 
 
 class BraveSearchSetup(BaseModel):
+    """Integration definition for Brave Search"""
+
     brave_api_key: str

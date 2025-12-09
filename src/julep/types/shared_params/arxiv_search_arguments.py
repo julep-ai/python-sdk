@@ -11,6 +11,8 @@ __all__ = ["ArxivSearchArguments"]
 
 
 class ArxivSearchArguments(TypedDict, total=False):
+    """Arguments for Arxiv Search"""
+
     query: Required[str]
 
     download_pdf: bool

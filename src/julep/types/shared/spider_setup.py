@@ -6,4 +6,6 @@ __all__ = ["SpiderSetup"]
 
 
 class SpiderSetup(BaseModel):
+    """Setup parameters for Spider integration"""
+
     spider_api_key: str

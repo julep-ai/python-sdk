@@ -8,6 +8,8 @@ __all__ = ["WikipediaSearchArguments"]
 
 
 class WikipediaSearchArguments(TypedDict, total=False):
+    """Arguments for Wikipedia Search"""
+
     query: Required[str]
 
     load_max_docs: int

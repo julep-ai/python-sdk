@@ -12,6 +12,8 @@ __all__ = ["UnstructuredIntegrationDef"]
 
 
 class UnstructuredIntegrationDef(TypedDict, total=False):
+    """Unstructured integration definition"""
+
     arguments: Optional[UnstructuredPartitionArguments]
     """Arguments for Unstructured partition integration"""
 

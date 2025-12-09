@@ -9,6 +9,8 @@ __all__ = ["RemoteBrowserArguments"]
 
 
 class RemoteBrowserArguments(TypedDict, total=False):
+    """The arguments for the remote browser"""
+
     action: Required[
         Literal[
             "key",

@@ -12,6 +12,8 @@ __all__ = ["BrowserbaseGetSessionLiveURLsIntegrationDef"]
 
 
 class BrowserbaseGetSessionLiveURLsIntegrationDef(TypedDict, total=False):
+    """browserbase get session live urls integration definition"""
+
     arguments: Optional[BrowserbaseGetSessionLiveURLsArguments]
 
     method: Literal["get_live_urls"]

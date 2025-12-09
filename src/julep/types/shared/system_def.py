@@ -9,6 +9,8 @@ __all__ = ["SystemDef"]
 
 
 class SystemDef(BaseModel):
+    """System definition"""
+
     operation: Literal[
         "create",
         "update",

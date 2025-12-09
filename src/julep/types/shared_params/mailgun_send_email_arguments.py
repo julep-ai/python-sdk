@@ -17,6 +17,8 @@ _MailgunSendEmailArgumentsReservedKeywords = TypedDict(
 
 
 class MailgunSendEmailArguments(_MailgunSendEmailArgumentsReservedKeywords, total=False):
+    """Arguments for mailgun.send_email method"""
+
     body: Required[str]
 
     subject: Required[str]

@@ -12,6 +12,8 @@ __all__ = ["BraveIntegrationDef"]
 
 
 class BraveIntegrationDef(TypedDict, total=False):
+    """Brave integration definition"""
+
     arguments: Optional[BraveSearchArguments]
     """Arguments for Brave Search"""
 

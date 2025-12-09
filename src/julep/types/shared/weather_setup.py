@@ -6,4 +6,6 @@ __all__ = ["WeatherSetup"]
 
 
 class WeatherSetup(BaseModel):
+    """Integration definition for Weather"""
+
     openweathermap_api_key: str

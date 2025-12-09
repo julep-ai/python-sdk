@@ -11,6 +11,8 @@ __all__ = ["FfmpegIntegrationDef"]
 
 
 class FfmpegIntegrationDef(TypedDict, total=False):
+    """Ffmpeg integration definition"""
+
     arguments: Optional[FfmpegSearchArguments]
     """Arguments for Ffmpeg CMD"""
 

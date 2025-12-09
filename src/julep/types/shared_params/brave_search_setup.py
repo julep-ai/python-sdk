@@ -8,4 +8,6 @@ __all__ = ["BraveSearchSetup"]
 
 
 class BraveSearchSetup(TypedDict, total=False):
+    """Integration definition for Brave Search"""
+
     brave_api_key: Required[str]

@@ -61,6 +61,8 @@ __all__ = [
 
 
 class APICallParamsSchemaProperties(BaseModel):
+    """Property definition for parameter schema"""
+
     type: str
 
     description: Optional[str] = None
@@ -71,6 +73,8 @@ class APICallParamsSchemaProperties(BaseModel):
 
 
 class APICallParamsSchema(BaseModel):
+    """JSON Schema for API call parameters"""
+
     properties: Dict[str, APICallParamsSchemaProperties]
 
     additional_properties: Optional[bool] = FieldInfo(alias="additionalProperties", default=None)
@@ -81,6 +85,8 @@ class APICallParamsSchema(BaseModel):
 
 
 class APICall(BaseModel):
+    """API call definition"""
+
     method: Literal["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "CONNECT", "TRACE"]
 
     url: str
@@ -114,6 +120,8 @@ class APICall(BaseModel):
 
 
 class IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseModel):
+    """Arguments to call a named tool on the MCP server"""
+
     tool_name: str
 
     arguments: Optional[object] = None
@@ -122,6 +130,8 @@ class IntegrationMcpIntegrationDefArgumentsMcpCallToolArguments(BaseModel):
 
 
 class IntegrationMcpIntegrationDefArgumentsMcpListToolsArguments(BaseModel):
+    """Arguments to list available tools"""
+
     dummy: Optional[str] = None
 
 
@@ -133,6 +143,8 @@ IntegrationMcpIntegrationDefArguments: TypeAlias = Union[
 
 
 class IntegrationMcpIntegrationDefSetup(BaseModel):
+    """Setup parameters for MCP integration"""
+
     transport: Literal["sse", "http"]
 
     args: Optional[List[str]] = None
@@ -149,6 +161,8 @@ class IntegrationMcpIntegrationDefSetup(BaseModel):
 
 
 class IntegrationMcpIntegrationDef(BaseModel):
+    """MCP integration definition"""
+
     arguments: Optional[IntegrationMcpIntegrationDefArguments] = None
     """Arguments to call a named tool on the MCP server"""
 
@@ -161,6 +175,8 @@ class IntegrationMcpIntegrationDef(BaseModel):
 
 
 class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArguments(BaseModel):
+    """Arguments for reading values from a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -173,6 +189,8 @@ class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsReadArgume
 
 
 class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsWriteArguments(BaseModel):
+    """Arguments for writing values to a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -187,6 +205,8 @@ class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsWriteArgum
 
 
 class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsAppendArguments(BaseModel):
+    """Arguments for appending values to a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
@@ -201,12 +221,16 @@ class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsAppendArgu
 
 
 class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsClearArguments(BaseModel):
+    """Arguments for clearing values from a spreadsheet"""
+
     range: str
 
     spreadsheet_id: str
 
 
 class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchReadArguments(BaseModel):
+    """Arguments for batch reading values from multiple ranges"""
+
     ranges: List[str]
 
     spreadsheet_id: str
@@ -219,6 +243,8 @@ class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchReadA
 
 
 class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArgumentsData(BaseModel):
+    """Represents a range of values to write"""
+
     range: str
 
     values: List[List[object]]
@@ -227,6 +253,8 @@ class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWrite
 
 
 class IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArguments(BaseModel):
+    """Arguments for batch updating values in multiple ranges"""
+
     data: List[IntegrationGoogleSheetsIntegrationDefOutputArgumentsGoogleSheetsBatchWriteArgumentsData]
 
     spreadsheet_id: str
@@ -248,6 +276,8 @@ IntegrationGoogleSheetsIntegrationDefOutputArguments: TypeAlias = Union[
 
 
 class IntegrationGoogleSheetsIntegrationDefOutputSetup(BaseModel):
+    """Setup parameters for Google Sheets integration"""
+
     use_julep_service: bool
 
     default_retry_count: Optional[int] = None
@@ -256,6 +286,8 @@ class IntegrationGoogleSheetsIntegrationDefOutputSetup(BaseModel):
 
 
 class IntegrationGoogleSheetsIntegrationDefOutput(BaseModel):
+    """Google Sheets integration definition"""
+
     arguments: Optional[IntegrationGoogleSheetsIntegrationDefOutputArguments] = None
     """Arguments for reading values from a spreadsheet"""
 

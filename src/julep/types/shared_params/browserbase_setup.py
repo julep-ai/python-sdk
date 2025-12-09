@@ -9,6 +9,8 @@ __all__ = ["BrowserbaseSetup"]
 
 
 class BrowserbaseSetup(TypedDict, total=False):
+    """The setup parameters for the browserbase integration"""
+
     api_key: Required[str]
 
     project_id: Required[str]

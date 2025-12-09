@@ -6,6 +6,8 @@ __all__ = ["AlgoliaSetup"]
 
 
 class AlgoliaSetup(BaseModel):
+    """Integration definition for Algolia"""
+
     algolia_api_key: str
 
     algolia_application_id: str

@@ -11,6 +11,8 @@ __all__ = ["CloudinaryEditIntegrationDef"]
 
 
 class CloudinaryEditIntegrationDef(BaseModel):
+    """Cloudinary edit integration definition"""
+
     arguments: Optional[CloudinaryEditArguments] = None
     """Arguments for Cloudinary media edit"""
 

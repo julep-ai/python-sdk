@@ -8,8 +8,12 @@ __all__ = ["AgentListModelsResponse", "Model"]
 
 
 class Model(BaseModel):
+    """Model information returned by the model list endpoint"""
+
     id: str
 
 
 class AgentListModelsResponse(BaseModel):
+    """Response for the list models endpoint"""
+
     models: List[Model]

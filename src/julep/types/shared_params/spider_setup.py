@@ -8,4 +8,6 @@ __all__ = ["SpiderSetup"]
 
 
 class SpiderSetup(TypedDict, total=False):
+    """Setup parameters for Spider integration"""
+
     spider_api_key: Required[str]

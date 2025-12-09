@@ -11,6 +11,8 @@ __all__ = ["BrowserbaseListSessionsIntegrationDef"]
 
 
 class BrowserbaseListSessionsIntegrationDef(BaseModel):
+    """browserbase list sessions integration definition"""
+
     arguments: Optional[BrowserbaseListSessionsArguments] = None
 
     method: Optional[Literal["list_sessions"]] = None

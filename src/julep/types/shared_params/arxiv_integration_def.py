@@ -11,6 +11,8 @@ __all__ = ["ArxivIntegrationDef"]
 
 
 class ArxivIntegrationDef(TypedDict, total=False):
+    """Arxiv integration definition"""
+
     arguments: Optional[ArxivSearchArguments]
     """Arguments for Arxiv Search"""
 

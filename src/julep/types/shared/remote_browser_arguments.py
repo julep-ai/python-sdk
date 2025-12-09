@@ -9,6 +9,8 @@ __all__ = ["RemoteBrowserArguments"]
 
 
 class RemoteBrowserArguments(BaseModel):
+    """The arguments for the remote browser"""
+
     action: Literal[
         "key",
         "type",

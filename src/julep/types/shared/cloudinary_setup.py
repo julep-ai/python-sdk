@@ -8,6 +8,8 @@ __all__ = ["CloudinarySetup"]
 
 
 class CloudinarySetup(BaseModel):
+    """Setup parameters for Cloudinary integration"""
+
     cloudinary_api_key: str
 
     cloudinary_api_secret: str

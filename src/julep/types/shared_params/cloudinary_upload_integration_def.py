@@ -12,6 +12,8 @@ __all__ = ["CloudinaryUploadIntegrationDef"]
 
 
 class CloudinaryUploadIntegrationDef(TypedDict, total=False):
+    """Cloudinary upload integration definition"""
+
     arguments: Optional[CloudinaryUploadArguments]
     """Arguments for Cloudinary media upload"""
 

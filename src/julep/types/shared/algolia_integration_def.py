@@ -11,6 +11,8 @@ __all__ = ["AlgoliaIntegrationDef"]
 
 
 class AlgoliaIntegrationDef(BaseModel):
+    """Algolia integration definition"""
+
     arguments: Optional[AlgoliaSearchArguments] = None
     """Arguments for Algolia Search"""
 

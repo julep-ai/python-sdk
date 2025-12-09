@@ -118,6 +118,8 @@ ThenThenInputMap: TypeAlias = Union[
 
 
 class ThenThenInput(TypedDict, total=False):
+    """The steps to run if the condition is true"""
+
     map: Required[ThenThenInputMap]
 
     over: Required[str]
@@ -247,6 +249,8 @@ ElseElseInputMap: TypeAlias = Union[
 
 
 class ElseElseInput(TypedDict, total=False):
+    """The steps to run if the condition is false"""
+
     map: Required[ElseElseInputMap]
 
     over: Required[str]

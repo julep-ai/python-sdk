@@ -8,4 +8,6 @@ __all__ = ["BraveSearchArguments"]
 
 
 class BraveSearchArguments(TypedDict, total=False):
+    """Arguments for Brave Search"""
+
     query: Required[str]

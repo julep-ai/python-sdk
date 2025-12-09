@@ -9,6 +9,8 @@ __all__ = ["ProjectCreateResponse"]
 
 
 class ProjectCreateResponse(BaseModel):
+    """Project model"""
+
     id: str
 
     created_at: datetime

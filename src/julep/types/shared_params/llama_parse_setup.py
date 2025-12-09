@@ -9,6 +9,8 @@ __all__ = ["LlamaParseSetup"]
 
 
 class LlamaParseSetup(TypedDict, total=False):
+    """Setup parameters for LlamaParse integration"""
+
     llamaparse_api_key: Required[str]
 
     params: Optional[object]

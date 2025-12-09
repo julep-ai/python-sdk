@@ -50,6 +50,8 @@ class ChoiceSingleChatOutputMessageContentUnionMember2AgentsAPIAutogenChatConten
 
 
 class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel7ImageURL(BaseModel):
+    """The image URL"""
+
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
@@ -83,6 +85,8 @@ class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionM
 
 
 class ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4(BaseModel):
+    """Anthropic image content part"""
+
     content: Union[
         List[ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember0],
         List[ChoiceSingleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1],
@@ -126,6 +130,11 @@ ChoiceSingleChatOutputToolCall: TypeAlias = Union[
 
 
 class ChoiceSingleChatOutput(BaseModel):
+    """The output returned by the model.
+
+    Note that, depending on the model provider, they might return more than one message.
+    """
+
     index: int
 
     message: ChoiceSingleChatOutputMessage
@@ -144,6 +153,8 @@ class ChoiceMultipleChatOutputMessageContentUnionMember2AgentsAPIAutogenChatCont
 
 
 class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel7ImageURL(BaseModel):
+    """The image URL"""
+
     url: str
 
     detail: Optional[Literal["low", "high", "auto"]] = None
@@ -177,6 +188,8 @@ class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnio
 
 
 class ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4(BaseModel):
+    """Anthropic image content part"""
+
     content: Union[
         List[ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember0],
         List[ChoiceMultipleChatOutputMessageContentUnionMember2ContentModel4ContentUnionMember1],
@@ -220,6 +233,11 @@ ChoiceMultipleChatOutputToolCall: TypeAlias = Union[
 
 
 class ChoiceMultipleChatOutput(BaseModel):
+    """The output returned by the model.
+
+    Note that, depending on the model provider, they might return more than one message.
+    """
+
     index: int
 
     messages: List[ChoiceMultipleChatOutputMessage]
@@ -235,6 +253,8 @@ Choice: TypeAlias = Union[ChoiceSingleChatOutput, ChoiceMultipleChatOutput]
 
 
 class Usage(BaseModel):
+    """Usage statistics for the completion request"""
+
     completion_tokens: Optional[int] = None
 
     prompt_tokens: Optional[int] = None

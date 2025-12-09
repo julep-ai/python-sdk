@@ -11,6 +11,8 @@ __all__ = ["MailgunIntegrationDef"]
 
 
 class MailgunIntegrationDef(BaseModel):
+    """Mailgun integration definition"""
+
     arguments: Optional[MailgunSendEmailArguments] = None
     """Arguments for mailgun.send_email method"""
 

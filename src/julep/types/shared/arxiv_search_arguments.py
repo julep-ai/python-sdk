@@ -9,6 +9,8 @@ __all__ = ["ArxivSearchArguments"]
 
 
 class ArxivSearchArguments(BaseModel):
+    """Arguments for Arxiv Search"""
+
     query: str
 
     download_pdf: Optional[bool] = None

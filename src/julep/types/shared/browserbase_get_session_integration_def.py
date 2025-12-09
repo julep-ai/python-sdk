@@ -11,6 +11,8 @@ __all__ = ["BrowserbaseGetSessionIntegrationDef"]
 
 
 class BrowserbaseGetSessionIntegrationDef(BaseModel):
+    """browserbase get session integration definition"""
+
     arguments: Optional[BrowserbaseGetSessionArguments] = None
 
     method: Optional[Literal["get_session"]] = None

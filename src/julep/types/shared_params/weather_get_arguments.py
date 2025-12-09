@@ -8,4 +8,6 @@ __all__ = ["WeatherGetArguments"]
 
 
 class WeatherGetArguments(TypedDict, total=False):
+    """Arguments for Weather"""
+
     location: Required[str]

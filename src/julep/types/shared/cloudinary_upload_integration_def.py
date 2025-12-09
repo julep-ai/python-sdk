@@ -11,6 +11,8 @@ __all__ = ["CloudinaryUploadIntegrationDef"]
 
 
 class CloudinaryUploadIntegrationDef(BaseModel):
+    """Cloudinary upload integration definition"""
+
     arguments: Optional[CloudinaryUploadArguments] = None
     """Arguments for Cloudinary media upload"""
 

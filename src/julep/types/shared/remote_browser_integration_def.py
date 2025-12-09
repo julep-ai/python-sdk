@@ -11,6 +11,8 @@ __all__ = ["RemoteBrowserIntegrationDef"]
 
 
 class RemoteBrowserIntegrationDef(BaseModel):
+    """The integration definition for the remote browser"""
+
     setup: RemoteBrowserSetup
     """The setup parameters for the remote browser"""
 

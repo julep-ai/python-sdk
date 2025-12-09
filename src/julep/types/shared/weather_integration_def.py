@@ -11,6 +11,8 @@ __all__ = ["WeatherIntegrationDef"]
 
 
 class WeatherIntegrationDef(BaseModel):
+    """Weather integration definition"""
+
     arguments: Optional[WeatherGetArguments] = None
     """Arguments for Weather"""
 

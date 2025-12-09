@@ -11,6 +11,8 @@ __all__ = ["EmailIntegrationDef"]
 
 
 class EmailIntegrationDef(BaseModel):
+    """Email integration definition"""
+
     arguments: Optional[EmailArguments] = None
     """Arguments for Email sending"""
 

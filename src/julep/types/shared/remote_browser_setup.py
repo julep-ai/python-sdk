@@ -8,6 +8,8 @@ __all__ = ["RemoteBrowserSetup"]
 
 
 class RemoteBrowserSetup(BaseModel):
+    """The setup parameters for the remote browser"""
+
     connect_url: Optional[str] = None
 
     height: Optional[int] = None

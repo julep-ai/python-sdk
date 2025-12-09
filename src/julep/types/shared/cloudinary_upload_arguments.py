@@ -8,6 +8,8 @@ __all__ = ["CloudinaryUploadArguments"]
 
 
 class CloudinaryUploadArguments(BaseModel):
+    """Arguments for Cloudinary media upload"""
+
     file: str
 
     public_id: Optional[str] = None

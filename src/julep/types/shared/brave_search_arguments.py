@@ -6,4 +6,6 @@ __all__ = ["BraveSearchArguments"]
 
 
 class BraveSearchArguments(BaseModel):
+    """Arguments for Brave Search"""
+
     query: str
