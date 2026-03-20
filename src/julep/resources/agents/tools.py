@@ -8,7 +8,7 @@ from typing_extensions import Literal
 import httpx
 
 from ..._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
-from ..._utils import maybe_transform, async_maybe_transform
+from ..._utils import path_template, maybe_transform, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
 from ..._response import (
@@ -108,7 +108,7 @@ class ToolsResource(SyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return self._post(
-            f"/agents/{agent_id}/tools",
+            path_template("/agents/{agent_id}/tools", agent_id=agent_id),
             body=maybe_transform(
                 {
                     "name": name,
@@ -190,7 +190,7 @@ class ToolsResource(SyncAPIResource):
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
         return self._patch(
-            f"/agents/{agent_id}/tools/{tool_id}",
+            path_template("/agents/{agent_id}/tools/{tool_id}", agent_id=agent_id, tool_id=tool_id),
             body=maybe_transform(
                 {
                     "api_call": api_call,
@@ -242,7 +242,7 @@ class ToolsResource(SyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return self._get_api_list(
-            f"/agents/{agent_id}/tools",
+            path_template("/agents/{agent_id}/tools", agent_id=agent_id),
             page=SyncOffsetPagination[ToolListResponse],
             options=make_request_options(
                 extra_headers=extra_headers,
@@ -291,7 +291,7 @@ class ToolsResource(SyncAPIResource):
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
         return self._delete(
-            f"/agents/{agent_id}/tools/{tool_id}",
+            path_template("/agents/{agent_id}/tools/{tool_id}", agent_id=agent_id, tool_id=tool_id),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -355,7 +355,7 @@ class ToolsResource(SyncAPIResource):
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
         return self._put(
-            f"/agents/{agent_id}/tools/{tool_id}",
+            path_template("/agents/{agent_id}/tools/{tool_id}", agent_id=agent_id, tool_id=tool_id),
             body=maybe_transform(
                 {
                     "name": name,
@@ -452,7 +452,7 @@ class AsyncToolsResource(AsyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return await self._post(
-            f"/agents/{agent_id}/tools",
+            path_template("/agents/{agent_id}/tools", agent_id=agent_id),
             body=await async_maybe_transform(
                 {
                     "name": name,
@@ -534,7 +534,7 @@ class AsyncToolsResource(AsyncAPIResource):
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
         return await self._patch(
-            f"/agents/{agent_id}/tools/{tool_id}",
+            path_template("/agents/{agent_id}/tools/{tool_id}", agent_id=agent_id, tool_id=tool_id),
             body=await async_maybe_transform(
                 {
                     "api_call": api_call,
@@ -586,7 +586,7 @@ class AsyncToolsResource(AsyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return self._get_api_list(
-            f"/agents/{agent_id}/tools",
+            path_template("/agents/{agent_id}/tools", agent_id=agent_id),
             page=AsyncOffsetPagination[ToolListResponse],
             options=make_request_options(
                 extra_headers=extra_headers,
@@ -635,7 +635,7 @@ class AsyncToolsResource(AsyncAPIResource):
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
         return await self._delete(
-            f"/agents/{agent_id}/tools/{tool_id}",
+            path_template("/agents/{agent_id}/tools/{tool_id}", agent_id=agent_id, tool_id=tool_id),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -699,7 +699,7 @@ class AsyncToolsResource(AsyncAPIResource):
         if not tool_id:
             raise ValueError(f"Expected a non-empty value for `tool_id` but received {tool_id!r}")
         return await self._put(
-            f"/agents/{agent_id}/tools/{tool_id}",
+            path_template("/agents/{agent_id}/tools/{tool_id}", agent_id=agent_id, tool_id=tool_id),
             body=await async_maybe_transform(
                 {
                     "name": name,

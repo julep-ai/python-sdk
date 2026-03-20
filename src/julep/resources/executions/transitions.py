@@ -8,7 +8,7 @@ from typing_extensions import Literal
 import httpx
 
 from ..._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
-from ..._utils import maybe_transform, async_maybe_transform
+from ..._utils import path_template, maybe_transform, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
 from ..._response import (
@@ -74,7 +74,11 @@ class TransitionsResource(SyncAPIResource):
         if not transition_id:
             raise ValueError(f"Expected a non-empty value for `transition_id` but received {transition_id!r}")
         return self._get(
-            f"/executions/{execution_id}/transitions/{transition_id}",
+            path_template(
+                "/executions/{execution_id}/transitions/{transition_id}",
+                execution_id=execution_id,
+                transition_id=transition_id,
+            ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -112,7 +116,7 @@ class TransitionsResource(SyncAPIResource):
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
         return self._get_api_list(
-            f"/executions/{execution_id}/transitions",
+            path_template("/executions/{execution_id}/transitions", execution_id=execution_id),
             page=SyncOffsetPagination[Transition],
             options=make_request_options(
                 extra_headers=extra_headers,
@@ -160,7 +164,7 @@ class TransitionsResource(SyncAPIResource):
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
         return self._get(
-            f"/executions/{execution_id}/transitions.stream",
+            path_template("/executions/{execution_id}/transitions.stream", execution_id=execution_id),
             options=make_request_options(
                 extra_headers=extra_headers,
                 extra_query=extra_query,
@@ -223,7 +227,11 @@ class AsyncTransitionsResource(AsyncAPIResource):
         if not transition_id:
             raise ValueError(f"Expected a non-empty value for `transition_id` but received {transition_id!r}")
         return await self._get(
-            f"/executions/{execution_id}/transitions/{transition_id}",
+            path_template(
+                "/executions/{execution_id}/transitions/{transition_id}",
+                execution_id=execution_id,
+                transition_id=transition_id,
+            ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -261,7 +269,7 @@ class AsyncTransitionsResource(AsyncAPIResource):
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
         return self._get_api_list(
-            f"/executions/{execution_id}/transitions",
+            path_template("/executions/{execution_id}/transitions", execution_id=execution_id),
             page=AsyncOffsetPagination[Transition],
             options=make_request_options(
                 extra_headers=extra_headers,
@@ -309,7 +317,7 @@ class AsyncTransitionsResource(AsyncAPIResource):
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
         return await self._get(
-            f"/executions/{execution_id}/transitions.stream",
+            path_template("/executions/{execution_id}/transitions.stream", execution_id=execution_id),
             options=make_request_options(
                 extra_headers=extra_headers,
                 extra_query=extra_query,

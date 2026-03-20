@@ -17,7 +17,7 @@ from .status import (
 )
 from ...types import execution_list_params, execution_create_params, execution_change_status_params
 from ..._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
-from ..._utils import maybe_transform, async_maybe_transform
+from ..._utils import path_template, maybe_transform, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
 from ..._response import (
@@ -101,7 +101,7 @@ class ExecutionsResource(SyncAPIResource):
         if not task_id:
             raise ValueError(f"Expected a non-empty value for `task_id` but received {task_id!r}")
         return self._post(
-            f"/tasks/{task_id}/executions",
+            path_template("/tasks/{task_id}/executions", task_id=task_id),
             body=maybe_transform(
                 {
                     "input": input,
@@ -154,7 +154,7 @@ class ExecutionsResource(SyncAPIResource):
         if not task_id:
             raise ValueError(f"Expected a non-empty value for `task_id` but received {task_id!r}")
         return self._get_api_list(
-            f"/tasks/{task_id}/executions",
+            path_template("/tasks/{task_id}/executions", task_id=task_id),
             page=SyncOffsetPagination[Execution],
             options=make_request_options(
                 extra_headers=extra_headers,
@@ -247,7 +247,7 @@ class ExecutionsResource(SyncAPIResource):
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
         return self._put(
-            f"/executions/{execution_id}",
+            path_template("/executions/{execution_id}", execution_id=execution_id),
             body=maybe_transform(
                 {
                     "input": input,
@@ -288,7 +288,7 @@ class ExecutionsResource(SyncAPIResource):
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
         return self._get(
-            f"/executions/{execution_id}",
+            path_template("/executions/{execution_id}", execution_id=execution_id),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -356,7 +356,7 @@ class AsyncExecutionsResource(AsyncAPIResource):
         if not task_id:
             raise ValueError(f"Expected a non-empty value for `task_id` but received {task_id!r}")
         return await self._post(
-            f"/tasks/{task_id}/executions",
+            path_template("/tasks/{task_id}/executions", task_id=task_id),
             body=await async_maybe_transform(
                 {
                     "input": input,
@@ -409,7 +409,7 @@ class AsyncExecutionsResource(AsyncAPIResource):
         if not task_id:
             raise ValueError(f"Expected a non-empty value for `task_id` but received {task_id!r}")
         return self._get_api_list(
-            f"/tasks/{task_id}/executions",
+            path_template("/tasks/{task_id}/executions", task_id=task_id),
             page=AsyncOffsetPagination[Execution],
             options=make_request_options(
                 extra_headers=extra_headers,
@@ -502,7 +502,7 @@ class AsyncExecutionsResource(AsyncAPIResource):
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
         return await self._put(
-            f"/executions/{execution_id}",
+            path_template("/executions/{execution_id}", execution_id=execution_id),
             body=await async_maybe_transform(
                 {
                     "input": input,
@@ -543,7 +543,7 @@ class AsyncExecutionsResource(AsyncAPIResource):
         if not execution_id:
             raise ValueError(f"Expected a non-empty value for `execution_id` but received {execution_id!r}")
         return await self._get(
-            f"/executions/{execution_id}",
+            path_template("/executions/{execution_id}", execution_id=execution_id),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),

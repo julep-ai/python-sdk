@@ -8,7 +8,7 @@ from typing_extensions import Literal, overload
 import httpx
 
 from ..._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
-from ..._utils import required_args, maybe_transform, async_maybe_transform
+from ..._utils import path_template, required_args, maybe_transform, async_maybe_transform
 from ..._compat import cached_property
 from ..._resource import SyncAPIResource, AsyncAPIResource
 from ..._response import (
@@ -80,7 +80,7 @@ class DocsResource(SyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return self._post(
-            f"/agents/{agent_id}/docs",
+            path_template("/agents/{agent_id}/docs", agent_id=agent_id),
             body=maybe_transform(
                 {
                     "content": content,
@@ -132,7 +132,7 @@ class DocsResource(SyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return self._get_api_list(
-            f"/agents/{agent_id}/docs",
+            path_template("/agents/{agent_id}/docs", agent_id=agent_id),
             page=SyncOffsetPagination[Doc],
             options=make_request_options(
                 extra_headers=extra_headers,
@@ -183,7 +183,7 @@ class DocsResource(SyncAPIResource):
         if not doc_id:
             raise ValueError(f"Expected a non-empty value for `doc_id` but received {doc_id!r}")
         return self._delete(
-            f"/agents/{agent_id}/docs/{doc_id}",
+            path_template("/agents/{agent_id}/docs/{doc_id}", agent_id=agent_id, doc_id=doc_id),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -218,7 +218,7 @@ class DocsResource(SyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return self._delete(
-            f"/agents/{agent_id}/docs",
+            path_template("/agents/{agent_id}/docs", agent_id=agent_id),
             body=maybe_transform(
                 {
                     "delete_all": delete_all,
@@ -385,7 +385,7 @@ class DocsResource(SyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return self._post(
-            f"/agents/{agent_id}/search",
+            path_template("/agents/{agent_id}/search", agent_id=agent_id),
             body=maybe_transform(
                 {
                     "text": text,
@@ -464,7 +464,7 @@ class AsyncDocsResource(AsyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return await self._post(
-            f"/agents/{agent_id}/docs",
+            path_template("/agents/{agent_id}/docs", agent_id=agent_id),
             body=await async_maybe_transform(
                 {
                     "content": content,
@@ -518,7 +518,7 @@ class AsyncDocsResource(AsyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return self._get_api_list(
-            f"/agents/{agent_id}/docs",
+            path_template("/agents/{agent_id}/docs", agent_id=agent_id),
             page=AsyncOffsetPagination[Doc],
             options=make_request_options(
                 extra_headers=extra_headers,
@@ -569,7 +569,7 @@ class AsyncDocsResource(AsyncAPIResource):
         if not doc_id:
             raise ValueError(f"Expected a non-empty value for `doc_id` but received {doc_id!r}")
         return await self._delete(
-            f"/agents/{agent_id}/docs/{doc_id}",
+            path_template("/agents/{agent_id}/docs/{doc_id}", agent_id=agent_id, doc_id=doc_id),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -604,7 +604,7 @@ class AsyncDocsResource(AsyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return await self._delete(
-            f"/agents/{agent_id}/docs",
+            path_template("/agents/{agent_id}/docs", agent_id=agent_id),
             body=await async_maybe_transform(
                 {
                     "delete_all": delete_all,
@@ -771,7 +771,7 @@ class AsyncDocsResource(AsyncAPIResource):
         if not agent_id:
             raise ValueError(f"Expected a non-empty value for `agent_id` but received {agent_id!r}")
         return await self._post(
-            f"/agents/{agent_id}/search",
+            path_template("/agents/{agent_id}/search", agent_id=agent_id),
             body=await async_maybe_transform(
                 {
                     "text": text,
