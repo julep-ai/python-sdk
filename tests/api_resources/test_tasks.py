@@ -65,7 +65,6 @@ class TestTasks:
                                     "type": "type",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
                                 }
                             },
                             "additional_properties": True,
@@ -250,7 +249,6 @@ class TestTasks:
                                     "type": "type",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
                                 }
                             },
                             "additional_properties": True,
@@ -439,7 +437,6 @@ class TestAsyncTasks:
                                     "type": "type",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
                                 }
                             },
                             "additional_properties": True,
@@ -624,7 +621,6 @@ class TestAsyncTasks:
                                     "type": "type",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
                                 }
                             },
                             "additional_properties": True,

@@ -309,7 +309,6 @@ class TestSessions:
                                     "type": "type",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
                                 }
                             },
                             "additional_properties": True,
@@ -631,7 +630,6 @@ class TestSessions:
                                     "type": "type",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
                                 }
                             },
                             "additional_properties": True,
@@ -1071,7 +1069,6 @@ class TestAsyncSessions:
                                     "type": "type",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
                                 }
                             },
                             "additional_properties": True,
@@ -1393,7 +1390,6 @@ class TestAsyncSessions:
                                     "type": "type",
                                     "description": "description",
                                     "enum": ["string"],
-                                    "items": {},
                                 }
                             },
                             "additional_properties": True,

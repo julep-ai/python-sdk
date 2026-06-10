@@ -57,7 +57,6 @@ class TestTools:
                             "type": "type",
                             "description": "description",
                             "enum": ["string"],
-                            "items": {},
                         }
                     },
                     "additional_properties": True,
@@ -172,7 +171,6 @@ class TestTools:
                         "foo": {
                             "description": "description",
                             "enum": ["string"],
-                            "items": {},
                             "type": "type",
                         }
                     },
@@ -395,7 +393,6 @@ class TestTools:
                             "type": "type",
                             "description": "description",
                             "enum": ["string"],
-                            "items": {},
                         }
                     },
                     "additional_properties": True,
@@ -530,7 +527,6 @@ class TestAsyncTools:
                             "type": "type",
                             "description": "description",
                             "enum": ["string"],
-                            "items": {},
                         }
                     },
                     "additional_properties": True,
@@ -645,7 +641,6 @@ class TestAsyncTools:
                         "foo": {
                             "description": "description",
                             "enum": ["string"],
-                            "items": {},
                             "type": "type",
                         }
                     },
@@ -868,7 +863,6 @@ class TestAsyncTools:
                             "type": "type",
                             "description": "description",
                             "enum": ["string"],
-                            "items": {},
                         }
                     },
                     "additional_properties": True,
